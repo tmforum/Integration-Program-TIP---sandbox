@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<null:Map xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:null="null" basePackage="org.tmforum.interfaces.common.om">
+  <artifacts xsi:type="null:ExceptionArtifact" name="InternalError" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <stereotypes>tipExceptionProp</stereotypes>
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="AccessDenied" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="CapacityExceeded" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="CommunicationLoss" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="InvalidInput" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="NotImplemented" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <stereotypes>tipExceptionProp</stereotypes>
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="UnableToComply" package="org.tmforum.tip.common.exceptions" extends="//@artifacts.7">
+    <stereotypes>tipExceptionProp</stereotypes>
+    <properties name="artifact.hide.extends" value="false"/>
+  </artifacts>
+  <artifacts xsi:type="null:ExceptionArtifact" name="BaseException" package="org.tmforum.tip.common.exceptions" isAbstract="true">
+    <stereotypes>version</stereotypes>
+    <attributes name="reason" type="String" isUnique="true"/>
+    <attributes name="details" type="String" isUnique="true"/>
+  </artifacts>
+</null:Map>

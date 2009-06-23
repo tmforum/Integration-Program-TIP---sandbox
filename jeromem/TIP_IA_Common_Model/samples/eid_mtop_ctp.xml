@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XML instance of the TIP EID -->
+<!-- This sample is for an MTOP CTP EID -->
+<tns:eid xsi:schemaLocation="http://www.tmforum.org/xml/tip/common/entity common_entity.xsd" xmlns:tns="http://www.tmforum.org/xml/tip/common/entity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tns:scheme>MTOP</tns:scheme>
+  <!-- string encoding is part of the scheme -->
+  <tns:value>{MD=Nortel/OmeaRegion1Primary}/{NE=NEID1}/{PTP=/shelf=1/slot=2/port=3}/{CTP=/sts3c_au4=4}</tns:value>
+  <!-- context and encoding are not used with MTOP scheme -->
+  <!-- May want to use encoding=CTP designate the entity instance class/type? -->
+</tns:eid>
