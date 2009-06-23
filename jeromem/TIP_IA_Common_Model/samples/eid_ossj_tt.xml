@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XML instance of the TIP EID -->
+<!-- This sample is for an OSSJ TT EID -->
+<tns:eid xsi:schemaLocation="http://www.tmforum.org/xml/tip/common/entity common_entity.xsd" xmlns:tns="http://www.tmforum.org/xml/tip/common/entity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tns:scheme>OSSJ</tns:scheme>
+  <!-- EID.value is mapped from OSS/J:EID.applicationDN -->
+  <tns:value>System/Montreal/ApplicationType/TroubleTicket/Application/1-0;1-0;Clarify</tns:value>
+  <!-- EID.context is mapped from OSS/J:EID.applicationContext -->
+  <tns:context>{factoryClass=weblogic.jndi.WLInitialContextFactory}/{url=t3://127.0.0.1:7001}</tns:context>
+  <!-- EID.encoding is mapped from OSS/J:EID.type -->
+  <tns:encoding>TroubleTicket</tns:encoding>
+  <!-- What about OSS/J:EID.primaryKey ? -->
+</tns:eid>

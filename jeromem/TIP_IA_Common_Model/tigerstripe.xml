@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tigerstripe version="1.1">
+<project name="TIF_IA_Common_OM">
+<outputDirectory>target/tigerstripe.gen</outputDirectory>
+<version>0.1</version>
+<description>This project consists of all the TIP common Data and Operational Model (OM) definitions used by all TMF Interface features.</description>
+<provider/>
+<property name="defaultArtifactPackage">org.tmforum.interfaces.common.om</property>
+<property name="copyrightNotice">Copyright 2009 TM Forum. All rights reserved.&#13;
+This work is a copyrighted document and specification of TeleManagement Forum (TM Forum).&#13;
+The authorship of TM Forum of this work shall be displayed on any further distribution of it.&#13;
+This work has been through review cycles.  However, due to the inherent complexity&#13;
+in the design and implementation of software and systems, no liability is accepted for any errors or&#13;
+omissions or for consequences of any use made of this work.&#13;
+Under no circumstances will TM Forum be liable for direct or indirect damages or&#13;
+any costs or losses resulting from the use of this work.  The risk of designing and&#13;
+implementing products in accordance with this work is borne solely by the user of it.&#13;
+This work may be subject to or involve a claim of patent rights by one or&#13;
+more TM Forum members or by non-members of TM Forum.</property>
+</project>
+<repositories>
+<repository baseDir=".">
+<includes>src/**/*.java</includes>
+</repository>
+</repositories>
+<plugins>
+<plugin disableLogging="false" enabled="true" groupId="Nortel Networks" logLevel="4" pluginId="TIP_Soap_Generator(0.1.3)" version="0.1.3">
+<property name="version">0.1-SNAPSHOT</property>
+<property name="generateModelProperties">true</property>
+<property name="ROOT_PKG">org.tmforum.tip</property>
+<property name="groupId">org.openoss.tip</property>
+<property name="ROOT_XMLNS">http://www.tmforum.org/xml/tip</property>
+<property name="generatePom">true</property>
+<property name="artifactId">TIP_XXXXXX_ModelSoapSpecPackageTransientDependency</property>
+</plugin>
+</plugins>
+<dependencies/>
+<references/>
+<facetReferences/>
+<advanced>
+<advancedProperty name="modelImport.useTargetProjectAsGuide">true</advancedProperty>
+<advancedProperty name="generation.logMessages">false</advancedProperty>
+<advancedProperty name="misc.ignoreArtifactElementsWithoutTag">true</advancedProperty>
+<advancedProperty name="modelImport.db.importViews">true</advancedProperty>
+<advancedProperty name="modelImport.db.importTables">true</advancedProperty>
+<advancedProperty name="generation.generateReport">true</advancedProperty>
+</advanced>
+</tigerstripe>
