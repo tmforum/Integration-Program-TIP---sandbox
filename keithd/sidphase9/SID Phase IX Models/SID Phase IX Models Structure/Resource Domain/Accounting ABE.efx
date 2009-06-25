@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E34D5B703B2" name="Accounting ABE">
+    <eAnnotations xmi:id="_6rieUDN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E34D5C10262" name="AccountingInfo" isAbstract="true">
+      <ownedComment xmi:id="_xmbmtDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E34D5C10262">
+        <body>AccountingInfo is the base class for defining how accounting is performed for a particular ManagedEntity. AccountingInfo keeps track of how a Resource or Service is being used (both quantity as well as by which PartyRole).
+
+AccountingInfo is associated with a particular Resource or Service using the DescribedByMgmtInfo aggregation. Subclasses of the Accounting class define the detailed characteristics and behavior of how accounting is performed. Accounting is implemented by associating the parent of this class, ManagementInfo, with the appropriate ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA9D386034C">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93E9C638A02CB?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementInfo?"/>
+      </generalization>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xmbmtTNHEd2nE5zXHK_HsA" base_Comment="_xmbmtDNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Eofk8S8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E34D5B703B2" implementationPackage="accounting"/>
+  <TIPProfile:tipClass xmi:id="_Eofk8i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E34D5C10262"/>
+</xmi:XMI>

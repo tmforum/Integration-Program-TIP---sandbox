@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93DDEA3F70337" name="PhysicalResource Specification ABE">
+    <eAnnotations xmi:id="_zGhtYTN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Physical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E5FF6660315?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/Physical%20Role%20Specification%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_zGhtYDN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA5CCD30232?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDFC38803A8" name="PhysicalResourceSpecCharacteristic">
+      <ownedComment xmi:id="_xJE8WTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC38803A8">
+        <body>This is a concrete base class for defining the characteristic features and behavior of a PhysicalResourceSpecification. Every PhysicalResourceSpecification has a variety of important attributes, methods, constraints, and relationships which distinguish that PhysicalResourceSpecification from other PhysicalResourceSpecifications. We call these PhysicalResourceSpecCharacteristics. Each of these characteristics is used at the business level to characterize a PhysicalResourceSpecification.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5FF3E70286" name="PhysicalDeviceSpecification">
+      <ownedComment xmi:id="_xJOGQjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5FF3E70286">
+        <body>This is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building PhysicalDevice objects.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1B13A802D9" general="_3E3F0EC000E93EE25C630091"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EAAC2570157" name="PhysicalResourceSpecAtomic">
+      <ownedComment xmi:id="_xJOGRjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC2570157">
+        <body>A PhysicalResourceSpecAtomic class is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building PhysicalResource objects. The purpose of this class is to be able to track PhysicalResourceSpecifications separately from other types of ResourceSpecifications. Note that this class inherits the SpecifiesResource aggregation, and therefore can be used with the corresponding PhysicalResource class.
+
+The difference between this class and the PhysicalResourceSpecComposite class is that this class represents stand-alone PhysicalResourceSpecifications. The PhysicalResourceSpecComposite class represents a specification that is in reality made up of a set (usually a hierarchy) of PhysicalResourceSpecifications.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EE260340227" general="_3E3F0EC000E93EE25C630091"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAAC620002E" name="modelNumber" visibility="public">
+        <ownedComment xmi:id="_xJOGSjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC620002E">
+          <body>This is a string that represents a manufacturer-allocated number used to identify the general type and/or category of the hardware item. This, in combination with the PartNumber and the VendorName, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAAC620002F" name="partNumber" visibility="public">
+        <ownedComment xmi:id="_xJX3QjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC620002F">
+          <body>This is a string that defines a manufacturer-allocated part number assigned by the organization that manufactures the hardware item. This, in combination with the ModelNumber and the VendorName, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAAC6200030" name="skuNumber" visibility="public">
+        <ownedComment xmi:id="_xJX3RTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC6200030">
+          <body>This is a string that defines the manufacturer-allocated Stock Keeping Unit (SKU) number of the hardware item. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAAC6200038" name="vendorName" visibility="public">
+        <ownedComment xmi:id="_xJX3SDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC6200038">
+          <body>This is a string that defines the name of the manufacturer. This, in combination with the ModelNumber and the PartNumber, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EAAC260027C" name="PhysicalResourceSpecComposite">
+      <ownedComment xmi:id="_xJhoQjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC260027C">
+        <body>This is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building PhysicalResource objects. The purpose of this class is to be able to track PhysicalResourceSpecifications separately from other types of ResourceSpecifications. Note that this class inherits the modifiesResourceSpec aggregation, and therefore can be used with the corresponding PhysicalResourceSpecification class.
+
+The difference between this class and the PhysicalResourceSpecAtomic class is that this class represents a hierarchy of PhysicalResourceSpecifications. The PhysicalResourceSpecAtomic class represents a single stand-alone PhysicalResourceSpecification.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EE260310363" general="_3E3F0EC000E93EE25C630091"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE297BD0127" name="_physicalResourceSpec" visibility="public" type="_3E3F0EC000E93EE25C630091" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EE297B90230">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJqyNzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJqyNjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EE25C630091" name="PhysicalResourceSpec" isAbstract="true">
+      <ownedComment xmi:id="_xJhoRjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE25C630091">
+        <body>This is an abstract base class that is used to define the invariant characteristics and behavior (attributes, methods, constraints, and relationships) of a PhysicalResource.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EE25CF80294">
+        <general xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F1CA5010054" name="standardRepresentation" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93CBA58DA0183?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/Representation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weKXHjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weKXHTNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA500008F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F1CA5F60313" name="_localLocation" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C9E984E02B6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/LocalLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weThAzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weThAjNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA5F50380?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE260CB0288" name="_logicalResourceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="LogicalResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25CAA036E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/LogicalResourceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xHb9lTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xHb9lDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EE260C9028F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalPhysicalResourceSpec?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE297BD0131" name="_physicalResourceSpecComposite" visibility="public" type="_3E3F0EC000E93EAAC260027C" isUnique="false" association="_3E3F0EC000E93EE297B90230">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJqyOjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJqyOTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE36F280155" name="_physicalResourceRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EE36F25029B">
+        <type xmi:type="uml:Class" href="Physical%20Role%20ABE.efx#_3E3F0EC000E93DDEBE0A02CF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalResourceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJ0jMzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJ0jMjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9434347FC00B4" name="_productSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E9434347FA029C">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJ0jPzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJ0jPjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EE297B90230" name="HasPhysicalResourceSpecs" memberEnd="_3E3F0EC000E93EE297BD0127 _3E3F0EC000E93EE297BD0131">
+      <ownedComment xmi:id="_xJqyMzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE297B90230">
+        <body>This aggregation defines the set of PhysicalResourceSpecs that are contained by this particular PhysicalResourceSpecComposite entity.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EE36F25029B" name="SpecifiesPhysicalResourceRoles">
+      <ownedComment xmi:id="_xJqyPDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE36F25029B">
+        <body>This aggregation defines the set of PhysicalResourceRoles that a particular PhysicalResource must have (since it is defined by the specification for that PhysicalResource). This enables functionality to be specified for a particular physical component (e.g., in order to play a given role, a particular type of Card must be installed).
+
+The difference between this aggregation and the RolesDescribePhysicalResource aggregation is that this aggregation defines functionality of a PhysicalResource using PhysicalResourceRoles. In contrast, the RolesDescribePhysicalResource aggregation enables instances of a PhysicalResource to be described using PhysicalResourceRoles.
+
+Please see the DEN-ng Resource model for more details.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EE36F280155?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/PhysicalResourceSpec/_physicalResourceRole?"/>
+      <memberEnd href="Physical%20Role%20ABE.efx#_3E3F0EC000E93EE36F28015F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalResourceRole/_physicalResourceSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9434347FA029C" name="ProductSpecDefinePRSpecs">
+      <ownedComment xmi:id="_xJ0jODNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9434347FA029C">
+        <body>This aggregation defines the set of PhysicalResource Specs that can be used to construct this ProductSpec. In essence, this set of PhysicalResource Spects defines the set of physical characteristics and behavior of the products defined by this ProductSpec.</body>
+      </ownedComment>
+      <memberEnd href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E9434347FC0096?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_physicalResourceSpec?"/>
+      <memberEnd href="#_3E3F0EC000E9434347FC00B4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/PhysicalResourceSpec/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Physical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E5FF6660315?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/Physical%20Role%20Specification%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xJOGQDNHEd2nE5zXHK_HsA" base_Comment="_xJE8WTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJOGQzNHEd2nE5zXHK_HsA" base_Comment="_xJOGQjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJOGRzNHEd2nE5zXHK_HsA" base_Comment="_xJOGRjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJX3QDNHEd2nE5zXHK_HsA" base_Comment="_xJOGSjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJX3QzNHEd2nE5zXHK_HsA" base_Comment="_xJX3QjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJX3RjNHEd2nE5zXHK_HsA" base_Comment="_xJX3RTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJhoQDNHEd2nE5zXHK_HsA" base_Comment="_xJX3SDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJhoQzNHEd2nE5zXHK_HsA" base_Comment="_xJhoQjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJqyMDNHEd2nE5zXHK_HsA" base_Comment="_xJhoRjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJqyNDNHEd2nE5zXHK_HsA" base_Comment="_xJqyMzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJ0jMDNHEd2nE5zXHK_HsA" base_Comment="_xJqyPDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xJ0jOTNHEd2nE5zXHK_HsA" base_Comment="_xJ0jODNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Efs1VC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93DDEA3F70337" implementationPackage="physical"/>
+  <TIPProfile:tipClass xmi:id="_Efs1VS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DDFC38803A8"/>
+  <TIPProfile:tipClass xmi:id="_Efs1Vi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E5FF3E70286"/>
+  <TIPProfile:tipClass xmi:id="_Efs1Vy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EAAC2570157"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1WC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAAC620002E"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1WS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAAC620002F"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1Wi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAAC6200030"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1Wy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAAC6200038"/>
+  <TIPProfile:tipClass xmi:id="_Efs1XC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EAAC260027C"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1XS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE297BD0127"/>
+  <TIPProfile:tipClass xmi:id="_Efs1Xi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EE25C630091"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1Xy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93F1CA5010054"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1YC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93F1CA5F60313"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1YS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE260CB0288"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1Yi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE297BD0131"/>
+  <TIPProfile:tipAttribute xmi:id="_Efs1Yy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE36F280155"/>
+  <TIPProfile:tipAttribute xmi:id="_Ef2mUC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434347FC00B4"/>
+</xmi:XMI>

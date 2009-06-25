@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93C8FA94B00C4" name="Market Segment ABE">
+    <eAnnotations xmi:id="_Tk_JUTNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Market%20Statistic%20ABE.efx#_3E3F0EC000E9411CCDEE0153?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE?"/>
+      <references xmi:type="uml:Package" href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93C1905D2007F?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE?"/>
+      <references xmi:type="uml:Package" href="Party%20Profile%20ABE.efx#_3E3F0EC000E9410E9902021A?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Tk_JUDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Market_Sales%20Domain.efx#_3E3F0EC000E93C8FA93C02FD?SID%20Phase%20IX%20Models/Market_Sales%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8FA9A80096" name="MarketSegment" isAbstract="true">
+      <ownedComment xmi:id="_yzBVojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8FA9A80096">
+        <body>A grouping of Parties, GeographicAreas, SalesChannels, and so forth.  MarketSegments are the target of MarketingCampaigns, ProductOfferings, ProductPromotions, ProductPlacements, and ProductPrograms from both internal and external (Competitors, and other Providers) perspective.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FDF25004B" name="ID" visibility="public">
+        <ownedComment xmi:id="_yzBVpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FDF25004B">
+          <body>A unique identifier for the MarketSegment.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FDF310066" name="name" visibility="public">
+        <ownedComment xmi:id="_yzBVqDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FDF310066">
+          <body>A word, term, or phrase by which a MarketSegment is known and distinguished from other MarketSegments.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FDF38007A" name="description" visibility="public">
+        <ownedComment xmi:id="_yzLGojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FDF38007A">
+          <body>A narrative that explains what the MarketSegment is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FDF3D00E5" name="marketSegmentCategory" visibility="public">
+        <ownedComment xmi:id="_yzLGpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FDF3D00E5">
+          <body>A classification of MarketSegments because they share common characteristics. For example a vertical or horizontal MarketSegment.  Vertical MarketSegments put a PartyRole in a single segment, while a PartyRole can exist in multiple horizontal MarketSegments
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FDF460354" name="marketSegmentSubCategory" visibility="public">
+        <ownedComment xmi:id="_yzLGqDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FDF460354">
+          <body>A further classification of MarketSegments because they share common characteristics.  For example, a vertical category MarketSegment may be further categorized as consumer, business, or carrier.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FE18A03B9" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yzUQkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FE18A03B9">
+          <body>The period during which the MarketSegment is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410EBE1302DE" name="_geographicArea" visibility="public" isUnique="false" association="_3E3F0EC000E9410EBE120278">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C9AA98D02A0?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Geographic%20Place/GeographicArea?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0gjbTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0gjbDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410EBE160332" name="_partyProfileType" visibility="public" isUnique="false" association="_3E3F0EC000E9410EBE160115">
+        <type xmi:type="uml:Class" href="Party%20Profile%20ABE.efx#_3E3F0EC000E9410E990C035F?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileType?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUYzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUYjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410EBE1A03A6" name="_salesChannel" visibility="public" isUnique="false" association="_3E3F0EC000E9410EBE190390">
+        <type xmi:type="uml:Class" href="Sales%20Channel%20ABE.efx#_3E3F0EC000E93C5DB95502AE?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Sales%20Channel%20ABE/SalesChannel?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUajNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUaTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FEFE8004A" name="_marketSegmentCharacteristic" visibility="public" type="_3E3F0EC000E9410EA2C600D5" isUnique="false" association="_3E3F0EC000E9410FEFE400BD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUhjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUhTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94111106E0286" name="_compositeMarketSegment" visibility="public" type="_3E3F0EC000E941110F7F032C" isUnique="false" association="_3E3F0EC000E94111106D02AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FaDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FZzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411CCA650346" name="_marketSegmentCharacteristicValue" visibility="public" type="_3E3F0EC000E9410EA2D8008A" isUnique="false" association="_3E3F0EC000E9411CCA6402C3">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FfTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FfDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9450BD1100271" name="_churnRetentionStatistic" visibility="public" isUnique="false" association="_3E3F0EC000E9450BD10E006D">
+        <type xmi:type="uml:Class" href="../Customer%20Domain/Customer%20Statistic%20ABE.efx#_3E3F0EC000E9414A4C2700B2?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Statistic%20ABE/ChurnRetentionStatistic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y09PXTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y09PXDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9450BD1A10128" name="_productOffering" visibility="public" isUnique="false" association="_3E3F0EC000E9450BD19F0251">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y09PZDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y09PYzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CA21FE50012" name="_partyDemographic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93C8FAAA90258?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/PartyDemographic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y2v_GzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y2v_GjNHEd2nE5zXHK_HsA"/>
+        <association href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93CA21FE30253?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/PartyDemographicCapturedFor?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94148B6AA01AC" name="_marketStatistic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Market%20Statistic%20ABE.efx#_3E3F0EC000E9410E928001DC?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE/MarketStatistic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y6BVkjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y6BVkTNHEd2nE5zXHK_HsA"/>
+        <association href="Market%20Statistic%20ABE.efx#_3E3F0EC000E94148B6A90291?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE/MarketStatisticGatheredForMarketSegment?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150420400A6" name="_competitor" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Competitor%20ABE.efx#_3E3F0EC000E9414F493000D0?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7XZVTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7XZVDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Competitor%20ABE.efx#_3E3F0EC000E9415042030004?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/CompetitorMarketSegment?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150432402E5" name="_competitorMarketSegmentSWOT" visibility="public" isUnique="false">
+        <type xmi:type="uml:AssociationClass" href="Competitor%20ABE.efx#_3E3F0EC000E9415042FA023A?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/CompetitorMarketSegmentSWOT?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUQTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUQDNHEd2nE5zXHK_HsA"/>
+        <association href="Competitor%20ABE.efx#_3E3F0EC000E9415043240096?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/MarketSegmentClassifies?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94152DEE90196" name="_competitorIntelligenceMarketSegment" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94151FA600371?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/CompetitorIntelligenceMarketSegment?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9mN-TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y9mN-DNHEd2nE5zXHK_HsA"/>
+        <association href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94152DEE802CB?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/MarketSegmentCategorizes?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94161BC770377" name="_competitorProductCorrelation" visibility="public" isUnique="false">
+        <type xmi:type="uml:AssociationClass" href="Competitor%20Product%20Correlation%20ABE.efx#_tMbhcFIQEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE/CompetitorProductCorrelation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuvTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuvDNHEd2nE5zXHK_HsA"/>
+        <association href="Competitor%20Product%20Correlation%20ABE.efx#_3E3F0EC000E94161BC7602CB?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE/CompProdCorrelationComparesMarketSegment?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9414A458E00BD" name="_marketingCampaign" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Marketing%20Campaign%20ABE.efx#_3E3F0EC000E94148C5810147?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Marketing%20Campaign%20ABE/MarketingCampaign?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zBeofTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zBeofDNHEd2nE5zXHK_HsA"/>
+        <association href="Marketing%20Campaign%20ABE.efx#_3E3F0EC000E9414A458D013E?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Marketing%20Campaign%20ABE/MarketingCampaignLauchedAcrossMarketSegment?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9410EA2C600D5" name="MarketSegmentCharacteristic" isAbstract="true">
+      <ownedComment xmi:id="_yzUQlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410EA2C600D5">
+        <body>A characteristic quality or distinctive feature of a MarketSegment.  The characteristic can be take on a discrete value, such as sex, can take on a range of values, (for example, household income of $50,000 - $100,000), or can be derived from a formula (for example, number of households = number of customer party roles). </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E942D3E406004B" name="ID" visibility="public">
+        <ownedComment xmi:id="_yzUQmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942D3E406004B">
+          <body>A unique identifier for the MarketSegmentCharacteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941110B7A0356" name="name" visibility="public">
+        <ownedComment xmi:id="_yzeBkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941110B7A0356">
+          <body>A word, term, or phrase by which the characteristic is known and distinguished from characteristics.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FEF8E0135" name="description" visibility="public">
+        <ownedComment xmi:id="_yzeBlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410FEF8E0135">
+          <body>A narrative that explains what the characteristic is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D036A00271" name="unique" visibility="public">
+        <ownedComment xmi:id="_yzeBmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D036A00271">
+          <body>An indicator that specifies if a value is unique for the specification.
+
+Possible values are; &quot;unique while value is in effect&quot; and &quot;unique whether value is in effect or not&quot;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443AA6CE00E0" name="valueType" visibility="public">
+        <ownedComment xmi:id="_yznykjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9443AA6CE00E0">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94626DDE20271" name="minCardinality" visibility="public">
+        <ownedComment xmi:id="_yznylTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94626DDE20271">
+          <body>The minimum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94626DDE20290" name="maxCardinality" visibility="public">
+        <ownedComment xmi:id="_yzw8gDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94626DDE20290">
+          <body>The maximum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D036A00272" name="extensible" visibility="public">
+        <ownedComment xmi:id="_yzw8gzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D036A00272">
+          <body>An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for an Entity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941192EEA0241" name="derivationFormula" visibility="public">
+        <ownedComment xmi:id="_yzw8hjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941192EEA0241">
+          <body>A rule or principle represented in symbols, numbers, or letters, often in the form of an equation used to derive the value of a characteristic value.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443AA7B10076" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yz6tgTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9443AA7B10076">
+          <body>The period of time for which a characteristic is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FF2500330" name="_geographicArea" visibility="public" isUnique="false" association="_3E3F0EC000E9410FF24F00D6">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C9AA98D02A0?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Geographic%20Place/GeographicArea?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUdDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUczNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FECA1002B" name="_demographicCharacteristic" visibility="public" isUnique="false" association="_3E3F0EC000E9410FECA10029">
+        <type xmi:type="uml:Class" href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93C8FAA1A00CC?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/DemographicCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUezNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUejNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9410FEFE8004C" name="_marketSegment" visibility="public" type="_3E3F0EC000E93C8FA9A80096" isUnique="false" association="_3E3F0EC000E9410FEFE400BD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FYTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FYDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941114EF0021F" name="_productOffering" visibility="public" isUnique="false" association="_3E3F0EC000E941114EEC0223">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FbDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FazNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94119466B01CB" name="_marketSegmentCharacteristicValue" visibility="public" type="_3E3F0EC000E9410EA2D8008A" isUnique="false" association="_3E3F0EC000E94119466A0332">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FczNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FcjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94149E03901D6" name="_compositeMarketSegmentCharacteristic" visibility="public" type="_3E3F0EC000E94149DE290192" isUnique="false" association="_3E3F0EC000E94149E03802BB">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y09PVjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y09PVTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9410EA2D8008A" name="MarketSegmentCharacteristicValue">
+      <ownedComment xmi:id="_yz6thDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9410EA2D8008A">
+        <body>A number or text that can be assigned to a MarketSegmentCharacteristic.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94149D85F0186" name="valueType" visibility="public">
+        <ownedComment xmi:id="_yz6thzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94149D85F0186">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D035DA02DE" name="default" visibility="public">
+        <ownedComment xmi:id="_y0D3cjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D035DA02DE">
+          <body>Indicates if the value is the default value for a characteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411164E60106" name="value" visibility="public">
+        <ownedComment xmi:id="_y0D3dTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9411164E60106">
+          <body>A discrete value that the characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE53C0029F" name="unitOfMeasure" visibility="public">
+        <ownedComment xmi:id="_y0D3eDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE53C0029F">
+          <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. Iin general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411164E60107" name="fromValue" visibility="public">
+        <ownedComment xmi:id="_y0NocjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9411164E60107">
+          <body>The low range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411164E60110" name="toValue" visibility="public">
+        <ownedComment xmi:id="_y0NodTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9411164E60110">
+          <body>The upper range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE53C002A0" name="rangeInterval" visibility="public">
+        <ownedComment xmi:id="_y0NoeDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE53C002A0">
+          <body>An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes.
+
+Possible values are &quot;open&quot;, &quot;closed&quot;, &quot;closedBottom&quot; and &quot;closedTop&quot;.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411164E60111" name="vaildFor" visibility="public">
+        <ownedComment xmi:id="_y0XZcjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9411164E60111">
+          <body>The period of time for which a value is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94110053700C9" name="_demoCharacteristicValue" visibility="public" isUnique="false" association="_3E3F0EC000E94110053301EF">
+        <type xmi:type="uml:Class" href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93C8FAA360266?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/DemoCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y0qUfzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y0qUfjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94119466B01CD" name="theMarketSegmentCharacteristic " visibility="public" type="_3E3F0EC000E9410EA2C600D5" isUnique="false" association="_3E3F0EC000E94119466A0332">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FdjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FdTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411CCA65031E" name="_marketSegment" visibility="public" type="_3E3F0EC000E93C8FA9A80096" isUnique="false" association="_3E3F0EC000E9411CCA6402C3">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FejNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FeTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941110F7F032C" name="CompositeMarketSegment">
+      <ownedComment xmi:id="_y0XZdTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941110F7F032C">
+        <body>A type of MarketSegment that is formed by aggregating other MarketSegments, which may be Composite or Atomic MarketSegments.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94111105B0258" general="_3E3F0EC000E93C8FA9A80096"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94111106E025E" name="_marketSegment" visibility="public" type="_3E3F0EC000E93C8FA9A80096" isUnique="false" aggregation="shared" association="_3E3F0EC000E94111106D02AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FZTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FZDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941110F8E02FB" name="AtomicMarketSegment">
+      <ownedComment xmi:id="_y0XZeTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941110F8E02FB">
+        <body>A type of MarketSegment that does not have any subordinate MarketSegments, that is, an AtomicMarketSegment is a leaf-level MarketSegment.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94111105F0073" general="_3E3F0EC000E93C8FA9A80096"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94149DE290192" name="CompositeMarketSegmentCharacteristic">
+      <ownedComment xmi:id="_y0gjYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94149DE290192">
+        <body>A type of MarketSegmentCharacteristic that is formed by aggregating other MarketSegmentCharacteristic, which may be Composite or Atomic MarketSegmentCharacteristic.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94149E02401D7" general="_3E3F0EC000E9410EA2C600D5"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94149E03901C2" name="_marketSegmentCharacteristic" visibility="public" type="_3E3F0EC000E9410EA2C600D5" isUnique="false" aggregation="shared" association="_3E3F0EC000E94149E03802BB">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y09PUzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y09PUjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94149DE3A01D2" name="AtomicMarketSegmentCharacteristic">
+      <ownedComment xmi:id="_y0gjZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94149DE3A01D2">
+        <body>A type of MarketSegmentCharacteristic that does not have any subordinate MarketSegmentCharacteristics, that is, an AtomicMarketSegmentCharacteristic is a leaf-level MarketSegmentCharacteristic.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94149E02C0246" general="_3E3F0EC000E9410EA2C600D5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410EBE120278" name="MarketSegementCovers">
+      <memberEnd href="#_3E3F0EC000E9410EBE1302DE?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_geographicArea?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E9410EBE130306?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Geographic%20Place/GeographicArea/_marketSegment?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410EBE160115" name="MarketSegmentProfiledBy">
+      <memberEnd href="#_3E3F0EC000E9410EBE160332?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_partyProfileType?"/>
+      <memberEnd href="Party%20Profile%20ABE.efx#_3E3F0EC000E9410EBE160334?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileType/_marketSegment?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410EBE190390" name="MarketSegmentServedBy">
+      <memberEnd href="#_3E3F0EC000E9410EBE1A03A6?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_salesChannel?"/>
+      <memberEnd href="Sales%20Channel%20ABE.efx#_3E3F0EC000E9410EBE1A03B0?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Sales%20Channel%20ABE/SalesChannel/_marketSegment?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410FF24F00D6" name="GeographicAreaDefinesCoverageOf">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E9410FF2500326?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Geographic%20Place/GeographicArea/_marketSegmentCharacteristic?"/>
+      <memberEnd href="#_3E3F0EC000E9410FF2500330?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegmentCharacteristic/_geographicArea?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410FECA10029" name="DemographicMarketSegmentCharacteristicDefinedBy">
+      <memberEnd href="Party%20Demographic%20ABE.efx#_3E3F0EC000E9410FECA1002A?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/DemographicCharacteristic/_marketSegmentCharacteristic?"/>
+      <memberEnd href="#_3E3F0EC000E9410FECA1002B?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegmentCharacteristic/_demographicCharacteristic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94110053301EF" name="MarketSegmentCharacteristicValueDefinedBy">
+      <memberEnd href="#_3E3F0EC000E94110053700C9?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegmentCharacteristicValue/_demoCharacteristicValue?"/>
+      <memberEnd href="Party%20Demographic%20ABE.efx#_3E3F0EC000E94110053700DD?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/DemoCharacteristicValue/_marketSegmentCharacteristicValue?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9410FEFE400BD" name="MarketSegmentDescribedByMarketSegmentCharacteristic" memberEnd="_3E3F0EC000E9410FEFE8004A _3E3F0EC000E9410FEFE8004C"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94111106D02AD" name="CompositeMarketSegmentComprisedOf" memberEnd="_3E3F0EC000E94111106E025E _3E3F0EC000E94111106E0286"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941114EEC0223" name="ProdOfferMarketSegmentCharacteristicDefinedBy">
+      <memberEnd href="#_3E3F0EC000E941114EF0021F?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegmentCharacteristic/_productOffering?"/>
+      <memberEnd href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E941114EF00283?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_marketSegmentCharacteristic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94119466A0332" name="MarketSegmentCharacteristicEnumeratedUsing" memberEnd="_3E3F0EC000E94119466B01CB _3E3F0EC000E94119466B01CD"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9411CCA6402C3" name="MarketSegmentDescribedByMarketSegmentCharacteristicValue" memberEnd="_3E3F0EC000E9411CCA65031E _3E3F0EC000E9411CCA650346"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94149E03802BB" name="CompositeMarketSegmentCharacteristicComprisedOf" memberEnd="_3E3F0EC000E94149E03901C2 _3E3F0EC000E94149E03901D6"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9450BD10E006D" name="ChurnRetentionStatisticMeasures">
+      <memberEnd href="../Customer%20Domain/Customer%20Statistic%20ABE.efx#_3E3F0EC000E9450BD1100251?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Statistic%20ABE/ChurnRetentionStatistic/_marketSegment?"/>
+      <memberEnd href="#_3E3F0EC000E9450BD1100271?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_churnRetentionStatistic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9450BD19F0251" name="ProdOfferingTargetedTo">
+      <memberEnd href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E9450BD1A10109?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_marketSegment?"/>
+      <memberEnd href="#_3E3F0EC000E9450BD1A10128?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Party%20Demographic%20ABE.efx#_3E3F0EC000E93C1905D2007F?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Party%20Profile%20ABE.efx#_3E3F0EC000E9410E9902021A?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Market%20Statistic%20ABE.efx#_3E3F0EC000E9411CCDEE0153?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yzBVozNHEd2nE5zXHK_HsA" base_Comment="_yzBVojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzBVpjNHEd2nE5zXHK_HsA" base_Comment="_yzBVpTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzLGoDNHEd2nE5zXHK_HsA" base_Comment="_yzBVqDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzLGozNHEd2nE5zXHK_HsA" base_Comment="_yzLGojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzLGpjNHEd2nE5zXHK_HsA" base_Comment="_yzLGpTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzUQkDNHEd2nE5zXHK_HsA" base_Comment="_yzLGqDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzUQkzNHEd2nE5zXHK_HsA" base_Comment="_yzUQkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzUQljNHEd2nE5zXHK_HsA" base_Comment="_yzUQlTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzeBkDNHEd2nE5zXHK_HsA" base_Comment="_yzUQmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzeBkzNHEd2nE5zXHK_HsA" base_Comment="_yzeBkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzeBljNHEd2nE5zXHK_HsA" base_Comment="_yzeBlTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yznykDNHEd2nE5zXHK_HsA" base_Comment="_yzeBmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yznykzNHEd2nE5zXHK_HsA" base_Comment="_yznykjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yznyljNHEd2nE5zXHK_HsA" base_Comment="_yznylTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzw8gTNHEd2nE5zXHK_HsA" base_Comment="_yzw8gDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzw8hDNHEd2nE5zXHK_HsA" base_Comment="_yzw8gzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yzw8hzNHEd2nE5zXHK_HsA" base_Comment="_yzw8hjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yz6tgjNHEd2nE5zXHK_HsA" base_Comment="_yz6tgTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yz6thTNHEd2nE5zXHK_HsA" base_Comment="_yz6thDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0D3cDNHEd2nE5zXHK_HsA" base_Comment="_yz6thzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0D3czNHEd2nE5zXHK_HsA" base_Comment="_y0D3cjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0D3djNHEd2nE5zXHK_HsA" base_Comment="_y0D3dTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0NocDNHEd2nE5zXHK_HsA" base_Comment="_y0D3eDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0NoczNHEd2nE5zXHK_HsA" base_Comment="_y0NocjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0NodjNHEd2nE5zXHK_HsA" base_Comment="_y0NodTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0XZcDNHEd2nE5zXHK_HsA" base_Comment="_y0NoeDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0XZczNHEd2nE5zXHK_HsA" base_Comment="_y0XZcjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0XZdjNHEd2nE5zXHK_HsA" base_Comment="_y0XZdTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0gjYDNHEd2nE5zXHK_HsA" base_Comment="_y0XZeTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0gjZDNHEd2nE5zXHK_HsA" base_Comment="_y0gjYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y0gjaDNHEd2nE5zXHK_HsA" base_Comment="_y0gjZzNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Etjrjy8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93C8FA94B00C4" implementationPackage="segment"/>
+  <TIPProfile:tipClass xmi:id="_EttcIC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93C8FA9A80096"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcIS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FDF25004B"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcIi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FDF310066"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcIy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FDF38007A"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcJC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FDF3D00E5"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcJS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FDF460354"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcJi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FE18A03B9"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcJy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410EBE1302DE"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcKC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410EBE160332"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcKS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410EBE1A03A6"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcKi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FEFE8004A"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcKy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94111106E0286"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcLC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411CCA650346"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcLS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9450BD1100271"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcLi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9450BD1A10128"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcLy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CA21FE50012"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcMC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94148B6AA01AC"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcMS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150420400A6"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcMi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150432402E5"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcMy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94152DEE90196"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcNC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94161BC770377"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcNS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9414A458E00BD"/>
+  <TIPProfile:tipClass xmi:id="_EttcNi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9410EA2C600D5"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcNy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E942D3E406004B"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcOC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941110B7A0356"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcOS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FEF8E0135"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcOi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947D036A00271"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcOy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9443AA6CE00E0"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcPC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94626DDE20271"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcPS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94626DDE20290"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcPi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947D036A00272"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcPy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941192EEA0241"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcQC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9443AA7B10076"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcQS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FF2500330"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcQi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FECA1002B"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcQy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9410FEFE8004C"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcRC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941114EF0021F"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcRS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94119466B01CB"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcRi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94149E03901D6"/>
+  <TIPProfile:tipClass xmi:id="_EttcRy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9410EA2D8008A"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcSC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94149D85F0186"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcSS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947D035DA02DE"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcSi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411164E60106"/>
+  <TIPProfile:tipAttribute xmi:id="_EttcSy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947BE53C0029F"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NIC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411164E60107"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NIS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411164E60110"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NIi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947BE53C002A0"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NIy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411164E60111"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NJC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94110053700C9"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NJS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94119466B01CD"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NJi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411CCA65031E"/>
+  <TIPProfile:tipClass xmi:id="_Et3NJy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941110F7F032C"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NKC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94111106E025E"/>
+  <TIPProfile:tipClass xmi:id="_Et3NKS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941110F8E02FB"/>
+  <TIPProfile:tipClass xmi:id="_Et3NKi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E94149DE290192"/>
+  <TIPProfile:tipAttribute xmi:id="_Et3NKy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94149E03901C2"/>
+  <TIPProfile:tipClass xmi:id="_Et3NLC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E94149DE3A01D2"/>
+</xmi:XMI>

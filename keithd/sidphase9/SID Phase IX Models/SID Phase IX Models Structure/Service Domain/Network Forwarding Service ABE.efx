@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37A85C0365" name="Network Forwarding Service ABE">
+    <eAnnotations xmi:id="_xmV4gTQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93E37A8760145?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE?"/>
+      <references xmi:type="uml:Package" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93E37A2A40251?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_xmV4gDQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DBCB818032F?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901B6" name="NetworkForwardingService" isAbstract="true">
+      <ownedComment xmi:id="_yJJSMTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901B6">
+        <body>The programming of a QoSService is represented in DEN-ng as a set of NetworkForwardingServices. This is because when traffic is forwarded, it can be differentiated from other traffic. During the forwarding process, packets can be (for example) queued or dropped. These are two examples of different types of QoS that are grouped into what are called TrafficConditioningServices in DEN-ng.
+
+In order to packets to be identified, they need to be classified and marked. This is, in DEN-ng, termed a TrafficIdentificationService.
+
+Both TrafficIdentificationService and TrafficConditioningService are subclassed from NetworkForwardingService. A TrafficIdentificationService is used to classify and mark packets to separate one traffic flow from another traffic flow. Once this is done, different means of defining how packets are forwarded can be defined, such as queuing and dropping, which are different types of TrafficConditioningServices.
+
+Thus, we see that a given QoSService technology can be programmed using a particular set of NetworkForwardingServices, which is represented in generic fashion by the ForwardingDefinedBy relationship.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E37C66800DA">
+        <general xmi:type="uml:Class" href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93E37C3A8010A?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingServiceAtomic?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DC4364900BD" name="_qoSService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJAIRjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJAIRTNHEd2nE5zXHK_HsA"/>
+        <association href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DC43644021C?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/ForwardingDefinedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901BB" name="_networkForwardingService" visibility="public" type="_3E3F0EC000E93DB57B3901B6" isUnique="false" association="_3E3F0EC000E93DB57B3901BA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJJSOTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJJSODNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901BC" name="_networkForwardingService1" visibility="public" type="_3E3F0EC000E93DB57B3901B6" isUnique="false" association="_3E3F0EC000E93DB57B3901BA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJTDMDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJJSOzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DB57B3901BA" name="NextForwardingService" memberEnd="_3E3F0EC000E93DB57B3901BB _3E3F0EC000E93DB57B3901BC">
+      <ownedComment xmi:id="_yJJSNTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901BA">
+        <body>This association defines a dependency, in the form of a defined sequencing between two NetworkForwardingService objects, where one NetworkForwardingService must follow the other NetworkForwardingService. This is used to model complex forwarding mechanisms that can be decomposed into two or more simpler forwarding mechanisms.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93E37A2A40251?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93E37A8760145?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yJJSMjNHEd2nE5zXHK_HsA" base_Comment="_yJJSMTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJJSNjNHEd2nE5zXHK_HsA" base_Comment="_yJJSNTNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Eq4Kli8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37A85C0365" implementationPackage="nfs"/>
+  <TIPProfile:tipClass xmi:id="_Eq4Kly8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901B6"/>
+  <TIPProfile:tipAttribute xmi:id="_Eq4KmC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DC4364900BD"/>
+  <TIPProfile:tipAttribute xmi:id="_ErB7kC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DB57B3901BB"/>
+  <TIPProfile:tipAttribute xmi:id="_ErB7kS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DB57B3901BC"/>
+</xmi:XMI>
