@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_z6ZjQGAoEd6MP5y0NVAXlQ" name="MyModel">
+  <eAnnotations xmi:id="_z6ZjQWAoEd6MP5y0NVAXlQ" source="uml2.diagrams" references="_z6ZjQmAoEd6MP5y0NVAXlQ">
+    <contents xmi:type="notation:Diagram" xmi:id="_z6ZjQmAoEd6MP5y0NVAXlQ" type="Class" name="SIDPhysicalResourceHierarchy">
+      <children xmi:id="_5kpwUGAoEd6MP5y0NVAXlQ">
+        <children xmi:id="_5kpwU2AoEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_5kpwVGAoEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_5kpwVWAoEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_5kpwVmAoEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_5kpwV2AoEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_5kpwWGAoEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5kpwWWAoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5kpwWmAoEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5kpwW2AoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5kpwXGAoEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5kpwXWAoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5kpwXmAoEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_5kpwX2AoEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5kpwUWAoEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5kpwUmAoEd6MP5y0NVAXlQ" x="4755" y="-8559"/>
+      </children>
+      <children xmi:id="_7XZgUGAoEd6MP5y0NVAXlQ">
+        <children xmi:id="_7XZgU2AoEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_7XZgVGAoEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_7XZgVWAoEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_7XZgVmAoEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_7XZgV2AoEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_7XZgWGAoEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7XZgWWAoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_7XZgWmAoEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7XZgW2AoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_7XZgXGAoEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7XZgXWAoEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_7XZgXmAoEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_7XZgX2AoEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7XZgUWAoEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAD87C0261?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ManagedHardware?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XZgUmAoEd6MP5y0NVAXlQ" x="13948" y="-14899"/>
+      </children>
+      <children xmi:id="_GDq1wGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_GDq1w2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_GDq1xGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_GDq1xWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_GDq1xmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_GDq1x2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_GDq1yGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GDq1yWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_GDq1ymApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GDq1y2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_GDq1zGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GDq1zWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_GDq1zmApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_GDq1z2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_GDq1wWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93CDAA53A023C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GDq1wmApEd6MP5y0NVAXlQ" x="4755" y="-14899"/>
+      </children>
+      <children xmi:id="_LWYFgGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_LWYFg2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_LWYFhGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_LWYFhWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_LWYFhmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_LWYFh2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_LWYFiGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LWYFiWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_LWYFimApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LWYFi2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_LWYFjGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_LWYFjWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_LWYFjmApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_LWYFj2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_LWYFgWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20ABE.efx#_3E3F0EC000E93DDE851703CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LWYFgmApEd6MP5y0NVAXlQ" x="-3170" y="-5072"/>
+      </children>
+      <children xmi:id="_WZl7UGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_WZl7U2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_WZl7VGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_WZl7VWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_WZl7VmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_WZl7V2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_WZl7WGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WZl7WWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_WZl7WmApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WZl7W2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_WZl7XGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_WZl7XWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_WZl7XmApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_WZl7X2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_WZl7UWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93CDAFB610004?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WZl7UmApEd6MP5y0NVAXlQ" x="14265" y="-3487"/>
+      </children>
+      <children xmi:id="_zhAWYGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_zhAWY2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_zhAWZGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_zhAWZWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_zhAWZmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_zhAWZ2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_zhAWaGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zhAWaWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_zhAWamApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zhAWa2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_zhAWbGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zhAWbWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_zhAWbmApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zhAWb2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zhAWYWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zhAWYmApEd6MP5y0NVAXlQ" x="-4755" y="-8876"/>
+      </children>
+      <children xmi:id="_3mYQUGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_3mYQU2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_3mYQVGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_3mYQVWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_3mYQVmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_3mYQV2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_3mYQWGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3mYQWWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_3mYQWmApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3mYQW2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_3mYQXGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_3mYQXWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_3mhaQGApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_3mhaQWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_3mYQUWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mYQUmApEd6MP5y0NVAXlQ" x="-2853" y="-11412"/>
+      </children>
+      <children xmi:id="_5DEQwGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_5DEQw2ApEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_5DEQxGApEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_5DEQxWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_5DEQxmApEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_5DEQx2ApEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_5DEQyGApEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5DEQyWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5DEQymApEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5DEQy2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5DEQzGApEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5DEQzWApEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_5DEQzmApEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_5DEQz2ApEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5DEQwWApEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDA9E0C0384?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/RootEntity?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5DEQwmApEd6MP5y0NVAXlQ" x="-3487" y="-14582"/>
+      </children>
+      <children xmi:id="_UB09QGAqEd6MP5y0NVAXlQ">
+        <children xmi:id="_UB09Q2AqEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_UB09RGAqEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_UB09RWAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_UB09RmAqEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_UB09R2AqEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_UB09SGAqEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UB09SWAqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_UB09SmAqEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UB09S2AqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_UB09TGAqEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_UB09TWAqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_UB09TmAqEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_UB09T2AqEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_UB09QWAqEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UB09QmAqEd6MP5y0NVAXlQ" x="15216" y="-8242"/>
+      </children>
+      <children xmi:id="_X6reIGAqEd6MP5y0NVAXlQ">
+        <children xmi:id="_X6reI2AqEd6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_X6reJGAqEd6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_X6reJWAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_X6reJmAqEd6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_X6reJ2AqEd6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_X6reKGAqEd6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X6reKWAqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_X6reKmAqEd6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X6reK2AqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_X6reLGAqEd6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X6reLWAqEd6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_X6reLmAqEd6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_X6reL2AqEd6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_X6reIWAqEd6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEA6B0245?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X6reImAqEd6MP5y0NVAXlQ" x="26945" y="-3170"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_z6ZjQ2AoEd6MP5y0NVAXlQ"/>
+      <edges xmi:id="_51fosGAoEd6MP5y0NVAXlQ" source="_5kpwUGAoEd6MP5y0NVAXlQ" target="_5kpwUGAoEd6MP5y0NVAXlQ">
+        <children xmi:id="_51fos2AoEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_51pZsGAoEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_51pZsWAoEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_51fotGAoEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_51pZsmAoEd6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_51pZtGAoEd6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZs2AoEd6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_51pZtWAoEd6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_51pZt2AoEd6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZtmAoEd6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_51pZuGAoEd6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_51pZumAoEd6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZuWAoEd6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_51pZu2AoEd6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_51pZvWAoEd6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZvGAoEd6MP5y0NVAXlQ" x="-979" y="-569"/>
+        </children>
+        <children xmi:id="_51pZvmAoEd6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_51pZwGAoEd6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_51pZwWAoEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZv2AoEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_51pZwmAoEd6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_51pZxGAoEd6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_51pZxWAoEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZw2AoEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_51pZxmAoEd6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_51pZyGAoEd6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_51pZyWAoEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZx2AoEd6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_51pZymAoEd6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_51pZzGAoEd6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_51pZzWAoEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51pZy2AoEd6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_51fosWAoEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93DDEE7070297?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ContainsHardware?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_51fosmAoEd6MP5y0NVAXlQ" points="[41, 0, 2460, 1414]$[1109, 0, 3528, 1414]$[1109, 1628, 3528, 3042]$[-1113, 1628, 1306, 3042]$[-1561, 585, 858, 1999]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_88-n8GAxEd6MP5y0NVAXlQ" id="(0.9916832,0.85374236)"/>
+      </edges>
+      <edges xmi:id="_7XZgYGAoEd6MP5y0NVAXlQ" source="_7XZgUGAoEd6MP5y0NVAXlQ" target="_5kpwUGAoEd6MP5y0NVAXlQ">
+        <children xmi:id="_7XZgY2AoEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_7XZgZWAoEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_7XZgZmAoEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XZgZGAoEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_7XZgYWAoEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAE66B02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ManagedHardware/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7XZgYmAoEd6MP5y0NVAXlQ" points="[83, -1720, 10162, -8338]$[190, -3929, 10269, -10547]$[-5307, -3929, 4772, -10547]$[-5307, 11539, 4772, 4921]$[-10079, 11539, 0, 4921]$[-10079, 8617, 0, 1999]"/>
+      </edges>
+      <edges xmi:id="_GEacoGApEd6MP5y0NVAXlQ" source="_5kpwUGAoEd6MP5y0NVAXlQ" target="_GDq1wGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_GEaco2ApEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_GEacpWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_GEacpmApEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GEacpGApEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GEacoWApEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAB6030096?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GEacomApEd6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_LWYFkGApEd6MP5y0NVAXlQ" source="_GDq1wGApEd6MP5y0NVAXlQ" target="_LWYFgGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_LWYFk2ApEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_LWYFlWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_LWYFlmApEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LWYFlGApEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LWYFkWApEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93DDE855B0365?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LWYFkmApEd6MP5y0NVAXlQ" points="[0, -1720, 8242, -10489]$[0, -2722, 8242, -11491]$[-1710, -2722, 6532, -11491]$[-3986, -2722, 4256, -11491]$[-3986, 10909, 4256, 2140]$[-8242, 10973, 0, 2204]$[-8242, 9432, 0, 663]"/>
+      </edges>
+      <edges xmi:id="_zhAWcGApEd6MP5y0NVAXlQ" source="_LWYFgGApEd6MP5y0NVAXlQ" target="_zhAWYGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_zhAWc2ApEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_zhAWdWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_zhAWdmApEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zhAWdGApEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zhAWcWApEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20ABE.efx#_3E3F0EC000E93DDE854F0399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zhAWcmApEd6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_3mhaQmApEd6MP5y0NVAXlQ" source="_zhAWYGApEd6MP5y0NVAXlQ" target="_3mYQUGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_3mhaRWApEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_3mhaR2ApEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_3mhaSGApEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mhaRmApEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_3mhaQ2ApEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE85100399?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3mhaRGApEd6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_5DNasGApEd6MP5y0NVAXlQ" source="_3mYQUGApEd6MP5y0NVAXlQ" target="_5DEQwGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_5DNas2ApEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_5DNatWApEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_5DNatmApEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5DNatGApEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_5DNasWApEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE850A010F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5DNasmApEd6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_UB09UGAqEd6MP5y0NVAXlQ" source="_UB09QGAqEd6MP5y0NVAXlQ" target="_7XZgUGAoEd6MP5y0NVAXlQ">
+        <children xmi:id="_UB09U2AqEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_UB09VWAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_UB09VmAqEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UB09VGAqEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_UB09UWAqEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Hardware%20ABE.efx#_3E3F0EC000E93CDAFAD701BE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UB09UmAqEd6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_UB09V2AqEd6MP5y0NVAXlQ" source="_WZl7UGApEd6MP5y0NVAXlQ" target="_UB09QGAqEd6MP5y0NVAXlQ">
+        <children xmi:id="_UB09WmAqEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_UB09XGAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_UB09XWAqEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UB09W2AqEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_UB09WGAqEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93CDAFBF10322?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UB09WWAqEd6MP5y0NVAXlQ" points="[-216, -1508, 50, 3670]$[-266, -1857, 0, 3321]$[-266, -4092, 0, 1086]"/>
+      </edges>
+      <edges xmi:id="_X6reU2AqEd6MP5y0NVAXlQ" source="_X6reIGAqEd6MP5y0NVAXlQ" target="_UB09QGAqEd6MP5y0NVAXlQ">
+        <children xmi:id="_X61PIGAqEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_X61PImAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_X61PI2AqEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X61PIWAqEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_X6reVGAqEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEC3803A6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X6reVWAqEd6MP5y0NVAXlQ" points="[0, -1297, 12351, 3987]$[0, -2916, 12351, 2368]$[-12351, -2916, 0, 2368]$[-12351, -4198, 0, 1086]"/>
+      </edges>
+      <edges xmi:id="_X61PJGAqEd6MP5y0NVAXlQ" source="_X6reIGAqEd6MP5y0NVAXlQ" target="_WZl7UGApEd6MP5y0NVAXlQ">
+        <children xmi:id="_X61PJ2AqEd6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_X61PKWAqEd6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_X61PKmAqEd6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X61PKGAqEd6MP5y0NVAXlQ" x="-72" y="-460"/>
+        </children>
+        <children xmi:id="_X61PK2AqEd6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_X61PLWAqEd6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93EE21D01019E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PLGAqEd6MP5y0NVAXlQ" x="-954" y="-645"/>
+        </children>
+        <children xmi:id="_X61PLmAqEd6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_X61PMGAqEd6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93EE21D01019E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PL2AqEd6MP5y0NVAXlQ" x="816" y="505"/>
+        </children>
+        <children xmi:id="_X61PMWAqEd6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_X61PM2AqEd6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93EE21D01018A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/_equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PMmAqEd6MP5y0NVAXlQ" x="614" y="-182"/>
+        </children>
+        <children xmi:id="_X61PNGAqEd6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_X61PNmAqEd6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93EE21D01018A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/_equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PNWAqEd6MP5y0NVAXlQ" x="-315" y="464"/>
+        </children>
+        <children xmi:id="_X61PN2AqEd6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_X61POWAqEd6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X61POmAqEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93EE21D01019E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61POGAqEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_X61PO2AqEd6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_X61PPWAqEd6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X61PPmAqEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93EE21D01018A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/_equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PPGAqEd6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_X61PP2AqEd6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_X61PQWAqEd6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X61PQmAqEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20ABE.efx#_3E3F0EC000E93EE21D01019E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PQGAqEd6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_X61PQ2AqEd6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_X61PRWAqEd6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X61PRmAqEd6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Equipment%20Holder%20ABE.efx#_3E3F0EC000E93EE21D01018A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/_equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X61PRGAqEd6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_X61PJWAqEd6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE21D0002C9?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/EquipmentInHolder?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X61PJmAqEd6MP5y0NVAXlQ" points="[-2790, 0, 9295, 106]$[-4732, 0, 7353, 106]$[-8699, -57, 3386, 49]"/>
+      </edges>
+    </contents>
+    <contents xmi:type="notation:Diagram" xmi:id="_skd84GA7Ed6MP5y0NVAXlQ" type="Class" name="mTOPPhysicalResourceHierarchy">
+      <children xmi:id="_4dVBQGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_4dVBQ2A7Ed6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_4dVBRGA7Ed6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_4dVBRWA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_4dVBRmA7Ed6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_4dVBR2A7Ed6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_4dVBSGA7Ed6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4dVBSWA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_4dVBSmA7Ed6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4dVBS2A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_4dVBTGA7Ed6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4dVBTWA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_4deyQGA7Ed6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_4deyQWA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_4dVBQWA7Ed6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/MTOSI%202.0/Framework/IA/Framework.emx#_o9aZcA6yEdyd7PUNb-IYCQ?Framework/Data%20Object%20Classes/CommonObjectInfo?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4dVBQmA7Ed6MP5y0NVAXlQ" x="3487"/>
+      </children>
+      <children xmi:id="_6_AT0GA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_6_AT02A7Ed6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_6_AT1GA7Ed6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_6_AT1WA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_6_AT1mA7Ed6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_6_AT12A7Ed6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_6_AT2GA7Ed6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_6_AT2WA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_6_AT2mA7Ed6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_6_AT22A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_6_AT3GA7Ed6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_6_AT3WA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_6_AT3mA7Ed6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_6_AT32A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6_AT0WA7Ed6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/MTOSI%202.0/NetworkResourceBasic/IA/NetworkResourceBasic.emx#_xd-pIA6uEdyd7PUNb-IYCQ?NetworkResourceBasic/Data%20Object%20Classes/CommonResourceInfo?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6_AT0mA7Ed6MP5y0NVAXlQ" x="3487" y="6974"/>
+      </children>
+      <children xmi:id="_9hk-QGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_9hk-Q2A7Ed6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_9hk-RGA7Ed6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_9hk-RWA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_9hk-RmA7Ed6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_9hk-R2A7Ed6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_9hk-SGA7Ed6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-SWA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_9hk-SmA7Ed6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-S2A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_9hk-TGA7Ed6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-TWA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_9hk-TmA7Ed6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_9hk-T2A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9hk-QWA7Ed6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_MLLBUMNVEdydiYAu_Q32IQ?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hk-QmA7Ed6MP5y0NVAXlQ" x="2853" y="15216"/>
+      </children>
+      <children xmi:id="_-EAV4GA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_-EAV42A7Ed6MP5y0NVAXlQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_-EAV5GA7Ed6MP5y0NVAXlQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_-EAV5WA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+        <children xmi:id="_-EAV5mA7Ed6MP5y0NVAXlQ" type="Name"/>
+        <children xmi:id="_-EAV52A7Ed6MP5y0NVAXlQ" type="Parent"/>
+        <children xmi:id="_-EAV6GA7Ed6MP5y0NVAXlQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EAV6WA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_-EAV6mA7Ed6MP5y0NVAXlQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EAV62A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_-EAV7GA7Ed6MP5y0NVAXlQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EAV7WA7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <children xmi:id="_-EAV7mA7Ed6MP5y0NVAXlQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_-EAV72A7Ed6MP5y0NVAXlQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-EAV4WA7Ed6MP5y0NVAXlQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_A38HoMNXEdydiYAu_Q32IQ?NetworkResourceFulfillment/Data%20Object%20Classes/EquipmentHolder?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-EAV4mA7Ed6MP5y0NVAXlQ" x="22824" y="15850"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_skd84WA7Ed6MP5y0NVAXlQ"/>
+      <element xsi:nil="true"/>
+      <edges xmi:id="_6_AT4GA7Ed6MP5y0NVAXlQ" source="_6_AT0GA7Ed6MP5y0NVAXlQ" target="_4dVBQGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_6_AT42A7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_6_AT5WA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_6_AT5mA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6_AT5GA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_6_AT4WA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/MTOSI%202.0/NetworkResourceBasic/IA/NetworkResourceBasic.emx#_QPqP0A6-Edy1DqAHMbUTOw?NetworkResourceBasic/Data%20Object%20Classes/CommonResourceInfo/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6_AT4mA7Ed6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_9hk-UGA7Ed6MP5y0NVAXlQ" source="_9hk-QGA7Ed6MP5y0NVAXlQ" target="_6_AT0GA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_9hk-U2A7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_9hk-VWA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_9hk-VmA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hk-VGA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9hk-UWA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_eJbhMMNWEdydiYAu_Q32IQ?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9hk-UmA7Ed6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_9hk-V2A7Ed6MP5y0NVAXlQ" source="_9hk-QGA7Ed6MP5y0NVAXlQ" target="_9hk-QGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_9hk-WmA7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_9hk-XGA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_9hk-XWA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hk-W2A7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9hk-XmA7Ed6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_9hk-YGA7Ed6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmAxgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supports/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-X2A7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_9hk-YWA7Ed6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_9hk-Y2A7Ed6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmAxgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supports/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-YmA7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_9hk-ZGA7Ed6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_9hk-ZmA7Ed6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmARgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportedEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-ZWA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_9hk-Z2A7Ed6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_9hk-aWA7Ed6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmARgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportedEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-aGA7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_9hk-amA7Ed6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_9hk-bGA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-bWA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmAxgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supports/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-a2A7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9hk-bmA7Ed6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_9hk-cGA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-cWA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmARgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportedEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-b2A7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9hk-cmA7Ed6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_9hk-dGA7Ed6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-dWA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmAxgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supports/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-c2A7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_9hk-dmA7Ed6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_9hk-eGA7Ed6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9hk-eWA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmARgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportedEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-d2A7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9hk-WGA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCjmABgtEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supports?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9hk-WWA7Ed6MP5y0NVAXlQ" points="[5423, 2131, 5423, 2131]$[6595, 2592, 6595, 2592]$[7045, 5000, 7045, 5000]$[4055, 5450, 4055, 5450]$[2519, 3385, 2519, 3385]"/>
+      </edges>
+      <edges xmi:id="_9hk-emA7Ed6MP5y0NVAXlQ" source="_9hk-QGA7Ed6MP5y0NVAXlQ" target="_9hk-QGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_9hk-fWA7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_9hk-f2A7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_9hk-gGA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hk-fmA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9hk-gWA7Ed6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_9hk-g2A7Ed6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQxgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supportedBy/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-gmA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_9hk-hGA7Ed6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_9hk-hmA7Ed6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQxgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supportedBy/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-hWA7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_9hk-h2A7Ed6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_9hk-iWA7Ed6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQRgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportingEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-iGA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_9hk-imA7Ed6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_9huvQGA7Ed6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQRgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportingEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9hk-i2A7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_9huvQWA7Ed6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_9huvQ2A7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9huvRGA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQxgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supportedBy/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9huvQmA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9huvRWA7Ed6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_9huvR2A7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9huvSGA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQRgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportingEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9huvRmA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_9huvSWA7Ed6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_9huvS2A7Ed6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9huvTGA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQxgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supportedBy/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9huvSmA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_9huvTWA7Ed6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_9huvT2A7Ed6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9huvUGA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQRgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/Equipment/supportingEquipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9huvTmA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9hk-e2A7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2e2iQBgsEd2kdP--T2z0Zg?NetworkResourceFulfillment/Data%20Object%20Classes/supportedBy?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9hk-fGA7Ed6MP5y0NVAXlQ" points="[-3659, 3385, -3659, 3385]$[-4518, 4180, -4518, 4180]$[-7058, 4180, -7058, 4180]$[-7058, 2275, -7058, 2275]$[-5422, 1748, -5422, 1748]"/>
+      </edges>
+      <edges xmi:id="_-EAV8GA7Ed6MP5y0NVAXlQ" source="_-EAV4GA7Ed6MP5y0NVAXlQ" target="_9hk-QGA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_-EAV82A7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_-EAV9WA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_-EAV9mA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-EAV9GA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EAV92A7Ed6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_-EAV-WA7Ed6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubaroE8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EAV-GA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_-EAV-mA7Ed6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_-EAV_GA7Ed6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubaroE8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EAV-2A7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_-EAV_WA7Ed6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_-EJf0GA7Ed6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubUlAU8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EAV_mA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_-EJf0WA7Ed6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_-EJf02A7Ed6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubUlAU8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf0mA7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_-EJf1GA7Ed6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_-EJf1mA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf12A7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubaroE8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf1WA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EJf2GA7Ed6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_-EJf2mA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf22A7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubUlAU8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf2WA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EJf3GA7Ed6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_-EJf3mA7Ed6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf32A7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubaroE8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf3WA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_-EJf4GA7Ed6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_-EJf4mA7Ed6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf42A7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubUlAU8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipment?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf4WA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-EAV8WA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_ubUlAE8bEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-EAV8mA7Ed6MP5y0NVAXlQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_-EJf5GA7Ed6MP5y0NVAXlQ" source="_-EAV4GA7Ed6MP5y0NVAXlQ" target="_-EAV4GA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_-EJf52A7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_-EJf6WA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_-EJf6mA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-EJf6GA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EJf62A7Ed6MP5y0NVAXlQ" type="ToMultiplicityLabel">
+          <children xmi:id="_-EJf7WA7Ed6MP5y0NVAXlQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVdE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf7GA7Ed6MP5y0NVAXlQ" y="396"/>
+        </children>
+        <children xmi:id="_-EJf7mA7Ed6MP5y0NVAXlQ" type="ToRoleLabel">
+          <children xmi:id="_-EJf8GA7Ed6MP5y0NVAXlQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVdE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf72A7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_-EJf8WA7Ed6MP5y0NVAXlQ" type="FromMultiplicityLabel">
+          <children xmi:id="_-EJf82A7Ed6MP5y0NVAXlQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVcE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf8mA7Ed6MP5y0NVAXlQ" x="-1023" y="358"/>
+        </children>
+        <children xmi:id="_-EJf9GA7Ed6MP5y0NVAXlQ" type="FromRoleLabel">
+          <children xmi:id="_-EJf9mA7Ed6MP5y0NVAXlQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVcE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf9WA7Ed6MP5y0NVAXlQ" y="-397"/>
+        </children>
+        <children xmi:id="_-EJf92A7Ed6MP5y0NVAXlQ" type="ToQualifierLabel">
+          <children xmi:id="_-EJf-WA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf-mA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVdE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf-GA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EJf-2A7Ed6MP5y0NVAXlQ" type="FromQualifierLabel">
+          <children xmi:id="_-EJf_WA7Ed6MP5y0NVAXlQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJf_mA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVcE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJf_GA7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <children xmi:id="_-EJf_2A7Ed6MP5y0NVAXlQ" type="ToConstraintLabel">
+          <children xmi:id="_-EJgAWA7Ed6MP5y0NVAXlQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJgAmA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVdE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJgAGA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <children xmi:id="_-EJgA2A7Ed6MP5y0NVAXlQ" type="FromConstraintLabel">
+          <children xmi:id="_-EJgBWA7Ed6MP5y0NVAXlQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-EJgBmA7Ed6MP5y0NVAXlQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCHVcE8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E/equipmentHolder?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-EJgBGA7Ed6MP5y0NVAXlQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-EJf5WA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_QCBO0E8cEdyfLry44XcUuw?NetworkResourceFulfillment/Data%20Object%20Classes/%3CAssociation%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-EJf5mA7Ed6MP5y0NVAXlQ" points="[40, 4, 1321, -909]$[1772, 197, 3053, -716]$[1772, 2737, 3053, 1824]$[-1059, 3055, 222, 2142]$[-1273, 990, 8, 77]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LhmjcGA8Ed6MP5y0NVAXlQ" id="(0.9962659,0.82003945)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MPC4QGA8Ed6MP5y0NVAXlQ" id="(0.8751867,0.986019)"/>
+      </edges>
+      <edges xmi:id="_-EJgB2A7Ed6MP5y0NVAXlQ" source="_-EAV4GA7Ed6MP5y0NVAXlQ" target="_6_AT0GA7Ed6MP5y0NVAXlQ">
+        <children xmi:id="_-EJgCmA7Ed6MP5y0NVAXlQ" type="NameLabel">
+          <children xmi:id="_-EJgDGA7Ed6MP5y0NVAXlQ" type="Stereotype"/>
+          <children xmi:id="_-EJgDWA7Ed6MP5y0NVAXlQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-EJgC2A7Ed6MP5y0NVAXlQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-EJgCGA7Ed6MP5y0NVAXlQ" lineWidth="1" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="platform:/resource/MTOSI%202.0/NetworkResourceFulfillment/IA/NetworkResourceFulfillment.emx#_2guNcMNcEdydiYAu_Q32IQ?NetworkResourceFulfillment/Data%20Object%20Classes/EquipmentHolder/%3CGeneralization%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-EJgCWA7Ed6MP5y0NVAXlQ" points="[0, -2750, 19734, 7395]$[0, -5318, 19734, 4827]$[-19912, -5318, -178, 4827]$[-19788, -8663, -54, 1482]"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:id="_z6ZjRGAoEd6MP5y0NVAXlQ" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_z6ZjRWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBActivityDiagram" value="1"/>
+    <details xmi:id="_z6ZjRmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBClassDiagram" value="1"/>
+    <details xmi:id="_z6ZjR2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBComponentDiagram" value="1"/>
+    <details xmi:id="_z6ZjSGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBSequenceDiagram" value="1"/>
+    <details xmi:id="_z6ZjSWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBUseCaseDiagram" value="1"/>
+    <details xmi:id="_z6ZjSmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBAction" value="1"/>
+    <details xmi:id="_z6ZjS2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBActivity1" value="1"/>
+    <details xmi:id="_z6ZjTGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBActivity2" value="1"/>
+    <details xmi:id="_z6ZjTWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBActivity3" value="1"/>
+    <details xmi:id="_z6ZjTmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBClass" value="1"/>
+    <details xmi:id="_z6ZjT2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBClassTemplateParameter" value="1"/>
+    <details xmi:id="_z6ZjUGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBCollaboration" value="1"/>
+    <details xmi:id="_z6ZjUWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBCollaborationUse" value="1"/>
+    <details xmi:id="_z6ZjUmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBComment1" value="1"/>
+    <details xmi:id="_z6ZjU2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBComment2" value="1"/>
+    <details xmi:id="_z6ZjVGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBCommunication" value="1"/>
+    <details xmi:id="_z6ZjVWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBComponent" value="1"/>
+    <details xmi:id="_z6ZjVmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBComponentTemplateParameter" value="1"/>
+    <details xmi:id="_z6ZjV2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBFragment" value="1"/>
+    <details xmi:id="_z6ZjWGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBFunction" value="1"/>
+    <details xmi:id="_z6ZjWWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBInterface" value="1"/>
+    <details xmi:id="_z6ZjWmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBInterfaceTemplateParameter" value="1"/>
+    <details xmi:id="_z6ZjW2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBLifeLine" value="1"/>
+    <details xmi:id="_z6ZjXGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBPackage" value="1"/>
+    <details xmi:id="_z6ZjXWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBPackageTemplateParameter" value="1"/>
+    <details xmi:id="_z6ZjXmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBRealization" value="1"/>
+    <details xmi:id="_z6ZjX2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBRelationship1" value="1"/>
+    <details xmi:id="_z6ZjYGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBRelationship2" value="1"/>
+    <details xmi:id="_z6ZjYWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBSequence1" value="1"/>
+    <details xmi:id="_z6ZjYmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBSequence2" value="1"/>
+    <details xmi:id="_z6ZjY2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBSubsystem" value="1"/>
+    <details xmi:id="_z6ZjZGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBTypes1" value="1"/>
+    <details xmi:id="_z6ZjZWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBTypes2" value="1"/>
+    <details xmi:id="_z6ZjZmAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBTypes3" value="1"/>
+    <details xmi:id="_z6ZjZ2AoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBTypes4" value="1"/>
+    <details xmi:id="_z6ZjaGAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBUseCase1" value="1"/>
+    <details xmi:id="_z6ZjaWAoEd6MP5y0NVAXlQ" key="com.ibm.xtools.activities.umlBBUseCase2" value="1"/>
+  </eAnnotations>
+  <packageImport xmi:id="_z6ZjamAoEd6MP5y0NVAXlQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <profileApplication xmi:id="_z6ZjdWAoEd6MP5y0NVAXlQ">
+    <eAnnotations xmi:id="_z6ZjdmAoEd6MP5y0NVAXlQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_z6Zjd2AoEd6MP5y0NVAXlQ">
+    <eAnnotations xmi:id="_z6ZjeGAoEd6MP5y0NVAXlQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_z6ZjeWAoEd6MP5y0NVAXlQ">
+    <eAnnotations xmi:id="_z6ZjemAoEd6MP5y0NVAXlQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>
