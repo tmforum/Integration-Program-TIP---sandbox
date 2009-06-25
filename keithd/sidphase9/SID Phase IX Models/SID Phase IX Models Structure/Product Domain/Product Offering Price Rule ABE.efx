@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E32012B03B2" name="Product Offering Price Rule  ABE">
+    <eAnnotations xmi:id="_1H1skTN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_1H1skDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93D6AAA620398?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E3204A202C7" name="ProdOfferPricePolicyValue">
+      <ownedComment xmi:id="_zKRYCTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3204A202C7">
+        <body>An amount expressed in money or another medium of exchange that is thought to be a fair exchange for a ProductOffering as the result of the evaluation of a PolicyStatement.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94074B8C40067">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Value%20Entities.efx#_3E3F0EC000E93D77E58C02A7?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Value%20Entities/PolicyValue?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E28CBA600D9" name="_productOfferingPrice" visibility="public" isUnique="false" association="_3E3F0EC000E93E28CBA401D1">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zKtc5jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zKtc5TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9406C478D02F3" name="ProdOfferPricePolicyVariable">
+      <ownedComment xmi:id="_zKRYDTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9406C478D02F3">
+        <body>A type of PolicyVariable that represents a ProductOffering, ProductOfferingPrice, or ProductSpecificationType.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9406C4806031F">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Variable%20Entities.efx#_3E3F0EC000E93D77E58C0298?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E941631EC10355" name="derivationAlgorithm" visibility="public">
+        <ownedComment xmi:id="_zKah8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941631EC10355">
+          <body>A reference to a  logical sequence of steps for determining the value of the ProdOfferPricePolicyVariable.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406C47A50050" name="_productOfferingPrice" visibility="public" isUnique="false" association="_3E3F0EC000E9406C47A5004E">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zK3N8jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zK3N8TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406C47B0018C" name="_productOffering" visibility="public" isUnique="false" association="_3E3F0EC000E9406C47B0018A">
+        <type xmi:type="uml:Class" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zK3N-TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zK3N-DNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406C47B50084" name="_productSpecificationType" visibility="public" isUnique="false" association="_3E3F0EC000E9406C47B50079">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DBB2A01FE?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecificationType?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLA-5jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zLA-5TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9406DEF7901D1" name="ProdOfferPriceCondition">
+      <ownedComment xmi:id="_zKah9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9406DEF7901D1">
+        <body>Part of a PolicyStatement representing a single constraint that defines the assessment of the rule.  The constraint is specified in terms of one or more ProductOffering, ProductSpecificationType, ProductOfferingPrice, and/or ProductOfferingPriceComponent.  ProdOfferPriceRuleCondition is a type of PolicyCondition.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9406DF0EC013E">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Condition%20Entities.efx#_3E3F0EC000E93D77E58C0275?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Condition%20Entities/PolicyConditionAtomic?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406DF00700BC" name="priceRuleConditionType" visibility="public">
+        <ownedComment xmi:id="_zKkS8TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9406DF00700BC">
+          <body>A character string that specifies how to interpret the condition.  A value of &quot;Buy&quot; means that the condition specifies how many of an entity must be procured to satisfy the rule.  A value of &quot;Price&quot; means that the condition specifies that there is a relationship between prices of two entities that must exist for the condition to be satisfied.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94074CF51009A" name="ProdOfferPriceAction">
+      <ownedComment xmi:id="_zKkS9DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94074CF51009A">
+        <body>The outcome of the successful evaluation of a PolicyStatement (that is, one that has met its condition(s)).  The outcome is expressed in terms of the price of a ProductOffering.  A ProdOfferPriceAction is a type of PolicyAction.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94074D008036E">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Action%20Entities.efx#_3E3F0EC000E93D77E58C02D7?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Action%20Entities/PolicyActionAtomic?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E94074D1E603B2" name="_productOfferingPrice" visibility="public" isUnique="false" association="_3E3F0EC000E94074D1E30118">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLA-6jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zLA-6TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E28CBA401D1" name="ProdOfferPriceRuleSatisfactionResultsInProdOfferPrice">
+      <ownedComment xmi:id="_zKkS-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E28CBA401D1">
+        <body>may get a price for this item if rule is satisfied or may get a price on another offering if the rule is satisfied.</body>
+      </ownedComment>
+      <memberEnd href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93E28CBA600CF?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice/_prodOfferPricePolicyValue?"/>
+      <memberEnd href="#_3E3F0EC000E93E28CBA600D9?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyValue/_productOfferingPrice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9406C47A5004E" name="ProdOfferPriceVariableDefinedByProdOfferPrice">
+      <memberEnd href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E9406C47A5004F?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice/_prodOfferPricePolicyVariable?"/>
+      <memberEnd href="#_3E3F0EC000E9406C47A50050?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyVariable/_productOfferingPrice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9406C47B0018A" name="ProdOfferPriceVariableDefinedByProdOffer">
+      <memberEnd href="Product%20Offering%20ABE.efx#_3E3F0EC000E9406C47B0018B?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_prodOfferPricePolicyVariable?"/>
+      <memberEnd href="#_3E3F0EC000E9406C47B0018C?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyVariable/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9406C47B50079" name="ProdOfferPriceVariableDefinedByProdSpecType">
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E9406C47B50083?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecificationType/_prodOfferPricePolicyVariable?"/>
+      <memberEnd href="#_3E3F0EC000E9406C47B50084?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyVariable/_productSpecificationType?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94074D1E30118" name="ProdOfferPriceActionResultsInProdOfferPrice">
+      <memberEnd href="#_3E3F0EC000E94074D1E603B2?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPriceAction/_productOfferingPrice?"/>
+      <memberEnd href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E94074D1E7001A?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice/_prodOfferPriceAction?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E940994B240187" name="ProductOfferingPriceGovernedBy">
+      <memberEnd href="Product%20Offering%20ABE.efx#_3E3F0EC000E940994B250319?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_policySet?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E940994B250337?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicySet/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9409967DC0199" name="BusinessInteractionItemPriceInfluencedBy">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E9409967E1022D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicySet/_businessInteractionItemPrice?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E9409967E10237?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItemPrice/_policySet?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9434433330024" name="PolicySetGoverns">
+      <memberEnd href="Product%20Price%20ABE.efx#_3E3F0EC000E9434433340005?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProductPricePartyRole/_policySet?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E9434433340044?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicySet/_productPricePartyRole?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zKRYCjNHEd2nE5zXHK_HsA" base_Comment="_zKRYCTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKah8DNHEd2nE5zXHK_HsA" base_Comment="_zKRYDTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKah9DNHEd2nE5zXHK_HsA" base_Comment="_zKah8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKah9zNHEd2nE5zXHK_HsA" base_Comment="_zKah9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKkS8jNHEd2nE5zXHK_HsA" base_Comment="_zKkS8TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKkS9TNHEd2nE5zXHK_HsA" base_Comment="_zKkS9DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zKtc4DNHEd2nE5zXHK_HsA" base_Comment="_zKkS-DNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EvgL8C8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E32012B03B2" implementationPackage="pricerule"/>
+  <TIPProfile:tipClass xmi:id="_EvgL8S8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E3204A202C7"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL8i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E28CBA600D9"/>
+  <TIPProfile:tipClass xmi:id="_EvgL8y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9406C478D02F3"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL9C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941631EC10355"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL9S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9406C47A50050"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL9i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9406C47B0018C"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL9y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9406C47B50084"/>
+  <TIPProfile:tipClass xmi:id="_EvgL-C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9406DEF7901D1"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL-S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9406DF00700BC"/>
+  <TIPProfile:tipClass xmi:id="_EvgL-i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E94074CF51009A"/>
+  <TIPProfile:tipAttribute xmi:id="_EvgL-y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94074D1E603B2"/>
+</xmi:XMI>

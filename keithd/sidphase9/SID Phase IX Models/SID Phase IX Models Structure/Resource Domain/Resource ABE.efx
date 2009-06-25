@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E9430ADC580046" name="Resource ABE">
+    <eAnnotations xmi:id="_q-0lQDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EF8CA2200A3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE?"/>
+      <references xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
+      <references xmi:type="uml:Package" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEA0E303D6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE?"/>
+      <references xmi:type="uml:Package" href="Resource%20Management%20ABE.efx#_3E3F0EC000E93F00A3510293?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource%20Management%20ABE?"/>
+      <references xmi:type="uml:Package" href="Resource%20Order%20ABE.efx#_3E3F0EC000E942D29EE30267?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource%20Order%20ABE?"/>
+      <references xmi:type="uml:Package" href="ResourceRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF97D602AC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE?"/>
+      <references xmi:type="uml:Package" href="Value%20Network%20Role%20ABE.efx#_3E3F0EC000E93F007F28015F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_q-X5UDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Resource%20Domain.efx#_3E3F0EC000E93DDEA08E02BD?SID%20Phase%20IX%20Models/Resource%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDE851703CB" name="Resource" isAbstract="true">
+      <ownedComment xmi:id="_xLwc4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDE851703CB">
+        <body>This is the abstract base class for all entities that are inherently manageable and make up a Product. Examples which are not Manageable include legacy Hubs that don't support any type of management protocol; rather, they must be manually managed. Entities like Policy are of course manageable, but do not make up or are found packaged inside of a Product.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDE854F0399">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3BED02039F" name="_managementDomain" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDAAE2C0113?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementDomain?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHXAqTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wHXAqDNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93E3BECFF0319?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ResourcesInManagementDomain?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E83BE360220" name="_businessInteractionItem" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1F5B0A0134?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wTuovTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wTuovDNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93E83BE36021E?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItemInvolvesResource?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94382743602E8" name="_resourceRole" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Value%20Network%20Role%20ABE.efx#_3E3F0EC000E93DDEBDDA033E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE/ResourceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xDQoNjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xDQoNTNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Domain.efx#_3E3F0EC000E9438274340343?SID%20Phase%20IX%20Models/Resource%20Domain/ResourceTakesOnRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEC6D202AF" name="_resourceSpecification" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xHSMlzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xHSMljNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC6D00202?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/SpecifiesResource?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6A1EA01F7" name="_resourceUsage" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Resource%20Usage%20ABE.efx#_3E3F0EC000E941C2ECF903C2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsage?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xLmr5zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xLmr5jNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Usage%20ABE.efx#_3E3F0EC000E941C6A1E9039D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Usage%20ABE/DescribesUsageOfResource?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDA9E0C0394" name="usageState" visibility="public">
+        <ownedComment xmi:id="_xLwc5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDA9E0C0394">
+          <body>This is an enumerated integer that defines the current usage of the object. It includes the following values:
+
+  0:  Unknown
+  1:  Not Installed
+  2:  Installed
+  3:  Inactive
+  4:  Idle
+  5:  Active, but able to communicate
+  6:  Busy (Active and unable to communicate)
+
+Value 2 means that the object is installed (or otherwise activated) but no other information about its state is available. Values 3-6 imply that the object is Installed, and provide further information as to its state.
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94479F901000C" name="_place" visibility="public" isUnique="false" association="_3E3F0EC000E94479F8FF01A9">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C86C87200D8?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Place?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMNI0jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMNI0TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F1F39CF02E3" name="_partyRole" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmIrwTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xmIrwDNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Management%20Information%20ABE.efx#_3E3F0EC000E93F1F39CD03D0?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE/OwnsResource?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EFF12D4039E" name="_compoundResource" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EA8B3440213?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/CompoundResource?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yBsmZjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yBsmZTNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EFF12D300DF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/CompoundResourceAspectDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944BD40040261" name="_performance" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Performance%20ABE.efx#_3E3F0EC000E9446007290232?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yDVlLjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yDVlLTNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Performance%20ABE.efx#_3E3F0EC000E944BD400302AF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Performance%20ABE/ResourcePerformanceMeasuredBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944E4CFC001C5" name="_resourceFacingService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Service%20Domain/ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93D5091AC0353?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIGwbjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yIGwbTNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E944E4CFBF033C?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/RFServiceConfiguredUsing?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C7AD5BB0260" name="_product" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E93C5DB98B03E2?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zPyKNDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zPyKMzNHEd2nE5zXHK_HsA"/>
+        <association href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E93C7AD5BB004D?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductRealizedAsResource?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA7252C008A" name="_resourceCharacteristicValue" visibility="public" type="_3E3F0EC000E93EA6FE5701FC" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EA7252903BB">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX1jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX1TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA6FE5701FC" name="ResourceCharacteristicValue">
+      <ownedComment xmi:id="_xL6N4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA6FE5701FC">
+        <body>A value of a ResourceSpecCharacteristic chosen for a Resource that further defines what the Resource is.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94423294802A9" name="_resourceSpecCharacteristicValue" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA6FD6C03D1?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xH4pjTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xH4pjDNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Specification%20ABE.efx#_3E3F0EC000E94423294401FC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharValueInstantiatedAs?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944232AC100C0" name="_productCharacteristicValue" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E93D6E322B021D?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIVVfzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIVVfjNHEd2nE5zXHK_HsA"/>
+        <association href="Resource%20Specification%20ABE.efx#_3E3F0EC000E944232AC0012B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ProdCharValueTranslatesToResourceCharValue?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E945F9668B00DA" name="value" visibility="public">
+        <ownedComment xmi:id="_xL6N4zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E945F9668B00DA">
+          <body>A fact that describes an entity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E945F9668B00EA" name="validFor" visibility="public">
+        <ownedComment xmi:id="_xL6N5jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E945F9668B00EA">
+          <body>The period for which the characteristic value is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BDE1FD005D" name="_resourceCharacteristicValue" visibility="public" type="_3E3F0EC000E93EA6FE5701FC" isUnique="false" association="_3E3F0EC000E947BDE1FB01D4">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX3TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX3DNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BDE1FD005F" name="_resourceCharacteristicValue1" visibility="public" type="_3E3F0EC000E93EA6FE5701FC" isUnique="false" association="_3E3F0EC000E947BDE1FB01D4">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX4DNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX3zNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94423293300E6" name="_resourceSpecCharacteristic" visibility="public" isUnique="false" association="_3E3F0EC000E9442329320142">
+        <type xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDFB9F902CD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX5zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX5jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jDjO4VK-Ed2Ox5xf0vu4pw" name="servicecharacteristicvalue" visibility="public" association="_jDjO4FK-Ed2Ox5xf0vu4pw">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20ABE.efx#_3E3F0EC000E93DB0BE0B0304?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tp2fMVK-Ed2Ox5xf0vu4pw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tp2fMFK-Ed2Ox5xf0vu4pw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA7252C008C" name="_resource" visibility="public" type="_3E3F0EC000E93DDE851703CB" isUnique="false" association="_3E3F0EC000E93EA7252903BB">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX2TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX2DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EA7252903BB" name="ResourceDescribedBy" memberEnd="_3E3F0EC000E93EA7252C008A _3E3F0EC000E93EA7252C008C">
+      <ownedComment xmi:id="_xMDX0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA7252903BB">
+        <body>This association defines the allowed set of values (represented as instances of the ResourceCharacteristicValue object) that a specific Resource can have when that Resource object is instantiated.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E947BDE1FB01D4" name="ResourceCharValueReferences" memberEnd="_3E3F0EC000E947BDE1FD005D _3E3F0EC000E947BDE1FD005F"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9442329320142" name="ResourceSpecCharDescribes">
+      <memberEnd href="Resource%20Specification%20ABE.efx#_3E3F0EC000E94423293300E4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharacteristic/_resourceCharacteristicValue?"/>
+      <memberEnd href="#_3E3F0EC000E94423293300E6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceCharacteristicValue/_resourceSpecCharacteristic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94479F8FF01A9" name="PlaceLocatesResource">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E94479F90003A6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Place/_resource?"/>
+      <memberEnd href="#_3E3F0EC000E94479F901000C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/_place?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEA0E303D6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="ResourceRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF97D602AC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EF8CA2200A3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Resource%20Order%20ABE.efx#_3E3F0EC000E942D29EE30267?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource%20Order%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Resource%20Management%20ABE.efx#_3E3F0EC000E93F00A3510293?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource%20Management%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Value%20Network%20Role%20ABE.efx#_3E3F0EC000E93F007F28015F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE?"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jDjO4FK-Ed2Ox5xf0vu4pw" name="ServiceCharValueTranslatesTo">
+      <memberEnd href="#_jDjO4VK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceCharacteristicValue/servicecharacteristicvalue?"/>
+      <memberEnd href="../Service%20Domain/Service%20ABE.efx#_jDjO4lK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceCharacteristicValue/resourcecharacteristicvalue?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xLwc4jNHEd2nE5zXHK_HsA" base_Comment="_xLwc4TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xLwc5jNHEd2nE5zXHK_HsA" base_Comment="_xLwc5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xL6N4TNHEd2nE5zXHK_HsA" base_Comment="_xL6N4DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xL6N5DNHEd2nE5zXHK_HsA" base_Comment="_xL6N4zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xMDX0DNHEd2nE5zXHK_HsA" base_Comment="_xL6N5jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xMDX0zNHEd2nE5zXHK_HsA" base_Comment="_xMDX0jNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EgAXUi8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E9430ADC580046" implementationPackage="resource"/>
+  <TIPProfile:tipClass xmi:id="_EgAXUy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DDE851703CB"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXVC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E3BED02039F"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXVS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E83BE360220"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXVi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94382743602E8"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXVy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEC6D202AF"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXWC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941C6A1EA01F7"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXWS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDA9E0C0394"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXWi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94479F901000C"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXWy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93F1F39CF02E3"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXXC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EFF12D4039E"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXXS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E944BD40040261"/>
+  <TIPProfile:tipAttribute xmi:id="_EgAXXi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E944E4CFC001C5"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhQC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93C7AD5BB0260"/>
+  <TIPProfile:tipClass xmi:id="_EgJhQS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA6FE5701FC"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhQi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94423294802A9"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhQy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E944232AC100C0"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhRC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E945F9668B00DA"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhRS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E945F9668B00EA"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhRi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947BDE1FD005D"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhRy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947BDE1FD005F"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhSC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94423293300E6"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhSS8YEd69c4M5qr3mDQ" base_StructuralFeature="_jDjO4VK-Ed2Ox5xf0vu4pw"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhSi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EA7252C008A"/>
+  <TIPProfile:tipAttribute xmi:id="_EgJhSy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EA7252C008C"/>
+</xmi:XMI>

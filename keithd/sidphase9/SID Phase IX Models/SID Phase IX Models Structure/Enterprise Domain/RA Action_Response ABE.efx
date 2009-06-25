@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E942E8EEBA0220" name="RA Action_Response ABE">
+    <eAnnotations xmi:id="_3QfD0DNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Revenue%20Assurance%20ABE.efx#_3E3F0EC000E942E8EE8B00F6?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E942E8EEEB0176" name="RevenueAssuranceAction">
+      <ownedComment xmi:id="_ytgjkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942E8EEEB0176">
+        <body>A step towards developing a RevenueAssuranceResponse.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9431F45D6004E">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E93D5C65CD031E?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/activityPkg/Activity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E942E8EF4101C0" name="_revenueAssuranceTroubleTicket" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E942E8EEDB00FB?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicket?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ytgjiDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytgjhzNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E942E8EF3F0380?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicketResultsIn?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9431F4D31000B" name="_revenueAssuranceResponse" visibility="public" type="_3E3F0EC000E9431F3DE601A2" isUnique="false" association="_3E3F0EC000E9431F4D2F0191">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ytzeijNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytzeiTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9431780FD0070" name="RevenueAssuranceActionSpec">
+      <ownedComment xmi:id="_ytqUgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9431780FD0070">
+        <body>The invariant characteristics of a RevenueAssuranceAction. Each related RevenueAssuranceAction instance will have the same invariant characteristics. However, the values associated with other characteristics of the instantiated RevenueAssuranceAction are specific to each instance.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9431F446B0086">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E93D608141011C?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/activityPkg/ActivitySpec?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E9431F4D1F0047" name="_revenueAssuranceResponseSpec" visibility="public" type="_3E3F0EC000E9431F3DF7020F" isUnique="false" association="_3E3F0EC000E9431F4D1D0289">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ytzegzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytzegjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9431F4A4B0201" name="_revenueAssuranceTroubleTicketSpec" visibility="public" isUnique="false" association="_3E3F0EC000E9431F4A4702DA">
+        <type xmi:type="uml:Class" href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E9430DE0EB0091?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicketSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yt9PcjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yt9PcTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9431F3DE601A2" name="RevenueAssuranceResponse">
+      <ownedComment xmi:id="_ytqUhjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9431F3DE601A2">
+        <body>The result of reconciling a RATroubleTicket represented by a series of one or more activities being initiated and performed.  The RAResponse can also determine the root cause for RATroubleTickets based on rules that trigger the analysis.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9431F4D120314">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1900490077?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/Response?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E9431F4D31000D" name="_revenueAssuranceAction" visibility="public" type="_3E3F0EC000E942E8EEEB0176" isUnique="false" association="_3E3F0EC000E9431F4D2F0191">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ytzejTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytzejDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9431F3DF7020F" name="RevenueAssuranceResponseSpec">
+      <ownedComment xmi:id="_ytqUijNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9431F3DF7020F">
+        <body>The invariant characteristics of a RevenueAssuranceResponse. Each related RevenueAssuranceResponse instance will have the same invariant characteristics. However, the values associated with other characteristics of the instantiated RevenueAssuranceResponse are specific to each instance.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9431F4CE100F9">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E942DDB82D0261?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionSpec?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E9431F4D1F0057" name="_revenueAssuranceActionSpec" visibility="public" type="_3E3F0EC000E9431780FD0070" isUnique="false" association="_3E3F0EC000E9431F4D1D0289">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ytzehjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ytzehTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9431F445803AF" name="ActivitySpecReferences">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E9431F445A01AC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/Entities/activityPkg/ActivitySpec/_activitySpec?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E9431F445A01BC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/Entities/activityPkg/ActivitySpec/_activitySpec1?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9431F45FF0277" name="ActivityReferences">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E9431F460101DB?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/Entities/activityPkg/Activity/_activity?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Project%20ABE.efx#_3E3F0EC000E9431F460101EA?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Project%20ABE/Entities/activityPkg/Activity/_activity1?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9431F4D1D0289" name="RevenueAssuranceActionSpecSpecifies" memberEnd="_3E3F0EC000E9431F4D1F0047 _3E3F0EC000E9431F4D1F0057"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9431F4D2F0191" name="RevenueAssuranceActionResultsIn" memberEnd="_3E3F0EC000E9431F4D31000B _3E3F0EC000E9431F4D31000D"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9431F4A4702DA" name="RevenueAssuranceTroubleTicketSpecResolvedVia">
+      <memberEnd href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E9431F4A4B01FF?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicketSpec/_revenueAssuranceActionSpec?"/>
+      <memberEnd href="#_3E3F0EC000E9431F4A4B0201?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Action_Response%20ABE/RevenueAssuranceActionSpec/_revenueAssuranceTroubleTicketSpec?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_ytgjkzNHEd2nE5zXHK_HsA" base_Comment="_ytgjkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ytqUgzNHEd2nE5zXHK_HsA" base_Comment="_ytqUgjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ytqUhzNHEd2nE5zXHK_HsA" base_Comment="_ytqUhjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ytzecDNHEd2nE5zXHK_HsA" base_Comment="_ytqUijNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EtahQy8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E942E8EEBA0220" implementationPackage="action"/>
+  <TIPProfile:tipClass xmi:id="_EtahRC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E942E8EEEB0176"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahRS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E942E8EF4101C0"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahRi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431F4D31000B"/>
+  <TIPProfile:tipClass xmi:id="_EtahRy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9431780FD0070"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahSC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431F4D1F0047"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahSS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431F4A4B0201"/>
+  <TIPProfile:tipClass xmi:id="_EtahSi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9431F3DE601A2"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahSy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431F4D31000D"/>
+  <TIPProfile:tipClass xmi:id="_EtahTC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9431F3DF7020F"/>
+  <TIPProfile:tipAttribute xmi:id="_EtahTS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431F4D1F0057"/>
+</xmi:XMI>
