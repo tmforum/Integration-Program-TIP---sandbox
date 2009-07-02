@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93EAAB1E90361" name="Policy Management Entities">
+    <eAnnotations xmi:id="_5slFETNgEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_5slFEDNgEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Policy%20ABE.efx#_3E3F0EC000E93E3F0ECE00AE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE?"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_wAgKsTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAB1E90361">
+      <body>The Policy Management ABE contains entities that are used to manage other entities in other Domains. This includes entities from other Common Business Entities sub-domains (e.g., Location and Party) as well as other sibling Domains (e.g., Product, Service and Resource).</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EAAB1F3013F" name="ResourceManagementPolicy">
+      <ownedComment xmi:id="_wAgKtDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAB1F3013F">
+        <body>The ResourceManagementPolicy class defines the particular policies that are used to define how different aspects of the Resource are managed and maintained.
+
+For example, assume that a Resource is made up of several component parts, such as different Equipment. One of these Equipment might require multiple PartyRoles to approve changes to its configuration, whereas another Equipment might not require any approvals to change its configuration.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F2D040028">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAAB25203DB" name="resourcePolicyValidFor" visibility="public">
+        <ownedComment xmi:id="_wAp7szNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAB25203DB">
+          <body>This attribute defines a period of time that this particular ResourcePolicy is valid for. A TimePeriod is a complex datatype that contains both a starting and ending time.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EDC23CE00D3" name="ServiceManagementPolicy">
+      <ownedComment xmi:id="_wAp7tjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDC23CE00D3">
+        <body>The ServiceManagementPolicy class defines the particular policies that are used to define how different aspects of the Service are managed and maintained.
+
+For example, assume that a Service is made up of several sub-Services. One of these sub-Services might require multiple PartyRoles to approve changes to its configuration, whereas another sub-Service might not require any approvals to change its configuration.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F2D0A013F">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDC23E6004B" name="servicePolicyValidFor" visibility="public">
+        <ownedComment xmi:id="_wAp7ujNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDC23E6004B">
+          <body>This attribute defines a period of time that this particular ServicePolicy is valid for. A TimePeriod is a complex datatype that contains both a starting and ending time.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F00A55100A1" name="_administerServiceDetails" visibility="public" isUnique="false">
+        <type xmi:type="uml:AssociationClass" href="../Service%20Domain/Service%20ABE.efx#_Xb49UFLAEd2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/AdministerServiceDetails?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ySPj1TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ySPj1DNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/Service%20Management%20ABE.efx#_3E3F0EC000E93F00A5500280?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/Service%20Management%20ABE/ManagementPolicyForService?"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_wAgKsjNHEd2nE5zXHK_HsA" base_Comment="_wAgKsTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_wAp7sDNHEd2nE5zXHK_HsA" base_Comment="_wAgKtDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_wAp7tDNHEd2nE5zXHK_HsA" base_Comment="_wAp7szNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_wAp7tzNHEd2nE5zXHK_HsA" base_Comment="_wAp7tjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_wAzssDNHEd2nE5zXHK_HsA" base_Comment="_wAp7ujNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EY2mcS8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93EAAB1E90361" implementationPackage="mgt"/>
+  <TIPProfile:tipClass xmi:id="_EY2mci8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EAAB1F3013F"/>
+  <TIPProfile:tipAttribute xmi:id="_EY2mcy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAAB25203DB"/>
+  <TIPProfile:tipClass xmi:id="_EY2mdC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EDC23CE00D3"/>
+  <TIPProfile:tipAttribute xmi:id="_EY2mdS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EDC23E6004B"/>
+  <TIPProfile:tipAttribute xmi:id="_EY2mdi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93F00A55100A1"/>
+</xmi:XMI>

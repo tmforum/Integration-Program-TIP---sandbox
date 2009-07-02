@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93EA88AEF0180" name="LAN Protocols ABE">
+    <eAnnotations xmi:id="_8nOScTN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_8nOScDN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93E2C35EF01D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA88AFA0168" name="LANProtocol" isAbstract="true">
+      <ownedComment xmi:id="_xUGgmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA88AFA0168">
+        <body>LAN Protocols operate at the lowest two levels of the OSI model (i.e., physical and data link) and are used to define communications over different types of local area media.
+
+The DEN-ng model defines Ethernet, FDDI, and TokenRing as examples of subclasses of this class.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA88B5103C6">
+        <general xmi:type="uml:Class" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93DCCA5AF0087?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Protocol?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA88C3100E3" name="_deviceInterface" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E0686B101A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xYa_6jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xYa_6TNHEd2nE5zXHK_HsA"/>
+        <association href="Device%20Interface%20ABE.efx#_3E3F0EC000E93EA88C240383?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/InterfaceUsesLANProtocol?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA88B0A0175" name="Ethernet">
+      <generalization xmi:id="_3E3F0EC000E93EA88B6F004E" general="_3E3F0EC000E93EA88AFA0168"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA88B16014A" name="TokenRing">
+      <generalization xmi:id="_3E3F0EC000E93EA88B6C0176" general="_3E3F0EC000E93EA88AFA0168"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA88B1D02E5" name="FDDI">
+      <generalization xmi:id="_3E3F0EC000E93EA88B690348" general="_3E3F0EC000E93EA88AFA0168"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xUQRkDNHEd2nE5zXHK_HsA" base_Comment="_xUGgmDNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EiY9BC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93EA88AEF0180" implementationPackage="LAN"/>
+  <TIPProfile:tipClass xmi:id="_EiY9BS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA88AFA0168"/>
+  <TIPProfile:tipAttribute xmi:id="_EiY9Bi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EA88C3100E3"/>
+  <TIPProfile:tipClass xmi:id="_EiY9By8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA88B0A0175"/>
+  <TIPProfile:tipClass xmi:id="_EiY9CC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA88B16014A"/>
+  <TIPProfile:tipClass xmi:id="_EiY9CS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA88B1D02E5"/>
+</xmi:XMI>

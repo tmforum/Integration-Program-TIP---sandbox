@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37A8760145" name="Traffic Conditioning ABE">
+    <eAnnotations xmi:id="_7irl0TQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="CompoundConditioning%20ABE.efx#_3E3F0EC000E93EF4DB800271?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/CompoundConditioning%20ABE?"/>
+      <references xmi:type="uml:Package" href="DropperService%20ABE.efx#_3E3F0EC000E93E391A730350?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/DropperService%20ABE?"/>
+      <references xmi:type="uml:Package" href="MeterService%20ABE.efx#_3E3F0EC000E93EF4A73A02B2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/MeterService%20ABE?"/>
+      <references xmi:type="uml:Package" href="QueuingService%20ABE.efx#_3E3F0EC000E93EC169AD023B?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/QueuingService%20ABE?"/>
+      <references xmi:type="uml:Package" href="SchedulingService%20ABe.efx#_3E3F0EC000E93EF5F34B01BE?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/SchedulingService%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_1CJ4EDQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93E37A85C0365?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901C1" name="TrafficConditioningService" isAbstract="true">
+      <ownedComment xmi:id="_yKfWCTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901C1">
+        <body>A TrafficConditioningService is a fundamental QoS building block.
+
+A TrafficConditioningService is an abstract base class that is the parent for different types of traffic conditioning services defined in the DEN-ng Service model. TrafficConditioningServices are one example of a ResourceFacingService, n that the Customer is not able to control them. In fact, the Customer doesn't even have to be aware that they exist! However, they must be implemented in order for different CoSs to be differentiated from each other, and hence for different Customers to receive different CoSs.
+
+TrafficConditioningServices control how packets and flows are treated compared to other packets and flows in the system.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901C0">
+        <general xmi:type="uml:Class" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901B6?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/NetworkForwardingService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901D7" name="_qoSService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yItNVjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yItNVTNHEd2nE5zXHK_HsA"/>
+        <association href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901D5?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/ConditionsQoSService?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF37F2101AB" name="_preambleMarkerService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93E380EB10285?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/PreambleMarkerService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yLFy9TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yLFy9DNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93EF37F1D000A?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/PreambleMarkingDetails%20?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E3814410229" name="TokenBucket">
+      <generalization xmi:id="_3E3F0EC000E93E5E96DE0293">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E38147702E5" name="arrivalRate" visibility="public">
+        <ownedComment xmi:id="_yKpHBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E38147702E5">
+          <body>This is the arrival rate of the Token Bucket.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E38145D0111" name="normalBurstSize" visibility="public">
+        <ownedComment xmi:id="_yKpHCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E38145D0111">
+          <body>This is the burst capability of the Token Bucket.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3814D802A8" name="excessBurstSize" visibility="public">
+        <ownedComment xmi:id="_yKpHCzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3814D802A8">
+          <body>This is the excess burst size limit.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3814FF0330" name="conformAction" visibility="public">
+        <ownedComment xmi:id="_yKyQ8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3814FF0330">
+          <body>This is the name of a PolicyAction which defines the behavior for packets that conform to (e.g., packet rate is below the normalBurst rate) this TokenBucket.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E381532033E" name="exceedAction" visibility="public">
+        <ownedComment xmi:id="_yKyQ9TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E381532033E">
+          <body>This is the name of a PolicyAction which defines the behavior for packets whose value is above the conform rate but below the excessBurst rate. This is also called &quot;partially conforming&quot;.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E38153203CA" name="violateAction" visibility="public">
+        <ownedComment xmi:id="_yKyQ-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E38153203CA">
+          <body>This is the name of a PolicyAction which defines the behavior for packets that violate (e.g., exceeed the excessBurst rate) this TokenBucket.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E3851590187" name="usesTokenBucket">
+      <ownedComment xmi:id="_yK8B8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3851590187">
+        <body>This association defines the TokenBucket Specification(s) that are used by a particular CompoundConditioningElement in order to limit traffic. The TokenBucket modeled is a classic three-level token bucket - others can be added as desired. Note that all actions should be linked to PolicyActions in the DEN-ng policy model. </body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93E38515A0108" name="_compoundConditioningElement" visibility="public" isUnique="false" association="_3E3F0EC000E93E3851590187">
+        <type xmi:type="uml:Class" href="CompoundConditioning%20ABE.efx#_3E3F0EC000E93E385128015C?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/CompoundConditioning%20ABE/CompoundConditioningElement?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yK8B-TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yK8B-DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedEnd>
+      <memberEnd href="CompoundConditioning%20ABE.efx#_3E3F0EC000E93E38515A0106?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/CompoundConditioning%20ABE/CompoundConditioningElement/_tokenBucket?"/>
+      <memberEnd href="#_3E3F0EC000E93E38515A0108?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/usesTokenBucket/_compoundConditioningElement?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="DropperService%20ABE.efx#_3E3F0EC000E93E391A730350?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/DropperService%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="QueuingService%20ABE.efx#_3E3F0EC000E93EC169AD023B?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/QueuingService%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="MeterService%20ABE.efx#_3E3F0EC000E93EF4A73A02B2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/MeterService%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="CompoundConditioning%20ABE.efx#_3E3F0EC000E93EF4DB800271?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/CompoundConditioning%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="SchedulingService%20ABe.efx#_3E3F0EC000E93EF5F34B01BE?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/SchedulingService%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yKpHADNHEd2nE5zXHK_HsA" base_Comment="_yKfWCTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKpHBjNHEd2nE5zXHK_HsA" base_Comment="_yKpHBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKpHCTNHEd2nE5zXHK_HsA" base_Comment="_yKpHCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKyQ8DNHEd2nE5zXHK_HsA" base_Comment="_yKpHCzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKyQ8zNHEd2nE5zXHK_HsA" base_Comment="_yKyQ8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKyQ9jNHEd2nE5zXHK_HsA" base_Comment="_yKyQ9TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yK8B8DNHEd2nE5zXHK_HsA" base_Comment="_yKyQ-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yK8B8zNHEd2nE5zXHK_HsA" base_Comment="_yK8B8jNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_ErLFki8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37A8760145" implementationPackage="trafficconditioning"/>
+  <TIPProfile:tipClass xmi:id="_ErLFky8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901C1"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFlC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DB57B3901D7"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFlS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EF37F2101AB"/>
+  <TIPProfile:tipClass xmi:id="_ErLFli8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E3814410229"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFly8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E38147702E5"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFmC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E38145D0111"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFmS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E3814D802A8"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFmi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E3814FF0330"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFmy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E381532033E"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFnC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E38153203CA"/>
+  <TIPProfile:tipAttribute xmi:id="_ErLFnS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E38515A0108"/>
+</xmi:XMI>

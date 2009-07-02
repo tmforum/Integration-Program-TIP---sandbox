@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E9420B65450160" name="Customer Billing Credit ABE">
+    <eAnnotations xmi:id="_5LnbIDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941C9633A02D5?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9420F8BC8034A" name="CustomerAllowanceBalance">
+      <ownedComment xmi:id="_ypx6GzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9420F8BC8034A">
+        <body>A balance of available customer allowance, that is typically money deducted from the selling price of a Product a service provider as a discount or in exchange for something.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9420F8BF60221" general="_3E3F0EC000E9420F8BB1009B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9420F8BD803E6" name="CustomerDiscountBalance">
+      <ownedComment xmi:id="_ypx6HzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9420F8BD803E6">
+        <body>A remaining or outstanding customer discount.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9420F8BF9006B" general="_3E3F0EC000E9420F8BB1009B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9420F8BB1009B" name="CustomerBillingCreditBalance" isAbstract="true">
+      <ownedComment xmi:id="_yp7rEzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9420F8BB1009B">
+        <body>A remaining or outstanding credit for a CustomerAccount.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9420F8C39000D" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yp7rFjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9420F8C39000D">
+          <body>The period for which the balance is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9424B2FFF01BE" name="creditBalanceAmount" visibility="public">
+        <ownedComment xmi:id="_yp7rGTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9424B2FFF01BE">
+          <body>The amount of the credit and the currency in which the amount is expressed.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C4237620112?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Money?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E942146E4B000E" name="_customerBillingCredit" visibility="public" type="_3E3F0EC000E942146E4B0009" isUnique="false" association="_3E3F0EC000E942146E4B000C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yqOmGTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yqOmGDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E942146E4B0029" name="CustomerAllowance">
+      <ownedComment xmi:id="_yqFcEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942146E4B0029">
+        <body>Money (typically) deducted from the selling price of a Product a service provider as a discount or in exchange for something.  An example of allowance is 500 free minutes of domestic calls granted to new customers by AllowanceProdPriceAlteration.  While a customer uses the service the available allowance is gradually reduced. The AvaliableCustomerAllowance represents available not yet used allowance.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E942146E4B0028" general="_3E3F0EC000E942146E4B0009"/>
+      <ownedAttribute xmi:id="_OyoDslILEd2BeOP6juF0pQ" name="allowanceprodpricealteration" visibility="public">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Price%20ABE.efx#_3E3F0EC000E9420A16C80297?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product%20Price%20ABE/AllowanceProdPriceAlteration?"/>
+        <association href="../Product%20Domain/Product%20Price%20ABE.efx#_OyoDsFILEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product%20Price%20ABE/AvailableAllowanceIsPresentedBy?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E942146E4B0009" name="CustomerBillingCredit" isAbstract="true">
+      <ownedComment xmi:id="_yqFcFjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942146E4B0009">
+        <body>The amount of a deduction that can be applied against an amount charged for a Product on a CustomerBill.  Billing credits are typically governed by ProductPriceRule(s) and ProductPriceAlteration(s).</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E942146E4B000A" name="creditForPeriod" visibility="public">
+        <ownedComment xmi:id="_yqFcGTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942146E4B000A">
+          <body>The period for which the credit is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E942146E4B000D" name="_customerBillingCreditBalance" visibility="public" type="_3E3F0EC000E9420F8BB1009B" isUnique="false" aggregation="shared" association="_3E3F0EC000E942146E4B000C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yqOmFjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yqOmFTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E942146E4B002D" name="CustomerDiscount">
+      <ownedComment xmi:id="_yqOmAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942146E4B002D">
+        <body>A reduction to a CustomerBill that can be used by a CustomerAccount.  An example of discount is $100 off granted by DiscountProdPriceAlteration. While customer is using the service the available discount is gradually reduced.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E942146E4B002C" general="_3E3F0EC000E942146E4B0009"/>
+      <ownedAttribute xmi:id="_tr-y8lIKEd2BeOP6juF0pQ" name="discountprodpricealteration" visibility="public">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Price%20ABE.efx#_3E3F0EC000E9420A16E602B9?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product%20Price%20ABE/DiscountProdPriceAlteration?"/>
+        <association href="../Product%20Domain/Product%20Price%20ABE.efx#_tr-y8FIKEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product%20Price%20ABE/AvailableDiscountIsPresentedBy?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E942146E4B000C" name="AvailableCustomerBillingCreditHas" memberEnd="_3E3F0EC000E942146E4B000D _3E3F0EC000E942146E4B000E"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_ypx6HDNHEd2nE5zXHK_HsA" base_Comment="_ypx6GzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yp7rEDNHEd2nE5zXHK_HsA" base_Comment="_ypx6HzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yp7rFDNHEd2nE5zXHK_HsA" base_Comment="_yp7rEzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yp7rFzNHEd2nE5zXHK_HsA" base_Comment="_yp7rFjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqFcEDNHEd2nE5zXHK_HsA" base_Comment="_yp7rGTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqFcEzNHEd2nE5zXHK_HsA" base_Comment="_yqFcEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqFcFzNHEd2nE5zXHK_HsA" base_Comment="_yqFcFjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqOmADNHEd2nE5zXHK_HsA" base_Comment="_yqFcGTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqOmAzNHEd2nE5zXHK_HsA" base_Comment="_yqOmAjNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EtQwMC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E9420B65450160" implementationPackage="credit"/>
+  <TIPProfile:tipClass xmi:id="_EtQwMS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9420F8BC8034A"/>
+  <TIPProfile:tipClass xmi:id="_EtQwMi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9420F8BD803E6"/>
+  <TIPProfile:tipClass xmi:id="_EtQwMy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9420F8BB1009B"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwNC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9420F8C39000D"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwNS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9424B2FFF01BE"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwNi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E942146E4B000E"/>
+  <TIPProfile:tipClass xmi:id="_EtQwNy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E942146E4B0029"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwOC8YEd69c4M5qr3mDQ" base_StructuralFeature="_OyoDslILEd2BeOP6juF0pQ"/>
+  <TIPProfile:tipClass xmi:id="_EtQwOS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E942146E4B0009"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwOi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E942146E4B000A"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwOy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E942146E4B000D"/>
+  <TIPProfile:tipClass xmi:id="_EtQwPC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E942146E4B002D"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwPS8YEd69c4M5qr3mDQ" base_StructuralFeature="_tr-y8lIKEd2BeOP6juF0pQ"/>
+</xmi:XMI>

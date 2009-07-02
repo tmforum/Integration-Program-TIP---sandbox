@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93F00A3510293" name="Resource Management ABE">
+    <eAnnotations xmi:id="_JDGH0TN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_JDGH0DN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Resource%20ABE.efx#_3E3F0EC000E9430ADC580046?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EE55A3E03A6" name="OwnsResourceDetails">
+      <ownedComment xmi:id="_yCvvQTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE55A3E03A6">
+        <body>This class defines the semantics of the OwnsResource association. In contrast with the AdminstersResource association, this can be any type of PartyRole, because the issue is ownership, not administration. Administration involves a specific skill set, whereas ownership doesn't.
+
+The semantics of this association includes specifying the time period that this PartyRole can own the Resource, along with granting permission to a ValueNetworkRole to administer the Resource.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F3AE00029">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yCvvQjNHEd2nE5zXHK_HsA" base_Comment="_yCvvQTNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Ep-ytC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93F00A3510293" implementationPackage="mgt"/>
+  <TIPProfile:tipClass xmi:id="_Ep-ytS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EE55A3E03A6"/>
+</xmi:XMI>

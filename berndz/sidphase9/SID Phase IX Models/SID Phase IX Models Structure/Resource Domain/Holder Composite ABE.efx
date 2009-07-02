@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C3D3900F5" name="HolderComposite ABE">
+    <eAnnotations xmi:id="_2UJ8cTN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_2UJ8cDN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Equipment%20Holder%20ABE.efx#_3E3F0EC000E93E2C3CEF038D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD71310196" name="Shelf">
+      <ownedComment xmi:id="_xv99PjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD71310196">
+        <body>A Shelf is a type of EquipmentHolder that is designed to hold various types of Equipment. It has a logical identifier that is often relative to the Bay that contains the Shelf (i.e., the unique identifier for a Shelf is often a concatenation of the network element identifier, the Bay identifier, and the Shelf identifier).
+
+Note that the logical identifier of a Shelf is typically associated with the Device (i.e., the NetworkElement). Compare this to a Rack, whose logical identifier is NOT associated with the Device. This means that the Shelf IS explicitly a part of the logical model of a network.
+
+Often, a Shelf is used to contain not just pluggable components (e.g., Cards, Power Supplies, etc.) but also cabling (e.g., both fiber and wire), with optional connections to external fuse, alarm, and other types of panels.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEED960287" general="_3E3F0EC000E93DDEEB160255"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD70FF0180" name="Bay">
+      <ownedComment xmi:id="_xwHHIzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD70FF0180">
+        <body>A Bay is a type of EquipmentHolder that is designed to hold various types of Equipment. It has a logical identifier, usually a component of port AIDs in TL1 based switches.
+
+Note that the logical identifier of a Bay is typically associated with the Device (i.e., the NetworkElement). This means that the Bay IS explicitly a part of the logical model of a network.
+
+A Bay is usually built as a pre-wired hardware assembly that contains a set of shelves and accompanying ancillary Equipment.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEEDAD0009" general="_3E3F0EC000E93DDEEB160255"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDEEB160255" name="HolderComposite" isAbstract="true">
+      <ownedComment xmi:id="_xwHHJzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEB160255">
+        <body>This class represents EquipmentHolders that are made up of other EquipmentHolders (i.e., instances of this class as well as the HolderAtomic base class). This provides the semantics of collecting a set of components, each of which is individually manageable, and being able to manage the set of objects as a whole.  This containment is modeled using the HasHolders aggregation.
+
+Each HolderComposite element can be a FRU.
+
+A characteristic of this class is that its subclasses are physical objects that have complex cabling and mounting options. This class is meant to differentiate complex holders, like a Chassis, from simple holders, like a Slot.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEEC3C03A2">
+        <general xmi:type="uml:Class" href="Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEA6B0245?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEEBC60398" name="cableManagementStrategy" visibility="public">
+        <ownedComment xmi:id="_xwHHKzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEBC60398">
+          <body>This is a free-form string that contains information on how the various cables contained in the Chassis, Rack, or other type of HolderComposite object are connected and bundled. This property contains information to aid in the assembly and service of the cables contained in a SecureHolder object. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEEBC603A2" name="mountingOptions" visibility="public">
+        <ownedComment xmi:id="_xwQ4IjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEBC603A2">
+          <body>This is an enumerated 16-bit unsigned integer that defines how Equipment in this entity is mounted. Values include:
+
+  0:  Unknown
+  1:  Stand-alone
+  2:  Rack-mounted, free access
+  3:  Rack-mounted, restricted access
+  4:  Enclosed in another chassis
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEEBC603AC" name="serviceApproach" visibility="public">
+        <ownedComment xmi:id="_xwQ4JTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEBC603AC">
+          <body>This is an enumerated, integer-valued array that defines how this entity is serviced (e.g., from the top or front), whether it has sliding trays or removable sides, and/or whether the Frame is moveable (e.g., it has rollers). Values include:
+
+  0:  Unknown
+  1:  Custom
+  2:  Service From Top
+  3:  Service From Front
+  4:  Service From Back
+  5:  Service From Side
+  6:  Sliding Trays
+  7:  Removable Sides
+  8:  Moveable
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEEBE1036F" name="_equipmentHolder" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DDEEBE00092">
+        <type xmi:type="uml:Class" href="Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEA6B0245?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xxwF5jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xxwF5TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD708302D6" name="SecureHolder" isAbstract="true">
+      <ownedComment xmi:id="_xwapITNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD708302D6">
+        <body>This class is a type of HolderComposite that serves as the parent for the Rack and Chassis classes. This class generalizes common properties that apply to Racks and Chassis.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEEDB00021" general="_3E3F0EC000E93DDEEB160255"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100DB" name="audibleAlarm" visibility="public">
+        <ownedComment xmi:id="_xwapJTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100DB">
+          <body>This is a boolean attribute that, if TRUE, indicates that this SecureHolder is equipped with an audible alarm. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100DC" name="audibleAlarmDescription" visibility="public">
+        <ownedComment xmi:id="_xwapKDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100DC">
+          <body>This is a free-form string that provides supplementary information for the AudibleAlarm attribute. It should only be filled in when the value of the AudibleAlarm attribute is TRUE. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100DD" name="lockPresent" visibility="public">
+        <ownedComment xmi:id="_xwjzEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100DD">
+          <body>This is a boolean attribute that, if TRUE, indicates that this SecureHolder is protected by some type of lock. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100DE" name="securityBreach" visibility="public">
+        <ownedComment xmi:id="_xwjzFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100DE">
+          <body>This is an enumerated 16-bit unsigned integer attribute indicating whether a breach of the Rack was attempted. Values include:
+
+  0:  Unknown
+  1:  Other
+  2:  No Breach
+  3:  Unsuccessful Breach (but attempted)
+  4:  Successful Breach
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100DF" name="securityBreachDescription" visibility="public">
+        <ownedComment xmi:id="_xwjzGDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100DF">
+          <body>This is a free-form string attribute that provides supplementary information for the SecurityBreach attribute. It should only be filled in when the value of SecurityBreach is 1 (&quot;Other&quot;).
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100E0" name="visibleAlarm" visibility="public">
+        <ownedComment xmi:id="_xwtkEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100E0">
+          <body>This is a boolean attribute that, if TRUE, indicates that the SecureHolder is equipped with one or more visible alarms (e.g., LEDs or gauges). This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD6F5100E1" name="visibleAlarmDescription" visibility="public">
+        <ownedComment xmi:id="_xwtkFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD6F5100E1">
+          <body>This is a free-form string attribute that provides supplementary information for the VisibleAlarm attribute. It should only be filled in when the value of VisibleAlarm is TRUE.
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD7471011A" name="Rack">
+      <ownedComment xmi:id="_xwtkGDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD7471011A">
+        <body>A Rack is a type of SecureHolder that represents an enclosure in which EquipmentHolders, such as Chassis, are placed. Typically a Rack is nothing more than the enclosure, and all the functioning componentry is packaged in the Chassis.
+
+Note that the logical identifier of a Rack is NOT typically associated with the Device (i.e., the NetworkElement). Compare this to either a Bay or a Shelf, whose logical identifier IS associated with the Device. This means that the Rack is explicitly NOT a part of the logical model of a network.
+
+The Rack typically serves as the &quot;master enclosure&quot; for Chassis, Shelves and Bays. In addition, Racks can have multiple instances of multiple Devices mounted in them.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD75450359" general="_3E3F0EC000E93CDD708302D6"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203B5" name="country" visibility="public">
+        <ownedComment xmi:id="_xw3VEzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203B5">
+          <body>This is the designation of the country for which the Rack is designed. Country code strings are as defined by ISO/IEC 3166. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203B6" name="heightInUs" visibility="public">
+        <ownedComment xmi:id="_xw3VFjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203B6">
+          <body>This is the height of the Rack in 'U's. A 'U' is a standard unit of measure for the height of a Rack or rack-mountable components. It is equal to 1.75 inches or 4.445 cm. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203B7" name="typeOfRack" visibility="public">
+        <ownedComment xmi:id="_xw3VGTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203B7">
+          <body>This is an enumerated integer that defines the type of Rack. Values include:
+
+  0:  Unknown
+  1:  Standard 19 Inch
+  2:  Telco
+  3:  Equipment Shelf
+  4:  Non-Standard
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD75720368" name="_chassis" visibility="public" type="_3E3F0EC000E93CDD73680050" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDD75710258">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xyDn4zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyDn4jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93CDD75710258" name="ChassisPosition" memberEnd="_3E3F0EC000E93CDD75720368 _3E3F0EC000E93CDD75720372">
+      <ownedComment xmi:id="_xxAfAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD75710258">
+        <body>This class represents the semantics of the ChassisInRack aggregation. This class defines two attribute - Position and Location -  to define where the Chassis is located in the Rack.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_xx525DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD75710258">
+        <body>This aggregation defines the set of Chassis that are contained within this Rack. It is implemented as an aggregation class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E921300FB">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD73520399" name="positionInChassis" visibility="public">
+        <ownedComment xmi:id="_xxKQAzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD73520399">
+          <body>This is the &quot;slot number&quot; of the Rack that the Chassis is placed in. This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD7352039A" name="locationInChassis" visibility="public">
+        <ownedComment xmi:id="_xxKQBjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD7352039A">
+          <body>Some Racks have movable &quot;shelves&quot; that Chassis can fit into. In order to identify the position that the Chassis occupies, a pair of measurements - number of Us from the top of the Rack and number of Us from the left side of the Rack - are provided as a comma-delimited string. This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD73680050" name="Chassis">
+      <ownedComment xmi:id="_xxKQCTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD73680050">
+        <body>A Chassis is a type of SecureHolder that encloses other ManagedPhysicalEntities and provides a definable functionality in its own right, such as a desktop or a network device (e.g., a router or a switch).</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD754A027A" general="_3E3F0EC000E93CDD708302D6"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203A6" name="heatGeneration" visibility="public">
+        <ownedComment xmi:id="_xxdK9zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203A6">
+          <body>This is an integer that defines the amount of heat generated by the Chassis in BTU/hour. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203A7" name="installationOrder" visibility="public">
+        <ownedComment xmi:id="_xxdK-jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203A7">
+          <body>This is a free-form string that defines the order of installation of components into the Chassis. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203A8" name="powerCordNumber" visibility="public">
+        <ownedComment xmi:id="_xxm78jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203A8">
+          <body>This is an integer that defines the number of power cords which must be connected to the Chassis in order for all of its contained ManagedEntities to operate correctly. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203A9" name="numberOfChassisSlots" visibility="public">
+        <ownedComment xmi:id="_xxm79TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203A9">
+          <body>This defines the number of Slots that are in the Chassis. This does NOT account for any SlotAdapters used - these are described by the CardInSlot association. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD735203AA" name="chassisType" visibility="public">
+        <ownedComment xmi:id="_xxm7-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD735203AA">
+          <body>This is an enumerated integer that defines the type of Chassis that this object is. Values include:
+
+  0:  Unknown
+  1:  Desktop
+  2:  Low Profile Desktop
+  3:  Pizza Box
+  4:  Mini Tower
+  5:  Tower
+  6:  Portable
+  7:  LapTop
+  8:  Notebook
+  9:  Sub-Notebook
+ 10: Hand Held
+ 11: Docking Station
+ 12: Main System Chassis
+ 13: Expansion Chassis
+ 14: Bus Expansion Chassis
+ 15: Peripheral Chassis
+ 16: Storage Chassis
+ 17: Rack Mount Chassis
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD74240372" name="_chassis" visibility="public" type="_3E3F0EC000E93CDD73680050" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDD742200B2">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xxwF7zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xxwF7jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD74240374" name="_chassis1" visibility="public" type="_3E3F0EC000E93CDD73680050" isUnique="false" association="_3E3F0EC000E93CDD742200B2">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xx524TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xx524DNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD75720372" name="_rack" visibility="public" type="_3E3F0EC000E93CDD7471011A" isUnique="false" association="_3E3F0EC000E93CDD75710258">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xyDn5jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyDn5TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEEE5502DC" name="_physicalPort" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DDEEE500270">
+        <type xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDADAAE016F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xyDn7DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyDn6zNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DDEEBE00092" name="HasHolders">
+      <ownedComment xmi:id="_xxwF4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEBE00092">
+        <body>This aggregation represents the set of PhysicalEquipmentHolder components that are required to construct HolderComposite units. These are Holders that are made up of other Holders. This is not a composition, because sometimes the EquipmentHolder objects that are used to build a HolderComposite object are useful in their own right.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DDEEBE1036F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/HolderComposite%20ABE/HolderComposite/_equipmentHolder?"/>
+      <memberEnd href="Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEBE10379?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder/_holderComposite?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CDD742200B2" name="Docked" memberEnd="_3E3F0EC000E93CDD74240372 _3E3F0EC000E93CDD74240374">
+      <ownedComment xmi:id="_xxwF6zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD742200B2">
+        <body>This aggregation defines the &quot;containing&quot; relationship between a Chassis and the Chassis that it contains. This relationship is especially useful to represent the docking of a laptop, or certain Chassis-based networking devices in similar Chassis-based networking devices (e.g., to increase the port density of the aggregate device).
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DDEEE500270" name="PortsOnChassis">
+      <ownedComment xmi:id="_xyDn6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEE500270">
+        <body>This aggregation defines the set of PhysicalPorts that are directly accessible (e.g., mounted) on a Chassis.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DDEEE5502DC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/HolderComposite%20ABE/Chassis/_physicalPort?"/>
+      <memberEnd href="Hardware%20ABE.efx#_3E3F0EC000E93DDEEE5502E6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_chassis?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xwHHIDNHEd2nE5zXHK_HsA" base_Comment="_xv99PjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwHHJDNHEd2nE5zXHK_HsA" base_Comment="_xwHHIzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwHHKDNHEd2nE5zXHK_HsA" base_Comment="_xwHHJzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwQ4IDNHEd2nE5zXHK_HsA" base_Comment="_xwHHKzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwQ4IzNHEd2nE5zXHK_HsA" base_Comment="_xwQ4IjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwQ4JjNHEd2nE5zXHK_HsA" base_Comment="_xwQ4JTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwapIjNHEd2nE5zXHK_HsA" base_Comment="_xwapITNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwapJjNHEd2nE5zXHK_HsA" base_Comment="_xwapJTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwjzEDNHEd2nE5zXHK_HsA" base_Comment="_xwapKDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwjzEzNHEd2nE5zXHK_HsA" base_Comment="_xwjzEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwjzFjNHEd2nE5zXHK_HsA" base_Comment="_xwjzFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwtkEDNHEd2nE5zXHK_HsA" base_Comment="_xwjzGDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwtkEzNHEd2nE5zXHK_HsA" base_Comment="_xwtkEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xwtkFjNHEd2nE5zXHK_HsA" base_Comment="_xwtkFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xw3VEDNHEd2nE5zXHK_HsA" base_Comment="_xwtkGDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xw3VFDNHEd2nE5zXHK_HsA" base_Comment="_xw3VEzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xw3VFzNHEd2nE5zXHK_HsA" base_Comment="_xw3VFjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxAfADNHEd2nE5zXHK_HsA" base_Comment="_xw3VGTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxTZ8DNHEd2nE5zXHK_HsA" base_Comment="_xxKQCTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxdK-DNHEd2nE5zXHK_HsA" base_Comment="_xxdK9zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxm78DNHEd2nE5zXHK_HsA" base_Comment="_xxdK-jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxm78zNHEd2nE5zXHK_HsA" base_Comment="_xxm78jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxm79jNHEd2nE5zXHK_HsA" base_Comment="_xxm79TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxwF4DNHEd2nE5zXHK_HsA" base_Comment="_xxm7-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxwF4zNHEd2nE5zXHK_HsA" base_Comment="_xxwF4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xxwF7DNHEd2nE5zXHK_HsA" base_Comment="_xxwF6zNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xx524zNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93CDD75710258" Associaton_Name="ChassisInRack"/>
+  <Default:Documentation xmi:id="_xyDn4DNHEd2nE5zXHK_HsA" base_Comment="_xx525DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xyDn6TNHEd2nE5zXHK_HsA" base_Comment="_xyDn6DNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zWCjNzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93DDEEBC603AC" Type="SequenceOf Integer"/>
+  <TIPProfile:tipPackage xmi:id="_Eo8Q9S8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E2C3D3900F5" implementationPackage="composite"/>
+  <TIPProfile:tipClass xmi:id="_Eo8Q9i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD71310196"/>
+  <TIPProfile:tipClass xmi:id="_Eo8Q9y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD70FF0180"/>
+  <TIPProfile:tipClass xmi:id="_Eo8Q-C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DDEEB160255"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB4C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEEBC60398"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB4S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEEBC603A2"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB4i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEEBC603AC"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB4y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEEBE1036F"/>
+  <TIPProfile:tipClass xmi:id="_EpGB5C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD708302D6"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB5S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100DB"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB5i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100DC"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB5y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100DD"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB6C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100DE"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB6S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100DF"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB6i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100E0"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB6y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD6F5100E1"/>
+  <TIPProfile:tipClass xmi:id="_EpGB7C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD7471011A"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB7S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203B5"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB7i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203B6"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB7y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203B7"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB8C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD75720368"/>
+  <TIPProfile:tipClass xmi:id="_EpGB8S8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD75710258"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB8i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD73520399"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB8y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD7352039A"/>
+  <TIPProfile:tipClass xmi:id="_EpGB9C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD73680050"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB9S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203A6"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB9i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203A7"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB9y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203A8"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB-C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203A9"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB-S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD735203AA"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB-i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD74240372"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB-y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD74240374"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB_C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD75720372"/>
+  <TIPProfile:tipAttribute xmi:id="_EpGB_S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEEE5502DC"/>
+</xmi:XMI>
