@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E9410A56810361" name="Competitor ABE">
+    <eAnnotations xmi:id="_FXl2gTNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E9414F495500DD?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE?"/>
+      <references xmi:type="uml:Package" href="Competitor%20Product%20Correlation%20ABE.efx#_3E3F0EC000E9414F49650361?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_BNdYYDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Market_Sales%20Domain.efx#_3E3F0EC000E93C8FA93C02FD?SID%20Phase%20IX%20Models/Market_Sales%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414F493000D0" name="Competitor">
+      <ownedComment xmi:id="_y6U3gzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414F493000D0">
+        <body>A Party playing a PartyRole that offers ProductOfferings similar to the enterprise's ProductOfferings in a MarketSegment.  </body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E94150418102CF">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Roles/PartyRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504BBC03CF" name="ID" visibility="public">
+        <ownedComment xmi:id="_y6U3hzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504BBC03CF">
+          <body>A unique identifier for the Competitor.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504BCC00B1" name="description" visibility="public">
+        <ownedComment xmi:id="_y6eBcjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504BCC00B1">
+          <body>A narrative that further details the strength, weakness, opportunity, or threat for a Competitor in a MarketSegment.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504BD401C1" name="dateCreated" visibility="public">
+        <ownedComment xmi:id="_y6eBdTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504BD401C1">
+          <body>The date on which interest was first shown for the Competitor.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_FgL-0Af0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Date?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150420400A8" name="_marketSegment" visibility="public" isUnique="false" association="_3E3F0EC000E9415042030004">
+        <type xmi:type="uml:Class" href="Market%20Segment%20ABE.efx#_3E3F0EC000E93C8FA9A80096?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7XZWDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7XZVzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415042FB02BE" name="_competitorSWOT" visibility="public" type="_3E3F0EC000E9414F4A2F0235" isUnique="false" association="_3E3F0EC000E9415042FA023A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7hKXjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7hKXTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504DB701A3" name="_partyRole" visibility="public" isUnique="false" association="_3E3F0EC000E941504DB6024C">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUTzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUTjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94152DFEF0392" name="_competitorIntelligence" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94151FA35023A?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/CompetitorIntelligence?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9v-8zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y9v-8jNHEd2nE5zXHK_HsA"/>
+        <association href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94152DFEE01D8?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/CompetitorAnalyzedUsing?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150422802E3" name="_competitorTier" visibility="public" type="_3E3F0EC000E9414F49E3009B" isUnique="false" association="_3E3F0EC000E94150422602D6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7XZXDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7XZWzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E9415042030004" name="CompetitorMarketSegment">
+      <ownedComment xmi:id="_y6eBeDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415042030004">
+        <body>A MarketSegment served by a Competitor.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504CF10070" name="rank" visibility="public">
+        <ownedComment xmi:id="_y6nycjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504CF10070">
+          <body>The degree of importance or excellence of a Competitor in a MarketSegment relative to other Competitors in the MarketSegment.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504D3803E1" name="plannedMarketEntryDate" visibility="public">
+        <ownedComment xmi:id="_y6nydTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504D3803E1">
+          <body>The date on which a Competitor plans to offer ProductOfferings in a MarketSegment.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_FgL-0Af0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Date?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504D8502A8" name="validFor" visibility="public">
+        <ownedComment xmi:id="_y6nyeDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504D8502A8">
+          <body>The period during which the CompetitorMarketSegment information is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <memberEnd href="Market%20Segment%20ABE.efx#_3E3F0EC000E94150420400A6?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_competitor?"/>
+      <memberEnd href="#_3E3F0EC000E94150420400A8?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor/_marketSegment?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414F49E3009B" name="CompetitorTier">
+      <ownedComment xmi:id="_y6xjcjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414F49E3009B">
+        <body>A hierarchical level into which a Competitor is placed.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150513202B7" name="description" visibility="public">
+        <ownedComment xmi:id="_y6xjdTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94150513202B7">
+          <body>A narrative that further details the Competitor's placement in a CompetitiveTier.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504280004A" name="_competitiveTier" visibility="public" type="_3E3F0EC000E9414F4A160280" isUnique="false" association="_3E3F0EC000E94150427F0111">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7hKWTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7hKWDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150422802ED" name="_competitor" visibility="public" type="_3E3F0EC000E9414F493000D0" isUnique="false" association="_3E3F0EC000E94150422602D6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7hKUjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7hKUTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414F4A160280" name="CompetitiveTier">
+      <ownedComment xmi:id="_y6xjeDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414F4A160280">
+        <body>A classification of a Competitor, such as by size, product lines offered, and so forth.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504F3D02F3" name="size" visibility="public">
+        <ownedComment xmi:id="_y66tYjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504F3D02F3">
+          <body>How big the Competitor is, such as small, medium, large, compared to other Competitors.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504F4D01AB" name="perspective" visibility="public">
+        <ownedComment xmi:id="_y66tZTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504F4D01AB">
+          <body>How the CompetitiveTier is viewed, such as vertical or horizontal.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504F5A0127" name="perspectiveCharacteristic" visibility="public">
+        <ownedComment xmi:id="_y66taDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504F5A0127">
+          <body>A feature or quality that further describes the perspective recognizable, such as consumer, business, carrier, size, usage, customer, and so forth.  For example, a consumer vertical market perspective. 
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415042800040" name="_competitorTier" visibility="public" type="_3E3F0EC000E9414F49E3009B" isUnique="false" association="_3E3F0EC000E94150427F0111">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7hKVjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7hKVTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504E3903A4" name="_productLine" visibility="public" isUnique="false" association="_3E3F0EC000E941504E390029">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E9407AF4C502DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductLine?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUWTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUWDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414F4A2102B7" name="SWOT">
+      <ownedComment xmi:id="_y7EeYjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414F4A2102B7">
+        <body>A Strength, Weakness, Opportunity, Threat (SWOT) that an enterprise has when compared to a Competitor.  SWOT analysis is a formal framework of identifying and framing organizational growth opportunities.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415049170104" name="swotType" visibility="public">
+        <ownedComment xmi:id="_y7EeZTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415049170104">
+          <body>A category of organizational analysis, such as strength (S), weakness (W), opportunity (O), threat (T).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504332005A" name="_competitorSWOT" visibility="public" type="_3E3F0EC000E9414F4A2F0235" isUnique="false" association="_3E3F0EC000E941504330033C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUSDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qURzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414F4A2F0235" name="CompetitorSWOT">
+      <ownedComment xmi:id="_y7EeaDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414F4A2F0235">
+        <body>General (non-MarketSegment specific) Strength, Weakness, Opportunity, or Threat when compared to a Competitor.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504A92024A" name="description" visibility="public">
+        <ownedComment xmi:id="_y7NoUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504A92024A">
+          <body>A narrative that further details the strength, weakness, opportunity, or threat.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415042FB02C8" name="_competitor" visibility="public" type="_3E3F0EC000E9414F493000D0" isUnique="false" association="_3E3F0EC000E9415042FA023A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7hKYTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7hKYDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415043320064" name="_sWOT" visibility="public" type="_3E3F0EC000E9414F4A2102B7" isUnique="false" association="_3E3F0EC000E941504330033C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUSzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUSjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E9415042FA023A" name="CompetitorMarketSegmentSWOT" memberEnd="_3E3F0EC000E9415042FB02BE _3E3F0EC000E9415042FB02C8">
+      <ownedComment xmi:id="_y7NoVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415042FA023A">
+        <body>Strength, Weakness, Opportunity, or Threat in a MarketSegment served by a Competitor.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504B170219" name="description" visibility="public">
+        <ownedComment xmi:id="_y7NoWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941504B170219">
+          <body>A narrative that further details the strength, weakness, opportunity, or threat for a Competitor in a MarketSegment.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94150432402EF" name="_marketSegment" visibility="public" isUnique="false" association="_3E3F0EC000E9415043240096">
+        <type xmi:type="uml:Class" href="Market%20Segment%20ABE.efx#_3E3F0EC000E93C8FA9A80096?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qURDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUQzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94150422602D6" name="CompetitorOperatesWithin" memberEnd="_3E3F0EC000E94150422802E3 _3E3F0EC000E94150422802ED"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94150427F0111" name="CompetitiveTierClassifies" memberEnd="_3E3F0EC000E9415042800040 _3E3F0EC000E941504280004A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9415043240096" name="MarketSegmentClassifies">
+      <memberEnd href="Market%20Segment%20ABE.efx#_3E3F0EC000E94150432402E5?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_competitorMarketSegmentSWOT?"/>
+      <memberEnd href="#_3E3F0EC000E94150432402EF?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/CompetitorMarketSegmentSWOT/_marketSegment?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941504330033C" name="SWOTClassifies" memberEnd="_3E3F0EC000E941504332005A _3E3F0EC000E9415043320064"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941504DB6024C" name="PartyRoleOwnsCompetitor">
+      <memberEnd href="#_3E3F0EC000E941504DB701A3?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor/_partyRole?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E941504DB701E9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Roles/PartyRole/_competitor?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941504E390029" name="ProductLineDefines">
+      <memberEnd href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E941504E39039A?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductLine/_competitiveTier?"/>
+      <memberEnd href="#_3E3F0EC000E941504E3903A4?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/CompetitiveTier/_productLine?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E9414F495500DD?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Competitor%20Product%20Correlation%20ABE.efx#_3E3F0EC000E9414F49650361?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_y6U3hDNHEd2nE5zXHK_HsA" base_Comment="_y6U3gzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y6eBcDNHEd2nE5zXHK_HsA" base_Comment="_y6U3hzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y6eBczNHEd2nE5zXHK_HsA" base_Comment="_y6eBcjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y6eBdjNHEd2nE5zXHK_HsA" base_Comment="_y6eBdTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y6xjczNHEd2nE5zXHK_HsA" base_Comment="_y6xjcjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y6xjdjNHEd2nE5zXHK_HsA" base_Comment="_y6xjdTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y66tYDNHEd2nE5zXHK_HsA" base_Comment="_y6xjeDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y66tYzNHEd2nE5zXHK_HsA" base_Comment="_y66tYjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y66tZjNHEd2nE5zXHK_HsA" base_Comment="_y66tZTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y7EeYDNHEd2nE5zXHK_HsA" base_Comment="_y66taDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y7EeYzNHEd2nE5zXHK_HsA" base_Comment="_y7EeYjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y7EeZjNHEd2nE5zXHK_HsA" base_Comment="_y7EeZTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y7NoUDNHEd2nE5zXHK_HsA" base_Comment="_y7EeaDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y7NoUzNHEd2nE5zXHK_HsA" base_Comment="_y7NoUjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_y7XZUjNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E9415042030004" Associaton_Name="CompetitorDoesBusinessIn"/>
+  <Rose:Rose_AssociationClass xmi:id="_y7hKWzNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E9415042FA023A" Associaton_Name="CompetitorAnalysisResultsIn"/>
+  <Rose:Rose_Property xmi:id="_zWVeLDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E941504B170219" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXYm9zNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E941504CF10070" Type="integer"/>
+  <TIPProfile:tipPackage xmi:id="_EuT5ES8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E9410A56810361" implementationPackage="competitor"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Ei8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9414F493000D0"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Ey8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504BBC03CF"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5FC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504BCC00B1"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5FS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504BD401C1"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Fi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150420400A8"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Fy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9415042FB02BE"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5GC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504DB701A3"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5GS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94152DFEF0392"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Gi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9415042030004"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Gy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504CF10070"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5HC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504D3803E1"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5HS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504D8502A8"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Hi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9414F49E3009B"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Hy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150513202B7"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5IC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504280004A"/>
+  <TIPProfile:tipClass xmi:id="_EuT5IS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9414F4A160280"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Ii8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504F3D02F3"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Iy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504F4D01AB"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5JC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504F5A0127"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5JS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9415042800040"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Ji8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504E3903A4"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Jy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9414F4A2102B7"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5KC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9415049170104"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5KS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504332005A"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Ki8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9414F4A2F0235"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Ky8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504A92024A"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5LC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9415042FB02C8"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5LS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9415043320064"/>
+  <TIPProfile:tipClass xmi:id="_EuT5Li8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9415042FA023A"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Ly8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941504B170219"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5MC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150432402EF"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5MS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150422802E3"/>
+  <TIPProfile:tipAttribute xmi:id="_EuT5Mi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94150422802ED"/>
+</xmi:XMI>

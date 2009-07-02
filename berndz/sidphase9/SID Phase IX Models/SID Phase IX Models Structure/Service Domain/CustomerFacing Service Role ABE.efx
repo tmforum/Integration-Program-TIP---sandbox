@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37AE3F01EF" name="CustomerFacing Service Role ABE">
+    <eAnnotations xmi:id="_pPVxUDQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="CustomerFacing%20Service%20ABE.efx#_3E3F0EC000E93E379A3E03AE?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CB0C50203" name="CustomerFacingServiceRole" isAbstract="true">
+      <ownedComment xmi:id="_yGUnvDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CB0C50203">
+        <body>This class defines a Service in terms of a set of ServiceRoles for a CustomerFacingService.
+
+This is the base class for defining ServiceRoles that are used to represent the variable characteristics of a CustomerFacingService in terms of roles that this Service plays. This enables the CustomerFacingService to be managed abstractly using ServiceRoles. It also helps define the Service in terms of the functions that it has or provides.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CB3530315">
+        <general xmi:type="uml:Class" href="Service%20ABE.efx#_3E3F0EC000E93D5091B903CA?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3F4A460153" name="_customerFacingService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="CustomerFacing%20Service%20ABE.efx#_3E3F0EC000E93D5091A501D6?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/CustomerFacingService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yGUnsDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yGK2tzNHEd2nE5zXHK_HsA"/>
+        <association href="CustomerFacing%20Service%20ABE.efx#_3E3F0EC000E93E3F4A450256?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/CFServiceHasCFSRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1CCEC001D" name="_resourceFacingServiceRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DD1CCEA00CF">
+        <type xmi:type="uml:Class" href="ResourceFacing%20Service%20Role%20ABE.efx#_3E3F0EC000E93D8CB0D202AB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacing%20Service%20Role%20ABE/ResourceFacingServiceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yGnipzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yGnipjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CBBEF0064" name="AccessServiceRole">
+      <ownedComment xmi:id="_yGdxozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CBBEF0064">
+        <body>This class defines the variable characteristics of the different types of access services that will be provided for this CustomerFacingService as a set of ServiceRoles.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CBD950371" general="_3E3F0EC000E93D8CB0C50203"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CBBFE02FA" name="FirewallServiceRole">
+      <ownedComment xmi:id="_yGdxpzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CBBFE02FA">
+        <body>This class defines the variable characteristics of the different types of firewall services that will be provided for this CustomerFacingService as a set of ServiceRoles.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CBD9002DE" general="_3E3F0EC000E93D8CB0C50203"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DD1CCEA00CF" name="CFSRoleRequiresRFSRoles">
+      <ownedComment xmi:id="_yGniozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DD1CCEA00CF">
+        <body>This aggregation defines the set of ResourceFacingServiceRoles that are required to implement the functionality defined by this particular CustomerFacingServiceRole.
+
+Note that the cardinality of the CFSRoleRequiresRFSRoles is 0..n on the CustomerFacingServiceRole (aggregate) side and 1..n on the ResourceFacingServiceRole (component) side. This is because a ResourceFacingServiceRole can exist without being bound into a CustomerFacingServiceRole (e.g., in testing the network), but a CustomerFacingServiceRole requires at least one ResourceFacingServiceRole to function.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DD1CCEC001D?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/CustomerFacing%20Service%20Role%20ABE/CustomerFacingServiceRole/_resourceFacingServiceRole?"/>
+      <memberEnd href="ResourceFacing%20Service%20Role%20ABE.efx#_3E3F0EC000E93DD1CCEC0027?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacing%20Service%20Role%20ABE/ResourceFacingServiceRole/_customerFacingServiceRole?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yGdxoDNHEd2nE5zXHK_HsA" base_Comment="_yGUnvDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yGdxpDNHEd2nE5zXHK_HsA" base_Comment="_yGdxozNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yGnioDNHEd2nE5zXHK_HsA" base_Comment="_yGdxpzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yGnipDNHEd2nE5zXHK_HsA" base_Comment="_yGniozNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Eqberi8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37AE3F01EF" implementationPackage="role"/>
+  <TIPProfile:tipClass xmi:id="_EqlPoC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D8CB0C50203"/>
+  <TIPProfile:tipAttribute xmi:id="_EqlPoS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E3F4A460153"/>
+  <TIPProfile:tipAttribute xmi:id="_EqlPoi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DD1CCEC001D"/>
+  <TIPProfile:tipClass xmi:id="_EqlPoy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D8CBBEF0064"/>
+  <TIPProfile:tipClass xmi:id="_EqlPpC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D8CBBFE02FA"/>
+</xmi:XMI>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37ACBC0365" name="Network Architecture ABE">
+    <eAnnotations xmi:id="_uRh40DQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DBCB818032F?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901EA" name="802Service">
+      <ownedComment xmi:id="_yQmlHzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901EA">
+        <body>802Service contains semantics that define how traffic is forwarded based on the value of the priority field in the 802.1P header.
+
+This class is used to enable different types of QoSServices, such as 802Service and DiffServService, to exchange traffic with each other. Each of these different types of QoSServices has its own means of indicating that one type of traffic should be treated in a different manner from other types of traffic. Thus, without the ability to define mappings between these different marking methods, interoperability is not possible.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901E9">
+        <general xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D2493000C" name="802PriorityValue" visibility="public">
+        <ownedComment xmi:id="_yQvvAzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D2493000C">
+          <body>This attribute is a string that defines the priority of this packet according to an 802.1P specification. The 802.1P header includes a three-bit field for prioritization, which allows packets to be grouped into various traffic classes.
+
+This String refers to the signaling technique defined in IEEE 802.1P. This is an IEEE endorsed specification for prioritizing network traffic at the data-link/MAC sublayer. The 802.1P standard also offers provisions to filter multicast traffic to ensure it does not proliferate over layer 2-switched networks.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF34D2303C9" name="802QValue" visibility="public">
+        <ownedComment xmi:id="_yQvvBjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF34D2303C9">
+          <body>This is a String that can be used to identify a VLAN.
+
+The IEEE 802.1Q standard defines the operation of VLAN Bridges that permit the definition, operation and administration of Virtual LAN topologies within a Bridged LAN infrastructure.
+  
+The standard also helps provide a higher level of security between segments of internal networks. The 802.1Q specification establishes a standard method for inserting VLAN membership information into Ethernet frames.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901EE" name="DiffServService">
+      <ownedComment xmi:id="_yQ5gATNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901EE">
+        <body>DiffServService contains semantics that define how traffic is forwarded based on the value of the DSCP (DiffServ Code Point) of a packet.
+
+This class is used to enable different types of QoSServices, such as 802Service and DiffServService, to exchange traffic with each other. Each of these different types of QoSServices has its own means of indicating that one type of traffic should be treated in a different manner from other types of traffic. Thus, without the ability to define mappings between these different marking methods, interoperability is not possible.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901ED">
+        <general xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D228001E3" name="dscpValue" visibility="public">
+        <ownedComment xmi:id="_yQ5gBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D228001E3">
+          <body>This attribute is a string that defines the Differentiated Services Code Point (DSCP) that this interface uses to represent various types of differentiated services through device-specific configuration commands.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D22B303AB" name="phbID" visibility="public">
+        <ownedComment xmi:id="_yQ5gCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D22B303AB">
+          <body>This attribute is a string that identifies a particular Per Hop Behavior (PHB). The value of this string is the Per Hop Behavior Identification Code, as defined in RFC3140. 
+
+PHB identification codes define how traffic belonging to a particular behavior aggregate is treated at an individual network node.  In IP packet headers, PHBs are not indicated as such; instead DSCP values are used.  There are only 64 possible DSCP values, but there is no such limit on the number of PHBs.  In a given network domain, there is a locally defined mapping between DSCP values and PHBs.  Standardized PHBs recommend a DSCP mapping, but network operators may choose alternative mappings.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D266403C5" name="queuingRecommended" visibility="public">
+        <ownedComment xmi:id="_yRDRAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D266403C5">
+          <body>This is an enumerated integer that defines the type of queuing that is recommended for this particular PHB. Values include:
+
+  0:  not specified
+  1:  PQ (priority queuing)
+  2:  WFQ (weighted fair queuing)
+  3:  CBWFQ (class-based  weighted fair queuing)
+  4:  PQ-CBWFQ (PQ and CBWFQ)
+  5:  other
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D292C00C2" name="queuingUsed" visibility="public">
+        <ownedComment xmi:id="_yRDRBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D292C00C2">
+          <body>This is an enumerated integer that defines the type of queuing that is actually used in this instance for this particular PHB. Values include:
+
+  0:  not specified
+  1:  PQ (priority queuing)
+  2:  WFQ (weighted fair queuing)
+  3:  CBWFQ (class-based  weighted fair queuing)
+  4:  PQ-CBWFQ (PQ and CBWFQ)
+  5:  other
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901E6" name="ToSService">
+      <ownedComment xmi:id="_yRDRCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901E6">
+        <body>ToSService contains semantics that define how traffic is forwarded based on the value of the ToS byte of a packet.
+
+This class is used to enable different types of QoSServices, such as 802Service and DiffServService, to exchange traffic with each other. Each of these different types of QoSServices has its own means of indicating that one type of traffic should be treated in a different manner from other types of traffic. Thus, without the ability to define mappings between these different marking methods, interoperability is not possible.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901E5">
+        <general xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D215B03AA" name="tosPrecedenceValue" visibility="public">
+        <ownedComment xmi:id="_yRMa8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D215B03AA">
+          <body>This attribute is a string that contains the 3-bit marking in the ToS byte.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5D0F8D02AD" name="AFService">
+      <ownedComment xmi:id="_yRMa9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D0F8D02AD">
+        <body>This class defines how to forward network traffic by adding specific semantics that characterize the operation of the Assured Forwarding (AF) Service (RFC2597).
+
+This RFC defines four different AF classes to represent four different treatments of traffic (e.g., a different amount of forwarding resources, such as buffer space and bandwidth, are allocated). This RFC defines three different drop probabilities for each AF class, though clearly additional drop probabilities can be defined.
+
+The idea of AFService is to mark IP packets with one of three possible drop precedence values. The drop precedence of a packet determines the relative importance of that packet compared to other packets within the same AF class if congestion occurs. A congested interface will try to avoid dropping packets with a lower drop precedence value by instead discarding packets with a higher drop precedence value. Of course, if there is no congestion on the DeviceInterface, then nothing will happen.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5D297D020D" general="_3E3F0EC000E93DB57B3901EE"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D1C840360" name="afClassNumber" visibility="public">
+        <ownedComment xmi:id="_yRWL8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D1C840360">
+          <body>This attribute is a string that defines the number of AF classes that this AF implementation uses.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D1D4A0044" name="afDropProbabilityNumber" visibility="public">
+        <ownedComment xmi:id="_yRWL9TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D1D4A0044">
+          <body>This attribute is a string that defines the number of drop precedence values that this AF implementation uses. Each AF class has exactly this number of drop precedence values - no more, no less.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5D24F7035E" name="EFService">
+      <ownedComment xmi:id="_yRWL-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D24F7035E">
+        <body>This class defines how to forward network traffic by adding specific semantics that characterize the operation of the Expedited Forwarding (EF) Service (RFC3246 and RFC3247).
+
+The recommended DSCP for defining EF is 101110. called expedited forwarding (EF). The EF PHB can be used to build a low loss, low latency, low jitter, assured bandwidth, end-to-end service through DiffServ-compliant domains.  Such a service appears to the endpoints like a point-to-point connection or a &quot;virtual leased line&quot;.
+
+The PHB for this class and its DSCP value come from DiffServService. However, this class defines attributes that can be used as &quot;implementation hints&quot; to the rest of the network to ensure that interoperability is achieved even if heterogeneous devices are being used.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5D29830157" general="_3E3F0EC000E93DB57B3901EE"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D27C802AD" name="usesLimiting" visibility="public">
+        <ownedComment xmi:id="_yRfV4zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D27C802AD">
+          <body>This is a Boolean attribute that, if TRUE, indicates that this particular EF PHB implementation has a limiting mechanism to protect the rest of the network from the effects of EF traffic.
+
+Various mechanisms can be used to implement the EF PHB. If the particular mechanism chosen allows unlimited preemption of other traffic (e.g., a priority queue), this implementation must include some means to limit the damage EF traffic could inflict on other traffic (e.g., a token bucket rate limiter).
+
+Traffic that exceeds this limit must be discarded.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yQvvADNHEd2nE5zXHK_HsA" base_Comment="_yQmlHzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yQvvBDNHEd2nE5zXHK_HsA" base_Comment="_yQvvAzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yQvvBzNHEd2nE5zXHK_HsA" base_Comment="_yQvvBjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yQ5gAjNHEd2nE5zXHK_HsA" base_Comment="_yQ5gATNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yQ5gBjNHEd2nE5zXHK_HsA" base_Comment="_yQ5gBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRDRADNHEd2nE5zXHK_HsA" base_Comment="_yQ5gCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRDRAzNHEd2nE5zXHK_HsA" base_Comment="_yRDRAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRDRBjNHEd2nE5zXHK_HsA" base_Comment="_yRDRBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRMa8DNHEd2nE5zXHK_HsA" base_Comment="_yRDRCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRMa9DNHEd2nE5zXHK_HsA" base_Comment="_yRMa8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRMa9zNHEd2nE5zXHK_HsA" base_Comment="_yRMa9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRWL8zNHEd2nE5zXHK_HsA" base_Comment="_yRWL8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRWL9jNHEd2nE5zXHK_HsA" base_Comment="_yRWL9TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRfV4DNHEd2nE5zXHK_HsA" base_Comment="_yRWL-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yRfV5DNHEd2nE5zXHK_HsA" base_Comment="_yRfV4zNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_ErxidC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37ACBC0365" implementationPackage="arch"/>
+  <TIPProfile:tipClass xmi:id="_ErxidS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901EA"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxidi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D2493000C"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxidy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EF34D2303C9"/>
+  <TIPProfile:tipClass xmi:id="_ErxieC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901EE"/>
+  <TIPProfile:tipAttribute xmi:id="_ErxieS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D228001E3"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxiei8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D22B303AB"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxiey8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D266403C5"/>
+  <TIPProfile:tipAttribute xmi:id="_ErxifC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D292C00C2"/>
+  <TIPProfile:tipClass xmi:id="_ErxifS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901E6"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxifi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D215B03AA"/>
+  <TIPProfile:tipClass xmi:id="_Erxify8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E5D0F8D02AD"/>
+  <TIPProfile:tipAttribute xmi:id="_ErxigC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D1C840360"/>
+  <TIPProfile:tipAttribute xmi:id="_ErxigS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D1D4A0044"/>
+  <TIPProfile:tipClass xmi:id="_Erxigi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E5D24F7035E"/>
+  <TIPProfile:tipAttribute xmi:id="_Erxigy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D27C802AD"/>
+</xmi:XMI>

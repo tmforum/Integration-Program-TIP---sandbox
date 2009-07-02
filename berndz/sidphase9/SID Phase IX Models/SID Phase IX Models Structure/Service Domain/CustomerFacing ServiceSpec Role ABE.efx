@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37B1970222" name="CustomerFacing ServiceSpec Role ABE">
+    <eAnnotations xmi:id="_vJYRYDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E379A8B0070?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D55937B0039" name="FirewallServiceSpecRole">
+      <ownedComment xmi:id="_yYNB4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D55937B0039">
+        <body>This class defines the invariant characteristics of the different types of firewall services that will be provided for this CustomerFacingService as a set of ServiceSpecificationRoles.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D669C92036A" general="_3E3F0EC000E93D5148EF0294"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D557DAA02A5" name="AccessServiceSpecRole">
+      <ownedComment xmi:id="_yYNB5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D557DAA02A5">
+        <body>This class defines the invariant characteristics of the different types of access services that will be provided for this CustomerFacingService as a set of ServiceSpecificationRoles.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D669C8D0286" general="_3E3F0EC000E93D5148EF0294"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5148EF0294" name="CustomerFacingServiceSpecRole" isAbstract="true">
+      <ownedComment xmi:id="_yYNB6TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5148EF0294">
+        <body>This class defines a ServiceSpecification, in terms of a set of ServiceSpecificationRoles, for a CustomerFacingService.
+
+This is the base class for defining ServiceSpecificationRoles that are used to represent the invariant characteristics of a CustomerFacingService. This enables the CustomerFacingService to be managed abstractly using ServiceSpecificationRoles. It also helps define the ServiceSpecification in terms of the functions that it has or provides.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D51491701D3">
+        <general xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D50923401BE?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecificationRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93ED6B73901D1" name="_customerFacingServiceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93D9DADDE0194?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yYDQ7zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yYDQ7jNHEd2nE5zXHK_HsA"/>
+        <association href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93ED6B736023B?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CFSSpecHasCFSRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1D57F01CD" name="_resourceFacingServiceSpecRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DD1D57D0170">
+        <type xmi:type="uml:Class" href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93D5148FE026E?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yYWL1zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yYWL1jNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DD1D57D0170" name="RequiresResourceFacingServiceSpecRoles">
+      <ownedComment xmi:id="_yYWL0zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DD1D57D0170">
+        <body>This aggregation defines the set of ResourceFacingServiceSpecRoles that are required to implement the functionality defined by this particular CustomerFacingServiceSpecRole. This aggregation can be thought of as enabling the ResourceFacingServiceSpecRoles to serve as reusable templates that, when combined, realize a CustomerFacingServiceSpecRole (which is, of course, also a template).
+
+Note that the cardinality of the RequiresResourceFacingServiceSpecRoles aggregation is 0..n on the CustomerFacingServiceSpecRole (aggregate) side and 1..n on the ResourceFacingServiceSpecRole (component) side. This is because a ResourceFacingServiceSpecRole can exist without being bound into a CustomerFacingServiceSpecRole (e.g., in testing the network), but a CustomerFacingServiceSpecRole requires at least one ResourceFacingServiceSpecRole to function.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DD1D57F01CD?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacing%20ServiceSpec%20Role%20ABE/CustomerFacingServiceSpecRole/_resourceFacingServiceSpecRole?"/>
+      <memberEnd href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93DD1D57F01D7?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole/_customerFacingServiceSpecRole?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yYNB4jNHEd2nE5zXHK_HsA" base_Comment="_yYNB4TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYNB5jNHEd2nE5zXHK_HsA" base_Comment="_yYNB5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYWL0DNHEd2nE5zXHK_HsA" base_Comment="_yYNB6TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYWL1DNHEd2nE5zXHK_HsA" base_Comment="_yYWL0zNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EsEdcC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37B1970222" implementationPackage="role"/>
+  <TIPProfile:tipClass xmi:id="_EsEdcS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D55937B0039"/>
+  <TIPProfile:tipClass xmi:id="_EsEdci8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D557DAA02A5"/>
+  <TIPProfile:tipClass xmi:id="_EsEdcy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D5148EF0294"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEddC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93ED6B73901D1"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEddS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DD1D57F01CD"/>
+</xmi:XMI>

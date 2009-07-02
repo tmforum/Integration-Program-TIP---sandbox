@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37AA2D0309" name="Service Package ABE">
+    <eAnnotations xmi:id="_x9GWMTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_x9GWMDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E379A8B0070?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5AA810027C" name="GoldPackageSpec">
+      <ownedComment xmi:id="_yYWL3TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5AA810027C">
+        <body>This class defines the Gold Service class, which provides traffic conditioning, access, and other sub-services to a set of applications that are assigned Gold Service. In this bundle, users of the GoldPackage get &quot;better&quot; service than users of the SilverPackage or BronzePackage.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4D01D20019" general="_3E3F0EC000E93E4BC3F101EB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5AA83D0295" name="BronzePackageSpec">
+      <ownedComment xmi:id="_yYf80zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5AA83D0295">
+        <body>This class defines the Bronze Service class, which provides traffic conditioning, access, and other sub-services to a set of applications that are assigned Bronze Service.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4D01E50324" general="_3E3F0EC000E93E4BC3F101EB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E37AA860343" name="SilverPackageSpec">
+      <ownedComment xmi:id="_yYf81zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37AA860343">
+        <body>This class defines the Silver Service class, which provides traffic conditioning, access, and other sub-services to a set of applications that are assigned Silver Service.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4D01DC01AE" general="_3E3F0EC000E93E4BC3F101EB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E37AA990200" name="PlatinumPackageSpec">
+      <ownedComment xmi:id="_yYpGwzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37AA990200">
+        <body>This class defines the Platinum Service class, which provides traffic conditioning, access, and other sub-services to a set of applications that are assigned Platinum Service.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4D01CB03D1" general="_3E3F0EC000E93E4BC3F101EB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E4BC1EF0033" name="ServicePackageSpec" isAbstract="true">
+      <ownedComment xmi:id="_yYpGxzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4BC1EF0033">
+        <body>A ServicePackageSpec defines the concept of bundling a set of different CustomerFacingServiceSpecs to meet the functionality specified by one or more ProductSpecifications. This enables the invariant characteristics and behavior of these CustomerFacingServices to be specified, so that multiple Products can be built from their associated ProductSpecification.
+
+Treating this set of CustomerFacingServiceSpecs as a single object is very important for building complex Services, such as a VPN. This enables a single ProductItem (derived ultimately from a ProductSpecification) to be offered to the Customer, even though in reality the ProductItem consists of a set of different CustomerFacingServices that must work together to provide the functionality that the Customer needs.
+
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5CFFFE02BA">
+        <general xmi:type="uml:Class" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E5CFC4B01DC?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpecComposite?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4BC230007D" name="packageType" visibility="public">
+        <ownedComment xmi:id="_yYpGyzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4BC230007D">
+          <body>This is an enumerated integer that defines the specific type of ServicePackageSpecification that this instance is. The value &quot;0&quot; represents the highest, or &quot;best&quot;, service; increasing numerical values represent the packaging of services that do not offer as much functionality as the package defined using the value of 0. Values include:
+
+  0:  (e.g., Platinum)
+  1:  (e.g., Gold)
+  2:  (e.g., Silver)
+  3:  (e.g., Bronze)
+  4:  (e.g., BestEffort)
+
+There is no limit to the number of values that may be defined. However, most Service Providers currently limit this to less than 8.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4BC42601B5" name="_servicePackageSpecComposite" visibility="public" type="_3E3F0EC000E93E4BC3FB0055" isUnique="false" association="_3E3F0EC000E93E4BC42400D6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yY8oyjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yY8oyTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAEA58802A2" name="_serviceBundleSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Service%20Bundle%20ABE.efx#_3E3F0EC000E93E5C527F0338?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/Service%20Bundle%20ABE/ServiceBundleSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ybBsYDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ya4iezNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Service%20Bundle%20ABE.efx#_3E3F0EC000E93EBC0D670187?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/Service%20Bundle%20ABE/ServicePackageBundleDetails?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E4BC3F101EB" name="ServicePackageSpecAtomic">
+      <ownedComment xmi:id="_yYy3wjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4BC3F101EB">
+        <body>A ServicePackageSpecAtomic object models different ServicePackageSpecs as a set of different instances of individual, independent CustomerFacingServiceSpecs. This is fundamentally different than the ServicePackageSpecComposite object, which is used to model one ServicePackageSpec as the combination of other existing ServicePackageSpecs (as well as providing its own extensions).
+
+For example, GoldPackageSpec is an individual packaging of services, and is therefore an instance of the ServicePackageSpecAtomic class. If there was a service offering that combined the services defined by the GoldPackageSpec with those defined by another ServicePackageSpecAtomic class, such as the PlatinumPackageSpec, then that combination could be aggregated together, forming an instance of the ServicePackageSpecComposite class.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4BC413017C" general="_3E3F0EC000E93E4BC1EF0033"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E4BC3FB0055" name="ServicePackageSpecComposite">
+      <ownedComment xmi:id="_yYy3xjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4BC3FB0055">
+        <body>This models different packages as the combination of other existing ServicePackages (as well as providing its own extensions). This is fundamentally different than ServicePackageAtomic, which models different ServicePackages as a set of different instances. </body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E4BC4170073" general="_3E3F0EC000E93E4BC1EF0033"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4BC42601AB" name="_servicePackageSpec" visibility="public" type="_3E3F0EC000E93E4BC1EF0033" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E4BC42400D6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yY8oxzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yY8oxjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5A583001C2" name="BestEffortPackageSpec">
+      <ownedComment xmi:id="_yYy3yjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5A583001C2">
+        <body>This class defines the BestEffortService class, which provides traffic conditioning, access, and other sub-services to a set of applications that are not assigned Platinum, Gold, Silver, or Bronze Service. In other words, traffic assigned to BestEffort will not have any QoS associated with it.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5A591102D4" general="_3E3F0EC000E93E4BC3F101EB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E4BC42400D6" name="HasServicePackageSpecs" memberEnd="_3E3F0EC000E93E4BC42601AB _3E3F0EC000E93E4BC42601B5">
+      <ownedComment xmi:id="_yY8owzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4BC42400D6">
+        <body>This aggregation defines the set of ServicePackageSpecs that make up this particular ServicePackageSpecComposite object.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EBB022D02CB" name="ServicePackageUsesServiceBundles">
+      <ownedComment xmi:id="_yY8ozDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBB022D02CB">
+        <body>This aggregation defines the set of ServiceBundles that are used in this particular ServicePackage.</body>
+      </ownedComment>
+      <memberEnd href="CustomerFacing%20Service%20ABE.efx#_3E3F0EC000E93EBB022F0332?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/ServicePackage/_serviceBundle?"/>
+      <memberEnd href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93EBB022F0346?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ServiceBundle/_servicePackage?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yYf80DNHEd2nE5zXHK_HsA" base_Comment="_yYWL3TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYf81DNHEd2nE5zXHK_HsA" base_Comment="_yYf80zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYpGwDNHEd2nE5zXHK_HsA" base_Comment="_yYf81zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYpGxDNHEd2nE5zXHK_HsA" base_Comment="_yYpGwzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYpGyDNHEd2nE5zXHK_HsA" base_Comment="_yYpGxzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYy3wDNHEd2nE5zXHK_HsA" base_Comment="_yYpGyzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYy3wzNHEd2nE5zXHK_HsA" base_Comment="_yYy3wjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yYy3xzNHEd2nE5zXHK_HsA" base_Comment="_yYy3xjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yY8owDNHEd2nE5zXHK_HsA" base_Comment="_yYy3yjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yY8oxDNHEd2nE5zXHK_HsA" base_Comment="_yY8owzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZFysDNHEd2nE5zXHK_HsA" base_Comment="_yY8ozDNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EsEddi8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E37AA2D0309" implementationPackage="package"/>
+  <TIPProfile:tipClass xmi:id="_EsEddy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D5AA810027C"/>
+  <TIPProfile:tipClass xmi:id="_EsEdeC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93D5AA83D0295"/>
+  <TIPProfile:tipClass xmi:id="_EsEdeS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E37AA860343"/>
+  <TIPProfile:tipClass xmi:id="_EsEdei8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E37AA990200"/>
+  <TIPProfile:tipClass xmi:id="_EsEdey8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E4BC1EF0033"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEdfC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E4BC230007D"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEdfS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E4BC42601B5"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEdfi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EAEA58802A2"/>
+  <TIPProfile:tipClass xmi:id="_EsEdfy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E4BC3F101EB"/>
+  <TIPProfile:tipClass xmi:id="_EsEdgC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E4BC3FB0055"/>
+  <TIPProfile:tipAttribute xmi:id="_EsEdgS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E4BC42601AB"/>
+  <TIPProfile:tipClass xmi:id="_EsEdgi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E5A583001C2"/>
+</xmi:XMI>

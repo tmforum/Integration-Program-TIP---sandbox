@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C3C44000C" name="Physical Component ABE">
+    <eAnnotations xmi:id="_-H8B0TN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_-H8B0DN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEA0E303D6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDAFB8F037B" name="PhysicalComponent" isAbstract="true">
+      <ownedComment xmi:id="_xtbmkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAFB8F037B">
+        <body>This is the base class for different types of PhysicalComponents that can reside either in an Equipment or an EquipmentHolder object. They can NOT be used as a stand-alone object.
+
+From a management point-of-view, this object either can not or does not need to be split into its constituent parts. For example, an ASIC (or Chip) can not , and a tape for data storage does not, need to be split up into their constituent parts. Any piece of hardware that is not a PhysicalLink, PhysicalConnector, Equipment, or EquipmentHolder, is a subclass of this class.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDAFBFA00B8">
+        <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD77440322" name="isConfigurable" visibility="public">
+        <ownedComment xmi:id="_xtbmljNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD77440322">
+          <body>This is a Boolean attribute that, if TRUE, means that this PhysicalComponent is configurable by the end-user. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD78D101B1" name="MemoryComponent">
+      <ownedComment xmi:id="_xtlXkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD78D101B1">
+        <body>This class represents memory devices that are implemented as Chips. Note that this only represents the physical packaging of the Memory Chip - the logical functionality is defined in a separate class, called Memory, that is part of the LogicalResource model.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD796C014F" general="_3E3F0EC000E93CDD778A00CA"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD76D6004A" name="typeOfMemoryComponent" visibility="public">
+        <ownedComment xmi:id="_xtlXljNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD76D6004A">
+          <body>This is an enumerated integer that defines the type of memory that this Chip is. Values include:
+
+  0:  Unknown
+  1:  Proprietary
+  2:  RAM
+  3:  DRAM
+  4:  Synchronous DRAM
+  5:  Cache DRAM
+  6:  EDRAM
+  7:  VRAM
+  8:  SRAM
+  9:  EDO
+10:  ROM
+11:  PROM
+12:  EPROM
+13:  EEPROM
+14:  FEPROM
+15:  Flash
+16:  CDRAM
+17:  3DRAM
+18:  SDRAM
+19:  SGRAM
+20:  RDRAM
+21:  DDR
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD7BB60039" name="FlashDisk">
+      <ownedComment xmi:id="_xtuhgDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD7BB60039">
+        <body>Flash are memory-based devices that conform to the PC Card (formerly PCMCIA) standard, and that present an ATA (AT Attachment) interface to the device. The Flash Disk has controller circuitry that allows it to emulate a hard disk and that automatically maps out bad blocks and performs automatic block erasure. Furthermroe, the Flash Disk provides the capability to allocate noncontiguous sectors, which a Flash memory device can't.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E45533002E9" general="_3E3F0EC000E93CDAFB8F037B"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDB4310050" name="memorySize" visibility="public">
+        <ownedComment xmi:id="_xtuhhDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDB4310050">
+          <body>This is the size of the Flash disk in MBytes.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD787E014D" name="ASIC">
+      <ownedComment xmi:id="_xtuhhzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD787E014D">
+        <body>An ASIC is an Application Specific Integrated Circuit.
+
+This class represents a special type of Chip that is used to upgrade the functionality of a networking device. Examples include upgrading the modem function of a device, increasing the processing capability of a Card or Device, and implementing some type of networking functionality, such as fast switching, directly in hardware (as opposed to emulating it in software).
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD79700001" general="_3E3F0EC000E93CDD778A00CA"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EEB6E1500EB" name="functionalPurpose" visibility="public">
+        <ownedComment xmi:id="_xt4SgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EEB6E1500EB">
+          <body>This is an enumerated integer that defines the functional purpose of this ASIC. Values include:
+
+  0:  Unknown
+  1:  Routing Traffic
+  2:  Forwarding Traffic
+  3:  Encrypting Traffic
+  4:  Firewalling
+  5:  Encoding
+  6:  General Computational Functions
+
+Additional values will be added in the next release of DEN-ng.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EEB6C11012F" name="isMandatoryASIC" visibility="public">
+        <ownedComment xmi:id="_xt4ShjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EEB6C11012F">
+          <body>This is a Boolean attribute that, if TRUE, signifies that this ASIC is mandatory for the correct operation of the PhysicalResource that contains it.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD778A00CA" name="Chip">
+      <ownedComment xmi:id="_xt4SiTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD778A00CA">
+        <body>This is a concrete class that models different types of chips that are either directly configurable by the end-user (e.g., a programmable device) and/or represent FRUs (e.g., a special ASIC that can be upgraded by replacing it with a new version of that same ASIC).
+
+Note that capacity characteristics (e.g., how much memory can a Flash chip hold) are defined through the PhysicalCapacity association.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD793202F0" general="_3E3F0EC000E93CDAFB8F037B"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD76D60037" name="formFactor" visibility="public">
+        <ownedComment xmi:id="_xuCDgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD76D60037">
+          <body>This is an enumerated integer that defines the form factor of this PhysicalComponent. Values include:
+
+  0:  Unknown
+  1:  Other
+  2:  Custom
+  3:  SIP
+  4:  DIP
+  5:  ZIP
+  6:  SOJ
+  7:  SIMM
+  8:  DIMM
+  9:  PGA
+10: RIMM
+11: SRIMM
+12: SODIMM
+13: SOIC
+14: LCC
+15: PLCC
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDD76E70166" name="Backplane">
+      <ownedComment xmi:id="_xuCDhjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD76E70166">
+        <body>This class models the backplane that is present in devices.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDD79360057" general="_3E3F0EC000E93CDAFB8F037B"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xtbmkzNHEd2nE5zXHK_HsA" base_Comment="_xtbmkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xtlXkDNHEd2nE5zXHK_HsA" base_Comment="_xtbmljNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xtlXkzNHEd2nE5zXHK_HsA" base_Comment="_xtlXkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xtlXlzNHEd2nE5zXHK_HsA" base_Comment="_xtlXljNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xtuhgTNHEd2nE5zXHK_HsA" base_Comment="_xtuhgDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xtuhhTNHEd2nE5zXHK_HsA" base_Comment="_xtuhhDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xt4SgDNHEd2nE5zXHK_HsA" base_Comment="_xtuhhzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xt4ShDNHEd2nE5zXHK_HsA" base_Comment="_xt4SgzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xt4ShzNHEd2nE5zXHK_HsA" base_Comment="_xt4ShjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xuCDgDNHEd2nE5zXHK_HsA" base_Comment="_xt4SiTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xuCDhDNHEd2nE5zXHK_HsA" base_Comment="_xuCDgzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xuCDhzNHEd2nE5zXHK_HsA" base_Comment="_xuCDhjNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_Eoyf9C8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E2C3C44000C" implementationPackage="component"/>
+  <TIPProfile:tipClass xmi:id="_Eoyf9S8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDAFB8F037B"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf9i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD77440322"/>
+  <TIPProfile:tipClass xmi:id="_Eoyf9y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD78D101B1"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf-C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD76D6004A"/>
+  <TIPProfile:tipClass xmi:id="_Eoyf-S8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD7BB60039"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf-i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDDB4310050"/>
+  <TIPProfile:tipClass xmi:id="_Eoyf-y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD787E014D"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf_C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EEB6E1500EB"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf_S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EEB6C11012F"/>
+  <TIPProfile:tipClass xmi:id="_Eoyf_i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD778A00CA"/>
+  <TIPProfile:tipAttribute xmi:id="_Eoyf_y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD76D60037"/>
+  <TIPProfile:tipClass xmi:id="_EoygAC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD76E70166"/>
+</xmi:XMI>

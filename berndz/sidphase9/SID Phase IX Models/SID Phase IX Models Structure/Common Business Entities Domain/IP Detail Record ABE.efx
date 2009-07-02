@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E947C270490196" name="IP Detail Record ABE">
+    <eAnnotations xmi:id="_2FWDMDNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Usage%20ABE.efx#_3E3F0EC000E941C174B400CC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19D000177" name="dateTimeUsec">
+      <eAnnotations xmi:id="_w5bWzTNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bWzjNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19DD90213" name="UUID">
+      <eAnnotations xmi:id="_w5RlwjNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5RlwzNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19D2902CE" name="ipV4Addr">
+      <eAnnotations xmi:id="_w5RlxTNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5RlxjNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19D3F0167" name="ipV6Addr">
+      <eAnnotations xmi:id="_w5RlyDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5RlyTNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19D8B000F" name="ipAddr">
+      <eAnnotations xmi:id="_w5RlyzNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5RlzDNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19CCC035B" name="dateTimeMsec">
+      <eAnnotations xmi:id="_w5RlzjNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5RlzzNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C1A0580196" name="IPDR">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C272240119" name="_iPDRType" visibility="public" type="_3E3F0EC000E947C271E903C8" isUnique="false">
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C272230000?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C19F6803A9" name="IPDRDoc">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C1A12803B9" name="_iPDR" visibility="public" type="_3E3F0EC000E947C1A0580196" isUnique="false" aggregation="shared">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w4h-6TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w4h-6DNHEd2nE5zXHK_HsA"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C1A1270203?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C1A22202AF" name="_iPDRDocEnd" visibility="public" type="_3E3F0EC000E947C1A1A102BF" isUnique="false" aggregation="shared">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w4h-7jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w4h-7TNHEd2nE5zXHK_HsA"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C1A222000F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C19F86034B" name="docId" visibility="public" type="_3E3F0EC000E947C19DD90213"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C19FC8030D" name="version" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C19FDD0203" name="creationTime" visibility="public" type="_3E3F0EC000E947C19CCC035B"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C1A0070222" name="IPDRRecorderInfo" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C1A1A102BF" name="IPDRDocEnd">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C1A1C603A9" name="count" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C1A1E90138" name="endTime" visibility="public" type="_3E3F0EC000E947C19CCC035B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3E3F0EC000E947C19DFF000F" name="macAddress">
+      <eAnnotations xmi:id="_w5Rl2jNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5Rl2zNHEd2nE5zXHK_HsA" key="dataType"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C271E903C8" name="IPDRType">
+      <eAnnotations xmi:id="_w5Rl3TNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5Rl3jNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C273CC0128" name="_iPDRCreationTime" visibility="public" type="_3E3F0EC000E947C2736C0280" isUnique="false" aggregation="shared">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w4h--DNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w4h-9zNHEd2nE5zXHK_HsA"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C273C802DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C274540119" name="_seqNum" visibility="public" type="_3E3F0EC000E947C2742002CE" isUnique="false" aggregation="shared">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w4h-_TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w4h-_DNHEd2nE5zXHK_HsA"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C274530203?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2800202CE" name="_usage" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Usage%20ABE.efx#_3E3F0EC000E941C175ED0356?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/Usage?"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C27FFF0261?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C2736C0280" name="IPDRCreationTime">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C273990138" name="creationTime" visibility="public" type="_3E3F0EC000E947C19CCC035B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C2742002CE" name="seqNum">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C27435002E" name="seqNum" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27A630203" name="DOCSISType">
+      <eAnnotations xmi:id="_w5bWxDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bWxTNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EAF02FD" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27B1201B5" name="IPDREmailType">
+      <eAnnotations xmi:id="_w5bWyDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bWyTNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EBA037A" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27CC0004E" name="IPDRStreamingMediaType">
+      <eAnnotations xmi:id="_w5bWzzNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bW0DNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EC00000" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27A97029F" name="IPDRVoiPType">
+      <eAnnotations xmi:id="_w5bW0zNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bW1DNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EB6002E" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27AC502CE" name="PublicWLANAccessUsageEntry">
+      <eAnnotations xmi:id="_w5bW1zNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bW2DNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EB80280" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C27B4202AF" name="IPDRWholeSaleType">
+      <eAnnotations xmi:id="_w5bW2zNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_w5bW3DNHEd2nE5zXHK_HsA" key="template"/>
+      </eAnnotations>
+      <generalization xmi:id="_3E3F0EC000E947C27EBD00EA" general="_3E3F0EC000E947C271E903C8"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C2A7080399" name="TemplateBlock">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AA1803B9" name="_fieldDescriptor" visibility="public" type="_3E3F0EC000E947C2A72C03B9" isUnique="false" aggregation="shared">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w4h_BzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w4h_BjNHEd2nE5zXHK_HsA"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2AA1603A9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AA4A00FA" name="_usageSpecification" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Usage%20ABE.efx#_3E3F0EC000E941C179740075?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageSpecification?"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2AA480290?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A897006D" name="templateId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A8B90213" name="schemaName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A94F02FD" name="typeName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2ACC4033E" name="_iPDRSPData" visibility="public" type="_3E3F0EC000E947C2AA9C036B" isUnique="false">
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2ACC4000F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C2A72C03B9" name="FieldDescriptor">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AA6A0177" name="_usageSpecCharacteristic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Usage%20ABE.efx#_3E3F0EC000E941C1A25502AF?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageSpecCharacteristic?"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2AA670280?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A96E009C" name="typeId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A9770242" name="FieldId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A97D038A" name="fieldName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2A98801B5" name="isEnabled" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E947C2AA9C036B" name="IPDRSPData">
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2ACC4033C" name="_templateBlock" visibility="public" type="_3E3F0EC000E947C2A7080399" isUnique="false">
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2ACC4000F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AD3C0271" name="_usage" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Usage%20ABE.efx#_3E3F0EC000E941C175ED0356?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/Usage?"/>
+        <association href="Usage%20ABE.efx#_3E3F0EC000E947C2AD3B037A?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/%3CAssociation%3E?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2ABDD0157" name="header" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AC0102CE" name="templateId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AC1B0186" name="configId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AC390261" name="flags" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AC5B0242" name="sequenceNum" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947C2AC990271" name="dataRecord" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94421CDDB02AB" name="IPDetailRecord">
+      <generalization xmi:id="_3E3F0EC000E94421CDF5016F">
+        <general xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Usage%20ABE.efx#_3E3F0EC000E941C2ECF903C2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsage?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421CFAF0238" name="creationTime" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421CFB701D5" name="seqNum" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421CFC30196" name="documentID" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94421C2E203B2" name="PublicWANAccessUsageEntity">
+      <generalization xmi:id="_3E3F0EC000E94421C7D60376" general="_3E3F0EC000E94421CDDB02AB"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D77A03BC" name="sessionID" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D78F02E8" name="paymentType" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D796002B" name="chargeableUnit" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7A001C4" name="chargeableQuantity" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7AA0216" name="inputOctets" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7BF024B" name="outputOctets" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7C70144" name="class" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7CC030A" name="GMTSessionStartDateTime" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7DC035D" name="GMTSessionEndDateTime" visibility="public"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94421D7E80025" name="sessionTerminationCause" visibility="public"/>
+    </packagedElement>
+  </uml:Package>
+  <Rose:Rose_Property xmi:id="_zWVeJDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2A897006D" Type="short"/>
+  <Rose:Rose_Property xmi:id="_zWfPEzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2AC990271" Type="opaque_array"/>
+  <Rose:Rose_Property xmi:id="_zWoZCTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2AC5B0242" Type="long"/>
+  <Rose:Rose_Property xmi:id="_zW77DTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2AC390261" Type="char"/>
+  <Rose:Rose_Property xmi:id="_zXFE8TNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2AC1B0186" Type="short"/>
+  <Rose:Rose_Property xmi:id="_zXO1-DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2AC0102CE" Type="short"/>
+  <Rose:Rose_Property xmi:id="_zXO2ADNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E947C2ABDD0157" Type="IPDRStreamingHeader"/>
+  <TIPProfile:tipPackage xmi:id="_EeNnnC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E947C270490196" implementationPackage="ipdr"/>
+  <TIPProfile:tipClass xmi:id="_EeNnnS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C1A0580196"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnni8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C272240119"/>
+  <TIPProfile:tipClass xmi:id="_EeNnny8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C19F6803A9"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnoC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C1A12803B9"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnoS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C1A22202AF"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnoi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C19F86034B"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnoy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C19FC8030D"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnpC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C19FDD0203"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnpS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C1A0070222"/>
+  <TIPProfile:tipClass xmi:id="_EeNnpi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C1A1A102BF"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnpy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C1A1C603A9"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnqC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C1A1E90138"/>
+  <TIPProfile:tipClass xmi:id="_EeNnqS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C271E903C8"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnqi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C273CC0128"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnqy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C274540119"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnrC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2800202CE"/>
+  <TIPProfile:tipClass xmi:id="_EeNnrS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C2736C0280"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnri8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C273990138"/>
+  <TIPProfile:tipClass xmi:id="_EeNnry8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C2742002CE"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnsC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C27435002E"/>
+  <TIPProfile:tipClass xmi:id="_EeNnsS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27A630203"/>
+  <TIPProfile:tipClass xmi:id="_EeNnsi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27B1201B5"/>
+  <TIPProfile:tipClass xmi:id="_EeNnsy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27CC0004E"/>
+  <TIPProfile:tipClass xmi:id="_EeNntC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27A97029F"/>
+  <TIPProfile:tipClass xmi:id="_EeNntS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27AC502CE"/>
+  <TIPProfile:tipClass xmi:id="_EeNnti8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C27B4202AF"/>
+  <TIPProfile:tipClass xmi:id="_EeNnty8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C2A7080399"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnuC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AA1803B9"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnuS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AA4A00FA"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnui8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A897006D"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnuy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A8B90213"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnvC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A94F02FD"/>
+  <TIPProfile:tipClass xmi:id="_EeNnvS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C2A72C03B9"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnvi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AA6A0177"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnvy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A96E009C"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnwC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A9770242"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnwS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A97D038A"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnwi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2A98801B5"/>
+  <TIPProfile:tipClass xmi:id="_EeNnwy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E947C2AA9C036B"/>
+  <TIPProfile:tipAttribute xmi:id="_EeNnxC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2ACC4033C"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYkC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AD3C0271"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYkS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2ABDD0157"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYki8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AC0102CE"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYky8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AC1B0186"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYlC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AC390261"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYlS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AC5B0242"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYli8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E947C2AC990271"/>
+  <TIPProfile:tipClass xmi:id="_EeXYly8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E94421CDDB02AB"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYmC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421CFAF0238"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYmS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421CFB701D5"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYmi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421CFC30196"/>
+  <TIPProfile:tipClass xmi:id="_EeXYmy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E94421C2E203B2"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYnC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D77A03BC"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYnS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D78F02E8"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYni8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D796002B"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYny8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7A001C4"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYoC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7AA0216"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYoS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7BF024B"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYoi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7C70144"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYoy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7CC030A"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYpC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7DC035D"/>
+  <TIPProfile:tipAttribute xmi:id="_EeXYpS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E94421D7E80025"/>
+</xmi:XMI>

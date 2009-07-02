@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E947E1A5690259" name="Enterprise Effectiveness ABE">
+    <eAnnotations xmi:id="_sDdxwTNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Process%20ABE.efx#_3E3F0EC000E93D4EDC2A00CC?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Effectiveness%20ABE/Process%20ABE?"/>
+      <references xmi:type="uml:Package" href="Process%20Definition%20ABE.efx#_3E3F0EC000E93D4EDBFE0390?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Effectiveness%20ABE/Process%20Definition%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_pyVcoDNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Enterprise%20Domain.efx#_3E3F0EC000E93D4EDBDF01E7?SID%20Phase%20IX%20Models/Enterprise%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Package" href="Process%20ABE.efx#_3E3F0EC000E93D4EDC2A00CC?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Effectiveness%20ABE/Process%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Process%20Definition%20ABE.efx#_3E3F0EC000E93D4EDBFE0390?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Effectiveness%20ABE/Process%20Definition%20ABE?"/>
+  </uml:Package>
+  <TIPProfile:tipPackage xmi:id="_EtjriS8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E947E1A5690259" implementationPackage="effectiveness"/>
+</xmi:XMI>

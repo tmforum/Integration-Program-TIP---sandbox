@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93EA9C86D0094" name="Resource Statistical ABE">
+    <eAnnotations xmi:id="_M-6IATN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_M-6IADN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA9C6030136" name="ResourceStatisticalInfo" isAbstract="true">
+      <ownedComment xmi:id="_xmR1vjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA9C6030136">
+        <body>ResourceStatisticalInfo is an abstract base class for representing different types of statistical information that describes the state of a particular Resource or set of Resources (or a particular Service or set of Services). Subclasses of this class represent domain-specific information, including:
+
+  - specific LogicalResource statistics, such as those for a
+    DeviceInterface (e.g., number of packets dropped)
+  - specific PhysicalResource statistics, such as a fiber cut
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA9C66201BE">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93E9C638A02CB?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementInfo?"/>
+      </generalization>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xmbmsDNHEd2nE5zXHK_HsA" base_Comment="_xmR1vjNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EoWbUy8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93EA9C86D0094" implementationPackage="statistics"/>
+  <TIPProfile:tipClass xmi:id="_Eofk8C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EA9C6030136"/>
+</xmi:XMI>

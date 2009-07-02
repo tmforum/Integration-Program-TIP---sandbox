@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E941DAE79F008C" name="Customer Billing Statistic ABE">
+    <eAnnotations xmi:id="_71eZUTNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_71eZUDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941C9633A02D5?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA624F028B" name="CustomerAccountChargeSum">
+      <ownedComment xmi:id="_yqYXAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA624F028B">
+        <body>An total of all charges applied to a CustomerAccount.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA626C02B3" general="_3E3F0EC000E941DA619E025D"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA898D026F" name="_customerAccount" visibility="public" isUnique="false" association="_3E3F0EC000E941DA898C0398">
+        <type xmi:type="uml:Class" href="Customer%20ABE.efx#_3E3F0EC000E93C8D16D901C7?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20ABE/CustomerAccount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrkp3zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrkp3jNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA630E011C" name="CustomerAccountChargeSumBalance">
+      <ownedComment xmi:id="_yqYXBjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA630E011C">
+        <body>A balance of the aggregation of all charges applied to a CustomerAccount.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA632100FD" general="_3E3F0EC000E941DA629600B6"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA90A3015B" name="customerAccountChargeSum" visibility="public">
+        <ownedComment xmi:id="_yqhg8DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA90A3015B">
+          <body>The charges applied to the CutomerAccount sum.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C4237620112?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Money?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA60F303D7" name="CustomerAccountChargeSumSpec">
+      <ownedComment xmi:id="_yqhg8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA60F303D7">
+        <body>A detailed description of the aggregation of all charges applied to a CustomerAccount.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA6102026A" general="_3E3F0EC000E941DA5FF400AD"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA895B0031" name="_customerAccount" visibility="public" isUnique="false" association="_3E3F0EC000E941DA895A0189">
+        <type xmi:type="uml:Class" href="Customer%20ABE.efx#_3E3F0EC000E93C8D16D901C7?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20ABE/CustomerAccount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtz3TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtz3DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA62490396" name="CustomerBillingProductChargeSum">
+      <ownedComment xmi:id="_yqrR8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA62490396">
+        <body>A total of all CustomerAccount charges applied to a Product.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA626A011E" general="_3E3F0EC000E941DA619E025D"/>
+      <ownedAttribute xmi:id="_ecMuslINEd2BeOP6juF0pQ" name="product" visibility="public">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E93C5DB98B03E2?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product?"/>
+        <association href="../Product%20Domain/Product%20ABE.efx#_ecMusFINEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductClassifies?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA62FF02F0" name="CustomerBillingProductChargeSumBalance">
+      <ownedComment xmi:id="_yqrR9zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA62FF02F0">
+        <body>An aggregation of all CustomerAccount charges applied to a Product.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA631D0245" general="_3E3F0EC000E941DA629600B6"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA9045022E" name="productChargeSum" visibility="public">
+        <ownedComment xmi:id="_yq1C8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA9045022E">
+          <body>The customer account charges applied to the Product sum.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C4237620112?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Money?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA60AA023D" name="CustomerBillingProductChargeSumSpec">
+      <ownedComment xmi:id="_yq1C9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA60AA023D">
+        <body>A detailed description of the aggregation of all CustomerAccount charges applied to a Product.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA60D50317" general="_3E3F0EC000E941DA5FF400AD"/>
+      <ownedAttribute xmi:id="_t8LDslINEd2BeOP6juF0pQ" name="productspecification2" visibility="public">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
+        <association href="../Product%20Domain/Product%20Specification%20ABE.efx#_t8LDsFINEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/CustBillProdChargeSumSpecDefinesHowToAccumulate?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA619E025D" name="CustomerBillingStatistic" isAbstract="true">
+      <ownedComment xmi:id="_yq1C-jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA619E025D">
+        <body>Collected data derived from CustomerBills. It is defined by CustomerBillingStatisticSpecification.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA8FCF02C4" name="statisticForPeriod" visibility="public">
+        <ownedComment xmi:id="_yq-M4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA8FCF02C4">
+          <body>The period for which the statistic is calculated.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA62BD035D" name="_customerBillingStatisticBalance" visibility="public" type="_3E3F0EC000E941DA629600B6" isUnique="false" aggregation="shared" association="_3E3F0EC000E941DA62BC0253">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtzwTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtzwDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA61FC0310" name="_customerBillingStatisticSpec" visibility="public" type="_3E3F0EC000E941DA5FF400AD" isUnique="false" association="_3E3F0EC000E941DA61FB0169">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtzyzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtzyjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA629600B6" name="CustomerBillingStatisticBalance" isAbstract="true">
+      <ownedComment xmi:id="_yq-M5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA629600B6">
+        <body>The balance of collected statistical data.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA9008036B" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yq-M6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA9008036B">
+          <body>The period for which the balance is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA62BD036C" name="_customerBillingStatistic" visibility="public" type="_3E3F0EC000E941DA619E025D" isUnique="false" association="_3E3F0EC000E941DA62BC0253">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtzxDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtzwzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA5FF400AD" name="CustomerBillingStatisticSpec" isAbstract="true">
+      <ownedComment xmi:id="_yrH94jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA5FF400AD">
+        <body>A detailed description of a collection of statistical data derived from CustomerBills (for example, customer account charge sum over a certain period of time). Statistical data are typically collected during rating and billing processes. A specification may be implemented using a rules engine or a policy to determine collection rules.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA8FAC023B" name="name" visibility="public">
+        <ownedComment xmi:id="_yrH95TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA8FAC023B">
+          <body>The name of the specification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA8FAF021B" name="description" visibility="public">
+        <ownedComment xmi:id="_yrH96DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA8FAF021B">
+          <body>A narrative that explains in detail what the specification is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA8FC20391" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yrRu4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA8FC20391">
+          <body>The period for which the specification is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DAE4A90186" name="lifecycleStatus" visibility="public">
+        <ownedComment xmi:id="_yrRu5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DAE4A90186">
+          <body>The condition of the specification, such as active, inactive, planned.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA61FC030E" name="_customerBillingStatistic" visibility="public" type="_3E3F0EC000E941DA619E025D" isUnique="false" aggregation="shared" association="_3E3F0EC000E941DA61FB0169">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtzyDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtzxzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA623F02BE" name="UsageCharacteristicSum">
+      <ownedComment xmi:id="_yra40DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA623F02BE">
+        <body>A total of UsageCharacteristicValues for a Customer.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA62670312" general="_3E3F0EC000E941DA619E025D"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA865501FC" name="_usageCharacteristicValue" visibility="public" isUnique="false" association="_3E3F0EC000E941DA865403D0">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941C2A6920012?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrkp6TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrkp6DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA62F9034E" name="UsageCharacteristicSumBalance">
+      <ownedComment xmi:id="_yra41DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA62F9034E">
+        <body>A balance of the aggregation of UsageCharacteristic'Values.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA631A0245" general="_3E3F0EC000E941DA629600B6"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA903400F7" name="usageCharacteristicSum" visibility="public">
+        <ownedComment xmi:id="_yra42DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA903400F7">
+          <body>The UsageCharacteristic's values sum.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C42375903CC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Quantity?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941DA60800078" name="UsageCharacteristicSumSpec">
+      <ownedComment xmi:id="_yrkp0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941DA60800078">
+        <body>A detailed description of the aggregation of UsageCharacteristicValues.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941DA60D30069" general="_3E3F0EC000E941DA5FF400AD"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA862E01A4" name="_usageSpecCharacteristic" visibility="public" isUnique="false" association="_3E3F0EC000E941DA862D01B1">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941C1A25502AF?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageSpecCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtz0jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtz0TNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA898C0398" name="CustomerAccountClassifies">
+      <memberEnd href="#_3E3F0EC000E941DA898D026F?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerAccountChargeSum/_customerAccount?"/>
+      <memberEnd href="Customer%20ABE.efx#_3E3F0EC000E941DA898D027F?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20ABE/CustomerAccount/_customerAccountChargeSum?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA865403D0" name="UsageCharacteristicValueClassifies">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941DA865501EC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageCharacteristicValue/_usageCharacteristicSum?"/>
+      <memberEnd href="#_3E3F0EC000E941DA865501FC?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/UsageCharacteristicSum/_usageCharacteristicValue?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA62BC0253" name="CustomerBillingStatisticMeasuredBy" memberEnd="_3E3F0EC000E941DA62BD035D _3E3F0EC000E941DA62BD036C"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA61FB0169" name="CustomerBillingStatisticSpecDescribes" memberEnd="_3E3F0EC000E941DA61FC030E _3E3F0EC000E941DA61FC0310"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA862D01B1" name="UsageCharSumSpecDescribesHowToAccumlate">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941DA862E01A2?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageSpecCharacteristic/_usageCharacteristicSumSpec?"/>
+      <memberEnd href="#_3E3F0EC000E941DA862E01A4?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/UsageCharacteristicSumSpec/_usageSpecCharacteristic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941DA895A0189" name="CustAcctChargeSumSpecDescribesHowToAccumulate">
+      <memberEnd href="#_3E3F0EC000E941DA895B0031?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerAccountChargeSumSpec/_customerAccount?"/>
+      <memberEnd href="Customer%20ABE.efx#_3E3F0EC000E941DA895B0041?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20ABE/CustomerAccount/_customerAccountChargeSumSpec?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yqYXAzNHEd2nE5zXHK_HsA" base_Comment="_yqYXAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqYXBzNHEd2nE5zXHK_HsA" base_Comment="_yqYXBjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqhg8TNHEd2nE5zXHK_HsA" base_Comment="_yqhg8DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqrR8DNHEd2nE5zXHK_HsA" base_Comment="_yqhg8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yqrR9DNHEd2nE5zXHK_HsA" base_Comment="_yqrR8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq1C8DNHEd2nE5zXHK_HsA" base_Comment="_yqrR9zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq1C9DNHEd2nE5zXHK_HsA" base_Comment="_yq1C8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq1C9zNHEd2nE5zXHK_HsA" base_Comment="_yq1C9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq-M4DNHEd2nE5zXHK_HsA" base_Comment="_yq1C-jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq-M4zNHEd2nE5zXHK_HsA" base_Comment="_yq-M4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yq-M5jNHEd2nE5zXHK_HsA" base_Comment="_yq-M5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrH94DNHEd2nE5zXHK_HsA" base_Comment="_yq-M6DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrH94zNHEd2nE5zXHK_HsA" base_Comment="_yrH94jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrH95jNHEd2nE5zXHK_HsA" base_Comment="_yrH95TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrRu4DNHEd2nE5zXHK_HsA" base_Comment="_yrH96DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrRu4zNHEd2nE5zXHK_HsA" base_Comment="_yrRu4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrRu5jNHEd2nE5zXHK_HsA" base_Comment="_yrRu5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yra40TNHEd2nE5zXHK_HsA" base_Comment="_yra40DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yra41TNHEd2nE5zXHK_HsA" base_Comment="_yra41DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrkp0DNHEd2nE5zXHK_HsA" base_Comment="_yra42DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yrkp0zNHEd2nE5zXHK_HsA" base_Comment="_yrkp0jNHEd2nE5zXHK_HsA"/>
+  <TIPProfile:tipPackage xmi:id="_EtQwPi8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E941DAE79F008C" implementationPackage="statistic"/>
+  <TIPProfile:tipClass xmi:id="_EtQwPy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA624F028B"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwQC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA898D026F"/>
+  <TIPProfile:tipClass xmi:id="_EtQwQS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA630E011C"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwQi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA90A3015B"/>
+  <TIPProfile:tipClass xmi:id="_EtQwQy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA60F303D7"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwRC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA895B0031"/>
+  <TIPProfile:tipClass xmi:id="_EtQwRS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA62490396"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwRi8YEd69c4M5qr3mDQ" base_StructuralFeature="_ecMuslINEd2BeOP6juF0pQ"/>
+  <TIPProfile:tipClass xmi:id="_EtQwRy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA62FF02F0"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwSC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA9045022E"/>
+  <TIPProfile:tipClass xmi:id="_EtQwSS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA60AA023D"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwSi8YEd69c4M5qr3mDQ" base_StructuralFeature="_t8LDslINEd2BeOP6juF0pQ"/>
+  <TIPProfile:tipClass xmi:id="_EtQwSy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA619E025D"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwTC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA8FCF02C4"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwTS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA62BD035D"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwTi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA61FC0310"/>
+  <TIPProfile:tipClass xmi:id="_EtQwTy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA629600B6"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwUC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA9008036B"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwUS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA62BD036C"/>
+  <TIPProfile:tipClass xmi:id="_EtQwUi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA5FF400AD"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwUy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA8FAC023B"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwVC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA8FAF021B"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwVS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA8FC20391"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwVi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DAE4A90186"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwVy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA61FC030E"/>
+  <TIPProfile:tipClass xmi:id="_EtQwWC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA623F02BE"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwWS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA865501FC"/>
+  <TIPProfile:tipClass xmi:id="_EtQwWi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA62F9034E"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwWy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA903400F7"/>
+  <TIPProfile:tipClass xmi:id="_EtQwXC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941DA60800078"/>
+  <TIPProfile:tipAttribute xmi:id="_EtQwXS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941DA862E01A4"/>
+</xmi:XMI>
