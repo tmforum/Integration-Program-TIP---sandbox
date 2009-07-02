@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93DDEA3F70337" name="PhysicalResource Specification ABE">
     <eAnnotations xmi:id="_zGhtYTN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="Physical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E5FF6660315?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/Physical%20Role%20Specification%20ABE?"/>
@@ -78,13 +78,13 @@ The difference between this class and the PhysicalResourceSpecAtomic class is th
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93CBA58DA0183?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/Representation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weKXHjNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weKXHTNHEd2nE5zXHK_HsA"/>
-        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA500008F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA500008F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/%3CAssociation%3E?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93F1CA5F60313" name="_localLocation" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C9E984E02B6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/LocalLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weThAzNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weThAjNHEd2nE5zXHK_HsA"/>
-        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA5F50380?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA5F50380?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/%3CAssociation%3E?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93EE260CB0288" name="_logicalResourceSpec" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="LogicalResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25CAA036E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/LogicalResourceSpec?"/>
@@ -162,4 +162,21 @@ Please see the DEN-ng Resource model for more details.
   <TIPProfile:tipAttribute xmi:id="_Efs1Yi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE297BD0131"/>
   <TIPProfile:tipAttribute xmi:id="_Efs1Yy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE36F280155"/>
   <TIPProfile:tipAttribute xmi:id="_Ef2mUC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434347FC00B4"/>
+  <TIPProfile_1:tipPackage xmi:id="_LgjcFWcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93DDEA3F70337"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcFmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93DDFC38803A8"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcF2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E5FF3E70286"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcGGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EAAC2570157"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcGWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAAC620002E"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcGmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAAC620002F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcG2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAAC6200030"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcHGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAAC6200038"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcHWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EAAC260027C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcHmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EE297BD0127"/>
+  <TIPProfile_1:tipClass xmi:id="_LgtNAGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EE25C630091"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNAWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93F1CA5010054"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNAmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93F1CA5F60313"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNA2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EE260CB0288"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNBGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EE297BD0131"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNBWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EE36F280155"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgtNBmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9434347FC00B4"/>
 </xmi:XMI>

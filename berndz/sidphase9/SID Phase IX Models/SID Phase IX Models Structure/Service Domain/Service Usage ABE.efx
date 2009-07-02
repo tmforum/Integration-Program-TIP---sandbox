@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E9421E1C8B01D7" name="Service Usage ABE">
     <eAnnotations xmi:id="_AXs-kTQ4Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_AXs-kDQ4Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -125,4 +125,20 @@
   <TIPProfile:tipAttribute xmi:id="_EshJXS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941C6D39E0359"/>
   <TIPProfile:tipAttribute xmi:id="_EshJXi8YEd69c4M5qr3mDQ" base_StructuralFeature="_zfH4AlKTEd2Z__GE9qBDpQ"/>
   <TIPProfile:tipAttribute xmi:id="_EshJXy8YEd69c4M5qr3mDQ" base_StructuralFeature="_G_1ekFKUEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipPackage xmi:id="_Lf9mIGcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E9421E1C8B01D7"/>
+  <TIPProfile_1:tipClass xmi:id="_Lf9mIWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C2ED0102D6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mImcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9461B015400AB"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mI2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C6A1FB014D"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mJGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E947C16D69039B"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mJWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94214A71F02C4"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mJmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E947C16DB0001F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mJ2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_oNwRcFKTEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mKGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_WSZpsVKUEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mKWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_C9XqgVKbEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipClass xmi:id="_Lf9mKmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C2E6050109"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mK2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94649F24C0271"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mLGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C2E6AC01C2"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mLWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C6D39E0359"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mLmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_zfH4AlKTEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lf9mL2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_G_1ekFKUEd2Z__GE9qBDpQ"/>
 </xmi:XMI>

@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93E37ACBC0365" name="Network Architecture ABE">
     <eAnnotations xmi:id="_uRh40DQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DBCB818032F?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE?"/>
@@ -186,4 +186,20 @@ Traffic that exceeds this limit must be discarded.
   <TIPProfile:tipAttribute xmi:id="_ErxigS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D1D4A0044"/>
   <TIPProfile:tipClass xmi:id="_Erxigi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E5D24F7035E"/>
   <TIPProfile:tipAttribute xmi:id="_Erxigy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E5D27C802AD"/>
+  <TIPProfile_1:tipPackage xmi:id="_LfXJQ2cKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93E37ACBC0365"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJRGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93DB57B3901EA"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJRWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D2493000C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJRmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF34D2303C9"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJR2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93DB57B3901EE"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJSGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D228001E3"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJSWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D22B303AB"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJSmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D266403C5"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJS2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D292C00C2"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJTGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93DB57B3901E6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJTWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D215B03AA"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJTmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E5D0F8D02AD"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJT2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D1C840360"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJUGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D1D4A0044"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJUWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E5D24F7035E"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJUmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E5D27C802AD"/>
 </xmi:XMI>

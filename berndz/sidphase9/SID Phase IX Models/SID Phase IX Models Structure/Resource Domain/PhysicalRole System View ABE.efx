@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93EFF974B023E" name="PhysicalRole System View ABE">
     <eAnnotations xmi:id="_UcgQETN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_UcgQEDN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -24,6 +24,6 @@ This class is defined in the system view of the DEN-ng specification.
   </uml:Package>
   <Rose:Rose_AssociationClass xmi:id="_yAgTkzNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EFF96FB0289" Associaton_Name="RolesDescribePhysicalResource"/>
   <Default:Documentation xmi:id="_yAgTlTNHEd2nE5zXHK_HsA" base_Comment="_yAgTlDNHEd2nE5zXHK_HsA"/>
-  <TIPProfile:tipPackage xmi:id="_Ep1o3y8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93EFF974B023E" implementationPackage="physical"/>
-  <TIPProfile:tipClass xmi:id="_Ep1o4C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EFF96FB0289"/>
+  <TIPProfile:tipPackage xmi:id="_LmN_P2cKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93EFF974B023E"/>
+  <TIPProfile:tipClass xmi:id="_LmN_QGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EFF96FB0289"/>
 </xmi:XMI>

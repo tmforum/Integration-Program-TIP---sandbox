@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93E2C7C7E013B" name="Management Protocols ABE">
     <eAnnotations xmi:id="_--BKsTN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_--BKsDN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -38,4 +38,9 @@ The DEN-ng model defines SNMP and a framework for proprietary management protoco
   <TIPProfile:tipClass xmi:id="_EiPMBS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E2C7C8E0102"/>
   <TIPProfile:tipClass xmi:id="_EiPMBi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E2C7CD60083"/>
   <TIPProfile:tipAttribute xmi:id="_EiPMBy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E6027530395"/>
+  <TIPProfile_1:tipPackage xmi:id="_Lhvu0mcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93E2C7C7E013B"/>
+  <TIPProfile_1:tipClass xmi:id="_Lhvu02cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E2C7C88024E"/>
+  <TIPProfile_1:tipClass xmi:id="_Lhvu1GcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E2C7C8E0102"/>
+  <TIPProfile_1:tipClass xmi:id="_Lhvu1WcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E2C7CD60083"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lhvu1mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E6027530395"/>
 </xmi:XMI>

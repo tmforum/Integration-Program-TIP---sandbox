@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E942E8EE8B00F6" name="Revenue Assurance ABE">
     <eAnnotations xmi:id="_3QfD0TNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="RA%20Action_Response%20ABE.efx#_3E3F0EC000E942E8EEBA0220?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Action_Response%20ABE?"/>
@@ -29,4 +29,5 @@
     <packagedElement xmi:type="uml:Package" href="RA%20Assessment%20ABE.efx#_3E3F0EC000E94300F92E0291?SID%20Phase%20IX%20Models/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Assessment%20ABE?"/>
   </uml:Package>
   <TIPProfile:tipPackage xmi:id="_EtahNC8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E942E8EE8B00F6" implementationPackage="ra"/>
+  <TIPProfile_1:tipPackage xmi:id="_LoTC4WcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E942E8EE8B00F6"/>
 </xmi:XMI>

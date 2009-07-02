@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93F17A71402EB" name="PolicyApp Role Entities">
     <eAnnotations xmi:id="_80tOQDNNEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Policy%20Application.efx#_3E3F0EC000E93E1B4A6D0151?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application?"/>
@@ -104,4 +104,13 @@ More detail will be provided in the next release of the DEN-ng model.
   <TIPProfile:tipClass xmi:id="_EXWxpC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93F17A7F1022B"/>
   <TIPProfile:tipClass xmi:id="_EXWxpS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93F17A7FA0043"/>
   <TIPProfile:tipClass xmi:id="_EXWxpi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93F17A87A0123"/>
+  <TIPProfile_1:tipPackage xmi:id="_LpMapGcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93F17A71402EB"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMapWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17761500E9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LpMapmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93F17763100B9"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMap2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A721029A"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMaqGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A7B002BE"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMaqWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A7CD02E7"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMaqmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A7F1022B"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMaq2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A7FA0043"/>
+  <TIPProfile_1:tipClass xmi:id="_LpMarGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F17A87A0123"/>
 </xmi:XMI>

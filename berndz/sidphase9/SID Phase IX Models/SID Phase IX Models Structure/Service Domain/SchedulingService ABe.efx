@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93EF5F34B01BE" name="SchedulingService ABE">
     <eAnnotations xmi:id="_HvIUkTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_HvIUkDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -227,4 +227,28 @@ Other types of Schedulers that provide strict rules about Queue servicing can be
   <TIPProfile:tipAttribute xmi:id="_ErxicS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EF63F5B02EB"/>
   <TIPProfile:tipAttribute xmi:id="_Erxici8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EF634B10128"/>
   <TIPProfile:tipAttribute xmi:id="_Erxicy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EF63FD10265"/>
+  <TIPProfile_1:tipPackage xmi:id="_LfNYVWcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93EF5F34B01BE"/>
+  <TIPProfile_1:tipClass xmi:id="_LfNYVmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E381B400026"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYV2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF5DE7C00D8"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYWGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF5FE4E0104"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYWWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF5FB8E02F6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJMGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF4993E02D2"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJMWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF5F3780372"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJMmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF62199017E"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJM2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF5F389038A"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJNGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF5FB8E02EC"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJNWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF5F5230267"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJNmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF61003026A"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJN2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF60F98018A"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJOGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF6210101ED"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJOWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF5FB32031C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJOmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF62585010F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJO2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF635590039"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJPGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF5FB6E03B8"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJPWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF64755033D"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJPmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF647BD0240"/>
+  <TIPProfile_1:tipClass xmi:id="_LfXJP2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EF62457015B"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJQGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF63F5B02EB"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJQWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF634B10128"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfXJQmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EF63FD10265"/>
 </xmi:XMI>

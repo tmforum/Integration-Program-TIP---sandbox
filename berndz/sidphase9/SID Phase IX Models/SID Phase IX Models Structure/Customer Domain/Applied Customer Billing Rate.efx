@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E941D002F100C1" name="Applied Customer Billing Rate ABE">
     <eAnnotations xmi:id="_YLAg8DNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20IX%20Models/Customer%20Domain?"/>
@@ -214,4 +214,32 @@ A reduction in the price of a Product that is applied to reduce the associated c
   <TIPProfile:tipClass xmi:id="_EtHmUC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E941D006F40259"/>
   <TIPProfile:tipAttribute xmi:id="_EtHmUS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941D008270282"/>
   <TIPProfile:tipAttribute xmi:id="_EtHmUi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E941D0085E00A1"/>
+  <TIPProfile_1:tipPackage xmi:id="_Lomk6WcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E941D002F100C1"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk6mcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD7C1023E"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk62cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CBDB960091"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk7GcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD7CF02FA"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk7WcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CBDB75038E"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk7mcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CBDACF034B"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk72cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94213B0080200"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk8GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_CUSo0VINEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk8WcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD804027F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk8mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_OtJRUlIMEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk82cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD81F032B"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk9GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_168tkFIMEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk9WcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAC71B0187"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk9mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CACE360134"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk92cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CFCA4F002A"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk-GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CACE6C03A7"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk-WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CAD6390399"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk-mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CFF4190338"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk-2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941D0085E009F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk_GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94213B00801FF"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lomk_WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941D0169803C4"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk_mcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD61C0398"/>
+  <TIPProfile_1:tipClass xmi:id="_Lomk_2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CBDAB5031B"/>
+  <TIPProfile_1:tipClass xmi:id="_LomlAGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941CAD607004B"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LovusGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CAD6390389"/>
+  <TIPProfile_1:tipClass xmi:id="_LovusWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941D006F40259"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LovusmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941D008270282"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lovus2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941D0085E00A1"/>
 </xmi:XMI>

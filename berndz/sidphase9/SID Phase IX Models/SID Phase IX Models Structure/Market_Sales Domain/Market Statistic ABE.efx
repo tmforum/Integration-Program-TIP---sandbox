@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E9411CCDEE0153" name="Market Statistic ABE">
     <eAnnotations xmi:id="_VimFgDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Market%20Segment%20ABE.efx#_3E3F0EC000E93C8FA94B00C4?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Market%20Segment%20ABE?"/>
@@ -161,4 +161,23 @@
   <TIPProfile:tipClass xmi:id="_EuKIMi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9411CCEF502D8"/>
   <TIPProfile:tipClass xmi:id="_EuKIMy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E9411CCF030011"/>
   <TIPProfile:tipAttribute xmi:id="_EuKINC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9411CD36D00D4"/>
+  <TIPProfile_1:tipPackage xmi:id="_LoAH4WcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E9411CCDEE0153"/>
+  <TIPProfile_1:tipClass xmi:id="_LoAH4mcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9410E928001DC"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH42cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411BF5390167"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH5GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411BF5390168"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH5WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411BF6360111"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH5mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411D158B01E0"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH52cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411D156C01B5"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH6GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411D142D02F9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH6WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411D14C7020E"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH6mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411BF65A01BC"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH62cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411CD36D00DE"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH7GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94148B6A002E9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH7WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94148B6A703A9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH7mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94148B6AA01B6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH72cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94148B6BC01E6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH8GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94148BB930243"/>
+  <TIPProfile_1:tipClass xmi:id="_LoAH8WcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9411CCEF502D8"/>
+  <TIPProfile_1:tipClass xmi:id="_LoAH8mcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9411CCF030011"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoAH82cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9411CD36D00D4"/>
 </xmi:XMI>
