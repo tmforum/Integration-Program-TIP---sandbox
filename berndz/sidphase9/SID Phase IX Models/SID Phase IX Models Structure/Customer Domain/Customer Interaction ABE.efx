@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93C1E10CA004F" name="Customer Interaction ABE">
     <eAnnotations xmi:id="_-SiRoTNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_-SiRoDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -71,4 +71,12 @@
   <TIPProfile:tipClass xmi:id="_Es0EWC8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93C1A7A630150"/>
   <TIPProfile:tipClass xmi:id="_Es0EWS8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93C1E16310198"/>
   <TIPProfile:tipAttribute xmi:id="_Es0EWi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93C8E41D502AD"/>
+  <TIPProfile_1:tipPackage xmi:id="_Loc0PGcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93C1E10CA004F"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0PWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C19030B0004"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0PmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C1E4137031C"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0P2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C1A7A42010D"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0QGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C1A79DF022D"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0QWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C1A7A630150"/>
+  <TIPProfile_1:tipClass xmi:id="_Loc0QmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93C1E16310198"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Loc0Q2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93C8E41D502AD"/>
 </xmi:XMI>

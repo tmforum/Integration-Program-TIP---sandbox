@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93EF4DB800271" name="CompoundConditioning ABE">
     <eAnnotations xmi:id="_7irl0DQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93E37A8760145?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE?"/>
@@ -78,4 +78,11 @@ Normally, a ShaperService includes buffering. This means that any packets that c
   <TIPProfile:tipAttribute xmi:id="_ErnxeS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93E38164B02A2"/>
   <TIPProfile:tipClass xmi:id="_Ernxei8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93E3813A502F7"/>
   <TIPProfile:tipClass xmi:id="_Ernxey8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DB57B3901CA"/>
+  <TIPProfile_1:tipPackage xmi:id="_LfNYTmcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93EF4DB800271"/>
+  <TIPProfile_1:tipClass xmi:id="_LfNYT2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E385128015C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYUGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E38515A0106"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYUWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E3853B10140"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LfNYUmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93E38164B02A2"/>
+  <TIPProfile_1:tipClass xmi:id="_LfNYU2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E3813A502F7"/>
+  <TIPProfile_1:tipClass xmi:id="_LfNYVGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93DB57B3901CA"/>
 </xmi:XMI>

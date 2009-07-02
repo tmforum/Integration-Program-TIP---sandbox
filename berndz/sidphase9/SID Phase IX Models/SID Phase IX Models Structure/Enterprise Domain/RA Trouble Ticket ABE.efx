@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E942E8EEA60253" name="RA Trouble Ticket ABE">
     <eAnnotations xmi:id="_B1IHQTNmEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_B1IHQDNmEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -113,4 +113,18 @@
   <TIPProfile:tipAttribute xmi:id="_EtahQC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431761E50253"/>
   <TIPProfile:tipAttribute xmi:id="_EtahQS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431761C700FF"/>
   <TIPProfile:tipAttribute xmi:id="_EtahQi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9431761CC02C6"/>
+  <TIPProfile_1:tipPackage xmi:id="_LoTC4mcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E942E8EEA60253"/>
+  <TIPProfile_1:tipClass xmi:id="_LoTC42cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9430DE0EB0091"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC5GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94317652B0002"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC5WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94317652D03BC"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC5mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431765360352"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC52cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431761E50251"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC6GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431F4A4B01FF"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC6WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431761DA03E4"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC6mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E943173E470240"/>
+  <TIPProfile_1:tipClass xmi:id="_LoTC62cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E942E8EEDB00FB"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC7GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E942E8EF4101B6"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC7WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431761E50253"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC7mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431761C700FF"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LoTC72cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9431761CC02C6"/>
 </xmi:XMI>

@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93E37A93F03BB" name="Service Bundle ABE">
     <eAnnotations xmi:id="_8sZKcTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_8sZKcDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -123,4 +123,19 @@ This will be expanded on in more detail in the next version of the DEN-ng specif
   <TIPProfile:tipClass xmi:id="_EsOOcy8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EBC0D670187"/>
   <TIPProfile:tipAttribute xmi:id="_EsOOdC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EBC0DE101A1"/>
   <TIPProfile:tipAttribute xmi:id="_EsOOdS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EBC0E580094"/>
+  <TIPProfile_1:tipPackage xmi:id="_Lfz1IWcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93E37A93F03BB"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1ImcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93E5C527F0338"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1I2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAECC3C0308"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1JGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EAEA58802AC"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1JWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93ED575E100A7"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1JmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE15E0159"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1J2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE16900DD"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1KGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93ED575E1009D"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1KWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE7210359"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1KmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE72A01C1"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1K2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE7300350"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1LGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBAE7380045"/>
+  <TIPProfile_1:tipClass xmi:id="_Lfz1LWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EBC0D670187"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1LmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EBC0DE101A1"/>
+  <TIPProfile_1:tipAttribute xmi:id="_Lfz1L2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EBC0E580094"/>
 </xmi:XMI>

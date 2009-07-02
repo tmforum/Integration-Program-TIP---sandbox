@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93E2C58840228" name="LogicalResource Specification ABE">
     <eAnnotations xmi:id="_rUO1wTN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="Logical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E63D2430155?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/Logical%20Role%20Specification%20ABE?"/>
@@ -97,4 +97,13 @@ Please see the DEN-ng Resource model for more details.
   <TIPProfile:tipAttribute xmi:id="_EfjrbC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EFFA8950026"/>
   <TIPProfile:tipAttribute xmi:id="_EfjrbS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EFBCC7202A3"/>
   <TIPProfile:tipClass xmi:id="_Efjrbi8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EAAC1C2038D"/>
+  <TIPProfile_1:tipPackage xmi:id="_LgjcB2cKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E93E2C58840228"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcCGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EA5C7CD024B"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcCWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EAAC1F000B8"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcCmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EFBCC720299"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcC2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EE25CAA036E"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcDGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EE260CB0293"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcDWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EFFA8950026"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LgjcDmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EFBCC7202A3"/>
+  <TIPProfile_1:tipClass xmi:id="_LgjcD2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93EAAC1C2038D"/>
 </xmi:XMI>

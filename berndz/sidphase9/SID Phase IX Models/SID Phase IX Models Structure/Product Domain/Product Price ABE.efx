@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:TIPProfile_1="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/sidphase9/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../../../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E941C7E8570285" name="Product Price ABE">
     <eAnnotations xmi:id="_nIbycDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Product%20ABE.efx#_3E3F0EC000E93D6AAA6D00A4?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE?"/>
@@ -266,4 +266,39 @@
   <TIPProfile:tipAttribute xmi:id="_EwiuDS8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434433340005"/>
   <TIPProfile:tipAttribute xmi:id="_EwiuDi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434428EC03CA"/>
   <TIPProfile:tipAttribute xmi:id="_EwiuDy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434428F00235"/>
+  <TIPProfile_1:tipPackage xmi:id="_LnaR-mcKEd6xZvrTiXcb-Q" base_Package="_3E3F0EC000E941C7E8570285"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaR-2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C831C902F0"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaR_GcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C836F40390"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaR_WcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C8370A0062"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaR_mcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9425169EC0161"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaR_2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C8314F000D"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSAGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C831F303AD"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSAWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C833680225"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSAmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941CBDBD502F8"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSA2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C83395036F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSBGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_CUSo0lINEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSBWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C8335301C7"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSBmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C83395035F"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSB2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_OtJRUVIMEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSCGcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E941C7ED3803C2"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSCWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94421CCF30308"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSCmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9424873BC0329"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSC2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C835A30000"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSDGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C835A6033C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSDWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C835CF03A2"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSDmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C7F03200D9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSD2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C7ED4D0335"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSEGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E941C831F303BD"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSEWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9434428F00233"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSEmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_p9w84FKbEd2Z__GE9qBDpQ"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSE2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9420A16E602B9"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSFGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E942146F8F00FC"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSFWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_tr-y8VIKEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSFmcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E9420A16C80297"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSF2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E942146FB40398"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSGGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_OyoDsVILEd2BeOP6juF0pQ"/>
+  <TIPProfile_1:tipClass xmi:id="_LnaSGWcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E94344289B022C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSGmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9434433340005"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSG2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9434428EC03CA"/>
+  <TIPProfile_1:tipAttribute xmi:id="_LnaSHGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E9434428F00235"/>
 </xmi:XMI>

@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Java="http:///schemas/Java/_vazcoDNHEd2nE5zXHK_HsA/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Java/_vazcoDNHEd2nE5zXHK_HsA/0 platform:/resource/SID%20Phase%20VIII%20Models_profiles/Java.epx#_va9NoTNHEd2nE5zXHK_HsA?Java/Java? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 ../SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Java="http:///schemas/Java/_vazcoDNHEd2nE5zXHK_HsA/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Java/_vazcoDNHEd2nE5zXHK_HsA/0 platform:/resource/SID%20Phase%20VIII%20Models_profiles/Java.epx#_va9NoTNHEd2nE5zXHK_HsA?Java/Java? http:///schemas/TIPProfile/_yydOIGAEEd6P4YF8OArkrg/59 ../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?">
   <uml:Model xmi:id="3E3F0EC000E9" name="SID Phase IX Models">
     <eAnnotations xmi:id="_ZWNHkTNIEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Common%20Business%20Entities%20Domain.efx#_3E3F0EC000E93E3F0EC60106?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain?"/>
@@ -71,7 +71,7 @@
     </profileApplication>
     <profileApplication xmi:id="_B-66oC8YEd69c4M5qr3mDQ">
       <eAnnotations xmi:id="_B-66oS8YEd69c4M5qr3mDQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?"/>
+        <references xmi:type="ecore:EPackage" href="../SID%20Models_profiles/TIPProfile.epx#_yydOIWAEEd6P4YF8OArkrg?TIP%20Profile/TIPProfile?"/>
       </eAnnotations>
       <appliedProfile href="../SID%20Models_profiles/TIPProfile.epx#_P1JaQDE9EdyF7LtU8T2nvA?TIP%20Profile?"/>
     </profileApplication>
