@@ -48,6 +48,12 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJvmSjNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJvmSTNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_zoEm5GesEd6Fg9WEQKp7YA" name="resourceSpecification" visibility="private">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zoEm52esEd6Fg9WEQKp7YA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zoEm5mesEd6Fg9WEQKp7YA"/>
+        <association href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_zn7c8GesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourcesRecognisedBy?"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93F4AD2B102CE" name="CompositeEntityIdentificationSpec">
       <ownedComment xmi:id="_wIQYiDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F4AD2B102CE">
@@ -136,6 +142,12 @@
         <type xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJvmUTNHEd2nE5zXHK_HsA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJvmUDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ioCNUGesEd6Fg9WEQKp7YA" name="resource" visibility="private">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20ABE.efx#_3E3F0EC000E93DDE851703CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ioCNU2esEd6Fg9WEQKp7YA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ioCNUmesEd6Fg9WEQKp7YA" value="1"/>
+        <association href="../Resource%20Domain/Resource%20ABE.efx#_in4cUGesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRecognisedUsing?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93F4C1E990024" name="CompositeEntityIdentification">
@@ -254,4 +266,6 @@
   <TIPProfile_1:tipClass xmi:id="_LqFyymcKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F4C1EA50216"/>
   <TIPProfile_1:tipClass xmi:id="_LqFyy2cKEd6xZvrTiXcb-Q" base_Class="_3E3F0EC000E93F4C1EF80279"/>
   <TIPProfile_1:tipAttribute xmi:id="_LqFyzGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93F4C22C6039C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_ioCNUWesEd6Fg9WEQKp7YA" base_StructuralFeature="_ioCNUGesEd6Fg9WEQKp7YA"/>
+  <TIPProfile_1:tipAttribute xmi:id="_zoEm5WesEd6Fg9WEQKp7YA" base_StructuralFeature="_zoEm5GesEd6Fg9WEQKp7YA"/>
 </xmi:XMI>

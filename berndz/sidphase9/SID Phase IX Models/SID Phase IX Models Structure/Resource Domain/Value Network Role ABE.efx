@@ -50,6 +50,9 @@ This is a DEN-ng class.
       <generalization xmi:id="_3E3F0EC000E93DDEBF3C01DE">
         <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDEBD690331?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/EntityRole?"/>
       </generalization>
+      <generalization xmi:id="_7H830Ge3Ed6Fg9WEQKp7YA">
+        <general xmi:type="uml:Class" href="../../../BerndsSandbox.emx#__aKxYGerEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidRole?"/>
+      </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93EA1FE5801E9" name="_resourceInteractionRole" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93EA1FD1C03C6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/ResourceInteractionRole?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wT4ZwTNHEd2nE5zXHK_HsA" value="*"/>

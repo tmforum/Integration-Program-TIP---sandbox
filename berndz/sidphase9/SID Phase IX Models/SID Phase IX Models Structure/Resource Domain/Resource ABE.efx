@@ -23,6 +23,9 @@
       <generalization xmi:id="_3E3F0EC000E93DDE854F0399">
         <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
       </generalization>
+      <generalization xmi:id="_DEbnMGetEd6Fg9WEQKp7YA">
+        <general xmi:type="uml:Class" href="../../../BerndsSandbox.emx#_Ra1MYGeqEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidRoot?"/>
+      </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93E3BED02039F" name="_managementDomain" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDAAE2C0113?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementDomain?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHXAqTNHEd2nE5zXHK_HsA" value="1"/>
@@ -111,6 +114,11 @@ This is an optional attribute.
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMDX1jNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMDX1TNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_in4cUWesEd6Fg9WEQKp7YA" name="entityIdentification" visibility="private" aggregation="shared" association="_in4cUGesEd6Fg9WEQKp7YA">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1E8C02F6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_in4cVGesEd6Fg9WEQKp7YA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_in4cU2esEd6Fg9WEQKp7YA"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA6FE5701FC" name="ResourceCharacteristicValue">
       <ownedComment xmi:id="_xL6N4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA6FE5701FC">
@@ -188,6 +196,10 @@ This is an optional attribute.
       <memberEnd href="#_jDjO4VK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceCharacteristicValue/servicecharacteristicvalue?"/>
       <memberEnd href="../Service%20Domain/Service%20ABE.efx#_jDjO4lK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceCharacteristicValue/resourcecharacteristicvalue?"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_in4cUGesEd6Fg9WEQKp7YA" name="ResourceRecognisedUsing">
+      <memberEnd href="#_in4cUWesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/entityIdentification?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_ioCNUGesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentification/resource?"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xLwc4jNHEd2nE5zXHK_HsA" base_Comment="_xLwc4TNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xLwc5jNHEd2nE5zXHK_HsA" base_Comment="_xLwc5TNHEd2nE5zXHK_HsA"/>
@@ -245,4 +257,5 @@ This is an optional attribute.
   <TIPProfile_1:tipAttribute xmi:id="_LhAIAGcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E94423293300E6"/>
   <TIPProfile_1:tipAttribute xmi:id="_LhAIAWcKEd6xZvrTiXcb-Q" base_StructuralFeature="_jDjO4VK-Ed2Ox5xf0vu4pw"/>
   <TIPProfile_1:tipAttribute xmi:id="_LhAIAmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_3E3F0EC000E93EA7252C008C"/>
+  <TIPProfile_1:tipAttribute xmi:id="_in4cUmesEd6Fg9WEQKp7YA" base_StructuralFeature="_in4cUWesEd6Fg9WEQKp7YA"/>
 </xmi:XMI>
