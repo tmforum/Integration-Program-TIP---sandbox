@@ -24,7 +24,7 @@
         <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
       </generalization>
       <generalization xmi:id="_DEbnMGetEd6Fg9WEQKp7YA">
-        <general xmi:type="uml:Class" href="../../../BerndsSandbox.emx#_Ra1MYGeqEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidRoot?"/>
+        <general xmi:type="uml:Class" href="../../../../BerndsSandbox/BerndsSandbox.emx#_Ra1MYGeqEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidRoot?"/>
       </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93E3BED02039F" name="_managementDomain" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDAAE2C0113?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementDomain?"/>

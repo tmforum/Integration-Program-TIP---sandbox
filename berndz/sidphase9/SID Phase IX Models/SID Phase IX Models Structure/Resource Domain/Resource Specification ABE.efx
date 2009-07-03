@@ -380,7 +380,7 @@
         <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDEC52B0188?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/EntitySpecification?"/>
       </generalization>
       <generalization xmi:id="_mdR2AGerEd6Fg9WEQKp7YA">
-        <general xmi:type="uml:Class" href="../../../BerndsSandbox.emx#_XekbAGerEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidSpecification?"/>
+        <general xmi:type="uml:Class" href="../../../../BerndsSandbox/BerndsSandbox.emx#_XekbAGerEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidSpecification?"/>
       </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93E83BE070204" name="_businessInteractionItem" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1F5B0A0134?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItem?"/>
