@@ -1451,6 +1451,9 @@ The difference between subclasses of EquipmentHolder (such as a Slot or a Chassi
       <generalization xmi:id="_3E3F0EC000E93DDEEC3803A6">
         <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
       </generalization>
+      <generalization xmi:id="_KCn4oGe-Ed6Fg9WEQKp7YA">
+        <general xmi:type="uml:Class" href="Resource%20ABE.efx#_3E3F0EC000E93DDE851703CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource?"/>
+      </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93DDEEA8D037A" name="acceptableEquipmentList" visibility="public">
         <ownedComment xmi:id="_xu60VjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEEA8D037A">
           <body>This is an array of strings, based on M.3100, that identifies the types of equipment objects that can be supported by this object. This is an optional attribute.</body>

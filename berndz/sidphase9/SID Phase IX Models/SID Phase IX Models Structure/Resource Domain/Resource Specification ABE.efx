@@ -379,6 +379,9 @@
       <generalization xmi:id="_3E3F0EC000E93DDEC627019F">
         <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDEC52B0188?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/EntitySpecification?"/>
       </generalization>
+      <generalization xmi:id="_mdR2AGerEd6Fg9WEQKp7YA">
+        <general xmi:type="uml:Class" href="../../../BerndsSandbox.emx#_XekbAGerEd6Fg9WEQKp7YA?BerndsSandbox/Object%20Classes/NewSidSpecification?"/>
+      </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93E83BE070204" name="_businessInteractionItem" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1F5B0A0134?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItem?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wTuoxDNHEd2nE5zXHK_HsA" value="*"/>
@@ -448,6 +451,11 @@
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Performance%20Specification%20ABE.efx#_3E3F0EC000E9445D646F006D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Specification%20ABE/PerformanceSpecification?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x_oJcVK6Ed2Ox5xf0vu4pw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x_oJcFK6Ed2Ox5xf0vu4pw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zoEm4GesEd6Fg9WEQKp7YA" name="entityIdentificationSpecification" visibility="private" association="_zn7c8GesEd6Fg9WEQKp7YA">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD26F01E3?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentificationSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zoEm42esEd6Fg9WEQKp7YA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zoEm4mesEd6Fg9WEQKp7YA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA5C83302C7" name="ResourceSpecVersion">
@@ -983,6 +991,10 @@ The cardinality of the SpecifiesResource aggregation is 1 on the ResourceSpecifi
       <memberEnd href="#_rQFvUVK6Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification/performancespecification?"/>
       <memberEnd href="../Common%20Business%20Entities%20Domain/Performance%20Specification%20ABE.efx#_rQFvUlK6Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Specification%20ABE/PerformanceSpecification/resourcespecification?"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zn7c8GesEd6Fg9WEQKp7YA" name="ResourcesRecognisedBy">
+      <memberEnd href="#_zoEm4GesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification/entityIdentificationSpecification?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_zoEm5GesEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentificationSpecification/resourceSpecification?"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xDaZMTNHEd2nE5zXHK_HsA" base_Comment="_xDaZMDNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xDkKMjNHEd2nE5zXHK_HsA" base_Comment="_xDkKMTNHEd2nE5zXHK_HsA"/>
@@ -1227,4 +1239,5 @@ The cardinality of the SpecifiesResource aggregation is 1 on the ResourceSpecifi
   <TIPProfile_1:tipClass xmi:id="_LgtNFWcKEd6xZvrTiXcb-Q" base_Class="_rQFvUFK6Ed2Ox5xf0vu4pw"/>
   <TIPProfile_1:tipAttribute xmi:id="_LgtNFmcKEd6xZvrTiXcb-Q" base_StructuralFeature="_BvQEAFK7Ed2Ox5xf0vu4pw"/>
   <TIPProfile_1:tipAttribute xmi:id="_LgtNF2cKEd6xZvrTiXcb-Q" base_StructuralFeature="_SpXbwFK7Ed2Ox5xf0vu4pw"/>
+  <TIPProfile_1:tipAttribute xmi:id="_zoEm4WesEd6Fg9WEQKp7YA" base_StructuralFeature="_zoEm4GesEd6Fg9WEQKp7YA"/>
 </xmi:XMI>
