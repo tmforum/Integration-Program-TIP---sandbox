@@ -88,15 +88,17 @@ This is a required attribute.
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Ra1MYGeqEd6Fg9WEQKp7YA" name="NewSidRoot"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ra1MYGeqEd6Fg9WEQKp7YA" name="NewSidRoot" clientDependency="_qfswMGupEd6D2YQapBqcZg">
+        <ownedAttribute xmi:id="_eUrPsGunEd6D2YQapBqcZg" name="rootType" visibility="public" type="_0FhF0GunEd6D2YQapBqcZg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_lRjfMGeqEd6Fg9WEQKp7YA" name="RootHasSidAttributes" memberEnd="_lR2aIGeqEd6Fg9WEQKp7YA _lSALImeqEd6Fg9WEQKp7YA">
-        <ownedEnd xmi:id="_lSALImeqEd6Fg9WEQKp7YA" name="" visibility="private" type="_Ra1MYGeqEd6Fg9WEQKp7YA" association="_lRjfMGeqEd6Fg9WEQKp7YA">
+        <ownedEnd xmi:id="_lSALImeqEd6Fg9WEQKp7YA" name="" visibility="private" type="_0FhF0GunEd6D2YQapBqcZg" association="_lRjfMGeqEd6Fg9WEQKp7YA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lSALJWeqEd6Fg9WEQKp7YA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lSALJGeqEd6Fg9WEQKp7YA" value="1"/>
         </ownedEnd>
-        <ownedEnd xmi:id="_lR2aIGeqEd6Fg9WEQKp7YA" name="" visibility="private" type="_fkfOsGeqEd6Fg9WEQKp7YA" aggregation="shared" association="_lRjfMGeqEd6Fg9WEQKp7YA">
+        <ownedEnd xmi:id="_lR2aIGeqEd6Fg9WEQKp7YA" name="sid" visibility="public" type="_fkfOsGeqEd6Fg9WEQKp7YA" aggregation="composite" association="_lRjfMGeqEd6Fg9WEQKp7YA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lSALIWeqEd6Fg9WEQKp7YA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lSALIGeqEd6Fg9WEQKp7YA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lSALIGeqEd6Fg9WEQKp7YA" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XekbAGerEd6Fg9WEQKp7YA" name="NewSidSpecification">
@@ -129,11 +131,11 @@ If the value of this attribute is 0, then all managed objects that have their ro
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_NN9NMGezEd6Fg9WEQKp7YA" name="RootHasMtopAttributes" memberEnd="_NN9NMWezEd6Fg9WEQKp7YA _NN9NNWezEd6Fg9WEQKp7YA">
-        <ownedEnd xmi:id="_NN9NMWezEd6Fg9WEQKp7YA" name="" visibility="private" type="_mnNUcGezEd6Fg9WEQKp7YA" aggregation="shared" association="_NN9NMGezEd6Fg9WEQKp7YA">
+        <ownedEnd xmi:id="_NN9NMWezEd6Fg9WEQKp7YA" name="mtop" visibility="public" type="_mnNUcGezEd6Fg9WEQKp7YA" aggregation="composite" association="_NN9NMGezEd6Fg9WEQKp7YA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NN9NNGezEd6Fg9WEQKp7YA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NN9NM2ezEd6Fg9WEQKp7YA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NN9NM2ezEd6Fg9WEQKp7YA" value="1"/>
         </ownedEnd>
-        <ownedEnd xmi:id="_NN9NNWezEd6Fg9WEQKp7YA" name="" visibility="private" type="_Ra1MYGeqEd6Fg9WEQKp7YA" association="_NN9NMGezEd6Fg9WEQKp7YA">
+        <ownedEnd xmi:id="_NN9NNWezEd6Fg9WEQKp7YA" name="" visibility="private" type="_0FhF0GunEd6D2YQapBqcZg" association="_NN9NMGezEd6Fg9WEQKp7YA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NOG-MWezEd6Fg9WEQKp7YA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NOG-MGezEd6Fg9WEQKp7YA" value="1"/>
         </ownedEnd>
@@ -242,6 +244,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
           <general xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhyscialResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25C630091?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/PhysicalResourceSpec?"/>
         </generalization>
       </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_qfswMGupEd6D2YQapBqcZg" supplier="_0FhF0GunEd6D2YQapBqcZg" client="_Ra1MYGeqEd6Fg9WEQKp7YA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DkiyAGeqEd6Fg9WEQKp7YA" name="Diagrams">
       <eAnnotations xmi:id="_Dk2UAGeqEd6Fg9WEQKp7YA" source="uml2.diagrams">
@@ -288,7 +291,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_FjfyfWeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_FjfyfmeqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyf2eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyf2eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1E8C02F6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FjfygGeqEd6Fg9WEQKp7YA" x="24948" y="18612"/>
           </children>
@@ -334,7 +337,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_FjfyrWeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_FjfyrmeqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyr2eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyr2eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD26F01E3?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentificationSpecification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FjfysGeqEd6Fg9WEQKp7YA" x="25872" y="12276"/>
           </children>
@@ -357,7 +360,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_FjfyvWeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_FjfyvmeqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyv2eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyv2eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1E990024?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/CompositeEntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FjfywGeqEd6Fg9WEQKp7YA" x="21120" y="22044"/>
           </children>
@@ -380,7 +383,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_FjfyzWeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_FjfyzmeqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyz2eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfyz2eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1EA50216?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/ComponentEntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fjfy0GeqEd6Fg9WEQKp7YA" x="27456" y="22044"/>
           </children>
@@ -403,7 +406,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Fjfy3WeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Fjfy3meqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfy32eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfy32eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD2C003B6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/ComponentEntityIdentificationSpec?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fjfy4GeqEd6Fg9WEQKp7YA" x="29964" y="18480"/>
           </children>
@@ -426,7 +429,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Fjfy7WeqEd6Fg9WEQKp7YA" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Fjfy7meqEd6Fg9WEQKp7YA"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfy72eqEd6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjfy72eqEd6Fg9WEQKp7YA" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD2B102CE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/CompositeEntityIdentificationSpec?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fjfy8GeqEd6Fg9WEQKp7YA" x="31812" y="16236"/>
           </children>
@@ -450,7 +453,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_UiNNAWeqEd6Fg9WEQKp7YA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Uh6SEWeqEd6Fg9WEQKp7YA" fillColor="8047085" showParent="QualifiedName" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uh6SEmeqEd6Fg9WEQKp7YA" x="13464" y="-396"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uh6SEmeqEd6Fg9WEQKp7YA" x="13464" y="-2244"/>
           </children>
           <children xmi:id="_idHBoGeqEd6Fg9WEQKp7YA" element="_fkfOsGeqEd6Fg9WEQKp7YA">
             <children xmi:id="_idHBo2eqEd6Fg9WEQKp7YA" type="ImageCompartment">
@@ -467,7 +470,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_idHBrGeqEd6Fg9WEQKp7YA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_idHBoWeqEd6Fg9WEQKp7YA" fillColor="8047085" showParent="QualifiedName" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idHBomeqEd6Fg9WEQKp7YA" x="8976" y="2904"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idHBomeqEd6Fg9WEQKp7YA" x="9240" y="3696"/>
           </children>
           <children xmi:id="_alfvsGerEd6Fg9WEQKp7YA" element="_XekbAGerEd6Fg9WEQKp7YA">
             <children xmi:id="_alfvs2erEd6Fg9WEQKp7YA" type="ImageCompartment">
@@ -520,11 +523,11 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_IfXT9mevEd6Fg9WEQKp7YA" type="Description">
               <element xsi:nil="true"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_IfXT8WevEd6Fg9WEQKp7YA" description="&lt;p>&#xD;&#xA;    new SID object classes and associations&#xD;&#xA;&lt;/p>" fillColor="8047085" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_IfXT8WevEd6Fg9WEQKp7YA" description="SID Phase 9 object classes and associations" fillColor="12632256" lineColor="0" lineWidth="1"/>
             <styles xmi:type="notation:TextStyle" xmi:id="_IfXT8mevEd6Fg9WEQKp7YA"/>
             <styles xmi:type="notation:LineTypeStyle" xmi:id="_IfXT82evEd6Fg9WEQKp7YA"/>
             <element xsi:nil="true"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IfXT9GevEd6Fg9WEQKp7YA" x="-1320" y="-396" width="6534" height="740"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IfXT9GevEd6Fg9WEQKp7YA" x="-1717" y="-396" width="6931" height="740"/>
           </children>
           <children xmi:id="_qmcKIGezEd6Fg9WEQKp7YA" element="_mnNUcGezEd6Fg9WEQKp7YA">
             <children xmi:id="_qmcKI2ezEd6Fg9WEQKp7YA" type="ImageCompartment">
@@ -541,7 +544,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_qmcKLGezEd6Fg9WEQKp7YA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_qmcKIWezEd6Fg9WEQKp7YA" fillColor="8047085" showParent="QualifiedName" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcKImezEd6Fg9WEQKp7YA" x="17028" y="2904"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcKImezEd6Fg9WEQKp7YA" x="16764" y="3696"/>
           </children>
           <children xmi:id="_IWOXUGe1Ed6Fg9WEQKp7YA">
             <children xmi:id="_IWOXU2e1Ed6Fg9WEQKp7YA" type="ImageCompartment">
@@ -588,6 +591,72 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pRHuQWe5Ed6Fg9WEQKp7YA" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Value%20Network%20Role%20ABE.efx#_3E3F0EC000E93DDEBDDA033E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE/ResourceRole?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pRHuQme5Ed6Fg9WEQKp7YA" x="23892" y="10032"/>
+          </children>
+          <children xmi:id="_oOvhkGumEd6D2YQapBqcZg" type="Note">
+            <children xmi:id="_oOvhkWumEd6D2YQapBqcZg" type="DiagramName">
+              <element xsi:nil="true"/>
+            </children>
+            <children xmi:id="_oOvhkmumEd6D2YQapBqcZg" type="Description">
+              <element xsi:nil="true"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_oOvhk2umEd6D2YQapBqcZg" description="new SID object classes and associations" fillColor="8047085" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_oOvhlGumEd6D2YQapBqcZg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_oOvhlWumEd6D2YQapBqcZg"/>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oOvhlmumEd6D2YQapBqcZg" x="-1717" y="528" width="6931" height="740"/>
+          </children>
+          <children xmi:id="_pYqXB2umEd6D2YQapBqcZg" type="Note">
+            <children xmi:id="_pYqXCGumEd6D2YQapBqcZg" type="DiagramName">
+              <element xsi:nil="true"/>
+            </children>
+            <children xmi:id="_pYqXCWumEd6D2YQapBqcZg" type="Description">
+              <element xsi:nil="true"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pYqXCmumEd6D2YQapBqcZg" description="entity identification object classes and associations" fillColor="10011046" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_pYqXC2umEd6D2YQapBqcZg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_pYqXDGumEd6D2YQapBqcZg"/>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pYqXDWumEd6D2YQapBqcZg" x="-1717" y="1452" width="6931" height="1056"/>
+          </children>
+          <children xmi:id="_7zEAUGunEd6D2YQapBqcZg" element="_0FhF0GunEd6D2YQapBqcZg">
+            <children xmi:id="_7zEAU2unEd6D2YQapBqcZg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_7zEAVGunEd6D2YQapBqcZg" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_7zEAVWunEd6D2YQapBqcZg" type="Stereotype"/>
+            <children xmi:id="_7zEAVmunEd6D2YQapBqcZg" type="Kind"/>
+            <children xmi:id="_7zEAV2unEd6D2YQapBqcZg" type="Name"/>
+            <children xmi:id="_7zEAWGunEd6D2YQapBqcZg" type="Parent"/>
+            <children xmi:id="_7zNKQGunEd6D2YQapBqcZg" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7zNKQWunEd6D2YQapBqcZg"/>
+            </children>
+            <children xmi:id="_7zNKQmunEd6D2YQapBqcZg" visible="false" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7zNKQ2unEd6D2YQapBqcZg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7zEAUWunEd6D2YQapBqcZg" fillColor="8047085" showParent="QualifiedName" showStereotype="Label"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7zEAUmunEd6D2YQapBqcZg" x="13332" y="264"/>
+          </children>
+          <children xmi:id="_EY5i0GuqEd6D2YQapBqcZg">
+            <children xmi:id="_EY5i02uqEd6D2YQapBqcZg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_EY5i1GuqEd6D2YQapBqcZg" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_EY5i1WuqEd6D2YQapBqcZg" type="Stereotype"/>
+            <children xmi:id="_EY5i1muqEd6D2YQapBqcZg" type="Name"/>
+            <children xmi:id="_EY5i12uqEd6D2YQapBqcZg" type="Parent"/>
+            <children xmi:id="_EY5i2GuqEd6D2YQapBqcZg" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EY5i2WuqEd6D2YQapBqcZg"/>
+            </children>
+            <children xmi:id="_EY5i2muqEd6D2YQapBqcZg" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EY5i22uqEd6D2YQapBqcZg"/>
+            </children>
+            <children xmi:id="_EY5i3GuqEd6D2YQapBqcZg" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EY5i3WuqEd6D2YQapBqcZg"/>
+            </children>
+            <children xmi:id="_EZDT0GuqEd6D2YQapBqcZg" visible="false" type="StructureCompartment">
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_EZDT0WuqEd6D2YQapBqcZg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EY5i0WuqEd6D2YQapBqcZg" showStereotype="Label"/>
+            <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93CDAA51A00F6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EY5i0muqEd6D2YQapBqcZg" x="4620" y="18084"/>
           </children>
           <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_Fjfy8WeqEd6Fg9WEQKp7YA"/>
           <element xsi:nil="true"/>
@@ -802,7 +871,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <children xmi:id="_Fjf0oWeqEd6Fg9WEQKp7YA" visible="false" type="SignalCompartment">
                 <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Fjf0omeqEd6Fg9WEQKp7YA"/>
               </children>
-              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjf0o2eqEd6Fg9WEQKp7YA" lineWidth="1" showStereotype="Label"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fjf0o2eqEd6Fg9WEQKp7YA" fillColor="10011046" lineWidth="1" showStereotype="Label"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fjf0pGeqEd6Fg9WEQKp7YA" x="-1013" y="2112"/>
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Fjf0pWeqEd6Fg9WEQKp7YA" routing="Rectilinear" lineWidth="1" showStereotype="Text"/>
@@ -819,7 +888,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <element xmi:type="uml:Generalization" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD3BB0280?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/CompositeEntityIdentificationSpec/%3CGeneralization%3E?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Fjf0rWeqEd6Fg9WEQKp7YA" points="[-3131, -767, 2981, 3099]$[-3131, -2609, 2981, 1257]"/>
           </edges>
-          <edges xmi:id="_lSTGEGeqEd6Fg9WEQKp7YA" element="_lRjfMGeqEd6Fg9WEQKp7YA" source="_Uh6SEGeqEd6Fg9WEQKp7YA" target="_idHBoGeqEd6Fg9WEQKp7YA">
+          <edges xmi:id="_lSTGEGeqEd6Fg9WEQKp7YA" element="_lRjfMGeqEd6Fg9WEQKp7YA" source="_7zEAUGunEd6D2YQapBqcZg" target="_idHBoGeqEd6Fg9WEQKp7YA">
             <children xmi:id="_lSTGE2eqEd6Fg9WEQKp7YA" type="NameLabel">
               <children xmi:id="_lSTGFWeqEd6Fg9WEQKp7YA" type="Stereotype"/>
               <children xmi:id="_lSTGFmeqEd6Fg9WEQKp7YA" type="Name"/>
@@ -827,7 +896,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             </children>
             <children xmi:id="_lSTGF2eqEd6Fg9WEQKp7YA" type="ToMultiplicityLabel" element="_lSALImeqEd6Fg9WEQKp7YA">
               <children xmi:id="_lSTGGWeqEd6Fg9WEQKp7YA" type="ToMultiplicity"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSTGGGeqEd6Fg9WEQKp7YA" y="396"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSTGGGeqEd6Fg9WEQKp7YA" x="-11" y="-377"/>
             </children>
             <children xmi:id="_lSTGGmeqEd6Fg9WEQKp7YA" type="ToRoleLabel" element="_lSALImeqEd6Fg9WEQKp7YA">
               <children xmi:id="_lSc3EGeqEd6Fg9WEQKp7YA" type="ToRole"/>
@@ -835,11 +904,11 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             </children>
             <children xmi:id="_lSc3EWeqEd6Fg9WEQKp7YA" type="FromMultiplicityLabel" element="_lR2aIGeqEd6Fg9WEQKp7YA">
               <children xmi:id="_lSc3E2eqEd6Fg9WEQKp7YA" type="FromMultiplicity"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3EmeqEd6Fg9WEQKp7YA" y="396"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3EmeqEd6Fg9WEQKp7YA" x="35" y="-245"/>
             </children>
             <children xmi:id="_lSc3FGeqEd6Fg9WEQKp7YA" type="FromRoleLabel" element="_lR2aIGeqEd6Fg9WEQKp7YA">
               <children xmi:id="_lSc3FmeqEd6Fg9WEQKp7YA" type="FromRole"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3FWeqEd6Fg9WEQKp7YA" y="-397"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3FWeqEd6Fg9WEQKp7YA" x="35" y="428"/>
             </children>
             <children xmi:id="_lSc3F2eqEd6Fg9WEQKp7YA" type="ToQualifierLabel" element="_lSALImeqEd6Fg9WEQKp7YA">
               <children xmi:id="_lSc3GWeqEd6Fg9WEQKp7YA" type="QualifierCompartment">
@@ -863,10 +932,11 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <children xmi:id="_lSc3JWeqEd6Fg9WEQKp7YA" type="FromConstraintCompartment">
                 <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_lSc3JmeqEd6Fg9WEQKp7YA"/>
               </children>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3JGeqEd6Fg9WEQKp7YA" y="1058"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_lSc3JGeqEd6Fg9WEQKp7YA" x="-4" y="362"/>
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lSTGEWeqEd6Fg9WEQKp7YA" fontColor="8047085" routing="Rectilinear" lineColor="8047085" lineWidth="1" showStereotype="Text"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSTGEmeqEd6Fg9WEQKp7YA" points="[104, 0, -188, -11]$[185, -4, -107, -15]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSTGEmeqEd6Fg9WEQKp7YA" points="[-154, 174, 3684, -5264]$[-154, 1994, 3684, -3444]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bb0_oGuoEd6D2YQapBqcZg" id="(0.22880332,0.8923077)"/>
           </edges>
           <edges xmi:id="_iRXPMGerEd6Fg9WEQKp7YA" element="_iRNeMGerEd6Fg9WEQKp7YA" source="_alfvsGerEd6Fg9WEQKp7YA" target="_Uh6SEGeqEd6Fg9WEQKp7YA">
             <children xmi:id="_iRXPM2erEd6Fg9WEQKp7YA" type="NameLabel">
@@ -958,7 +1028,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_zohS02esEd6Fg9WEQKp7YA" type="NameLabel">
               <children xmi:id="_zohS1WesEd6Fg9WEQKp7YA" type="Stereotype"/>
               <children xmi:id="_zohS1mesEd6Fg9WEQKp7YA" type="Name"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zohS1GesEd6Fg9WEQKp7YA" x="-2765" y="-322"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zohS1GesEd6Fg9WEQKp7YA" x="-4085" y="-322"/>
             </children>
             <children xmi:id="_zohS12esEd6Fg9WEQKp7YA" type="ToMultiplicityLabel">
               <children xmi:id="_zohS2WesEd6Fg9WEQKp7YA" type="ToMultiplicity"/>
@@ -1018,9 +1088,9 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <children xmi:id="_DEbnN2etEd6Fg9WEQKp7YA" type="Name"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DEbnNWetEd6Fg9WEQKp7YA" y="-186"/>
             </children>
-            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_DEbnMmetEd6Fg9WEQKp7YA" lineColor="8047085" lineWidth="1" showStereotype="Text"/>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_DEbnMmetEd6Fg9WEQKp7YA" routing="Rectilinear" lineColor="8047085" lineWidth="1" showStereotype="Text"/>
             <element xmi:type="uml:Generalization" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20ABE.efx#_DEbnMGetEd6Fg9WEQKp7YA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DEbnM2etEd6Fg9WEQKp7YA" points="[1, -31, 30, 161]$[36, -163, 65, 29]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DEbnM2etEd6Fg9WEQKp7YA" points="[1197, -834, 1301, 11337]$[1197, -1818, 1301, 10353]$[8712, -1818, 8816, 10353]$[8712, -11581, 8816, 590]$[2647, -11581, 2751, 590]"/>
           </edges>
           <edges xmi:id="_WwnzEGevEd6Fg9WEQKp7YA" source="_FjfygWeqEd6Fg9WEQKp7YA" target="_FjfyQWeqEd6Fg9WEQKp7YA">
             <children xmi:id="_WwnzE2evEd6Fg9WEQKp7YA" type="NameLabel">
@@ -1138,7 +1208,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <element xmi:type="uml:Association" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA5E2B8000A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/InvolvedResourceSpecs?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_milP8mevEd6Fg9WEQKp7YA" points="[-3802, 834, -3802, 834]$[-3802, 2521, -3802, 2521]$[1225, 2521, 1225, 2521]$[1225, 834, 1225, 834]"/>
           </edges>
-          <edges xmi:id="_NPJgAGezEd6Fg9WEQKp7YA" element="_NN9NMGezEd6Fg9WEQKp7YA" source="_Uh6SEGeqEd6Fg9WEQKp7YA" target="_qmcKIGezEd6Fg9WEQKp7YA">
+          <edges xmi:id="_NPJgAGezEd6Fg9WEQKp7YA" element="_NN9NMGezEd6Fg9WEQKp7YA" source="_7zEAUGunEd6D2YQapBqcZg" target="_qmcKIGezEd6Fg9WEQKp7YA">
             <children xmi:id="_NPJgA2ezEd6Fg9WEQKp7YA" type="NameLabel">
               <children xmi:id="_NPJgBWezEd6Fg9WEQKp7YA" type="Stereotype"/>
               <children xmi:id="_NPJgBmezEd6Fg9WEQKp7YA" type="Name"/>
@@ -1158,7 +1228,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             </children>
             <children xmi:id="_NPJgEGezEd6Fg9WEQKp7YA" type="FromRoleLabel" element="_NN9NMWezEd6Fg9WEQKp7YA">
               <children xmi:id="_NPJgEmezEd6Fg9WEQKp7YA" type="FromRole"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_NPJgEWezEd6Fg9WEQKp7YA" y="-397"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NPJgEWezEd6Fg9WEQKp7YA" x="-97" y="-687"/>
             </children>
             <children xmi:id="_NPJgE2ezEd6Fg9WEQKp7YA" type="ToQualifierLabel" element="_NN9NNWezEd6Fg9WEQKp7YA">
               <children xmi:id="_NPJgFWezEd6Fg9WEQKp7YA" type="QualifierCompartment">
@@ -1185,7 +1255,8 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <layoutConstraint xmi:type="notation:Location" xmi:id="_NPJgIGezEd6Fg9WEQKp7YA" y="1058"/>
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NPJgAWezEd6Fg9WEQKp7YA" fontColor="8047085" routing="Rectilinear" lineColor="8047085" lineWidth="1" showStereotype="Text"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NPJgAmezEd6Fg9WEQKp7YA" points="[1820, 767, -205, -2051]$[1820, 2533, -205, -285]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NPJgAmezEd6Fg9WEQKp7YA" points="[240, 300, -4827, -5651]$[240, 2120, -4827, -3831]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DK2GMGuoEd6D2YQapBqcZg" id="(0.8136764,0.8142012)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r9AUcGezEd6Fg9WEQKp7YA" id="(0.15795477,0.060663506)"/>
           </edges>
           <edges xmi:id="_IWYIUGe1Ed6Fg9WEQKp7YA" source="_IWOXUGe1Ed6Fg9WEQKp7YA" target="_FjfyQWeqEd6Fg9WEQKp7YA">
@@ -1265,6 +1336,98 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pRRfSGe5Ed6Fg9WEQKp7YA" routing="Rectilinear" lineWidth="1" showStereotype="Text"/>
             <element xmi:type="uml:Association" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20Domain.efx#_3E3F0EC000E9438274340343?SID%20Phase%20IX%20Models/Resource%20Domain/ResourceTakesOnRoles?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pRRfSWe5Ed6Fg9WEQKp7YA" points="[1930, 166, -9783, 457]$[7574, 166, -4139, 457]"/>
+          </edges>
+          <edges xmi:id="_qf_rIGupEd6D2YQapBqcZg" element="_qfswMGupEd6D2YQapBqcZg" source="_Uh6SEGeqEd6Fg9WEQKp7YA" target="_7zEAUGunEd6D2YQapBqcZg">
+            <children xmi:id="_qf_rI2upEd6D2YQapBqcZg" type="KindLabel">
+              <children xmi:id="_qf_rJWupEd6D2YQapBqcZg" type="Stereotype"/>
+              <children xmi:id="_qf_rJ2upEd6D2YQapBqcZg" type="Kind"/>
+              <children xmi:id="_qf_rJmupEd6D2YQapBqcZg" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qf_rJGupEd6D2YQapBqcZg" x="-82" y="-616"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_qf_rIWupEd6D2YQapBqcZg" lineWidth="1" showStereotype="Text"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qf_rImupEd6D2YQapBqcZg" points="[3, 32, 5, -62]$[32, 63, 34, -31]"/>
+          </edges>
+          <edges xmi:id="_EZDT0muqEd6D2YQapBqcZg" source="_EY5i0GuqEd6D2YQapBqcZg" target="_FjfyQWeqEd6Fg9WEQKp7YA">
+            <children xmi:id="_EZDT1WuqEd6D2YQapBqcZg" type="NameLabel">
+              <children xmi:id="_EZDT12uqEd6D2YQapBqcZg" type="Stereotype"/>
+              <children xmi:id="_EZDT2GuqEd6D2YQapBqcZg" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZDT1muqEd6D2YQapBqcZg" y="-186"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_EZDT02uqEd6D2YQapBqcZg" routing="Rectilinear" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:Generalization" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF1EC0283?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource/%3CGeneralization%3E?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EZDT1GuqEd6D2YQapBqcZg" points="[157, -1297, -9492, 7323]$[157, -2130, -9492, 6490]$[8715, -2130, -934, 6490]$[8715, -7786, -934, 834]"/>
+          </edges>
+          <edges xmi:id="_EZDT2WuqEd6D2YQapBqcZg" source="_IWOXUGe1Ed6Fg9WEQKp7YA" target="_EY5i0GuqEd6D2YQapBqcZg">
+            <children xmi:id="_EZDT4GuqEd6D2YQapBqcZg" type="ToMultiplicityLabel">
+              <children xmi:id="_EZDT4muqEd6D2YQapBqcZg" type="ToMultiplicity"/>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource/_physicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZDT4WuqEd6D2YQapBqcZg" x="-613" y="480"/>
+            </children>
+            <children xmi:id="_EZMdwGuqEd6D2YQapBqcZg" type="ToRoleLabel">
+              <children xmi:id="_EZMdwmuqEd6D2YQapBqcZg" type="ToRole"/>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource/_physicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMdwWuqEd6D2YQapBqcZg" x="796" y="-444"/>
+            </children>
+            <children xmi:id="_EZMdw2uqEd6D2YQapBqcZg" type="FromMultiplicityLabel">
+              <children xmi:id="_EZMdxWuqEd6D2YQapBqcZg" type="FromMultiplicity"/>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/_logicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMdxGuqEd6D2YQapBqcZg" x="619" y="-312"/>
+            </children>
+            <children xmi:id="_EZMdxmuqEd6D2YQapBqcZg" type="FromRoleLabel">
+              <children xmi:id="_EZMdyGuqEd6D2YQapBqcZg" type="FromRole"/>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/_logicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMdx2uqEd6D2YQapBqcZg" x="-625" y="348"/>
+            </children>
+            <children xmi:id="_EZMdyWuqEd6D2YQapBqcZg" type="ToQualifierLabel">
+              <children xmi:id="_EZMdy2uqEd6D2YQapBqcZg" type="QualifierCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMdzGuqEd6D2YQapBqcZg"/>
+              </children>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource/_physicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMdymuqEd6D2YQapBqcZg" y="-186"/>
+            </children>
+            <children xmi:id="_EZMdzWuqEd6D2YQapBqcZg" type="FromQualifierLabel">
+              <children xmi:id="_EZMdz2uqEd6D2YQapBqcZg" type="QualifierCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd0GuqEd6D2YQapBqcZg"/>
+              </children>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/_logicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMdzmuqEd6D2YQapBqcZg" y="-186"/>
+            </children>
+            <children xmi:id="_EZMd0WuqEd6D2YQapBqcZg" type="ToConstraintLabel">
+              <children xmi:id="_EZMd02uqEd6D2YQapBqcZg" type="ToConstraintCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd1GuqEd6D2YQapBqcZg"/>
+              </children>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource/_physicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMd0muqEd6D2YQapBqcZg" y="1058"/>
+            </children>
+            <children xmi:id="_EZMd1WuqEd6D2YQapBqcZg" type="FromConstraintLabel">
+              <children xmi:id="_EZMd12uqEd6D2YQapBqcZg" type="FromConstraintCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd2GuqEd6D2YQapBqcZg"/>
+              </children>
+              <element xmi:type="uml:Property" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEF21901B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/_logicalResource?"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EZMd1muqEd6D2YQapBqcZg" y="1058"/>
+            </children>
+            <children xmi:id="_EZMd2WuqEd6D2YQapBqcZg">
+              <children xmi:id="_EZMd3GuqEd6D2YQapBqcZg" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_EZMd3WuqEd6D2YQapBqcZg" width="1320" height="1320"/>
+              </children>
+              <children xmi:id="_EZMd3muqEd6D2YQapBqcZg" type="Stereotype"/>
+              <children xmi:id="_EZMd32uqEd6D2YQapBqcZg" type="Name"/>
+              <children xmi:id="_EZMd4GuqEd6D2YQapBqcZg" type="Parent"/>
+              <children xmi:id="_EZMd4WuqEd6D2YQapBqcZg" type="AttributeCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd4muqEd6D2YQapBqcZg"/>
+              </children>
+              <children xmi:id="_EZMd42uqEd6D2YQapBqcZg" type="OperationCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd5GuqEd6D2YQapBqcZg"/>
+              </children>
+              <children xmi:id="_EZMd5WuqEd6D2YQapBqcZg" visible="false" type="SignalCompartment">
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EZMd5muqEd6D2YQapBqcZg"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EZMd2muqEd6D2YQapBqcZg" showStereotype="Label"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZMd22uqEd6D2YQapBqcZg" x="2005" y="-2519"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_EZDT2muqEd6D2YQapBqcZg" routing="Rectilinear" lineWidth="1" showStereotype="Text"/>
+            <element xmi:type="uml:AssociationClass" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/LogicalResource%20ABE.efx#_3E3F0EC000E93DDEF2160111?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalPhysicalResource?"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EZDT22uqEd6D2YQapBqcZg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
         </contents>
         <contents xmi:type="notation:Diagram" xmi:id="_eEkvMFs1Ed66-oRawLnI2w" type="Class" name="Physical Resource">
@@ -15393,7 +15556,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nLFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nLVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nLlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nLlziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDEBD690331?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/EntityRole?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nL1ziEd61BtJguS0Ugw" x="39864" y="6600"/>
           </children>
@@ -15416,7 +15579,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nPFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nPVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nPlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nPlziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDABB590195?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Role?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nP1ziEd61BtJguS0Ugw" x="39708" y="-5848"/>
           </children>
@@ -15439,7 +15602,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nTFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nTVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nTlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nTlziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nT1ziEd61BtJguS0Ugw" x="13464" y="6336"/>
           </children>
@@ -15462,7 +15625,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nXFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nXVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nXlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nXlziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDEC52B0188?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/EntitySpecification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nX1ziEd61BtJguS0Ugw" x="3355" y="1849"/>
           </children>
@@ -15508,7 +15671,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nfFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nfVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nflziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nflziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nf1ziEd61BtJguS0Ugw" x="14388" y="1716"/>
           </children>
@@ -15531,7 +15694,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2njFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2njVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2njlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2njlziEd61BtJguS0Ugw" fillColor="10265827" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDA9E0C0384?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/RootEntity?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nj1ziEd61BtJguS0Ugw" x="14445" y="-5954"/>
           </children>
@@ -15554,7 +15717,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_Pg2nnFziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Pg2nnVziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nnlziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Pg2nnlziEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1E8C02F6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2nn1ziEd61BtJguS0Ugw" x="29436" y="1584"/>
           </children>
@@ -15623,7 +15786,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_nlvjjlziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nlvjj1ziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nlvjgVziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nlvjgVziEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD26F01E3?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/EntityIdentificationSpecification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlvjglziEd61BtJguS0Ugw" x="28380" y="-4092"/>
           </children>
@@ -15646,7 +15809,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_6MA7HlziEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_6MA7H1ziEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6MA7EVziEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6MA7EVziEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1E990024?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/CompositeEntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6MA7ElziEd61BtJguS0Ugw" x="25608" y="5016"/>
           </children>
@@ -15669,7 +15832,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_MVoy7lzjEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_MVoy71zjEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_MVoy4VzjEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_MVoy4VzjEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4C1EA50216?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/ComponentEntityIdentification?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MVoy4lzjEd61BtJguS0Ugw" x="31944" y="5016"/>
           </children>
@@ -15692,7 +15855,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_QZC9_lzjEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_QZC9_1zjEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_QZC98VzjEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_QZC98VzjEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD2C003B6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/ComponentEntityIdentificationSpec?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QZC98lzjEd61BtJguS0Ugw" x="34320" y="264"/>
           </children>
@@ -15715,7 +15878,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <children xmi:id="_c5MEzlzjEd61BtJguS0Ugw" visible="false" type="StructureCompartment">
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_c5MEz1zjEd61BtJguS0Ugw"/>
             </children>
-            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c5MEwVzjEd61BtJguS0Ugw" showParent="Name" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c5MEwVzjEd61BtJguS0Ugw" fillColor="10011046" showParent="Name" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Entity%20Identification%20ABE.efx#_3E3F0EC000E93F4AD2B102CE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity%20Identification%20ABE/CompositeEntityIdentificationSpec?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c5MEwlzjEd61BtJguS0Ugw" x="22308" y="264"/>
           </children>
@@ -15741,6 +15904,45 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_J5_HwWfDEd6GHuJib4xOCw" showStereotype="Label"/>
             <element xmi:type="uml:Class" href="../sidphase9/SID%20Phase%20IX%20Models/SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Value%20Network%20Role%20ABE.efx#_3E3F0EC000E93DDEBDDA033E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE/ResourceRole?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J5_HwmfDEd6GHuJib4xOCw" x="38148" y="9768"/>
+          </children>
+          <children xmi:id="_9hftgGumEd6D2YQapBqcZg" type="Note">
+            <children xmi:id="_9hftgWumEd6D2YQapBqcZg" type="DiagramName">
+              <element xsi:nil="true"/>
+            </children>
+            <children xmi:id="_9hftgmumEd6D2YQapBqcZg" type="Description">
+              <element xsi:nil="true"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_9hftg2umEd6D2YQapBqcZg" description="SID Phase 9 object classes to be removed" fillColor="10265827" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_9hfthGumEd6D2YQapBqcZg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_9hfthWumEd6D2YQapBqcZg"/>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hfthmumEd6D2YQapBqcZg" x="-792" y="-8582" width="6905" height="714"/>
+          </children>
+          <children xmi:id="_9ho3cGumEd6D2YQapBqcZg" type="Note">
+            <children xmi:id="_9ho3cWumEd6D2YQapBqcZg" type="DiagramName">
+              <element xsi:nil="true"/>
+            </children>
+            <children xmi:id="_9ho3cmumEd6D2YQapBqcZg" type="Description">
+              <element xsi:nil="true"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_9ho3c2umEd6D2YQapBqcZg" description="SID Phase 9 object classes and associations" fillColor="12632256" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_9ho3dGumEd6D2YQapBqcZg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_9ho3dWumEd6D2YQapBqcZg"/>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ho3dmumEd6D2YQapBqcZg" x="-792" y="-9481" width="6905" height="714"/>
+          </children>
+          <children xmi:id="_9ho3d2umEd6D2YQapBqcZg" type="Note">
+            <children xmi:id="_9ho3eGumEd6D2YQapBqcZg" type="DiagramName">
+              <element xsi:nil="true"/>
+            </children>
+            <children xmi:id="_9ho3eWumEd6D2YQapBqcZg" type="Description">
+              <element xsi:nil="true"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_9ho3emumEd6D2YQapBqcZg" description="entity identification object classes and associations" fillColor="10011046" lineColor="0" lineWidth="1"/>
+            <styles xmi:type="notation:TextStyle" xmi:id="_9ho3e2umEd6D2YQapBqcZg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_9ho3fGumEd6D2YQapBqcZg"/>
+            <element xsi:nil="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ho3fWumEd6D2YQapBqcZg" x="-792" y="-7656" width="6905" height="1031"/>
           </children>
           <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_LoSaIVziEd61BtJguS0Ugw"/>
           <element xsi:nil="true"/>
@@ -16441,7 +16643,7 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
               <children xmi:id="_c5VOylzjEd61BtJguS0Ugw" visible="false" type="SignalCompartment">
                 <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_c5VOy1zjEd61BtJguS0Ugw"/>
               </children>
-              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c5VOv1zjEd61BtJguS0Ugw" lineWidth="1" showStereotype="Label"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c5VOv1zjEd61BtJguS0Ugw" fillColor="10011046" lineWidth="1" showStereotype="Label"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c5VOwFzjEd61BtJguS0Ugw" x="-4495" y="971"/>
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_c5ME0VzjEd61BtJguS0Ugw" routing="Rectilinear" lineWidth="1" showStereotype="Text"/>
@@ -23898,6 +24100,11 @@ This attribute may be unique amongst all instances of this object in the target 
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0FhF0GunEd6D2YQapBqcZg" name="SidOrMtop">
+        <eAnnotations xmi:id="_5PcNAGunEd6D2YQapBqcZg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_5PcNAWunEd6D2YQapBqcZg" key="choice"/>
+        </eAnnotations>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_6_0iRlsrEd6JaP2IuOrsrQ">
       <eAnnotations xmi:id="_6_0iR1srEd6JaP2IuOrsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -24000,4 +24207,6 @@ This attribute may be unique amongst all instances of this object in the target 
   <Default:Documentation xmi:id="_Upipd2e9Ed6Fg9WEQKp7YA" base_Comment="_UpZfkGe9Ed6Fg9WEQKp7YA"/>
   <TIPProfile:tipClass xmi:id="_W-TE6We-Ed6Fg9WEQKp7YA" base_Class="_W-J68Ge-Ed6Fg9WEQKp7YA"/>
   <TIPProfile:tipClass xmi:id="_uoapcWoyEd65x9j9iHt8VQ" base_Class="_uoapcGoyEd65x9j9iHt8VQ"/>
+  <TIPProfile:tipAttribute xmi:id="_eUrPsWunEd6D2YQapBqcZg" base_StructuralFeature="_eUrPsGunEd6D2YQapBqcZg"/>
+  <TIPProfile:tipDatatype xmi:id="_0FhF0WunEd6D2YQapBqcZg" base_DataType="_0FhF0GunEd6D2YQapBqcZg"/>
 </xmi:XMI>
