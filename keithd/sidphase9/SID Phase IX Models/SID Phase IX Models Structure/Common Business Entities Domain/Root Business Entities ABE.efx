@@ -1009,6 +1009,21 @@ Second, it defines a common administrative domain that is used to administer the
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHzskTNHEd2nE5zXHK_HsA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wHzskDNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_iWDV8G0REd6_2ds98BZGbg" name="topologicalLink" visibility="private" aggregation="composite" association="_iVmqAG0REd6_2ds98BZGbg">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iWDV8m0REd6_2ds98BZGbg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iWDV8W0REd6_2ds98BZGbg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j38mgG0REd6_2ds98BZGbg" name="trafficConditioningProfile" visibility="private" aggregation="composite" association="_j3zckG0REd6_2ds98BZGbg">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_JJVtwLnuEdy4-6KrVwKgCQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TrafficConditioningProfile?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j38mgm0REd6_2ds98BZGbg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j38mgW0REd6_2ds98BZGbg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rxFF8G0REd6_2ds98BZGbg" name="flowDomain" visibility="private" aggregation="composite" association="_rw7U8G0REd6_2ds98BZGbg">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_7hqt0K4eEdyvN402f4-UpA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/FlowDomain?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxFF8m0REd6_2ds98BZGbg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxFF8W0REd6_2ds98BZGbg"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDA9E0C0384" name="RootEntity" isAbstract="true">
       <ownedComment xmi:id="_wFRV9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDA9E0C0384">
@@ -1287,6 +1302,24 @@ Note that an Entity does not have to be associated with an EntitySpecification. 
     <packagedElement xmi:type="uml:Association" xmi:id="_eKzccFKsEd2Ox5xf0vu4pw" name="SpecifiesResourceRoles">
       <memberEnd href="#_eKzccVKsEd2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/SpecificationRole/resourcerole?"/>
       <memberEnd href="../Resource%20Domain/Value%20Network%20Role%20ABE.efx#_eLG-clKsEd2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE/ResourceRole/specificationrole?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iVmqAG0REd6_2ds98BZGbg" memberEnd="_iWDV8G0REd6_2ds98BZGbg _iWNG8G0REd6_2ds98BZGbg">
+      <ownedEnd xmi:id="_iWNG8G0REd6_2ds98BZGbg" name="" visibility="private" type="_3E3F0EC000E93CDAAE2C0113" association="_iVmqAG0REd6_2ds98BZGbg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iWWQ4W0REd6_2ds98BZGbg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iWWQ4G0REd6_2ds98BZGbg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_j3zckG0REd6_2ds98BZGbg" memberEnd="_j38mgG0REd6_2ds98BZGbg _j4GXgG0REd6_2ds98BZGbg">
+      <ownedEnd xmi:id="_j4GXgG0REd6_2ds98BZGbg" name="" visibility="private" type="_3E3F0EC000E93CDAAE2C0113" association="_j3zckG0REd6_2ds98BZGbg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j4GXgm0REd6_2ds98BZGbg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j4GXgW0REd6_2ds98BZGbg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rw7U8G0REd6_2ds98BZGbg" memberEnd="_rxFF8G0REd6_2ds98BZGbg _rxO28G0REd6_2ds98BZGbg">
+      <ownedEnd xmi:id="_rxO28G0REd6_2ds98BZGbg" name="" visibility="private" type="_3E3F0EC000E93CDAAE2C0113" association="_rw7U8G0REd6_2ds98BZGbg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxO28m0REd6_2ds98BZGbg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxO28W0REd6_2ds98BZGbg" value="1"/>
+      </ownedEnd>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_wErgEjNHEd2nE5zXHK_HsA" base_Comment="_wErgETNHEd2nE5zXHK_HsA"/>

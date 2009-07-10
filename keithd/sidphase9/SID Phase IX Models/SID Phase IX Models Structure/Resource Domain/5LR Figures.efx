@@ -9932,11 +9932,11 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2Dox3TNHEd2nE5zXHK_HsA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2Dox0TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" fillColor="16744703" showStereotype="Image"/>
-            <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Dox0jNHEd2nE5zXHK_HsA" x="5308" y="-2624" width="3302" height="1490"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2DfA7zNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2DfA8DNHEd2nE5zXHK_HsA" points="[-1354, -16, 2726, -2573]$[-4030, -16, 50, -2573]$[-4030, 1947, 50, -609]"/>
         </edges>
         <edges xmi:id="_2Dox3jNHEd2nE5zXHK_HsA" source="_2Dox0DNHEd2nE5zXHK_HsA" target="_2DV2-DNHEd2nE5zXHK_HsA">
@@ -9946,7 +9946,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Dox4jNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2Dox3zNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
-          <element xmi:type="uml:Generalization" href="Termination%20Point%20ABE.efx#_3E3F0EC000E943302ED6014F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails/%3CGeneralization%3E?"/>
+          <element xmi:type="uml:Generalization" href="Managed%20Transmission.efx#_3E3F0EC000E943302ED6014F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails/%3CGeneralization%3E?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2Dox4DNHEd2nE5zXHK_HsA" points="[8, -745, 84, 2573]$[8, -2641, 84, 677]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2Dox5TNHEd2nE5zXHK_HsA" id="anchor50"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2Dox5jNHEd2nE5zXHK_HsA" id="anchor50"/>
@@ -16553,7 +16553,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2MucdjNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2MlSwzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2MlSxDNHEd2nE5zXHK_HsA" points="[-1354, 0, 2565, -2709]$[-3920, 0, 0, -2709]$[-3920, 2099, 0, -609]"/>
         </edges>
         <edges xmi:id="_2MucpzNHEd2nE5zXHK_HsA" source="_2MuchzNHEd2nE5zXHK_HsA" target="_2MbhmjNHEd2nE5zXHK_HsA">
@@ -17128,7 +17128,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2NU5fjNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2NU5XzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2NU5YDNHEd2nE5zXHK_HsA" points="[-1354, 0, 2565, -2709]$[-3920, 0, 0, -2709]$[-3920, 2099, 0, -609]"/>
         </edges>
         <edges xmi:id="_2NeDYDNHEd2nE5zXHK_HsA" source="_2NeDUDNHEd2nE5zXHK_HsA" target="_2NBXcDNHEd2nE5zXHK_HsA">
@@ -17666,7 +17666,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2N6vUDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2N6vMTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2N6vMjNHEd2nE5zXHK_HsA" points="[-1354, 0, 2565, -2709]$[-3920, 0, 0, -2709]$[-3920, 2099, 0, -609]"/>
         </edges>
         <edges xmi:id="_2OEgQDNHEd2nE5zXHK_HsA" source="_2Nn0UDNHEd2nE5zXHK_HsA" target="_2OEgMDNHEd2nE5zXHK_HsA">
@@ -18434,7 +18434,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2O94JDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2O0HXzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2O0HYDNHEd2nE5zXHK_HsA" points="[-1354, -16, 3234, -2887]$[-4597, -16, -8, -2887]$[-4597, 2260, -8, -609]"/>
         </edges>
         <edges xmi:id="_2O94NTNHEd2nE5zXHK_HsA" source="_2OqWTjNHEd2nE5zXHK_HsA" target="_2O0HTjNHEd2nE5zXHK_HsA">
@@ -18923,7 +18923,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2QKLEDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2QKK8TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2QKK8jNHEd2nE5zXHK_HsA" points="[-1354, 8, 2565, -2700]$[-3928, 8, -8, -2700]$[-3928, 2099, -8, -609]"/>
         </edges>
         <edges xmi:id="_2QTU4DNHEd2nE5zXHK_HsA" source="_2PtfADNHEd2nE5zXHK_HsA" target="_2QTU0DNHEd2nE5zXHK_HsA">
@@ -20367,7 +20367,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2RyiwDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2RyioTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2RyiojNHEd2nE5zXHK_HsA" points="[-355, -635, 5528, 2785]$[-355, -2785, 5528, 635]$[-3716, -2785, 2167, 635]"/>
         </edges>
         <edges xmi:id="_2R8TnTNHEd2nE5zXHK_HsA" source="_2Ryi0TNHEd2nE5zXHK_HsA" target="_2Rfn9TNHEd2nE5zXHK_HsA">
@@ -23857,7 +23857,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2XAaEjNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2XAZ8zNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2XAZ9DNHEd2nE5zXHK_HsA" points="[33, -635, 6900, 4817]$[33, -5130, 6900, 321]$[-4699, -5130, 2167, 321]"/>
         </edges>
         <edges xmi:id="_2XKK0DNHEd2nE5zXHK_HsA" source="_2XKKwDNHEd2nE5zXHK_HsA" target="_2W3P0DNHEd2nE5zXHK_HsA">
@@ -29181,7 +29181,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2dte2DNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2dteuTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2dteujNHEd2nE5zXHK_HsA" points="[-8, -601, 5960, 2607]$[-8, -2633, 5960, 575]$[-3852, -2633, 2116, 575]"/>
         </edges>
         <edges xmi:id="_2dte-TNHEd2nE5zXHK_HsA" source="_2dte6TNHEd2nE5zXHK_HsA" target="_2daj_jNHEd2nE5zXHK_HsA">
@@ -31415,7 +31415,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2gshcDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2gshUTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2gshUjNHEd2nE5zXHK_HsA" points="[-2565, -220, 1972, -2582]$[-4546, -220, -8, -2582]$[-4546, 1752, -8, -609]"/>
         </edges>
         <edges xmi:id="_2gshgTNHEd2nE5zXHK_HsA" source="_2giwQDNHEd2nE5zXHK_HsA" target="_2gshQDNHEd2nE5zXHK_HsA">
@@ -34306,7 +34306,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2kkU4DNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2kkUwTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2kkUwjNHEd2nE5zXHK_HsA" points="[-1397, 59, 3412, -3987]$[-5012, 59, -203, -3987]$[-5012, 3437, -203, -609]"/>
         </edges>
         <edges xmi:id="_2kuFvjNHEd2nE5zXHK_HsA" source="_2kkUsDNHEd2nE5zXHK_HsA" target="_2kuFrjNHEd2nE5zXHK_HsA">
@@ -35508,7 +35508,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2mDiZzNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2l6Y7zNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2l6Y8DNHEd2nE5zXHK_HsA" points="[-1295, 93, 626, -2904]$[-4622, 93, -2700, -2904]$[-4622, 2997, -2700, 0]$[-3429, 2997, -1507, 0]"/>
         </edges>
         <edges xmi:id="_2mDiiDNHEd2nE5zXHK_HsA" source="_2l6Y1TNHEd2nE5zXHK_HsA" target="_2mDieDNHEd2nE5zXHK_HsA">

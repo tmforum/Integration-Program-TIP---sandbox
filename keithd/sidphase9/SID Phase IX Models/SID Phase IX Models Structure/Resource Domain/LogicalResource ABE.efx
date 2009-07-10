@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93DDEA0990115" name="LogicalResource ABE">
     <eAnnotations xmi:id="_hUgPgDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="5LR%20Figures.efx#_3E3F0EC000E93EA4A4230099?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/5LR%20Figures?"/>
@@ -24,6 +24,165 @@
     </eAnnotations>
     <eAnnotations xmi:id="_hUNUkDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Resource%20ABE.efx#_3E3F0EC000E9430ADC580046?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_gmEucG0DEd6YEcUVgSJefw" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_gmEucW0DEd6YEcUVgSJefw" type="Class" name="CH Hierarchy">
+        <children xmi:id="_nJbGsG0DEd6YEcUVgSJefw" element="_3E3F0EC000E93CDAA51A00F6">
+          <children xmi:id="_nJbGs20DEd6YEcUVgSJefw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nJbGtG0DEd6YEcUVgSJefw" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nJbGtW0DEd6YEcUVgSJefw" type="Stereotype"/>
+          <children xmi:id="_nJbGtm0DEd6YEcUVgSJefw" type="Name"/>
+          <children xmi:id="_nJkQoG0DEd6YEcUVgSJefw" type="Parent"/>
+          <children xmi:id="_nJkQoW0DEd6YEcUVgSJefw" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nJkQom0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_nJkQo20DEd6YEcUVgSJefw" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nJkQpG0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_nJkQpW0DEd6YEcUVgSJefw" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nJkQpm0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_nJkQp20DEd6YEcUVgSJefw" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nJkQqG0DEd6YEcUVgSJefw"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nJbGsW0DEd6YEcUVgSJefw" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJbGsm0DEd6YEcUVgSJefw" x="8316" y="20988"/>
+        </children>
+        <children xmi:id="_pOWL0G0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOf80G0DEd6YEcUVgSJefw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pOf80W0DEd6YEcUVgSJefw" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_pOf80m0DEd6YEcUVgSJefw" type="Stereotype"/>
+          <children xmi:id="_pOf8020DEd6YEcUVgSJefw" type="Name"/>
+          <children xmi:id="_pOf81G0DEd6YEcUVgSJefw" type="Parent"/>
+          <children xmi:id="_pOf81W0DEd6YEcUVgSJefw" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf81m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8120DEd6YEcUVgSJefw" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf82G0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf82W0DEd6YEcUVgSJefw" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf82m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8220DEd6YEcUVgSJefw" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pOf83G0DEd6YEcUVgSJefw"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pOWL0W0DEd6YEcUVgSJefw" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="Resource%20ABE.efx#_3E3F0EC000E93DDE851703CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOWL0m0DEd6YEcUVgSJefw" x="8448" y="17952"/>
+        </children>
+        <children xmi:id="_pOf83W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOf84G0DEd6YEcUVgSJefw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pOf84W0DEd6YEcUVgSJefw" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_pOf84m0DEd6YEcUVgSJefw" type="Stereotype"/>
+          <children xmi:id="_pOf8420DEd6YEcUVgSJefw" type="Name"/>
+          <children xmi:id="_pOf85G0DEd6YEcUVgSJefw" type="Parent"/>
+          <children xmi:id="_pOf85W0DEd6YEcUVgSJefw" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf85m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8520DEd6YEcUVgSJefw" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf86G0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf86W0DEd6YEcUVgSJefw" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf86m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8620DEd6YEcUVgSJefw" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pOf87G0DEd6YEcUVgSJefw"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pOf83m0DEd6YEcUVgSJefw" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOf8320DEd6YEcUVgSJefw" x="6996" y="14388"/>
+        </children>
+        <children xmi:id="_pOf87W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOf88G0DEd6YEcUVgSJefw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pOf88W0DEd6YEcUVgSJefw" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_pOf88m0DEd6YEcUVgSJefw" type="Stereotype"/>
+          <children xmi:id="_pOf8820DEd6YEcUVgSJefw" type="Name"/>
+          <children xmi:id="_pOf89G0DEd6YEcUVgSJefw" type="Parent"/>
+          <children xmi:id="_pOf89W0DEd6YEcUVgSJefw" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf89m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8920DEd6YEcUVgSJefw" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf8-G0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8-W0DEd6YEcUVgSJefw" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf8-m0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf8-20DEd6YEcUVgSJefw" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pOf8_G0DEd6YEcUVgSJefw"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pOf87m0DEd6YEcUVgSJefw" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOf8720DEd6YEcUVgSJefw" x="8844" y="11352"/>
+        </children>
+        <children xmi:id="_pOf8_W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOf9AG0DEd6YEcUVgSJefw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pOf9AW0DEd6YEcUVgSJefw" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_pOf9Am0DEd6YEcUVgSJefw" type="Stereotype"/>
+          <children xmi:id="_pOf9A20DEd6YEcUVgSJefw" type="Name"/>
+          <children xmi:id="_pOf9BG0DEd6YEcUVgSJefw" type="Parent"/>
+          <children xmi:id="_pOf9BW0DEd6YEcUVgSJefw" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf9Bm0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf9B20DEd6YEcUVgSJefw" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf9CG0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf9CW0DEd6YEcUVgSJefw" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_pOf9Cm0DEd6YEcUVgSJefw"/>
+          </children>
+          <children xmi:id="_pOf9C20DEd6YEcUVgSJefw" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pOf9DG0DEd6YEcUVgSJefw"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pOf8_m0DEd6YEcUVgSJefw" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDA9E0C0384?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/RootEntity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOf8_20DEd6YEcUVgSJefw" x="8316" y="7392"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_gmEucm0DEd6YEcUVgSJefw"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_pOpt0G0DEd6YEcUVgSJefw" source="_pOWL0G0DEd6YEcUVgSJefw" target="_pOf83W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOpt020DEd6YEcUVgSJefw" type="NameLabel">
+            <children xmi:id="_pOpt1W0DEd6YEcUVgSJefw" type="Stereotype"/>
+            <children xmi:id="_pOpt1m0DEd6YEcUVgSJefw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOpt1G0DEd6YEcUVgSJefw" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pOpt0W0DEd6YEcUVgSJefw" routing="Tree" lineWidth="1" showStereotype="Text"/>
+          <element xmi:type="uml:Generalization" href="Resource%20ABE.efx#_3E3F0EC000E93DDE854F0399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pOpt0m0DEd6YEcUVgSJefw" points="[-13743, -8083, -15198, -8295]$[-13643, -7983, -15098, -8195]"/>
+        </edges>
+        <edges xmi:id="_pOpt120DEd6YEcUVgSJefw" element="_3E3F0EC000E93DDEF1EC0283" source="_nJbGsG0DEd6YEcUVgSJefw" target="_pOWL0G0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOpt2m0DEd6YEcUVgSJefw" type="NameLabel">
+            <children xmi:id="_pOpt3G0DEd6YEcUVgSJefw" type="Stereotype"/>
+            <children xmi:id="_pOpt3W0DEd6YEcUVgSJefw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOpt220DEd6YEcUVgSJefw" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pOpt2G0DEd6YEcUVgSJefw" routing="Tree" lineWidth="1" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pOpt2W0DEd6YEcUVgSJefw" points="[-9071, -11751, -13743, -8083]$[-8971, -11651, -13643, -7983]"/>
+        </edges>
+        <edges xmi:id="_pOpt3m0DEd6YEcUVgSJefw" source="_pOf87W0DEd6YEcUVgSJefw" target="_pOf8_W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOpt4W0DEd6YEcUVgSJefw" type="NameLabel">
+            <children xmi:id="_pOpt420DEd6YEcUVgSJefw" type="Stereotype"/>
+            <children xmi:id="_pOpt5G0DEd6YEcUVgSJefw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOpt4m0DEd6YEcUVgSJefw" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pOpt320DEd6YEcUVgSJefw" routing="Tree" lineWidth="1" showStereotype="Text"/>
+          <element xmi:type="uml:Generalization" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE850A010F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pOpt4G0DEd6YEcUVgSJefw" points="[-13306, -8083, -13835, -8506]$[-13206, -7983, -13735, -8406]"/>
+        </edges>
+        <edges xmi:id="_pOpt5W0DEd6YEcUVgSJefw" source="_pOf83W0DEd6YEcUVgSJefw" target="_pOf87W0DEd6YEcUVgSJefw">
+          <children xmi:id="_pOpt6G0DEd6YEcUVgSJefw" type="NameLabel">
+            <children xmi:id="_pOpt6m0DEd6YEcUVgSJefw" type="Stereotype"/>
+            <children xmi:id="_pOpt620DEd6YEcUVgSJefw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pOpt6W0DEd6YEcUVgSJefw" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pOpt5m0DEd6YEcUVgSJefw" routing="Tree" lineWidth="1" showStereotype="Text"/>
+          <element xmi:type="uml:Generalization" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE85100399?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pOpt520DEd6YEcUVgSJefw" points="[-15198, -8295, -13306, -8083]$[-15098, -8195, -13206, -7983]"/>
+        </edges>
+      </contents>
     </eAnnotations>
     <ownedComment xmi:id="_xMNI1DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEA0990115">
       <body>The Resource ABE contains entities that are used to represent the various aspects of a Resource.
@@ -163,7 +322,7 @@ TimePeriod is a complex data structure, that consists of a DateStamp and a TimeS
         </ownedComment>
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
       </ownedAttribute>
-      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E943795DFB0280?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole/_resourceRole?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E943795DFB0280?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Party%20ABE/Roles/PartyRole/_resourceRole?"/>
       <memberEnd href="Value%20Network%20Role%20ABE.efx#_3E3F0EC000E943795DFB029F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Value%20Network%20Role%20ABE/ResourceRole/_partyRole?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93DDEF2160111" name="LogicalPhysicalResource">
