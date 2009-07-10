@@ -13,13 +13,14 @@
       <references xmi:type="uml:Package" href="Logical%20Device%20ABE.efx#_3E3F0EC000E93EA5CF5E0166?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE?"/>
       <references xmi:type="uml:Package" href="LogicalResource%20System%20View%20Figures.efx#_3E3F0EC000E943726F5400CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource%20System%20View%20Figures?"/>
       <references xmi:type="uml:Package" href="Logical%20Role%20ABE.efx#_3E3F0EC000E93DDEA2E102A3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE?"/>
-      <references xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE?"/>
+      <references xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE?"/>
       <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
       <references xmi:type="uml:Package" href="Network%20ABE.efx#_3E3F0EC000E93E2C322B0390?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Network%20ABE?"/>
       <references xmi:type="uml:Package" href="Operating%20System%20ABE.efx#_3E3F0EC000E93EA57F4B0205?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Operating%20System%20ABE?"/>
       <references xmi:type="uml:Package" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93E2C35EF01D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE?"/>
       <references xmi:type="uml:Package" href="Software%20ABE.efx#_3E3F0EC000E93E2C37230173?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE?"/>
       <references xmi:type="uml:Package" href="Statistics%20ABE.efx#_3E3F0EC000E93E2C63210199?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Statistics%20ABE?"/>
+      <references xmi:type="uml:Package" href="Managed%20Transmission.efx#_enPucGz8Ed6YEcUVgSJefw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE?"/>
     </eAnnotations>
     <eAnnotations xmi:id="_hUNUkDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Resource%20ABE.efx#_3E3F0EC000E9430ADC580046?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE?"/>
@@ -212,7 +213,7 @@ Please see the DEN-ng Resource model for more details.
       <memberEnd href="5LR%20Figures.efx#_3E3F0EC000E93EFF67170129?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/5LR%20Figures/Illustrative%20Classes%20-%20do%20not%20use/Firewall/_encryption?"/>
       <memberEnd href="5LR%20Figures.efx#_3E3F0EC000E93EFF6717012B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/5LR%20Figures/Illustrative%20Classes%20-%20do%20not%20use/Encryption/_firewall?"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="Network%20ABE.efx#_3E3F0EC000E93E2C322B0390?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Network%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93E2C35EF01D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="Software%20ABE.efx#_3E3F0EC000E93E2C37230173?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE?"/>
@@ -227,6 +228,7 @@ Please see the DEN-ng Resource model for more details.
     <packagedElement xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="Logical%20Role%20ABE.efx#_3E3F0EC000E93DDEA2E102A3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="LogicalResource%20System%20View%20Figures.efx#_3E3F0EC000E943726F5400CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource%20System%20View%20Figures?"/>
+    <packagedElement xmi:type="uml:Package" href="Managed%20Transmission.efx#_enPucGz8Ed6YEcUVgSJefw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE?"/>
   </uml:Package>
   <Default:Documentation xmi:id="_xMNI1TNHEd2nE5zXHK_HsA" base_Comment="_xMNI1DNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xMNI2DNHEd2nE5zXHK_HsA" base_Comment="_xMNI1zNHEd2nE5zXHK_HsA"/>
