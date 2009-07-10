@@ -3,9 +3,9 @@
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
-  <uml:Package xmi:id="_3E3F0EC000E93E2C3124017F" name="Managed Transmission ABE">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C3124017F" name="OLD Managed Transmission ABE">
     <eAnnotations xmi:id="_zUhNcTN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
-      <references xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
+      <references xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
     </eAnnotations>
     <eAnnotations xmi:id="_zUhNcDN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
@@ -48,7 +48,7 @@ This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmiss
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93CDDCB7000F2" name="_terminationPoint" visibility="public" isUnique="false" association="_3E3F0EC000E93CDDCB6F0168">
-        <type xmi:type="uml:Class" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCABC021F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPoint?"/>
+        <type xmi:type="uml:Class" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCABC021F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNsWojNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNsWoTNHEd2nE5zXHK_HsA" value="2"/>
       </ownedAttribute>
@@ -198,10 +198,10 @@ This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmiss
           <body>(1 SourceTTP &amp; 1 SinkTTP)</body>
         </specification>
       </ownedRule>
-      <memberEnd href="#_3E3F0EC000E93CDDCB7000F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_terminationPoint?"/>
+      <memberEnd href="#_3E3F0EC000E93CDDCB7000F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/Pipe/_terminationPoint?"/>
       <memberEnd href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCB7000FC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPoint/_pipe?"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
   </uml:Package>
   <Default:Documentation xmi:id="_xM8vsjNHEd2nE5zXHK_HsA" base_Comment="_xM8vsTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xM8vtjNHEd2nE5zXHK_HsA" base_Comment="_xM8vtTNHEd2nE5zXHK_HsA"/>
