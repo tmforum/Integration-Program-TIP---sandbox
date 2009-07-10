@@ -1512,11 +1512,11 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2vcu_TNHEd2nE5zXHK_HsA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2vcu8TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="Image"/>
-            <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2vcu8jNHEd2nE5zXHK_HsA" x="1168" y="1456" width="3302" height="1490"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2wWG8TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2wWG8jNHEd2nE5zXHK_HsA" points="[-1354, 16, 3158, -2692]$[-4521, 16, -8, -2692]$[-4521, 2099, -8, -609]"/>
         </edges>
         <edges xmi:id="_2wfQwDNHEd2nE5zXHK_HsA" source="_2wMV0DNHEd2nE5zXHK_HsA" target="_2wWG4DNHEd2nE5zXHK_HsA">
@@ -2586,11 +2586,11 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2yIPtzNHEd2nE5zXHK_HsA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2yIPqzNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="Image"/>
-            <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2yIPrDNHEd2nE5zXHK_HsA" x="2200" y="1448" width="3302" height="1490"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2xiZozNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Termination%20Point%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2xiZpDNHEd2nE5zXHK_HsA" points="[-1354, 0, 2455, -2709]$[-3920, 0, -110, -2709]$[-3920, 2099, -110, -609]"/>
         </edges>
         <edges xmi:id="_2xiZ4zNHEd2nE5zXHK_HsA" source="_2xO4JTNHEd2nE5zXHK_HsA" target="_2xiZ0zNHEd2nE5zXHK_HsA">
