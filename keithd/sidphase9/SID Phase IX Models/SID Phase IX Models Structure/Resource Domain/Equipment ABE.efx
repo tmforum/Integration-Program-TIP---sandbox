@@ -1131,6 +1131,12 @@ We don't support the m.3100 supportedByObjectList attribute. This attribute is i
       <generalization xmi:id="_3E3F0EC000E93CDAFBF10322">
         <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
       </generalization>
+      <generalization xmi:id="_evrDwGzSEd6Tra_Qys8K8A">
+        <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
+      </generalization>
+      <generalization xmi:id="_F7cmoG-7Ed6V_8zWKcA88g">
+        <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
+      </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93EE5461E029C" name="_coolingDevice" visibility="public" isUnique="false" aggregation="shared">
         <type xmi:type="uml:Class" href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93DDEB2B20070?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/CoolingDevice?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xtScpzNHEd2nE5zXHK_HsA" value="*"/>

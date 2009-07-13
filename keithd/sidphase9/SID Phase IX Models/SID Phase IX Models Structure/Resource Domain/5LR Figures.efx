@@ -13317,18 +13317,6 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2H9RbTNHEd2nE5zXHK_HsA" id="anchor50"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2H9RbjNHEd2nE5zXHK_HsA" id="anchor50"/>
         </edges>
-        <edges xmi:id="_2H9RfzNHEd2nE5zXHK_HsA" source="_2HglUDNHEd2nE5zXHK_HsA" target="_2H9RbzNHEd2nE5zXHK_HsA">
-          <children xmi:id="_2H9RgjNHEd2nE5zXHK_HsA" type="NameLabel">
-            <children xmi:id="_2H9RhDNHEd2nE5zXHK_HsA" type="Stereotype"/>
-            <children xmi:id="_2H9RhTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2H9RgzNHEd2nE5zXHK_HsA" y="-186"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2H9RgDNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
-          <element xmi:type="uml:Generalization" href="Resource%20ABE.efx#_3E3F0EC000E93DDE854F0399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2H9RgTNHEd2nE5zXHK_HsA" points="[0, -694, -8, 1871]$[0, -1591, -8, 973]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2H9RhjNHEd2nE5zXHK_HsA" id="anchor50"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2H9RhzNHEd2nE5zXHK_HsA" id="anchor50"/>
-        </edges>
       </contents>
       <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93F038B6403E2" type="Class" name="Fig 72 - LogicalDevice Biz Model">
         <children xmi:id="_2IQMEDNHEd2nE5zXHK_HsA">
@@ -19406,18 +19394,6 @@
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2QwBJTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
           <element xmi:type="uml:Association" href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E93D80E4DE038E?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/HasPolicySubDomains?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2QwBJjNHEd2nE5zXHK_HsA" points="[-990, 601, -990, 601]$[-990, 1481, -990, 1481]$[1176, 1481, 1176, 1481]$[1176, 601, 1176, 601]"/>
-        </edges>
-        <edges xmi:id="_2Q5xzTNHEd2nE5zXHK_HsA" source="_2QmP0DNHEd2nE5zXHK_HsA" target="_2QwBRzNHEd2nE5zXHK_HsA">
-          <children xmi:id="_2Q5x0DNHEd2nE5zXHK_HsA" type="NameLabel">
-            <children xmi:id="_2Q5x0jNHEd2nE5zXHK_HsA" type="Stereotype"/>
-            <children xmi:id="_2Q5x0zNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Q5x0TNHEd2nE5zXHK_HsA" y="-186"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2Q5xzjNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
-          <element xmi:type="uml:Generalization" href="Resource%20ABE.efx#_3E3F0EC000E93DDE854F0399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2Q5xzzNHEd2nE5zXHK_HsA" points="[-8, -533, -76, 1574]$[-8, -1498, -76, 609]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2Q5x1DNHEd2nE5zXHK_HsA" id="anchor50"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2Q5x1TNHEd2nE5zXHK_HsA" id="anchor50"/>
         </edges>
         <edges xmi:id="_2Q5x5jNHEd2nE5zXHK_HsA" source="_2Q5x1jNHEd2nE5zXHK_HsA" target="_2QwBRzNHEd2nE5zXHK_HsA">
           <children xmi:id="_2Q5x6TNHEd2nE5zXHK_HsA" type="NameLabel">
@@ -33522,18 +33498,6 @@
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2jO4MTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
           <element xmi:type="uml:Association" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA5E2B8000A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/InvolvedResourceSpecs?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2jO4MjNHEd2nE5zXHK_HsA" points="[-1820, 431, -1820, 431]$[-3810, 431, -3810, 431]$[-3810, -372, -3810, -372]$[-1820, -372, -1820, -372]"/>
-        </edges>
-        <edges xmi:id="_2jYB0DNHEd2nE5zXHK_HsA" source="_2jO4UzNHEd2nE5zXHK_HsA" target="_2jO38DNHEd2nE5zXHK_HsA">
-          <children xmi:id="_2jYB0zNHEd2nE5zXHK_HsA" type="NameLabel">
-            <children xmi:id="_2jYB1TNHEd2nE5zXHK_HsA" type="Stereotype"/>
-            <children xmi:id="_2jYB1jNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2jYB1DNHEd2nE5zXHK_HsA" y="-186"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2jYB0TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
-          <element xmi:type="uml:Generalization" href="Resource%20ABE.efx#_3E3F0EC000E93DDE854F0399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/%3CGeneralization%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2jYB0jNHEd2nE5zXHK_HsA" points="[0, -533, 50, 1811]$[0, -1735, 50, 609]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2jYB1zNHEd2nE5zXHK_HsA" id="anchor50"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2jYB2DNHEd2nE5zXHK_HsA" id="anchor50"/>
         </edges>
         <edges xmi:id="_2jYB2TNHEd2nE5zXHK_HsA" source="_2jO4IDNHEd2nE5zXHK_HsA" target="_2jO4UzNHEd2nE5zXHK_HsA">
           <children xmi:id="_2jYB3DNHEd2nE5zXHK_HsA" type="NameLabel">

@@ -2925,7 +2925,7 @@
             <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_29mfuTNHEd2nE5zXHK_HsA" collapsed="true"/>
           </children>
           <children xmi:id="_29mfujNHEd2nE5zXHK_HsA" type="OperationCompartment">
-            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_29mfuzNHEd2nE5zXHK_HsA"/>
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_29mfuzNHEd2nE5zXHK_HsA" collapsed="true"/>
           </children>
           <children xmi:id="_29mfvDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
             <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_29mfvTNHEd2nE5zXHK_HsA"/>

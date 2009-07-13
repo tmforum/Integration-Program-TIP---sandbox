@@ -10417,7 +10417,7 @@ See R_TMF518_NRF_I_0007.</body>
                 <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_bnYt_FrbEd6-UJnEa22G2Q"/>
               </children>
               <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_bnO88VrbEd6-UJnEa22G2Q" lineColor="16711680" showStereotype="Label"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bnO88lrbEd6-UJnEa22G2Q" x="20988" y="2508"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bnO88lrbEd6-UJnEa22G2Q" x="23104" y="1396"/>
             </children>
             <children xmi:id="_b37EUFrbEd6-UJnEa22G2Q" element="_vaHNgK4bEdyvN402f4-UpA">
               <children xmi:id="_b37EU1rbEd6-UJnEa22G2Q" type="ImageCompartment">
@@ -10439,7 +10439,7 @@ See R_TMF518_NRF_I_0007.</body>
                 <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_b4XwR1rbEd6-UJnEa22G2Q"/>
               </children>
               <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_b37EUVrbEd6-UJnEa22G2Q" lineColor="16711680" showStereotype="Label"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b37EUlrbEd6-UJnEa22G2Q" x="7788" y="4884"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b37EUlrbEd6-UJnEa22G2Q" x="6809" y="2635"/>
             </children>
             <children xmi:id="_cop9sFrbEd6-UJnEa22G2Q" element="_v0h8wCsCEdyxqrDz5j4e5g">
               <children xmi:id="_cop9s1rbEd6-UJnEa22G2Q" type="ImageCompartment">
