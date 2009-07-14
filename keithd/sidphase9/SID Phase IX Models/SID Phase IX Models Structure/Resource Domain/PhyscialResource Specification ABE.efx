@@ -78,13 +78,13 @@ The difference between this class and the PhysicalResourceSpecAtomic class is th
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93CBA58DA0183?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/Representation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weKXHjNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weKXHTNHEd2nE5zXHK_HsA"/>
-        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA500008F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA500008F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/%3CAssociation%3E?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93F1CA5F60313" name="_localLocation" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C9E984E02B6?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Local%20Place/LocalLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weThAzNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weThAjNHEd2nE5zXHK_HsA"/>
-        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA5F50380?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/Addendum%20Figures/%3CAssociation%3E?"/>
+        <association href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93F1CA5F50380?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Location%20ABE/%3CAssociation%3E?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93EE260CB0288" name="_logicalResourceSpec" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="LogicalResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25CAA036E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/LogicalResourceSpec?"/>
@@ -105,6 +105,30 @@ The difference between this class and the PhysicalResourceSpecAtomic class is th
         <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJ0jPzNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJ0jPjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GDvlIHC6Ed6LDr8E0xdt0g" name="manufacturer" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HXfsAHC6Ed6LDr8E0xdt0g" name="modelNumber" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IEy24HC6Ed6LDr8E0xdt0g" name="partNumber" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Iwm0AHC6Ed6LDr8E0xdt0g" name="physicalExtent" visibility="public">
+        <type xmi:type="uml:Class" href="platform:/resource/Equipment%20Model/EquipmentModelPhase2.emx#_j6EAIKxhEduGHNuoCbQhzQ?EquipmentModel/physicalResourceSpecification/PhysicalExtentType?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JoyZMHC6Ed6LDr8E0xdt0g" name="physicalResourceType" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KS9XkHC6Ed6LDr8E0xdt0g" name="skuNumber" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LGqscHC6Ed6LDr8E0xdt0g" name="versionNumber" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_L-P0sHC6Ed6LDr8E0xdt0g" name="weight" visibility="public">
+        <type xmi:type="uml:Class" href="platform:/resource/Equipment%20Model/EquipmentModelPhase2.emx#_yQkLoKxhEduGHNuoCbQhzQ?EquipmentModel/physicalResourceSpecification/WeightType?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EE297B90230" name="HasPhysicalResourceSpecs" memberEnd="_3E3F0EC000E93EE297BD0127 _3E3F0EC000E93EE297BD0131">
@@ -162,4 +186,12 @@ Please see the DEN-ng Resource model for more details.
   <TIPProfile:tipAttribute xmi:id="_Efs1Yi8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE297BD0131"/>
   <TIPProfile:tipAttribute xmi:id="_Efs1Yy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE36F280155"/>
   <TIPProfile:tipAttribute xmi:id="_Ef2mUC8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E9434347FC00B4"/>
+  <TIPProfile:tipAttribute xmi:id="_GDvlInC6Ed6LDr8E0xdt0g" base_StructuralFeature="_GDvlIHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_HXfsAnC6Ed6LDr8E0xdt0g" base_StructuralFeature="_HXfsAHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_IEy24nC6Ed6LDr8E0xdt0g" base_StructuralFeature="_IEy24HC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_Iwm0AnC6Ed6LDr8E0xdt0g" base_StructuralFeature="_Iwm0AHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_JoyZMnC6Ed6LDr8E0xdt0g" base_StructuralFeature="_JoyZMHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_KS9XknC6Ed6LDr8E0xdt0g" base_StructuralFeature="_KS9XkHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_LGqscnC6Ed6LDr8E0xdt0g" base_StructuralFeature="_LGqscHC6Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_L-P0snC6Ed6LDr8E0xdt0g" base_StructuralFeature="_L-P0sHC6Ed6LDr8E0xdt0g"/>
 </xmi:XMI>

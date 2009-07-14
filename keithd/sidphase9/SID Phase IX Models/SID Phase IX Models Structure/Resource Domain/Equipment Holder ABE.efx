@@ -1521,9 +1521,20 @@ This is an optional attribute.
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9YHEjNHEd2nE5zXHK_HsA"/>
         <association href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE23B10038D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/HoldsHardware?"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_H8rqcXC_Ed6LDr8E0xdt0g" name="equipmentHolderSpec" visibility="private" association="_H8rqcHC_Ed6LDr8E0xdt0g">
+        <type xmi:type="uml:Class" href="Physical%20Resource%20Alignment.efx#_79i-8HC-Ed6LDr8E0xdt0g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/EquipmentHolderSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H8rqdHC_Ed6LDr8E0xdt0g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H8rqc3C_Ed6LDr8E0xdt0g"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" href="Holder%20Atomic%20ABE.efx#_3E3F0EC000E93E2C3CF800C9?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/HolderAtomic%20ABE?"/>
     <packagedElement xmi:type="uml:Package" href="Holder%20Composite%20ABE.efx#_3E3F0EC000E93E2C3D3900F5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/HolderComposite%20ABE?"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H8rqcHC_Ed6LDr8E0xdt0g" name="SpecSpecifiesHolder" memberEnd="_H8rqcXC_Ed6LDr8E0xdt0g _H81bcHC_Ed6LDr8E0xdt0g">
+      <ownedEnd xmi:id="_H81bcHC_Ed6LDr8E0xdt0g" name="" visibility="private" type="_3E3F0EC000E93DDEEA6B0245" association="_H8rqcHC_Ed6LDr8E0xdt0g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H81bc3C_Ed6LDr8E0xdt0g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H81bcnC_Ed6LDr8E0xdt0g"/>
+      </ownedEnd>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xuLNcjNHEd2nE5zXHK_HsA" base_Comment="_xuLNcTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xu60VzNHEd2nE5zXHK_HsA" base_Comment="_xu60VjNHEd2nE5zXHK_HsA"/>
@@ -1541,4 +1552,6 @@ This is an optional attribute.
   <TIPProfile:tipAttribute xmi:id="_Eo8Q4S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE21D01018A"/>
   <TIPProfile:tipAttribute xmi:id="_Eo8Q4i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE21E750329"/>
   <TIPProfile:tipAttribute xmi:id="_Eo8Q4y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EE23B120169"/>
+  <TIPProfile:tipAttribute xmi:id="_H8rqcnC_Ed6LDr8E0xdt0g" base_StructuralFeature="_H8rqcXC_Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_H81bcXC_Ed6LDr8E0xdt0g" base_StructuralFeature="_H81bcHC_Ed6LDr8E0xdt0g"/>
 </xmi:XMI>
