@@ -15,61 +15,6 @@
       <generalization xmi:id="_3E3F0EC000E93CDAB6030096">
         <general xmi:type="uml:Class" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDAA53A023C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource?"/>
       </generalization>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0188" name="depth" visibility="public">
-        <ownedComment xmi:id="_x1U-VTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0188">
-          <body>This attribute defines the depth of the ManagedComponent using the units specified in the MeasurementUnits attribute. This is an optional attribute.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0189" name="height" visibility="public">
-        <ownedComment xmi:id="_x1U-WDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0189">
-          <body>This attribute defines the height of the ManagedComponent using the units specified in the MeasurementUnits attribute. This is an optional attribute.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD018A" name="measurementUnits" visibility="public">
-        <ownedComment xmi:id="_x1evUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD018A">
-          <body>This attribute defines the MeasurementUnits for the Depth, Height, and Width attributes of this object. Values include:
-
-  0:  Unknown (or not measured)
-  1:  inches
-  2:  feet
-  3:  millimeters
-  4:  centimeters
-  5:  meters
-
-This is an optional attribute. However, if any of the Depth, Height, or Width attributes are defined, then this attribute is REQUIRED.
-</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD018B" name="weight" visibility="public">
-        <ownedComment xmi:id="_x1evVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD018B">
-          <body>This attribute defines the weight of the ManagedComponent using the units specified in the WeightUnits attribute. This is an optional attribute.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD018C" name="weightUnits" visibility="public">
-        <ownedComment xmi:id="_x1evWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD018C">
-          <body>This attribute defines the Units for the Weight attribute of this object. Values include:
-
-  0:  Unknown (Not Measured)
-  1:  ounces
-  2:  pounds
-  3:  grams
-  4:  kilograms
-
-This is an optional attribute. However, if Weight attribute is defined, then this attribute is REQUIRED.
-</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD018D" name="width" visibility="public">
-        <ownedComment xmi:id="_x1ogUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD018D">
-          <body>This attribute defines the width of the ManagedComponent using the units specified in the MeasurementUnits attribute. This is an optional attribute.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93CDAF3570004" name="_physicalConnector" visibility="public" type="_3E3F0EC000E93CDAC3F10080" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDAF3550098">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x4KP4zNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x4KP4jNHEd2nE5zXHK_HsA"/>
@@ -104,6 +49,14 @@ This is an optional attribute. However, if Weight attribute is defined, then thi
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x9YHFjNHEd2nE5zXHK_HsA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9YHFTNHEd2nE5zXHK_HsA"/>
         <association href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE23B10038D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/HoldsHardware?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_N03tMXC8Ed6LDr8E0xdt0g" name="hardwareSpec" visibility="private" association="_N03tMHC8Ed6LDr8E0xdt0g">
+        <type xmi:type="uml:Class" href="Physical%20Resource%20Alignment.efx#_1XvXUHC4Ed6LDr8E0xdt0g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/Object%20Classes/HardwareSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N03tNHC8Ed6LDr8E0xdt0g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N03tM3C8Ed6LDr8E0xdt0g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_VQFhkHC8Ed6LDr8E0xdt0g" name="hardwareType" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDAD87C0261" name="ManagedHardware" isAbstract="true">
@@ -315,39 +268,6 @@ This is a REQUIRED attribute.
         <body>This is an abstract class that is used to add additional semantics to the ManagedHardware class. Its attributes define whether a ManagedHardware object can be removed and/or replaced, and whether this action requires power to be removed or not when the action is performed.</body>
       </ownedComment>
       <generalization xmi:id="_3E3F0EC000E93CDAFAD701BE" general="_3E3F0EC000E93CDAD87C0261"/>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAD87C026A" name="hotSwappable" visibility="public">
-        <ownedComment xmi:id="_x2hRLzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAD87C026A">
-          <body>This is a Boolean attribute that defines whether it is possible to replace this object instance with a physically different, but equivalent, object instance while the containing Equipment has power applied to it. TRUE means that it is HotSwappable, and FALSE means that it is not.
-
-All HotSwappable PhysicalComponents are inherently Removable and Replaceable.
-
-This is a required attribute.
-</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAD87C026D" name="removable" visibility="public">
-        <ownedComment xmi:id="_x2rCIjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAD87C026D">
-          <body>This is a Boolean that defines whether it is possible to insert and remove this object instance from the Equipment in which it is installed, without impairing the function or packaging of the Equipment. TRUE means that it is removable, and FALSE means that it is not.
-
-A Package can still be Removable if power must be 'off' in order to perform the removal. If power can be 'on' and this object instance can still be removed, then this object instance is both Removable and HotSwappable.
-
-This is a required attribute.
-</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3E3F0EC000E93CDAD87C026E" name="replaceable" visibility="public">
-        <ownedComment xmi:id="_x2rCJTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAD87C026E">
-          <body>This is a Boolean that defines whether it is possible to replace this object instance with a physically different instance of the same type. For example, some types of device allow various Chips to be upgraded. TRUE means that it is replaceable, and FALSE means that it is not.
-
-All Removable packages are inherently Replaceable.
-
-This is a required attribute.
-</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93CDE292702CF" name="_software" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDE2920003A">
         <type xmi:type="uml:Class" href="Software%20ABE.efx#_3E3F0EC000E93CDE25AD031F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x4UA7DNHEd2nE5zXHK_HsA" value="*"/>
@@ -537,14 +457,14 @@ This is a REQUIRED attribute.
 </body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N03tMHC8Ed6LDr8E0xdt0g" name="HardwareSpecifiedBy" memberEnd="_N03tMXC8Ed6LDr8E0xdt0g _N03tNXC8Ed6LDr8E0xdt0g">
+      <ownedEnd xmi:id="_N03tNXC8Ed6LDr8E0xdt0g" name="" visibility="private" type="_3E3F0EC000E93CDAB5F60264" association="_N03tMHC8Ed6LDr8E0xdt0g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N03tOHC8Ed6LDr8E0xdt0g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N03tN3C8Ed6LDr8E0xdt0g"/>
+      </ownedEnd>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_x1U-UjNHEd2nE5zXHK_HsA" base_Comment="_x1U-UTNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1U-VjNHEd2nE5zXHK_HsA" base_Comment="_x1U-VTNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1evUDNHEd2nE5zXHK_HsA" base_Comment="_x1U-WDNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1evUzNHEd2nE5zXHK_HsA" base_Comment="_x1evUjNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1evVjNHEd2nE5zXHK_HsA" base_Comment="_x1evVTNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1ogUDNHEd2nE5zXHK_HsA" base_Comment="_x1evWDNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x1ogUzNHEd2nE5zXHK_HsA" base_Comment="_x1ogUjNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x1ogVjNHEd2nE5zXHK_HsA" base_Comment="_x1ogVTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x1xqQTNHEd2nE5zXHK_HsA" base_Comment="_x1xqQDNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x1xqRDNHEd2nE5zXHK_HsA" base_Comment="_x1xqQzNHEd2nE5zXHK_HsA"/>
@@ -559,9 +479,6 @@ This is a REQUIRED attribute.
   <Default:Documentation xmi:id="_x2YHMzNHEd2nE5zXHK_HsA" base_Comment="_x2YHMjNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x2YHNjNHEd2nE5zXHK_HsA" base_Comment="_x2YHNTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x2hRIDNHEd2nE5zXHK_HsA" base_Comment="_x2YHODNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x2rCIDNHEd2nE5zXHK_HsA" base_Comment="_x2hRLzNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x2rCIzNHEd2nE5zXHK_HsA" base_Comment="_x2rCIjNHEd2nE5zXHK_HsA"/>
-  <Default:Documentation xmi:id="_x2rCJjNHEd2nE5zXHK_HsA" base_Comment="_x2rCJTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x20zITNHEd2nE5zXHK_HsA" base_Comment="_x20zIDNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x20zJTNHEd2nE5zXHK_HsA" base_Comment="_x20zJDNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_x3kaBzNHEd2nE5zXHK_HsA" base_Comment="_x3kaBjNHEd2nE5zXHK_HsA"/>
@@ -579,12 +496,6 @@ This is a REQUIRED attribute.
   <Default:Documentation xmi:id="_x4dK0jNHEd2nE5zXHK_HsA" base_Comment="_x4dK0TNHEd2nE5zXHK_HsA"/>
   <TIPProfile:tipPackage xmi:id="_EpY82S8YEd69c4M5qr3mDQ" base_Package="_3E3F0EC000E93E2C3EF2015D" implementationPackage="hw"/>
   <TIPProfile:tipClass xmi:id="_EpY82i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDAB5F60264"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY82y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD0188"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY83C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD0189"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY83S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD018A"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY83i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD018B"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY83y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD018C"/>
-  <TIPProfile:tipAttribute xmi:id="_EpY84C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAA4DD018D"/>
   <TIPProfile:tipAttribute xmi:id="_EpY84S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAF3570004"/>
   <TIPProfile:tipAttribute xmi:id="_EpY84i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEE70A01AB"/>
   <TIPProfile:tipAttribute xmi:id="_EpY84y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEE70A01AD"/>
@@ -612,9 +523,6 @@ This is a REQUIRED attribute.
   <TIPProfile:tipAttribute xmi:id="_Epit4i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAF3570006"/>
   <TIPProfile:tipAttribute xmi:id="_Epit4y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEF1650026"/>
   <TIPProfile:tipClass xmi:id="_Epit5C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDAF97003D4"/>
-  <TIPProfile:tipAttribute xmi:id="_Epit5S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAD87C026A"/>
-  <TIPProfile:tipAttribute xmi:id="_Epit5i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAD87C026D"/>
-  <TIPProfile:tipAttribute xmi:id="_Epit5y8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDAD87C026E"/>
   <TIPProfile:tipAttribute xmi:id="_Epit6C8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDE292702CF"/>
   <TIPProfile:tipAttribute xmi:id="_Epit6S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93CDD9BAF031E"/>
   <TIPProfile:tipClass xmi:id="_Epit6i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93CDD6E940003"/>
@@ -631,4 +539,7 @@ This is a REQUIRED attribute.
   <TIPProfile:tipAttribute xmi:id="_Epit9S8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EA98A3A005A"/>
   <TIPProfile:tipAttribute xmi:id="_Epit9i8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93DDEF165001C"/>
   <TIPProfile:tipClass xmi:id="_Epit9y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EFF88C101FD"/>
+  <TIPProfile:tipAttribute xmi:id="_N03tMnC8Ed6LDr8E0xdt0g" base_StructuralFeature="_N03tMXC8Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_N03tNnC8Ed6LDr8E0xdt0g" base_StructuralFeature="_N03tNXC8Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_VQFhkXC8Ed6LDr8E0xdt0g" base_StructuralFeature="_VQFhkHC8Ed6LDr8E0xdt0g"/>
 </xmi:XMI>

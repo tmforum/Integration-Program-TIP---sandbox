@@ -1131,9 +1131,6 @@ We don't support the m.3100 supportedByObjectList attribute. This attribute is i
       <generalization xmi:id="_3E3F0EC000E93CDAFBF10322">
         <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
       </generalization>
-      <generalization xmi:id="_evrDwGzSEd6Tra_Qys8K8A">
-        <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
-      </generalization>
       <generalization xmi:id="_F7cmoG-7Ed6V_8zWKcA88g">
         <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
       </generalization>
@@ -1229,6 +1226,11 @@ This is an optional attribute.
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8yRPDNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8yROzNHEd2nE5zXHK_HsA"/>
         <association href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE21E2101E8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/ComponentInEquipment?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_q_UYsXC9Ed6LDr8E0xdt0g" name="equipmentSpec" visibility="private" association="_q_UYsHC9Ed6LDr8E0xdt0g">
+        <type xmi:type="uml:Class" href="Physical%20Resource%20Alignment.efx#_xTvrgHC6Ed6LDr8E0xdt0g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/Object%20Classes/EquipmentSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q_UYtHC9Ed6LDr8E0xdt0g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q_UYs3C9Ed6LDr8E0xdt0g"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDBBD0013B" name="Card" isAbstract="true">
@@ -1434,6 +1436,12 @@ The value &quot;1&quot; can be used for any non-standard data bus width.
       <memberEnd href="#_3E3F0EC000E93EEB537400E8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_powerSupply?"/>
       <memberEnd href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93EEB537400F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/PowerSupply/_equipment?"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_q_UYsHC9Ed6LDr8E0xdt0g" name="InstalledSpec" memberEnd="_q_UYsXC9Ed6LDr8E0xdt0g _q_UYtXC9Ed6LDr8E0xdt0g">
+      <ownedEnd xmi:id="_q_UYtXC9Ed6LDr8E0xdt0g" name="" visibility="private" type="_3E3F0EC000E93CDAFB610004" association="_q_UYsHC9Ed6LDr8E0xdt0g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q_UYuHC9Ed6LDr8E0xdt0g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q_UYt3C9Ed6LDr8E0xdt0g"/>
+      </ownedEnd>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xyWi0jNHEd2nE5zXHK_HsA" base_Comment="_xyWi0TNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xzGJtzNHEd2nE5zXHK_HsA" base_Comment="_xzGJtjNHEd2nE5zXHK_HsA"/>
@@ -1500,4 +1508,6 @@ The value &quot;1&quot; can be used for any non-standard data bus width.
   <TIPProfile:tipClass xmi:id="_EpY81i8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DDFC0C7008D"/>
   <TIPProfile:tipClass xmi:id="_EpY81y8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93DDFC0D203DC"/>
   <TIPProfile:tipClass xmi:id="_EpY82C8YEd69c4M5qr3mDQ" base_Class="_3E3F0EC000E93EB187430333"/>
+  <TIPProfile:tipAttribute xmi:id="_q_UYsnC9Ed6LDr8E0xdt0g" base_StructuralFeature="_q_UYsXC9Ed6LDr8E0xdt0g"/>
+  <TIPProfile:tipAttribute xmi:id="_q_UYtnC9Ed6LDr8E0xdt0g" base_StructuralFeature="_q_UYtXC9Ed6LDr8E0xdt0g"/>
 </xmi:XMI>

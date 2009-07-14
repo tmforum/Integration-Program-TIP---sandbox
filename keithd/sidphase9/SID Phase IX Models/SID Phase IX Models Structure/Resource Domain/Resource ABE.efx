@@ -16,10 +16,13 @@
     <eAnnotations xmi:id="_q-X5UDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
       <references xmi:type="uml:Package" href="Resource%20Domain.efx#_3E3F0EC000E93DDEA08E02BD?SID%20Phase%20IX%20Models/Resource%20Domain?"/>
     </eAnnotations>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDE851703CB" name="Resource" isAbstract="true">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDE851703CB" name="Resource" clientDependency="_wTKAAG_wEd67QLfSbomWMA" isAbstract="true">
       <ownedComment xmi:id="_xLwc4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDE851703CB">
         <body>This is the abstract base class for all entities that are inherently manageable and make up a Product. Examples which are not Manageable include legacy Hubs that don't support any type of management protocol; rather, they must be manually managed. Entities like Policy are of course manageable, but do not make up or are found packaged inside of a Product.</body>
       </ownedComment>
+      <ownedAttribute xmi:id="_WkFZwG_wEd67QLfSbomWMA" name="rootType" visibility="public">
+        <type xmi:type="uml:DataType" href="platform:/resource/BerndsSandbox/BerndsSandbox.emx#_0FhF0GunEd6D2YQapBqcZg?BerndsSandbox/Type%20Definitions/SidOrMtop?"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E93E3BED02039F" name="_managementDomain" visibility="public" isUnique="false">
         <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDAAE2C0113?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementDomain?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHXAqTNHEd2nE5zXHK_HsA" value="1"/>
@@ -120,18 +123,6 @@ This is an optional attribute.
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9CBhpGwGEd6fh6g2fCOd1w" value="1"/>
         <association href="platform:/resource/BerndsSandbox/BerndsSandbox.emx#_9B3woGwGEd6fh6g2fCOd1w?BerndsSandbox/Type%20Definitions/%3CAssociation%3E?"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_QucBYm-2Ed6V_8zWKcA88g" name="newMtopRootAttributes2" visibility="private" aggregation="shared">
-        <type xmi:type="uml:DataType" href="PhysicalResource%20ABE.efx#_uWF4MG-1Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PR%20Alignment/Type%20Definitions/NewMtopRootAttributes?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QucBZW-2Ed6V_8zWKcA88g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QucBZG-2Ed6V_8zWKcA88g"/>
-        <association href="PhysicalResource%20ABE.efx#_QtsagG-2Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PR%20Alignment/Type%20Definitions/%3CAssociation%3E?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Re3_1W-2Ed6V_8zWKcA88g" name="newSidRootAttributes2" visibility="private" aggregation="shared">
-        <type xmi:type="uml:DataType" href="PhysicalResource%20ABE.efx#_vQ898G-1Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PR%20Alignment/Type%20Definitions/NewSidRootAttributes?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Re3_2G-2Ed6V_8zWKcA88g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Re3_12-2Ed6V_8zWKcA88g"/>
-        <association href="PhysicalResource%20ABE.efx#_Re3_0G-2Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PR%20Alignment/Type%20Definitions/%3CAssociation%3E?"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA6FE5701FC" name="ResourceCharacteristicValue">
       <ownedComment xmi:id="_xL6N4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA6FE5701FC">
@@ -209,6 +200,9 @@ This is an optional attribute.
       <memberEnd href="#_jDjO4VK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceCharacteristicValue/servicecharacteristicvalue?"/>
       <memberEnd href="../Service%20Domain/Service%20ABE.efx#_jDjO4lK-Ed2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceCharacteristicValue/resourcecharacteristicvalue?"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_wTKAAG_wEd67QLfSbomWMA" client="_3E3F0EC000E93DDE851703CB">
+      <supplier xmi:type="uml:DataType" href="Physical%20Resource%20Alignment.efx#_AZeOMG_vEd67QLfSbomWMA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/Type%20Definitions/SidOrMtop?"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xLwc4jNHEd2nE5zXHK_HsA" base_Comment="_xLwc4TNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xLwc5jNHEd2nE5zXHK_HsA" base_Comment="_xLwc5TNHEd2nE5zXHK_HsA"/>
@@ -243,6 +237,11 @@ This is an optional attribute.
   <TIPProfile:tipAttribute xmi:id="_EgJhSy8YEd69c4M5qr3mDQ" base_StructuralFeature="_3E3F0EC000E93EA7252C008C"/>
   <TIPProfile:tipAttribute xmi:id="_7F5MJGwGEd6fh6g2fCOd1w" base_StructuralFeature="_7F5MI2wGEd6fh6g2fCOd1w"/>
   <TIPProfile:tipAttribute xmi:id="_9CBho2wGEd6fh6g2fCOd1w" base_StructuralFeature="_9CBhomwGEd6fh6g2fCOd1w"/>
-  <TIPProfile:tipAttribute xmi:id="_QucBY2-2Ed6V_8zWKcA88g" base_StructuralFeature="_QucBYm-2Ed6V_8zWKcA88g"/>
-  <TIPProfile:tipAttribute xmi:id="_Re3_1m-2Ed6V_8zWKcA88g" base_StructuralFeature="_Re3_1W-2Ed6V_8zWKcA88g"/>
+  <TIPProfile:tipAttribute xmi:id="_QucBY2-2Ed6V_8zWKcA88g">
+    <base_StructuralFeature xmi:type="uml:Property" href="Physical%20Resource%20Alignment.efx#_QucBYm-2Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/Type%20Definitions/SidOrMtop/newMtopRootAttributes2?"/>
+  </TIPProfile:tipAttribute>
+  <TIPProfile:tipAttribute xmi:id="_Re3_1m-2Ed6V_8zWKcA88g">
+    <base_StructuralFeature xmi:type="uml:Property" href="Physical%20Resource%20Alignment.efx#_Re3_1W-2Ed6V_8zWKcA88g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Resource%20Alignment/Type%20Definitions/SidOrMtop/newSidRootAttributes2?"/>
+  </TIPProfile:tipAttribute>
+  <TIPProfile:tipAttribute xmi:id="_WkFZwW_wEd67QLfSbomWMA" base_StructuralFeature="_WkFZwG_wEd67QLfSbomWMA"/>
 </xmi:XMI>
