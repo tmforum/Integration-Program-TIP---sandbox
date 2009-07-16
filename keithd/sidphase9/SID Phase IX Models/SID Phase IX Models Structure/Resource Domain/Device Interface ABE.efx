@@ -89,7 +89,7 @@ If the value of this attribute is 3, then the vtyNumber attribute must be filled
         <association xmi:type="uml:AssociationClass" href="Device%20Interface%20Association%20ABE.efx#_3E3F0EC000E93EB2F5860326?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/Device%20Interface%20Association%20ABE/ProtocolDeviceInterfaceDetails?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E9433038DE018D" name="_terminationPoint" visibility="public" isUnique="false">
-        <type xmi:type="uml:Class" href="Managed%20Transmission.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xZKmxjNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xZKmxTNHEd2nE5zXHK_HsA"/>
         <association xmi:type="uml:AssociationClass" href="Device%20Interface%20Association%20ABE.efx#_3E3F0EC000E943359D6A029F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/Device%20Interface%20Association%20ABE/DeviceInterfaceTPDetails?"/>

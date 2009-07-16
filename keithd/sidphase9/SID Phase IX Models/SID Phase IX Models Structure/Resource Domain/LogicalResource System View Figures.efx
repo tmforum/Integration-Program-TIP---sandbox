@@ -1459,12 +1459,12 @@
           </children>
           <children xmi:id="_2wWG_TNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
             <children xmi:id="_2wWG_zNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wWG_jNHEd2nE5zXHK_HsA" x="526" y="-457"/>
           </children>
           <children xmi:id="_2wWHADNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
             <children xmi:id="_2wWHAjNHEd2nE5zXHK_HsA" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wWHATNHEd2nE5zXHK_HsA" y="-397"/>
           </children>
           <children xmi:id="_2wWHAzNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
@@ -1478,7 +1478,7 @@
             <children xmi:id="_2wWHCTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2wWHCjNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wWHCDNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <children xmi:id="_2wWHCzNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
@@ -1492,7 +1492,7 @@
             <children xmi:id="_2wWHETNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2wWHEjNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wWHEDNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <children xmi:id="_2vcu8DNHEd2nE5zXHK_HsA">
@@ -1512,11 +1512,11 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2vcu_TNHEd2nE5zXHK_HsA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2vcu8TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="Image"/>
-            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2vcu8jNHEd2nE5zXHK_HsA" x="1168" y="1456" width="3302" height="1490"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2wWG8TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2wWG8jNHEd2nE5zXHK_HsA" points="[-1354, 16, 3158, -2692]$[-4521, 16, -8, -2692]$[-4521, 2099, -8, -609]"/>
         </edges>
         <edges xmi:id="_2wfQwDNHEd2nE5zXHK_HsA" source="_2wMV0DNHEd2nE5zXHK_HsA" target="_2wWG4DNHEd2nE5zXHK_HsA">
@@ -1691,12 +1691,12 @@
           </children>
           <children xmi:id="_2wyLsjNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
             <children xmi:id="_2wyLtDNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wyLszNHEd2nE5zXHK_HsA" x="-768" y="220"/>
           </children>
           <children xmi:id="_2wyLtTNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
             <children xmi:id="_2wyLtzNHEd2nE5zXHK_HsA" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wyLtjNHEd2nE5zXHK_HsA" x="-378" y="347"/>
           </children>
           <children xmi:id="_2wyLuDNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
@@ -1713,7 +1713,7 @@
             <children xmi:id="_2wyLwDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2wyLwTNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wyLvzNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <children xmi:id="_2wyLwjNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
@@ -1727,7 +1727,7 @@
             <children xmi:id="_2wyLyDNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2wyLyTNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2wyLxzNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <children xmi:id="_2wyLyjNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
@@ -2533,12 +2533,12 @@
           </children>
           <children xmi:id="_2xiZrzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
             <children xmi:id="_2xiZsTNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2xiZsDNHEd2nE5zXHK_HsA" x="438" y="-458"/>
           </children>
           <children xmi:id="_2xiZsjNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
             <children xmi:id="_2xiZtDNHEd2nE5zXHK_HsA" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2xiZszNHEd2nE5zXHK_HsA" y="-397"/>
           </children>
           <children xmi:id="_2xiZtTNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
@@ -2552,7 +2552,7 @@
             <children xmi:id="_2xiZuzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2xiZvDNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2xiZujNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <children xmi:id="_2xiZvTNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
@@ -2566,7 +2566,7 @@
             <children xmi:id="_2xiZwzNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2xiZxDNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/_terminationPoint?"/>
+            <element xmi:type="uml:Property" href="Compound%20Resource%20ABE.efx#_3E3F0EC000E9431A14840152?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/ResourcePort/terminationPoint?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2xiZwjNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <children xmi:id="_2yIPqjNHEd2nE5zXHK_HsA">
@@ -2586,11 +2586,11 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2yIPtzNHEd2nE5zXHK_HsA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2yIPqzNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="Image"/>
-            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+            <element xmi:type="uml:AssociationClass" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2yIPrDNHEd2nE5zXHK_HsA" x="2200" y="1448" width="3302" height="1490"/>
           </children>
           <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2xiZozNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
-          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TPAspectCompoundResourceDetails?"/>
+          <element xmi:type="uml:AssociationClass" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2xiZpDNHEd2nE5zXHK_HsA" points="[-1354, 0, 2455, -2709]$[-3920, 0, -110, -2709]$[-3920, 2099, -110, -609]"/>
         </edges>
         <edges xmi:id="_2xiZ4zNHEd2nE5zXHK_HsA" source="_2xO4JTNHEd2nE5zXHK_HsA" target="_2xiZ0zNHEd2nE5zXHK_HsA">
@@ -2771,12 +2771,12 @@
           </children>
           <children xmi:id="_2x1UuTNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
             <children xmi:id="_2x1UuzNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_subNetwork?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x1UujNHEd2nE5zXHK_HsA" x="-446" y="-457"/>
           </children>
           <children xmi:id="_2x1UvDNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
             <children xmi:id="_2x1UvjNHEd2nE5zXHK_HsA" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_subNetwork?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x1UvTNHEd2nE5zXHK_HsA" y="-397"/>
           </children>
           <children xmi:id="_2x1UvzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
@@ -2793,7 +2793,7 @@
             <children xmi:id="_2x1UxzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2x1UyDNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_subNetwork?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x1UxjNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <children xmi:id="_2x1UyTNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
@@ -2807,7 +2807,7 @@
             <children xmi:id="_2x1UzzNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2x1U0DNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_subNetwork?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x1UzjNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <children xmi:id="_2x1U0TNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
@@ -2940,12 +2940,12 @@
           </children>
           <children xmi:id="_2x-eujNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
             <children xmi:id="_2x-evDNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x-euzNHEd2nE5zXHK_HsA" x="-1531" y="270"/>
           </children>
           <children xmi:id="_2x-evTNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
             <children xmi:id="_2x-evzNHEd2nE5zXHK_HsA" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x-evjNHEd2nE5zXHK_HsA" y="-397"/>
           </children>
           <children xmi:id="_2x-ewDNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
@@ -2962,7 +2962,7 @@
             <children xmi:id="_2yIPgDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2yIPgTNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2x-exzNHEd2nE5zXHK_HsA" y="-186"/>
           </children>
           <children xmi:id="_2yIPgjNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
@@ -2976,7 +2976,7 @@
             <children xmi:id="_2yIPiDNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2yIPiTNHEd2nE5zXHK_HsA"/>
             </children>
-            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+            <element xmi:type="uml:Property" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_2yIPhzNHEd2nE5zXHK_HsA" y="1058"/>
           </children>
           <children xmi:id="_2yIPijNHEd2nE5zXHK_HsA" type="FromConstraintLabel">

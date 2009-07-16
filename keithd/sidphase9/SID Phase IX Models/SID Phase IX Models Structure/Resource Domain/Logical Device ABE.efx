@@ -219,12 +219,12 @@ This is an optional attribute.
         <association xmi:type="uml:AssociationClass" href="Software%20ABE.efx#_3E3F0EC000E93EB2EC980074?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/LogicalDeviceOSInteractionDetails?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E943323B75016D" name="_pipe" visibility="public" isUnique="false" association="_3E3F0EC000E943323B720288">
-        <type xmi:type="uml:Class" href="Managed%20Transmission.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl1JwTNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xl1JwDNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E943563E010175" name="_terminationPoint" visibility="public" isUnique="false" association="_3E3F0EC000E943563DFD01EF">
-        <type xmi:type="uml:Class" href="Managed%20Transmission.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl1JyjNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xl1JyTNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
@@ -304,14 +304,14 @@ Please see the DEN-ng Resource model for more details
         <body>This association defines the set of Pipes that are managed by a particular LogicalDevice.</body>
       </ownedComment>
       <memberEnd href="#_3E3F0EC000E943323B75016D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_pipe?"/>
-      <memberEnd href="Managed%20Transmission.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
+      <memberEnd href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_logicalDevice?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E943563DFD01EF" name="LogicalDeviceGovernsTPs">
       <ownedComment xmi:id="_xl1JxjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943563DFD01EF">
         <body>This aggregation defines the set of (logical) TerminationPoints that are managed by a particular LogicalDevice.</body>
       </ownedComment>
       <memberEnd href="#_3E3F0EC000E943563E010175?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_terminationPoint?"/>
-      <memberEnd href="Managed%20Transmission.efx#_3E3F0EC000E943563E01019D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint/_logicalDevice?"/>
+      <memberEnd href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943563E01019D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint/_logicalDevice?"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xkMLAjNHEd2nE5zXHK_HsA" base_Comment="_xkMLATNHEd2nE5zXHK_HsA"/>

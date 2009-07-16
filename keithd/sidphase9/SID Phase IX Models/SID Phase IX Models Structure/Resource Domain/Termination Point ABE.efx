@@ -5,9 +5,12 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPProfile="http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPProfile/_nW4-IErZEd6g2pSLJTdyRA/57 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_nXCvIErZEd6g2pSLJTdyRA?TIP%20Profile/TIPProfile?">
   <uml:Package xmi:id="_3E3F0EC000E93E2C314E00A4" name="Termination Point ABE">
     <eAnnotations xmi:id="_1TBhgDN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
-      <references xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE?"/>
+      <references xmi:type="uml:Package" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93E2C3124017F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE?"/>
     </eAnnotations>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDCABC021F" name="TerminationPoint" isAbstract="true">
+      <eAnnotations xmi:id="_EyqgcHG6Ed6T4aMn-ifX1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_EyqgcXG6Ed6T4aMn-ifX1w" key="Deprecated"/>
+      </eAnnotations>
       <ownedComment xmi:id="_xN2HlDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDCABC021F">
         <body>This is an abstract class that terminates transport entities, such as trails and connections. This object class is a basic object class from which subclasses, such as TrailTerminationPoint and ConnectionTerminationPoint, are derived.
 
@@ -15,10 +18,10 @@ This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmiss
 </body>
       </ownedComment>
       <generalization xmi:id="_3E3F0EC000E93CDDCAED02C0">
-        <general xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDC021028F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/ManagedTransmissionEntity?"/>
+        <general xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDC021028F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/ManagedTransmissionEntity?"/>
       </generalization>
       <ownedAttribute xmi:id="_3E3F0EC000E93CDDCB7000FC" name="_pipe" visibility="public" isUnique="false">
-        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDC88D0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/Pipe?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDC88D0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xN2HkTNHEd2nE5zXHK_HsA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xN2HkDNHEd2nE5zXHK_HsA" value="1"/>
         <association href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDCB6F0168?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/TPsInPipe?"/>
@@ -65,6 +68,9 @@ concatenated, side A, time slot 13).
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDCC2B0173" name="TrailTerminationPoint">
+      <eAnnotations xmi:id="_FXBKsHG6Ed6T4aMn-ifX1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FXBKsXG6Ed6T4aMn-ifX1w" key="Deprecated"/>
+      </eAnnotations>
       <ownedComment xmi:id="_xOJCiDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDCC2B0173">
         <body>This is an abstract class whose purpose is to group different types of TrailTerminationPoints. This enables a single composition (CTPsInTrail) to be run to this class, which is then inherited by its subclasses. This is deemed better than building three relationships between the (currently) three types of TrailTerminationPoints and the CTP class. Note that each has the same containment relationship.
 
@@ -74,6 +80,9 @@ This object is derived from M.3100. M.3100 didn't define this object per se, but
       <generalization xmi:id="_3E3F0EC000E93CDDCDD50298" general="_3E3F0EC000E93CDDCABC021F"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDCEBA01C5" name="ConnectionTerminationPoint">
+      <eAnnotations xmi:id="_EUkPMHG6Ed6T4aMn-ifX1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_EUkPMXG6Ed6T4aMn-ifX1w" key="Deprecated"/>
+      </eAnnotations>
       <ownedComment xmi:id="_xOSzgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDCEBA01C5">
         <body>This is an actual or potential end point of a Network connection. For example, this can represent a logical channel or a timeslot on a physical link.
 
@@ -125,6 +134,9 @@ This object is derived from MTNM (see TMF 608). DEN-ng integrates it into the Ma
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CDDCEF303D9" name="CTPsInCTP" memberEnd="_3E3F0EC000E93CDDCEF702C7 _3E3F0EC000E93CDDCEF702D1">
+      <eAnnotations xmi:id="_F2UV0HG6Ed6T4aMn-ifX1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_F2UV0XG6Ed6T4aMn-ifX1w" key="Deprecated"/>
+      </eAnnotations>
       <ownedComment xmi:id="_xO4paTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDCEF303D9">
         <body>This composition defines the (lower-rate) CTPs that are contained in a (higher-rate) CTP.</body>
       </ownedComment>
