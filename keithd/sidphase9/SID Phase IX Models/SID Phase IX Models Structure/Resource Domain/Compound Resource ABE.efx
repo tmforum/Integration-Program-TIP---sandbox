@@ -81,10 +81,10 @@ The ResourcePort class abstracts the concept of a set of Ports from G.805, and i
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E9431A14840152" name="terminationPoint" visibility="public" isUnique="false" aggregation="shared">
-        <type xmi:type="uml:Class" href="Managed%20Transmission.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yB2XZTNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yB2XZDNHEd2nE5zXHK_HsA" value="1"/>
-        <association xmi:type="uml:AssociationClass" href="Managed%20Transmission.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
+        <association xmi:type="uml:AssociationClass" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9431A14820118?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TPAspectCompoundResourceDetails?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA971700098" name="LogicalAspectCompoundResourceDetails">

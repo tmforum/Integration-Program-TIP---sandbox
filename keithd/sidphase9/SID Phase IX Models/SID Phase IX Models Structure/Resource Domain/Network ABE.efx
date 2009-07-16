@@ -307,7 +307,7 @@ The following values are defined by TMF608:
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSKm7DNHEd2nE5zXHK_HsA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3E3F0EC000E943336905024B" name="_pipe" visibility="public" isUnique="false" aggregation="composite" association="_3E3F0EC000E94333690301E4">
-        <type xmi:type="uml:Class" href="Managed%20Transmission.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSTw3DNHEd2nE5zXHK_HsA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSTw2zNHEd2nE5zXHK_HsA" value="1"/>
       </ownedAttribute>
@@ -385,7 +385,7 @@ A LayerNetwork is defined by the complete set of AccessGroups of the same type t
         <body>This composition defines the set of Pipes that are used to make up a SubNetwork.</body>
       </ownedComment>
       <memberEnd href="#_3E3F0EC000E943336905024B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Network%20ABE/SubNetwork/_pipe?"/>
-      <memberEnd href="Managed%20Transmission.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
+      <memberEnd href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E9433369050255?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/OLD%20Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink/_subNetwork?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9435AB44F0023" name="HasSubNetworks" memberEnd="_3E3F0EC000E9435AB4510235 _3E3F0EC000E9435AB451023F">
       <ownedComment xmi:id="_xSTw4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9435AB44F0023">

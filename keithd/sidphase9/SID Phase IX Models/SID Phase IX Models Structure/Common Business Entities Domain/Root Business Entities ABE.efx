@@ -998,17 +998,17 @@ Second, it defines a common administrative domain that is used to administer the
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wHzskDNHEd2nE5zXHK_HsA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iWDV8G0REd6_2ds98BZGbg" name="topologicalLink" visibility="private" aggregation="composite" association="_iVmqAG0REd6_2ds98BZGbg">
-        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission%20ABE.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TopologicalLink?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iWDV8m0REd6_2ds98BZGbg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iWDV8W0REd6_2ds98BZGbg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_j38mgG0REd6_2ds98BZGbg" name="trafficConditioningProfile" visibility="private" aggregation="composite" association="_j3zckG0REd6_2ds98BZGbg">
-        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_JJVtwLnuEdy4-6KrVwKgCQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TrafficConditioningProfile?"/>
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission%20ABE.efx#_JJVtwLnuEdy4-6KrVwKgCQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TrafficConditioningProfile?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j38mgm0REd6_2ds98BZGbg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j38mgW0REd6_2ds98BZGbg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rxFF8G0REd6_2ds98BZGbg" name="flowDomain" visibility="private" aggregation="composite" association="_rw7U8G0REd6_2ds98BZGbg">
-        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission.efx#_7hqt0K4eEdyvN402f4-UpA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/FlowDomain?"/>
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission%20ABE.efx#_7hqt0K4eEdyvN402f4-UpA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/FlowDomain?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxFF8m0REd6_2ds98BZGbg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxFF8W0REd6_2ds98BZGbg"/>
       </ownedAttribute>
