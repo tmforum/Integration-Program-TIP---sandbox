@@ -1012,6 +1012,11 @@ Second, it defines a common administrative domain that is used to administer the
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxFF8m0REd6_2ds98BZGbg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxFF8W0REd6_2ds98BZGbg"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_bqGYoHgEEd6KntmQvnCc3w" name="multiLayerSubNetwork" visibility="private" aggregation="composite" association="_bp8noHgEEd6KntmQvnCc3w">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Managed%20Transmission%20ABE.efx#_b6baYMNTEdydiYAu_Q32IQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/MultiLayerSubNetwork?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bqQJoXgEEd6KntmQvnCc3w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bqQJoHgEEd6KntmQvnCc3w"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDA9E0C0384" name="RootEntity" isAbstract="true">
       <ownedComment xmi:id="_wFRV9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDA9E0C0384">
@@ -1307,6 +1312,12 @@ Note that an Entity does not have to be associated with an EntitySpecification. 
       <ownedEnd xmi:id="_rxO28G0REd6_2ds98BZGbg" name="" visibility="private" type="_3E3F0EC000E93CDAAE2C0113" association="_rw7U8G0REd6_2ds98BZGbg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxO28m0REd6_2ds98BZGbg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxO28W0REd6_2ds98BZGbg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bp8noHgEEd6KntmQvnCc3w" memberEnd="_bqGYoHgEEd6KntmQvnCc3w _bqZTkHgEEd6KntmQvnCc3w">
+      <ownedEnd xmi:id="_bqZTkHgEEd6KntmQvnCc3w" name="managementDomain" visibility="private" type="_3E3F0EC000E93CDAAE2C0113" association="_bp8noHgEEd6KntmQvnCc3w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bqZTkngEEd6KntmQvnCc3w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bqZTkXgEEd6KntmQvnCc3w" value="1"/>
       </ownedEnd>
     </packagedElement>
   </uml:Package>
