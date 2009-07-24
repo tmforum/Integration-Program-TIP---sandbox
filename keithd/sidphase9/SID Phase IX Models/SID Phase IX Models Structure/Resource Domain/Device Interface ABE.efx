@@ -496,6 +496,17 @@ This relationship requires the use of the DeviceInterface class to establish the
       <memberEnd href="#_sUzqwVKxEd2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/%3CProperty%3E?"/>
       <memberEnd href="../Service%20Domain/ResourceFacing%20Service%20ABE.efx#_sUzqwlKxEd2Ox5xf0vu4pw?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingService/deviceinterface?"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_EH4rgHgEEd6KntmQvnCc3w" name="DeviceInterfaceTPDetails" memberEnd="_EIehYHgEEd6KntmQvnCc3w _EIoSYHgEEd6KntmQvnCc3w">
+      <ownedEnd xmi:id="_EIehYHgEEd6KntmQvnCc3w" name="" visibility="private" association="_EH4rgHgEEd6KntmQvnCc3w">
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/NetworkResourceFulfillment/Data%20Object%20Classes/TerminationPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EIehYngEEd6KntmQvnCc3w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EIehYXgEEd6KntmQvnCc3w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_EIoSYHgEEd6KntmQvnCc3w" name="" visibility="private" type="_3E3F0EC000E93E0686B101A4" association="_EH4rgHgEEd6KntmQvnCc3w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EIoSYngEEd6KntmQvnCc3w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EIoSYXgEEd6KntmQvnCc3w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_xWVVMDNHEd2nE5zXHK_HsA" base_Comment="_xWMLSTNHEd2nE5zXHK_HsA"/>
   <Default:Documentation xmi:id="_xWVVNDNHEd2nE5zXHK_HsA" base_Comment="_xWVVMzNHEd2nE5zXHK_HsA"/>
