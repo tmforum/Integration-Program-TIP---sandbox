@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37A93F03BB" name="Service Bundle ABE">
+    <eAnnotations xmi:id="_8sZKcTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_8sZKcDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="ResourceFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E379AA102AC?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5C527F0338" name="ServiceBundleSpec" isAbstract="true">
+      <ownedComment xmi:id="_yalniTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5C527F0338">
+        <body>A ServiceBundleSpec is the base class for defining the different classes of bundled ResourceFacingServiceSpecs that a Customer (or some other appropriate PartyRole) can subscribe to. The preferred way to represent a Customer subscription of this nature is by defining a ServiceBundleSpec that defines the set of ResourceFacingServieSpecs that are being used.
+
+Conceptually, a ServiceBundleSpec is thought of as a collection to enable the needs of different sets of ResourceFacingServiceSpecs to be grouped together. The &quot;bundle&quot; conveys the concept of grouped ServiceSpecs that are related. Since these are ResoureFacingSpecifications, they define reusable templates for implementing the ResourceFacingServices that are required by a particular CustomerFacingService (as represented by a ServicePackage).
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5CECE40164">
+        <general xmi:type="uml:Class" href="ResourceFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E5C51B20383?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacingServiceSpecComposite?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAECC3C0308" name="bundleType" visibility="public">
+        <ownedComment xmi:id="_yalnjTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAECC3C0308">
+          <body>This is an enumerated integer that defines the specific type of ServiceBundleSpecification that this instance is. The values 0-15 are reserved for Class of Service (CoS) specifications. Other numeric ranges will be defined in the next version of the DEN-ng specification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAEA58802AC" name="theServicePackageSpec  " visibility="public" isUnique="false" association="_3E3F0EC000E93EBC0D670187">
+        <type xmi:type="uml:Class" href="Service%20Package%20ABE.efx#_3E3F0EC000E93E4BC1EF0033?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/Service%20Package%20ABE/ServicePackageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ybBsYzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ybBsYjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93ED575E100A7" name="theServiceBundleSpecComposite " visibility="public" type="_3E3F0EC000E93EBAE16900DD" isUnique="false" association="_3E3F0EC000E93ED575DE00F3">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ybLdaTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ybLdaDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE15E0159" name="ServiceBundleSpecAtomic">
+      <ownedComment xmi:id="_yauxcjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBAE15E0159">
+        <body>A ServiceBundleSpecAtomic object models different ServiceBundleSpecs as a set of different instances of individual, independent ResourceFacingServiceSpecs. This is fundamentally different than the ServiceBundleSpecComposite object, which is used to model one ServiceBundleSpec as the combination of other existing ServicePackageSpecs (as well as providing its own extensions).
+
+For example, assume that the GoldPackage service offering (which is a subclass of ServicePackage, not ServicePackageSpec), requires two different CoSService instances. This may be because the GoldPackage service offering has two different groups of applications that require two different types of traffic conditioning mechanisms. This is represented by a ServiceBundleSpecAtomic object. Now, assume that the PlatinumPackage service offering includes the GoldPackage service offering and a new service offering requiring a new set of traffic conditioining mechanisms. This requires a second ServiceBundleSpecAtomic object, as we want to reuse the first ServiceBundleSpecAtomic object. These could be aggregated together to form an instance of a ServiceBundleSpecComposite object.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EBAE1B400B2" general="_3E3F0EC000E93E5C527F0338"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE16900DD" name="ServiceBundleSpecComposite">
+      <ownedComment xmi:id="_yauxdjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBAE16900DD">
+        <body>A ServiceBundleSpecComposite is a concrete object that defines an integrated set of ServiceBundleSpecs that collectively meets the needs of a ResourceFacingServiceSpecComposite entity. This is fundamentally different than the ServiceBundleSpecAtomic object, which is used to model one ServiceBundleSpec as the combination of other existing ServicePackageSpecs (as well as providing its own extensions).
+
+For example, assume that the GoldPackage service offering (which is a subclass of ServicePackage, not ServicePackageSpec), requires two different CoSService instances. This may be because the GoldPackage service offering has two different groups of applications that require two different types of traffic conditioning mechanisms. This is represented by a ServiceBundleSpecAtomic object. Now, assume that the PlatinumPackage service offering includes the GoldPackage service offering and a new service offering requiring a new set of traffic conditioining mechanisms. This requires a second ServiceBundleSpecAtomic object, as we want to reuse the first ServiceBundleSpecAtomic object. These could be aggregated together to form an instance of a ServiceBundleSpecComposite object.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EBAE1B7012F" general="_3E3F0EC000E93E5C527F0338"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93ED575E1009D" name="_serviceBundleSpec" visibility="public" type="_3E3F0EC000E93E5C527F0338" isUnique="false" aggregation="shared" association="_3E3F0EC000E93ED575DE00F3">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ybLdZjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ybLdZTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE7210359" name="CoS1BundleSpec">
+      <generalization xmi:id="_3E3F0EC000E93EEE7DDA038E" general="_3E3F0EC000E93EBAE15E0159"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE72A01C1" name="CoS2BundleSpec">
+      <generalization xmi:id="_3E3F0EC000E93EEE7DFD0308" general="_3E3F0EC000E93EBAE15E0159"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE7300350" name="CoS3BundleSpec">
+      <generalization xmi:id="_3E3F0EC000E93EEE7E1F0295" general="_3E3F0EC000E93EBAE15E0159"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EBAE7380045" name="CoS4BundleSpec">
+      <generalization xmi:id="_3E3F0EC000E93EEE7E43033D" general="_3E3F0EC000E93EBAE15E0159"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EBC0D670187" name="ServicePackageBundleDetails">
+      <ownedComment xmi:id="_ya4ieDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBC0D670187">
+        <body>This class is used to implement the semantics of the ServicePackageSpecUsesServiceBundleSpecs aggregation. Note that the decision of which ServiceBundleSpecs to use to implement a particular ServicePackageSpec is a function of many factors, and is best modeled as a type of policy.
+
+This will be expanded on in more detail in the next version of the DEN-ng specification.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F3B7300D7">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EBC0DE101A1" name="bundleSpecValidFor" visibility="public">
+        <ownedComment xmi:id="_ybBsZjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBC0DE101A1">
+          <body>This attribute defines a time period in which the use of this particular ServiceBundleSpec is allowed for implementing the associated ServicePackageSpec. The TimePeriod attribute is a complex data type consisting of a TimeStamp to mark the beginning of the TimePeriod and a TimeStamp to mark the end of the TimePeriod.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EBC0E580094" name="preferredBundleSpec" visibility="public">
+        <ownedComment xmi:id="_ybBsaTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EBC0E580094">
+          <body>This attribute contains the name of the ServiceBundleSpec that is preferred to be used to implement this particular ServicePackageSpec.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <memberEnd href="Service%20Package%20ABE.efx#_3E3F0EC000E93EAEA58802A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/Service%20Package%20ABE/ServicePackageSpec/_serviceBundleSpec?"/>
+      <memberEnd href="#_3E3F0EC000E93EAEA58802AC?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/Service%20Bundle%20ABE/ServiceBundleSpec/theServicePackageSpec%20%20?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93ED575DE00F3" name="HasServiceBundleSpecs" memberEnd="_3E3F0EC000E93ED575E1009D _3E3F0EC000E93ED575E100A7">
+      <ownedComment xmi:id="_ybLdYjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93ED575DE00F3">
+        <body>This aggregation defines the set of ServiceBundleSpecs that are aggregated by a particular ServiceBundleSpecComposite instance.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yalnijNHEd2nE5zXHK_HsA" base_Comment="_yalniTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yauxcDNHEd2nE5zXHK_HsA" base_Comment="_yalnjTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yauxczNHEd2nE5zXHK_HsA" base_Comment="_yauxcjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yauxdzNHEd2nE5zXHK_HsA" base_Comment="_yauxdjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_ya4idzNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EBC0D670187" Associaton_Name="ServicePackageSpecUsesServiceBundleSpecs"/>
+  <Default:Documentation xmi:id="_ya4ieTNHEd2nE5zXHK_HsA" base_Comment="_ya4ieDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ybBsZzNHEd2nE5zXHK_HsA" base_Comment="_ybBsZjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ybLdYDNHEd2nE5zXHK_HsA" base_Comment="_ybBsaTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ybLdYzNHEd2nE5zXHK_HsA" base_Comment="_ybLdYjNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

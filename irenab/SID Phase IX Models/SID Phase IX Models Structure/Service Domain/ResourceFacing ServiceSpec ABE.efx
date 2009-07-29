@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E379AA102AC" name="ResourceFacing ServiceSpec ABE">
+    <eAnnotations xmi:id="_1o22QTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93E37B1A3005D?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE?"/>
+      <references xmi:type="uml:Package" href="Service%20Bundle%20ABE.efx#_3E3F0EC000E93E37A93F03BB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/Service%20Bundle%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_1o22QDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D50919203C4?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D9DADF100B9" name="ResourceFacingServiceSpec" isAbstract="true">
+      <ownedComment xmi:id="_yZFyuTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9DADF100B9">
+        <body>This is the base class for defining ResourceFacingServiceSpecs in the DEN-ng Service model. A ResourceFacingServiceSpec is an abstraction that defines the invariant characteristics and behavior of a particular ResourceFacingService. This is NOT seen by the Customer. However, it is required by one or more CustomerFacingServiceSpecs in order for them to function correctly. The invariant portion serves as a single common basis to build a set of variable ResourceFacingServices that all use this common ResourceFacingServiceSpec.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D9DAE400164">
+        <general xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D5092210347?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecification?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1D474032A" name="_customerFacingServiceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93D9DADDE0194?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXmk9jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXmk9TNHEd2nE5zXHK_HsA"/>
+        <association href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93DD1D4720176?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/RequiresResourceFacingServiceSpec?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1462F0005" name="_resourceSpecification" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DD1462D011B">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZsPoTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZsPoDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5C4FDB01EB" name="_resourceFacingService" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E5C4FD80396">
+        <type xmi:type="uml:Class" href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93D5091AC0353?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZsPqjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZsPqTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D5802006F" name="_resourceFacingServiceSpecComposite" visibility="public" type="_3E3F0EC000E93E5C51B20383" isUnique="false" association="_3E3F0EC000E93E5D580003B6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZ1ZljNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ1ZlTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EACAD8401A2" name="_resourceFacingServiceSpecVersion" visibility="public" type="_3E3F0EC000E93EACAC21029C" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EACAD8102C1">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZ_KlDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ_KkzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93ED6B7F402FC" name="_resourceFacingServiceSpecRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93ED6B7F202C7">
+        <type xmi:type="uml:Class" href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93D5148FE026E?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yaI7kDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ_KnDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DAF6A970061" name="VPNServiceSpecification" isAbstract="true">
+      <ownedComment xmi:id="_yZPjszNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DAF6A970061">
+        <body>This class is the abstract base class for defining all types of VPNServiceSpecifications. It contains basic invariant attributes, methods, relationships and constraints for defining a VPNService without specifying the specific type and technology used (e.g., IPsec vs. MPLS) to implement the VPNService.
+
+For example, this class will specify the SLS that governs its performance requirements, as well as other behavior that is independent of the VPN type. The subclasses of this VPNServiceSpecification will specify additional attributes, methods, relationships, and constraints that are specific to the type of VPN being implemented.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DD0648E02B2">
+        <general xmi:type="uml:Class" href="CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93D9DADDE0194?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpec?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5C519901F7" name="ResourceFacingServiceSpecAtomic" isAbstract="true">
+      <ownedComment xmi:id="_yZPjtzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5C519901F7">
+        <body>This is an abstract base class for defining ResourceFacingServiceSpecifications that do not have any subordinate ResourceFacingServiceSpecifications. In other words, a ResourceFacingServiceSpecAtomic is a stand-alone ResourceFacingServiceSpecification, and doesn't require any supporting ResourceFacingServiceSpecifications to define the invariant characteristics (i.e., non-changing attributes, methods, relationships, and constraints) of any ResourceFacingServices that it serves as a template for.
+
+Please see the DEN-ng Service Model whitepaper for more information and examples.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5C520A00B9" general="_3E3F0EC000E93D9DADF100B9"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5C51B20383" name="ResourceFacingServiceSpecComposite" isAbstract="true">
+      <ownedComment xmi:id="_yZPjuzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5C51B20383">
+        <body>This is an abstract base class that defines an integrated set of ResourceFacingServices that collectively meets the needs of a CustomerFacingService. For example, the Customer may have requested &quot;GoldService&quot;, which is a ServicePackage that defines a set of ServiceBundles, each of which has its own QoS. Each individual ResourceFacingService that is part of the ServicePackage can be derived from a ResourceFacingServiceSpecification. In this case, a ResourceFacingServiceSpecComposite will aggregate all of the individual ResourceFacingServiceSpecifications into a single named object.
+
+This object is a stand-alone object. However, it consists of other ResourceFacingServiceSpecComposite and/or ResourceFacingServiceSpecAtomic entities. That is the primary difference between this entity and the ResourceFacingServiceSpecAtomic entity.
+
+Please see the DEN-ng Service Model whitepaper for more information and examples.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5C522C02DE" general="_3E3F0EC000E93D9DADF100B9"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D5802005B" name="_resourceFacingServiceSpec" visibility="public" type="_3E3F0EC000E93D9DADF100B9" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E5D580003B6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZ1ZkzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ1ZkjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EACAC21029C" name="ResourceFacingServiceSpecVersion">
+      <generalization xmi:id="_3E3F0EC000E93EACAC4102B6">
+        <general xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93DB2481E005F?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecVersion?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EACAD8401AC" name="_resourceFacingServiceSpec" visibility="public" type="_3E3F0EC000E93D9DADF100B9" isUnique="false" association="_3E3F0EC000E93EACAD8102C1">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZ_KlzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ_KljNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EACAD8102C1" name="RFSSpecVersionDetails" memberEnd="_3E3F0EC000E93EACAD8401A2 _3E3F0EC000E93EACAD8401AC">
+      <ownedComment xmi:id="_yZZUtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EACAD8102C1">
+        <body>This class defines the semantics of the modifiesRFSSpec aggregation. Specifically, it enables an application to define which set of versions of this ResourceFacingServiceSpecification are appropriate for a given task.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_yZ_KkDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EACAD8102C1">
+        <body>This aggregation represents the set of versions of this ResourceSpecification. The semantics of this aggregation are implemented with the ResourceSpecVersionDetails class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EACB19F02DB">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EACB1F40233" name="rfsSpecVerValidFor" visibility="public">
+        <ownedComment xmi:id="_yZZUuTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EACB1F40233">
+          <body>This attribute defines a time period which this particular ResourceFacingServiceSpecVersion is applicable. This enables past versions of a ServiceSpecification to be designated as no longer applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EACB1F40234" name="rfsSpecPreferredVersionToUse" visibility="public">
+        <ownedComment xmi:id="_yZZUvDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EACB1F40234">
+          <body>This attribute defines the preferred Version of this ResourceFacingServiceSpecification to use.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EACB1F4023D" name="rfsSpecMinVersionForUse" visibility="public">
+        <ownedComment xmi:id="_yZieojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EACB1F4023D">
+          <body>This attribute defines the minimal version of this ResourceFacingServiceSpecification to use.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DD1462D011B" name="RFServiceSpecHasResourceSpecs">
+      <ownedComment xmi:id="_yZiepTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DD1462D011B">
+        <body>This aggregation defines the set of ResourceSpecifications that are needed to build a particular ResourceFacing ServiceSpec.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DD1462F0005?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacingServiceSpec/_resourceSpecification?"/>
+      <memberEnd href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93DD1462F000F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification/_resourceFacingServiceSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E5C4FD80396" name="SpecifiesResourceFacingService">
+      <ownedComment xmi:id="_yZsPpjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5C4FD80396">
+        <body>This aggregation defines the set of ResourceFacingServices that can be defined from a particular ResourceFacingServiceSpecification. Bundled sets of ResourceFacingServices can be built by combining multiple ResourceFacingServiceSpecifications. This enables the ResourceFacingServiceSpecification to define the invariant attributes, methods, relationships, and constraints of a ResourceFacingService, and the ResourceFacingService to define different variations of the Service that are all built off of the same ResourceFacingServiceSpecification.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93E5C4FDB01EB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacingServiceSpec/_resourceFacingService?"/>
+      <memberEnd href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93E5C4FDB0209?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingService/_resourceFacingServiceSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E5D580003B6" name="HasResourceFacingServiceSpecs" memberEnd="_3E3F0EC000E93E5D5802005B _3E3F0EC000E93E5D5802006F">
+      <ownedComment xmi:id="_yZsPrzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D580003B6">
+        <body>This aggregation defines the set of ResourceFacingServiceSpecs that are aggregated by a particular ResourceFacingServiceSpecComposite instance.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93ED6B7F202C7" name="RFSSpecHasRFSRoles">
+      <ownedComment xmi:id="_yZ_KmTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93ED6B7F202C7">
+        <body>This aggregation defines the set of ResourceFacingServiceSpecRoles that a particular ResourceFacingServiceSpec has. This enables the ResourceFacingServiceSpec to be defined abstractly using Roles instead of specific Services.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93ED6B7F402FC?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacingServiceSpec/_resourceFacingServiceSpecRole?"/>
+      <memberEnd href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93ED6B7F402FE?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole/_resourceFacingServiceSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="ResourceFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93E37B1A3005D?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Service%20Bundle%20ABE.efx#_3E3F0EC000E93E37A93F03BB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/Service%20Bundle%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yZPjsDNHEd2nE5zXHK_HsA" base_Comment="_yZFyuTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZPjtDNHEd2nE5zXHK_HsA" base_Comment="_yZPjszNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZPjuDNHEd2nE5zXHK_HsA" base_Comment="_yZPjtzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZZUsDNHEd2nE5zXHK_HsA" base_Comment="_yZPjuzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZiepjNHEd2nE5zXHK_HsA" base_Comment="_yZiepTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZsPpzNHEd2nE5zXHK_HsA" base_Comment="_yZsPpjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZ1ZkDNHEd2nE5zXHK_HsA" base_Comment="_yZsPrzNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_yZ1ZmDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EACAD8102C1" Associaton_Name="ModifiesRFSSpec"/>
+  <Default:Documentation xmi:id="_yZ_KkTNHEd2nE5zXHK_HsA" base_Comment="_yZ_KkDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yZ_KmjNHEd2nE5zXHK_HsA" base_Comment="_yZ_KmTNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
