@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2EFC2A0198" name="Performance Info ABE">
+    <eAnnotations xmi:id="_GeH7kTN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_GeH7kDN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E300B650205" name="PerformanceInfo" isAbstract="true">
+      <ownedComment xmi:id="_xpaCOTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E300B650205">
+        <body>PerformanceInfo is the base class for all performance monitoring classes. Resource Performance is the act of collecting, correlating, consolidating, and validating various performance statistics and other operational characteristics of PhysicalResource, LogicalResource, CompoundResource, and Network entities. Service Performance is similar, except that it applies to CustomerFacingServices and ResourceFacingServices. Both of these entities also include specific subclasses for conducting network performance assessment against planned goals, performs various aspects of trend analysis, including error rate and cause analysis and Resource degradation.
+
+Different types of performance indicators are associated with a particular Resource or Service using the DescribedByMgmtInfo aggregation. Performance information Subclasses of this class define the detailed characteristics and behavior of this class. Performance monitors are reported by associating the parent of this class, ManagementInfo, with the ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA9D38A02D0">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93E9C638A02CB?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementInfo?"/>
+      </generalization>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xpjzMDNHEd2nE5zXHK_HsA" base_Comment="_xpaCOTNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

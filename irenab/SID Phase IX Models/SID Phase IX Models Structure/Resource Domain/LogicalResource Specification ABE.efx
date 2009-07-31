@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C58840228" name="LogicalResource Specification ABE">
+    <eAnnotations xmi:id="_rUO1wTN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Logical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E63D2430155?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/Logical%20Role%20Specification%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_rUO1wDN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA5CCD30232?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA5C7CD024B" name="LogicalResourceSpecVersion">
+      <ownedComment xmi:id="_xIVVgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA5C7CD024B">
+        <body>The purpose of this class is to be able to track LogicalResourceSpecifications separately from other types of ResourceSpecifications. Note that this class inherits the modifiesResourceSpec aggregation, and therefore can be used with the corresponding LogicalResourceSpecification class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EAAB8BE03C0">
+        <general xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA5C83302C7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecVersion?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EAAC1F000B8" name="LogicalResourceSpecComposite">
+      <ownedComment xmi:id="_xIefYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC1F000B8">
+        <body>This is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building LogicalResource objects. The purpose of this class is to be able to track specifications of LogicalResource separately from other types of ResourceSpecifications. Note that this class inherits the ModifiesResourceSpec aggregation, and therefore can be used with the corresponding LogicalResource class.
+
+The difference between this class and the LogicalResourceSpecAtomic class is that this class represents a hierarchy of specifications for LogicalResources. The LogicalResourceSpecAtomic class represents a single stand-alone specification of a LogicalResource.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EFBCBA8022B" general="_3E3F0EC000E93EE25CAA036E"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EFBCC720299" name="_logicalResourceSpec" visibility="public" type="_3E3F0EC000E93EE25CAA036E" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EFBCC6F0231">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIxaXDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIxaWzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EE25CAA036E" name="LogicalResourceSpec" isAbstract="true">
+      <ownedComment xmi:id="_xIoQYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE25CAA036E">
+        <body>This is an abstract base class that is used to define the invariant characteristics and behavior (attributes, methods, constraints, and relationships) of a LogicalResource.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EE25CFB00FE">
+        <general xmi:type="uml:Class" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE260CB0293" name="_physicalResourceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="PhyscialResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25C630091?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/PhysicalResourceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xHb9mDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xHb9lzNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Resource%20Specification%20ABE.efx#_3E3F0EC000E93EE260C9028F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalPhysicalResourceSpec?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EFFA8950026" name="_logicalResourceRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EFFA8940197">
+        <type xmi:type="uml:Class" href="Logical%20Role%20ABE.efx#_3E3F0EC000E93DDFD4C100D7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE/LogicalResourceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIxaUzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIxaUjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EFBCC7202A3" name="_logicalResourceSpecComposite" visibility="public" type="_3E3F0EC000E93EAAC1F000B8" isUnique="false" association="_3E3F0EC000E93EFBCC6F0231">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIxaXzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIxaXjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EAAC1C2038D" name="LogicalResourceSpecAtomic">
+      <ownedComment xmi:id="_xIoQZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAAC1C2038D">
+        <body>This is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building LogicalResource objects. The purpose of this class is to be able to track specifications of LogicalResources separately from other types of ResourceSpecifications. Note that this class inherits the ModifiesResourceSpec aggregation, and therefore can be used with the corresponding LogicalResource class.
+	
+The difference between this class and the LogicalResourceSpecComposite class is that this class represents stand-alone specifications of LogicalResource objects. The LogicalResourceSpecComposite class represents a hierarchy of specifications of LogicalResource objects.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EFBCBA6005B" general="_3E3F0EC000E93EE25CAA036E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EFFA8940197" name="SpecifiesLogicalResourceRoles">
+      <ownedComment xmi:id="_xIoQazNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EFFA8940197">
+        <body>This aggregation defines the set of LogicalResourceRoles that a particular LogicalResource must have (since it is defined by the specification for that LogicalResource). This enables functionality to be specified for a particular Logical component (e.g., in order to play a given role, a particular type of DeviceInterface must be installed).
+
+The difference between this aggregation and the RolesDescribeLogicalResource aggregation is that this aggregation defines functionality of a LogicalResource using LogicalResourceRoles. In contrast, the LogcalResource aggregation enables instances of a LogicalResource to be described using LogicalResourceRoles.
+
+Please see the DEN-ng Resource model for more details.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EFFA8950026?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/LogicalResourceSpec/_logicalResourceRole?"/>
+      <memberEnd href="Logical%20Role%20ABE.efx#_3E3F0EC000E93EFFA895003A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE/LogicalResourceRole/_logicalResourceSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EFBCC6F0231" name="HasLogicaLResourceSpecs" memberEnd="_3E3F0EC000E93EFBCC720299 _3E3F0EC000E93EFBCC7202A3">
+      <ownedComment xmi:id="_xIxaWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EFBCC6F0231">
+        <body>This aggregation defines the set of LogicalResourceSpecs that are contained by this particular LogicalResourceSpecComposite entity.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Logical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E63D2430155?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/Logical%20Role%20Specification%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xIefYDNHEd2nE5zXHK_HsA" base_Comment="_xIVVgjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xIoQYDNHEd2nE5zXHK_HsA" base_Comment="_xIefYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xIoQZDNHEd2nE5zXHK_HsA" base_Comment="_xIoQYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xIoQaDNHEd2nE5zXHK_HsA" base_Comment="_xIoQZzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xIxaUDNHEd2nE5zXHK_HsA" base_Comment="_xIoQazNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xIxaWTNHEd2nE5zXHK_HsA" base_Comment="_xIxaWDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
