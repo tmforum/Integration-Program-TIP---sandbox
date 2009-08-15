@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37A2A40251" name="Traffic Identification ABE">
+    <eAnnotations xmi:id="_KzjH0TQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_KzjH0DQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93E37A85C0365?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901B1" name="TrafficIdentificationService" isAbstract="true">
+      <ownedComment xmi:id="_yJTDMzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901B1">
+        <body>A TrafficIdentificationService is a fundamental QoS building block. 
+
+A TrafficIdentificationService is an abstract base class that is the parent for different types of traffic identification services defined in the DEN-ng Service model. TrafficIdentificationServices are one example of a ResourceFacingService, in that the Customer is not able to control them. In fact, the Customer doesn't even have to be aware that they exist! However, they must be implemented in order for different CoSs to be differentiated from each other, and hence for different Customers to receive different CoSs.
+
+TrafficIdentificationServices control how packets and flows are identified and distinguished from other packets and flows in the system. Without these services, traffic conditioning cannot work.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901B3">
+        <general xmi:type="uml:Class" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901B6?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/NetworkForwardingService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901AE" name="_qoSService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yI2XRjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yI2XRTNHEd2nE5zXHK_HsA"/>
+        <association href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901AC?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/IdentifiesQoSService?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901E1" name="ClassifierService">
+      <ownedComment xmi:id="_yJTDNzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901E1">
+        <body>A Classifier is an internal component of the forwarding path. It is used to recognize and distinguish among different packet streams or flows. Without classification, all packets will be treated the same.
+
+The function of the ClassifierService is to model the identification of traffic accepted at the ingress interface of the device, and to separate traffic into different flows. This enables flows from different applications that can be treated the same way to be aggregated together, making the network design much more scalable.
+
+For almost all situations, the ClassifierService will be followed by a MarkerService (or one of its subclasses) so that separate traffic can be assigned a unique mark in the packet header. This will enable subsequent mechanisms to simply examine the mark in the header and perform operations based on that marking. This dependency is modeled using an instance of the NextForwardingService association.
+
+The definition of which flows can be separated into which aggregates is defined using the TrafficMatchCriteria class.
+
+The Classifier uses the PolicyStatement construct from the Policy Model. Operator is set to &quot;match&quot;. PolicyVariable and PolicyValue can either be predefined in a TrafficMatchCriteria class, or defined dynamically using the four attributes defined in this class.
+
+In DEN-ng, this is modeled as a Service that can be invoked.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901E0" general="_3E3F0EC000E93DB57B3901B1"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37ED3F0150" name="dynamicClassVariableName" visibility="public">
+        <ownedComment xmi:id="_yJc0MzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37ED3F0150">
+          <body>This is a string attribute, whose value contains the name of a class to be used to form all or part of the traffic match criteria. For example, if it is desired to match on a dynamically negotiated port number, then the value of this attribute would be used to identify the appropriate class (e.g., PortVariable) that would be used.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37EE5D03C8" name="dynamicAttributeVariableName" visibility="public">
+        <ownedComment xmi:id="_yJc0NjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37EE5D03C8">
+          <body>This is a string attribute, whose value contains the name of an attribute to be used to form all or part of the traffic match criteria. For example, if it is desired to match on a dynamically negotiated port number, then the value of this attribute would be used to identify the appropriate attribute (e.g., PortNumber ) in the appropriate class (e.g., PortVariable) that would be used.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37EEB90244" name="dynamicClassValueName" visibility="public">
+        <ownedComment xmi:id="_yJc0OTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37EEB90244">
+          <body>This is a string attribute, whose value contains the name of a class to be used to supply the value to be matched against. For example, if it is desired to match on a dynamically negotiated port number, then the value of the dynamicClassVariableName attribute would be PortVariable. The value of this attribute could then be StringValue.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37EEB9024E" name="dynamicAttributeValueName" visibility="public">
+        <ownedComment xmi:id="_yJl-IjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37EEB9024E">
+          <body>This is a string attribute, whose value contains the name of an attribute to be used to supply the value to be matched against.
+
+For example, if it is desired to match on a dynamically negotiated port number, then the value of the dynamicClassVariableName attribute would be PortVariable, and the attribute to match against in PortVariable might be PortNumber. The value of the dynamicClassValueName attribute to compare the SourcePort against could be StringValue
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37E87E0308" name="_trafficMatchCriteria" visibility="public" type="_3E3F0EC000E93E37E84F0261" isUnique="false" association="_3E3F0EC000E93E37E87D03D9">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVlAzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKVlAjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901DC" name="MarkerService">
+      <ownedComment xmi:id="_yJl-JTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901DC">
+        <body>The function of a MarkerService is to mark packets in a flow so that different devices in the network know how to treat the traffic that these packets belong to. This is done by &quot;coloring&quot; a packet so that it can be identified and distinguished among other packets that are receiving traffic conditioning. In effect, this partitions a network into multiple priority levels or classes. Marking packets is done using a technology-specific mechanism, such as the ToS byte, the DSCP, or other methods for other media.
+
+In DEN-ng, this function is modeled by the MarkerService. This service will mark a selected field in a network packet with a specified value. Packets are marked in order to indicate to downstream components what types of TrafficConditioningServices they will subsequently receive.
+
+The definition of how to mark a particular packet is defined using the MarkerPool class.
+
+Note that there is a fundamental difference between its two subclasses. StandardMarkerService enables different types of technology-specific marking, which directly affect subsequent operations, to be defined. Examples of this include the difference between DiffServ marking and IEEE 802 marking. The PreambleMarkingService is used to capture the result of traffic conditioning operations and store them in a preamble. The two types of marking can be combined in some implementations.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DB57B3901DB" general="_3E3F0EC000E93DB57B3901B1"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E39456001FE" name="_dropProbabilityDetails" visibility="public" isUnique="false" association="_3E3F0EC000E93E39455C0162">
+        <type xmi:type="uml:AssociationClass" href="DropperService%20ABE.efx#_3E3F0EC000E93E3944D30375?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/DropperService%20ABE/DropProbabilityDetails?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVlDDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKVlCzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EC12D76000E" name="_markerPool" visibility="public" type="_3E3F0EC000E93EC12D550210" isUnique="false" association="_3E3F0EC000E93EC12D7500DF">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKfWAzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKfWAjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF4BC1402BC" name="_rEDServiceElement" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="DropperService%20ABE.efx#_3E3F0EC000E93E3913F200F7?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/DropperService%20ABE/REDServiceElement?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yMuKpjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yMuKpTNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="DropperService%20ABE.efx#_3E3F0EC000E93EF4BC1202E1?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/DropperService%20ABE/MarkingUsedForDropping?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E37E84F0261" name="TrafficMatchCriteria">
+      <ownedComment xmi:id="_yJl-KTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37E84F0261">
+        <body>The definition of which flows can be separated by the ClassifierService into which aggregates is defined using the TrafficMatchCriteria class. The purpose of this class is to formally define selection criteria for the ClassifierService to use so that the ClassifierService can separate ingress traffic into sets of flows. This class contains data, metadata, and links to PolicyRules to govern the selection criteria. This is described in the DEN-ng system view.
+
+The ClassifierUsesCriteria association binds a specific ClassifierService to one or more TrafficMatchCriteria classes.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E971000F5">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E37E87E0313" name="_classifierService" visibility="public" type="_3E3F0EC000E93DB57B3901E1" isUnique="false" association="_3E3F0EC000E93E37E87D03D9">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVlBjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKVlBTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E380DFE03AA" name="StandardMarkerService">
+      <ownedComment xmi:id="_yJvvIzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E380DFE03AA">
+        <body>This subclass defines the most common type of marker, which sets existing bits in specific fields of a packet or frame. The marking is done via the two attributes of this class. The first value is used to define the type of marker (e.g., ToS vs. DSCP), while the second attribute contains the actual value to be marked.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E380FAE006C" general="_3E3F0EC000E93DB57B3901DC"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3802CB03E4" name="typeOfMarker" visibility="public">
+        <ownedComment xmi:id="_yJvvJzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3802CB03E4">
+          <body>This is an enumerated integer that defines the type of marker that this instance is. Values include:
+
+  0:  ToS
+  1:  DSCP
+  2:  802-priority field
+  3:  802-vlan id
+  4:  ISL class of service field (3 bits)
+  5:  Class of Service (other field)
+  6:  MPLS Label
+  7:  VC ID
+  8:  VC Bundle (set of VC IDs)
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E380D7000E9" name="valueOfMarker" visibility="public">
+        <ownedComment xmi:id="_yJvvKjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E380D7000E9">
+          <body>This is a string attribute that contains the value of the marker. This attribute is not used if a general preamble marking is desired.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E380EB10285" name="PreambleMarkerService">
+      <ownedComment xmi:id="_yJ5gIjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E380EB10285">
+        <body>This type of MarkerService is used to model the storing of traffic-conditioning results in a packet preamble. The results are stored as an array of &lt;type>,&lt;value> pairs.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E380FB20130" general="_3E3F0EC000E93DB57B3901DC"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E380F430235" name="marking" visibility="public">
+        <ownedComment xmi:id="_yJ5gJjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E380F430235">
+          <body>This is an array of strings of the form
+    &lt;type>, &lt;value>
+
+Each string represents the result of a specific traffic conditioning action. This enables &quot;memory&quot; of the traffic conditioning process to be passed along from conditioning element to conditioning element.
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF37F2101AD" name="_trafficConditioningService" visibility="public" isUnique="false" association="_3E3F0EC000E93EF37F1D000A">
+        <type xmi:type="uml:Class" href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93DB57B3901C1?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/TrafficConditioningService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yLFy-DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yLFy9zNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EC12D550210" name="MarkerPool">
+      <ownedComment xmi:id="_yKCqETNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EC12D550210">
+        <body>A MarkerPool object represents a set of markings that can be used by one or more MarkerServices. For example, different MarkerPools could be defined for different Customers as well as for different technologies. Since MarkerPool objects can be designed independently of MarkerServices, the cardinality of the UsesMarkerPool association is 0..n on the MarkerService side. However, since a MarkerService must have at least one or more MarkerPool objects to function correctly, the cardinality of the UsesMarkerPool association is 1..n on the MarkerPool side.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EC12ED90041">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EC1372C0143" name="_qoSService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="QoS%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901A2?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJAITzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJAITjNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="QoS%20Service%20ABE.efx#_3E3F0EC000E93EC137290351?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSTechnologyMarkedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF3AA660316" name="typeOfMarkerPool" visibility="public">
+        <ownedComment xmi:id="_yKCqFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF3AA660316">
+          <body>This is an enumerated integer that defines the type of MarkerPool that this instance is. Values include:
+
+  0:  ToS
+  1:  DSCP
+  2:  802-priority field
+  3:  802-vlan id
+  4:  ISL class of service field (3 bits)
+  5:  Class of Service (other field)
+  6:  MPLS Label
+  7:  VC ID
+  8:  VC Bundle (set of VC IDs)
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF3AA2C0152" name="isExhausted" visibility="public">
+        <ownedComment xmi:id="_yKCqGDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF3AA2C0152">
+          <body>This is a Boolean attribute that, if TRUE, means that all values in this particular MarkerPool have been exhausted.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EF3AB8A0338" name="valuesLeftInPool" visibility="public">
+        <ownedComment xmi:id="_yKMbEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF3AB8A0338">
+          <body>This is an integer that contains the current number of unique marker values that remain unused in this MarkerPool.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EC12D760010" name="_markerService" visibility="public" type="_3E3F0EC000E93DB57B3901DC" isUnique="false" association="_3E3F0EC000E93EC12D7500DF">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKfWBjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKfWBTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EF37F1D000A" name="PreambleMarkingDetails ">
+      <ownedComment xmi:id="_yKMbFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF37F1D000A">
+        <body>This class implements the semantics of the MarksPreambleWithConditioningResult association. The purpose of this class is to enable application- and vendor-specific implementations of preamble marking to be more easily modeled in DEN-ng.
+
+Further details of this class will be provided in the next release of DEN-ng.
+</body>
+      </ownedComment>
+      <ownedComment xmi:id="_yLFy8TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EF37F1D000A">
+        <body>This association defines which type of TrafficConditioningServices are used to mark the preamble of a packet with. The semantics of this association are defined by the PreambleMarkingDetails association class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EF37FD8003E">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <memberEnd href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93EF37F2101AB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/TrafficConditioningService/_preambleMarkerService?"/>
+      <memberEnd href="#_3E3F0EC000E93EF37F2101AD?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/PreambleMarkerService/_trafficConditioningService?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E37E87D03D9" name="ClassifierUsesCriteria" memberEnd="_3E3F0EC000E93E37E87E0308 _3E3F0EC000E93E37E87E0313">
+      <ownedComment xmi:id="_yKMbGTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E37E87D03D9">
+        <body>The ClassifierUsesCriteria association binds a specific ClassifierService to one or more TrafficMatchCriteria classes. Every ClassifierService must use at least one TrafficMatchCriteria object, hence the cardinality for this end of the relationship is 1..n. However, a TrafficMatchCriteria object can be designed before it is associated with a particular ClassifierService, and can in fact be used with more than one ClassifierService. Hence, the cardinality for this end of the relationship is 0..n.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E39455C0162" name="IdentifiesDroppingBehavior" memberEnd="_3E3F0EC000E93E39456001FE _3E3F0EC000E93E3945600208">
+      <ownedComment xmi:id="_yKVlCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E39455C0162">
+        <body>This association defines the particular MarkerService that is used to identify traffic for this specific dropping behavior.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93E3945600208" name="_markerService" visibility="public" type="_3E3F0EC000E93DB57B3901DC" isUnique="false" association="_3E3F0EC000E93E39455C0162">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVlDzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKVlDjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EC12D7500DF" name="UsesMarkerPool" memberEnd="_3E3F0EC000E93EC12D76000E _3E3F0EC000E93EC12D760010">
+      <ownedComment xmi:id="_yKVlETNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EC12D7500DF">
+        <body>The UsesMarkerPool association binds a specific MarkerService to one or more MarkerPool classes. (For example, different MarkerPools could be defined for different Customers as well as for different technologies). Every MarkerService must use at least one MarkerPool object, hence the cardinality for this end of the relationship is 1..n. However, a MarkerPool object can be designed before it is associated with any particular MarkerService, and can in fact be used with many different MarkerServices. Hence, the cardinality for this end of the relationship is 0..n.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yJTDNDNHEd2nE5zXHK_HsA" base_Comment="_yJTDMzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJc0MDNHEd2nE5zXHK_HsA" base_Comment="_yJTDNzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJc0NDNHEd2nE5zXHK_HsA" base_Comment="_yJc0MzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJc0NzNHEd2nE5zXHK_HsA" base_Comment="_yJc0NjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJl-IDNHEd2nE5zXHK_HsA" base_Comment="_yJc0OTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJl-IzNHEd2nE5zXHK_HsA" base_Comment="_yJl-IjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJl-JjNHEd2nE5zXHK_HsA" base_Comment="_yJl-JTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJvvIDNHEd2nE5zXHK_HsA" base_Comment="_yJl-KTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJvvJDNHEd2nE5zXHK_HsA" base_Comment="_yJvvIzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJvvKDNHEd2nE5zXHK_HsA" base_Comment="_yJvvJzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJ5gIDNHEd2nE5zXHK_HsA" base_Comment="_yJvvKjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJ5gIzNHEd2nE5zXHK_HsA" base_Comment="_yJ5gIjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJ5gJzNHEd2nE5zXHK_HsA" base_Comment="_yJ5gJjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKCqEjNHEd2nE5zXHK_HsA" base_Comment="_yKCqETNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKCqFjNHEd2nE5zXHK_HsA" base_Comment="_yKCqFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKMbEDNHEd2nE5zXHK_HsA" base_Comment="_yKCqGDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKMbEzNHEd2nE5zXHK_HsA" base_Comment="_yKMbEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKVlADNHEd2nE5zXHK_HsA" base_Comment="_yKMbGTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKVlCTNHEd2nE5zXHK_HsA" base_Comment="_yKVlCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yKfWADNHEd2nE5zXHK_HsA" base_Comment="_yKVlETNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_yLFy8DNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EF37F1D000A" Associaton_Name="MarksPreambleWithConditioningResult"/>
+  <Default:Documentation xmi:id="_yLFy8jNHEd2nE5zXHK_HsA" base_Comment="_yLFy8TNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zW77BTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93E380F430235" Type="SequenceOf String"/>
+</xmi:XMI>

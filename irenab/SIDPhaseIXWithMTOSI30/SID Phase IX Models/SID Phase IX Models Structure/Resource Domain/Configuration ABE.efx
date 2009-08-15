@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C98BB00BD" name="Configuraton ABE">
+    <eAnnotations xmi:id="_9f_i8TN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_9f_i8DN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E300B560285" name="ConfigurationInfo" isAbstract="true">
+      <ownedComment xmi:id="_xmkwoTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E300B560285">
+        <body>ConfigurationInfo is the base class for defining how a ManagedEntity is configured. Configurations are associated with a particular LogicalDevice using the DescribedByMgmtInfo aggregation. Configurations can define how a Resource or a Service is to be set up, and control the behavior of that Resource or Service. In general, both Resources and Services need to be configured in order to operate. (Note that this can be done at the factory or dynamically as the entity is operating.) Subclasses of the Configuration class define the detailed characteristics and behavior of how a configuration is built and deployed. 
+
+Configurations are implemented by associating the parent of this class, ManagementInfo, with the ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA9D3830171">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93E9C638A02CB?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementInfo?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4648EA0105" name="_command" visibility="public" type="_3E3F0EC000E93E3021B802AA" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E4648E700CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xnn5gzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xnn5gjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E302257019E" name="CommandAtomic">
+      <ownedComment xmi:id="_xmkwpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E302257019E">
+        <body>This is a concrete base class for representing commands that can be managed as their own atomic entities. That is, these commands are self-describing and operate in a stand-alone manner, and do not contain any sub-commands.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30233903A3" general="_3E3F0EC000E93E3021B802AA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E3021B802AA" name="Command" isAbstract="true">
+      <ownedComment xmi:id="_xmkwqTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3021B802AA">
+        <body>This is an abstract base class for representing configuration commands that can be managed.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E3021CB0092" general="_3E3F0EC000E93E300B560285"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3022130396" name="_commandComposite" visibility="public" type="_3E3F0EC000E93E3021D20145" isUnique="false" association="_3E3F0EC000E93E302212029A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xnU-nDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xnU-mzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4648EA010F" name="_configurationInfo" visibility="public" type="_3E3F0EC000E93E300B560285" isUnique="false" association="_3E3F0EC000E93E4648E700CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xnn5hjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xnn5hTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E3021D20145" name="CommandComposite">
+      <ownedComment xmi:id="_xmuhozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3021D20145">
+        <body>This is a concrete base class for representing command sets. Each command set can be represented and managed as its own entity, but also contains one or more sub-ordinate commands or command sets. In other words, this entity is not a stand-alone command; rather, it represents an aggregation of commands. Each command within this aggregation can be individually managed.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30233C022A" general="_3E3F0EC000E93E3021B802AA"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E302213038C" name="_command" visibility="public" type="_3E3F0EC000E93E3021B802AA" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E302212029A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xnU-mTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xnU-mDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E30217E00B2" name="BaseConfiguration">
+      <ownedComment xmi:id="_xmuhpzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E30217E00B2">
+        <body>This class defines a basic configuration that can be used to bootstrap the device. This will put the device into a state to enable it to be remotely managed.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30219301BD" general="_3E3F0EC000E93E300B560285"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C8E5203B4" name="GlobalConfiguration">
+      <ownedComment xmi:id="_xmuhqzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8E5203B4">
+        <body>This class defines all of the various global configuration options that are required for typical network devices.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30217200F3" general="_3E3F0EC000E93E300B560285"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C8E880362" name="devicePassword" visibility="public">
+        <ownedComment xmi:id="_xm4SozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8E880362">
+          <body>This is the password for the device. Manufacturers usually have different passwords to access different functionality. If this device has multiple passwords to access its functionality, then this password will grant access to only the most basic functionality of the device. It is analogous to the enable command of Cisco devices.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C8EF601ED" name="deviceSecretPassword" visibility="public">
+        <ownedComment xmi:id="_xm4SpjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8EF601ED">
+          <body>This password provides access to more advanced functionality of the device. It is analogous to the enable secret command of Cisco devices.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C8F590326" name="vtyPassword" visibility="public">
+        <ownedComment xmi:id="_xm4SqTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8F590326">
+          <body>This is the password for virtual terminal access.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C8F7702BB" name="snmpPassword" visibility="public">
+        <ownedComment xmi:id="_xnBckjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8F7702BB">
+          <body>This is a password that enables SNMP functionality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E3023A30072" name="CurrentConfiguration">
+      <ownedComment xmi:id="_xnBclTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3023A30072">
+        <body>This class defines the current configuration of the device.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30241202A4" general="_3E3F0EC000E93E300B560285"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93E4648E700CE" name="CommandConfigDetails" memberEnd="_3E3F0EC000E93E4648EA0105 _3E3F0EC000E93E4648EA010F">
+      <ownedComment xmi:id="_xnLNkTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4648E700CE">
+        <body>This is an aggregation class, and is used to specify the semantics of how different Command classes are used to build up a configuration or a change to a configuration.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_xneIgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4648E700CE">
+        <body>This aggregation defines the set of commands that are used to either make up a configuration or to change a configuration. The semantics of this change is conveyed using the CommandConfigDetails aggregation class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E8F210189">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E4649DE02AA" name="ccOperationType" visibility="public">
+        <ownedComment xmi:id="_xnLNlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E4649DE02AA">
+          <body>This is an enumerated integer that specifies how each of the commands in this aggregation are to be used in the associated configuration file. Values include:
+
+  0:  Forms Configuration
+  1:  Appends to Configuration
+  2:  Prepends Configuration
+  3:  Matches within Configuration
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E464A64019E" name="ccApplyState" visibility="public">
+        <ownedComment xmi:id="_xnLNmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E464A64019E">
+          <body>This is an enumerated integer that defines the state of application of the commands in this aggregation to their configuration. Values include:
+
+  0:  Not applied
+  1:  Applied, No Errors
+  2:  Rolled Back
+  3:  Applied, Some Errors Not Able to be Rolled Back
+  4: Currently Being Applied
+  5:  Will be Applied in the Future
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E464AE20195" name="ccAppliedTime" visibility="public">
+        <ownedComment xmi:id="_xnU-kjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E464AE20195">
+          <body>This is a timestamp object that defines when the Commands have been applied to the Configuration (regardless of whether they succeeded or failed).</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E302212029A" name="HasConfigCommands" memberEnd="_3E3F0EC000E93E302213038C _3E3F0EC000E93E3022130396">
+      <ownedComment xmi:id="_xnU-lTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E302212029A">
+        <body>This aggregation enables different Commands to be grouped together to form a CommandSet.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xmkwojNHEd2nE5zXHK_HsA" base_Comment="_xmkwoTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xmkwpjNHEd2nE5zXHK_HsA" base_Comment="_xmkwpTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xmuhoDNHEd2nE5zXHK_HsA" base_Comment="_xmkwqTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xmuhpDNHEd2nE5zXHK_HsA" base_Comment="_xmuhozNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xmuhqDNHEd2nE5zXHK_HsA" base_Comment="_xmuhpzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xm4SoDNHEd2nE5zXHK_HsA" base_Comment="_xmuhqzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xm4SpDNHEd2nE5zXHK_HsA" base_Comment="_xm4SozNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xm4SpzNHEd2nE5zXHK_HsA" base_Comment="_xm4SpjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xnBckDNHEd2nE5zXHK_HsA" base_Comment="_xm4SqTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xnBckzNHEd2nE5zXHK_HsA" base_Comment="_xnBckjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xnBcljNHEd2nE5zXHK_HsA" base_Comment="_xnBclTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xnU-ljNHEd2nE5zXHK_HsA" base_Comment="_xnU-lTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xneIgTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93E4648E700CE" Associaton_Name="CommandsInConfig"/>
+  <Default:Documentation xmi:id="_xnn5gDNHEd2nE5zXHK_HsA" base_Comment="_xneIgjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zWVeGjNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93E464AE20195" Type="TimeStamp"/>
+</xmi:XMI>
