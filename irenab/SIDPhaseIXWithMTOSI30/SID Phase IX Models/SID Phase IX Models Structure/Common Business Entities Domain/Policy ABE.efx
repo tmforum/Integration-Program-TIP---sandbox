@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E3F0ECE00AE" name="Policy ABE">
+    <eAnnotations xmi:id="_Lxpg8DNJEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Addendum%201POL%20Figures.efx#_3E3F0EC000E93ED9292403E4?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Addendum%201POL%20Figures?"/>
+      <references xmi:type="uml:Package" href="Policy%20Application.efx#_3E3F0EC000E93E1B4A6D0151?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application?"/>
+      <references xmi:type="uml:Package" href="Policy%20Framework.efx#_3E3F0EC000E93E1B4A79039D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework?"/>
+      <references xmi:type="uml:Package" href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93ED934800073?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities?"/>
+      <references xmi:type="uml:Package" href="Policy%20Management%20Entities.efx#_3E3F0EC000E93EAAB1E90361?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Management%20Entities?"/>
+      <references xmi:type="uml:Package" href="Poliicy%20Structure%20Entities.efx#_3E3F0EC000E93D77E60F01BD?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Lxfv8DNJEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Common%20Business%20Entities%20Domain.efx#_3E3F0EC000E93E3F0EC60106?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9Ip64FKPEd2Z__GE9qBDpQ" source="uml2.diagrams"/>
+    <ownedComment xmi:id="_vkouFzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3F0ECE00AE">
+      <body>The Policy Domain consists of a set of layered ABEs that define specifications (e.g., templates) and definitions of Policy entities that can be used in managing the behavior and definition of entities in other Domains. Policy takes three primary forms. The first is the definition of how policy is used to manage the definition, change, and configuration of other entities. The second is the definition of how policy itself is managed. The third is how applications use policies to manage entities.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Package" href="Policy%20Application.efx#_3E3F0EC000E93E1B4A6D0151?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application?"/>
+    <packagedElement xmi:type="uml:Package" href="Policy%20Framework.efx#_3E3F0EC000E93E1B4A79039D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework?"/>
+    <packagedElement xmi:type="uml:Package" href="Poliicy%20Structure%20Entities.efx#_3E3F0EC000E93D77E60F01BD?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities?"/>
+    <packagedElement xmi:type="uml:Package" href="Policy%20Management%20Entities.efx#_3E3F0EC000E93EAAB1E90361?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Management%20Entities?"/>
+    <packagedElement xmi:type="uml:Package" href="Addendum%201POL%20Figures.efx#_3E3F0EC000E93ED9292403E4?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Addendum%201POL%20Figures?"/>
+    <packagedElement xmi:type="uml:Package" href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93ED934800073?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_vkyfEDNHEd2nE5zXHK_HsA" base_Comment="_vkouFzNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
