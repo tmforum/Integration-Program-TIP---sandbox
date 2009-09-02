@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E1B4AEE01BB" name="Policy Statement Entities">
+    <eAnnotations xmi:id="_InJm8DNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_Im_18DNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Poliicy%20Structure%20Entities.efx#_3E3F0EC000E93D77E60F01BD?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_wANPxzNHEd2nE5zXHK_HsA" source="uml2.diagrams" references="_3E3F0EC000E93E5E938500E6">
+      <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93E5E938500E6" type="Class" name="Temp PolicyStmt Relationships">
+        <children xmi:id="_zwRBADNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E039F050105">
+          <children xmi:id="_zwRBAzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zwRBBDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zwRBBTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zwRBBjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zwRBBzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zwRBCDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBCTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zwRBCjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBCzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zwRBDDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBDTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zwRBATNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zwRBAjNHEd2nE5zXHK_HsA" x="4826" y="5842" width="4191" height="1524"/>
+        </children>
+        <children xmi:id="_zwRBDjNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zwRBETNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zwRBEjNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zwRBEzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zwRBFDNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zwRBFTNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zwRBFjNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBFzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zwRBGDNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBGTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zwRBGjNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zwRBGzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zwRBHDNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zwRBHTNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zwRBDzNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zwRBEDNHEd2nE5zXHK_HsA" x="5715" y="3234" width="2353" height="1456"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_wANPyTNHEd2nE5zXHK_HsA"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_zwRBHjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E5E892C02F9" source="_zwRBADNHEd2nE5zXHK_HsA" target="_zwRBDjNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zwRBITNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zwRBIzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zwRBJDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zwRBIjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zwRBHzNHEd2nE5zXHK_HsA" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zwRBIDNHEd2nE5zXHK_HsA" points="[-16, -770, 8, 1871]$[-25, -1913, 0, 728]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zwRBJTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zwRBJjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93E039F050105" name="OperatorConstraintDetails">
+      <ownedComment xmi:id="_v_A88TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E039F050105">
+        <body>This is an association class that contains the OCL expression that will be used to define which Operators can be used in this particular PolicyStatement. </body>
+      </ownedComment>
+      <ownedComment xmi:id="_wADewjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E039F050105">
+        <body>This association defines any constraints that exist between the type of operator in a PolicyStatement and the variable in the PolicyStatement. For example, if the type of PolicyVariable is IPProtocolVariable, then it makes no sense to have relational or fuzzy operators used. On the other hand, if the type of PolicyVariable is IPv4Variable, then it MAY make sense to use fuzzy operators or string matching operators since an IPv4Variable can also be a host name.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E892C02F9">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E033D530046" name="operatorConstraint" visibility="public">
+        <ownedComment xmi:id="_v_A89TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E033D530046">
+          <body>This attribute is a string that contains the specific OCL expression to define which PolicyOperators are allowed to be used in this particular PolicyStatement. Defining this as an attribute enables external applications to populate this constraint.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <memberEnd href="Policy%20Variable%20Entities.efx#_3E3F0EC000E93E039F07019E?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable/_policyOperator?"/>
+      <memberEnd href="#_3E3F0EC000E93E039F0701A0?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Statement%20Entities/PolicyOperator/_policyVariable?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02CA" name="PolicyOperator">
+      <ownedComment xmi:id="_v_A8-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02CA">
+        <body>This is a concrete class for modeling different types of operators in a PolicyStatement. By restricting the type of operator used in a PolicyStatement, one can effectively restrict the semantics of that PolicyStatement.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F182EB402F5">
+        <general xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D77E58C0262?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/Policy?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02CB" name="opType" visibility="public">
+        <ownedComment xmi:id="_v_Kt8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02CB">
+          <body>This is an enumerated integer that specifies the various types of operators that are allowed for this PolicyStatement. Values include:
+
+   1:  Match
+   2:  Greater than
+   3:  Greater than or equals
+   4:  Less than
+   5:  Less than or equals
+   6:  Equals
+   7: Not equals
+   8:  IN
+   9:  NOT IN
+ 10:  SET
+ 11: CLEAR
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_v_Kt9TNHEd2nE5zXHK_HsA">
+          <body>1</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E039F0701A0" name="_policyVariable" visibility="public" isUnique="false" association="_3E3F0EC000E93E039F050105">
+        <type xmi:type="uml:Class" href="Policy%20Variable%20Entities.efx#_3E3F0EC000E93D77E58C0298?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wANPxjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wANPxTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C0294" name="PolicyStatement" isAbstract="true">
+      <ownedComment xmi:id="_v_Kt9zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C0294">
+        <body>This class models the triplet {variable, operator, value} that is used by both the PolicyCondition and PolicyAction classes. Note that the semantics are reflected in the types of operators that are allowed to be used in each case.
+
+For conditions, we want the semantics of &quot;variable relates to value&quot;, where &quot;relates to&quot; is usually the match operator, but could also be other applicable operators (e.g., a comparison operator).
+
+For actions, we want the semantics of &quot;set variable to value&quot;. Here, the only operator allowed is the set operator.
+
+Both of these semantics are enforced using OCL.
+
+The ability to use the same basic form for writing PolicyConditions and PolicyActions greatly simplifies the design and implementation of a policy management system by enabling such statements to be automatically generated.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D77E58C0295">
+        <general xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D77E58C0262?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/Policy?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D9F7A2D0194" name="_policyVariable" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93D9F7A2B02F9">
+        <type xmi:type="uml:Class" href="Policy%20Variable%20Entities.efx#_3E3F0EC000E93D77E58C0298?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_nZ5TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_nZ5DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D9F7A340234" name="_policyValue" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93D9F7A3202BD">
+        <type xmi:type="uml:Class" href="Policy%20Value%20Entities.efx#_3E3F0EC000E93D77E58C02A7?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Value%20Entities/PolicyValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_wj0jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_wj0TNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D9F7A4503DD" name="_policyOperator" visibility="public" type="_3E3F0EC000E93D77E58C02CA" isUnique="false" aggregation="shared" association="_3E3F0EC000E93D9F7A42022A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_wj2zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_wj2jNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F182D960054" name="_policyStatementSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93F17CEEB00F5?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities/PolicyStatementSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wEYlJjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wEYlJTNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93F182D950049?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities/SpecifiesPolicyStatement?"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_3E3F0EC000E93D9F77DD02FB" name="isStatementWellFormed" visibility="public" precondition="_v_T35zNHEd2nE5zXHK_HsA" postcondition="_v_T36TNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_v_T35DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F77DD02FB">
+          <body>This method returns TRUE if this PolicyStatement is well-formed, and FALSE if it isn't. A PolicyStatement may evaluate to not well-formed if, for example, its construction is not completed.
+
+The design of the PolicyStatement is based on a single occurrence of a PolicyVariable, a PolicyOperator, and a PolicyValue, though multiple PolicyValues may be associated with a single variable. While a PolicyStatement could be designed such that it has a variable clause (e.g., the variable portion of the PolicyStatement may consist of multiple terms), this complicates the design. Furthermore, as we explore the design of the PolicyVariable and PolicyValue class hierarchies, we will see that the use of a single object for the PolicyVariable and PolicyValue enable the datatypes of each to correlate with the type of object class (e.g., subclasses of PolicyVariable and PolicyValue) that is being used. This also lends itself to a straightforward implementation of the valueConstraintInVariable association. Multiple PolicyValues can be accommodated, as long as they are of the same datatype. This is controlled by the valueConstraintInVariable association. However, if either the PolicyVariable object is replaced with a set of objects, or if the PolicyValue objects did not have to be of the same datatype), then the correlation between datatype and object class, as well as the specification of the association, would be very difficult (if not impossible).
+
+The return type is an integer, to enable success or failure of the operation to be indicated. Values are:
+
+  0:  the PolicyStatement is well-formed
+  1:  the PolicyStatement is missing a variable
+  2:  the PolicyStatement is missing an operator
+  3:  the PolicyStatement is missing a value
+  4:  the object class of the PolicyValue does not match the
+       object class of the PolicyVariable
+  5:  the opType of the PolicyOperator does not match the 
+       object class of the PolicyVariable
+  6:  the value constraint specified by the 
+       valueConstraintInVariable association has not been met
+  7:  The operator constraint specified by the
+       OperatorConstraintInVariable association has not been met
+
+
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_v_T35zNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93D9F77DD02FB">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_v_T36DNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_v_T36TNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93D9F77DD02FB">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_v_T36jNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_v_T35jNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D9F7A2B02F9" name="UsesVariable" memberEnd="_3E3F0EC000E93D9F7A2D0194 _3E3F0EC000E93D9F7A2D019E">
+      <ownedComment xmi:id="_v_nZ4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F7A2B02F9">
+        <body>This composition defines the specific PolicyVariable that this particular PolicyStatement uses.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93D9F7A2D019E" name="_policyStatement" visibility="public" type="_3E3F0EC000E93D77E58C0294" isUnique="false" association="_3E3F0EC000E93D9F7A2B02F9">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_nZ6DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_nZ5zNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D9F7A3202BD" name="UsesValue" memberEnd="_3E3F0EC000E93D9F7A340234 _3E3F0EC000E93D9F7A34023E">
+      <ownedComment xmi:id="_v_nZ6jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F7A3202BD">
+        <body>This composition defines the specific PolicyValue that this particular PolicyStatement uses.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93D9F7A34023E" name="_policyStatement" visibility="public" type="_3E3F0EC000E93D77E58C0294" isUnique="false" association="_3E3F0EC000E93D9F7A3202BD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_wj1TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_wj1DNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D9F7A42022A" name="UsesOperator" memberEnd="_3E3F0EC000E93D9F7A4503DD _3E3F0EC000E93D9F7A4503DF">
+      <ownedComment xmi:id="_v_wj1zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F7A42022A">
+        <body>This composition defines the specific PolicyOperator that this particular PolicyStatement uses.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93D9F7A4503DF" name="_policyStatement" visibility="public" type="_3E3F0EC000E93D77E58C0294" isUnique="false" association="_3E3F0EC000E93D9F7A42022A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_wj3jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_wj3TNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E0528240276" name="PolicyStatementInPolicyCondition">
+      <ownedComment xmi:id="_v_wj4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E0528240276">
+        <body>The policyConditionInPolicyRule aggregation models the binding of a PolicyStatement object to a PolicyConditionAtomic object. It is implemented as an aggregation (instead of an association) to emphasize the whole-part nature of this relationship. It is not implemented as a composition in order to enable PolicyStatements to be built independently and exist independently of PolicyConditions (and also PolicyActions).
+
+A PolicyStatement is of the form:
+
+    {variable, operator, value}
+
+which is used both in conditions as well as in actions. The difference in usage (in a condition vs. an action) is based on the values that the operator can take on, which is represented by the opType attribute of the PolicyOperator object that is part of the PolicyStatement.
+
+The PolicyStatement serves as the main body of the PolicyConditionAtomic object. This means that the design of the PolicyConditionAtomic object is simplified - the PolicyConditionAtomic object becomes an intelligent container that adds semantics to the PolicyStatement.
+</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93E0528260387" name="_policyConditionAtomic" visibility="public" isUnique="false" association="_3E3F0EC000E93E0528240276">
+        <type xmi:type="uml:Class" href="Policy%20Condition%20Entities.efx#_3E3F0EC000E93D77E58C0275?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Condition%20Entities/PolicyConditionAtomic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_6U1jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_6U1TNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+      <memberEnd href="Policy%20Condition%20Entities.efx#_3E3F0EC000E93E052826037D?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Condition%20Entities/PolicyConditionAtomic/_policyStatement?"/>
+      <memberEnd href="#_3E3F0EC000E93E0528260387?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Statement%20Entities/PolicyStatementInPolicyCondition/_policyConditionAtomic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E066CBF012B" name="PolicyStatementInPolicyAction">
+      <ownedComment xmi:id="_v_6U2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E066CBF012B">
+        <body>The PolicyStatementInPolicyAction aggregation models the binding of a PolicyStatement object to a PolicyActionAtomic object. It is implemented as an aggregation (instead of an association) to emphasize the whole-part nature of this relationship. It is not implemented as a composition in order to enable PolicyStatements to be built independently and exist independently of PolicyActions (and also PolicyConditions).
+
+A PolicyStatement is of the form:
+
+    {variable, operator, value}
+
+which is used both in conditions as well as in actions. The difference in usage (in a condition vs. an action) is based on the values that the operator can take on, which is represented by the opType attribute of the PolicyOperator object that is part of the PolicyStatement.
+
+The PolicyStatement serves as the main body of the PolicyActionAtomic object. This means that the design of the PolicyActionAtomic object is simplified - the PolicyActionAtomic object becomes an intelligent container that adds semantics to the PolicyStatement.
+</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_3E3F0EC000E93E066CC202D4" name="_policyActionAtomic" visibility="public" isUnique="false" association="_3E3F0EC000E93E066CBF012B">
+        <type xmi:type="uml:Class" href="Policy%20Action%20Entities.efx#_3E3F0EC000E93D77E58C02D7?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Action%20Entities/PolicyActionAtomic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_6U3zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_6U3jNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+      <memberEnd href="Policy%20Action%20Entities.efx#_3E3F0EC000E93E066CC202CA?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Action%20Entities/PolicyActionAtomic/_policyStatement?"/>
+      <memberEnd href="#_3E3F0EC000E93E066CC202D4?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Statement%20Entities/PolicyStatementInPolicyAction/_policyActionAtomic?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_v_Kt8DNHEd2nE5zXHK_HsA" base_Comment="_v_A8-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_Kt9DNHEd2nE5zXHK_HsA" base_Comment="_v_Kt8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_T34DNHEd2nE5zXHK_HsA" base_Comment="_v_Kt9zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_T35TNHEd2nE5zXHK_HsA" base_Comment="_v_T35DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_nZ4jNHEd2nE5zXHK_HsA" base_Comment="_v_nZ4TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_nZ6zNHEd2nE5zXHK_HsA" base_Comment="_v_nZ6jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_wj2DNHEd2nE5zXHK_HsA" base_Comment="_v_wj1zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_6U0DNHEd2nE5zXHK_HsA" base_Comment="_v_wj4DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v_6U2TNHEd2nE5zXHK_HsA" base_Comment="_v_6U2DNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_wADewTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93E039F050105" Associaton_Name="OperatorConstraintInVariable"/>
+  <Default:Documentation xmi:id="_wANPwDNHEd2nE5zXHK_HsA" base_Comment="_wADewjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Operation xmi:id="_zWVeHDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D9F77DD02FB" Exceptions="internalError, invalidArgument, timeOut"/>
+</xmi:XMI>

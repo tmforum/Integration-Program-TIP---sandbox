@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93C8CEBE701B5" name="Customer ABE">
+    <eAnnotations xmi:id="_acI2ETNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_acI2EDNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8D1698008D" name="Customer">
+      <ownedComment xmi:id="_yj-NATNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D1698008D">
+        <body>A person or organization that buys products and services from the enterprise or receives free offers or services.  This is modeled as a Party playing the role of Customer. A Customer is a type of PartyRole.  Customers can also be other service providers who resell the enterprises products, other service providers that lease the enterprise's resources for utilization by the other service provider's products and services, and so forth.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E6D611202FE">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E944600AB700BB" name="_performance" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Performance%20ABE.efx#_3E3F0EC000E9446007290232?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7XQezNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7XQejNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Performance%20ABE.efx#_3E3F0EC000E944600AB600EA?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Performance%20ABE/PerformanceMeasuredForCustomer?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D376502E0" name="ID" visibility="public">
+        <ownedComment xmi:id="_yj-NBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D376502E0">
+          <body>A unique identifier.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D37CB00C0" name="customerStatus" visibility="public">
+        <ownedComment xmi:id="_yj-NCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D37CB00C0">
+          <body>The current condition of a customer, such as active, inactive, prospective.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D408B00E9" name="customerRank" visibility="public">
+        <ownedComment xmi:id="_ykH-AjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D408B00E9">
+          <body>Degree of importance relative to other customers.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_IGpDsAf0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D1A45000E" name="_customerCreditProfile" visibility="public" type="_3E3F0EC000E93C8D1A1B020D" isUnique="false" association="_3E3F0EC000E93C8D1A4301CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylwVuzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylwVujNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E41D50299" name="_customerQuote" visibility="public" isUnique="false" association="_3E3F0EC000E93C8E41D40310">
+        <type xmi:type="uml:Class" href="Customer%20Interaction%20ABE.efx#_3E3F0EC000E93C1E16310198?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Interaction%20ABE/CustomerQuote?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylwVwjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylwVwTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E644E00E1" name="_customerAccount" visibility="public" type="_3E3F0EC000E93C8D16D901C7" isUnique="false" association="_3E3F0EC000E93C8E643F00AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymD3szNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ymD3sjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93E6E9F3A0052" name="CustomerAccountContact">
+      <ownedComment xmi:id="_ykH-BTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E6E9F3A0052">
+        <body>An individual or organization used as a contact point for a CustomerAccount and accessed via some contact medium.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E5CB40273" name="contactType" visibility="public">
+        <ownedComment xmi:id="_ykH-CDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E5CB40273">
+          <body>Identifies the relationship of the contact to the account.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E61DA0033" name="validFor" visibility="public">
+        <ownedComment xmi:id="_ykRH8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E61DA0033">
+          <body>The period for which the contact is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E6EA09101FA" name="_contactMedium" visibility="public" isUnique="false" association="_3E3F0EC000E93E6EA08901D0">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C23250A0154?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Contact/ContactMedium?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl6GvjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yl6GvTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <memberEnd href="#_3E3F0EC000E93E6E9F3C029A?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustomerAccount/_partyRole?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93E6E9F3C02D6?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole/_customerAccount?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93C8D17D700E6" name="CustomerAccountRelationship" memberEnd="_3E3F0EC000E93C8D17D9031A _3E3F0EC000E93C8D17D9032E">
+      <ownedComment xmi:id="_ykRH9TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D17D700E6">
+        <body>A significant connection between two CustomerAccounts.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E62D4026E" name="relationshipType" visibility="public">
+        <ownedComment xmi:id="_ykRH-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E62D4026E">
+          <body>Defines the type of connection between two CustomerAccounts.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E62EC0236" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yka48jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E62EC0236">
+          <body>The period for which the relationship is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8D1A1B020D" name="CustomerCreditProfile">
+      <ownedComment xmi:id="_yka49TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D1A1B020D">
+        <body>An outline of a Customer's credit worthiness.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E770B03B9" name="ID" visibility="public">
+        <ownedComment xmi:id="_ykkC4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E770B03B9">
+          <body>The identifier of the credit profile.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E7734020A" name="creditProfileDate" visibility="public">
+        <ownedComment xmi:id="_ykkC4zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E7734020A">
+          <body>The date the profile was established.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C97C74C0189" name="validFor" visibility="public">
+        <ownedComment xmi:id="_ykkC5jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C97C74C0189">
+          <body>The period for which the profile is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94252BD67021E" name="creditRiskRating" visibility="public">
+        <ownedComment xmi:id="_yktz4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94252BD67021E">
+          <body>This is an integer whose value is used to rate the risk of this Customer paying late or defaulting versus paying on time.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94252BD6F028E" name="creditScore" visibility="public">
+        <ownedComment xmi:id="_yktz5DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94252BD6F028E">
+          <body>A measure of a persons or organizations creditworthiness calculated on the basis of a combination of factors such as their income and credit history.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E78B0001B" name="_custCreditProfileReference" visibility="public" type="_3E3F0EC000E93C8E786B038D" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C8E78AF006A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylnLzjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylnLzTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D1A450022" name="_customer" visibility="public" type="_3E3F0EC000E93C8D1698008D" isUnique="false" association="_3E3F0EC000E93C8D1A4301CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylwVvjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylwVvTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8D1B050137" name="CustomerAccountTaxExemption">
+      <ownedComment xmi:id="_yktz5zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D1B050137">
+        <body>Proof of freedom from taxes imposed by a taxing jurisdiction.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D3D5701D1" name="issuingJurisdiction" visibility="public">
+        <ownedComment xmi:id="_yk3k4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D3D5701D1">
+          <body>The name of the taxing jurisdiction for which taxes are exempt.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D3D780156" name="certificateNumber" visibility="public">
+        <ownedComment xmi:id="_yk3k5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D3D780156">
+          <body>The identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E65010337" name="validFor" visibility="public">
+        <ownedComment xmi:id="_yk3k6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E65010337">
+          <body>The period for which the exemption is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8E786B038D" name="CustCreditProfileReference">
+      <ownedComment xmi:id="_ylAu0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E786B038D">
+        <body>A source of information that helps define a Customer's credit worthiness.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E792000C7" name="financialInstitutionName" visibility="public">
+        <ownedComment xmi:id="_ylAu1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E792000C7">
+          <body>The name of the financial institution that holds the referenced account.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E793E0098" name="financialInstitutionAccoutNumber" visibility="public">
+        <ownedComment xmi:id="_ylAu2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E793E0098">
+          <body>The financial institution account number that identifies the customer account at the financial institution.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C98C5F00397" name="financialInstitutionAccountType" visibility="public">
+        <ownedComment xmi:id="_ylKf0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C98C5F00397">
+          <body>The type of financial institution account.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E78B0002F" name="_customerCreditProfile" visibility="public" type="_3E3F0EC000E93C8D1A1B020D" isUnique="false" association="_3E3F0EC000E93C8E78AF006A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylnL0TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylnL0DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94251AC6F03CF" name="_partyRole" visibility="public" isUnique="false" association="_3E3F0EC000E94251AC6E005B">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymD3vTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ymD3vDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E942D8237B00F8" name="_partyRole1" visibility="public" isUnique="false" association="_3E3F0EC000E942D8237A00B0">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymD3xDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ymD3wzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C8D16D901C7" name="CustomerAccount">
+      <ownedComment xmi:id="_ylKf1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D16D901C7">
+        <body>An arrangement that a customer has with an enterprise that provides products to the customer.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94086F3D703D0" name="_customerAccountInteractionRole" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E94086F35F00FD?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/CustomerAccountInteractionRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUBjtjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUBjtTNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E94086F3D6020C?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/CustomerAccountInteractionRoleIdentifiedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D38F9010B" name="ID" visibility="public">
+        <ownedComment xmi:id="_ylKf2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D38F9010B">
+          <body>A unique identifier.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E63F502CD" name="name" visibility="public">
+        <ownedComment xmi:id="_ylUQ0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8E63F502CD">
+          <body>The name of the account.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D3F0103C8" name="accountType" visibility="public">
+        <ownedComment xmi:id="_ylUQ1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D3F0103C8">
+          <body>A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D391F00C9" name="accountStatus" visibility="public">
+        <ownedComment xmi:id="_yldawjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C8D391F00C9">
+          <body>The condition of the account, such as due, paid, in arrears.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9430351E602EF" name="creditLimit" visibility="public">
+        <ownedComment xmi:id="_yldaxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9430351E602EF">
+          <body>The maximum amount of money that may be charged on a account.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_IGpDsAf0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Long?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9430351F20383" name="pin" visibility="public">
+        <ownedComment xmi:id="_ylnLwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9430351F20383">
+          <body>A multidigit personal identification numbe that is used by a Customer to gain access to a CustomerAccount at an ATM, a computer, or a telephone system, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E7A2E02CE" name="_customerAccountTaxExemption" visibility="public" type="_3E3F0EC000E93C8D1B050137" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C8E7A2D0380">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylnLxzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylnLxjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D17D9031A" name="_customerAccount" visibility="public" type="_3E3F0EC000E93C8D16D901C7" isUnique="false" association="_3E3F0EC000E93C8D17D700E6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylwVtDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylwVszNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8D17D9032E" name="_customerAccount1" visibility="public" type="_3E3F0EC000E93C8D16D901C7" isUnique="false" association="_3E3F0EC000E93C8D17D700E6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylwVtzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylwVtjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E6E9F3C029A" name="_partyRole" visibility="public" isUnique="false" association="_3E3F0EC000E93E6E9F3A0052">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl6GtzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yl6GtjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C8E644E0113" name="_customer" visibility="public" type="_3E3F0EC000E93C8D1698008D" isUnique="false" association="_3E3F0EC000E93C8E643F00AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymD3tjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ymD3tTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CFF4190336" name="_appliedCustomerBillingRate" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Applied%20Customer%20Billing%20Rate.efx#_3E3F0EC000E941CAC71B0187?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingRate?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKijNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKiTNHEd2nE5zXHK_HsA"/>
+        <association href="Applied%20Customer%20Billing%20Rate.efx#_3E3F0EC000E941CFF4190142?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/CustomerAccountChargedBasedUpon?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941D0164B0325" name="_customerBill" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941CAC1D6038E?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/CustomerBill?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ypowITNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ypowIDNHEd2nE5zXHK_HsA"/>
+        <association href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941D0164B0160?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/CustomerBillCreatedFor?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941D85162036B" name="_customerBillSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941D0232700FE?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/CustomerBillSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ypowNjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ypowNTNHEd2nE5zXHK_HsA"/>
+        <association href="Customer%20Bill%20ABE.efx#_3E3F0EC000E941D8516102CE?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/BillSpecifiedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA898D027F" name="_customerAccountChargeSum" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA624F028B?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerAccountChargeSum?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrkp4jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrkp4TNHEd2nE5zXHK_HsA"/>
+        <association href="Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA898C0398?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerAccountClassifies?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA895B0041" name="_customerAccountChargeSumSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA60F303D7?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerAccountChargeSumSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtz4DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtz3zNHEd2nE5zXHK_HsA"/>
+        <association href="Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA895A0189?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustAcctChargeSumSpecDescribesHowToAccumulate?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9408E8CDB025B" name="_customerAccountProductInvolvement" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E9408E8AAB035A?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/CustomerAccountProductInvolvement?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zP7UJjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zP7UJTNHEd2nE5zXHK_HsA"/>
+        <association href="../Product%20Domain/Product%20ABE.efx#_3E3F0EC000E9408E8CDA00B5?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/CustomerAccountPays?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C8E7A2D0380" name="CustomerExemptedFromTaxesVia" memberEnd="_3E3F0EC000E93C8E7A2E02CE _3E3F0EC000E93C8E7A2E02EC">
+      <ownedEnd xmi:id="_3E3F0EC000E93C8E7A2E02EC" name="_customerAccount" visibility="public" type="_3E3F0EC000E93C8D16D901C7" isUnique="false" association="_3E3F0EC000E93C8E7A2D0380">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylnLyjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylnLyTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C8E78AF006A" name="CustCreditProfileIncludes" memberEnd="_3E3F0EC000E93C8E78B0001B _3E3F0EC000E93C8E78B0002F"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C8D1A4301CE" name="CustomerStabilityMeasuredBy" memberEnd="_3E3F0EC000E93C8D1A45000E _3E3F0EC000E93C8D1A450022"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C8E41D40310" name="CustomerRequests">
+      <memberEnd href="#_3E3F0EC000E93C8E41D50299?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/Customer/_customerQuote?"/>
+      <memberEnd href="Customer%20Interaction%20ABE.efx#_3E3F0EC000E93C8E41D502AD?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20Interaction%20ABE/CustomerQuote/_customer?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E6EA08901D0" name="CustAcctContactAccessedVia">
+      <memberEnd href="#_3E3F0EC000E93E6EA09101FA?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustomerAccountContact/_contactMedium?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93E6EA0910222?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Contact/ContactMedium/_customerAccountContact?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C8E643F00AD" name="CustomerPosseses" memberEnd="_3E3F0EC000E93C8E644E00E1 _3E3F0EC000E93C8E644E0113"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94251AC6E005B" name="CreditReferenceSuppliedBy">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E94251AC6F03CD?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole/_custCreditProfileReference?"/>
+      <memberEnd href="#_3E3F0EC000E94251AC6F03CF?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustCreditProfileReference/_partyRole?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E942D8237A00B0" name="FinancialinstituteContactProvidedFor">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E942D8237B00ED?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole/_custCreditProfileReference1?"/>
+      <memberEnd href="#_3E3F0EC000E942D8237B00F8?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustCreditProfileReference/_partyRole1?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yj-NAjNHEd2nE5zXHK_HsA" base_Comment="_yj-NATNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yj-NBjNHEd2nE5zXHK_HsA" base_Comment="_yj-NBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ykH-ADNHEd2nE5zXHK_HsA" base_Comment="_yj-NCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ykH-AzNHEd2nE5zXHK_HsA" base_Comment="_ykH-AjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yka49jNHEd2nE5zXHK_HsA" base_Comment="_yka49TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ykkC4TNHEd2nE5zXHK_HsA" base_Comment="_ykkC4DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ykkC5DNHEd2nE5zXHK_HsA" base_Comment="_ykkC4zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ykkC5zNHEd2nE5zXHK_HsA" base_Comment="_ykkC5jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yktz4jNHEd2nE5zXHK_HsA" base_Comment="_yktz4TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yktz5TNHEd2nE5zXHK_HsA" base_Comment="_yktz5DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yk3k4DNHEd2nE5zXHK_HsA" base_Comment="_yktz5zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yk3k4zNHEd2nE5zXHK_HsA" base_Comment="_yk3k4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yk3k5jNHEd2nE5zXHK_HsA" base_Comment="_yk3k5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylAu0DNHEd2nE5zXHK_HsA" base_Comment="_yk3k6DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylAu0zNHEd2nE5zXHK_HsA" base_Comment="_ylAu0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylAu1jNHEd2nE5zXHK_HsA" base_Comment="_ylAu1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylKf0DNHEd2nE5zXHK_HsA" base_Comment="_ylAu2DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylKf0zNHEd2nE5zXHK_HsA" base_Comment="_ylKf0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylKf1jNHEd2nE5zXHK_HsA" base_Comment="_ylKf1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylUQ0DNHEd2nE5zXHK_HsA" base_Comment="_ylKf2DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylUQ0zNHEd2nE5zXHK_HsA" base_Comment="_ylUQ0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yldawDNHEd2nE5zXHK_HsA" base_Comment="_ylUQ1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yldawzNHEd2nE5zXHK_HsA" base_Comment="_yldawjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylnLwDNHEd2nE5zXHK_HsA" base_Comment="_yldaxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ylnLwzNHEd2nE5zXHK_HsA" base_Comment="_ylnLwjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_ylwVsTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93C8D17D700E6" Associaton_Name="CustAccountReferences"/>
+  <Rose:Rose_AssociationClass xmi:id="_yl6GtDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93E6E9F3A0052" Associaton_Name="CustAcctContactedVia"/>
+  <Rose:Rose_Property xmi:id="_zV4yJzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E62D4026E" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zV4yLTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8D38F9010B" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWCjIDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E7734020A" Type="date"/>
+  <Rose:Rose_Property xmi:id="_zWMUITNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E63F502CD" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWMUKjNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E770B03B9" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWVeHTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C98C5F00397" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWfPGzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8D391F00C9" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWoZCjNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E793E0098" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWyKAjNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8D3F0103C8" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWyKAzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E5CB40273" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXYnADNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8E792000C7" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXYnBDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8D3D780156" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXrh7DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C8D3D5701D1" Type="string"/>
+</xmi:XMI>

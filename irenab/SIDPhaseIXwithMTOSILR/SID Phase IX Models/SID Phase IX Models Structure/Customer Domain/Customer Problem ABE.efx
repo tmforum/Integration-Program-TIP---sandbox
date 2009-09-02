@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E942D2C2370341" name="Customer Problem ABE">
+    <eAnnotations xmi:id="_CZFQQTNjEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_CZFQQDNjEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C1A7B9C00F6" name="Customer Problem">
+      <ownedComment xmi:id="_ys6GlDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C1A7B9C00F6">
+        <body>An account of an event regarding a problem or difficulting with a product reported by a party playing a role.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_ys6GlTNHEd2nE5zXHK_HsA" base_Comment="_ys6GlDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

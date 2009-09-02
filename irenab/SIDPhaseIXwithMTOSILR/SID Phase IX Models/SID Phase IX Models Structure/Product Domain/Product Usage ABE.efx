@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E941C6C9C60191" name="Product Usage ABE">
+    <eAnnotations xmi:id="_DUNEoTN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_DUNEoDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6C47E0331" name="ProductUsageSpec" isAbstract="true">
+      <ownedComment xmi:id="_zTDglDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6C47E0331">
+        <body>A detailed description of a product usage event. It represents customer's transaction as a whole or its autonomously billable part.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6C48E0085">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941C179740075?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Usage%20ABE/UsageSpecification?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6D3E701BE" name="_productSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E941C6D3E60342">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTgMgjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTgMgTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214A9B201F8" name="_compositeProductUsageSpec" visibility="public" type="_3E3F0EC000E941C6CB1F0030" isUnique="false" association="_3E3F0EC000E94214A9B10206">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTgMpTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTgMpDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6DD58031D" name="ProductBundleUsage">
+      <ownedComment xmi:id="_zTDgmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6DD58031D">
+        <body>A detailed product bundle usage event, It is comprised of other ProductUsage(s), that may be either ProductBundleUsage(s) or ProductComponentUsage(s).</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6DD790291" general="_3E3F0EC000E941C6E1CA00E8"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214A9F80233" name="_productUsage" visibility="public" type="_3E3F0EC000E941C6E1CA00E8" isUnique="false" aggregation="shared" association="_3E3F0EC000E94214A9F7035C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9gzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9gjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214ABBD0333" name="_productBundle" visibility="public" isUnique="false" association="_3E3F0EC000E94214ABBD0082">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C631C870327?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductBundle?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9lDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9kzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6E1CA00E8" name="ProductUsage" isAbstract="true">
+      <ownedComment xmi:id="_zTNRkzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6E1CA00E8">
+        <body>An occurrence of employing a Product for its intended purpose.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6EED8023C">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Usage%20ABE.efx#_3E3F0EC000E941C175ED0356?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Usage%20ABE/Usage?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6F68A0132" name="_product" visibility="public" isUnique="false" association="_3E3F0EC000E941C6F6890249">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C5DB98B03E2?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTXCoDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTXCnzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214A9F80235" name="_productBundleUsage" visibility="public" type="_3E3F0EC000E941C6DD58031D" isUnique="false" association="_3E3F0EC000E94214A9F7035C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9hjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9hTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16zjoVIMEd2BeOP6juF0pQ" name="appliedcustomerbillingproductusagerate" visibility="public">
+        <type xmi:type="uml:Class" href="../Customer%20Domain/Applied%20Customer%20Billing%20Rate.efx#_3E3F0EC000E941CAD81F032B?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingProductUsageRate?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6nWyUVIMEd2BeOP6juF0pQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6nWyUFIMEd2BeOP6juF0pQ"/>
+        <association href="../Customer%20Domain/Applied%20Customer%20Billing%20Rate.efx#_16zjoFIMEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedUsageRateRepresentsRated?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_C9hbgFKbEd2Z__GE9qBDpQ" name="serviceusage" visibility="private">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Usage%20ABE.efx#_3E3F0EC000E941C2ED0102D6?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ServiceUsage?"/>
+        <association href="../Service%20Domain/Service%20Usage%20ABE.efx#_C9XqgFKbEd2Z__GE9qBDpQ?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ProductUsageBasedOn?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6DD3E02BE" name="ProductComponentUsage">
+      <ownedComment xmi:id="_zTNRlzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6DD3E02BE">
+        <body>A detailed product component usage event.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6DD7403BA" general="_3E3F0EC000E941C6E1CA00E8"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6F51E0160" name="_resourceUsage" visibility="public" isUnique="false" association="_3E3F0EC000E941C6F5180112">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Usage%20ABE.efx#_3E3F0EC000E941C2ECF903C2?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsage?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTgMlzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTgMljNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214AC02011C" name="_productComponent" visibility="public" isUnique="false" association="_3E3F0EC000E94214AC01016A">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C631C91005A?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductComponent?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9ijNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9iTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WSizoFKUEd2Z__GE9qBDpQ" name="serviceusage" visibility="private">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Usage%20ABE.efx#_3E3F0EC000E941C2ED0102D6?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ServiceUsage?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aYD3gVKUEd2Z__GE9qBDpQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aYD3gFKUEd2Z__GE9qBDpQ"/>
+        <association href="../Service%20Domain/Service%20Usage%20ABE.efx#_WSZpsFKUEd2Z__GE9qBDpQ?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ServiceUsageGuidedTo?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6CB1F0030" name="CompositeProductUsageSpec">
+      <ownedComment xmi:id="_zTXCkzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6CB1F0030">
+        <body>A detailed description of the usage of a Product, specified by CompositeProductSpecification. It is formed by aggregating other ProductUsageSpec(s), which may be either Composite or Atomic ProductUsageSpec(s) or Atomic ProductUsageSpec(s).</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6CB2B026F" general="_3E3F0EC000E941C6C47E0331"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214A9B201F6" name="_productUsageSpec" visibility="public" type="_3E3F0EC000E941C6C47E0331" isUnique="false" aggregation="shared" association="_3E3F0EC000E94214A9B10206">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTgMojNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTgMoTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214ABB101E9" name="_compositeProductSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E94214ABB00360">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DBA400017?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/CompositeProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9nzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9njNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941C6CB0B0324" name="AtomicProductUsageSpec">
+      <ownedComment xmi:id="_zTXClzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941C6CB0B0324">
+        <body>A detailed description of the usage of a product, described by AtomicProductSpecification</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941C6CB1C03AC" general="_3E3F0EC000E941C6C47E0331"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6D36F01BD" name="_resourceUsageSpec" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E941C6D36E03B1">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Usage%20ABE.efx#_3E3F0EC000E941C2DA1503B7?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTgMhjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTgMhTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214ABE8015D" name="_atomicProductSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E94214ABE7013C">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93D6B84E40021?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/AtomicProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9mzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9mjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G_sUoVKUEd2Z__GE9qBDpQ" name="serviceusagespec" visibility="private" aggregation="shared" association="_G_sUoFKUEd2Z__GE9qBDpQ">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Usage%20ABE.efx#_3E3F0EC000E941C2E6050109?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ServiceUsageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G_sUo1KUEd2Z__GE9qBDpQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G_sUolKUEd2Z__GE9qBDpQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941C6F6890249" name="DescribesUsageOfProduct">
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E941C6F68A0130?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product/_productUsage?"/>
+      <memberEnd href="#_3E3F0EC000E941C6F68A0132?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductUsage/_product?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941C6D3E60342" name="ProdUsageSpecDescribes">
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E941C6D3E701BC?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_productUsageSpec?"/>
+      <memberEnd href="#_3E3F0EC000E941C6D3E701BE?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductUsageSpec/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941C6D36E03B1" name="ResourceUsageSpecParticipatesIn">
+      <memberEnd href="#_3E3F0EC000E941C6D36F01BD?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/AtomicProductUsageSpec/_resourceUsageSpec?"/>
+      <memberEnd href="../Resource%20Domain/Resource%20Usage%20ABE.efx#_3E3F0EC000E941C6D36F01BF?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsageSpec/_atomicProductUsageSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941C6F5180112" name="ResourceUsageGuidedToProdCompUsage">
+      <memberEnd href="../Resource%20Domain/Resource%20Usage%20ABE.efx#_3E3F0EC000E941C6F51E0151?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Usage%20ABE/ResourceUsage/_productComponentUsage?"/>
+      <memberEnd href="#_3E3F0EC000E941C6F51E0160?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductComponentUsage/_resourceUsage?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214A9B10206" name="CompositeProductUsageSpecComprisedOf" memberEnd="_3E3F0EC000E94214A9B201F6 _3E3F0EC000E94214A9B201F8"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214A9F7035C" name="ProductBundleUsageComprisedOf" memberEnd="_3E3F0EC000E94214A9F80233 _3E3F0EC000E94214A9F80235"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214AC01016A" name="DescribesUsageOfProductComponent">
+      <memberEnd href="#_3E3F0EC000E94214AC02011C?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductComponentUsage/_productComponent?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E94214AC02012C?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductComponent/_productComponentUsage?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214ABBD0082" name="DescribesUsageOfProductBundle">
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E94214ABBD0331?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductBundle/_productBundleUsage?"/>
+      <memberEnd href="#_3E3F0EC000E94214ABBD0333?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductBundleUsage/_productBundle?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214ABE7013C" name="AtomicProdUsageSpecDescribes">
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E94214ABE8015B?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/AtomicProductSpecification/_atomicProductUsageSpec?"/>
+      <memberEnd href="#_3E3F0EC000E94214ABE8015D?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/AtomicProductUsageSpec/_atomicProductSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94214ABB00360" name="CompProdSpecUsageDescribes">
+      <memberEnd href="#_3E3F0EC000E94214ABB101E9?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/CompositeProductUsageSpec/_compositeProductSpecification?"/>
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E94214ABB101F9?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/CompositeProductSpecification/_compositeProductUsageSpec?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G_sUoFKUEd2Z__GE9qBDpQ" name="ServiceUsageSpecParticipatesIn">
+      <memberEnd href="#_G_sUoVKUEd2Z__GE9qBDpQ?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/AtomicProductUsageSpec/serviceusagespec?"/>
+      <memberEnd href="../Service%20Domain/Service%20Usage%20ABE.efx#_G_1ekFKUEd2Z__GE9qBDpQ?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Usage%20ABE/ServiceUsageSpec/atomicproductusagespec?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zTDglTNHEd2nE5zXHK_HsA" base_Comment="_zTDglDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zTNRkDNHEd2nE5zXHK_HsA" base_Comment="_zTDgmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zTNRlDNHEd2nE5zXHK_HsA" base_Comment="_zTNRkzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zTXCkDNHEd2nE5zXHK_HsA" base_Comment="_zTNRlzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zTXClDNHEd2nE5zXHK_HsA" base_Comment="_zTXCkzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zTXCmDNHEd2nE5zXHK_HsA" base_Comment="_zTXClzNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
