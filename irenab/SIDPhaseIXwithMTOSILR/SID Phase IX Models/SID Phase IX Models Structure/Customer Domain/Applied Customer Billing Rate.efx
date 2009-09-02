@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E941D002F100C1" name="Applied Customer Billing Rate ABE">
+    <eAnnotations xmi:id="_YLAg8DNiEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD7C1023E" name="AppliedCustomerBillingCharge" isAbstract="true">
+      <ownedComment xmi:id="_ymNBqDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD7C1023E">
+        <body>An amount, usually of money, for which a person or organization is financially liable.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD7F100C8" general="_3E3F0EC000E941CAD61C0398"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CBDB960091" name="AppliedCustomerBillingAllowance">
+      <ownedComment xmi:id="_ymWyozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CBDB960091">
+        <body>An applied amount, usually of money, deducted from the charge for a Product as a discount or in exchange for something. The applied amount could also be a number of free units, such as minutes, applied to usage.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CBDBAE0331" general="_3E3F0EC000E941CBDACF034B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD7CF02FA" name="AppliedCustomerBillingCredit" isAbstract="true">
+      <ownedComment xmi:id="_ymWypzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD7CF02FA">
+        <body>A credit assigned to the customer's account in the course or for the purpose of the billing process</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD7EE01A3" general="_3E3F0EC000E941CAD61C0398"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CBDB75038E" name="AppliedCustomerBillingDiscount">
+      <ownedComment xmi:id="_ymWyqzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CBDB75038E">
+        <body>AppliedCustomerBillingDiscount
+A reduction in the price of a Product that is applied to reduce the associated charge.
+
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CBDBA20302" general="_3E3F0EC000E941CBDACF034B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CBDACF034B" name="AppliedCustomerBillingProductAlteration" isAbstract="true">
+      <ownedComment xmi:id="_ymgjozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CBDACF034B">
+        <body>A credit that is applied in order to reduce the associated charge.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CBDAE20252" general="_3E3F0EC000E941CAD7CF02FA"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94213B0080200" name="_appliedCustomerBillingRate" visibility="public" type="_3E3F0EC000E941CAC71B0187" isUnique="false" association="_3E3F0EC000E94213B00801FE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKmzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKmjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CUSo0VINEd2BeOP6juF0pQ" name="prodpricealteration" visibility="public" association="_CUSo0FINEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Price%20ABE.efx#_3E3F0EC000E941C833680225?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProdPriceAlteration?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JJMEEVINEd2BeOP6juF0pQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JJMEEFINEd2BeOP6juF0pQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD804027F" name="AppliedCustomerBillingProductCharge" isAbstract="true">
+      <ownedComment xmi:id="_ymgjpzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD804027F">
+        <body>A charge applied to a product.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD81A001E" general="_3E3F0EC000E941CAD7C1023E"/>
+      <ownedAttribute xmi:id="_OtJRUlIMEd2BeOP6juF0pQ" name="prodpricecharge" visibility="public" association="_OtJRUFIMEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Price%20ABE.efx#_3E3F0EC000E941C8335301C7?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProdPriceCharge?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD81F032B" name="AppliedCustomerBillingProductUsageRate">
+      <ownedComment xmi:id="_ymptkTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD81F032B">
+        <body>A rated usage event typically produced by a rating engine.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD832007C" general="_3E3F0EC000E941CAD804027F"/>
+      <ownedAttribute xmi:id="_168tkFIMEd2BeOP6juF0pQ" name="productusage" visibility="private" association="_16zjoFIMEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Usage%20ABE.efx#_3E3F0EC000E941C6E1CA00E8?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductUsage?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAC71B0187" name="AppliedCustomerBillingRate" isAbstract="true">
+      <ownedComment xmi:id="_ymptlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAC71B0187">
+        <body>A charge or a credit assigned to the customer's account in the course or for the purpose of the billing process. Subclasses further define these elements.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CACE360134" name="date" visibility="public">
+        <ownedComment xmi:id="_ymptmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CACE360134">
+          <body>A date of creation.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_FgL-0Af0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Date?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CFCA4F002A" name="quantity" visibility="public">
+        <ownedComment xmi:id="_ymzekjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CFCA4F002A">
+          <body>A unit (for example, US Dollars) and number of the applied rate.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C4237620112?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/Money?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CACE6C03A7" name="description" visibility="public">
+        <ownedComment xmi:id="_ymzelTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CACE6C03A7">
+          <body>A textual description.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CAD6390399" name="_compositeAppliedCustomerBillingRate" visibility="public" type="_3E3F0EC000E941CAD607004B" isUnique="false" association="_3E3F0EC000E941CAD63901A5">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynGZizNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynGZijNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CFF4190338" name="_customerAccount" visibility="public" isUnique="false" association="_3E3F0EC000E941CFF4190142">
+        <type xmi:type="uml:Class" href="Customer%20ABE.efx#_3E3F0EC000E93C8D16D901C7?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustomerAccount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKjTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKjDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941D0085E009F" name="_appliedCustomerBillingTaxRate" visibility="public" type="_3E3F0EC000E941D006F40259" isUnique="false" association="_3E3F0EC000E941D0085D00DE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKkTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKkDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94213B00801FF" name="_appliedCustomerBillingProductAlteration" visibility="public" type="_3E3F0EC000E941CBDACF034B" isUnique="false" association="_3E3F0EC000E94213B00801FE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKmDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKlzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD61C0398" name="AtomicAppliedCustomerBillingRate" isAbstract="true">
+      <ownedComment xmi:id="_ymzemDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD61C0398">
+        <body>A single charge or a credit.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD6280202" general="_3E3F0EC000E941CAC71B0187"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CBDAB5031B" name="AppliedCustomerBillingRebate">
+      <ownedComment xmi:id="_ym8ogzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CBDAB5031B">
+        <body>An amount, usually of money, which is paid back to a customer's account, for example, because a customer is entitled to a refund. </body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CBDAC1027F" general="_3E3F0EC000E941CAD7CF02FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941CAD607004B" name="CompositeAppliedCustomerBillingRate">
+      <ownedComment xmi:id="_ym8ohzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941CAD607004B">
+        <body>A sum of one or more other AppliedCustomerBillingRates formed by aggregating other AppliedCustomerBillingRates, which may be either Composite or Atomic AppliedCustomerBillingRates.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941CAD617033A" general="_3E3F0EC000E941CAC71B0187"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941CAD6390389" name="_appliedCustomerBillingRate" visibility="public" type="_3E3F0EC000E941CAC71B0187" isUnique="false" aggregation="shared" association="_3E3F0EC000E941CAD63901A5">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynGZiDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynGZhzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E941D006F40259" name="AppliedCustomerBillingTaxRate">
+      <ownedComment xmi:id="_ym8oizNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941D006F40259">
+        <body>An amount of money levied on the price of a Product by a legislative body.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E941D007360180" general="_3E3F0EC000E941CAD61C0398"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941D008270282" name="taxCategory" visibility="public">
+        <ownedComment xmi:id="_ynGZgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E941D008270282">
+          <body>A categorization of the tax rate.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941D0085E00A1" name="_appliedCustomerBillingRate" visibility="public" type="_3E3F0EC000E941CAC71B0187" isUnique="false" association="_3E3F0EC000E941D0085D00DE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynQKlDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynQKkzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941CAD63901A5" name="CompositeAppliedRateComprisedOf" memberEnd="_3E3F0EC000E941CAD6390389 _3E3F0EC000E941CAD6390399"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941CFF4190142" name="CustomerAccountChargedBasedUpon">
+      <memberEnd href="Customer%20ABE.efx#_3E3F0EC000E941CFF4190336?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Customer%20ABE/CustomerAccount/_appliedCustomerBillingRate?"/>
+      <memberEnd href="#_3E3F0EC000E941CFF4190338?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingRate/_customerAccount?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E941D0085D00DE" name="AppliedTaxRateRefersTo" memberEnd="_3E3F0EC000E941D0085E009F _3E3F0EC000E941D0085E00A1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94213B00801FE" name="AppliedCreditRefersTo" memberEnd="_3E3F0EC000E94213B00801FF _3E3F0EC000E94213B0080200"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CUSo0FINEd2BeOP6juF0pQ" name="AppliedProductAlterationAmountIsDefinedBy">
+      <memberEnd href="#_CUSo0VINEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingProductAlteration/prodpricealteration?"/>
+      <memberEnd href="../Product%20Domain/Product%20Price%20ABE.efx#_CUSo0lINEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProdPriceAlteration/appliedcustomerbillingproductalteration?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OtJRUFIMEd2BeOP6juF0pQ" name="AppliedProductChargePriceIsDefinedBy">
+      <memberEnd href="../Product%20Domain/Product%20Price%20ABE.efx#_OtJRUVIMEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProdPriceCharge/appliedcustomerbillingproductcharge?"/>
+      <memberEnd href="#_OtJRUlIMEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingProductCharge/prodpricecharge?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_16zjoFIMEd2BeOP6juF0pQ" name="AppliedUsageRateRepresentsRated">
+      <memberEnd href="../Product%20Domain/Product%20Usage%20ABE.efx#_16zjoVIMEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Usage%20ABE/ProductUsage/appliedcustomerbillingproductusagerate?"/>
+      <memberEnd href="#_168tkFIMEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Customer%20Domain/Applied%20Customer%20Billing%20Rate%20ABE/AppliedCustomerBillingProductUsageRate/productusage?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_ymWyoDNHEd2nE5zXHK_HsA" base_Comment="_ymNBqDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymWypDNHEd2nE5zXHK_HsA" base_Comment="_ymWyozNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymWyqDNHEd2nE5zXHK_HsA" base_Comment="_ymWypzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymgjoDNHEd2nE5zXHK_HsA" base_Comment="_ymWyqzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymgjpDNHEd2nE5zXHK_HsA" base_Comment="_ymgjozNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymgjqDNHEd2nE5zXHK_HsA" base_Comment="_ymgjpzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymptkjNHEd2nE5zXHK_HsA" base_Comment="_ymptkTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymptljNHEd2nE5zXHK_HsA" base_Comment="_ymptlTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymzekDNHEd2nE5zXHK_HsA" base_Comment="_ymptmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymzekzNHEd2nE5zXHK_HsA" base_Comment="_ymzekjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ymzeljNHEd2nE5zXHK_HsA" base_Comment="_ymzelTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ym8ogDNHEd2nE5zXHK_HsA" base_Comment="_ymzemDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ym8ohDNHEd2nE5zXHK_HsA" base_Comment="_ym8ogzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ym8oiDNHEd2nE5zXHK_HsA" base_Comment="_ym8ohzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ynGZgDNHEd2nE5zXHK_HsA" base_Comment="_ym8oizNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_ynGZhDNHEd2nE5zXHK_HsA" base_Comment="_ynGZgzNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

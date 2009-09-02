@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E94300F9010392" name="RA Key Performance Indicator ABE">
+    <eAnnotations xmi:id="__dI8MTNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="__dI8MDNlEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Revenue%20Assurance%20ABE.efx#_3E3F0EC000E942E8EE8B00F6?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE?"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_yxYW8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94300F9010392">
+      <body>KeyPerformanceIndicators and RAObjectives that may trigger the creation of a RATroubleTicket.  KeyPerformanceIndicator are defined on RAViolations, and on other Revenue Assurance related entities, such as CustomerBills and CallDetailRecords.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9430DD88F0030" name="RevenueAssuranceKPI">
+      <ownedComment xmi:id="_yxiH4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9430DD88F0030">
+        <body>A measure of a specific aspect of the Revenue Assurance performance of an entity, such as a CustomerBill or CallDetailRecord, defined on a RevenueAssuranceViolation that may trigger the creation of a RevenueAssuranceTroubleTicket.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9430DD9C301F6">
+        <general xmi:type="uml:Class" href="RA%20Control%20ABE.efx#_3E3F0EC000E9430DD7CE03D6?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Control%20ABE/RevenueAssuranceParameter?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E9430E12CD03AF" name="_revenueAssuranceControl" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="RA%20Control%20ABE.efx#_3E3F0EC000E9430DD82203C3?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Control%20ABE/RevenueAssuranceControl?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ywowFTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ywowFDNHEd2nE5zXHK_HsA"/>
+        <association href="RA%20Control%20ABE.efx#_3E3F0EC000E9430E12CD002A?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Control%20ABE/RevenueAssuranceControlMayBeUsedAs?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9430DE21E0043" name="RevenueAssuranceKPIConsequence">
+      <ownedComment xmi:id="_yxiH5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9430DE21E0043">
+        <body>An action taken if a RevenueAssuranceObjective is not met for a RevenueAssuranceKPI.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E943173DE801D5">
+        <general xmi:type="uml:Class" href="RA%20Control%20ABE.efx#_3E3F0EC000E9430E0D8B0046?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Control%20ABE/RevenueAssuranceConsequence?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E943173E47023E" name="_revenueAssuranceTroubleTicketSpec" visibility="public" isUnique="false" association="_3E3F0EC000E943173E4601F0">
+        <type xmi:type="uml:Class" href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E9430DE0EB0091?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicketSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yxiH6zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yxiH6jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E943173E4601F0" name="RevenueAssuranceKPIConsequenceInfluences">
+      <memberEnd href="#_3E3F0EC000E943173E47023E?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Key%20Performance%20Indicator%20ABE/RevenueAssuranceKPIConsequence/_revenueAssuranceTroubleTicketSpec?"/>
+      <memberEnd href="RA%20Trouble%20Ticket%20ABE.efx#_3E3F0EC000E943173E470240?SID%20Phase%20VIII%20Models/Logical%20View/Enterprise%20Domain/Enterprise%20Risk%20ABE/Revenue%20Assurance%20ABE/RA%20Trouble%20Ticket%20ABE/RevenueAssuranceTroubleTicketSpec/_revenueAssuranceKPIConsequence?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yxYW8zNHEd2nE5zXHK_HsA" base_Comment="_yxYW8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yxiH4jNHEd2nE5zXHK_HsA" base_Comment="_yxiH4TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yxiH5jNHEd2nE5zXHK_HsA" base_Comment="_yxiH5TNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

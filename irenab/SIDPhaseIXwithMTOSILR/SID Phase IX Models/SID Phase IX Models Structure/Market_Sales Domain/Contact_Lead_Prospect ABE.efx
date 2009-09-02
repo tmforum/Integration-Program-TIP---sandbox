@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_3E3F0EC000E9410A56A10168" name="Contact_Lead_Prospect ABE">
+  <eAnnotations xmi:id="_L1YZUTNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+  <eAnnotations xmi:id="_L1YZUDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+    <references xmi:type="uml:Package" href="Market_Sales%20Domain.efx#_3E3F0EC000E93C8FA93C02FD?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain?"/>
+  </eAnnotations>
+</uml:Package>

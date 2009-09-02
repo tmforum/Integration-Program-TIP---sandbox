@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37B1A3005D" name="ResourceFacing ServiceSpec Role ABE">
+    <eAnnotations xmi:id="_5SE_sDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="ResourceFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93E379AA102AC?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5594870359" name="VPNSecurityServiceSpecRole">
+      <ownedComment xmi:id="_yaI7ljNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5594870359">
+        <body>This class defines the specific type of security that is required to implement a particular CustomerFacingVPNService in terms of ResourceFacingServiceSpecRoles. Thus, it represents all of the invariant characteristics necessary to build a VPNSecurityService, abstracted in terms of ServiceSpecificationRoles.
+
+Please see the DEN-ng MPLS VPN model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5EA3D50092" general="_3E3F0EC000E93D5148FE026E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5592BF011F" name="VPNTopologyServiceSpecRole">
+      <ownedComment xmi:id="_yaI7mjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5592BF011F">
+        <body>This class defines the specific type of topology that is required to implement a particular CustomerFacingVPNService in terms of ResourceFacingServiceSpecRoles. Thus, it represents all of the invariant characteristics necessary to build a VPNTopologyService, abstracted in terms of ServiceSpecificationRoles.
+
+Please see the DEN-ng MPLS VPN model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D669C380252" general="_3E3F0EC000E93D5148FE026E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D5148FE026E" name="ResourceFacingServiceSpecRole" isAbstract="true">
+      <ownedComment xmi:id="_yaSFgTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D5148FE026E">
+        <body>This class defines a ServiceSpecification, in terms of a set of ServiceSpecificationRoles, for a ResourceFacingService.
+
+This is the base class for defining ServiceSpecificationRoles that are used to represent the invariant characteristics of a ResourceFacingService. This enables the ResourceFacingService to be managed abstractly using ServiceSpecificationRoles. It also helps define the ServiceSpecification in terms of the functions that it has or provides.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D51491E00F7">
+        <general xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D50923401BE?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ServiceSpecificationRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93ED6B7F402FE" name="_resourceFacingServiceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="ResourceFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93D9DADF100B9?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacingServiceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yaI7kzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yaI7kjNHEd2nE5zXHK_HsA"/>
+        <association href="ResourceFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93ED6B7F202C7?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/RFSSpecHasRFSRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1D57F01D7" name="_customerFacingServiceSpecRole" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="CustomerFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93D5148EF0294?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacing%20ServiceSpec%20Role%20ABE/CustomerFacingServiceSpecRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yYWL2jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yYWL2TNHEd2nE5zXHK_HsA"/>
+        <association href="CustomerFacing%20ServiceSpec%20Role%20ABE.efx#_3E3F0EC000E93DD1D57D0170?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacing%20ServiceSpec%20Role%20ABE/RequiresResourceFacingServiceSpecRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EED32210229" name="_logicalResourceRoleSpec" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EED321F0168">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Logical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E63D24E01C9?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/Logical%20Role%20Specification%20ABE/LogicalResourceRoleSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yab2hzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yab2hjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EED32A30317" name="_physicalResourceRoleSpec" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EED32A100D9">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Physical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93E5FF62401CE?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/Physical%20Role%20Specification%20ABE/PhysicalResourceRoleSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yalngzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yalngjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EED321F0168" name="RequiresLogicalResourceRoleSpecs">
+      <ownedComment xmi:id="_yab2gzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EED321F0168">
+        <body>This aggregation defines the set of LogicalResourceRoleSpecs that are required for this particular ResourceFacingServiceSpec to function correctly.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EED32210229?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole/_logicalResourceRoleSpec?"/>
+      <memberEnd href="../Resource%20Domain/Logical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93EED32210233?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Specification%20ABE/LogicalResource%20Specification%20ABE/Logical%20Role%20Specification%20ABE/LogicalResourceRoleSpec/_resourceFacingServiceSpecRole?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EED32A100D9" name="RequiresPhysicalResourceRoleSpecs">
+      <ownedComment xmi:id="_yab2jDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EED32A100D9">
+        <body>This aggregation defines the set of PhysicalResourceRoleSpecs that are required for this particular ResourceFacingServiceSpec to function correctly.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EED32A30317?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ResourceFacing%20ServiceSpec%20ABE/ResourceFacing%20ServiceSpec%20Role%20ABE/ResourceFacingServiceSpecRole/_physicalResourceRoleSpec?"/>
+      <memberEnd href="../Resource%20Domain/Physical%20Role%20Specification%20ABE.efx#_3E3F0EC000E93EED32A30321?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/Physical%20Role%20Specification%20ABE/PhysicalResourceRoleSpec/_resourceFacingServiceSpecRole?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yaI7lzNHEd2nE5zXHK_HsA" base_Comment="_yaI7ljNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yaI7mzNHEd2nE5zXHK_HsA" base_Comment="_yaI7mjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yab2gDNHEd2nE5zXHK_HsA" base_Comment="_yaSFgTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yab2hDNHEd2nE5zXHK_HsA" base_Comment="_yab2gzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yalngDNHEd2nE5zXHK_HsA" base_Comment="_yab2jDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

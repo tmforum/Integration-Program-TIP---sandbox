@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E9414AF2FC0369" name="Product Placement ABE">
+    <eAnnotations xmi:id="_3VZJQDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_3VGOUDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93D6AAA620398?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414AF308009F" name="ProductPlacement">
+      <ownedComment xmi:id="_zLKI1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414AF308009F">
+        <body>A description of how ProductOfferings are marketed, such as via direct mail.  A ProductPlacement contains qualitative statements, or assessments that describe such things as market penetration, product strategy, and so forth.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9414AF428020C" name="_media" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Marketing%20Campaign%20ABE.efx#_3E3F0EC000E94149BB2700F7?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Marketing%20Campaign%20ABE/Media/Media?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zB7UWjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zB7UWTNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Marketing%20Campaign%20ABE.efx#_3E3F0EC000E9414AF4270110?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Marketing%20Campaign%20ABE/Media/MediaTargetedBy?"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zLT50DNHEd2nE5zXHK_HsA" base_Comment="_zLKI1TNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

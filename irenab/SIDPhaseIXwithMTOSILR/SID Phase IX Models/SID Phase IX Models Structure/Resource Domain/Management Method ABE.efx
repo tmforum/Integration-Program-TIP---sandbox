@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E301F920130" name="Management Method ABE">
+    <eAnnotations xmi:id="_Ddmw4TN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_Ddmw4DN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Management%20Information%20ABE.efx#_3E3F0EC000E93EA9C5AF0153?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E301F9E00A9" name="CLIMethod" isAbstract="true">
+      <ownedComment xmi:id="_xnxDdDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E301F9E00A9">
+        <body>This is an abstract base class for defining different types of CLI methods to perform various FCAPS functions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30201C030C" general="_3E3F0EC000E93E301ED6039E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E301FAA00AE" name="SNMPMethod" isAbstract="true">
+      <ownedComment xmi:id="_xnxDeDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E301FAA00AE">
+        <body>This is an abstract base class for defining different types of SNMP methods to perform various FCAPS functions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E30202201F1" general="_3E3F0EC000E93E301ED6039E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E301FB0000C" name="RMONMethod" isAbstract="true">
+      <ownedComment xmi:id="_xn60czNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E301FB0000C">
+        <body>This is an abstract base class for defining different types of RMON methods to perform various FCAPS functions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EA9E078021F" general="_3E3F0EC000E93E301FAA00AE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E301FB5017B" name="TL1Method" isAbstract="true">
+      <ownedComment xmi:id="_xn60dzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E301FB5017B">
+        <body>This is an abstract base class for defining different types of TL1 methods to perform various FCAPS functions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E302025005A" general="_3E3F0EC000E93E301ED6039E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E301ED6039E" name="ManagementMethodEntity" isAbstract="true">
+      <ownedComment xmi:id="_xoElczNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E301ED6039E">
+        <body>This is an abstract base class for representing the different types of management methods that can be used to gather a particular type of management information. For example, this enables configuration setting classes to be defined as using CLI, while configuration monitoring classes could be defined as using a different method, such as SNMP.
+
+The design of how management information is obtained uses this class to gather specific type of information, and the ManagementMethodEntity class to obtain the desired data using an appropriate method. This combination of class hierarchies enables different management methods (e.g., CLI vs. SNMP) to be used to gather different types of management data, and is unique to the DEN-ng information model.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E8F09017B">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA9EABA030A" name="_managedEntity" visibility="public" isUnique="false" association="_3E3F0EC000E93F04E6F00257">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xohRYDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xoXgaTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA9E606018F" name="_describedMgmtInfoDetails" visibility="public" type="_3E3F0EC000E93EA9E5A800AA" isUnique="false" association="_3E3F0EC000E93EA9E6030375">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xpaCNjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xpaCNTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA9E09101AB" name="ProprietaryMethod" isAbstract="true">
+      <generalization xmi:id="_3E3F0EC000E93EA9E0AE00E3" general="_3E3F0EC000E93E301ED6039E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EA9E5A800AA" name="DescribedMgmtInfoDetails">
+      <ownedComment xmi:id="_xoNvYTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA9E5A800AA">
+        <body>This is an association class that defines the semantics of the DescribedByMgmtInfo aggregation. This class defines the specific semantics for different types of ManagementInfo, and how that information is obtained from the associated ManagedEntity. This enables different methods to be used to obtain different types of management information.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F356E0077">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EA9E6060185" name="_managementMethodEntity" visibility="public" type="_3E3F0EC000E93E301ED6039E" isUnique="false" association="_3E3F0EC000E93EA9E6030375">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xpaCMzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xpaCMjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93EA9E36D00A8?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/_managementInfo?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93EA9E36D00AA?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagementInfo/_managedEntity?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93F04E6F00257" name="SupportedMgmtMethodDetail">
+      <ownedComment xmi:id="_xoXgYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F04E6F00257">
+        <body>This is an association class, and defines the semantics of the SupportedMgmtMethods aggregation. This enables different management methods (e.g., CLI vs. SNMP) to be used to perform configuration versus monitoring functions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F04E70A03B3">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F04E63603E0" name="supportedMgmtMethods" visibility="public">
+        <ownedComment xmi:id="_xohRYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F04E63603E0">
+          <body>This is an array of strings. Each string contains the name of a class that identifies the name of a supported ManagementMethod for this class.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F04E73E0213" name="preferredConfigMethod" visibility="public">
+        <ownedComment xmi:id="_xohRZjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F04E73E0213">
+          <body>This is an enumerated integer that defines the name of a class that identifies the name of the preferred ManagementMethod for performing configuration operations on the associated ManagedEntity. Values include:
+
+  0:  Unknown
+  1:  None
+  2:  CLI
+  3:  SNMP
+  4:  TL1
+  5:  CMIP
+  6:  Proprietary
+
+None could mean that this ManagedEntity performs a set function and is not configurable, as well as mean that this ManagedEntity is not configurable except by the factory.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F04E7A7025A" name="preferredMonitorMethod" visibility="public">
+        <ownedComment xmi:id="_xoqbUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F04E7A7025A">
+          <body>This is an enumerated integer that defines the name of a class that identifies the name of the preferred ManagementMethod for performing monitoring operations on the associated ManagedEntity. Values include:
+
+  0:  Unknown
+  1:  None
+  2:  CLI
+  3:  SNMP
+  4:  RMON
+  5:  CMIP
+  6:  TL1
+  7:  Proprietary
+
+None could mean that this ManagedEntity is not able to be monitored.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93EA9EABA02F6?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/_managementMethodEntity?"/>
+      <memberEnd href="#_3E3F0EC000E93EA9EABA030A?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE/Management%20Method%20ABE/ManagementMethodEntity/_managedEntity?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EA9E6030375" name="MgmtInfoObtainedBy" memberEnd="_3E3F0EC000E93EA9E6060185 _3E3F0EC000E93EA9E606018F">
+      <ownedComment xmi:id="_xoqbVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EA9E6030375">
+        <body>This association defines the set of ManagementMethodEntities that were used to obatin the associated ManagementEntity data.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xnxDdTNHEd2nE5zXHK_HsA" base_Comment="_xnxDdDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xn60cDNHEd2nE5zXHK_HsA" base_Comment="_xnxDeDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xn60dDNHEd2nE5zXHK_HsA" base_Comment="_xn60czNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xoElcDNHEd2nE5zXHK_HsA" base_Comment="_xn60dzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xoEldDNHEd2nE5zXHK_HsA" base_Comment="_xoElczNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xoNvYDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EA9E5A800AA" Associaton_Name="DescribedByMgmtInfo"/>
+  <Default:Documentation xmi:id="_xoNvYjNHEd2nE5zXHK_HsA" base_Comment="_xoNvYTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xoXgYjNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93F04E6F00257" Associaton_Name="SupportedMgmtMethods"/>
+  <Default:Documentation xmi:id="_xoXgZDNHEd2nE5zXHK_HsA" base_Comment="_xoXgYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xohRZDNHEd2nE5zXHK_HsA" base_Comment="_xohRYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xoqbUDNHEd2nE5zXHK_HsA" base_Comment="_xohRZjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xoqbUzNHEd2nE5zXHK_HsA" base_Comment="_xoqbUjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xpaCMDNHEd2nE5zXHK_HsA" base_Comment="_xoqbVTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zXO2BzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93F04E63603E0" Type="SequenceOf String"/>
+</xmi:XMI>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93DBCB818032F" name="QoS Service ABE">
+    <eAnnotations xmi:id="_r6RtkDQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Network%20Architecture%20ABE.efx#_3E3F0EC000E93E37ACBC0365?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Architecture%20ABE?"/>
+      <references xmi:type="uml:Package" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93E37A85C0365?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_r6H8kDQ2Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Service%20ABE.efx#_3E3F0EC000E93D5091860236?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DB57B3901A2" name="QoSService" isAbstract="true">
+      <ownedComment xmi:id="_yIZrWTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901A2">
+        <body>This class represents a generic specification for defining the different types of Sub-Services that are required to implement a specific type of QoS. This enables business rules to be mapped to the network, and define services that the network provides.
+
+A QoSService can be thought of as an aggregation of sub-services needed to realize the functionality specified by, for example, a ServiceBundle object. This enables the network administrator to map business rules (as specified in a more abstract object or set of objects) to the network, and the network designer to engineer the network such that it can provide different functions for different types of applications.
+
+QoSServices are a type of ResourceFacingService, and are bundled together using ServiceBundles. They can be templatized using ServiceBundleSpecs.
+
+The QoSService itself is a means to coordinate different technology-specific approaches to implementing QoS, such as DiffServ, ToS, and IEEE 802.x. As such, it is an abstract class.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E37C7710172">
+        <general xmi:type="uml:Class" href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93E37C3B90187?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingServiceComposite?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901D6" name="_trafficConditioningService" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DB57B3901D5">
+        <type xmi:type="uml:Class" href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93DB57B3901C1?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/TrafficConditioningService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yItNUzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yItNUjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901A7" name="_qoSService" visibility="public" type="_3E3F0EC000E93DB57B3901A2" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DB57B3901A6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yItNXDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yItNWzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901A8" name="_qoSService1" visibility="public" type="_3E3F0EC000E93DB57B3901A2" isUnique="false" association="_3E3F0EC000E93DB57B3901A6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yItNXzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yItNXjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DB57B3901AD" name="_trafficIdentificationService" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DB57B3901AC">
+        <type xmi:type="uml:Class" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93DB57B3901B1?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/TrafficIdentificationService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yI2XQzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yI2XQjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DC4364900BB" name="_networkForwardingService" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DC43644021C">
+        <type xmi:type="uml:Class" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93DB57B3901B6?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/NetworkForwardingService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJAIQzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJAIQjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EC1372C0139" name="_markerPool" visibility="public" isUnique="false" association="_3E3F0EC000E93EC137290351">
+        <type xmi:type="uml:Class" href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93EC12D550210?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/MarkerPool?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yJAITDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yJAISzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D6699FC0336" name="QoSServiceSpecType" isAbstract="true">
+      <ownedComment xmi:id="_yIjcUzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6699FC0336">
+        <body>This class represents a generic specification for defining the different types of Sub-Services that are required to implement different types of QoS.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D669A23007F">
+        <general xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D50922C0285?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Specification%20ABE/ServiceSpecificationType?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DB57B3901D5" name="ConditionsQoSService">
+      <ownedComment xmi:id="_yIjcVzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901D5">
+        <body>This aggregation defines the set of TrafficConditioningServices that make up this particular QoSService. This, as well as the IdentifiesQoSService aggregation, exist in addition to the more generic ForwardingDefinedBy aggregation because they each have their own special semantics. In the DEN-ng system view, this aggregation and the IdentifiesQoSService aggregation are implemented by different classes, whereas the ForwardingDefinedBy aggregation is implemented without a class.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DB57B3901D6?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService/_trafficConditioningService?"/>
+      <memberEnd href="Traffic%20Conditioning%20ABE.efx#_3E3F0EC000E93DB57B3901D7?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Conditioning%20ABE/TrafficConditioningService/_qoSService?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DB57B3901A6" name="HasQoSSubServices" memberEnd="_3E3F0EC000E93DB57B3901A7 _3E3F0EC000E93DB57B3901A8">
+      <ownedComment xmi:id="_yItNWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901A6">
+        <body>This aggregation defines the set of QoSServices that make up a particular QoSService. This enables a single high-level QoSService to be defined in terms of multiple lower-level QoSServices. For example, a network that consists of DiffServ-aware and non-DiffServ-aware devices can have a single QoSService defined to govern how QoS is provided by the network, even though some devices use ToSService and other devices use DiffServService. The higher-level QoSService network-wide QoSService in effect controls the definition of the lower-level ToSServices and DiffServServices, and more importantly coordinates their management, application and usage.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DB57B3901AC" name="IdentifiesQoSService">
+      <ownedComment xmi:id="_yItNYTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DB57B3901AC">
+        <body>This aggregation defines the set of TrafficIdentificationServices that make up this particular QoSService. This, as well as the ConditionsQoSService aggregation, exist in addition to the more generic ForwardingDefinedBy aggregation because they each have their own special semantics. In the DEN-ng system view, this aggregation and the ConditionsQoSService aggregation are implemented by different classes, whereas the ForwardingDefinedBy aggregation is implemented without a class.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DB57B3901AD?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService/_trafficIdentificationService?"/>
+      <memberEnd href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93DB57B3901AE?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/TrafficIdentificationService/_qoSService?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DC43644021C" name="ForwardingDefinedBy">
+      <ownedComment xmi:id="_yI2XSDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DC43644021C">
+        <body>This aggregation defines the set of NetworkForwardingServices that make up a particular QoSService. Since NetworkForwardingServices can be used for purposes other than QoS, the cardinality of this aggregation on the QoSService side is defined to be 0..1. However, a QoSService cannot exist without defining at least one NetworkForwardingService - hence, the cardinality of this aggregation is 1..n.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DC4364900BB?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService/_networkForwardingService?"/>
+      <memberEnd href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93DC4364900BD?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/NetworkForwardingService/_qoSService?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EC137290351" name="QoSTechnologyMarkedBy">
+      <ownedComment xmi:id="_yJAISDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EC137290351">
+        <body>This association defines the particular technology limitations of the QoSService subclass that is being marked by the MarkerPool. For example, if simple IP Precedence is used, then 3 bits (but only 6 legal values) are available for marking. In contrast, if Differentiated Services is used, then 6 bits (32 values defined as standard, and 32 values defined as experimental) are available for marking.
+
+This puppy needs some more work, because PolicyRules will also be used to define what set of marked values are legal.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EC1372C0139?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/QoSService/_markerPool?"/>
+      <memberEnd href="Traffic%20Identification%20ABE.efx#_3E3F0EC000E93EC1372C0143?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE/Traffic%20Identification%20ABE/MarkerPool/_qoSService?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Network%20Forwarding%20Service%20ABE.efx#_3E3F0EC000E93E37A85C0365?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Forwarding%20Service%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Network%20Architecture%20ABE.efx#_3E3F0EC000E93E37ACBC0365?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20ABE/QoS%20Service%20ABE/Network%20Architecture%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yIjcUDNHEd2nE5zXHK_HsA" base_Comment="_yIZrWTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yIjcVDNHEd2nE5zXHK_HsA" base_Comment="_yIjcUzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yItNUDNHEd2nE5zXHK_HsA" base_Comment="_yIjcVzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yItNWTNHEd2nE5zXHK_HsA" base_Comment="_yItNWDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yI2XQDNHEd2nE5zXHK_HsA" base_Comment="_yItNYTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJAIQDNHEd2nE5zXHK_HsA" base_Comment="_yI2XSDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yJAISTNHEd2nE5zXHK_HsA" base_Comment="_yJAISDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E9414F49650361" name="Competitor Product Correlation ABE">
+    <eAnnotations xmi:id="_JCk6gDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_JCbJgDNoEd2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Competitor%20ABE.efx#_3E3F0EC000E9410A56810361?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Competitor%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9415C49070036" name="CompProdCorrelationCharacteristic">
+      <ownedComment xmi:id="_y-Mq6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C49070036">
+        <body>A characteristic quality or distinctive feature of a CompetitorProductCorrelation.  The characteristic can be take on a discrete value, such as geographic disbursement (central, national, cascading), can take on a range of values, (for example, Competitor ProductOffering revenue of $500,000 - $1,000,000), or can be derived from a formula (for example, number of MarketSegments in correlation = number of MarketSegments related to this correlation). </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E942D435BC0252" name="ID" visibility="public">
+        <ownedComment xmi:id="_y-Wb4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942D435BC0252">
+          <body>A unique identifier for the CompProdCorrelationCharacteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64DE0218" name="name" visibility="public">
+        <ownedComment xmi:id="_y-Wb5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64DE0218">
+          <body>A word, term, or phrase by which the characteristic is known and distinguished from characteristics.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64DE0219" name="description" visibility="public">
+        <ownedComment xmi:id="_y-Wb6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64DE0219">
+          <body>A narrative that explains what the characteristic is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D0367B0119" name="unique" visibility="public">
+        <ownedComment xmi:id="_y-fl0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D0367B0119">
+          <body>An indicator that specifies if a value is unique for the specification.
+
+Possible values are; &quot;unique while value is in effect&quot; and &quot;unique whether value is in effect or not&quot;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443AA82700CF" name="valueType" visibility="public">
+        <ownedComment xmi:id="_y-fl1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9443AA82700CF">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE4E420197" name="minCardinality" visibility="public">
+        <ownedComment xmi:id="_y-fl2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE4E420197">
+          <body>The minimum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE4E4201A5" name="maxCardinality" visibility="public">
+        <ownedComment xmi:id="_y-pW0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE4E4201A5">
+          <body>The maximum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D0367B0138" name="extensible" visibility="public">
+        <ownedComment xmi:id="_y-pW1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D0367B0138">
+          <body>An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for an Entity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64DE021A" name="derivationFormula" visibility="public">
+        <ownedComment xmi:id="_y-ygwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64DE021A">
+          <body>A rule or principle represented in symbols, numbers, or letters, often in the form of an equation used to derive the value of a characteristic value.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443AA7EB0250" name="validFor" visibility="public">
+        <ownedComment xmi:id="_y-ygxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9443AA7EB0250">
+          <body>The period of time for which a characteristic is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9416325BE02A5" name="_compositeCompProdCorrelationCharacteristic" visibility="public" type="_3E3F0EC000E9415C49240177" isUnique="false" association="_3E3F0EC000E9416325BD01B4">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuyzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuyjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9416326C40354" name="_compProdCorCharacteristicValue" visibility="public" type="_3E3F0EC000E9415C646A0391" isUnique="false" association="_3E3F0EC000E9416326C300D1">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuzzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuzjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9415C49240177" name="CompositeCompProdCorrelationCharacteristic">
+      <ownedComment xmi:id="_y-8RwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C49240177">
+        <body>A type of CompetitorProductCorrelation that is formed by aggregating other CompetitorProductCorrelations, which may be Composite or Atomic CompetitorProductCorrelations.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9416325B202DA" general="_3E3F0EC000E9415C49070036"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E9416325BE029B" name="_compProdCorrelationCharacteristic" visibility="public" type="_3E3F0EC000E9415C49070036" isUnique="false" aggregation="shared" association="_3E3F0EC000E9416325BD01B4">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuyDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuxzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9415C4937001F" name="AtomicCompProdCorrelationCharacteristic">
+      <ownedComment xmi:id="_y-8RxjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C4937001F">
+        <body>A type of CompetitorProducutCharacteristic that does not have any subordinate CompetitorProductCharacteristics, that is, an AtomicCompProdCorrelationCharacteristic is a leaf-level CompProdCorrelationCharacteristic.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9416325B600CD" general="_3E3F0EC000E9415C49070036"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9415C646A0391" name="CompProdCorCharacteristicValue">
+      <ownedComment xmi:id="_y_GCwDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C646A0391">
+        <body>A number or text that can be assigned to a CompProdCorrelationCharacteristic.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64B600BD" name="valueType" visibility="public">
+        <ownedComment xmi:id="_y_GCwzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64B600BD">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947D035A10196" name="default" visibility="public">
+        <ownedComment xmi:id="_y_GCxjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947D035A10196">
+          <body>Indicates if the value is the default value for a characteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64B600BE" name="value" visibility="public">
+        <ownedComment xmi:id="_y_GCyTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64B600BE">
+          <body>A discrete value that the characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE4E7E036C" name="unitOfMeasure" visibility="public">
+        <ownedComment xmi:id="_y_PMsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE4E7E036C">
+          <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. Iin general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64B600C7" name="fromValue" visibility="public">
+        <ownedComment xmi:id="_y_PMtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64B600C7">
+          <body>The low range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64B600C8" name="toValue" visibility="public">
+        <ownedComment xmi:id="_y_Y9sDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64B600C8">
+          <body>The upper range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE4E7E036D" name="rangeInterval" visibility="public">
+        <ownedComment xmi:id="_y_Y9szNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BE4E7E036D">
+          <body>An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes.
+
+Possible values are &quot;open&quot;, &quot;closed&quot;, &quot;closedBottom&quot; and &quot;closedTop&quot;.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9415C64B600C9" name="vaildFor" visibility="public">
+        <ownedComment xmi:id="_y_Y9tjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9415C64B600C9">
+          <body>The period of time for which a value is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9416326C40368" name="_compProdCorrelationCharacteristic" visibility="public" type="_3E3F0EC000E9415C49070036" isUnique="false" association="_3E3F0EC000E9416326C300D1">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iu0jNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iu0TNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94161BC7602CB" name="CompProdCorrelationComparesMarketSegment">
+      <memberEnd href="#_3E3F0EC000E94161BC77034F?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE/CompetitorProductCorrelation/_marketSegment?"/>
+      <memberEnd href="Market%20Segment%20ABE.efx#_3E3F0EC000E94161BC770377?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment/_competitorProductCorrelation?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94161BC7D0126" name="CompProdCorrelationComparesJurisdiction">
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E94161BC7E0037?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Geographic%20Place/Jurisdiction/_competitorProductCorrelation?"/>
+      <memberEnd href="#_3E3F0EC000E94161BC7E0039?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Product%20Correlation%20ABE/CompetitorProductCorrelation/_jurisdiction?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9416325BD01B4" name="CompositeCompProdCorrelationCharacteristicComprisedOf" memberEnd="_3E3F0EC000E9416325BE029B _3E3F0EC000E9416325BE02A5"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9416326C300D1" name="CompProdCorrelationCharacteristicEnumeratedUsing" memberEnd="_3E3F0EC000E9416326C40354 _3E3F0EC000E9416326C40368"/>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_tMbhcFIQEd2BeOP6juF0pQ" name="CompetitorProductCorrelation" memberEnd="_tMbhcVIQEd2BeOP6juF0pQ _tMbhclIQEd2BeOP6juF0pQ">
+      <ownedAttribute xmi:id="_3E3F0EC000E94161BC77034F" name="_marketSegment" visibility="public" isUnique="false" association="_3E3F0EC000E94161BC7602CB">
+        <type xmi:type="uml:Class" href="Market%20Segment%20ABE.efx#_3E3F0EC000E93C8FA9A80096?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuujNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuuTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94161BC7E0039" name="_jurisdiction" visibility="public" isUnique="false" association="_3E3F0EC000E94161BC7D0126">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E9415C667C02BB?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Geographic%20Place/Jurisdiction?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y_iuxDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y_iuwzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QbT0kFISEd2BeOP6juF0pQ" name="description" visibility="public">
+        <ownedComment xmi:id="_QbT0kVISEd2BeOP6juF0pQ" annotatedElement="_QbT0kFISEd2BeOP6juF0pQ">
+          <body>A narrative that explains what the CompetitorProductCorrelation is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QbT0klISEd2BeOP6juF0pQ" name="degreeOfCorrelation" visibility="public">
+        <ownedComment xmi:id="_QbT0k1ISEd2BeOP6juF0pQ" annotatedElement="_QbT0klISEd2BeOP6juF0pQ">
+          <body>A percentage that measures how closely an enterprise's ProductOffering compares to a CompetitorProductOffering.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C42375903CC?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/Quantity?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QbT0lFISEd2BeOP6juF0pQ" name="lifeCycleStage" visibility="public">
+        <ownedComment xmi:id="_QbT0lVISEd2BeOP6juF0pQ" annotatedElement="_QbT0lFISEd2BeOP6juF0pQ">
+          <body>The stage in the life cycle of the ProductOfferings being correlated.  Examples are acquisition, retention, win back, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QbT0llISEd2BeOP6juF0pQ" name="validFor" visibility="public">
+        <ownedComment xmi:id="_QbT0l1ISEd2BeOP6juF0pQ" annotatedElement="_QbT0llISEd2BeOP6juF0pQ">
+          <body>The period during which the CompetitorProductCorrelation is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedEnd xmi:id="_tMbhcVIQEd2BeOP6juF0pQ" name="" visibility="public" association="_tMbhcFIQEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qBY24VISEd2BeOP6juF0pQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qBY24FISEd2BeOP6juF0pQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_tMbhclIQEd2BeOP6juF0pQ" name="" visibility="public" association="_tMbhcFIQEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Product%20Domain/Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pfHQQVISEd2BeOP6juF0pQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pfHQQFISEd2BeOP6juF0pQ"/>
+      </ownedEnd>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_y-Wb4DNHEd2nE5zXHK_HsA" base_Comment="_y-Mq6DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-Wb4zNHEd2nE5zXHK_HsA" base_Comment="_y-Wb4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-Wb5jNHEd2nE5zXHK_HsA" base_Comment="_y-Wb5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-fl0DNHEd2nE5zXHK_HsA" base_Comment="_y-Wb6DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-fl0zNHEd2nE5zXHK_HsA" base_Comment="_y-fl0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-fl1jNHEd2nE5zXHK_HsA" base_Comment="_y-fl1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-pW0DNHEd2nE5zXHK_HsA" base_Comment="_y-fl2DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-pW0zNHEd2nE5zXHK_HsA" base_Comment="_y-pW0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-ygwDNHEd2nE5zXHK_HsA" base_Comment="_y-pW1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-ygwzNHEd2nE5zXHK_HsA" base_Comment="_y-ygwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-8RwDNHEd2nE5zXHK_HsA" base_Comment="_y-ygxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-8RwzNHEd2nE5zXHK_HsA" base_Comment="_y-8RwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y-8RxzNHEd2nE5zXHK_HsA" base_Comment="_y-8RxjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_GCwTNHEd2nE5zXHK_HsA" base_Comment="_y_GCwDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_GCxDNHEd2nE5zXHK_HsA" base_Comment="_y_GCwzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_GCxzNHEd2nE5zXHK_HsA" base_Comment="_y_GCxjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_PMsDNHEd2nE5zXHK_HsA" base_Comment="_y_GCyTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_PMszNHEd2nE5zXHK_HsA" base_Comment="_y_PMsjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_PMtjNHEd2nE5zXHK_HsA" base_Comment="_y_PMtTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_Y9sTNHEd2nE5zXHK_HsA" base_Comment="_y_Y9sDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_Y9tDNHEd2nE5zXHK_HsA" base_Comment="_y_Y9szNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_y_Y9tzNHEd2nE5zXHK_HsA" base_Comment="_y_Y9tjNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93D6AAA620398" name="Product Offering ABE">
+    <eAnnotations xmi:id="_skhAoDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E942F8C6CF0095?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE?"/>
+      <references xmi:type="uml:Package" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93E283DAF018F?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE?"/>
+      <references xmi:type="uml:Package" href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E93E32012B03B2?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE?"/>
+      <references xmi:type="uml:Package" href="Product%20Placement%20ABE.efx#_3E3F0EC000E9414AF2FC0369?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Placement%20ABE?"/>
+      <references xmi:type="uml:Package" href="Product%20Promotion%20ABE.efx#_3E3F0EC000E9411BC64F022F?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Promotion%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_skX2sDN2Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C9FA68E035C" name="BundledProductOffering">
+      <ownedComment xmi:id="_zHcGgDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C9FA68E035C">
+        <body>A type of ProductOffering that represents a grouping of ProductOfferings made available to the market.  The grouping may consist of other BundledProductOffering(s) or SimpleProductOffering(s).</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93C9FA6B1019A" general="_3E3F0EC000E93C5DB96E00DD"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C9FA6DD023A" name="_productOffering" visibility="public" type="_3E3F0EC000E93C5DB96E00DD" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C9FA6DA0000">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIU3RTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIU3RDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9478B69B30196" name="_productBundle" visibility="public" isUnique="false" association="_3E3F0EC000E9478B69AF0186">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C631C870327?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductBundle?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIxjNjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIxjNTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DB96E00DD" name="ProductOffering" isAbstract="true">
+      <ownedComment xmi:id="_zHlQYDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DB96E00DD">
+        <body>The presentation of one or more ProductSpecifications to the marketplace for sale, rental, or lease for a ProductOfferingPrice.  A ProductOffering may target one or more MarketSegments, be included in one or more ProductCatalog, presented in support of one or more ProductStrategies, and made available in one or more Places.  ProductOffering may represent a simple offering of a single ProductSpecification or could represent a bundling of one or more other ProductOffering.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F1CA32F0361" name="_businessInteractionItem" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1F5B0A0134?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUUelDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUUekzNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93F1CA32F002C?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItemPrice?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE2D95031D" name="_serviceLevelSpecification" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Level%20Spec%20ABE.efx#_3E3F0EC000E93D40107C02B4?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Performance%20ABE/Service%20Level%20Spec%20ABE/ServiceLevelSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ygsPgzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ygsPgjNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/Service%20Level%20Spec%20ABE.efx#_3E3F0EC000E947BE2D95031C?SID%20Phase%20VIII%20Models/Logical%20View/Service%20Domain/Service%20Performance%20ABE/Service%20Level%20Spec%20ABE/ProductOfferQualityMeasuredBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941114EF00283" name="_marketSegmentCharacteristic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Market%20Segment%20ABE.efx#_3E3F0EC000E9410EA2C600D5?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegmentCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y00FbzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y00FbjNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Market%20Segment%20ABE.efx#_3E3F0EC000E941114EEC0223?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/ProdOfferMarketSegmentCharacteristicDefinedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9450BD1A10109" name="_marketSegment" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Market%20Segment%20ABE.efx#_3E3F0EC000E93C8FA9A80096?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/MarketSegment?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y09PYTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y09PYDNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Market%20Segment%20ABE.efx#_3E3F0EC000E9450BD19F0251?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/ProdOfferingTargetedTo?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94112B5AD03CA" name="_partyDemographic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Party%20Demographic%20ABE.efx#_3E3F0EC000E93C8FAAA90258?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/PartyDemographic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y3C6DDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y3C6CzNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Party%20Demographic%20ABE.efx#_3E3F0EC000E94112B5AC01FC?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Demographic%20ABE/PartyDemographicDefinedByProductOffering?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411944050238" name="_partyProfileTypeCharacteristic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Party%20Profile%20ABE.efx#_3E3F0EC000E9411288AA0294?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileTypeCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y5IkszNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y5IksjNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Party%20Profile%20ABE.efx#_3E3F0EC000E94119440402EB?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileTypeCharacteristicDescribedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9411BBC0002B2" name="_partyProfileType" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Party%20Profile%20ABE.efx#_3E3F0EC000E9410E990C035F?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileType?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y5IkyzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y5IkyjNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Party%20Profile%20ABE.efx#_3E3F0EC000E9411BBBFE038B?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Party%20Profile%20ABE/PartyProfileTypeTargets?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94148B6BC01E4" name="_marketStatistic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Market%20Statistic%20ABE.efx#_3E3F0EC000E9410E928001DC?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE/MarketStatistic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y6BVmTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y6BVmDNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Market%20Statistic%20ABE.efx#_3E3F0EC000E94148B6BB028D?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Segment%20ABE/Market%20Statistic%20ABE/MarketStatisticGatheredForProductOffering?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94152EACC0373" name="_competitorIntelligence" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94151FA35023A?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/CompetitorIntelligence?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9v-_TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y9v-_DNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Competitor%20Intelligence%20ABE.efx#_3E3F0EC000E94152EACB03C1?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Competitor%20ABE/Competitor%20Intelligence%20ABE/CompetitorIntelligencePertainsTo?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC46500B1" name="id" visibility="public">
+        <ownedComment xmi:id="_zHlQYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC46500B1">
+          <body>A unique identifier for the ProductOffering.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C631A2600D2" name="name" visibility="public">
+        <ownedComment xmi:id="_zHvBYTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C631A2600D2">
+          <body>A word, term, or phrase by which the ProductOffeirng is known and distinguished from other ProductOfferings.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C631A29018B" name="description" visibility="public">
+        <ownedComment xmi:id="_zHvBZDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C631A29018B">
+          <body>A narrative that explains what the offering is.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC46C0224" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zHvBZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC46C0224">
+          <body>The period during which the offering is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C6C421501EC" name="status" visibility="public">
+        <ownedComment xmi:id="_zH4yYTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C6C421501EC">
+          <body>The condition in which the offering exists, such as planned, obsolete, active</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C9FA6DE00B4" name="_bundledProductOffering" visibility="public" type="_3E3F0EC000E93C9FA68E035C" isUnique="false" association="_3E3F0EC000E93C9FA6DA0000">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIU3SDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIU3RzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBFD303A8" name="_productOfferingTerm" visibility="public" type="_3E3F0EC000E93C5DBEA30080" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C5DBFD203C5">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIU3TzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIU3TjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E94D11D01AE" name="_product" visibility="public" isUnique="false" association="_3E3F0EC000E93E94D11A029A">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C5DB98B03E2?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIeoQzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIeoQjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CC3F6CE0352" name="_place" visibility="public" isUnique="false" association="_3E3F0EC000E93CC3F6CC0294">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93C86C87200D8?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Place?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIeoSjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIeoSTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BDB0B0364" name="_productOfferingPrice" visibility="public" isUnique="false" association="_3E3F0EC000E93D6BDB0A03C7">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIeoUTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIeoUDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BA1820238" name="_productSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E93D6BA1810024">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIeoWzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIeoWjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94249E5AE0393" name="_productOffering" visibility="public" type="_3E3F0EC000E93C5DB96E00DD" isUnique="false" association="_3E3F0EC000E94249E5AC0250">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZRDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZQzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94249E5AF0019" name="_productOffering1" visibility="public" type="_3E3F0EC000E93C5DB96E00DD" isUnique="false" association="_3E3F0EC000E94249E5AC0250">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZRzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZRjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94496CC5B0381" name="_salesChannel" visibility="public" isUnique="false" association="_3E3F0EC000E94496CC5A0342">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Sales%20Channel%20ABE.efx#_3E3F0EC000E93C5DB95502AE?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Sales%20Channel%20ABE/SalesChannel?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZUjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZUTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9456B7E9601E4" name="_marketStrategy" visibility="public" isUnique="false" association="_3E3F0EC000E9456B7E9500CB">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Market%20Strategy%20Plan%20ABE.efx#_3E3F0EC000E93C5DBC820145?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Strategy%20Plan%20ABE/MarketStrategy?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZWTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZWDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406C47B0018B" name="_prodOfferPricePolicyVariable" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E9406C478D02F3?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyVariable?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zK3N9jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zK3N9TNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E9406C47B0018A?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPriceVariableDefinedByProdOffer?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E940994B250319" name="_policySet" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E93D77E58C0252?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicySet?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLA-8TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zLA-8DNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E940994B240187?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProductOfferingPriceGovernedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9439FF3410231" name="_distributionChannel" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9439F35B00150?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/DistributionChannel?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zN_aezNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zN_aejNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9439FF33E0132?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProductOfferingMadeAvailableThroughDistributionChannel?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9439FF38F00F2" name="_productOfferingStrategy" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Strategic%20Product%20Portfolio%20Plan%20ABE.efx#_3E3F0EC000E9414A4B7C0047?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Strategic%20Product%20Portfolio%20Plan%20ABE/ProductOfferingStrategy?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOJLYzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOJLYjNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9439FF38E001F?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProductOfferingManagedByProductOfferingStrategy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9440DDE2F020D" name="_productCatalog" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E93C5DB967008D?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProductCatalog?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOSVUzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOSVUjNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9440DDE2D02A0?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProdCatalogProdOffer?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94448764600E8" name="_distChannelProdOffer" visibility="public" isUnique="false">
+        <type xmi:type="uml:AssociationClass" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9439F43B5017C?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/DistChannelProdOffer?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOcGazNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOcGajNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Catalog%20ABE.efx#_3E3F0EC000E94448764402F8?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProdOfferDistributedThroughChannel?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ucHQIlKeEd2Z__GE9qBDpQ" name="partyrole" visibility="private">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_3E3F0EC000E93C2319BC02EE?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/PartyRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMr6UVKeEd2Z__GE9qBDpQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMr6UFKeEd2Z__GE9qBDpQ"/>
+        <association href="../Common%20Business%20Entities%20Domain/Party%20ABE.efx#_ucHQIFKeEd2Z__GE9qBDpQ?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Party%20ABE/Entities/Roles/ProductOfferingMarketedBy?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBEA30080" name="ProductOfferingTerm">
+      <ownedComment xmi:id="_zH4yZDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBEA30080">
+        <body>A condition under which a ProductOffering is made available to Customers.  ProductOfferingTerm include ProductOfferingFinancialTerm, which includes such things as acceptable methods of payment, ShipmentTerm, and ServiceTerm.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E942DAD86302FE" name="_agreementTermOrCondition" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Agreement%20ABE.efx#_3E3F0EC000E93D4017CE0183?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Agreement%20ABE/AgreementTermOrCondition?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wWQ_ZDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wWQ_YzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBFD3038A" name="_productOffering" visibility="public" type="_3E3F0EC000E93C5DB96E00DD" isUnique="false" association="_3E3F0EC000E93C5DBFD203C5">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIU3TDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIU3SzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t4MOgFIAEd2BeOP6juF0pQ" name="agreementtermorcondition" visibility="private">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Agreement%20ABE.efx#_3E3F0EC000E93D4017CE0183?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Agreement%20ABE/AgreementTermOrCondition?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w3OLcVIAEd2BeOP6juF0pQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w3OLcFIAEd2BeOP6juF0pQ"/>
+        <association href="../Common%20Business%20Entities%20Domain/Agreement%20ABE.efx#_t3vikFIAEd2BeOP6juF0pQ?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Agreement%20ABE/ProductTermAppearsAs?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C9FA67F02BC" name="SimpleProductOffering">
+      <ownedComment xmi:id="_zH4yZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C9FA67F02BC">
+        <body>A type of ProductOffering that does not have any subordinate ProductOfferings, that is, an SimpleProductOffering is a leaf-level ProductOffering.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93C9FA6A90186" general="_3E3F0EC000E93C5DB96E00DD"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443D5AA803B3" name="_productSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E9443D5AA80028">
+        <type xmi:type="uml:Class" href="Product%20Specification%20ABE.efx#_3E3F0EC000E93C5DB97B0118?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZTjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZTTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9478B6A7E0128" name="_productComponent" visibility="public" isUnique="false" association="_3E3F0EC000E9478B6A7C0222">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C631C91005A?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductComponent?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIxjPTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIxjPDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E94249E5AC0250" name="ProductOfferingRelationship" memberEnd="_3E3F0EC000E94249E5AE0393 _3E3F0EC000E94249E5AF0019">
+      <ownedComment xmi:id="_zIB8UzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94249E5AC0250">
+        <body> A significant connection or similarity between two or more ProductOfferings.  For example, the relationship between a provider's ProductOffering and a supplier/partner's ProductOffering used to fulfill the provider's ProductOffering; a service provider offers various photos for download and printing...a print shop prints them for the provider and considers one photo (ProductOffering) the same as any other from a pricing perspective...one partners' photo offering is related to many of the provider's photos.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94249E6420054" name="typeRelationship" visibility="public">
+        <ownedComment xmi:id="_zIB8VjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94249E6420054">
+          <body>A categorization of the relationship, such as supplier/partner equivalent, alternate, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94249E64E014B" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zIB8WTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94249E64E014B">
+          <body>The period during which the relationship is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93C9FA6DA0000" name="BundledProdOfferOption" memberEnd="_3E3F0EC000E93C9FA6DD023A _3E3F0EC000E93C9FA6DE00B4">
+      <ownedComment xmi:id="_zILtUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C9FA6DA0000">
+        <body>A set of numbers that specifies the lower and upper limits for a ProductOffering that can be procured as part of the related BundledProductOffering.
+
+Values can range from 0 to unbounded.
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94460E82D006B" name="numberRelOfferLowerLimit" visibility="public">
+        <ownedComment xmi:id="_zILtVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94460E82D006B">
+          <body>The lower limit of related ProductOfferings that can be procured as part of the BundledProductOffering.
+
+Values can range from 0 to unbounded.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94460E834030B" name="numberRelOfferUpperLimit" visibility="public">
+        <ownedComment xmi:id="_zILtWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94460E834030B">
+          <body>The upper limit of related ProductOfferings that can be procured as part of the BundledProductOffering.
+
+Values can range from 0 to unbounded.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C5DBFD203C5" name="ProdOfferAgreementRequirementsRepresentedAs" memberEnd="_3E3F0EC000E93C5DBFD3038A _3E3F0EC000E93C5DBFD303A8"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E94D11A029A" name="ProdOfferDescribes">
+      <memberEnd href="#_3E3F0EC000E93E94D11D01AE?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_product?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E93E94D11D01CC?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CC3F6CC0294" name="ProdOfferingAvailableIn">
+      <memberEnd href="#_3E3F0EC000E93CC3F6CE0352?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_place?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Location%20ABE.efx#_3E3F0EC000E93CC3F6CF0014?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Location%20ABE/Entities/Place/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D6BDB0A03C7" name="ProductOfferingValuedBy">
+      <memberEnd href="#_3E3F0EC000E93D6BDB0B0364?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_productOfferingPrice?"/>
+      <memberEnd href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93D6BDB0B036E?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D6BA1810024" name="ProdSpecMadeAvailableAs">
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E93D6BA182021A?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_productOffering?"/>
+      <memberEnd href="#_3E3F0EC000E93D6BA1820238?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9424873BB02F6" name="ProductPriceGovernedBy">
+      <memberEnd href="Product%20Price%20ABE.efx#_3E3F0EC000E9424873BC0329?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/Product%20Price%20ABE/ProductPrice/_policySet?"/>
+      <memberEnd href="../Common%20Business%20Entities%20Domain/Policy%20Framework.efx#_3E3F0EC000E9424873BC0365?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicySet/_productPrice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9443D5AA80028" name="ProdSpecMadeAvailableAsSimpleProdOffer">
+      <memberEnd href="Product%20Specification%20ABE.efx#_3E3F0EC000E9443D5AA803A3?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_simpleProductOffering?"/>
+      <memberEnd href="#_3E3F0EC000E9443D5AA803B3?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/SimpleProductOffering/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E94496CC5A0342" name="ProdOfferingProvidedBy">
+      <memberEnd href="#_3E3F0EC000E94496CC5B0381?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_salesChannel?"/>
+      <memberEnd href="../Market_Sales%20Domain/Sales%20Channel%20ABE.efx#_3E3F0EC000E94496CC5B0383?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Sales%20Channel%20ABE/SalesChannel/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9456B7E9500CB" name="ProductOfferingSupportedBy">
+      <memberEnd href="#_3E3F0EC000E9456B7E9601E4?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/ProductOffering/_marketStrategy?"/>
+      <memberEnd href="../Market_Sales%20Domain/Market%20Strategy%20Plan%20ABE.efx#_3E3F0EC000E9456B7E9601F4?SID%20Phase%20VIII%20Models/Logical%20View/Market_Sales%20Domain/Market%20Strategy%20Plan%20ABE/MarketStrategy/_productOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9478B69AF0186" name="BundledProdOfferInstantiatedAs">
+      <memberEnd href="#_3E3F0EC000E9478B69B30196?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/BundledProductOffering/_productBundle?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E9478B69B30399?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductBundle/_bundledProductOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9478B6A7C0222" name="SimpleProdOfferInstantiatedAs">
+      <memberEnd href="#_3E3F0EC000E9478B6A7E0128?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/SimpleProductOffering/_productComponent?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E9478B6A7E0157?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20ABE/ProductComponent/_simpleProductOffering?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93E283DAF018F?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E93E32012B03B2?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Product%20Promotion%20ABE.efx#_3E3F0EC000E9411BC64F022F?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Promotion%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Product%20Placement%20ABE.efx#_3E3F0EC000E9414AF2FC0369?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Placement%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="Product%20Catalog%20ABE.efx#_3E3F0EC000E942F8C6CF0095?SID%20Phase%20VIII%20Models/Logical%20View/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zHcGgTNHEd2nE5zXHK_HsA" base_Comment="_zHcGgDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zHlQYTNHEd2nE5zXHK_HsA" base_Comment="_zHlQYDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zHlQZDNHEd2nE5zXHK_HsA" base_Comment="_zHlQYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zHvBYjNHEd2nE5zXHK_HsA" base_Comment="_zHvBYTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zHvBZTNHEd2nE5zXHK_HsA" base_Comment="_zHvBZDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zHvBaDNHEd2nE5zXHK_HsA" base_Comment="_zHvBZzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zH4yYjNHEd2nE5zXHK_HsA" base_Comment="_zH4yYTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zH4yZTNHEd2nE5zXHK_HsA" base_Comment="_zH4yZDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zIB8UDNHEd2nE5zXHK_HsA" base_Comment="_zH4yZzNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_zIU3QjNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93C9FA6DA0000" Associaton_Name="BundledProdOfferComprisedOf"/>
+  <Rose:Rose_AssociationClass xmi:id="_zIoZQTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E94249E5AC0250" Associaton_Name="ProductOfferingMapsTo"/>
+  <Rose:Rose_Property xmi:id="_zWCjIzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C631A29018B" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXO2ATNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C6C421501EC" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXhw9TNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC46500B1" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXrh6TNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C631A2600D2" Type="string"/>
+</xmi:XMI>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E03C7FB02EE" name="Policy Value Entities">
+    <eAnnotations xmi:id="_NzvnoTNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_NzvnoDNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Poliicy%20Structure%20Entities.efx#_3E3F0EC000E93D77E60F01BD?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_v5zFxTNHEd2nE5zXHK_HsA" source="uml2.diagrams" references="_3E3F0EC000E93E04E1A0023C">
+      <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93E04E1A0023C" type="Class" name="PolicyValue Class Hierarchy">
+        <children xmi:id="_zqAoADNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02A7">
+          <children xmi:id="_zqAoAzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoBDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoBTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoBjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoBzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoCDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoCTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoCjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoCzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoDDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoDTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoDjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoDzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoATNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoAjNHEd2nE5zXHK_HsA" x="10295" y="6053" width="2751" height="1143"/>
+        </children>
+        <children xmi:id="_zqAoEDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D9F74DA0360">
+          <children xmi:id="_zqAoEzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoFDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoFTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoFjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoFzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoGDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoGTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoGjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoGzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoHDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoHTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoHjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoHzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoETNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoEjNHEd2nE5zXHK_HsA" x="6019" y="8398" width="5037" height="1439"/>
+        </children>
+        <children xmi:id="_zqAoIDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D9F75CC000B">
+          <children xmi:id="_zqAoIzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoJDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoJTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoJjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoJzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoKDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoKTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoKjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoKzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoLDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoLTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoLjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoLzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoITNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoIjNHEd2nE5zXHK_HsA" x="12344" y="8382" width="5122" height="1778"/>
+        </children>
+        <children xmi:id="_zqAoMDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02BF">
+          <children xmi:id="_zqAoMzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoNDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoNTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoNjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoNzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoODNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoOTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoOjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoOzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoPDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoPTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoPjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoPzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoMTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoMjNHEd2nE5zXHK_HsA" x="2040" y="10329" width="6096" height="2116"/>
+        </children>
+        <children xmi:id="_zqAoQDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02BA">
+          <children xmi:id="_zqAoQzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoRDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoRTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoRjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoRzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoSDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoSTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoSjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoSzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoTDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoTTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoTjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoTzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoQTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoQjNHEd2nE5zXHK_HsA" x="2717" y="12843" width="5418" height="1735"/>
+        </children>
+        <children xmi:id="_zqAoUDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02B5">
+          <children xmi:id="_zqAoUzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqAoVDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqAoVTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqAoVjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqAoVzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqAoWDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoWTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoWjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoWzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoXDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqAoXTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqAoXjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqAoXzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoUTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoUjNHEd2nE5zXHK_HsA" x="10380" y="10752" width="5672" height="1397"/>
+        </children>
+        <children xmi:id="_zqAoYDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02B0">
+          <children xmi:id="_zqJx8DNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqJx8TNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqJx8jNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqJx8zNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqJx9DNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqJx9TNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJx9jNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJx9zNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJx-DNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJx-TNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJx-jNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJx-zNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqJx_DNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqAoYTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqAoYjNHEd2nE5zXHK_HsA" x="10481" y="14224" width="5757" height="1354"/>
+        </children>
+        <children xmi:id="_zqJx_TNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02C5">
+          <children xmi:id="_zqJyADNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqJyATNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqJyAjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqJyAzNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqJyBDNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqJyBTNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyBjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyBzNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyCDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyCTNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyCjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyCzNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqJyDDNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqJx_jNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJx_zNHEd2nE5zXHK_HsA" x="3327" y="15028" width="4826" height="1354"/>
+        </children>
+        <children xmi:id="_zqJyDTNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D77E58C02AB">
+          <children xmi:id="_zqJyEDNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zqJyETNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zqJyEjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zqJyEzNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zqJyFDNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zqJyFTNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyFjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyFzNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyGDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyGTNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zqJyGjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zqJyGzNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zqJyHDNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zqJyDjNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyDzNHEd2nE5zXHK_HsA" x="10422" y="12488" width="6096" height="1397"/>
+        </children>
+        <children xmi:id="_zqJyZTNHEd2nE5zXHK_HsA" type="Text">
+          <children xmi:id="_zqJyaDNHEd2nE5zXHK_HsA" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_zqJyaTNHEd2nE5zXHK_HsA" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zqJyZjNHEd2nE5zXHK_HsA" description="Title:&#x9;  DEN-ng Service Model&#xA;View:&#x9;  Simplified Policy Model&#xA;Author:&#x9;  John Strassner&#xA;Rev:&#x9;  1.1&#xA;Date:&#x9;  4 February 2003&#xA;&#xA;Notes:&#x9;  Please print in Landscape mode.&#xA;" lineColor="0"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyZzNHEd2nE5zXHK_HsA" x="330" y="279" width="8051" height="3403"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_v5zFxzNHEd2nE5zXHK_HsA"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_zqJyHTNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DAD9C6E01E4" source="_zqAoIDNHEd2nE5zXHK_HsA" target="_zqAoADNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyIDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyIjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyIzNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyITNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyHjNHEd2nE5zXHK_HsA" routing="Tree" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyHzNHEd2nE5zXHK_HsA" points="[110, -897, 3344, 1752]$[110, -1253, 3344, 1397]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyJDNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyJTNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyJjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DAD9C6B03D5" source="_zqAoEDNHEd2nE5zXHK_HsA" target="_zqAoADNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyKTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyKzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyLDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyKjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyJzNHEd2nE5zXHK_HsA" routing="Tree" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyKDNHEd2nE5zXHK_HsA" points="[67, -719, -3064, 1778]$[67, -1100, -3064, 1397]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyLTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyLjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyLzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F21D01F6" source="_zqAoMDNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyMjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyNDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyNTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyMzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyMDNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyMTNHEd2nE5zXHK_HsA" points="[3048, -67, -397, 2201]$[3911, -67, 465, 2201]$[3911, -1549, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyNjNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyNzNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyODNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F22D03E3" source="_zqAoQDNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyOzNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyPTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyPjNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyPDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyOTNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyOjNHEd2nE5zXHK_HsA" points="[2709, -110, -397, 4478]$[3572, -110, 465, 4478]$[3572, -3869, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyPzNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyQDNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyQTNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F35601EC" source="_zqAoYDNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyRDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyRjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyRzNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyRTNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyQjNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyQzNHEd2nE5zXHK_HsA" points="[-2878, 0, 1947, 5782]$[-4360, 0, 465, 5782]$[-4360, -5063, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJySDNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJySTNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJySjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F34402C2" source="_zqJx_TNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyTTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyTzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyUDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyTjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJySzNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyTDNHEd2nE5zXHK_HsA" points="[2413, 59, -381, 6646]$[3259, 59, 465, 6646]$[3259, -5867, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyUTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyUjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyUzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F2E50027" source="_zqJyDTNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyVjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyWDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyWTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyVzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyVDNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyVTNHEd2nE5zXHK_HsA" points="[-3048, 0, 1888, 4064]$[-4470, 0, 465, 4064]$[-4470, -3344, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyWjNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyWzNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zqJyXDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E04F2DE0199" source="_zqAoUDNHEd2nE5zXHK_HsA" target="_zqAoEDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zqJyXzNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zqJyYTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zqJyYjNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zqJyYDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zqJyXTNHEd2nE5zXHK_HsA" routing="Rectilinear" lineColor="128" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zqJyXjNHEd2nE5zXHK_HsA" points="[-2836, 84, 1845, 2413]$[-4216, 84, 465, 2413]$[-4216, -1608, 465, 719]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyYzNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zqJyZDNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02B5" name="StringValue">
+      <ownedComment xmi:id="_v4dpAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02B5">
+        <body>This class is used to represent a single string value, or a set of string values.  Each value can have wildcards.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F2DE0199" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02B6" name="valueStringList" visibility="public">
+        <ownedComment xmi:id="_v4dpBjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02B6">
+          <body>This attribute is an array of strings, defined in an unordered list, each representing a single string. Any string can have one or more wildcards, denoted with the asterisk character (*). For example, the value &quot;abc*def*&quot; matches the string &quot;abcxxxdefyz&quot;. If the asterisk character is required as part of the string value itself, it must be escaped with quotes (&quot;).
+</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02AB" name="BitStringValue">
+      <ownedComment xmi:id="_v4my8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02AB">
+        <body>This class is used to represent a single or a set of bit string values. A bit string is defined as a string whose individual characters have the value &quot;0&quot; or &quot;1&quot;. No other values are allowed.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F2E50027" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02AC" name="valueBitStringList" visibility="public">
+        <ownedComment xmi:id="_v4my9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02AC">
+          <body>This attribute is an array of strings, defined in an unordered list , each representing a single bit string or a set of bit strings. Each string entry is either:
+
+  - a single bit string, such as 11110101
+  - a range of bit strings specified using a bit string and a bit
+    mask.  The bit string and mask fields must have the same 
+    number of bits specified. The mask bit string specifies the 
+    significant bits in the bit string value.  An example is:
+        100110,101110
+</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02BA" name="MACAddressValue">
+      <ownedComment xmi:id="_v4wj8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02BA">
+        <body>This class is used to define a list of MAC addresses and MAC address range values as an unordered list of strings, each specifying a MAC address or a range of MAC addresses according to the canonical 802 MAC address format. Each string entry is either:
+
+  - a single MAC address, such as 0000:00A5:0000
+  - a range of MAC addresses specified by an address
+    and mask, such as 0000:00A5:0000,FFFF:FFFF:0000,
+    which defines a range of MAC addresses in which the 
+    first four octets are equal to 0000:00A5.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F22D03E3" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D7909C001D3" name="macFormat" visibility="public">
+        <ownedComment xmi:id="_v4wj9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7909C001D3">
+          <body>This is an enumerated integer that defines how the MAC Address is represented. Values are:
+
+  0:  a single address (e.g., 0000:00A5:0000)
+  1:  an address with mask (e.g., 0000:00A5:0000, FFFF:FFFF:0000)
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D790A670303" name="macValueList" visibility="public">
+        <ownedComment xmi:id="_v4wj-TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D790A670303">
+          <body>This is an array of strings, each of which contains a MAC Address. Each string must be of the same format, which is specified in the macFormat attribute of this object.</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02BF" name="IPAddressValue">
+      <ownedComment xmi:id="_v45t4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02BF">
+        <body>This class is used to provide an unordered list of IPv4 addresses, IPv6 addresses, ranges of IPv4 addresses, ranges of IPv6 addresses, and hostnames to be matched against in a policy condition. The format of each string is specified according to the ABNF definition of an IPv4 address.
+
+If a hostname is matched against another valid IP address, the match is done by resolving the hostname into
+a valid IPv4 or IPv6 address. Matching hostnames against each other, like matching IP addresses (of the same type) against each other, is done using a string comparison. Matching an IPv4 address against an IPv6 address fails.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F21D01F6" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02C0" name="valueAddressFormat" visibility="public">
+        <ownedComment xmi:id="_v5De4DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02C0">
+          <body>This is an enumerated integer attribute that contains one of 5 different representations for an address or address range, as specified below:
+
+  - 0:  a single address in dot notation, such as 12.1.1.2
+  - 1:  an address range specified by an address with a prefix,
+          such as 12.1.1.0/15
+  - 2:  an address range specified by a starting address in dot
+         notation and an ending address in dot notation, separated
+         by &quot;-&quot;.  The range includes all addresses between the
+         range's starting and ending addresses, including these two
+         addresses, such as 12.1.1.3-12.1.22.5
+  - 3:  an address range specified by an address and
+         mask. The address and mask are represented in dot
+         notation, separated by a comma &quot;,&quot;, such as
+             2.3.128.0,255.255.248.0.
+  - 4:  a single Hostname, as specified in RFC1035
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02C1" name="typeOfAddress" visibility="public">
+        <ownedComment xmi:id="_v5De4zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02C1">
+          <body>This is an enumerated integer that is used to specify the type of IP address that this instance represents. Values include:
+
+  1:  IPv4
+  2:  IPv6
+  3:  hostname
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_v5De5TNHEd2nE5zXHK_HsA">
+          <body>1</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D78E2DF0040" name="addressValueList" visibility="public">
+        <ownedComment xmi:id="_v5De5zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D78E2DF0040">
+          <body>This is an array of string values. Each string value contains a particular value to filter on. Note that all values must have the format specified in the Format attribute of this class.</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02B0" name="IntegerValue">
+      <ownedComment xmi:id="_v5NP4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02B0">
+        <body>This class provides a list of integer or integer range values. Each integer can be of an arbitrary size.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F35601EC" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02B1" name="valueIntegerList" visibility="public">
+        <ownedComment xmi:id="_v5NP5jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02B1">
+          <body>This attribute is an array of strings, defined as an unordered list, where each integer in the list is represented by a string. This is done to accommodate the reserved words &quot;INFINITY&quot; and &quot;-INFINITY&quot;. The format of this attribute takes one of the following two forms:
+
+  - a single integer value
+  - a range of integers. The range is specified by a starting
+    integer and an ending integer, separated by '..'. The
+    starting integer must be less than or equal to the ending
+    integer. The range includes all integers between the 
+    starting and ending integers, including these two integers.
+
+To represent a range of integers that is not bounded, the reserved words &quot;-INFINITY&quot; and/or &quot;INFINITY&quot; can be used in place of the starting and ending integers.
+</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02C5" name="BooleanValue">
+      <ownedComment xmi:id="_v5WZ0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02C5">
+        <body>This class is used to represent a Boolean (TRUE/FALSE) value.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E04F34402C2" general="_3E3F0EC000E93D9F74DA0360"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D77E58C02C6" name="valueBooleanList" visibility="public">
+        <ownedComment xmi:id="_v5WZ1jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02C6">
+          <body>This is a Boolean attribute, whose value is used to represent a Boolean policy value.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77E58C02A7" name="PolicyValue" isAbstract="true">
+      <ownedComment xmi:id="_v5WZ2TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77E58C02A7">
+        <body>The PolicyValue class is an abstract base class for modeling different types of values that occur in a PolicyStatement. The PolicyValue specifies an attribute that should either be set or cleared (if used in a PolicyAction) or matched or compared in some way to a value of the PolicyVariable in a PolicyCondition.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F182EAC02F3">
+        <general xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D77E58C0262?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/Policy?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D790E3B007C" name="_policyVariable" visibility="public" isUnique="false" association="_3E3F0EC000E93D790E340297">
+        <type xmi:type="uml:Class" href="Policy%20Variable%20Entities.efx#_3E3F0EC000E93D77E58C0298?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v_do6DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v_do5zNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D9F74DA0360" name="ValueStandard" isAbstract="true">
+      <ownedComment xmi:id="_v5gK0zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F74DA0360">
+        <body>ValueStandard is the abstract base class for defining a set of standardized PolicyValues. This set of PolicyValues will be added to over time, and represents a set of common values that are useful in a variety of PBNM applications. The subclasses of ValueStandard are a set of classes that define the semantics of commonly occurring variables that occur in PBNM applications.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DAD9C6B03D5" general="_3E3F0EC000E93D77E58C02A7"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D9F75CC000B" name="ValueCustom" isAbstract="true">
+      <ownedComment xmi:id="_v5gK1zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9F75CC000B">
+        <body>ValueCustom is an abstract base class that provides two basic attributes to define custom value objects that can be used in an application-specific fashion. These two attributes are called valueModelAttribute and valueModelClass. The valueModelAttribute is a string attribute that defines the name of the attribute within the class specified in the valueModelClass attribute that is to be evaluated or set as a PolicyValue. The valueModelClass is a string attribute that defines the class name whose attribute is to be evaluated or set as a PolicyValue. This combination enables new custom subclasses of ValueCustom to be defined that specify the class and attribute that they are modeling. These new subclasses can be found by users of the current DEN-ng schema by searching for these two properties. That also enables DEN-ng users to immediately understand the purpose of new extensions.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DAD9C6E01E4" general="_3E3F0EC000E93D77E58C02A7"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E04E1DE037C" name="valueModelAttribute" visibility="public">
+        <ownedComment xmi:id="_v5p70zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E04E1DE037C">
+          <body>This is a string attribute that defines the name of the attribute within the class specified in the valueModelClass attribute that is to be evaluated or set as a PolicyValue.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E04E1DE0386" name="valueModelClass" visibility="public">
+        <ownedComment xmi:id="_v5p71jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E04E1DE0386">
+          <body>This is a string attribute that defines the class name whose attribute is to be evaluated or set as a PolicyValue.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93D790E340297" name="ValueConstraintDetails">
+      <ownedComment xmi:id="_v5p72TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D790E340297">
+        <body>This is an association class that contains the OCL expression that will be used to define the particular semantics of how this Value is constrained by this Variable. This includes constraints such as upper and lower bounds of the value that a PolicyValue object can take.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_v_do4TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D790E340297">
+        <body>This association defines any value constraints that exist between a value of a variable and the variable itself. For example, modeling an enumerated source port variable, the specific values that can be assigned to the PortSourceVariable are limited to the range of values that represent legal assignments for this source port.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E893001FA">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E028F910127" name="valueConstraint" visibility="public">
+        <ownedComment xmi:id="_v5zFwzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E028F910127">
+          <body>This attribute is a string that contains the specific OCL expression to define how a given PolicyValue is constrained by a particular PolicyVariable. Defining this as an attribute enables external applications to populate this constraint.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <memberEnd href="Policy%20Variable%20Entities.efx#_3E3F0EC000E93D790E3B0072?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Variable%20Entities/PolicyVariable/_policyValue?"/>
+      <memberEnd href="#_3E3F0EC000E93D790E3B007C?SID%20Phase%20VIII%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Value%20Entities/PolicyValue/_policyVariable?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_v4dpAzNHEd2nE5zXHK_HsA" base_Comment="_v4dpAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v4my8DNHEd2nE5zXHK_HsA" base_Comment="_v4dpBjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v4my8zNHEd2nE5zXHK_HsA" base_Comment="_v4my8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v4wj8DNHEd2nE5zXHK_HsA" base_Comment="_v4my9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v4wj8zNHEd2nE5zXHK_HsA" base_Comment="_v4wj8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v4wj9zNHEd2nE5zXHK_HsA" base_Comment="_v4wj9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v45t4DNHEd2nE5zXHK_HsA" base_Comment="_v4wj-TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v45t4zNHEd2nE5zXHK_HsA" base_Comment="_v45t4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5De4TNHEd2nE5zXHK_HsA" base_Comment="_v5De4DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5De5DNHEd2nE5zXHK_HsA" base_Comment="_v5De4zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5NP4DNHEd2nE5zXHK_HsA" base_Comment="_v5De5zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5NP4zNHEd2nE5zXHK_HsA" base_Comment="_v5NP4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5WZ0DNHEd2nE5zXHK_HsA" base_Comment="_v5NP5jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5WZ0zNHEd2nE5zXHK_HsA" base_Comment="_v5WZ0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5WZ1zNHEd2nE5zXHK_HsA" base_Comment="_v5WZ1jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5gK0DNHEd2nE5zXHK_HsA" base_Comment="_v5WZ2TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5gK1DNHEd2nE5zXHK_HsA" base_Comment="_v5gK0zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5p70DNHEd2nE5zXHK_HsA" base_Comment="_v5gK1zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5p71DNHEd2nE5zXHK_HsA" base_Comment="_v5p70zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v5p71zNHEd2nE5zXHK_HsA" base_Comment="_v5p71jNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_v_do4DNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93D790E340297" Associaton_Name="ValueConstraintInVariable"/>
+  <Default:Documentation xmi:id="_v_do4jNHEd2nE5zXHK_HsA" base_Comment="_v_do4TNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zV4yKTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D77E58C02AC" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zWCjNDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D77E58C02B1" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zWVeLTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D77E58C02B6" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zXO18DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D78E2DF0040" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zXhw_DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D790A670303" Type="SequenceOf String"/>
+</xmi:XMI>

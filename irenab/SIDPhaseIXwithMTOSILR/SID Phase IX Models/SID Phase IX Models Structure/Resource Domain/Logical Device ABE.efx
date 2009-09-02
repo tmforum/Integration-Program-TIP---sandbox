@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:TIPLifeCycleProfile="http:///schemas/TIPLifeCycleProfile/_RgW7MJdCEd6xlp-B7G_9Fg/2" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose? http:///schemas/TIPLifeCycleProfile/_RgW7MJdCEd6xlp-B7G_9Fg/2 ../../../SID%20Models_profiles/TIPLifeCycleProfile.epx#_RgW7MZdCEd6xlp-B7G_9Fg?TIPLifeCycleProfile/TIPLifeCycleProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93EA5CF5E0166" name="Logical Device ABE">
+    <eAnnotations xmi:id="_RUXh0TN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_RUXh0DN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DCCA5AF007E" name="LogicalDevice" isAbstract="true">
+      <ownedComment xmi:id="_xkMLATNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DCCA5AF007E">
+        <body>This is an abstract base class for representing logical concepts and services that can be managed that are associated with the device as a whole. This class represents a convenient aggregation point for combining different aspects of a device (e.g., software contained in the device, protocols that the devices runs, the set of services that it offers, and so forth). It also enables the device itself to have a single logical manifestation.
+
+Conceptually, this represents the &quot;brains&quot; of the Device. For example, it represents the set of entities required for a Router to know how to route packets.
+
+Please see the DEN-ng Resource model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DCCA61F0209">
+        <general xmi:type="uml:Class" href="LogicalResource%20ABE.efx#_3E3F0EC000E93CDAA51A00F6?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E404EF40312" name="_policyDecisionPoint" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Server%20Entities.efx#_3E3F0EC000E93D77EE090153?SID%20Phase%20IX%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyDecisionPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v04wnzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v04wnjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E611547037D" name="_routedProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Routed%20Protocols%20ABE.efx#_3E3F0EC000E93E2C3670025C?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routed%20Protocols%20ABE/RoutedProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xcvfNjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xcvfNTNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E61153E0135?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceRoutedProtocolDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E603DE20259" name="_bridgingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Bridging%20Protocols%20ABE.efx#_3E3F0EC000E93E6032A00182?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Bridging%20Protocols%20ABE/BridgingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xc5QNTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xc5QNDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E603DDA0062?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceBridgingProtocolDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E60497D03D8" name="_distanceVectorRoutingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E5FFFC40007?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/DistanceVectorRoutingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdCaJTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdCaJDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E60497403D5?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceDVRoutingDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E604CA500BD" name="_hybridRoutingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E600813039F?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/HybridRoutingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdMLJTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdMLJDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E604C9E021B?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceHybridRoutingDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E604A96035E" name="_linkStateRoutingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E5FFFA90388?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/LinkStateRoutingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdV8JTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdV8JDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E604A90026F?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceLSRoutingDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E602753038B" name="_managementProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Management%20Protocols%20ABE.efx#_3E3F0EC000E93E2C7CD60083?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Management%20Protocols%20ABE/ManagementProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdfGFTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdfGFDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E6027500387?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceMgmtProtocolDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E604FB20255" name="_pathVectorRoutingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E5FFFD8017C?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/PathVectorRoutingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdo3FTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdo3FDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E604FAC0288?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DevicePVRoutingDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E603B59009D" name="_switchingProtocol" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Switching%20Protocols%20ABE.efx#_3E3F0EC000E93ED562620218?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Switching%20Protocols%20ABE/SwitchingProtocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdyoFTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdyoFDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E603B56019D?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceSwitchingProtocolDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C84EE0295" name="configBackupLocation" visibility="public">
+        <ownedComment xmi:id="_xkMLBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C84EE0295">
+          <body>This is an enumerated integer, and specifies the following options for locating the current backup configuration:
+
+  0 - RAM
+  1 - NVRAM
+  2 - FLASH
+  3 - On-board memory requiring an external access
+  4 - Stored in an external network location
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C83F3015D" name="configRunningLocation" visibility="public">
+        <ownedComment xmi:id="_xkV8ADNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C83F3015D">
+          <body>This is an enumerated integer, and specifies the following options for locating the current running configuration:
+
+  0 - RAM
+  1 - NVRAM
+  2 - FLASH
+  3 - On-board memory requiring an external access
+  4 - stored in an external network location
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD017F" name="configurationMethod" visibility="public">
+        <ownedComment xmi:id="_xkV8AzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017F">
+          <body>This is an enumerated integer that defines the type of method(s) that are used to configure this Resource. Defined values include:
+
+  0:  Unknown
+  1:  None Available
+  2:  SNMP
+  3:  CLI
+  4:  CMIP
+  5:  TL1
+  6:  Custom
+
+This is a REQUIRED attribute.
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C81450248" name="configurationMode" visibility="public">
+        <ownedComment xmi:id="_xkV8BjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C81450248">
+          <body>This is an enumerated attribute that defines what mode the Resource is currently in. Note that some manufacturers require the device to be put into a particular mode in order to issue specific commands. Values include:
+
+  0 - not applicable (device doesn't use modes)
+  1 - User EXEC mode
+  2 - Privileged EXEC mode
+  3 - SETUP mode
+  4 - Global CONFIG mode
+  5 - Specific CONFIG SUB-MODE
+  6 - BOOT mode
+
+User EXEC mode is a read-only mode in which the user can view, but not change, the configuration. Privileged EXEC mode supports access to configuration modes, debugging and testing of commands, and detailed examination of the device and manipulation of its config files. SETUP mode is used to help the user create an initial basic configuration; it is usually interactive. Global configuration mode is the main configuration driver interface that enables the user to issue one-line configuration commands. This includes accessing other configuration modes. Specific Config SUB-MODE is a specific sub-mode that supports more complex configuration commands that are limted to a particular type of function. Finally, BOOT mode is a general-purpose maintenance mode.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C8992013F" name="isLoopbackSet" visibility="public">
+        <ownedComment xmi:id="_xkftAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C8992013F">
+          <body>This is a Boolean attribute that, if TRUE, means that a loopback has been set. This attribute occurs at the LogicalDevice level, and not at the DeviceInterface level, because the purpose of a LoopbackInterface is to forward traffic received on it directly to the Device itself. The LoopbackInterface is a virtual interface and has no hardware associated with it.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EFE503101F3" name="isNullInterfaceSet" visibility="public">
+        <ownedComment xmi:id="_xkftBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EFE503101F3">
+          <body>This is a Boolean attribute that, if TRUE, means that a null interface has been set. This attribute occurs at the LogicalDevice level, and not at the DeviceInterface level, because the purpose of a NullInterface is to drop traffic received on The NullInterface is a virtual interface and has no hardware associated with it.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0183" name="monitorMethod" visibility="public">
+        <ownedComment xmi:id="_xkftCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0183">
+          <body>This is an enumerated integer that defines the type of method(s) that are used to manage this Resource. Defined values include:
+
+  0:  Unknown
+  1:  None Available
+  2:  SNMP
+  3:  CLI
+  4:  CMIP
+  5:  TL1
+  6:  Custom
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C82C800BD" name="numberOfConfigurationsPresent" visibility="public">
+        <ownedComment xmi:id="_xko28jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C82C800BD">
+          <body>This is an integer attribute that defines the total number of configurations that are stored in this particular Resource (NOT in the management system).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C88F9030B" name="protocolsRunning" visibility="public">
+        <ownedComment xmi:id="_xko29TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C88F9030B">
+          <body>This is an array of strings, one for each protocol that is currently running on this Resource.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943794B1A0128" name="isMultiBootSystem" visibility="public">
+        <ownedComment xmi:id="_xko2-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943794B1A0128">
+          <body>The isMultiBootSystem is a Boolean attribute. If its value is TRUE, then this LogicalDevice can have multiple OperatingSystems running concurrently.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943794B5803D8" name="currentRunningOS" visibility="public">
+        <ownedComment xmi:id="_xkyn8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943794B5803D8">
+          <body>The currentRunningOS is a String Array that defines which OperatingSystems are currently running. While network devices usually cannot have multiple running OperatingSystems, servers and hosts can.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943794B8500CB" name="hasMultipleInstalledOSs" visibility="public">
+        <ownedComment xmi:id="_xkyn9TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943794B8500CB">
+          <body>The hasMultipleInstalledOSs is a Boolean attribute. If its value is TRUE, then this LogicalDevice has multiple OperatingSystems installed. This doesn't necessarily mean that the LogicalDevice is running multiple OperatingSystems - that fact is defined by the isMultiBootSystem attribute having a value of TRUE. Rather, this attribute is used as a simple way to know if the device has more than one OperatingSystem installed. Note that servers, computers and network devices in particular are often loaded with multiple OperatingSystems.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E068DA003A5" name="_software" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E068D9E02D0">
+        <type xmi:type="uml:Class" href="Software%20ABE.efx#_3E3F0EC000E93CDE25AD031F?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xk8Y-zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xk8Y-jNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E068D660058" name="_deviceInterface" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E0686B101A4?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlPT4zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xlPT4jNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E068D650183?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterfaceMgmtDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C7B7200AA" name="_logicalDeviceComposite" visibility="public" type="_3E3F0EC000E93E2C7680032A" isUnique="false" association="_3E3F0EC000E93E2C7B700255">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlPT7zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xlPT7jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DCCA5AF0086" name="_protocol" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DCCA5AF0085">
+        <type xmi:type="uml:Class" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93DCCA5AF0087?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Protocol?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlYd0zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xlYd0jNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EB2EC9A0244" name="_operatingSystem" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Operating%20System%20ABE.efx#_3E3F0EC000E93EA580AB027D?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Operating%20System%20ABE/OperatingSystem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlr_0TNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xlr_0DNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Software%20ABE.efx#_3E3F0EC000E93EB2EC980074?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/LogicalDeviceOSInteractionDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943323B75016D" name="_pipe" visibility="public" isUnique="false" association="_3E3F0EC000E943323B720288">
+        <type xmi:type="uml:Class" href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E93CDDC88D0153?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl1JwTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xl1JwDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943563E010175" name="_terminationPoint" visibility="public" isUnique="false" association="_3E3F0EC000E943563DFD01EF">
+        <type xmi:type="uml:Class" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCABC021F?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPointMgdTrans?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl1JyjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xl1JyTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_juhNYFKQEd2Z__GE9qBDpQ" name="policydecisionpoint" visibility="private">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Policy%20Server%20Entities.efx#_3E3F0EC000E93D77EE090153?SID%20Phase%20IX%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyDecisionPoint?"/>
+        <association href="../Common%20Business%20Entities%20Domain/Policy%20Server%20Entities.efx#_juXcYFKQEd2Z__GE9qBDpQ?SID%20Phase%20IX%20Models/Logical%20View/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/configureDeviceWithPDP?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C767401B0" name="LogicalDeviceAtomic">
+      <ownedComment xmi:id="_xkyn-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C767401B0">
+        <body>This is a concrete base class for representing logical concepts and services that can be managed which are associated with the device as a whole. This class represents a convenient aggregation point for combining different aspects of a device (e.g., software contained in the device, protocols that the devices runs, the set of services that it offers, and so forth). It also enables the device itself to have a single logical manifestation.
+
+This class represents all logical devices that are atomic in nature (e.g., not made up of multiple distinct logical devices that can be separately managed).
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E2C7BCC004F" general="_3E3F0EC000E93DCCA5AF007E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C7680032A" name="LogicalDeviceComposite">
+      <ownedComment xmi:id="_xk8Y8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C7680032A">
+        <body>This is a concrete base class for representing logical concepts and services that can be managed which are associated with the device as a whole. This class represents a convenient aggregation point for combining different aspects of a device (e.g., software contained in the device, protocols that the devices runs, the set of services that it offers, and so forth). It also enables the device itself to have a single logical manifestation.
+
+This class represents all logical devices that are composite in nature (e.g., made up of multiple distinct logical devices that can be separately managed). The composite pattern is used to enable LogicalDeviceComposite objects to be made up of LogicalDevice objects (i.e., either LogicalDeviceAtomic and/or LogicalDeviceComposite objects).
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E2C7BD00285" general="_3E3F0EC000E93DCCA5AF007E"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E2C7B7200A0" name="_logicalDevice" visibility="public" type="_3E3F0EC000E93DCCA5AF007E" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E2C7B700255">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlPT7DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xlPT6zNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E068D9E02D0" name="HasSoftwareCommands">
+      <ownedComment xmi:id="_xk8Y9zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E068D9E02D0">
+        <body>This aggregation defines the set of SoftwareCommands that are available for a particular device OperatingSystem that this LogicalDevice currently has access to.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93E068DA003A5?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_software?"/>
+      <memberEnd href="Software%20ABE.efx#_3E3F0EC000E93E068DA003AF?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software/_logicalDevice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E2C7B700255" name="HasLogicalDevices" memberEnd="_3E3F0EC000E93E2C7B7200A0 _3E3F0EC000E93E2C7B7200AA">
+      <ownedComment xmi:id="_xlPT6DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C7B700255">
+        <body>This aggregation defines the set of LogicalDevices that are contained in the associated LogicalDeviceComposite object. These contained LogicalDevices can be instances of either the LogicalDeviceAtomic and/or LogcalDeviceComposite classes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DCCA5AF0085" name="SupportsProtocol">
+      <ownedComment xmi:id="_xlPT8TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DCCA5AF0085">
+        <body>This aggregation defines the particular Protocols that are supported by this LogicalDevice. In other words, this aggregation defines the set of protocols that this device supports, independent of whether the protocol applies to the device as a whole or to an interface of the device. This aggregation enables the LogicalDevice to control the Protocols that are run on its various DeviceInterfaces.
+
+Please see the DEN-ng Resource model for more details.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DCCA5AF0086?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_protocol?"/>
+      <memberEnd href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93DCCA5AF008A?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Protocol/_logicalDevice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EADAB72007B" name="LogicalDeviceUsesInterfaceRoles">
+      <ownedComment xmi:id="_xlYd2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EADAB72007B">
+        <body>This aggregation defines the set of DeviceInterfaceRoles that a particular LogicalDevice can play. This enables functionality to be related to specific logical components (e.g., in order to play a given role, a particular protocol must be running).
+
+For example, a CPELogicalDevice could use an EdgeInterface role to model how it connects to a PE router, and use an AggregationInterface role to model how it connects to hosts in its site.
+
+Please see the DEN-ng Resource model for more details.
+</body>
+      </ownedComment>
+      <memberEnd href="Logical%20Role%20ABE.efx#_3E3F0EC000E93EADAB7202C0?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE/LogicalDeviceRole/_deviceInterfaceRole?"/>
+      <memberEnd href="Logical%20Role%20ABE.efx#_3E3F0EC000E93EADAB7202D4?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE/DeviceInterfaceRole/_logicalDeviceRole?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E3F3240015A" name="RequiresHardwareSupportFor">
+      <ownedComment xmi:id="_xlr_1jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E3F3240015A">
+        <body>This association defines the binding between a set of PhysicalDeviceRoles and a set of LogicalDeviceRoles. For example, the logical and physical roles of a router are bound to determine a set of appropriate line cards to implement desired routing functionality.
+
+Please see the DEN-ng Resource model for more details
+</body>
+      </ownedComment>
+      <memberEnd href="Logical%20Role%20ABE.efx#_3E3F0EC000E93E3F324200E5?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Role%20ABE/LogicalDeviceRole/_physicalDeviceRole?"/>
+      <memberEnd href="Physical%20Role%20ABE.efx#_3E3F0EC000E93E3F324200EF?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalDeviceRole/_logicalDeviceRole?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E943323B720288" name="LogicalDeviceGovernsPipes">
+      <ownedComment xmi:id="_xlr_3zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943323B720288">
+        <body>This association defines the set of Pipes that are managed by a particular LogicalDevice.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E943323B75016D?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_pipe?"/>
+      <memberEnd href="Managed%20Transmission%20ABE.efx#_3E3F0EC000E943323B750203?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_logicalDevice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E943563DFD01EF" name="LogicalDeviceGovernsTPs">
+      <ownedComment xmi:id="_xl1JxjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943563DFD01EF">
+        <body>This aggregation defines the set of (logical) TerminationPoints that are managed by a particular LogicalDevice.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E943563E010175?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/_terminationPoint?"/>
+      <memberEnd href="Termination%20Point%20ABE.efx#_3E3F0EC000E943563E01019D?SID%20Phase%20IX%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPointMgdTrans/_logicalDevice?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xkMLAjNHEd2nE5zXHK_HsA" base_Comment="_xkMLATNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkMLBjNHEd2nE5zXHK_HsA" base_Comment="_xkMLBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkV8ATNHEd2nE5zXHK_HsA" base_Comment="_xkV8ADNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkV8BDNHEd2nE5zXHK_HsA" base_Comment="_xkV8AzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkftADNHEd2nE5zXHK_HsA" base_Comment="_xkV8BjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkftAzNHEd2nE5zXHK_HsA" base_Comment="_xkftAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkftBjNHEd2nE5zXHK_HsA" base_Comment="_xkftBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xko28DNHEd2nE5zXHK_HsA" base_Comment="_xkftCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xko28zNHEd2nE5zXHK_HsA" base_Comment="_xko28jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xko29jNHEd2nE5zXHK_HsA" base_Comment="_xko29TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkyn8DNHEd2nE5zXHK_HsA" base_Comment="_xko2-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkyn8zNHEd2nE5zXHK_HsA" base_Comment="_xkyn8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xkyn9jNHEd2nE5zXHK_HsA" base_Comment="_xkyn9TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xk8Y8DNHEd2nE5zXHK_HsA" base_Comment="_xkyn-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xk8Y9DNHEd2nE5zXHK_HsA" base_Comment="_xk8Y8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xk8Y-DNHEd2nE5zXHK_HsA" base_Comment="_xk8Y9zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xlPT6TNHEd2nE5zXHK_HsA" base_Comment="_xlPT6DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xlYd0DNHEd2nE5zXHK_HsA" base_Comment="_xlPT8TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xlYd2TNHEd2nE5zXHK_HsA" base_Comment="_xlYd2DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xlr_1zNHEd2nE5zXHK_HsA" base_Comment="_xlr_1jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xlr_4DNHEd2nE5zXHK_HsA" base_Comment="_xlr_3zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xl1JxzNHEd2nE5zXHK_HsA" base_Comment="_xl1JxjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zWMUIjNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E943794B5803D8" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zWoZCzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93E2C88F9030B" Type="SequenceOf String"/>
+  <Rose:Rose_Property xmi:id="_zW77CDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93CDAA4DD0183" Type="SequenceOf Integer"/>
+  <Rose:Rose_Property xmi:id="_zXrh8TNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93CDAA4DD017F" Type="SequenceOf Integer"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_y32EUJdCEd6xlp-B7G_9Fg" base_Package="_3E3F0EC000E93EA5CF5E0166"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_1EgwMJdCEd6xlp-B7G_9Fg" base_Class="_3E3F0EC000E93DCCA5AF007E"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_1EgwMZdCEd6xlp-B7G_9Fg" base_Class="_3E3F0EC000E93E2C767401B0"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_1EgwMpdCEd6xlp-B7G_9Fg" base_Class="_3E3F0EC000E93E2C7680032A"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9QJdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E93E2C7B700255"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9QZdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E93E068D9E02D0"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9QpdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E943323B720288"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9Q5dCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E943563DFD01EF"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9RJdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E93EADAB72007B"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9RZdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E93E3F3240015A"/>
+  <TIPLifeCycleProfile:likelyToChange xmi:id="_2Jy9RpdCEd6xlp-B7G_9Fg" base_Association="_3E3F0EC000E93DCCA5AF0085"/>
+</xmi:XMI>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93EA5D1780079" name="Physical Device ABE">
+    <eAnnotations xmi:id="_ADd6YTN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_ADd6YDN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEA0E303D6?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDAB4C90013" name="PhysicalDevice" isAbstract="true">
+      <ownedComment xmi:id="_x6GJnDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAB4C90013">
+        <body>This is an abstract base class for representing hardware devices that can be managed. This class represents a convenient aggregation point for combining different aspects of a device (e.g., the cables, connectors, cards, power supplies, and other objects that together make up the device). Thus, it enables the device itself to have a physical manifestation (e.g., the &quot;Internet Gateway Router&quot; can be identified as a PhysicalDevice). Examples of this class include routers and switches, computers, and other end-devices that are managed.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDAB5E00104">
+        <general xmi:type="uml:Class" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDAA53A023C?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0181" name="backplaneIndependent" visibility="public">
+        <ownedComment xmi:id="_x7cNbjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0181">
+          <body>This is a boolean attribute that, if TRUE, indicates that this ManagedDevice has independent backplanes that can be managed separately. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0182" name="backplaneNumber" visibility="public">
+        <ownedComment xmi:id="_x7l-YjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0182">
+          <body>This is an integer that defines the number of backplanes that this device has. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAA4DD0180" name="configurationOrder" visibility="public">
+        <ownedComment xmi:id="_x7l-ZTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0180">
+          <body>This is a free-form string that provides any order-specific instructions for configuring the set of components that together constitute this PhysicalDevice. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAB5A801C2" name="deviceGroupID" visibility="public">
+        <ownedComment xmi:id="_x7l-aDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAB5A801C2">
+          <body>This is a string, and is used to uniquely identify this device as a member of a group of devices. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAB5910219" name="isComposite" visibility="public">
+        <ownedComment xmi:id="_x7vIUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAB5910219">
+          <body>This is a Boolean attribute that, if TRUE, means that this physical device is in reality made up of a set of physical devices, each of which can be individually managed. This is an optional attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDB56400AB" name="canMixPower" visibility="public">
+        <ownedComment xmi:id="_x7vIVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDB56400AB">
+          <body>This is a Boolean attribute that, if TRUE, means that AC and/or DC power supplies can be used in this device. If it is false, then only one or the other can be used.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_x7vIVzNHEd2nE5zXHK_HsA">
+          <body>FALSE</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEBA9A0084" name="_physicalDeviceComposite" visibility="public" type="_3E3F0EC000E93DDEBA4D0048" isUnique="false" association="_3E3F0EC000E93DDEBA9803AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8VlTDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8VlSzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDAC2DD0001" name="_hardware" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDAC2DC00B4">
+        <type xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8evNTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8evNDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE91CC90020" name="_physicalDeviceRole" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EE91CC50313">
+        <type xmi:type="uml:Class" href="Physical%20Role%20ABE.efx#_3E3F0EC000E93DDEBE7903D3?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalDeviceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8evPjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8evPTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD016B" name="configureDevice" visibility="public" precondition="_x6ZrkTNHEd2nE5zXHK_HsA" postcondition="_x6ZrkzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x6P6lDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD016B">
+          <body>This operation allows a process to configure a ManagedDevice. This operation is necessary to transition the ManagedDevice into a functional state. Note that the process may be from Software associated in the ManagedDevice (e.g., from one of its installed Cards) as opposed to an external process. Note, however, that the ManagedDevice will not be operational until a loadDevice method has been successfully executed.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x6ZrkTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD016B">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6ZrkjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x6ZrkzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD016B">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6ZrlDNHEd2nE5zXHK_HsA">
+            <body>The ManagedDevice Object has installed the newly updated configuration. However, it won't reflect these changes until the loadConfiguration method is successfully executed.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x6P6ljNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD016C" name="CreateData" direction="inout">
+          <ownedComment xmi:id="_x6P6mDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD016C">
+            <body>The configuration data for the Equipment. Note that this just provides configuration data, it doesn't immediately change the operation of the Equipment. For that to happen, the loadConfiguration method should be used after this method.</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD016D" name="Order" direction="inout">
+          <ownedComment xmi:id="_x6P6mzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD016D">
+            <body>If a component-specific order of configuration is required, then it is reflected in this argument. If there is no such order, then this argument will be NULL.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD016E" name="configureEquipmentInDevice" visibility="public" precondition="_x6i1hDNHEd2nE5zXHK_HsA" postcondition="_x6i1hjNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x6ZrlzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD016E">
+          <body>This command loads the specified configuration data for the specified Equipment that make up this ManagedDevice. If this method executes successfully, a 0 is returned. Otherwise, a non-zero integer is returned to signal the specific error(s) that were encountered.</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x6i1hDNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD016E">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6i1hTNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x6i1hjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD016E">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6i1hzNHEd2nE5zXHK_HsA">
+            <body>The specified Configuration should now be installed (unless errors were encountered, which is signified by a non-zero return code) for each specified Equipment in this ManagedDevice. However, the functionality of each Equipment will not change until a loadConfiguration (or a loadEquipmentConfigurations) method is successfully executed for this ManagedDevice.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x6ZrmTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD016F" name="Configuration" direction="inout">
+          <ownedComment xmi:id="_x6ZrmzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD016F">
+            <body>A configuration is named and stored as an object, though it may be implemented as a set of objects. This enables configurations to be versioned.
+
+This argument is a reference to the specified configuration of the Equipment. Note that this is not necessarily its current configuration.
+</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD0170" name="EquipmentToConfigure" direction="inout">
+          <ownedComment xmi:id="_x6i1gjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0170">
+            <body>This argument specifies the Equipment to configure. The Equipment is identified using its unique name. An exception will be thrown if an Equipment can't be found.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD0171" name="loadConfiguration" visibility="public" precondition="_x6smgTNHEd2nE5zXHK_HsA" postcondition="_x6smgzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x6i1ijNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0171">
+          <body>This command loads the specified configuration data for the Equipment. If this method executes successfully, a 0 is returned. Otherwise, a non-zero integer is returned to signal the specific error(s) that were encountered.</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x6smgTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0171">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6smgjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x6smgzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0171">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6smhDNHEd2nE5zXHK_HsA">
+            <body>The functionality represented by the loaded Configuration should now be in effect (unless errors were encountered, which is signified by a non-zero return code).</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x6i1jDNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD0172" name="Configuration" direction="inout">
+          <ownedComment xmi:id="_x6i1jjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0172">
+            <body>A configuration is named and stored as an object, though it may be implemented as a set of objects. This enables configurations to be versioned.
+
+This argument is a reference to the specified configuration of the Equipment. Note that this is not necessarily its current configuration.
+</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD0173" name="loadEquipmentConfigurations" visibility="public" precondition="_x61wdDNHEd2nE5zXHK_HsA" postcondition="_x61wdjNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x6smhzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0173">
+          <body>This command loads the specified configuration data for the specified Equipment. If this method executes successfully, a 0 is returned. Otherwise, a non-zero integer is returned to signal the specific error(s) that were encountered.</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x61wdDNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0173">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x61wdTNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x61wdjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0173">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x61wdzNHEd2nE5zXHK_HsA">
+            <body>The functionality represented by the loaded Configuration should now be in effect (unless errors were encountered, which is signified by a non-zero return code) for each specified Equipment in this ManagedDevice.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x6smiTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD0174" name="Configuration" direction="inout">
+          <ownedComment xmi:id="_x6smizNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0174">
+            <body>A configuration is named and stored as an object, though it may be implemented as a set of objects. This enables configurations to be versioned.
+
+This argument is a reference to the specified configuration of the Equipment. Note that this is not necessarily its current configuration.
+</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD0175" name="EquipmentToConfigure" direction="inout">
+          <ownedComment xmi:id="_x61wcjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0175">
+            <body>This argument specifies the Equipment to configure. The Equipment is identified using its unique name. An exception will be thrown if an Equipment can't be found.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD0176" name="resetDevice" visibility="public" precondition="_x61wfTNHEd2nE5zXHK_HsA" postcondition="_x61wfzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x61wejNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0176">
+          <body>This operation allows a process to reset an Equipment. The successful result of this operation is the returning of the Equipment to its initial state prior to any Configuration. This operation will also delete any child objects of the Equipment object.
+
+Note that a loadConfiguration command must be given after this operation.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x61wfTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0176">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x61wfjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x61wfzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0176">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x61wgDNHEd2nE5zXHK_HsA">
+            <body>The specified Equipment is reset to its pre-operational state. However, it is not operational until a configureDevice (or a configureEquipmentInDevice) method, followed by a loadConfiguration method, are successfully executed.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x61wfDNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD0177" name="resetEquipmentInDevice" visibility="public" precondition="_x6_hdTNHEd2nE5zXHK_HsA" postcondition="_x6_hdzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x61wgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0177">
+          <body>This operation allows a process to reset one or more Equipments in this ManagedDevice (but not the entire ManagedDevice). The successful result of this operation is the returning of the Equipment to its initial state prior to any Configuration. This operation will also delete any child objects of the Equipment object.
+
+Note that a configureDevice (or configureEquipmentInDevice), followed by a loadConfiguration command, must both be successfully executed after this operation in order to activate the Equipment and make it operational again.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x6_hdTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0177">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6_hdjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x6_hdzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0177">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6_heDNHEd2nE5zXHK_HsA">
+            <body>The specified Equipment is reset to its pre-operational state. However, it is not operational until a configureDevice (or a configureEquipmentInDevice) method, followed by a loadConfiguration method, are successfully executed.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x6_hcTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD0178" name="EquipmentToConfigure" direction="inout">
+          <ownedComment xmi:id="_x6_hczNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0178">
+            <body>This argument specifies the Equipment to reset. The Equipment is identified using its unique name. An exception will be thrown if an Equipment can't be found.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD0179" name="setAlarmReporting" visibility="public" precondition="_x7ScYTNHEd2nE5zXHK_HsA" postcondition="_x7ScYzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x6_hezNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD0179">
+          <body>This method is used to enable or disable alarm reporting. Its return type is an Integer so that it can report success or failure of the operation. It has a parameter (IsEnabled) to control whether reporting was enabled or disabled.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x7ScYTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0179">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7ScYjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x7ScYzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD0179">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7ScZDNHEd2nE5zXHK_HsA">
+            <body>This Managed Device will now either start or stop reporting alarms.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x7JScTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD017A" name="IsEnabled" direction="inout">
+          <ownedComment xmi:id="_x7JSczNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017A">
+            <body>When this attribute is TRUE, this operation enables (i.e., activates, or turns on) alarm reporting on this Equipment. When this attribute is FALSE, it disables (i.e., deactivates, or turns off) alarm reporting on this Equipment.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD017B" name="updateConfiguration" visibility="public" precondition="_x7ScbTNHEd2nE5zXHK_HsA" postcondition="_x7ScbzNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x7ScZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017B">
+          <body>This operation allows a process to update a ManagedDevice's configuration. Note that the process may be from Software associated in the Equipment, as opposed to an external process.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x7ScbTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD017B">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7ScbjNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x7ScbzNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD017B">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7cNYDNHEd2nE5zXHK_HsA">
+            <body>The ManagedDevice Object has the newly updated configuration installed. However, its operation is unchanged until a loadConfiguration method is successfully executed.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x7ScaTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD017C" name="Configuration" direction="inout">
+          <ownedComment xmi:id="_x7ScazNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017C">
+            <body>A configuration is named and stored as an object, though it may be implemented as a set of objects. This enables configurations to be versioned.
+
+This argument is a reference to the specified configuration of the Equipment. Note that this is not necessarily its current configuration.
+</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93CDAA4DD017D" name="updateConfigurationInDevice" visibility="public" precondition="_x7cNaTNHEd2nE5zXHK_HsA" postcondition="_x7cNazNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x7cNYzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017D">
+          <body>This operation allows a process to update an Equipment's configuration in this ManagedDevice. Note that the process may be from Software associated in the Equipment, as opposed to an external process.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x7cNaTNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD017D">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7cNajNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x7cNazNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDAA4DD017D">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x7cNbDNHEd2nE5zXHK_HsA">
+            <body>The Equipment Object in this ManagedDevice has the newly updated configuration installed. However, its operation is unchanged until a loadConfiguration (or loadEquipmentConfiguration) method is successfully executed.</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x7cNZTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93CDAA4DD017E" name="Configuration" direction="inout">
+          <ownedComment xmi:id="_x7cNZzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAA4DD017E">
+            <body>A configuration is named and stored as an object, though it may be implemented as a set of objects. This enables configurations to be versioned.
+
+This argument is a reference to the specified configuration of the Equipment. Note that this is not necessarily its current configuration.
+</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDEBA4600CA" name="PhysicalDeviceAtomic">
+      <ownedComment xmi:id="_x7vIWTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEBA4600CA">
+        <body>This is a concrete base class for representing hardware devices that can be managed that contains no sub-ordinate devices. In other words, this physical device is a stand-alone physical device.
+
+This class represents a convenient aggregation point for combining different aspects of a device (e.g., its physical composition as well as the set of services that it offers). It also enables the device itself to have a physical manifestation. Examples of this class include routers and switches, computers, and other end-devices that are managed.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEBA7D03CC" general="_3E3F0EC000E93CDAB4C90013"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDEBA4D0048" name="PhysicalDeviceComposite">
+      <ownedComment xmi:id="_x745UzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEBA4D0048">
+        <body>This is a concrete base class for representing hardware devices that can be managed that contains one or more sub-ordinate devices. In other words, this physical device is not a stand-alone physical device; rather, it represents an aggregation of physical devices. Each physical device in this aggregation can be managed.
+
+This class represents a convenient aggregation point for combining different aspects of a device (e.g., its physical composition as well as the set of services that it offers). It also enables the device itself to have a physical manifestation. Examples of this class include routers and switches, computers, and other end-devices that are managed.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDEBA810042" general="_3E3F0EC000E93CDAB4C90013"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDFCA100103" name="numberOfDevicesTotal" visibility="public">
+        <ownedComment xmi:id="_x8L0STNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFCA100103">
+          <body>This attribute defines the total number of PhysicalDevices aggregated by this PhysicalDeviceComposite object. Note that this aggregation is for that particular level of aggregation. Thus, if a PhysicalDeviceComposite, called A, contains another PhysicalDeviceComposite, called B, then B's instance of this attribute will define how many PhysicalDevices are aggregated by B, whereas A's instance of this attribute will defined how many PhysicalDevices are aggregated by A (which includes those aggregated by B).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDFCA2A016F" name="numberOfDevicesCurrent" visibility="public">
+        <ownedComment xmi:id="_x8VlQjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFCA2A016F">
+          <body>This attribute defines the current number of PhysicalDevices aggregated by this PhysicalDeviceComposite object that are active and manageable.
+
+Note that this aggregation is for that particular level of aggregation. Thus, if a PhysicalDeviceComposite, called A, contains another PhysicalDeviceComposite, called B, then B's instance of this attribute will define how many PhysicalDevices are aggregated by B, whereas A's instance of this attribute will defined how many PhysicalDevices are aggregated by A (which includes those aggregated by B).
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEBA9A007A" name="_physicalDevice" visibility="public" type="_3E3F0EC000E93CDAB4C90013" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DDEBA9803AD">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8VlSTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8VlSDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_3E3F0EC000E93DDFC602025F" name="getAllPhysicalDevices" visibility="public" precondition="_x8CDQjNHEd2nE5zXHK_HsA" postcondition="_x8CDRDNHEd2nE5zXHK_HsA">
+        <ownedComment xmi:id="_x745WDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC602025F">
+          <body>This operation causes this PhysicalDeviceComposite object to provide a listing of all of its current active and reachable children.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedRule xmi:id="_x8CDQjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93DDFC602025F">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x8CDQzNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_x8CDRDNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93DDFC602025F">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_x8CDRTNHEd2nE5zXHK_HsA">
+            <body>None</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_x8CDQTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93DDFC8FF006B" name="addDevice" visibility="public">
+        <ownedComment xmi:id="_x8CDSDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC8FF006B">
+          <body>This operation adds a new PhysicalDevice to this PhysicalDeviceComposite object.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_x8CDSjNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93DDFC935034D" name="deviceToAdd" type="_3E3F0EC000E93CDAB4C90013" direction="inout">
+          <ownedComment xmi:id="_x8CDTDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC935034D">
+            <body>This defines the particular PhysicalDevice to add to this PhysicalDeviceComposite object.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93DDFC959034F" name="removeDevice" visibility="public">
+        <ownedComment xmi:id="_x8L0QjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC959034F">
+          <body>This operation removes a PhysicalDevice from this PhysicalDeviceComposite object.
+
+This operation returns 0 if successful and a non-zero value if unsuccessful.
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_x8L0RDNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93DDFC98C015E" name="deviceToRemove" type="_3E3F0EC000E93CDAB4C90013" direction="inout">
+          <ownedComment xmi:id="_x8L0RjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC98C015E">
+            <body>This defines the particular PhysicalDevice to remove from this PhysicalDeviceComposite object.&quot;
+</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DDEBA9803AD" name="HasDevices" memberEnd="_3E3F0EC000E93DDEBA9A007A _3E3F0EC000E93DDEBA9A0084">
+      <ownedComment xmi:id="_x8VlRTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEBA9803AD">
+        <body>This aggregation defines the set of PhysicalDevices that are contained in the associated PhysicalDeviceComposite object. These contained PhysicalDevices can be instances of either the PhysicalDeviceAtomic and/or PhysicalDeviceComposite classes</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CDAC2DC00B4" name="ConsistsOf">
+      <ownedComment xmi:id="_x8evMTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAC2DC00B4">
+        <body>This aggregation represents the set of hardware that is required to physically construct a ManagedDevice. This is an aggregation, not a composition, because a PhysicalDevice can contain non-critical elements that can be removed without impairing the basic functionality of the PhysicalDevice.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93CDAC2DD0001?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Device%20ABE/PhysicalDevice/_hardware?"/>
+      <memberEnd href="Hardware%20ABE.efx#_3E3F0EC000E93CDAC2DD000B?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalDevice?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EE91CC50313" name="HasPhysicalDeviceRoles">
+      <ownedComment xmi:id="_x8evOjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE91CC50313">
+        <body>This aggregation defines the set of different roles that a given PhysicalDevice object can have. This version of DEN-ng defines several types of PhysicalDeviceRoles, called PhysicalEncryptionRole, PhysicalFirewallRole, PhysicalRouterRole, and PhysicalSwitchRole. These are certainly not all of the PhysicalDeviceRoles that are possible to define; rather, their definition serves to better understand what is needed of the PhysicalDeviceRole class hierarchy.
+
+This aggregation enables PhysicalDevices that have one or more of these functions to be abstracted and modeled using roles.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EE91CC90020?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Device%20ABE/PhysicalDevice/_physicalDeviceRole?"/>
+      <memberEnd href="Physical%20Role%20ABE.efx#_3E3F0EC000E93EE91CC90034?SID%20Phase%20VIII%20Models/Logical%20View/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalDeviceRole/_physicalDevice?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_x6P6kDNHEd2nE5zXHK_HsA" base_Comment="_x6GJnDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6P6lTNHEd2nE5zXHK_HsA" base_Comment="_x6P6lDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6P6mTNHEd2nE5zXHK_HsA" base_Comment="_x6P6mDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6ZrkDNHEd2nE5zXHK_HsA" base_Comment="_x6P6mzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6ZrmDNHEd2nE5zXHK_HsA" base_Comment="_x6ZrlzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6i1gDNHEd2nE5zXHK_HsA" base_Comment="_x6ZrmzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6i1gzNHEd2nE5zXHK_HsA" base_Comment="_x6i1gjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6i1izNHEd2nE5zXHK_HsA" base_Comment="_x6i1ijNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6smgDNHEd2nE5zXHK_HsA" base_Comment="_x6i1jjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6smiDNHEd2nE5zXHK_HsA" base_Comment="_x6smhzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x61wcDNHEd2nE5zXHK_HsA" base_Comment="_x6smizNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x61wczNHEd2nE5zXHK_HsA" base_Comment="_x61wcjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x61wezNHEd2nE5zXHK_HsA" base_Comment="_x61wejNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6_hcDNHEd2nE5zXHK_HsA" base_Comment="_x61wgzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x6_hdDNHEd2nE5zXHK_HsA" base_Comment="_x6_hczNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7JScDNHEd2nE5zXHK_HsA" base_Comment="_x6_hezNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7ScYDNHEd2nE5zXHK_HsA" base_Comment="_x7JSczNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7ScaDNHEd2nE5zXHK_HsA" base_Comment="_x7ScZzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7ScbDNHEd2nE5zXHK_HsA" base_Comment="_x7ScazNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7cNZDNHEd2nE5zXHK_HsA" base_Comment="_x7cNYzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7cNaDNHEd2nE5zXHK_HsA" base_Comment="_x7cNZzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7l-YDNHEd2nE5zXHK_HsA" base_Comment="_x7cNbjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7l-YzNHEd2nE5zXHK_HsA" base_Comment="_x7l-YjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7l-ZjNHEd2nE5zXHK_HsA" base_Comment="_x7l-ZTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7vIUDNHEd2nE5zXHK_HsA" base_Comment="_x7l-aDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7vIUzNHEd2nE5zXHK_HsA" base_Comment="_x7vIUjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x7vIVjNHEd2nE5zXHK_HsA" base_Comment="_x7vIVTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x745UDNHEd2nE5zXHK_HsA" base_Comment="_x7vIWTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x745VDNHEd2nE5zXHK_HsA" base_Comment="_x745UzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8CDQDNHEd2nE5zXHK_HsA" base_Comment="_x745WDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8CDSTNHEd2nE5zXHK_HsA" base_Comment="_x8CDSDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8CDTTNHEd2nE5zXHK_HsA" base_Comment="_x8CDTDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8L0QzNHEd2nE5zXHK_HsA" base_Comment="_x8L0QjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8L0RzNHEd2nE5zXHK_HsA" base_Comment="_x8L0RjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8VlQDNHEd2nE5zXHK_HsA" base_Comment="_x8L0STNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8VlQzNHEd2nE5zXHK_HsA" base_Comment="_x8VlQjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8VlRjNHEd2nE5zXHK_HsA" base_Comment="_x8VlRTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8evMjNHEd2nE5zXHK_HsA" base_Comment="_x8evMTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x8evOzNHEd2nE5zXHK_HsA" base_Comment="_x8evOjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Operation xmi:id="_zV4yJjNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD0179" Exceptions="commErrorWithEquipment, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zWCjLjNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD017C" Type="Configuration"/>
+  <Rose:Rose_Parameter xmi:id="_zWCjOzNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD0174" Type="Configuration"/>
+  <Rose:Rose_Parameter xmi:id="_zWCjQTNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD0170" Type="SequenceOf String"/>
+  <Rose:Rose_Parameter xmi:id="_zWMUJDNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD0172" Type="Configuration"/>
+  <Rose:Rose_Operation xmi:id="_zWMUJzNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD016E" Exceptions="communicationError, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZBDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93DDFC959034F" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZDDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD0177" Exceptions="communicationError, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZFDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD016B" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZFjNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD017D" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZGTNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93DDFC8FF006B" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zWyKCTNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD016D" Type="SequenceOf String"/>
+  <Rose:Rose_Parameter xmi:id="_zW77EzNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD016F" Type="Configuration"/>
+  <Rose:Rose_Parameter xmi:id="_zXO19zNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD0178" Type="SequenceOf String"/>
+  <Rose:Rose_Parameter xmi:id="_zXYm_jNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD0175" Type="SequenceOf String"/>
+  <Rose:Rose_Parameter xmi:id="_zXYnAzNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD016C" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zXYnBzNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD0176" Exceptions="communicationError, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zXhw4zNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93CDAA4DD017E" Type="Configuration"/>
+  <Rose:Rose_Operation xmi:id="_zXhw6jNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD0173" Exceptions="communicationError, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zXhw9jNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD0171" Exceptions="communicationError, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zXhw-jNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93CDAA4DD017B" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zXrh5DNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93DDFC602025F" Exceptions="commErrorWithHolder, entityAlreadyExists, entityNotFound, entityInUse, internalError, invalidArgument, timeOut"/>
+</xmi:XMI>
