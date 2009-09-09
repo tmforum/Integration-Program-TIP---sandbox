@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!--
+    * * This artifact is a sample to help with the Model2Xml mapping rules *
+    implemented in the SOAP Generator. * This artifact is normally generated
+    from TIP Internal Model for * XSD injection in generated XML artifacts. *
+  -->
+  <!--
+    Licensed to Members of the TIP Open Source Community under one or more
+    contributor license agreements. See the NOTICE file distributed with this
+    work for additional information regarding copyright ownership. Members of
+    the TIP Open Source Community licences this file to You under the Apache
+    License, Version 2.0 (the "License"); you may not use this file except in
+    compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law
+    or agreed to in writing, software distributed under the License is
+    distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied. See the License for the specific language
+    governing permissions and limitations under the License.
+  -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/xml/tip/internal/mep"
+  xmlns:tns="http://www.tmforum.org/xml/tip/internal/mep"
+  attributeFormDefault="unqualified" elementFormDefault="qualified" version="0.0.2">
+  <xsd:annotation>
+    <xsd:documentation>
+    </xsd:documentation>
+  </xsd:annotation>
+  
+  <xsd:complexType name="MepPolicies">
+    <xsd:annotation>
+      <xsd:documentation>
+        .
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:choice>
+      <xsd:element name="bulkIteration" type="tns:BulkIterationPolicies">
+        <xsd:annotation>
+          <xsd:documentation>
+            .
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:choice>
+  </xsd:complexType>
+  
+  <xsd:complexType name="BulkIterationPolicies">
+    <xsd:annotation>
+      <xsd:documentation>
+        .
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:all>
+      <xsd:element name="iteratorId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            Provide the ID to correlate with an iterator resource on the server-side.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="iteratorUri" type="xsd:anyURI" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            Provide the URI (SOAP address) of the Iterator.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="maxBatchSize" type="xsd:long" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            .
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:all>
+  </xsd:complexType>
+  
+</xsd:schema>

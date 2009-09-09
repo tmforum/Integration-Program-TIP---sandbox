@@ -1,318 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- *
- *  Generated with Tigerstripe Workbench 0.5.0.200908271716NGT.
- *
- *  Plugin  : Nortel Networks/TIP_Soap_Generator(0.1.3) (0.1.3)
- *
- *  DO NOT EDIT THIS CODE WAS AUTOMATICALLY GENERATED
--->
-<!--
-Licensed to Members of the TM Forum under one or more
-contributor license agreements.  See the NOTICE file distributed with
-this work for additional information regarding copyright ownership.
-Members of the TM Forum licences this file to You under the Apache License, 
-Version 2.0 (the "License"); you may not use this file except in compliance with
-the License.  You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
- limitations under the License.
--->
-<wsdl:definitions name="ServiceProblemInterface"
-    targetNamespace="http://www.tmforum.org/xml/tip/service/problem"
-    xmlns:tns="http://www.tmforum.org/xml/tip/service/problem"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-    xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl">
-    <!-- WSDL Types -->
-    <wsdl:types>
-        <xsd:schema>
-            <xsd:import namespace="http://www.tmforum.org/xml/tip/service/problem"
-                schemaLocation="service_problem_serviceprobleminterface_msg.xsd"/>
-        </xsd:schema>
-    </wsdl:types>
-    <!-- Message Definitions of the Service Interface -->
-    <wsdl:message name="acknowledgeProblemsRequest">
-        <wsdl:documentation>
-            <p>The operation request message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-            name="body"
-            element="tns:acknowledgeProblemsRequest" />
-    </wsdl:message>
-    <wsdl:message name="acknowledgeProblemsResponse">
-        <wsdl:documentation>
-            <p>The operation response message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:acknowledgeProblemsResponse" />
-    </wsdl:message>
-    <wsdl:message name="acknowledgeProblemsException">
-        <wsdl:documentation>
-            <p>The operation exception message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:acknowledgeProblemsException" />
-    </wsdl:message>
-    <wsdl:message name="clearProblemsRequest">
-        <wsdl:documentation>
-            <p>The operation request message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-            name="body"
-            element="tns:clearProblemsRequest" />
-    </wsdl:message>
-    <wsdl:message name="clearProblemsResponse">
-        <wsdl:documentation>
-            <p>The operation response message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:clearProblemsResponse" />
-    </wsdl:message>
-    <wsdl:message name="clearProblemsException">
-        <wsdl:documentation>
-            <p>The operation exception message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:clearProblemsException" />
-    </wsdl:message>
-    <wsdl:message name="unAcknowledgeProblemsRequest">
-        <wsdl:documentation>
-            <p>The operation request message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-            name="body"
-            element="tns:unAcknowledgeProblemsRequest" />
-    </wsdl:message>
-    <wsdl:message name="unAcknowledgeProblemsResponse">
-        <wsdl:documentation>
-            <p>The operation response message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:unAcknowledgeProblemsResponse" />
-    </wsdl:message>
-    <wsdl:message name="unAcknowledgeProblemsException">
-        <wsdl:documentation>
-            <p>The operation exception message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:unAcknowledgeProblemsException" />
-    </wsdl:message>
-    <wsdl:message name="unClearProblemsRequest">
-        <wsdl:documentation>
-            <p>The operation request message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-            name="body"
-            element="tns:unClearProblemsRequest" />
-    </wsdl:message>
-    <wsdl:message name="unClearProblemsResponse">
-        <wsdl:documentation>
-            <p>The operation response message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:unClearProblemsResponse" />
-    </wsdl:message>
-    <wsdl:message name="unClearProblemsException">
-        <wsdl:documentation>
-            <p>The operation exception message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:unClearProblemsException" />
-    </wsdl:message>
-    <wsdl:message name="commentProblemsRequest">
-        <wsdl:documentation>
-            <p>The operation request message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-            name="body"
-            element="tns:commentProblemsRequest" />
-    </wsdl:message>
-    <wsdl:message name="commentProblemsResponse">
-        <wsdl:documentation>
-            <p>The operation response message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:commentProblemsResponse" />
-    </wsdl:message>
-    <wsdl:message name="commentProblemsException">
-        <wsdl:documentation>
-            <p>The operation exception message.</p>
-        </wsdl:documentation>
-        <wsdl:part
-          name="body"
-          element="tns:commentProblemsException" />
-    </wsdl:message>
-    <!-- Port Type (abstract interface) Definitions of the Service Interface -->
-    <wsdl:portType name="ServiceProblemInterface">
-        <wsdl:documentation>
-            <p>The portType of the service interface</p>
-        </wsdl:documentation>
-        <wsdl:operation name="acknowledgeProblems">
-            <wsdl:documentation>
-                <p>The request-response operation</p>
-            </wsdl:documentation>
-            <wsdl:input
-                name="acknowledgeProblemsRequest"
-                message="tns:acknowledgeProblemsRequest" />
-            <wsdl:output
-                name="acknowledgeProblemsResponse"
-                message="tns:acknowledgeProblemsResponse" />
-            <wsdl:fault
-                name="acknowledgeProblemsException"
-                message="tns:acknowledgeProblemsException" />
-        </wsdl:operation>
-        <wsdl:operation name="clearProblems">
-            <wsdl:documentation>
-                <p>The request-response operation</p>
-            </wsdl:documentation>
-            <wsdl:input
-                name="clearProblemsRequest"
-                message="tns:clearProblemsRequest" />
-            <wsdl:output
-                name="clearProblemsResponse"
-                message="tns:clearProblemsResponse" />
-            <wsdl:fault
-                name="clearProblemsException"
-                message="tns:clearProblemsException" />
-        </wsdl:operation>
-        <wsdl:operation name="unAcknowledgeProblems">
-            <wsdl:documentation>
-                <p>The request-response operation</p>
-            </wsdl:documentation>
-            <wsdl:input
-                name="unAcknowledgeProblemsRequest"
-                message="tns:unAcknowledgeProblemsRequest" />
-            <wsdl:output
-                name="unAcknowledgeProblemsResponse"
-                message="tns:unAcknowledgeProblemsResponse" />
-            <wsdl:fault
-                name="unAcknowledgeProblemsException"
-                message="tns:unAcknowledgeProblemsException" />
-        </wsdl:operation>
-        <wsdl:operation name="unClearProblems">
-            <wsdl:documentation>
-                <p>The request-response operation</p>
-            </wsdl:documentation>
-            <wsdl:input
-                name="unClearProblemsRequest"
-                message="tns:unClearProblemsRequest" />
-            <wsdl:output
-                name="unClearProblemsResponse"
-                message="tns:unClearProblemsResponse" />
-            <wsdl:fault
-                name="unClearProblemsException"
-                message="tns:unClearProblemsException" />
-        </wsdl:operation>
-        <wsdl:operation name="commentProblems">
-            <wsdl:documentation>
-                <p>The request-response operation</p>
-            </wsdl:documentation>
-            <wsdl:input
-                name="commentProblemsRequest"
-                message="tns:commentProblemsRequest" />
-            <wsdl:output
-                name="commentProblemsResponse"
-                message="tns:commentProblemsResponse" />
-            <wsdl:fault
-                name="commentProblemsException"
-                message="tns:commentProblemsException" />
-        </wsdl:operation>
-    </wsdl:portType>    <!-- Binding - Concrete Service Interface deployment SOAP/HTTP -->
-    <wsdl:binding name="ServiceProblemInterfaceSoapHttpBinding" type="tns:ServiceProblemInterface">
-        <wsdl:documentation>
-            <p>Web Service (SOAP/HTTP) profile binding definitions.</p>
-        </wsdl:documentation>
-        <soap:binding style="document"
-            transport="http://schemas.xmlsoap.org/soap/http"/>
-        <wsaw:UsingAddressing wsdl:required="true"/>
-        <wsdl:operation name="acknowledgeProblems">
-            <soap:operation soapAction="acknowledgeProblems" style="document"/> 
-            <wsdl:input name="acknowledgeProblemsRequest">
-                <soap:body use="literal"/>
-            </wsdl:input>
-            <wsdl:output name="acknowledgeProblemsResponse">
-                <soap:body use="literal"/>
-            </wsdl:output>
-            <wsdl:fault name="acknowledgeProblemsException"> 
-                <soap:fault name ="acknowledgeProblemsException" use="literal"/>
-            </wsdl:fault>
-        </wsdl:operation>
-        <wsdl:operation name="clearProblems">
-            <soap:operation soapAction="clearProblems" style="document"/> 
-            <wsdl:input name="clearProblemsRequest">
-                <soap:body use="literal"/>
-            </wsdl:input>
-            <wsdl:output name="clearProblemsResponse">
-                <soap:body use="literal"/>
-            </wsdl:output>
-            <wsdl:fault name="clearProblemsException"> 
-                <soap:fault name ="clearProblemsException" use="literal"/>
-            </wsdl:fault>
-        </wsdl:operation>
-        <wsdl:operation name="unAcknowledgeProblems">
-            <soap:operation soapAction="unAcknowledgeProblems" style="document"/> 
-            <wsdl:input name="unAcknowledgeProblemsRequest">
-                <soap:body use="literal"/>
-            </wsdl:input>
-            <wsdl:output name="unAcknowledgeProblemsResponse">
-                <soap:body use="literal"/>
-            </wsdl:output>
-            <wsdl:fault name="unAcknowledgeProblemsException"> 
-                <soap:fault name ="unAcknowledgeProblemsException" use="literal"/>
-            </wsdl:fault>
-        </wsdl:operation>
-        <wsdl:operation name="unClearProblems">
-            <soap:operation soapAction="unClearProblems" style="document"/> 
-            <wsdl:input name="unClearProblemsRequest">
-                <soap:body use="literal"/>
-            </wsdl:input>
-            <wsdl:output name="unClearProblemsResponse">
-                <soap:body use="literal"/>
-            </wsdl:output>
-            <wsdl:fault name="unClearProblemsException"> 
-                <soap:fault name ="unClearProblemsException" use="literal"/>
-            </wsdl:fault>
-        </wsdl:operation>
-        <wsdl:operation name="commentProblems">
-            <soap:operation soapAction="commentProblems" style="document"/> 
-            <wsdl:input name="commentProblemsRequest">
-                <soap:body use="literal"/>
-            </wsdl:input>
-            <wsdl:output name="commentProblemsResponse">
-                <soap:body use="literal"/>
-            </wsdl:output>
-            <wsdl:fault name="commentProblemsException"> 
-                <soap:fault name ="commentProblemsException" use="literal"/>
-            </wsdl:fault>
-        </wsdl:operation>
-    </wsdl:binding>
-    <!-- Web Service sample definition -->
-    <wsdl:service name="ServiceProblemInterfaceWs">
-        <wsdl:documentation>
-          <p>This is a sample wsdl:service definition of the service interface
-          for an implementation using the WS profile (SOAP/HTTP binging).</p>
-          <p>This wsdl:service definition is usually used at implementation time
-          or WS registration/discovery of a specific WS instance.</p>
-        </wsdl:documentation>
-        <wsdl:port name="ServiceProblemInterfaceHttpPort"
-            binding="tns:ServiceProblemInterfaceSoapHttpBinding">
-            <soap:address location="http://localhost/ServiceProblemInterface"/>
-        </wsdl:port>
-    </wsdl:service>
+  <!--
+    *
+    * This is file is manually generated as helper for the definition
+    * of the TIP SOAP Generator.
+    * This file provides the SOAP binding and service definitions
+    * for the abstract WS-Enumeration specification (W3C)
+  -->
+<wsdl:definitions name="TipEnumerationWs"
+  targetNamespace="http://www.tmforum.org/xml/tip/cbe/test"
+  xmlns:tns="http://www.tmforum.org/xml/tip/cbe/test"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl">
+  <!-- WSDL Types -->
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import namespace="http://www.tmforum.org/xml/tip/cbe/test"
+        schemaLocation="cbe_test_testbulkinterface_msg.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <!-- Message Definitions of the Service Interface -->
+  <wsdl:message name="getTestProblemsByIteratorRequestMessage">
+    <wsdl:documentation>
+      <p>The operation request message.</p>
+    </wsdl:documentation>
+    <wsdl:part name="body" element="tns:getTestProblemsByIteratorRequest" />
+  </wsdl:message>
+  <wsdl:message name="getTestProblemsByIteratorResponseMessage">
+    <wsdl:documentation>
+      <p>The operation response message.</p>
+    </wsdl:documentation>
+    <wsdl:part name="body" element="tns:getTestProblemsByIteratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTestProblemsByIteratorExceptionMessage">
+    <wsdl:documentation>
+      <p>The operation exception message.</p>
+    </wsdl:documentation>
+    <wsdl:part name="body" element="tns:getTestProblemsByIteratorException" />
+  </wsdl:message>
+  <!-- Port Type (abstract interface) Definitions of the Service Interface -->
+  <wsdl:portType name="CbeTestInterface">
+    <wsdl:documentation>
+      <p>The portType of the service interface</p>
+    </wsdl:documentation>
+    <wsdl:operation name="getTestProblemsByIterator">
+      <wsdl:documentation>
+        <p>The request-response operation</p>
+      </wsdl:documentation>
+      <wsdl:input name="getTestProblemsByIteratorRequest" message="tns:getTestProblemsByIteratorRequestMessage" />
+      <wsdl:output name="getTestProblemsByIteratorResponse"
+        message="tns:getTestProblemsByIteratorResponseMessage" />
+      <wsdl:fault name="getTestProblemsByIteratorException"
+        message="tns:getTestProblemsByIteratorExceptionMessage" />
+    </wsdl:operation>
+  </wsdl:portType>    <!-- Binding - Concrete Service Interface deployment SOAP/HTTP -->
+  <wsdl:binding name="CbeTestInterfaceSoapHttpBinding" type="tns:CbeTestInterface">
+    <wsdl:documentation>
+      <p>Web Service (SOAP/HTTP) profile binding definitions.</p>
+    </wsdl:documentation>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsaw:UsingAddressing wsdl:required="true" />
+    <wsdl:operation name="getTestProblemsByIterator">
+      <soap:operation
+        soapAction="http://www.tmforum.org/xml/tip/cbe/test/getTestProblemsByIterator"
+        style="document" />
+      <wsdl:input name="getTestProblemsByIteratorRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTestProblemsByIteratorResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="getTestProblemsByIteratorException">
+        <soap:fault name="getTestProblemsByIteratorException" use="literal" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <!-- Web Service sample definition -->
+  <wsdl:service name="CbeTestInterfaceWs">
+    <wsdl:documentation>
+      <p>This is a sample wsdl:service definition of the service interface
+        for an implementation using the WS profile (SOAP/HTTP binging).</p>
+      <p>This wsdl:service definition is usually used at implementation time
+        or WS registration/discovery of a specific WS instance.</p>
+    </wsdl:documentation>
+    <wsdl:port name="CbeTestInterfaceHttpPort" binding="tns:CbeTestInterfaceSoapHttpBinding">
+      <soap:address location="http://localhost/CbeTestInterface" />
+    </wsdl:port>
+  </wsdl:service>
 </wsdl:definitions>

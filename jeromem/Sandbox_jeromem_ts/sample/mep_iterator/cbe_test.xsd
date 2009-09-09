@@ -26,7 +26,8 @@
   </xsd:annotation>
   <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/entity"
     schemaLocation="internal_entity.xsd" />
-  <xsd:element name="testProblem" type="tns:TestProblem" substitutionGroup="entity:entityBase" />
+  <xsd:element name="testProblem" type="tns:TestProblem"
+    substitutionGroup="entity:entityBase" />
   <xsd:complexType name="TestProblem">
     <xsd:annotation>
       <xsd:documentation>
@@ -46,5 +47,12 @@
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ArrayOfTestProblem">
+    <xsd:sequence>
+      <xsd:element name="item" type="tns:TestProblem" nillable="true"
+        minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
   </xsd:complexType>
 </xsd:schema>
