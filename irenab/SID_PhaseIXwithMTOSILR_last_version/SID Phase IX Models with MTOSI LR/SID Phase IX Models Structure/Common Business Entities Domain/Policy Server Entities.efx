@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93F16A60901F6" name="Policy Server Entities">
+    <eAnnotations xmi:id="_BOVg8TNOEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_BOVg8DNOEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Policy%20Application.efx#_3E3F0EC000E93E1B4A6D0151?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77EE090153" name="PolicyDecisionPoint">
+      <ownedComment xmi:id="_vptbUTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77EE090153">
+        <body>A PolicyDecisionPoint is a type of PolicyApplication. It makes policy decisions for itself or for other entities that request such decisions, such as PolicyEnforcementPoints (PEPs) and PolicyExecutionPoints (PXPs). One or more PolicyDecisionPoints are contained in a PolicyServer.
+
+PDPs use policies to configure or answer queries from policy-capable network elements or from an operator of the PBNM system. An example of a query is an RSVP admission request - a decision must be made to either accept or reject the request by the receiving network element. Since the network element doesn't have any idea about the overall state of the network, it makes a request of the PDP, asking the PDP if the RSVP request should be allowed. Thus, the PDP serves as the interface between the network and higher level processes.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D7F521B02BB">
+        <general xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7F51F50392?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169F0902B7" name="_policyEnforcementPoint" visibility="public" type="_3E3F0EC000E93D77EE1201C6" isUnique="false" association="_3E3F0EC000E93F169F050294">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vunwgzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vunwgjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDA898501C1" name="_policyExecutionPoint" visibility="public" type="_3E3F0EC000E93EDA857301A5" isUnique="false" association="_3E3F0EC000E93EDA89820144">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vuxhhTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vuxhhDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDB8D2702CE" name="_managedEntity" visibility="public" isUnique="false" association="_3E3F0EC000E93EDB8D200308">
+        <type xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvq5ZDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvq5YzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_juXcYVKQEd2Z__GE9qBDpQ" name="logicaldevice" visibility="public" association="_juXcYFKQEd2Z__GE9qBDpQ">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Logical%20Device%20ABE.efx#_3E3F0EC000E93DCCA5AF007E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rFPjUVKQEd2Z__GE9qBDpQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rFPjUFKQEd2Z__GE9qBDpQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B0179" name="associatePolicy" visibility="public">
+        <ownedComment xmi:id="_vptbVjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0179">
+          <body>This method associates thePolicy with this PolicySubject.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vp2lQTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B017A" name="thePolicy" direction="inout">
+          <ownedComment xmi:id="_vp2lQzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B017A">
+            <body>This argument specifies the name of the Policy that should be associated with this PolicySubject.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B0183" name="getActiveRequests" visibility="public">
+        <ownedComment xmi:id="_vqAWQzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0183">
+          <body>This method returns the set of active policy decision requests that are still outstanding. A parameter specifies the set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vqAWRTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0184" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vqAWRzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0184">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B0185" name="getDecisions" visibility="public">
+        <ownedComment xmi:id="_vqKHQzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0185">
+          <body>This method returns the set of policy decisions that have been made. A parameter specifies the set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vqKHRTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0186" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vqKHRzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0186">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B0187" name="getPolicies" visibility="public">
+        <ownedComment xmi:id="_vqTRMzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0187">
+          <body>This returns the names of the set of policies that are associated with this PolicySubject.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vqTRNTNHEd2nE5zXHK_HsA" direction="return"/>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0188" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vqTRNzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0188">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B018D" name="getResultsEnforced" visibility="public">
+        <ownedComment xmi:id="_vq5uJzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B018D">
+          <body>This method returns the set of enforcement results that have been completed. A parameter specifies the set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vq5uKTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B018E" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vq5uKzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B018E">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B018F" name="getResultsOutstanding" visibility="public">
+        <ownedComment xmi:id="_vrC4EzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B018F">
+          <body>This method returns the set of enforcement requests that are still outstanding. A parameter specifies the set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vrC4FTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0190" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vrC4FzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0190">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC98B0191" name="makeDecisionRequest" visibility="public">
+        <ownedComment xmi:id="_vrMpEzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0191">
+          <body>This method enables a Policy Decision Request to be applied to a particular PolicyTarget in a given PolicyDomain.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vrMpFTNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0192" name="theDomain" direction="inout">
+          <ownedComment xmi:id="_vrMpFzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0192">
+            <body>This argument specifies the name of the PolicyDomain that this request should be applied to.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D7B908703DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyDomain?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC98B0193" name="theTarget" direction="inout">
+          <ownedComment xmi:id="_vrWaEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC98B0193">
+            <body>This argument specifies the name(s) of the PolicyTarget(s) that this request should be applied to.</body>
+          </ownedComment>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77EE1201C6" name="PolicyEnforcementPoint">
+      <ownedComment xmi:id="_vrWaFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77EE1201C6">
+        <body>A PolicyEnforcementPoint is a type of PolicyApplication, and is used to verify that a prescribed set of PolicyActions have been successfully executed on a set of PolicyTargets.
+ 
+A PolicyEnforcementPoint serves as an interface between the devices that policy is executed on and the policy decision-makers (such as the PolicyDecisionPoint) of the policy. PolicyEnforcementPoints request work to be performed from PolicyDecisionPoints, and then enforce decisions made by PolicyExecutionPoints on their PolicyTargets. One or more PolicyEnforcementPoints are contained in a PolicyServer.
+
+The combination of a PolicyExecutionPoint and a PolicyEnforcementPoint enable the act of executing a decision (made by a PolicyExecutionPoint) to be separated from the act of ensuring that the executing actions were performed correctly, and had the desired results (both of these latter two functions are performed by the PolicyEnforcementPoint).
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D7F52170319">
+        <general xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7F51F50392?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169F0902C1" name="_policyDecisionPoint" visibility="public" type="_3E3F0EC000E93D77EE090153" isUnique="false" association="_3E3F0EC000E93F169F050294">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vunwhjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vunwhTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDA89BE0321" name="_policyExecutionPoint" visibility="public" type="_3E3F0EC000E93EDA857301A5" isUnique="false" association="_3E3F0EC000E93EDA89BB00CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvEcczNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvEccjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDB8C5D02A4" name="_managedEntity" visibility="public" isUnique="false" association="_3E3F0EC000E93EDB8C580397">
+        <type xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvEcfDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvEcezNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC930032D" name="applyPolicy" visibility="public">
+        <ownedComment xmi:id="_vrfkBDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032D">
+          <body>This method instructs thePolicy to be applied to the PolicyTarget. This is turn instructs one or more PEPs to apply the results of this Policy to the set of devices that they manage.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vrpVATNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930032E" name="includeSubDomains" direction="inout">
+          <ownedComment xmi:id="_vrye8TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032E">
+            <body>This is a Boolean argument. If its value is TRUE, then this operation should be run against all contained PolicyDomains. Otherwise, it should be run against just the specified PolicyDomain.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930032F" name="theDomain" direction="inout">
+          <ownedComment xmi:id="_vrye9DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032F">
+            <body>This argument specifies the PolicyDomain that this operation should be run against.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D7B908703DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyDomain?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300330" name="theTarget" direction="inout">
+          <ownedComment xmi:id="_vrye9zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300330">
+            <body>This argument specifies the name(s) of the PolicyTarget(s) that this operation should be run against. This argument is an array of strings, where each string is the name of a PolicyTarget.</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300331" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vr8P8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300331">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC930031D" name="getEnforcementRequests" visibility="public">
+        <ownedComment xmi:id="_vr8P9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930031D">
+          <body>This method returns the set of active policy enforcement actions that have been issued against the ManagedElements that are part of this PolicyTarget and which are still outstanding. Parameters specify the particular PolicyDomain and set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vsGA8TNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930031E" name="includeSubDomains" direction="inout">
+          <ownedComment xmi:id="_vsGA8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930031E">
+            <body>This is a Boolean argument. If its value is TRUE, then this operation should be run against all contained PolicyDomains. Otherwise, it should be run against just the specified PolicyDomain.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930031F" name="theDomain" direction="inout">
+          <ownedComment xmi:id="_vsGA9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930031F">
+            <body>This argument specifies the PolicyDomain that this operation should be run against.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D7B908703DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyDomain?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300320" name="theTarget" direction="inout">
+          <ownedComment xmi:id="_vsGA-TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300320">
+            <body>This argument specifies the name(s) of the PolicyTarget(s) that this operation should be run against. This argument is an array of strings, where each string is the name of a PolicyTarget.</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300321" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vsPK4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300321">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC9300322" name="getEnforcementResults" visibility="public">
+        <ownedComment xmi:id="_vsPK5jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300322">
+          <body>This method returns the set of policy enforcement actions that have been made. Parameters specify the particular PolicyDomain and set of ManagedEntities that this operation should be performed for.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vsY74TNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300327" name="includeSubDomains" direction="inout">
+          <ownedComment xmi:id="_vsY74zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300327">
+            <body>This is a Boolean argument. If its value is TRUE, then this operation should be run against all contained PolicyDomains. Otherwise, it should be run against just the specified PolicyDomain.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300328" name="theDomain" direction="inout">
+          <ownedComment xmi:id="_vsY75jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300328">
+            <body>This argument specifies the PolicyDomain that this operation should be run against.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D7B908703DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyDomain?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC9300329" name="theTarget" direction="inout">
+          <ownedComment xmi:id="_vsis4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC9300329">
+            <body>This argument specifies the name(s) of the PolicyTarget(s) that this operation should be run against. This argument is an array of strings, where each string is the name of a PolicyTarget.</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930032A" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vsis5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032A">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D7BC930032B" name="getEnforcedPolicies" visibility="public">
+        <ownedComment xmi:id="_vsis6TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032B">
+          <body>This returns the names of the set of policies that have been applied to this PolicyTarget.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vsr20TNHEd2nE5zXHK_HsA" direction="return"/>
+        <ownedParameter xmi:id="_3E3F0EC000E93D7BC930032C" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vsr20zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D7BC930032C">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3E3F0EC000E93D877143012C" name="decommissionPolicy" visibility="public">
+        <ownedComment xmi:id="_vsr21zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D877143012C">
+          <body>This method instructs thePolicy to be removed from the PolicyTarget. This is turn instructs one or more PEPs to apply the results of this Policy to remove the original policy from the set of devices that they manage.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_vs1n0TNHEd2nE5zXHK_HsA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D8771430136" name="includeSubDomains" direction="inout">
+          <ownedComment xmi:id="_vs1n0zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8771430136">
+            <body>This is a Boolean argument. If its value is TRUE, then this operation should be run against all contained PolicyDomains. Otherwise, it should be run against just the specified PolicyDomain.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D8771430137" name="theDomain" direction="inout">
+          <ownedComment xmi:id="_vs1n1jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8771430137">
+            <body>This argument specifies the PolicyDomain that this operation should be run against.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D7B908703DE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyDomain?"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D8771430138" name="theTarget" direction="inout">
+          <ownedComment xmi:id="_vs-xwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8771430138">
+            <body>This argument specifies the name(s) of the PolicyTarget(s) that this operation should be run against. This argument is an array of strings, where each string is the name of a PolicyTarget.</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:id="_3E3F0EC000E93D8771430139" name="typeOfEntities" direction="inout">
+          <ownedComment xmi:id="_vs-xxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8771430139">
+            <body>This is an enumerated integer that defines the type of ManagedEntities that this operation should be run against. Values include:
+
+  0:  All ManagedEntities
+  1:  Just NetworkServices
+  2:  Just NetworkDevices
+  3:  Just Party and PartyRole Entities
+  4:  Just Product Entities
+  5:  Just Service Entities
+  6:  Just PhysicalResource Entities
+  7:  Other Entities
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EDA857301A5" name="PolicyExecutionPoint">
+      <ownedComment xmi:id="_vs-xyDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA857301A5">
+        <body>A PolicyExecutionPoint is an entity that is used to execute a prescribed set of PolicyActions on a set of PolicyTargets.
+
+The combination of a PolicyExecutionPoint and a PolicyEnforcementPoint enable the act of executing a decision (made by a PolicyDecisionPoint) to be separated from the act of ensuring that the executing actions were performed correctly, and had the desired results.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EDA86100007">
+        <general xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7F51F50392?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDA898501CB" name="_policyDecisionPoint" visibility="public" type="_3E3F0EC000E93D77EE090153" isUnique="false" association="_3E3F0EC000E93EDA89820144">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vuxhiDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vuxhhzNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDA89BE0323" name="_policyEnforcementPoint" visibility="public" type="_3E3F0EC000E93D77EE1201C6" isUnique="false" association="_3E3F0EC000E93EDA89BB00CE">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvEcdjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvEcdTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDB8AE8037A" name="_managedEntity" visibility="public" isUnique="false" association="_3E3F0EC000E93EDB8AE10059">
+        <type xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84F30225?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvXXZDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvXXYzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D77EE190131" name="PolicyServer">
+      <ownedComment xmi:id="_vtIiwzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D77EE190131">
+        <body>A PolicyServer is a fundamental building block of a policy-based management system. It represents both a set of core functionality for implementing policy as well as a unit of distribution in a distributed implementation.
+
+With respect to functionality, a PolicyServer is an entity that is either manufactured or is constructed by integrating the functionality of different PDPs, PXPs, PEPs, and other applications. These other applications provide the logic to manage and control the set of PDPs, PXPs, and PEPs that constitute a PolicyServer. For example, conflict detection and resolution need to be applied.
+
+Therefore, a PolicyServer is in reality an intelligent container that contains its own management logic that is supplemented by the functionality of the PEP, PXP, and PDP applications. It usually corresponds to a single PolicyDomain. While this is not strictly necessary, doing otherwise greatly complicates the resulting management logic.
+</body>
+      </ownedComment>
+      <ownedRule xmi:id="_vuU1ljNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93EDA87DA0239">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vuU1lzNHEd2nE5zXHK_HsA">
+          <body>must have 1..n PDPs</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vuU1mDNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93EDA87DA0239">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vuU1mTNHEd2nE5zXHK_HsA">
+          <body>1..n PEPs</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vuU1mjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93EDA87DA0239">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vuU1mzNHEd2nE5zXHK_HsA">
+          <body>and 1..n PXPs</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_3E3F0EC000E93D7F5D4D0095">
+        <general xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7F51F50392?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D7BDCD302CC" name="_policyBroker" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7915CF0064?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyBroker?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vohIhjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vohIhTNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Policy%20Application.efx#_3E3F0EC000E93D7BDCD10138?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/BrokerCoordinationDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EDA87DA0239" name="_policyApplication" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EDA87CC00EF">
+        <type xmi:type="uml:Class" href="Policy%20Application.efx#_3E3F0EC000E93D7F51F50392?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vuU1lTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vuU1lDNHEd2nE5zXHK_HsA" value="3"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EDB8D200308" name="DecisionRequestedDetails">
+      <ownedComment xmi:id="_vtIixzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDB8D200308">
+        <body>This class implements the semantics of the PolicyDecisionRequestedBy association. This association defines the set of PolicyDecisions that are requested by a ManagedEntity.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_vvhIYTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDB8D200308">
+        <body>The PolicyDecisionRequestedBy association defines the set of PolicyDecisions that are requested by a ManagedEntity. The semantics of this association are implemented by the DecisionRequestedDetails association class. This starts the management closed loop system by a request for a policy decision. Note that the full model allows for events and other entities to request policy decisions, not just ManagedEntities.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F169C5600AB">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169D390238" name="pdpRequestTimePeriod" visibility="public">
+        <ownedComment xmi:id="_vtSTwzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169D390238">
+          <body>This attribute defines the start and end times (in the form of time stamps) in which this ManagedEntity can request decisions of this PolicyDecisionPoint.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169D390239" name="pdpCommMethod" visibility="public">
+        <ownedComment xmi:id="_vtSTxjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169D390239">
+          <body>This is an enumerated integer that defines the communication method used between this ManagedEntity and this PolicyDecisionPoint. Values include:
+
+  0:  Not yet established
+  1:  Telnet
+  2:  COPS
+  3:  Proprietary Protocol
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <memberEnd href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93EDB8D2702CC?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/_policyDecisionPoint?"/>
+      <memberEnd href="#_3E3F0EC000E93EDB8D2702CE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyDecisionPoint/_managedEntity?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93F169F050294" name="PEPDirectionDetails" memberEnd="_3E3F0EC000E93F169F0902B7 _3E3F0EC000E93F169F0902C1">
+      <ownedComment xmi:id="_vtbdsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169F050294">
+        <body>This class implements the semantics of the DirectsEnforcementOf association. This association defines the set of PolicyEnforcementPoints that are managed by this PolicyDecisionPoint.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_vuemkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169F050294">
+        <body>This association defines the set of PolicyEnforcementPoints that a given PolicyDecisionPoint can direct.
+
+The semantics of this association are implemented using the PEPDirectionsDetails association class.
+
+The cardinality of this association is 1 on the PolicyDecisionPoint side and 1..n on the PolicyEnforcementPoint side. This means that a PolicyDecisionPoint can provide decisions for one or more PolicyEnforcementPoint (note that without a PolicyEnforcementPoint a PolicyDecisionPoint is useless). However, if multiple PolicyDecisionPoints are allowed to tell a given PolicyEnforcementPoint what to do, then there is no guarantee that the PolicyDecisionPoints won't conflict with each other. Thus, there can only be one PolicyDecisionPoint for a given PolicyEnforcementPoint.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F16A04B038D">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16A0820269" name="pepRequestTimePeriod" visibility="public">
+        <ownedComment xmi:id="_vtbdtjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16A0820269">
+          <body>This attribute defines the start and end times (in the form of time stamps) in which this PolicyDecisionPoint is allowed to manage this set of PolicyEnforcementPoints.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16A082026A" name="pepCommMethod" visibility="public">
+        <ownedComment xmi:id="_vtlOsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16A082026A">
+          <body>This is an enumerated integer that defines the communication method used between this PolicyDecisionPoint and this PolicyEnforcementPoint. Values include:
+
+  0:  Not yet established
+  1:  Telnet
+  2:  COPS
+  3:  Proprietary Protocol
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EDA89820144" name="PXPDirectionDetails" memberEnd="_3E3F0EC000E93EDA898501C1 _3E3F0EC000E93EDA898501CB">
+      <ownedComment xmi:id="_vtlOtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA89820144">
+        <body>This class implements the semantics of the DirectsExecutionOf association. This association defines the set of PolicyExecutionPoints that are managed by this PolicyDecisionPoint.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_vuxhgTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA89820144">
+        <body>This association defines the set of PolicyExecutionPoints that a given PolicyDecisionPoint can direct.
+
+The semantics of this association are implemented using the PXPDirectionDetails association class.
+
+The cardinality of this association is 1 on the PolicyDecisionPoint side and 1..n on the PolicyExecutionPoint side. This means that a PolicyDecisionPoint can provide decisions for one or more PolicyExecutionPoints (note that without a PolicyExecutionPoint, a PolicyDecisionPoint is useless). However, if multiple PolicyDecisionPoints are allowed to tell a given PolicyExecutionPoint what to do, then there is no guarantee that the PolicyDecisionPoints won't conflict with each other. Thus, there can only be one PolicyDecisionPoint for a given PolicyExecutionPoint.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F169EF80078">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169EA10177" name="pxpRequestTimePeriod" visibility="public">
+        <ownedComment xmi:id="_vtlOuTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169EA10177">
+          <body>This attribute defines the start and end times (in the form of time stamps) in which this PolicyDecisionPoint is allowed to manage this set of PolicyExecutionPoints.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F169EA10178" name="pxpCommMethod" visibility="public">
+        <ownedComment xmi:id="_vt4JojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F169EA10178">
+          <body>This is an enumerated integer that defines the communication method used between this PolicyDecisionPoint and this PolicyExecutionPoint. Values include:
+
+  0:  Not yet established
+  1:  Telnet
+  2:  COPS
+  3:  Proprietary Protocol
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EDB8AE10059" name="PolicyActionPerformedDetails " memberEnd="_3E3F0EC000E93EDB8AE8037A _3E3F0EC000E93EDB8AE803AC">
+      <ownedComment xmi:id="_vt4JpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDB8AE10059">
+        <body>This class implements the semantics of the PolicyActionPerformedOn association. This association defines the set of PolicyActions that are performed on a ManagedEntity.
+
+The DEN-ng system view defines much more detailed semantics to implement this association, such as policies that control what types of actions can be performed on which entities during what time periods.
+</body>
+      </ownedComment>
+      <ownedComment xmi:id="_vvXXYDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDB8AE10059">
+        <body>This association defines the set of PolicyActions that are performed on a ManagedEntity as a part of the policy management process. The semantics of this association are implemented by the PolicyActionPerformedDetails association class.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F16B7A000C9">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16B87C00EE" name="pxpAllowedActionTimePeriod" visibility="public">
+        <ownedComment xmi:id="_vt4JqTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16B87C00EE">
+          <body>This attribute defines the start and end times (in the form of time stamps) in which this PolicyExecutionPoint can perform actions on this ManagedEntity.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16B87C00F8" name="pxpActionCommMethod" visibility="public">
+        <ownedComment xmi:id="_vuB6ojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16B87C00F8">
+          <body>This is an enumerated integer that defines the communication method used between this ManagedEntity and this PolicyExecutionPoint. Values include:
+
+  0:  Not yet established
+  1:  Telnet
+  2:  COPS
+  3:  Proprietary Protocol
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedEnd xmi:id="_3E3F0EC000E93EDB8AE803AC" name="_policyExecutionPoint" visibility="public" type="_3E3F0EC000E93EDA857301A5" isUnique="false" association="_3E3F0EC000E93EDB8AE10059">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vvXXZzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vvXXZjNHEd2nE5zXHK_HsA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EDA89BB00CE" name="PXPEnforcementDetails" memberEnd="_3E3F0EC000E93EDA89BE0321 _3E3F0EC000E93EDA89BE0323">
+      <ownedComment xmi:id="_vuB6pTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA89BB00CE">
+        <body>This class implements the semantics of the EnforcesExecutionOf association. This association defines the set of PolicyEnforcementPoints whose actions are enforced by this PolicyEnforcementPoint.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_vu7SgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA89BB00CE">
+        <body>This association defines the set of PolicyExecutionPoints whose actions are enforced by a particular PolicyEnforcementPoint.
+
+In contrast to the DirectsExecution association, the cardinality of this association is 1..n on both sides. Each side is 1..n because all PolicyExecutionPoints must have at least one associated PolicyEnforcementPoint, but may have more (if, for example, different PolicyEnforcementPoints are used for different functions that are controlled in a PolicyExecutionPoint). This ensure that the PolicyActions sent by a PolicyExecutionPoint can be checked (by the PolicyEnforcementPoint). Some PolicyEnforcementPoints, however, are capable of enforcing multiple PolicyExecutionPoints, and a PolicyEnforcementPoint is only relevant if it enforces the actions of a PolicyExecutionPoint.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F16BBD700DF">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16BC6E033F" name="pxpEnforcementRequestTimePeriod" visibility="public">
+        <ownedComment xmi:id="_vuLEkzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16BC6E033F">
+          <body>This attribute defines the start and end times (in the form of time stamps) in which this PolicyEnforcementPoint must enforce the actions taken by this PolicyExecutionPoint.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Entities/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F16BC6E0349" name="pxpEnforcementCommMethod" visibility="public">
+        <ownedComment xmi:id="_vuLEljNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F16BC6E0349">
+          <body>This is an enumerated integer that defines the communication method used between this PolicyExecutionPoint and this PolicyEnforcementPoint. Values include:
+
+  0:  Not yet established
+  1:  Telnet
+  2:  COPS
+  3:  Proprietary Protocol
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EDA87CC00EF" name="ContainsPolicyApps">
+      <ownedComment xmi:id="_vuU1kTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDA87CC00EF">
+        <body>This aggregation defines the set of PolicyApplications that are contained in this particular PolicyServer.
+
+The cardinality of this relationship is 0..1 on the PolicyServer side and 3..n on the PolicyApplication side. This means that PolicyApplications can be developed independently of a PolicyServer. However, a PolicyServer must at least have a PolicyDecisionPoint, a PolicyEnforcementPoint, and a PolicyExecutionPoint (PDP, PEP, and PXP, respectively) in order to have the functionality of a PolicyServer.
+</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EDA87DA0239?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyServer/_policyApplication?"/>
+      <memberEnd href="Policy%20Application.efx#_3E3F0EC000E93EDA87DA0243?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/PolicyApplication/_policyServer?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EDB8C580397" name="PolicyActionEnforcedBy">
+      <ownedComment xmi:id="_vvEceDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EDB8C580397">
+        <body>This association defines how a particular set of PolicyActions that were performed on a ManagedEntity are enforced. The semantics of this association are implemented by the ActionEnforcedDetails association class.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EDB8C5D02A4?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyEnforcementPoint/_managedEntity?"/>
+      <memberEnd href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93EDB8C5D02B8?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/ManagedEntity/_policyEnforcementPoint?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_juXcYFKQEd2Z__GE9qBDpQ" name="configureDeviceWithPDP">
+      <memberEnd href="#_juXcYVKQEd2Z__GE9qBDpQ?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Application/Policy%20Server%20Entities/PolicyDecisionPoint/logicaldevice?"/>
+      <memberEnd href="../Resource%20Domain/Logical%20Device%20ABE.efx#_juhNYFKQEd2Z__GE9qBDpQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice/policydecisionpoint?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_vptbUjNHEd2nE5zXHK_HsA" base_Comment="_vptbUTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vp2lQDNHEd2nE5zXHK_HsA" base_Comment="_vptbVjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqAWQDNHEd2nE5zXHK_HsA" base_Comment="_vp2lQzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqAWRDNHEd2nE5zXHK_HsA" base_Comment="_vqAWQzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqKHQDNHEd2nE5zXHK_HsA" base_Comment="_vqAWRzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqKHRDNHEd2nE5zXHK_HsA" base_Comment="_vqKHQzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqTRMDNHEd2nE5zXHK_HsA" base_Comment="_vqKHRzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqTRNDNHEd2nE5zXHK_HsA" base_Comment="_vqTRMzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vqTRODNHEd2nE5zXHK_HsA" base_Comment="_vqTRNzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vq5uKDNHEd2nE5zXHK_HsA" base_Comment="_vq5uJzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrC4EDNHEd2nE5zXHK_HsA" base_Comment="_vq5uKzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrC4FDNHEd2nE5zXHK_HsA" base_Comment="_vrC4EzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrMpEDNHEd2nE5zXHK_HsA" base_Comment="_vrC4FzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrMpFDNHEd2nE5zXHK_HsA" base_Comment="_vrMpEzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrWaEDNHEd2nE5zXHK_HsA" base_Comment="_vrMpFzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrWaEzNHEd2nE5zXHK_HsA" base_Comment="_vrWaEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrfkADNHEd2nE5zXHK_HsA" base_Comment="_vrWaFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrpVADNHEd2nE5zXHK_HsA" base_Comment="_vrfkBDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrye8jNHEd2nE5zXHK_HsA" base_Comment="_vrye8TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vrye9TNHEd2nE5zXHK_HsA" base_Comment="_vrye9DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vr8P8DNHEd2nE5zXHK_HsA" base_Comment="_vrye9zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vr8P8zNHEd2nE5zXHK_HsA" base_Comment="_vr8P8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsGA8DNHEd2nE5zXHK_HsA" base_Comment="_vr8P9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsGA9DNHEd2nE5zXHK_HsA" base_Comment="_vsGA8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsGA9zNHEd2nE5zXHK_HsA" base_Comment="_vsGA9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsPK4DNHEd2nE5zXHK_HsA" base_Comment="_vsGA-TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsPK4zNHEd2nE5zXHK_HsA" base_Comment="_vsPK4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsY74DNHEd2nE5zXHK_HsA" base_Comment="_vsPK5jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsY75DNHEd2nE5zXHK_HsA" base_Comment="_vsY74zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsis4DNHEd2nE5zXHK_HsA" base_Comment="_vsY75jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsis4zNHEd2nE5zXHK_HsA" base_Comment="_vsis4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsis5jNHEd2nE5zXHK_HsA" base_Comment="_vsis5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsr20DNHEd2nE5zXHK_HsA" base_Comment="_vsis6TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vsr21DNHEd2nE5zXHK_HsA" base_Comment="_vsr20zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vs1n0DNHEd2nE5zXHK_HsA" base_Comment="_vsr21zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vs1n1DNHEd2nE5zXHK_HsA" base_Comment="_vs1n0zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vs-xwDNHEd2nE5zXHK_HsA" base_Comment="_vs1n1jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vs-xwzNHEd2nE5zXHK_HsA" base_Comment="_vs-xwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vs-xxjNHEd2nE5zXHK_HsA" base_Comment="_vs-xxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vtIiwDNHEd2nE5zXHK_HsA" base_Comment="_vs-xyDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vtIixDNHEd2nE5zXHK_HsA" base_Comment="_vtIiwzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vuU1kjNHEd2nE5zXHK_HsA" base_Comment="_vuU1kTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_vuemkTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93F169F050294" Associaton_Name="DirectsEnforcementOf"/>
+  <Default:Documentation xmi:id="_vunwgDNHEd2nE5zXHK_HsA" base_Comment="_vuemkjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_vuxhgDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EDA89820144" Associaton_Name="DirectsExecutionOf"/>
+  <Default:Documentation xmi:id="_vuxhgjNHEd2nE5zXHK_HsA" base_Comment="_vuxhgTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_vu7SgTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EDA89BB00CE" Associaton_Name="EnforcesExecutionOf"/>
+  <Default:Documentation xmi:id="_vvEccDNHEd2nE5zXHK_HsA" base_Comment="_vu7SgjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_vvEceTNHEd2nE5zXHK_HsA" base_Comment="_vvEceDNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_vvONdDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EDB8AE10059" Associaton_Name="PolicyActionPerformedOn"/>
+  <Default:Documentation xmi:id="_vvXXYTNHEd2nE5zXHK_HsA" base_Comment="_vvXXYDNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_vvhIYDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EDB8D200308" Associaton_Name="PolicyDecisionRequestedBy"/>
+  <Default:Documentation xmi:id="_vvhIYjNHEd2nE5zXHK_HsA" base_Comment="_vvhIYTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Parameter xmi:id="_zV4yJTNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93D8771430138" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zWCjKjNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC930031D" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWCjNTNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B018F" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWMULDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC930032B" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zWMULTNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93D7BC9300330" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zWVeETNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B0187" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWVeJjNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B0179" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWVeKjNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC930032D" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zWVeKzNHEd2nE5zXHK_HsA" base_Parameter="_vqTRNTNHEd2nE5zXHK_HsA" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zWfPEDNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B0185" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zWfPETNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93D7BC9300329" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zWoZBTNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D877143012C" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zWoZETNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B0183" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zW77DzNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B018D" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Operation xmi:id="_zXO18zNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC9300322" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zXhw5zNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93D7BC9300320" Type="SequenceOf String"/>
+  <Rose:Rose_Operation xmi:id="_zXhw7DNHEd2nE5zXHK_HsA" base_Operation="_3E3F0EC000E93D7BC98B0191" Exceptions="internalError, invalidArgument, invalidState, notSupported, timeOut"/>
+  <Rose:Rose_Parameter xmi:id="_zXrh4TNHEd2nE5zXHK_HsA" base_Parameter="_vsr20TNHEd2nE5zXHK_HsA" Type="SequenceOf String"/>
+  <Rose:Rose_Parameter xmi:id="_zXrh5jNHEd2nE5zXHK_HsA" base_Parameter="_3E3F0EC000E93D7BC98B0193" Type="SequenceOf String"/>
+</xmi:XMI>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C632C0181" name="Alarm ABE">
+    <eAnnotations xmi:id="_BIc3YDN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Fault%20ABE.efx#_3E3F0EC000E93E2EFC1E0013?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE/Fault%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E300B5D013B" name="Alarms" isAbstract="true">
+      <ownedComment xmi:id="_xnn5jjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E300B5D013B">
+        <body>This is the base class for all alarm classes. Alarms are associated with a particular LogicalDevice using the hasFCAPSEntity aggregation. Subclasses of this class define the detailed characteristics and behavior of this class. Alarms are reported by associating the parent of this class, FCAPSEntity, with the ManagementMethodEntity class through the implementedBy aggregation.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E34D64E0020">
+        <general xmi:type="uml:Class" href="Fault%20ABE.efx#_3E3F0EC000E93E300B4B02E4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Management%20Information%20ABE/Fault%20ABE/FaultInfo?"/>
+      </generalization>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xnxDcDNHEd2nE5zXHK_HsA" base_Comment="_xnn5jjNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
