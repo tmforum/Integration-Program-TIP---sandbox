@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93EFF974B023E" name="PhysicalRole System View ABE">
+    <eAnnotations xmi:id="_UcgQETN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_UcgQEDN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="ResourceRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF97D602AC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EFF96FB0289" name="RolesDescribePhysicalResourceDetails">
+      <ownedComment xmi:id="_yAgTlDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EFF96FB0289">
+        <body>This class implements the semantics of the RolesDescribePhysicalResource aggregation.
+
+This class is defined in the system view of the DEN-ng specification.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EFF982C0039">
+        <general xmi:type="uml:Class" href="ResourceRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF96650143?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE/ResourceRoleDetails?"/>
+      </generalization>
+      <memberEnd href="PhysicalResource%20ABE.efx#_3E3F0EC000E9430C34FD019C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalResource/_physicalResourceRole?"/>
+      <memberEnd href="Physical%20Role%20ABE.efx#_3E3F0EC000E9430C34FD01B9?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Physical%20Role%20ABE/PhysicalResourceRole/_physicalResource?"/>
+    </packagedElement>
+  </uml:Package>
+  <Rose:Rose_AssociationClass xmi:id="_yAgTkzNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EFF96FB0289" Associaton_Name="RolesDescribePhysicalResource"/>
+  <Default:Documentation xmi:id="_yAgTlTNHEd2nE5zXHK_HsA" base_Comment="_yAgTlDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
