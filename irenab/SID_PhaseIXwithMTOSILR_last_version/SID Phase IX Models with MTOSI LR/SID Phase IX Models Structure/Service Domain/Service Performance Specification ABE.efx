@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E944BD3C47037A" name="Service Performance Specification ABE">
+    <eAnnotations xmi:id="_lFACYTQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_lFACYDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Service%20Performance%20ABE.efx#_3E3F0EC000E9445D62EA0148?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Performance%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E944BD3C760177" name="ServicePerformanceSpec">
+      <ownedComment xmi:id="_yewV2DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944BD3C760177">
+        <body>The invariant characteristics of a  measure of the manner in which a Service is functioning. Each related Performance instance will have the same invariant characteristics. However, the values associated with other characteristics of the instantiated Performance entity are specific to each instance.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E944BD3C850196">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Performance%20Specification%20ABE.efx#_3E3F0EC000E9445D646F006D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Specification%20ABE/PerformanceSpecification?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E944BD3C9B01F6" name="_serviceSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E944BD3C9B01F4">
+        <type xmi:type="uml:Class" href="Service%20Specification%20ABE.efx#_3E3F0EC000E93D5092210347?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yewV4TNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yewV4DNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E944BD3C9B01F4" name="ServiceSpecMeasuredBy">
+      <memberEnd href="Service%20Specification%20ABE.efx#_3E3F0EC000E944BD3C9B01F5?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecification/_servicePerformanceSpec?"/>
+      <memberEnd href="#_3E3F0EC000E944BD3C9B01F6?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Performance%20ABE/Service%20Performance%20Specification%20ABE/ServicePerformanceSpec/_serviceSpecification?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yewV2TNHEd2nE5zXHK_HsA" base_Comment="_yewV2DNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>
