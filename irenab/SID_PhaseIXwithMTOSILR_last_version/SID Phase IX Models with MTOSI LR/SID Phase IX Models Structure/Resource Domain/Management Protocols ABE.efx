@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C7C7E013B" name="Management Protocols ABE">
+    <eAnnotations xmi:id="_--BKsTN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_--BKsDN6Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93E2C35EF01D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C7C88024E" name="SNMP">
+      <generalization xmi:id="_3E3F0EC000E93E2C7E3801FF" general="_3E3F0EC000E93E2C7CD60083"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C7C8E0102" name="ProprietaryVendorProtocol">
+      <generalization xmi:id="_3E3F0EC000E93E2C7E3E02F8" general="_3E3F0EC000E93E2C7CD60083"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E2C7CD60083" name="ManagementProtocol" isAbstract="true">
+      <ownedComment xmi:id="_xTgDpjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E2C7CD60083">
+        <body>A ManagementProtocol is an abstract superclass for protocols that are dedicated to exchanging management information between network devices. This type of protocol is an application layer protocol, and is used for configuring, monitoring, and gathering information about devices.
+
+The DEN-ng model defines SNMP and a framework for proprietary management protocols as examples of subclasses of this class.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E2C7D0802E8">
+        <general xmi:type="uml:Class" href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93DCCA5AF0087?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Protocol?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E6027530395" name="_logicalDevice" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Logical%20Device%20ABE.efx#_3E3F0EC000E93DCCA5AF007E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdfGGDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdfGFzNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Device%20Protocol%20Association%20ABE.efx#_3E3F0EC000E93E6027500387?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Protocol%20Association%20ABE/DeviceMgmtProtocolDetails?"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xTgDpzNHEd2nE5zXHK_HsA" base_Comment="_xTgDpjNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

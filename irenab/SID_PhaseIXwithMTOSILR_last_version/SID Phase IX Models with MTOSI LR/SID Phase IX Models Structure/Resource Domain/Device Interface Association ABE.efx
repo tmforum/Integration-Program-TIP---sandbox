@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:LifecycleProfile="http:///schemas/LifecycleProfile/_F9O2AJzDEd6tdP7BG6F_nQ/3" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/LifecycleProfile/_F9O2AJzDEd6tdP7BG6F_nQ/3 platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_F9O2AZzDEd6tdP7BG6F_nQ?Lifecycle%20Profile/LifecycleProfile? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E61195E02DB" name="Device Interface Association ABE">
+    <eAnnotations xmi:id="_b7G3ADN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E2C94B202F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_jjLdEFKxEd2Ox5xf0vu4pw" source="uml2.diagrams"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E6118780147" name="InterfaceWANProtocolDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611B610169">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E6118380195" name="InterfaceSwitchingProtocolDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611B45035E">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E61186303DC" name="InterfaceRoutedProtocolDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611B310070">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E61184A0259" name="InterfaceLSRoutingDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611B090054">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E6118570208" name="InterfaceHybridRoutingDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611AF0021B">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E61186D026D" name="InterfaceBridgingProtocolDetails">
+      <generalization xmi:id="_3E3F0EC000E93E611AD70048">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EA88CB8015F" name="InterfaceLANProtocolDetails">
+      <generalization xmi:id="_3E3F0EC000E93EA88CD20211">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EB2F5860326" name="ProtocolDeviceInterfaceDetails">
+      <ownedComment xmi:id="_xZBc0TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EB2F5860326">
+        <body>This is an association class, and represents the semantics of a specific Protocol running on a particular DeviceInterace.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F1F2ED20161">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93EB2F4F2012F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_protocol?"/>
+      <memberEnd href="Protocol%20Service%20ABE.efx#_3E3F0EC000E93EB2F4F20139?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Protocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E943359D6A029F" name="DeviceInterfaceTPDetails">
+      <ownedComment xmi:id="_xZKmwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943359D6A029F">
+        <body>This association defines the set of TerminationPoints that are &quot;programmed&quot; using this particular DeviceInterface. This enables a direct mapping to the language used to build the TerminationPoints, such as CLI, SNMP, or TL1.
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E943359EC601E3" name="_deviceInterfacePPortDetails" visibility="public" type="_3E3F0EC000E943359D8200CB" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xYkw7zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xYkw7jNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Device%20Interface%20ABE.efx#_3E3F0EC000E943359EC2036B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/TPsRelatedToPPort?"/>
+      </ownedAttribute>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E9433038DE018D?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_terminationPoint?"/>
+      <memberEnd href="Termination%20Point%20ABE.efx#_3E3F0EC000E9433038DE01F1?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPointMgdTrans/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E943359D8200CB" name="DeviceInterfacePPortDetails">
+      <ownedComment xmi:id="_xZUXwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E943359D8200CB">
+        <body>This aggregation defines the set of logical interfaces that have been established on this particular PhysicalPort. Please refer to the DEN-ng physical model for more details on the characteristics of a PhysicalPort.
+
+Note the difference between this aggregation and the LogicalDeviceGovernsDeviceInterfaces aggregation - this aggregation represents physical containment, whereas the latter represents administrative management. This flexibility enables complex devices that have multiple LogicalDevices to be modeled, where a particular LogicalDevice can be assigned to manage a given DeviceInterface.
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E943359EC601D9" name="_deviceInterfaceTPDetails" visibility="public" type="_3E3F0EC000E943359D6A029F" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xYkw7DNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xYkw6zNHEd2nE5zXHK_HsA"/>
+        <association href="Device%20Interface%20ABE.efx#_3E3F0EC000E943359EC2036B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/TPsRelatedToPPort?"/>
+      </ownedAttribute>
+      <memberEnd href="Hardware%20ABE.efx#_3E3F0EC000E93E3D391602EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_deviceInterface?"/>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E3D391602F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_physicalPort?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E603E54014E" name="InterfaceUsesBridgingProtocol">
+      <ownedComment xmi:id="_xZUXyzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E603E54014E">
+        <body>This association defines the set of BridgingProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a BridgingProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceBridgingProtocolDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E603E600174?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_bridgingProtocol?"/>
+      <memberEnd href="Bridging%20Protocols%20ABE.efx#_3E3F0EC000E93E603E600176?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Bridging%20Protocols%20ABE/BridgingProtocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E604E5F0037" name="InterfaceUsesHybridRoutingProtocol">
+      <ownedComment xmi:id="_xZdhuDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E604E5F0037">
+        <body>This association defines the set of HybridRoutingProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a HybridRoutingProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceHybridRoutingDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E604E6701E7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_hybridRoutingProtocol?"/>
+      <memberEnd href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E604E6701F1?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/HybridRoutingProtocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E604B4B03B5" name="InterfaceUsesLSRoutingProtocol">
+      <ownedComment xmi:id="_xZdhwTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E604B4B03B5">
+        <body>This association defines the set of LinkStateRoutingProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a LinkStateRoutingProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceLSRoutingDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E604B5301FE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_linkStateRoutingProtocol?"/>
+      <memberEnd href="Routing%20Protocols%20ABE.efx#_3E3F0EC000E93E604B530200?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routing%20Protocols%20ABE/LinkStateRoutingProtocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E6115D70302" name="InterfaceUsesRoutedProtocol">
+      <ownedComment xmi:id="_xZnSuDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E6115D70302">
+        <body>This association defines the set of RoutedProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a RoutedProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceRoutedProtocolDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E6115E101EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_routedProtocol?"/>
+      <memberEnd href="Routed%20Protocols%20ABE.efx#_3E3F0EC000E93E6115E101F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Routed%20Protocols%20ABE/RoutedProtocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E603BD602A5" name="InterfaceUsesSwitchingProtocol">
+      <ownedComment xmi:id="_xZnSwTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E603BD602A5">
+        <body>This association defines the set of SwitchingProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a SwitchingProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceSwitchingProtocolDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E603BD9035E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_switchingProtocol?"/>
+      <memberEnd href="Switching%20Protocols%20ABE.efx#_3E3F0EC000E93E603BD90368?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/Switching%20Protocols%20ABE/SwitchingProtocol/_deviceInterface?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E6038F70028" name="InterfaceUsesWANProtocol">
+      <ownedComment xmi:id="_xZxDuDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E6038F70028">
+        <body>This association defines the set of WANProtocols that are currently being used on this DeviceInterface. The supportsProtocol aggregation is used to determine if a particular Protocol (not just a WANProtocol) is supported by this DeviceInterface.
+
+The particular semantics of this association are defined by the InterfaceWANProtocolDetails association class.
+</body>
+      </ownedComment>
+      <memberEnd href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E6038FF0065?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_wANProtocol?"/>
+      <memberEnd href="WAN%20Protocols%20ABE.efx#_3E3F0EC000E93E6038FF0067?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Protocol%20Service%20ABE/WAN%20Protocols%20ABE/WANProtocol/_deviceInterface?"/>
+    </packagedElement>
+  </uml:Package>
+  <Rose:Rose_AssociationClass xmi:id="_xZBc0DNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EB2F5860326" Associaton_Name="ProtocolRunsOn"/>
+  <Default:Documentation xmi:id="_xZBc0jNHEd2nE5zXHK_HsA" base_Comment="_xZBc0TNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xZKmwTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E943359D6A029F" Associaton_Name="TPBindsToDeviceInterfaces"/>
+  <Default:Documentation xmi:id="_xZKmwzNHEd2nE5zXHK_HsA" base_Comment="_xZKmwjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_xZUXwTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E943359D8200CB" Associaton_Name="PPortBindsToDeviceInterfaces"/>
+  <Default:Documentation xmi:id="_xZUXwzNHEd2nE5zXHK_HsA" base_Comment="_xZUXwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZdhsDNHEd2nE5zXHK_HsA" base_Comment="_xZUXyzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZdhuTNHEd2nE5zXHK_HsA" base_Comment="_xZdhuDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZnSsDNHEd2nE5zXHK_HsA" base_Comment="_xZdhwTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZnSuTNHEd2nE5zXHK_HsA" base_Comment="_xZnSuDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZxDsDNHEd2nE5zXHK_HsA" base_Comment="_xZnSwTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xZxDuTNHEd2nE5zXHK_HsA" base_Comment="_xZxDuDNHEd2nE5zXHK_HsA"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bAJzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E603E54014E" base_Relationship="_3E3F0EC000E93E603E54014E"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bAZzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E604E5F0037" base_Relationship="_3E3F0EC000E93E604E5F0037"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bApzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E604B4B03B5" base_Relationship="_3E3F0EC000E93E604B4B03B5"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bA5zsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E6115D70302" base_Relationship="_3E3F0EC000E93E6115D70302"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bBJzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E603BD602A5" base_Relationship="_3E3F0EC000E93E603BD602A5"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bBZzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93E6038F70028" base_Relationship="_3E3F0EC000E93E6038F70028"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AL6bBpzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E943359D8200CB" base_AssociationClass="_3E3F0EC000E943359D8200CB" base_Class="_3E3F0EC000E943359D8200CB" base_Relationship="_3E3F0EC000E943359D8200CB"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMAJzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E943359D6A029F" base_AssociationClass="_3E3F0EC000E943359D6A029F" base_Class="_3E3F0EC000E943359D6A029F" base_Relationship="_3E3F0EC000E943359D6A029F"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMAZzsEd6ZDbRipO8OSA" base_Association="_3E3F0EC000E93EB2F5860326" base_AssociationClass="_3E3F0EC000E93EB2F5860326" base_Class="_3E3F0EC000E93EB2F5860326" base_Relationship="_3E3F0EC000E93EB2F5860326"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMApzsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E61186D026D"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMA5zsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E6118570208"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMBJzsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93EA88CB8015F"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMBZzsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E61184A0259"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMBpzsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E61186303DC"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMB5zsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E6118380195"/>
+  <LifecycleProfile:likelyToChange xmi:id="_AMEMCJzsEd6ZDbRipO8OSA" base_Class="_3E3F0EC000E93E6118780147"/>
+</xmi:XMI>
