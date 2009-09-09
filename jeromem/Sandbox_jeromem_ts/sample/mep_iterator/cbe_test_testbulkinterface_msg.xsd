@@ -24,6 +24,7 @@ See the License for the specific language governing permissions and
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   targetNamespace="http://www.tmforum.org/xml/tip/cbe/test"
   xmlns:tns="http://www.tmforum.org/xml/tip/cbe/test"
+  xmlns:mep="http://www.tmforum.org/xml/tip/internal/mep"
   attributeFormDefault="unqualified" elementFormDefault="qualified"
   version="1.0">
   <xsd:annotation>
@@ -32,7 +33,7 @@ See the License for the specific language governing permissions and
     </xsd:documentation>
   </xsd:annotation>
   <xsd:include schemaLocation="cbe_test.xsd"/>
-<!--  <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/entity" schemaLocation="internal_entity.xsd"/>-->
+  <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/mep" schemaLocation="internal_mep.xsd"/>
   <xsd:element name="getTestProblemsByIteratorRequest">
     <xsd:annotation>
       <xsd:documentation>
@@ -42,6 +43,13 @@ See the License for the specific language governing permissions and
     </xsd:annotation>
     <xsd:complexType>
       <xsd:sequence>
+        <xsd:element name="mep" type="mep:MepPolicies">
+          <xsd:annotation>
+            <xsd:documentation>
+              <p></p>
+            </xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="inTestProblems" type="xsd:string">
           <xsd:annotation>
             <xsd:documentation>
@@ -60,10 +68,10 @@ See the License for the specific language governing permissions and
     </xsd:annotation>
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element name="outTestProblems" type="tns:">
+        <xsd:element name="outTestProblems" type="tns:ArrayOfTestProblem">
           <xsd:annotation>
             <xsd:documentation>
-              <p>acknowledged Problems, i.e. the ones really acknowledged</p>
+              <p>TestProblems.</p>
             </xsd:documentation>
           </xsd:annotation>
         </xsd:element>

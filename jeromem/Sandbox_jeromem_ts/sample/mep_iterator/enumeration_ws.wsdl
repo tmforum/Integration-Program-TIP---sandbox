@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!--
+    *
+    * This is file is manually generated as helper for the definition
+    * of the TIP SOAP Generator.
+    * This file provides the SOAP binding and service definitions
+    * for the abstract WS-Enumeration specification (W3C)
+  -->
+<wsdl:definitions name="EnumerationWs"
+  targetNamespace="http://www.tmforum.org/xml/tip/internal/mep/enumeration"
+  xmlns:tns="http://www.tmforum.org/xml/tip/internal/mep/enumeration"
+  xmlns:wsen="http://schemas.xmlsoap.org/ws/2004/09/enumeration"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl">
+  <wsdl:import location="http://schemas.xmlsoap.org/ws/2004/09/enumeration/enumeration.wsdl" namespace="http://schemas.xmlsoap.org/ws/2004/09/enumeration"></wsdl:import>
+  <!-- WSDL Types -->
+  <wsdl:types>
+    <xsd:schema><!--
+      <xsd:import namespace="http://www.tmforum.org/xml/tip/cbe/test"
+        schemaLocation="cbe_test_testbulkinterface_msg.xsd" />
+    --></xsd:schema>
+  </wsdl:types>
+  <wsdl:binding name="EnumerationSoapHttpBinding" type="wsen:DataSource">
+    <wsdl:documentation>
+      <p>Web Service (SOAP/HTTP) profile binding definitions.</p>
+    </wsdl:documentation>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsaw:UsingAddressing wsdl:required="true" />
+    <wsdl:operation name="EnumerateOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/EnumerateOp"
+        style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output><!--
+      <wsdl:fault name="getTestProblemsByIteratorException">
+        <soap:fault name="getTestProblemsByIteratorException" use="literal" />
+      </wsdl:fault>
+    --></wsdl:operation>
+    <wsdl:operation name="PullOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/PullOp"
+        style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/RenewOp"
+        style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/GetStatusOp"
+        style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/ReleaseOp"
+        style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnumerationEndOp">
+      <soap:operation
+        soapAction="http://schemas.xmlsoap.org/ws/2004/09/enumeration/EnumerationEndOp"
+        style="document" />
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <!-- Web Service sample definition -->
+  <wsdl:service name="EnumerationWs">
+    <wsdl:documentation>
+      <p>This is a sample wsdl:service definition of the service interface
+        for an implementation using the WS profile (SOAP/HTTP binging).</p>
+      <p>This wsdl:service definition is usually used at implementation time
+        or WS registration/discovery of a specific WS instance.</p>
+    </wsdl:documentation>
+    <wsdl:port name="EnumerationHttpPort" binding="tns:TipEnumerationSoapHttpBinding">
+      <soap:address location="http://localhost/TipEnumerationWs" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
