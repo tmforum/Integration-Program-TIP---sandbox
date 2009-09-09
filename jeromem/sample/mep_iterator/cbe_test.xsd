@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!--
+		* * This is a sample used to help with the Soap Generator design *
+	-->
+  <!--
+    Licensed to Members of the TM Forum under one or more contributor license
+    agreements. See the NOTICE file distributed with this work for additional
+    information regarding copyright ownership. Members of the TM Forum licences
+    this file to You under the Apache License, Version 2.0 (the "License"); you
+    may not use this file except in compliance with the License. You may obtain
+    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless
+    required by applicable law or agreed to in writing, software distributed
+    under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+    CONDITIONS OF ANY KIND, either express or implied. See the License for the
+    specific language governing permissions and limitations under the License.
+  -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/xml/tip/cbe/test" xmlns:tns="http://www.tmforum.org/xml/tip/cbe/test"
+  xmlns:entity="http://www.tmforum.org/xml/tip/internal/entity"
+  attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0">
+  <xsd:annotation>
+    <xsd:documentation>
+      <p>All XSD mapped from model artifacts in org.tmforum.tip.cbe.test
+        package.</p>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/entity"
+    schemaLocation="internal_entity.xsd" />
+  <xsd:element name="testProblem" type="tns:TestProblem" substitutionGroup="entity:entityBase" />
+  <xsd:complexType name="TestProblem">
+    <xsd:annotation>
+      <xsd:documentation>
+
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="entity:EntityBase">
+        <xsd:sequence>
+          <xsd:element name="impactImportanceFactor" type="xsd:int">
+            <xsd:annotation>
+              <xsd:documentation>
+                .
+              </xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
