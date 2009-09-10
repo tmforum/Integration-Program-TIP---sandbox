@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E9414A4B650366" name="Strategic Product Portfolio Plan ABE">
+    <eAnnotations xmi:id="_GIqJQTN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_GIqJQDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20IX%20Models/Product%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9414A4B7C0047" name="ProductOfferingStrategy">
+      <ownedComment xmi:id="_zTDgkDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9414A4B7C0047">
+        <body>A strategy employed to promote a ProductOffering.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9480540BF0059" name="_marketingCampaign" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Marketing%20Campaign%20ABE.efx#_3E3F0EC000E94148C5810147?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Marketing%20Campaign%20ABE/MarketingCampaign?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zCEeRzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zCEeRjNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Marketing%20Campaign%20ABE.efx#_3E3F0EC000E9480540BE0122?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Marketing%20Campaign%20ABE/MarketingCampaignSupports?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9439FF38F00FC" name="_productOffering" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOJLZjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOJLZTNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Catalog%20ABE.efx#_3E3F0EC000E9439FF38E001F?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Catalog%20ABE/ProductOfferingManagedByProductOfferingStrategy?"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zTDgkTNHEd2nE5zXHK_HsA" base_Comment="_zTDgkDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

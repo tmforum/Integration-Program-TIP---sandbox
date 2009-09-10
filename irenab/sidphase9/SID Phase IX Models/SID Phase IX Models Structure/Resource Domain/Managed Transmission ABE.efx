@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:LifecycleProfile="http:///schemas/LifecycleProfile/_NvXpcJ1vEd6TF50ow_p4ig/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/LifecycleProfile/_NvXpcJ1vEd6TF50ow_p4ig/1 platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_NvXpcZ1vEd6TF50ow_p4ig?Lifecycle%20Profile/LifecycleProfile?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C3124017F" name="Managed Transmission ABE">
+    <eAnnotations xmi:id="_zUhNcTN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_zUhNcDN5Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDC8F10392" name="Trail">
+      <ownedComment xmi:id="_xM8vsTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDC8F10392">
+        <body>Trail is a class of managed objects in layer networks which is responsible for the integrity of transfer of characteristic information from one or more other layer networks. A Trail is composed of two TrailTerminationPoints and one or more Connections and associated ConnectionTerminationPoints.
+
+This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmissionEntity hierarchy so that it can interact with IETF managed objects.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDDC9B1037A" general="_3E3F0EC000E93CDDC88D0153"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDC9C5026A" name="_connection" visibility="public" type="_3E3F0EC000E93CDDC97A0353" isUnique="false" aggregation="composite" association="_3E3F0EC000E93CDDC9C20306">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNsWkzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNsWkjNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDC88D0153" name="Pipe" isAbstract="true">
+      <ownedComment xmi:id="_xM8vtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDC88D0153">
+        <body>The Pipe object class is a class of managed objects which ensures the transfer of information between two TerminationPoints. This is derived from the m.3100 specification.
+
+The Pipe object class is not instantiable because the transfer is effected via the client-server relationship of trail and connection. Connectivity direction is determined by the directionality of the a and z termination points.
+
+If an instance of this class is bidirectional, the a- and z-termination points shall also be bidirectional. If an instance of this class is unidirectional, the a-point shall be the source TP and the z-termination point shall be the sink TP.
+
+This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmissionEntity hierarchy so that it can interact with IETF managed objects.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDDCA5903A4" general="_3E3F0EC000E93CDDC021028F"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF99010F" name="isUniDirectional" visibility="public">
+        <ownedComment xmi:id="_xM8vuTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF99010F">
+          <body>This is a Boolean attribute that, if TRUE, defines this Pipe to be UniDirectional. If FALSE, it is by definition BiDirectional.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF990110" name="operatingLayerRate" visibility="public">
+        <ownedComment xmi:id="_xNGgsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF990110">
+          <body>This is a string attribute that defines the current operating layer rate of this Trail or Connection.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDCB7000F2" name="_terminationPoint" visibility="public" isUnique="false" association="_3E3F0EC000E93CDDCB6F0168">
+        <type xmi:type="uml:Class" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCABC021F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNsWojNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNsWoTNHEd2nE5zXHK_HsA" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9433369050255" name="_subNetwork" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Network%20ABE.efx#_3E3F0EC000E93EA97CEF0045?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Network%20ABE/SubNetwork?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSTw3zNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xSTw3jNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Network%20ABE.efx#_3E3F0EC000E94333690301E4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Network%20ABE/PipesInSubNetwork?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943323B750203" name="_logicalDevice" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Logical%20Device%20ABE.efx#_3E3F0EC000E93DCCA5AF007E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDevice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl1JxDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xl1JwzNHEd2nE5zXHK_HsA"/>
+        <association href="Logical%20Device%20ABE.efx#_3E3F0EC000E943323B720288?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Logical%20Device%20ABE/LogicalDeviceGovernsPipes?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDC97A0353" name="Connection">
+      <ownedComment xmi:id="_xNGgtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDC97A0353">
+        <body>This is a class of managed objects responsible for the transparent transfer of information between ConnectionTerminationPoints. A Connection is a component of a Trail.
+
+Several connections can be bundled into a higher rate trail. A sequence of one or more Connections are linked together to form a Trail. A Connection may be either uni- or bi-directional.
+
+This object is taken from M.3100. DEN-ng integrates it into the ManagedTransmissionEntity hierarchy so that it can interact with IETF managed objects.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDDC9AD03E2" general="_3E3F0EC000E93CDDC88D0153"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDC9C50274" name="_trail" visibility="public" type="_3E3F0EC000E93CDDC8F10392" isUnique="false" association="_3E3F0EC000E93CDDC9C20306">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNsWljNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNsWlTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDC021028F" name="ManagedTransmissionEntity" isAbstract="true">
+      <ownedComment xmi:id="_xNPqoDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDC021028F">
+        <body>This is an abstract base class for describing different types of logical entities that are or help to form connections that transmit and/or receive information. This represents a superclass to various ITU specs (e.g., G.805 and M.3100) as well as IETF concepts (such as those found in various RFCs) so that it can unite ITU and IETF concepts.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E068CFA01E4">
+        <general xmi:type="uml:Class" href="LogicalResource%20ABE.efx#_3E3F0EC000E93CDAA51A00F6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/LogicalResource?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF99012D" name="additionalInfo" visibility="public">
+        <ownedComment xmi:id="_xNPqpDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF99012D">
+          <body>This is a free-form string that is used to contain additional vendor-specific information about the managed element., such as a vendor-specific asset tracking number or special installation notes. This can be NULL.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF99012E" name="mteAdministrativeState" visibility="public">
+        <ownedComment xmi:id="_xNPqpzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF99012E">
+          <body>This attribute is based on X.721. It is an enumerated integer that defines the administrative state of the Equipment. Values include:
+
+  0:  Unknown
+  1:  Unlocked
+  2:  Locked
+  3:  Shutting Down
+  4:  Starting Up
+  5:  Testing
+  6:  Maintenance
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF99012F" name="logicalAlarmReportingEnabled" visibility="public">
+        <ownedComment xmi:id="_xNZbojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF99012F">
+          <body>This is a Boolean attribute, and defines whether alarm reporting for this object instance is enabled or not. TRUE means that reporting is allowed, and FALSE means that reporting is inhibited.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_xNZbpDNHEd2nE5zXHK_HsA">
+          <body>TRUE</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF990130" name="logicalAlarmStatus" visibility="public">
+        <ownedComment xmi:id="_xNZbpjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF990130">
+          <body>This is an enumerated integer that indicates the occurrence of an abnormal condition relating to an object. This attribute may also function as a summary indicator of alarm conditions associated with a specific resource. It is used to indicate the existence of an alarm condition, a pending alarm condition such as threshold situations, or (when used as a summary indicator) the highest severity of active alarm conditions. Values include:
+
+  0:  unknnown
+  1:  active -Critical
+  2:  active - Major
+  3:  active - Minor
+  4:  active - Indeterminate
+  5:  active - Warning
+  6:  active - Pending
+  7:  active - UnderRepair
+  8:  active- Being Replaced
+  9:  cleared
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_xNZbqDNHEd2nE5zXHK_HsA">
+          <body>0</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF990131" name="isMTEOperational" visibility="public">
+        <ownedComment xmi:id="_xNZbqjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF990131">
+          <body>This attribute is used to define the operational status of the object, and is implemented as a Boolean: TRUE means that the object is currently operational, and FALSE means that the object is not currently operational.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBF990132" name="typeOfMTE" visibility="public">
+        <ownedComment xmi:id="_xNilkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBF990132">
+          <body>This attribute is an enumerated integer. It defines the type of ManagedTransmissionEntity that this instance is. Values include:
+
+  0:  Unknown
+  1:  Connection
+  2:  Trail
+  3:  TrailTerminationPointSource
+  4:  TrailTerminationPointSink
+  5:  TrailTerminationPointBiDirectional
+  6:  ConnectionTerminationPointSource
+  7:  ConnectionTerminationPointSink
+  8:  ConnectionTerminationPointBiDirectional
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EAB1619018B" name="operationalState" visibility="public">
+        <ownedComment xmi:id="_xNillTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EAB1619018B">
+          <body>This attribute is based on X.721, and defines the current operationalState of its containing managed object. Values include:
+
+   0:  Status not available
+   1:  Enabled and In Service
+   2:  Enabled but Not In Service
+   3:  Disabled
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CDDC9C20306" name="ConnectionsInTrail" memberEnd="_3E3F0EC000E93CDDC9C5026A _3E3F0EC000E93CDDC9C50274">
+      <ownedComment xmi:id="_xNilmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDC9C20306">
+        <body>This composition defines the set of Connections that are used to make up a Trail.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93CDDCB6F0168" name="TPsInPipe">
+      <ownedComment xmi:id="_xNsWmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDCB6F0168">
+        <body>This aggregation defines the set of TerminationPoints that make up a Pipe (e.g., either a Connection or a Trail).</body>
+      </ownedComment>
+      <ownedRule xmi:id="_xNsWmjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDDCB6F0168">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xNsWmzNHEd2nE5zXHK_HsA">
+          <body>2 BiDirectionalTTPs |</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_xNsWnDNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDDCB6F0168">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xNsWnTNHEd2nE5zXHK_HsA">
+          <body>(1 BiDirectionalTTP &amp; (1 SourceTTP | 1 SinkTTP)) |</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_xNsWnjNHEd2nE5zXHK_HsA" constrainedElement="_3E3F0EC000E93CDDCB6F0168">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xNsWnzNHEd2nE5zXHK_HsA">
+          <body>(1 SourceTTP &amp; 1 SinkTTP)</body>
+        </specification>
+      </ownedRule>
+      <memberEnd href="#_3E3F0EC000E93CDDCB7000F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Pipe/_terminationPoint?"/>
+      <memberEnd href="Termination%20Point%20ABE.efx#_3E3F0EC000E93CDDCB7000FC?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE/TerminationPoint/_pipe?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Termination%20Point%20ABE.efx#_3E3F0EC000E93E2C314E00A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Managed%20Transmission%20ABE/Termination%20Point%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xM8vsjNHEd2nE5zXHK_HsA" base_Comment="_xM8vsTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xM8vtjNHEd2nE5zXHK_HsA" base_Comment="_xM8vtTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNGgsDNHEd2nE5zXHK_HsA" base_Comment="_xM8vuTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNGgszNHEd2nE5zXHK_HsA" base_Comment="_xNGgsjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNGgtjNHEd2nE5zXHK_HsA" base_Comment="_xNGgtTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNPqoTNHEd2nE5zXHK_HsA" base_Comment="_xNPqoDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNPqpTNHEd2nE5zXHK_HsA" base_Comment="_xNPqpDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNZboDNHEd2nE5zXHK_HsA" base_Comment="_xNPqpzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNZbozNHEd2nE5zXHK_HsA" base_Comment="_xNZbojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNZbpzNHEd2nE5zXHK_HsA" base_Comment="_xNZbpjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNilkDNHEd2nE5zXHK_HsA" base_Comment="_xNZbqjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNilkzNHEd2nE5zXHK_HsA" base_Comment="_xNilkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNilljNHEd2nE5zXHK_HsA" base_Comment="_xNillTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNsWkDNHEd2nE5zXHK_HsA" base_Comment="_xNilmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xNsWmTNHEd2nE5zXHK_HsA" base_Comment="_xNsWmDNHEd2nE5zXHK_HsA"/>
+  <LifecycleProfile:likelyToChange xmi:id="_Ft3TgJ2jEd6kLPpRsorX-w" base_Association="_3E3F0EC000E93CDDC9C20306" base_Relationship="_3E3F0EC000E93CDDC9C20306"/>
+  <LifecycleProfile:likelyToChange xmi:id="_Ft3TgZ2jEd6kLPpRsorX-w" base_Association="_3E3F0EC000E93CDDCB6F0168" base_Relationship="_3E3F0EC000E93CDDCB6F0168"/>
+  <LifecycleProfile:likelyToChange xmi:id="_FuAddJ2jEd6kLPpRsorX-w" base_Class="_3E3F0EC000E93CDDC97A0353"/>
+  <LifecycleProfile:likelyToChange xmi:id="_FuAddZ2jEd6kLPpRsorX-w" base_Class="_3E3F0EC000E93CDDC021028F"/>
+  <LifecycleProfile:likelyToChange xmi:id="_FuAddp2jEd6kLPpRsorX-w" base_Class="_3E3F0EC000E93CDDC88D0153"/>
+  <LifecycleProfile:likelyToChange xmi:id="_FuAdd52jEd6kLPpRsorX-w" base_Class="_3E3F0EC000E93CDDC8F10392"/>
+</xmi:XMI>
