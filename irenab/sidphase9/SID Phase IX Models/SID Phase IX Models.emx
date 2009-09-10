@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="3E3F0EC000E9" name="SID Phase IX Models">
+  <eAnnotations xmi:id="_ZWNHkTNIEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments">
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Common%20Business%20Entities%20Domain.efx#_3E3F0EC000E93E3F0EC60106?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Customer%20Domain/Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20IX%20Models/Customer%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Enterprise%20Domain/Enterprise%20Domain.efx#_3E3F0EC000E93D4EDBDF01E7?SID%20Phase%20IX%20Models/Enterprise%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Market_Sales%20Domain/Market_Sales%20Domain.efx#_3E3F0EC000E93C8FA93C02FD?SID%20Phase%20IX%20Models/Market_Sales%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Product%20Domain/Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20IX%20Models/Product%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20Domain.efx#_3E3F0EC000E93DDEA08E02BD?SID%20Phase%20IX%20Models/Resource%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Service%20Domain/Service%20Domain.efx#_3E3F0EC000E93D5083F8018C?SID%20Phase%20IX%20Models/Service%20Domain?"/>
+    <references xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Supplier_Partner%20Domain/Supplier_Partner%20Domain.efx#_3E3F0EC000E93E3F3446036D?SID%20Phase%20IX%20Models/Supplier_Partner%20Domain?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_m1SX0DTeEd6Pp6tOvyHDIQ" source="uml2.diagrams">
+    <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93E3F0EC000F0" type="Class" name="Version - GB922">
+      <children xmi:id="_5HI_EDNHEd2nE5zXHK_HsA" type="Note">
+        <children xmi:id="_5HI_EzNHEd2nE5zXHK_HsA" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xmi:id="_5HI_FDNHEd2nE5zXHK_HsA" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_5HI_ETNHEd2nE5zXHK_HsA" description="TMF GB922 - SID Consolidated Model&#xA;&#xA;Version 8.0&#xA;&#xA;Copyright (C) 2008 TM Forum&#xA;&#xA;URL: www.tmforum.org&#xA;" fillColor="13369343" lineColor="6737151"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5HI_EjNHEd2nE5zXHK_HsA" x="372" y="2252" width="12750" height="4868"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_zTzugzNHEd2nE5zXHK_HsA"/>
+      <element xsi:nil="true"/>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_vl1A4TNHEd2nE5zXHK_HsA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_vq5uJDNHEd2nE5zXHK_HsA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_utXHQAfzEdmmcbnrymMrWg?RoseAnalysisDatatypes?"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Supplier_Partner%20Domain/Supplier_Partner%20Domain.efx#_3E3F0EC000E93E3F3446036D?SID%20Phase%20IX%20Models/Supplier_Partner%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Service%20Domain/Service%20Domain.efx#_3E3F0EC000E93D5083F8018C?SID%20Phase%20IX%20Models/Service%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Resource%20Domain/Resource%20Domain.efx#_3E3F0EC000E93DDEA08E02BD?SID%20Phase%20IX%20Models/Resource%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Product%20Domain/Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20IX%20Models/Product%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Market_Sales%20Domain/Market_Sales%20Domain.efx#_3E3F0EC000E93C8FA93C02FD?SID%20Phase%20IX%20Models/Market_Sales%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Enterprise%20Domain/Enterprise%20Domain.efx#_3E3F0EC000E93D4EDBDF01E7?SID%20Phase%20IX%20Models/Enterprise%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Customer%20Domain/Customer%20Domain.efx#_3E3F0EC000E93C1E0F4400E5?SID%20Phase%20IX%20Models/Customer%20Domain?"/>
+  <packagedElement xmi:type="uml:Package" href="SID%20Phase%20IX%20Models%20Structure/Common%20Business%20Entities%20Domain/Common%20Business%20Entities%20Domain.efx#_3E3F0EC000E93E3F0EC60106?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain?"/>
+  <profileApplication xmi:id="_veYVETNHEd2nE5zXHK_HsA">
+    <eAnnotations xmi:id="_veYVEjNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_veYVEzNHEd2nE5zXHK_HsA">
+    <eAnnotations xmi:id="_veYVFDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_vfuY4DNHEd2nE5zXHK_HsA">
+    <eAnnotations xmi:id="_vfuY4TNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_vhqSkDNHEd2nE5zXHK_HsA">
+    <eAnnotations xmi:id="_vhqSkTNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://ROSE_PROFILES/Rose.epx#_8yPmgEO4EdmZFZk7zjZ-eA?Rose?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_TXOvMJ2CEd6kLPpRsorX-w">
+    <eAnnotations xmi:id="_TXOvMZ2CEd6kLPpRsorX-w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile?"/>
+    </eAnnotations>
+    <appliedProfile href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_24f00J1tEd6TF50ow_p4ig?Lifecycle%20Profile?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_WTcBoJ2CEd6kLPpRsorX-w">
+    <eAnnotations xmi:id="_WTcBoZ2CEd6kLPpRsorX-w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?"/>
+    </eAnnotations>
+    <appliedProfile href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_6NbwUJ1tEd6TF50ow_p4ig?TIP%20Profile?"/>
+  </profileApplication>
+</uml:Model>

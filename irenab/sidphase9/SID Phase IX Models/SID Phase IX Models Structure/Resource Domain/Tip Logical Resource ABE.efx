@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_p0_OUJ2FEd6kLPpRsorX-w" name="Tip Logical Resource ABE">
+  <eAnnotations xmi:id="_jiPoYJ5KEd6Xtoj9wbt_jg" source="com.ibm.xtools.uml.msl.fragments">
+    <references xmi:type="uml:Package" href="Network%20Resource%20Fulfillment%20ABE.efx#__4WF4J2HEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_jh8tcJ5KEd6Xtoj9wbt_jg" source="com.ibm.xtools.uml.msl.fragmentContainer">
+    <references xmi:type="uml:Package" href="LogicalResource%20ABE.efx#_3E3F0EC000E93DDEA0990115?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_p0_OUZ2FEd6kLPpRsorX-w" source="uml2.diagrams"/>
+  <packagedElement xmi:type="uml:Package" href="Network%20Resource%20Fulfillment%20ABE.efx#__4WF4J2HEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE?"/>
+  <profileApplication xmi:id="_qrxzgJ4hEd6Xtoj9wbt_jg">
+    <eAnnotations xmi:id="_qrxzgZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile?"/>
+    </eAnnotations>
+    <appliedProfile href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_24f00J1tEd6TF50ow_p4ig?Lifecycle%20Profile?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_rxgsgJ4hEd6Xtoj9wbt_jg">
+    <eAnnotations xmi:id="_rxgsgZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?"/>
+    </eAnnotations>
+    <appliedProfile href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_6NbwUJ1tEd6TF50ow_p4ig?TIP%20Profile?"/>
+  </profileApplication>
+</uml:Package>

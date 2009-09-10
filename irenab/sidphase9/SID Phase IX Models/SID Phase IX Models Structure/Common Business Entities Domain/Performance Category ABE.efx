@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E944710E5803E0" name="Performance Category ABE">
+    <eAnnotations xmi:id="_9QtnEDNIEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Performance%20ABE.efx#_3E3F0EC000E9445D69320232?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E944710EE001D4" name="PerformanceCategory">
+      <ownedComment xmi:id="_w79tcDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944710EE001D4">
+        <body>A group or set of performance qualities that are classified together because of common characteristics.
+
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E944710FB90106" name="_performanceNetworkAddress" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Performance%20ABE.efx#_3E3F0EC000E944710E9C004A?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/PerformanceNetworkAddress?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7hBhzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7hBhjNHEd2nE5zXHK_HsA"/>
+        <association href="Performance%20ABE.efx#_3E3F0EC000E944710FB800C7?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/PerformanceNetworkAddressCategorizedBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944BD562C0399" name="_performanceCatSpecification" visibility="public" type="_3E3F0EC000E94466F7C502AF" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7qLgjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7qLgTNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Performance%20ABE.efx#_3E3F0EC000E944BD562A02EE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/PerformanceCategorySpecificationDefines?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9448ED9A202FB" name="ID" visibility="public">
+        <ownedComment xmi:id="_w79tczNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9448ED9A202FB">
+          <body>A unique identifier for a PerformanceCategory.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9448ED9840127" name="name" visibility="public">
+        <ownedComment xmi:id="_w8G3UjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9448ED9840127">
+          <body>A word, term, or phrase by which the PerformanceCategory is known and distinguished from other PerformanceCategories.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9448ED989015B" name="description" visibility="public">
+        <ownedComment xmi:id="_w8G3VTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9448ED989015B">
+          <body>A narrative that explains a PeformanceCategory.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944CB30770153" name="validFor" visibility="public">
+        <ownedComment xmi:id="_w8QoUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944CB30770153">
+          <body>The period of time for which a PerformanceCategory is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944970C0A036B" name="_performanceCategory" visibility="public" type="_3E3F0EC000E944710EE001D4" isUnique="false" association="_3E3F0EC000E944970C07031C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8tUQzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8tUQjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944970C0A036D" name="_performanceCategory1" visibility="public" type="_3E3F0EC000E944710EE001D4" isUnique="false" association="_3E3F0EC000E944970C07031C">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8tURjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8tURTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9449A15F201C5" name="_performanceCatCharacteristicValue" visibility="public" type="_3E3F0EC000E9449A102802EE" isUnique="false" aggregation="shared" association="_3E3F0EC000E9449A15F1030D">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8tUSjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8tUSTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94473C3CD0049" name="_performance" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Performance%20ABE.efx#_3E3F0EC000E9446007290232?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yDVlKjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yDVlKTNHEd2nE5zXHK_HsA"/>
+        <association href="../Resource%20Domain/Resource%20Performance%20ABE.efx#_3E3F0EC000E94473C3CB0276?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Performance%20ABE/PerformanceCategorizedBy?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9449A102802EE" name="PerformanceCatCharacteristicValue">
+      <ownedComment xmi:id="_w8QoVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9449A102802EE">
+        <body>A value of a CharacteristicSpecification provided for PerformanceCategory that further defines what the PerformanceCategory is.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E944DC032A032C" name="value" visibility="public">
+        <ownedComment xmi:id="_w8QoWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944DC032A032C">
+          <body>A fact that describes a PerformanceCatCharacteristicValue.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944DC032B0167" name="validFor" visibility="public">
+        <ownedComment xmi:id="_w8aZUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944DC032B0167">
+          <body>The period for which the characteristic value is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9449A15F201C7" name="_performanceCategory" visibility="public" type="_3E3F0EC000E944710EE001D4" isUnique="false" association="_3E3F0EC000E9449A15F1030D">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8tUTTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8tUTDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9449A16030234" name="_characteristicSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E9449A1601031C">
+        <type xmi:type="uml:Class" href="Characteristic%20ABE.efx#_3E3F0EC000E94462ADF80016?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8tUVDNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8tUUzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E944970C07031C" name="PerformanceCategoryRelationship" memberEnd="_3E3F0EC000E944970C0A036B _3E3F0EC000E944970C0A036D">
+      <ownedComment xmi:id="_w8aZVTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944970C07031C">
+        <body>An association between two instances of PerformanceCategories.  For example, a relationship between a Codec instance and BearerType instance.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E944E91A75005D" name="relationshipType" visibility="public">
+        <ownedComment xmi:id="_w8aZWDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944E91A75005D">
+          <body>The type of relationship between PerformanceCategories, such as parent/child and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E944E91A75008C" name="validFor" visibility="public">
+        <ownedComment xmi:id="_w8jjQjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944E91A75008C">
+          <body>The period of time for which a PerformanceCateogryRelationship is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9449A15F1030D" name="PerformanceCategoryDefinedBy" memberEnd="_3E3F0EC000E9449A15F201C5 _3E3F0EC000E9449A15F201C7"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9449A1601031C" name="CharacteristicSpecDefinesPerfCatCharValue">
+      <memberEnd href="Characteristic%20ABE.efx#_3E3F0EC000E9449A16030232?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecification/_performanceCatCharacteristicValue?"/>
+      <memberEnd href="#_3E3F0EC000E9449A16030234?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Category%20ABE/PerformanceCatCharacteristicValue/_characteristicSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3E3F0EC000E9446E2D1902DE" name="Performance Category Specification ABE">
+      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E9446CAA910039" name="PerformanceCatSpecRelationship" memberEnd="_3E3F0EC000E9446CAA940039 _3E3F0EC000E9446CAA940049">
+        <ownedComment xmi:id="_w82eMTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9446CAA910039">
+          <body>A specification for an association that can be established between two instances of PerformanceCategories.  For example, a relationship can be established between a Codec instance and BearerType instance.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_3E3F0EC000E9446E2A7B03A9" name="relationshipType" visibility="public">
+          <ownedComment xmi:id="_w82eNDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9446E2A7B03A9">
+            <body>An indicator that specifies the type of relationship that can be established between PerformanceCategories associated to the related PerformanceCategorySpecifications.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9446E2A7B03B9" name="validFor" visibility="public">
+          <ownedComment xmi:id="_w82eNzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9446E2A7B03B9">
+            <body>The period of time for which a PerformanceCatSpecRelationship is applicable.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E94526FF35003E" name="numberRelCatLowerLimit" visibility="public">
+          <ownedComment xmi:id="_w9APMjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94526FF35003E">
+            <body>The lower limit of the number of PerformanceCategories that can related.
+
+Values can range from 0 to unbounded.
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E94526FF35004E" name="numberRelCatUpperLimit" visibility="public">
+          <ownedComment xmi:id="_w9APNTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94526FF35004E">
+            <body>The upper limit of the number of PerformanceCategories that can related.
+
+Values can range from 0 to unbounded.
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E94466F7C502AF" name="PerformanceCatSpecification" isAbstract="true">
+        <ownedComment xmi:id="_w9KAMDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94466F7C502AF">
+          <body>The invariant characteristics that define a group or set of performance qualities that are classified together because of common characteristics.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_3E3F0EC000E944BD562C037A" name="_performanceCategory" visibility="public" type="_3E3F0EC000E944710EE001D4" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7qLfzNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7qLfjNHEd2nE5zXHK_HsA"/>
+          <association href="Performance%20ABE.efx#_3E3F0EC000E944BD562A02EE?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/PerformanceCategorySpecificationDefines?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E944CB2F560101" name="ID" visibility="public">
+          <ownedComment xmi:id="_w9KAMzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944CB2F560101">
+            <body>A unique identifier for the PerformanceCategorySpecification.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E944CB2F560140" name="name" visibility="public">
+          <ownedComment xmi:id="_w9KANjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944CB2F560140">
+            <body>A word, term, or phrase by which the PerformanceCategorySpecification is known and distinguished from other PerformanceCategorySpecifications.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E944CB2F56017E" name="description" visibility="public">
+          <ownedComment xmi:id="_w9TKIjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944CB2F56017E">
+            <body>A narrative that explains the PerformanceCategorySpecification.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E944CB2F5601BD" name="validFor" visibility="public">
+          <ownedComment xmi:id="_w9TKJTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E944CB2F5601BD">
+            <body>The period of time for which a PerformanceCategorySpecification is applicable.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9446CAA940039" name="_performanceCatSpecification" visibility="public" type="_3E3F0EC000E94466F7C502AF" isUnique="false" association="_3E3F0EC000E9446CAA910039">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w9c7JDNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w9c7IzNHEd2nE5zXHK_HsA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9446CAA940049" name="_performanceCatSpecification1" visibility="public" type="_3E3F0EC000E94466F7C502AF" isUnique="false" association="_3E3F0EC000E9446CAA910039">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w9c7JzNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w9c7JjNHEd2nE5zXHK_HsA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9449A11620232" name="_characteristicSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E9449A11610148">
+          <type xmi:type="uml:Class" href="Characteristic%20ABE.efx#_3E3F0EC000E94462ADF80016?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecification?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w9c7LjNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w9c7LTNHEd2nE5zXHK_HsA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9449A1171000F" name="_characteristicSpecValue" visibility="public" isUnique="false" association="_3E3F0EC000E9449A116F035B">
+          <type xmi:type="uml:Class" href="Characteristic%20ABE.efx#_3E3F0EC000E94462AE0602C5?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecValue?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w9msJjNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w9msJTNHEd2nE5zXHK_HsA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3E3F0EC000E9446E289C013A" name="_performanceSpecification" visibility="public" isUnique="false">
+          <type xmi:type="uml:Class" href="Performance%20Specification%20ABE.efx#_3E3F0EC000E9445D646F006D?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Specification%20ABE/PerformanceSpecification?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xB7LfTNHEd2nE5zXHK_HsA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xB7LfDNHEd2nE5zXHK_HsA"/>
+          <association href="Performance%20Specification%20ABE.efx#_3E3F0EC000E9446E289A02BF?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Specification%20ABE/PerformanceSpecificationClassifiedBy?"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9449A11610148" name="PerformanceCatSpecificationDescribedBy">
+        <memberEnd href="Characteristic%20ABE.efx#_3E3F0EC000E9449A11620222?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecification/_performanceCatSpecification?"/>
+        <memberEnd href="#_3E3F0EC000E9449A11620232?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Category%20ABE/Performance%20Category%20Specification%20ABE/PerformanceCatSpecification/_characteristicSpecification?"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9449A116F035B" name="PerformanceCatSpecDescribedByCharSpecValue">
+        <memberEnd href="Characteristic%20ABE.efx#_3E3F0EC000E9449A11710000?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Characteristic%20ABE/CharacteristicSpecValue/_performanceCatSpecification?"/>
+        <memberEnd href="#_3E3F0EC000E9449A1171000F?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Performance%20ABE/Performance%20Category%20ABE/Performance%20Category%20Specification%20ABE/PerformanceCatSpecification/_characteristicSpecValue?"/>
+      </packagedElement>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_w79tcTNHEd2nE5zXHK_HsA" base_Comment="_w79tcDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8G3UDNHEd2nE5zXHK_HsA" base_Comment="_w79tczNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8G3UzNHEd2nE5zXHK_HsA" base_Comment="_w8G3UjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8QoUDNHEd2nE5zXHK_HsA" base_Comment="_w8G3VTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8QoUzNHEd2nE5zXHK_HsA" base_Comment="_w8QoUjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8QoVjNHEd2nE5zXHK_HsA" base_Comment="_w8QoVTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8aZUDNHEd2nE5zXHK_HsA" base_Comment="_w8QoWDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w8aZUzNHEd2nE5zXHK_HsA" base_Comment="_w8aZUjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_w8tUQDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E944970C07031C" Associaton_Name="PerformanceCategoryReferences"/>
+  <Default:Documentation xmi:id="_w9KAMTNHEd2nE5zXHK_HsA" base_Comment="_w9KAMDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w9KANDNHEd2nE5zXHK_HsA" base_Comment="_w9KAMzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w9TKIDNHEd2nE5zXHK_HsA" base_Comment="_w9KANjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w9TKIzNHEd2nE5zXHK_HsA" base_Comment="_w9TKIjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_w9TKJjNHEd2nE5zXHK_HsA" base_Comment="_w9TKJTNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_w9c7ITNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E9446CAA910039" Associaton_Name="PerformanceCatSpecReferences"/>
+</xmi:XMI>
