@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_NAAF8E_nEd6ImLl24rKBUQ" name="Resource Trouble ABE">
+  <eAnnotations xmi:id="_icIQUE_nEd6ImLl24rKBUQ" source="com.ibm.xtools.uml.msl.fragments"/>
+  <eAnnotations xmi:id="_icHpQE_nEd6ImLl24rKBUQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
+    <references xmi:type="uml:Package" href="Resource%20Domain.efx#_3E3F0EC000E93DDEA08E02BD?SID%20Phase%20IX%20Models/Resource%20Domain?"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_NDVGwE_nEd6ImLl24rKBUQ" source="uml2.diagrams"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Rph10E_nEd6ImLl24rKBUQ" name="ResourceAlarm"/>
+</uml:Package>

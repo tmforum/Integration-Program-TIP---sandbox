@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_9LVtEJ2HEd6kLPpRsorX-w" name="Network Resource Basic ABE">
+    <eAnnotations xmi:id="_YIPDMZ5KEd6Xtoj9wbt_jg" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_YIPDMJ5KEd6Xtoj9wbt_jg" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Tip%20Resource%20ABE.efx#_Po578J2FEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Tip%20Resource%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_9LVtEZ2HEd6kLPpRsorX-w" source="uml2.diagrams"/>
+    <ownedComment xmi:id="_0eua4J2KEd6kLPpRsorX-w">
+      <annotatedElement xmi:type="uml:Package" href="Network%20Resource%20Fulfillment%20ABE.efx#__4WF4J2HEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE?"/>
+      <body>&lt;p>&#xD;
+    Changes&amp;nbsp;done&amp;nbsp;between&amp;nbsp;Release&amp;nbsp;2.0&amp;nbsp;and&amp;nbsp;3.0:&lt;br />&#xD;
+    -&amp;nbsp;Data&amp;nbsp;Object&amp;nbsp;Classes::Associations::HasSubordinate:&amp;nbsp;Made&amp;nbsp;the&amp;nbsp;subordinateOS&amp;nbsp;side&amp;nbsp;of&amp;nbsp;the&amp;nbsp;relationship&amp;nbsp;navigable.&lt;br />&#xD;
+    -&amp;nbsp;Data&amp;nbsp;Object&amp;nbsp;Classes::Associations::SncHasZEndGtps:&amp;nbsp;Made&amp;nbsp;the&amp;nbsp;GroupTerminationPoint&amp;nbsp;(zEndTpList)&amp;nbsp;side&amp;nbsp;of&amp;nbsp;the&amp;nbsp;relationship&amp;nbsp;navigable.&lt;br />&#xD;
+    -&amp;nbsp;Associations::RouteChangeNotificationHasRoute:&amp;nbsp;Relationship&amp;nbsp;moved&amp;nbsp;to&amp;nbsp;Notifications::Associations&amp;nbsp;and&amp;nbsp;missing&amp;nbsp;Route&amp;nbsp;object&amp;nbsp;class&amp;nbsp;added.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7DA4UCO4EdypgfGA_0P3-g" name="Type Definitions">
+      <eAnnotations xmi:id="_7DTMMCO4EdypgfGA_0P3-g" source="uml2.diagrams"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_3TfFEE8GEdyfLry44XcUuw" name="ControlState">
+        <ownedLiteral xmi:id="_AGS-gE8HEdyfLry44XcUuw" name="LOCKED">
+          <ownedComment xmi:id="_UkftoMNeEdydiYAu_Q32IQ" annotatedElement="_AGS-gE8HEdyfLry44XcUuw">
+            <body>State is administratively locked.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_BNWtME8HEdyfLry44XcUuw" name="UNLOCKED">
+          <ownedComment xmi:id="_XkRRcMNeEdydiYAu_Q32IQ" annotatedElement="_BNWtME8HEdyfLry44XcUuw">
+            <body>State is administratively unlocked.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_6R9EQPo2EduVsYI7mfNDXQ" name="ObjectSource">
+        <ownedComment xmi:id="_jz0LkHAcEdycrJNsdA4sPg" annotatedElement="_6R9EQPo2EduVsYI7mfNDXQ">
+          <body>See R_TMF518_NRB_I_0001.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_MuYjUPo3EduVsYI7mfNDXQ" name="NETWORK_ME">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_YHcrEHAcEdycrJNsdA4sPg"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_e9ZcAPo4EduVsYI7mfNDXQ" name="NETWORK_EMS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_WHqkoHAcEdycrJNsdA4sPg" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_jUxE4Po4EduVsYI7mfNDXQ" name="OS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_ZiLjsHAcEdycrJNsdA4sPg" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_mAoOMPo4EduVsYI7mfNDXQ" name="UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_asGZIHAcEdycrJNsdA4sPg" value="3"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_eNqf0CPHEdypgfGA_0P3-g" name="LayerRate">
+        <ownedComment xmi:id="_iL_9oCPHEdypgfGA_0P3-g" annotatedElement="_eNqf0CPHEdypgfGA_0P3-g">
+          <body>This data structure identifies the layer rate of a resource. There is a standardised list of LayerRates in SD1-17_LayerRates supporting document. LayerRates from this standard list should be used wherever possible. The standardised list will be augmented in subsequent releases through the normal approval process. The LayerRate definition includes a range of layer identifiers for proprietary usage.&#xD;
+The conditions for use of this capability, to augment the list of supported layers between releases, are described in the attached SD1-17_LayerRates supporting document.&#xD;
+See R_TMF518_NRB_I_0003.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_cch4IHAgEdycrJNsdA4sPg" annotatedElement="_eNqf0CPHEdypgfGA_0P3-g">
+          <body>..\..\Framework\SD\SD1-17_LayerRates.pdf</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_9uBIMSPHEdypgfGA_0P3-g" name="layerRateValues" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_37Bj8CPJEdypgfGA_0P3-g" name="TransmissionParameterList">
+        <ownedComment xmi:id="_gCtdYDqmEdyAeYAhgveuqw" annotatedElement="_37Bj8CPJEdypgfGA_0P3-g">
+          <body>This data structure contains a list of transmission parameters per layer rate. The list of defined parameters can be fond in the SD1-16_LayeredParameters supporting document.&#xD;
+Note: Setting is prohibited for some specific parameters.&#xD;
+See R_TMF518_NRB_I_0005.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_2eu1wHAgEdycrJNsdA4sPg" annotatedElement="_37Bj8CPJEdypgfGA_0P3-g">
+          <body>..\..\Framework\SD\SD1-16_LayeredParameters.pdf</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="__uDbYiPJEdypgfGA_0P3-g" name="layerRate" visibility="public" type="_eNqf0CPHEdypgfGA_0P3-g">
+          <ownedComment xmi:id="__uJiACPJEdypgfGA_0P3-g" annotatedElement="__uDbYiPJEdypgfGA_0P3-g">
+            <body>This attribute represents the layer and bandwidth (rate) to which the transmission parameters apply.&#xD;
+Specifically, for a CTP, identifies the layer of the CTP, and the connection rate supported by the CTP.&#xD;
+For a PTP, identifies the layer rate (bandwidth) of the PTP and the characteristic information of the PTP.&#xD;
+For an ATM TP, identifies the layer (and not the bandwidth) of the ATM TP.&#xD;
+See attached supporting document SD1-17_LayerRates for the list of defined layer rates.</body>
+          </ownedComment>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__uJiASPJEdypgfGA_0P3-g" type="_eNqf0CPHEdypgfGA_0P3-g">
+            <body>NA</body>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__uPooCPJEdypgfGA_0P3-g" name="transmissionParameterList" visibility="public">
+          <ownedComment xmi:id="__uPooSPJEdypgfGA_0P3-g" annotatedElement="__uPooCPJEdypgfGA_0P3-g">
+            <body>This attribute contains the transmission parameters for the resource.&#xD;
+See SD1-16_LayeredParameters supporting document for the list of defined transmission parameters.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="../Common%20Business%20Entities%20Domain/Framework%20ABE.efx#_8_P-sPo7EduVsYI7mfNDXQ?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Tip%20Common%20ABE/Framework%20ABE/Type%20Definitions/AttributeValuePair?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__g3CASPLEdypgfGA_0P3-g" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__g3CACPLEdypgfGA_0P3-g"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="__uPooiPJEdypgfGA_0P3-g">
+            <type xmi:type="uml:DataType" href="../Common%20Business%20Entities%20Domain/Framework%20ABE.efx#_8_P-sPo7EduVsYI7mfNDXQ?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Tip%20Common%20ABE/Framework%20ABE/Type%20Definitions/AttributeValuePair?"/>
+            <body>NA</body>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_tMGHIHMdEdyMGrC9Msb2bA" name="OperationalState">
+        <ownedLiteral xmi:id="_tMGHIXMdEdyMGrC9Msb2bA" name="DISABLED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_PUAY4HMkEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="__F-50HMdEdyMGrC9Msb2bA" name="ENABLED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_PxV1IHMkEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Oc5ZcHMeEdyMGrC9Msb2bA" name="AdministrativeState">
+        <ownedLiteral xmi:id="_Oc5ZcXMeEdyMGrC9Msb2bA" name="LOCKED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_oGOx0HMjEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Oc5ZcnMeEdyMGrC9Msb2bA" name="UNLOCKED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_pS8ckHMjEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_VYQpEHMeEdyMGrC9Msb2bA" name="SHUTTING_DOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_ok5q0HMjEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_YDKJEHMeEdyMGrC9Msb2bA" name="UsageState">
+        <ownedLiteral xmi:id="_YDKJEXMeEdyMGrC9Msb2bA" name="IDLE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_kARMkHMkEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_YDKJEnMeEdyMGrC9Msb2bA" name="ACTIVE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_jCD34HMkEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_dBRo4HMeEdyMGrC9Msb2bA" name="BUSY">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_jiUFQHMkEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_e2NKMHMeEdyMGrC9Msb2bA" name="AvailabilityStatus">
+        <ownedLiteral xmi:id="_e2NKMXMeEdyMGrC9Msb2bA" name="UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_1lEVgHMjEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_e2NKMnMeEdyMGrC9Msb2bA" name="IN_TEST">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_3cAB8HMjEdyMGrC9Msb2bA" value="4"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_zXdnwHMeEdyMGrC9Msb2bA" name="FAILED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_27O3MHMjEdyMGrC9Msb2bA" value="3"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_0zXlEHMeEdyMGrC9Msb2bA" name="POWER_OFF">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_570TUHMjEdyMGrC9Msb2bA" value="9"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_2VL9IHMeEdyMGrC9Msb2bA" name="OFF_LINE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_5OD1cHMjEdyMGrC9Msb2bA" value="8"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_3uy0YHMeEdyMGrC9Msb2bA" name="OFF_DUTY">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_40RccHMjEdyMGrC9Msb2bA" value="7"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_5WKa0HMeEdyMGrC9Msb2bA" name="DEPENDENCY">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_2iBF8HMjEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_7SoukHMeEdyMGrC9Msb2bA" name="DEGRADED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_2FKK0HMjEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_8eTQcHMeEdyMGrC9Msb2bA" name="NOT_INSTALLED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_4RlmIHMjEdyMGrC9Msb2bA" value="6"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_-ZoUsHMeEdyMGrC9Msb2bA" name="LOG_FULL">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_33OlYHMjEdyMGrC9Msb2bA" value="5"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_CenNEHMfEdyMGrC9Msb2bA" name="ControlStatus">
+        <ownedLiteral xmi:id="_CenNEXMfEdyMGrC9Msb2bA" name="UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_-hk9gHMjEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_CenNEnMfEdyMGrC9Msb2bA" name="SUBJECT_TO_TEST">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_9qQ7AHMjEdyMGrC9Msb2bA" value="3"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_IZM8MHMfEdyMGrC9Msb2bA" name="PART_OF_SERVICES_LOCKED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_8uqOYHMjEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_K0oc0HMfEdyMGrC9Msb2bA" name="RESERVED_FOR_TEST">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_9N5IEHMjEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ODdJQHMfEdyMGrC9Msb2bA" name="SUSPENDED">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_-DlZ8HMjEdyMGrC9Msb2bA" value="4"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_RW9hYHMfEdyMGrC9Msb2bA" name="HolderStatus">
+        <ownedLiteral xmi:id="_RW9hYXMfEdyMGrC9Msb2bA" name="HOLDER_EMPTY">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_BPcR8HMkEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_RW9hYnMfEdyMGrC9Msb2bA" name="IN_THE_ACCEPTABLE_LIST">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_BptzIHMkEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ZxjvIHMfEdyMGrC9Msb2bA" name="NOT_IN_THE_ACCEPTABLE_LIST">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_CD5NsHMkEdyMGrC9Msb2bA" value="3"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ccj80HMfEdyMGrC9Msb2bA" name="UNKNOWN_TYPE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Ckv4AHMkEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_3KC2oHMgEdyMGrC9Msb2bA" name="State">
+        <ownedAttribute xmi:id="_ZfyiUHMiEdyMGrC9Msb2bA" name="VENDOR_SPECIFIC" visibility="public">
+          <ownedComment xmi:id="_ZfyiUXMiEdyMGrC9Msb2bA">
+            <body>Contains any vendor-specific state or status.&#xD;
+Enumeration value = 10.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_lJ4K4HMiEdyMGrC9Msb2bA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <body>NA</body>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedLiteral xmi:id="_3KC2oXMgEdyMGrC9Msb2bA" name="UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_WjO_sHMkEdyMGrC9Msb2bA"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up3v4HMhEdyMGrC9Msb2bA" name="X721_OPERATIONAL_STATE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_aqUw4HMkEdyMGrC9Msb2bA" value="7"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up3v4nMhEdyMGrC9Msb2bA" name="X721_ADMINISTRATIVE_STATE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_ZB6ooHMkEdyMGrC9Msb2bA" value="4"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up3v5HMhEdyMGrC9Msb2bA" name="X721_USAGE_STATE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_bfihoHMkEdyMGrC9Msb2bA" value="9"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92gHMhEdyMGrC9Msb2bA" name="X721_AVAILABILITY_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Zi4AoHMkEdyMGrC9Msb2bA" value="5"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92gnMhEdyMGrC9Msb2bA" name="X721_CONTROL_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_aIyxIHMkEdyMGrC9Msb2bA" value="6"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92hHMhEdyMGrC9Msb2bA" name="M3100_HOLDER_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_WMf6sHMkEdyMGrC9Msb2bA" value="4"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92iHMhEdyMGrC9Msb2bA" name="M3100_ALARM_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_UBgCwHMkEdyMGrC9Msb2bA" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92inMhEdyMGrC9Msb2bA" name="M3100_ARC_STATE">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_VssZQHMkEdyMGrC9Msb2bA" value="3"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92knMhEdyMGrC9Msb2bA" name="M3100_ARC_QI_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_U-Ql8HMkEdyMGrC9Msb2bA" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_up92lHMhEdyMGrC9Msb2bA" name="X721_UNKNOWN_STATUS">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_bFjUUHMkEdyMGrC9Msb2bA" value="8"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Dqn30JetEd6cmO2ItKypXg" name="ResourceState">
+        <ownedComment xmi:id="_VGrCgJeuEd6cmO2ItKypXg" annotatedElement="_Dqn30JetEd6cmO2ItKypXg">
+          <body>Installing:&#xD;
+During this phase, the Resource undergoes a full commissioning process until it is finally ready for work and support services. takes the Resource State value of “Installed”. During this phase, the resource is assigned the composite Inventory state value of “Installing”. Resources may also be installed in the network regardless of any specific plan.&#xD;
+&#xD;
+Non working:&#xD;
+The Non-working phase designates the resource assurance states, namely, all possible states in which the resource is put out of work, either by intrinsic internal reasons, e.g., a resource that becomes faulty, or intentionally by the operator, e.g, for maintenance purposes.&#xD;
+During this phase, the Resource is assigned the composite state value “Non-working”.&#xD;
+X.731 and M.3100 state and status information for a Working resource are mapped to the ituStateOrStatusList attribute or to a transmission parameter of a TP layer if a layered approach is needed (see SD1-16_LayeredParameters supporting document).&#xD;
+&#xD;
+Planning:&#xD;
+During the Planning phase the resource is scheduled for deployment in accordance with a specific plan. During this phase, the resource is assigned the composite state value of “Planning”. The resource state in the Inventory Management OS provides the other OSs with the information regarding the resources’ planning state.&#xD;
+&#xD;
+Retiring:&#xD;
+During this phase, the resource undergoes all necessary procedures for its decommissioning and phasing out.&#xD;
+&#xD;
+Working:&#xD;
+After the resource has been physically installed and all necessary Firmware and Software have been installed, all the commissioning testing has been performed and is running, it enters the working phase. &#xD;
+During this phase, the Resource is assigned the composite state value “Working”.&#xD;
+X.731 and M.3100 state and status information for a Working resource are mapped to the ituStateOrStatusList attribute or to a transmission parameter of a TP layer if a layered approach is needed (see SD1-16_LayeredParameters supporting document).</body>
+        </ownedComment>
+        <ownedComment xmi:id="_Wy3pIJevEd6cmO2ItKypXg" annotatedElement="_Dqn30JetEd6cmO2ItKypXg">
+          <body>..\..\Framework\SD\SD1-16_LayeredParameters.pdf</body>
+        </ownedComment>
+        <ownedComment xmi:id="_oi_b0JevEd6cmO2ItKypXg">
+          <annotatedElement xmi:type="uml:Property" href="Resource%20ABE.efx#_xd-pPg6uEdyd7PUNb-IYCQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Resource/resourceState?"/>
+          <body>..\SD\SD2-17_EnhancedResourceStates.pdf</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_JyWEAJetEd6cmO2ItKypXg" name="INSTALLING_INSTALLED">
+          <ownedComment xmi:id="_JyWEAZetEd6cmO2ItKypXg" annotatedElement="_JyWEAJetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been unpacked and installed by the supplier/ installer. The resource is physically in place.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_NUneoJeyEd6cmO2ItKypXg" value="4"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_JyWEA5etEd6cmO2ItKypXg" name="INSTALLING_DELIVERED">
+          <ownedComment xmi:id="_JyWEBJetEd6cmO2ItKypXg" annotatedElement="_JyWEA5etEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been accepted by the network provider as delivered to site by the supplier.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_MrfpIJeyEd6cmO2ItKypXg" value="3"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_JyWEBpetEd6cmO2ItKypXg" name="INSTALLING_ACCEPTED">
+          <ownedComment xmi:id="_JyWEB5etEd6cmO2ItKypXg" annotatedElement="_JyWEBpetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been accepted by the network provider as ready for network use. All physical and logical entities and connectivity in support of the resource are in place and have been assigned to the resource. Resource is supported by operational support systems for remote administration (configuration and event management). Resource available to carry customer traffic. Resource is accepted into assurance (maintenance).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_LWHxoJeyEd6cmO2ItKypXg" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_JyWECZetEd6cmO2ItKypXg" name="INSTALLING_UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_PpKUIJeyEd6cmO2ItKypXg" value="7"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Jyf1AJetEd6cmO2ItKypXg" name="INSTALLING_COMMISSIONED">
+          <ownedComment xmi:id="_Jyf1AZetEd6cmO2ItKypXg" annotatedElement="_Jyf1AJetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been comissioned by the supplier/ comissioner. All physical and logical entities in support of the resource as standalone entity are in place and have been assigned to the resource (software, power, synchronisation, management connectivity).&#xD;
+This state is most significant for deploying Managed Elements, as up to this point the Operational Support Systems do not have any visibility of the resource for configuration or event management (configuration usually being performed using a local management interface).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_MFWPIJeyEd6cmO2ItKypXg" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Jyf1A5etEd6cmO2ItKypXg" name="INSTALLING_REJECTED">
+          <ownedComment xmi:id="_Jyf1BJetEd6cmO2ItKypXg" annotatedElement="_Jyf1A5etEd6cmO2ItKypXg">
+            <body>This sub-state defines that  the resource was rejected by the network provider and has been returned from site to the supplier. (Prior to the being returned,the resource may have to be regressed back from integrated, comissioned or installed to the delivered state qualifier).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_PC3wMJeyEd6cmO2ItKypXg" value="6"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Jyf1BpetEd6cmO2ItKypXg" name="INSTALLING_INTEGRATED">
+          <ownedComment xmi:id="_Jyf1B5etEd6cmO2ItKypXg" annotatedElement="_Jyf1BpetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource management has been integrated by the supplier/ integrator. All physical and logical entities and connectivity in support of the resource are in place and have been assigned to the resource. Resource visible to operational support systems for remote administration (configuration and event management). The resource can be used to deliver service.&#xD;
+This state is most significant for deploying Managed Elements, as following integration into the rest of the management domain it becomes visible to remote configuration and event management systems.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_N8GVYJeyEd6cmO2ItKypXg" value="5"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_YKue0JetEd6cmO2ItKypXg" name="NON_WORKING_UNKNOWN" classifier="_Dqn30JetEd6cmO2ItKypXg">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_QdAy8JeyEd6cmO2ItKypXg" value="8"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_rwuOAJetEd6cmO2ItKypXg" name="PLANNING_PLANNED">
+          <ownedComment xmi:id="_rwuOAZetEd6cmO2ItKypXg" annotatedElement="_rwuOAJetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the characteristics of the resource and its deployment have been completely identified but nothing exists in the network at this point in support of the resource. Firm agreement has been reached to satisfy a requirement using the resource.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_SFArgJeyEd6cmO2ItKypXg" value="11"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_rwuOA5etEd6cmO2ItKypXg" name="PLANNING_INITIAL_PLAN">
+          <ownedComment xmi:id="_rwuOBJetEd6cmO2ItKypXg" annotatedElement="_rwuOA5etEd6cmO2ItKypXg">
+            <body>This sub-state defines that a requirement for the resource has been identified, and the resource has been proposed to address the requirement, but resource characteristics or deployment details have not been agreed.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Q_ktcJeyEd6cmO2ItKypXg" value="9"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_rwuOBpetEd6cmO2ItKypXg" name="PLANNING_UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_S5mxMJeyEd6cmO2ItKypXg" value="12"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_rwuOCJetEd6cmO2ItKypXg" name="PLANNING_ORDERED">
+          <ownedComment xmi:id="_rwuOCZetEd6cmO2ItKypXg" annotatedElement="_rwuOCJetEd6cmO2ItKypXg">
+            <body>This sub-state defines that an order for delivery of the resource has been agreed between the network provider and supplier. As required, any orders for installation and/or comissioning of the resource have also been agreed between the network provider and installers and/or comissioners.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_RlRbgJeyEd6cmO2ItKypXg" value="10"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR4JetEd6cmO2ItKypXg" name="RETIRING_DEINSTALLED">
+          <ownedComment xmi:id="_xOIR4ZetEd6cmO2ItKypXg" annotatedElement="_xOIR4JetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been deinstalled by the supplier/ installer. The resource is physically in place. Physical and logical entities in support of the resource have been withdrawn.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Uavz0JeyEd6cmO2ItKypXg" value="14"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR45etEd6cmO2ItKypXg" name="RETIRING_WITHDRAWN_UNAVAILABLE">
+          <ownedComment xmi:id="_xOIR5JetEd6cmO2ItKypXg" annotatedElement="_xOIR45etEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been identified for retiring and the resource is not available to carry any newcustomer traffic. Existing Customer Traffic has been removed/offloaded to other resources.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Yl4-kJeyEd6cmO2ItKypXg" value="20"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR5petEd6cmO2ItKypXg" name="RETIRING_DEINTEGRATED">
+          <ownedComment xmi:id="_xOIR55etEd6cmO2ItKypXg" annotatedElement="_xOIR5petEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been de-integrated by the supplier/ integrator. All customer traffic has been removed/offloaded to other resources. All physical and logical entities and connectivity in support of the resource are still in place and have been assigned to the resource. Resource visible to operational support systems for remote administration (configuration and event management).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_VGjJ4JeyEd6cmO2ItKypXg" value="15"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR6ZetEd6cmO2ItKypXg" name="RETIRING_STORED">
+          <ownedComment xmi:id="_xOIR6petEd6cmO2ItKypXg" annotatedElement="_xOIR6ZetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been packed and removed from its location by the supplier or third party agent to a designated storage location.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_WwVLIJeyEd6cmO2ItKypXg" value="17"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR7JetEd6cmO2ItKypXg" name="RETIRING_UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_XXOMAJeyEd6cmO2ItKypXg" value="18"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR7petEd6cmO2ItKypXg" name="RETIRING_RECOVERED">
+          <ownedComment xmi:id="_xOIR75etEd6cmO2ItKypXg" annotatedElement="_xOIR7petEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been recovered from site by the supplier or third party agent for disposal. All entities in support of the resource has now be disassociated from the resource. Only a record of the resource exists at this point.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_VzP30JeyEd6cmO2ItKypXg" value="16"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xOIR8ZetEd6cmO2ItKypXg" name="RETIRING_WITHDRAWN_ACTIVE">
+          <ownedComment xmi:id="_xOIR8petEd6cmO2ItKypXg" annotatedElement="_xOIR8ZetEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource has been identified for retiring and the resource is not available to carry any newcustomer traffic. Existing Customer Traffic is to be removed/offloaded to other resources.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_X-aH0JeyEd6cmO2ItKypXg" value="19"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_xORb0JetEd6cmO2ItKypXg" name="RETIRING_DECOMMISSIONED">
+          <ownedComment xmi:id="_xORb0ZetEd6cmO2ItKypXg" annotatedElement="_xORb0JetEd6cmO2ItKypXg">
+            <body>This sub-state defines that  the resource has been decomissioned by the supplier/ comissioner. All physical and logical entities in support of the resource as standalone entity are still assigned to the resource (software, power, synchronisation, management connectivity). Resource not visible to operational support systems for remote administration (configuration and event management).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_TwbrgJeyEd6cmO2ItKypXg" value="13"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_6L7TUJetEd6cmO2ItKypXg" name="UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_ZMUscJeyEd6cmO2ItKypXg"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Bsm2gJeuEd6cmO2ItKypXg" name="WORKING_ACTIVATED">
+          <ownedComment xmi:id="_Bsm2gZeuEd6cmO2ItKypXg" annotatedElement="_Bsm2gJeuEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource is working, has been configured and activated and can be used by client(s).</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_a2HUwJeyEd6cmO2ItKypXg" value="21"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Bsm2g5euEd6cmO2ItKypXg" name="WORKING_DEACTIVATED">
+          <ownedComment xmi:id="_Bsm2hJeuEd6cmO2ItKypXg" annotatedElement="_Bsm2g5euEd6cmO2ItKypXg">
+            <body>This sub-state defines that the resource is working, but cannot be used by a client.</body>
+          </ownedComment>
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_bdJfkJeyEd6cmO2ItKypXg" value="22"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_Bsm2hpeuEd6cmO2ItKypXg" name="WORKING_UNKNOWN">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_cO6TsJeyEd6cmO2ItKypXg" value="23"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_9baU0JeyEd6cmO2ItKypXg" name="ItuStateAndStatus">
+        <ownedComment xmi:id="_5nh0cHMaEdyMGrC9Msb2bA" annotatedElement="_9baU0JeyEd6cmO2ItKypXg">
+          <body>This data type contains a list of ITU state and status together with it's value.&#xD;
+See R_TMF518_NRB_I_0004.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_aeFlUHMcEdyMGrC9Msb2bA" name="M3100_CIRCUIT_PACK_TYPE" visibility="public">
+          <ownedComment xmi:id="_aeFlUXMcEdyMGrC9Msb2bA" annotatedElement="_aeFlUHMcEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation M.3100.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dn6ocZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dn6ocJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_g6Ta0HMcEdyMGrC9Msb2bA" name="M3100_HOLDER_STATUS" visibility="public" type="_RW9hYHMfEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_g6Ta0XMcEdyMGrC9Msb2bA" annotatedElement="_g6Ta0HMcEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation M.3100.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H_cCUZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_cCUJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_9VlIoHMcEdyMGrC9Msb2bA" name="X721_ADMINISTRATIVE_STATE" visibility="public" type="_Oc5ZcHMeEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_9VlIoXMcEdyMGrC9Msb2bA" annotatedElement="_9VlIoHMcEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KUlUwZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KUlUwJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HzuigHMdEdyMGrC9Msb2bA" name="X721_AVAILABILITY_STATUS" visibility="public" type="_e2NKMHMeEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_HzuigXMdEdyMGrC9Msb2bA" annotatedElement="_HzuigHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJ3XUHMjEdyMGrC9Msb2bA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJxQsHMjEdyMGrC9Msb2bA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N-pzsHMdEdyMGrC9Msb2bA" name="X721_CONTROL_STATUS" visibility="public" type="_CenNEHMfEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_N-pzsXMdEdyMGrC9Msb2bA" annotatedElement="_N-pzsHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZCPOMXMjEdyMGrC9Msb2bA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZCPOMHMjEdyMGrC9Msb2bA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SIORIHMdEdyMGrC9Msb2bA" name="X721_OPERATIONAL_STATE" visibility="public" type="_tMGHIHMdEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_SIORIXMdEdyMGrC9Msb2bA" annotatedElement="_SIORIHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MX_-AZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MX_-AJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W77QsHMdEdyMGrC9Msb2bA" name="X721_STATE" visibility="public" type="_3KC2oHMgEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_W77QsXMdEdyMGrC9Msb2bA" annotatedElement="_W77QsHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bpUlMXMjEdyMGrC9Msb2bA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bpUlMHMjEdyMGrC9Msb2bA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_bDHvkHMdEdyMGrC9Msb2bA" name="X721_UNKNOWN_STATUS" visibility="public">
+          <ownedComment xmi:id="_bDHvkXMdEdyMGrC9Msb2bA" annotatedElement="_bDHvkHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PFlloZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PFlloJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_fYcKAHMdEdyMGrC9Msb2bA" name="X721_USAGE_STATE" visibility="public" type="_YDKJEHMeEdyMGrC9Msb2bA">
+          <ownedComment xmi:id="_fYcKAXMdEdyMGrC9Msb2bA" annotatedElement="_fYcKAHMdEdyMGrC9Msb2bA">
+            <body>See ITU-T Recommendation X.721.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PxPKsZe1Ed6cmO2ItKypXg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PxPKsJe1Ed6cmO2ItKypXg"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_bR6tkJ4hEd6Xtoj9wbt_jg">
+      <eAnnotations xmi:id="_bR6tkZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_24f00J1tEd6TF50ow_p4ig?Lifecycle%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_clNhcJ4hEd6Xtoj9wbt_jg">
+      <eAnnotations xmi:id="_clNhcZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_6NbwUJ1tEd6TF50ow_p4ig?TIP%20Profile?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_0eua4Z2KEd6kLPpRsorX-w" base_Comment="_0eua4J2KEd6kLPpRsorX-w"/>
+  <Default:Documentation xmi:id="_UkftocNeEdydiYAu_Q32IQ" base_Comment="_UkftoMNeEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_XkbCcMNeEdydiYAu_Q32IQ" base_Comment="_XkRRcMNeEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_iMGEQCPHEdypgfGA_0P3-g" base_Comment="_iL_9oCPHEdypgfGA_0P3-g"/>
+  <Default:Documentation xmi:id="__uPooyPJEdypgfGA_0P3-g" base_Comment="__uJiACPJEdypgfGA_0P3-g"/>
+  <Default:Documentation xmi:id="__uPopCPJEdypgfGA_0P3-g" base_Comment="__uPooSPJEdypgfGA_0P3-g"/>
+  <Default:Documentation xmi:id="_gCzkADqmEdyAeYAhgveuqw" base_Comment="_gCtdYDqmEdyAeYAhgveuqw"/>
+  <Default:Documentation xmi:id="_jz6SMHAcEdycrJNsdA4sPg" base_Comment="_jz0LkHAcEdycrJNsdA4sPg"/>
+  <Default:URL xmi:id="_da_EcHAgEdycrJNsdA4sPg" base_Comment="_cch4IHAgEdycrJNsdA4sPg"/>
+  <Default:URL xmi:id="_3WUlEHAgEdycrJNsdA4sPg" base_Comment="_2eu1wHAgEdycrJNsdA4sPg"/>
+  <Default:Documentation xmi:id="_5nh0cXMaEdyMGrC9Msb2bA" base_Comment="_5nh0cHMaEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_aeLr8XMcEdyMGrC9Msb2bA" base_Comment="_aeFlUXMcEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_g6Ta1HMcEdyMGrC9Msb2bA" base_Comment="_g6Ta0XMcEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_9VlIpXMcEdyMGrC9Msb2bA" base_Comment="_9VlIoXMcEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_HzuihXMdEdyMGrC9Msb2bA" base_Comment="_HzuigXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_N-2A83MdEdyMGrC9Msb2bA" base_Comment="_N-pzsXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_SIUXwHMdEdyMGrC9Msb2bA" base_Comment="_SIORIXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_W77QtXMdEdyMGrC9Msb2bA" base_Comment="_W77QsXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_bDHvlXMdEdyMGrC9Msb2bA" base_Comment="_bDHvkXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_fYcKBXMdEdyMGrC9Msb2bA" base_Comment="_fYcKAXMdEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_ZfyiU3MiEdyMGrC9Msb2bA" base_Comment="_ZfyiUXMiEdyMGrC9Msb2bA"/>
+  <Default:Documentation xmi:id="_Jyf1CZetEd6cmO2ItKypXg" base_Comment="_JyWEAZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Jyf1CpetEd6cmO2ItKypXg" base_Comment="_JyWEBJetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Jyf1C5etEd6cmO2ItKypXg" base_Comment="_JyWEB5etEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Jyf1DJetEd6cmO2ItKypXg" base_Comment="_Jyf1AZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Jyf1DZetEd6cmO2ItKypXg" base_Comment="_Jyf1BJetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Jyf1DpetEd6cmO2ItKypXg" base_Comment="_Jyf1B5etEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_rwuOC5etEd6cmO2ItKypXg" base_Comment="_rwuOAZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_rw3X8JetEd6cmO2ItKypXg" base_Comment="_rwuOBJetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_rw3X8ZetEd6cmO2ItKypXg" base_Comment="_rwuOCZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb05etEd6cmO2ItKypXg" base_Comment="_xOIR4ZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb1JetEd6cmO2ItKypXg" base_Comment="_xOIR5JetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb1ZetEd6cmO2ItKypXg" base_Comment="_xOIR55etEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb1petEd6cmO2ItKypXg" base_Comment="_xOIR6petEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb15etEd6cmO2ItKypXg" base_Comment="_xOIR75etEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb2JetEd6cmO2ItKypXg" base_Comment="_xOIR8petEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_xORb2ZetEd6cmO2ItKypXg" base_Comment="_xORb0ZetEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Bsm2iJeuEd6cmO2ItKypXg" base_Comment="_Bsm2gZeuEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_Bsm2iZeuEd6cmO2ItKypXg" base_Comment="_Bsm2hJeuEd6cmO2ItKypXg"/>
+  <Default:Documentation xmi:id="_VGrCgZeuEd6cmO2ItKypXg" base_Comment="_VGrCgJeuEd6cmO2ItKypXg"/>
+  <Default:URL xmi:id="_ahaXcJevEd6cmO2ItKypXg" base_Comment="_Wy3pIJevEd6cmO2ItKypXg"/>
+  <Default:URL xmi:id="_oi_b0ZevEd6cmO2ItKypXg" base_Comment="_oi_b0JevEd6cmO2ItKypXg"/>
+</xmi:XMI>

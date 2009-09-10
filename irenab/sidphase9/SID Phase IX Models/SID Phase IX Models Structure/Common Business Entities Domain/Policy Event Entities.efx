@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E1EE5600232" name="Policy Event Entities">
+    <eAnnotations xmi:id="_F2aksTNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_F2aksDNhEd2nE5zXHK_HsA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Poliicy%20Structure%20Entities.efx#_3E3F0EC000E93D77E60F01BD?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_v7cEgDNHEd2nE5zXHK_HsA" source="uml2.diagrams" references="_3E3F0EC000E93E5E933D03C1">
+      <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93E5E933D03C1" type="Class" name="Temp PolicyEvent Relationships">
+        <children xmi:id="_zq5Y0DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zq5Y0zNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zq5Y1DNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zq5Y1TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zq5Y1jNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zq5Y1zNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zq5Y2DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y2TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y2jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y2zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y3DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y3TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y3jNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zq5Y3zNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zq5Y0TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zq5Y0jNHEd2nE5zXHK_HsA" x="9177" y="5901" width="2353" height="1456"/>
+        </children>
+        <children xmi:id="_zq5Y4DNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E5D941601B7">
+          <children xmi:id="_zq5Y4zNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zq5Y5DNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zq5Y5TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zq5Y5jNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zq5Y5zNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zq5Y6DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y6TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y6jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y6zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y7DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y7TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y7jNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_zq5Y7zNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zq5Y4TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zq5Y4jNHEd2nE5zXHK_HsA" x="7958" y="10143" width="4148" height="1778"/>
+        </children>
+        <children xmi:id="_zq5Y8DNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DFE696503B6">
+          <children xmi:id="_zq5Y8zNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_zq5Y9DNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_zq5Y9TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_zq5Y9jNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_zq5Y9zNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_zq5Y-DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y-TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y-jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y-zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_zq5Y_DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_zq5Y_TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_zq5Y8TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zq5Y8jNHEd2nE5zXHK_HsA" x="12488" y="10185" width="4783" height="2921"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_v7cEgjNHEd2nE5zXHK_HsA"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_zq5Y_jNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E5E936A01FD" source="_zq5Y4DNHEd2nE5zXHK_HsA" target="_zq5Y0DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zq5ZATNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zq5ZAzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zq5ZBDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zq5ZAjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zq5Y_zNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zq5ZADNHEd2nE5zXHK_HsA" points="[0, -889, -321, 3513]$[0, -2057, -321, 2345]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zq5ZBTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zq5ZBjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_zq5ZBzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E5E936D00D5" source="_zq5Y8DNHEd2nE5zXHK_HsA" target="_zq5Y0DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_zq5ZCjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_zq5ZDDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_zq5ZDTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zq5ZCzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_zq5ZCDNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zq5ZCTNHEd2nE5zXHK_HsA" points="[8, -1456, 4529, 3556]$[8, -2667, 4529, 2345]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zq5ZDjNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zq5ZDzNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93DFE696503B6" name="EventTriggerDetails">
+      <ownedComment xmi:id="_v582wzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DFE696503B6">
+        <body>This is a class that implements the semantics needed for the IsTriggeredBy aggregation. This aggregation defines the set of Events that can be used to trigger the evaluation of this PolicyRule.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E936D00D5">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E0162BE010D" name="retryNumber" visibility="public">
+        <ownedComment xmi:id="_v6GAuzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E0162BE010D">
+          <body>This specifies the number of times that this PolicyEvent should be resent to the specified PolicyRule. If the triggerEndTime elapses, then this PolicyEvent will not be resent anymore, even if the retryNumber indicates that additional retries should be attempted. Instead, the hasEventEvaluated attribute of this PolicyEvent must be set to 2 (failed to be evaluated).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E016261038A" name="retryPolicy" visibility="public">
+        <ownedComment xmi:id="_v6PxsDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E016261038A">
+          <body>This is an enumerated integer that defines the policy for retrying triggers. An enumeration enables the policy application to choose among a set of pre-defined policies for determining how many times to retry sending this PolicyEvent to its associated PolicyRule. Values include:
+
+  0 - do NOT retry
+  1 - always retry (until successful acknowledgment)
+  2 - retry the number of times specified in the retryNumber attribute
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DFE69AD03C4" name="triggerStartTime" visibility="public">
+        <ownedComment xmi:id="_v6PxszNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DFE69AD03C4">
+          <body>This attribute specifies the start of the time period in which this PolicyEvent can be sent to the associated PolicyRule.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E01622703B9" name="triggerEndTime" visibility="public">
+        <ownedComment xmi:id="_v6PxtjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E01622703B9">
+          <body>This attribute specifies the end of the time period in which this PolicyEvent can be sent to the associated PolicyRule.
+
+If the Trigger was not successfully sent (including retries) by this time, then the hasEventEvaluated attribute of each PolicyEvent in this EventSet must be set to 2 (failed to be evaluated).
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E02218A029A" name="triggerConstraints" visibility="public">
+        <ownedComment xmi:id="_v6ZisjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E02218A029A">
+          <body>This attribute is a string that contains the specific OCL expression to constrain how a given set of PolicyEvents are used to trigger the evaluation of the condition clause of a particular PolicyRule. Defining this as an attribute enables external applications to populate the constraint that will be applied to this PolicyRule.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <memberEnd href="Policy%20Framework.efx#_3E3F0EC000E93D8104A200B7?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyRule/_policyEvent?"/>
+      <memberEnd href="#_3E3F0EC000E93D8104A200C1?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Structure%20Entities/Policy%20Event%20Entities/PolicyEvent/thePolicyRule%20%20%20%20?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8104040150" name="PolicyEvent" isAbstract="true">
+      <ownedComment xmi:id="_v6ZitTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8104040150">
+        <body>This class represents an aggregation of PolicyEvents, constrained according to the eventConstraint attribute of the EventDetails aggregation class. This set of PolicyEvents is then presented to one or more PolicyRules to trigger the evaluation of their condition clauses. This enables an external application, such as a Policy Server, to dynamically adjust the set of events that are being used to trigger the evaluation of a PolicyRule</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E463D140202">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93CDDD3C501D5?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Collection?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D8104A200C1" name="thePolicyRule    " visibility="public" isUnique="false" association="_3E3F0EC000E93DFE696503B6">
+        <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D77E58C025B?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyRule?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v6GAuDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v6GAtzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DFE8F8B02C9" name="hasEventEvaluated" visibility="public">
+        <ownedComment xmi:id="_v6isqDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DFE8F8B02C9">
+          <body>This is an enumerated integer that is set by a policy application to define the state of evaluation of this event. Values include:
+
+  0:  not yet evaluated
+  1:  evaluated as TRUE
+  2:  evaluated as FALSE
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_v6isqjNHEd2nE5zXHK_HsA">
+          <body>0</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DFE8F1F01FB" name="eventSequenceNumber" visibility="public">
+        <ownedComment xmi:id="_v6isrDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DFE8F1F01FB">
+          <body>This attribute is a non-negative integer and represents the particular sequence in which this event is parsed as part of the overall event clause. This will allow a policy engine to reference externally supplied arguments to this object as it is evaluated.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D87590502DF" name="_policyGroup" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Policy%20Framework.efx#_3E3F0EC000E93D77E58C024E?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyGroup?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7JJlTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7JJlDNHEd2nE5zXHK_HsA"/>
+        <association xmi:type="uml:AssociationClass" href="Policy%20Framework.efx#_3E3F0EC000E93D87590003B5?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework/PolicyGroupExecutionDetails?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F14463A0166" name="_policyEventComposite" visibility="public" type="_3E3F0EC000E93F1442FF00F9" isUnique="false" association="_3E3F0EC000E93F144639001A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7SThjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7SThTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D95A6005D" name="_policyEvent" visibility="public" type="_3E3F0EC000E93D8104040150" isUnique="false" aggregation="shared" association="_3E3F0EC000E93E5D95A30226">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7STjDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7STizNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D95A60068" name="_policyEvent1" visibility="public" type="_3E3F0EC000E93D8104040150" isUnique="false" association="_3E3F0EC000E93E5D95A30226">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7STjzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7STjjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F150C470246" name="_policyEventSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93F150AE70159?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities/PolicyEventSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wD75PzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wD75PjNHEd2nE5zXHK_HsA" value="1"/>
+        <association href="Policy%20Framework%20Spec%20Entities.efx#_3E3F0EC000E93F150C4601E0?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Policy%20ABE/Policy%20Framework%20Spec%20Entities/SpecifiesPolicyEvent?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93E5D941601B7" name="EventEmitDetails">
+      <ownedComment xmi:id="_v6sdojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D941601B7">
+        <body>This class contains the OCL expression that will be used by the emits association to determine what, if any, constraints are to be applied to this PolicyEventSet. It also contains some additional semantics to help identify the type of this event.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E936A01FD">
+        <general xmi:type="uml:Class" href="Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D945502F8" name="emitConstraint" visibility="public">
+        <ownedComment xmi:id="_v6sdpjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D945502F8">
+          <body>This attribute is a string that contains the specific OCL expression to constrain how a particular Event is emitted by a particular Resource. Defining this as an attribute enables external applications to populate this constraint.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E5D94950173" name="isPhysicalEvent" visibility="public">
+        <ownedComment xmi:id="_v62OojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D94950173">
+          <body>This is a Boolean attribute that, if TRUE, identifies this event as being emitted from a PhysicalResource. If it is FALSE, then this event has been emitted from a LogicalResource.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93F1442FF00F9" name="PolicyEventComposite">
+      <ownedComment xmi:id="_v62OpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F1442FF00F9">
+        <body>This is a base class that represents the occurrence of a composite event. A composite event is an event that is made up of a set of PolicyEventAtomic and/or PolicyEventComposite entities. Like a PolicyEventAtomic, a PolicyEventComposite can also be used to trigger the evaluation of the condition clause of a PolicyRule.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F14461903E0" general="_3E3F0EC000E93D8104040150"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93F14463A0152" name="_policyEvent" visibility="public" type="_3E3F0EC000E93D8104040150" isUnique="false" aggregation="shared" association="_3E3F0EC000E93F144639001A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7STgzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7STgjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93F1445E801E1" name="PolicyEventAtomic">
+      <ownedComment xmi:id="_v62OqTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F1445E801E1">
+        <body>This is a base class that represents the occurrence of a single atomic event, which is used to trigger the evaluation of the condition clause of a PolicyRule.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93F14461500AF" general="_3E3F0EC000E93D8104040150"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93F144639001A" name="HasPolicyEvents" memberEnd="_3E3F0EC000E93F14463A0152 _3E3F0EC000E93F14463A0166">
+      <ownedComment xmi:id="_v7JJnDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93F144639001A">
+        <body>This aggregation defines the particular set of PolicyEventAtomic and/or PolicyEventComposite objects that make up this specific PolicyEventComposite object.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E5D95A30226" name="ContainsEventSets" memberEnd="_3E3F0EC000E93E5D95A6005D _3E3F0EC000E93E5D95A60068">
+      <ownedComment xmi:id="_v7STiDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93E5D95A30226">
+        <body>This aggregation defines the set of PolicyEventSets that a particular PolicyEventSet contains.</body>
+      </ownedComment>
+    </packagedElement>
+  </uml:Package>
+  <Rose:Rose_AssociationClass xmi:id="_v582wjNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93DFE696503B6" Associaton_Name="IsTriggeredBy"/>
+  <Default:Documentation xmi:id="_v6GAsDNHEd2nE5zXHK_HsA" base_Comment="_v582wzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6GAvDNHEd2nE5zXHK_HsA" base_Comment="_v6GAuzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6PxsTNHEd2nE5zXHK_HsA" base_Comment="_v6PxsDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6PxtDNHEd2nE5zXHK_HsA" base_Comment="_v6PxszNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6ZisDNHEd2nE5zXHK_HsA" base_Comment="_v6PxtjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6ZiszNHEd2nE5zXHK_HsA" base_Comment="_v6ZisjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6ZitjNHEd2nE5zXHK_HsA" base_Comment="_v6ZitTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6isqTNHEd2nE5zXHK_HsA" base_Comment="_v6isqDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6sdoDNHEd2nE5zXHK_HsA" base_Comment="_v6isrDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6sdozNHEd2nE5zXHK_HsA" base_Comment="_v6sdojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v62OoDNHEd2nE5zXHK_HsA" base_Comment="_v6sdpjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v62OozNHEd2nE5zXHK_HsA" base_Comment="_v62OojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v62OpjNHEd2nE5zXHK_HsA" base_Comment="_v62OpTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v6_YkDNHEd2nE5zXHK_HsA" base_Comment="_v62OqTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v7STgDNHEd2nE5zXHK_HsA" base_Comment="_v7JJnDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_v7STiTNHEd2nE5zXHK_HsA" base_Comment="_v7STiDNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_Property xmi:id="_zWfPFDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93DFE69AD03C4" Type="TimeStamp"/>
+  <Rose:Rose_Property xmi:id="_zXhw8jNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93E01622703B9" Type="TimeStamp"/>
+</xmi:XMI>

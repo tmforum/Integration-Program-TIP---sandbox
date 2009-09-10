@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
+  <uml:Package xmi:id="_3E3F0EC000E93E37AE4B0124" name="ResourceFacing Service Role ABE">
+    <eAnnotations xmi:id="_RCfWUDQ3Ed2FIOjVPW37EA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93E379A590226?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CBEC50330" name="VPNSecurityServiceRole">
+      <ownedComment xmi:id="_yIQhYDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CBEC50330">
+        <body>This class defines the specific type of security that is required to implement a particular CustomerFacingVPNService in terms of ResourceFacingServiceRoles. Thus, it represents all of the variable characteristics necessary to build a VPNSecurityService, abstracted in terms of ServiceRoles.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CBF570370" general="_3E3F0EC000E93D8CB0D202AB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CBEB8018D" name="VPNTopologyServiceRole">
+      <ownedComment xmi:id="_yIQhZDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CBEB8018D">
+        <body>This class defines the specific type of topology that is required to implement a particular CustomerFacingVPNService in terms of ResourceFacingServiceRoles. Thus, it represents all of the variable characteristics necessary to build a VPNTopologyService, abstracted in terms of ServiceRoles.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CBF5200A2" general="_3E3F0EC000E93D8CB0D202AB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D8CB0D202AB" name="ResourceFacingServiceRole" isAbstract="true">
+      <ownedComment xmi:id="_yIQhaDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D8CB0D202AB">
+        <body>This class defines a Service in terms of a set of ServiceRoles for a ResourceFacingService.
+
+This is the base class for defining ServiceRoles that are used to represent the variable characteristics of a ResourceFacingService in terms of roles that this Service plays. This enables the ResourceFacingService to be managed abstractly using ServiceRoles. It also helps define the Service in terms of the functions that it has or provides.
+
+Please see the DEN-ng Service model for more details.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D8CB357004A">
+        <general xmi:type="uml:Class" href="Service%20ABE.efx#_3E3F0EC000E93D5091B903CA?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ServiceRole?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E3F4B6A0302" name="_resourceFacingService" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93D5091AC0353?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/ResourceFacingService?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHg6jzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHg6jjNHEd2nE5zXHK_HsA"/>
+        <association href="ResourceFacing%20Service%20ABE.efx#_3E3F0EC000E93E3F4B6903DD?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/ResourceFacing%20Service%20ABE/RFServiceHasRFSRoles?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DD1CCEC0027" name="_customerFacingServiceRole" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="CustomerFacing%20Service%20Role%20ABE.efx#_3E3F0EC000E93D8CB0C50203?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/CustomerFacing%20Service%20Role%20ABE/CustomerFacingServiceRole?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yGniqjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yGniqTNHEd2nE5zXHK_HsA"/>
+        <association href="CustomerFacing%20Service%20Role%20ABE.efx#_3E3F0EC000E93DD1CCEA00CF?SID%20Phase%20IX%20Models/Service%20Domain/Service%20ABE/CustomerFacing%20Service%20ABE/CustomerFacing%20Service%20Role%20ABE/CFSRoleRequiresRFSRoles?"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yIQhYTNHEd2nE5zXHK_HsA" base_Comment="_yIQhYDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yIQhZTNHEd2nE5zXHK_HsA" base_Comment="_yIQhZDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_yIZrUDNHEd2nE5zXHK_HsA" base_Comment="_yIQhaDNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

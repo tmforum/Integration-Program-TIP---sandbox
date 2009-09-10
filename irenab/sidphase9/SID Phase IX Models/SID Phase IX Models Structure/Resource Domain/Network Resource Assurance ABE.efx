@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:LifecycleProfile="http:///schemas/LifecycleProfile/_1JGo0J4zEd6Xtoj9wbt_jg/2" xmlns:TIPProfile="http:///schemas/TIPProfile/_0_tcQJ4zEd6Xtoj9wbt_jg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/LifecycleProfile/_1JGo0J4zEd6Xtoj9wbt_jg/2 platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile? http:///schemas/TIPProfile/_0_tcQJ4zEd6Xtoj9wbt_jg/4 platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?">
+  <uml:Package xmi:id="_6GfcAJ2HEd6kLPpRsorX-w" name="Network Resource Assurance ABE">
+    <eAnnotations xmi:id="_N0tk8J5KEd6Xtoj9wbt_jg" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Tip%20Resource%20ABE.efx#_Po578J2FEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/Tip%20Resource%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_6GfcAZ2HEd6kLPpRsorX-w" source="uml2.diagrams"/>
+    <ownedComment xmi:id="_8bdA4J2KEd6kLPpRsorX-w">
+      <annotatedElement xmi:type="uml:Package" href="Network%20Resource%20Fulfillment%20ABE.efx#__4WF4J2HEd6kLPpRsorX-w?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE?"/>
+      <body>&lt;p>&#xD;
+    Changes&amp;nbsp;done&amp;nbsp;between&amp;nbsp;Release&amp;nbsp;2.0&amp;nbsp;and&amp;nbsp;3.0:&lt;br />&#xD;
+    -&amp;nbsp;Data&amp;nbsp;Object&amp;nbsp;Classes::Associations::HasSubordinate:&amp;nbsp;Made&amp;nbsp;the&amp;nbsp;subordinateOS&amp;nbsp;side&amp;nbsp;of&amp;nbsp;the&amp;nbsp;relationship&amp;nbsp;navigable.&lt;br />&#xD;
+    -&amp;nbsp;Data&amp;nbsp;Object&amp;nbsp;Classes::Associations::SncHasZEndGtps:&amp;nbsp;Made&amp;nbsp;the&amp;nbsp;GroupTerminationPoint&amp;nbsp;(zEndTpList)&amp;nbsp;side&amp;nbsp;of&amp;nbsp;the&amp;nbsp;relationship&amp;nbsp;navigable.&lt;br />&#xD;
+    -&amp;nbsp;Associations::RouteChangeNotificationHasRoute:&amp;nbsp;Relationship&amp;nbsp;moved&amp;nbsp;to&amp;nbsp;Notifications::Associations&amp;nbsp;and&amp;nbsp;missing&amp;nbsp;Route&amp;nbsp;object&amp;nbsp;class&amp;nbsp;added.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fH0AUFYOEdys97lG39tcpw" name="Type Definitions">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_p4A_gFCoEdynybgludW5Lg" name="SwitchReason">
+        <ownedLiteral xmi:id="_0MijUFCoEdynybgludW5Lg" name="AUTOMATIC_SWITCH">
+          <ownedComment xmi:id="_YQ2KIO99Edymm-1bIGvQpw" annotatedElement="_0MijUFCoEdynybgludW5Lg">
+            <body>AUTOMATIC_SWITCH is used when the switch reason for the automatic switch is not known.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_2BiWEFCoEdynybgludW5Lg" name="MANUAL">
+          <ownedComment xmi:id="_S1WKwO99Edymm-1bIGvQpw" annotatedElement="_2BiWEFCoEdynybgludW5Lg">
+            <body>MANUAL switch indicates that a manual operation caused this switch, including MANUAL, FORCED and LOCKOUT switches.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_26jBsFCoEdynybgludW5Lg" name="NOT_APPLICABLE">
+          <ownedComment xmi:id="_dlCAkO99Edymm-1bIGvQpw" annotatedElement="_26jBsFCoEdynybgludW5Lg">
+            <body>NOT_APPLICABLE is used upon retrieval of switch data for non-revertive groups, if a more precise value is not available.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_4pz_4FCoEdynybgludW5Lg" name="RESTORED">
+          <ownedComment xmi:id="_g9P5kO99Edymm-1bIGvQpw" annotatedElement="_4pz_4FCoEdynybgludW5Lg">
+            <body>RESTORED is used for revertive groups to indicate a return to the normal state.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_6KXzsFCoEdynybgludW5Lg" name="SIGNAL_DEGRADE"/>
+        <ownedLiteral xmi:id="_8hjtgFCoEdynybgludW5Lg" name="SIGNAL_FAIL"/>
+        <ownedLiteral xmi:id="_9_WhMFCoEdynybgludW5Lg" name="SIGNAL_MISMATCH">
+          <ownedComment xmi:id="_bip5IO99Edymm-1bIGvQpw" annotatedElement="_9_WhMFCoEdynybgludW5Lg">
+            <body>SIGNAL_MISMATCH is used in the case the signal is ok, but is identified as coming from an incorrect source: TRAIL_TRACE_IDENTIFIER_MISMATCH, Signal Label Mismatch, etc..</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_E55t8FCoEdynybgludW5Lg" name="ProtectionType">
+        <ownedComment xmi:id="_mzZuEMNeEdydiYAu_Q32IQ" annotatedElement="_E55t8FCoEdynybgludW5Lg">
+          <body>Note: The value &quot;MSP_APS&quot; is also used for general trail protection.</body>
+        </ownedComment>
+        <ownedLiteral xmi:id="_MwWFwFCoEdynybgludW5Lg" name="MSP_APS"/>
+        <ownedLiteral xmi:id="_OCkioFCoEdynybgludW5Lg" name="SNCP"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_fyCP8FFWEdyZhYPB67lKRA" name="ReversionMode">
+        <ownedLiteral xmi:id="_nd5IYFFWEdyZhYPB67lKRA" name="NON_REVERTIVE"/>
+        <ownedLiteral xmi:id="_oy_TEFFWEdyZhYPB67lKRA" name="REVERTIVE"/>
+        <ownedLiteral xmi:id="_p93KwFFWEdyZhYPB67lKRA" name="UNKNOWN"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_V8Qx8E8XEdyfLry44XcUuw" name="ProtectionSchemeState">
+        <ownedLiteral xmi:id="_ceZCME8XEdyfLry44XcUuw" name="AUTOMATIC"/>
+        <ownedLiteral xmi:id="_esZx4E8XEdyfLry44XcUuw" name="FORCED_OR_LOCKED_OUT"/>
+        <ownedLiteral xmi:id="_hBG_cE8XEdyfLry44XcUuw" name="UNKNOWN"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_zNRVEFZCEdys97lG39tcpw" name="ServiceAffecting">
+        <ownedLiteral xmi:id="_6NGN8FZCEdys97lG39tcpw" name="NON_SERVICE_AFFECTING"/>
+        <ownedLiteral xmi:id="_9YVa4FZCEdys97lG39tcpw" name="SERVICE_AFFECTING"/>
+        <ownedLiteral xmi:id="__IRHcFZCEdys97lG39tcpw" name="UNKNOWN"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_i3fZUcWnEdyHpbnWEBcCNQ" name="Trigger">
+        <ownedLiteral xmi:id="_lOJHoMWnEdyHpbnWEBcCNQ" name="RAISE"/>
+        <ownedLiteral xmi:id="_mz6yoMWnEdyHpbnWEBcCNQ" name="CLEAR"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hNFckB5cEdyjX65vzeWaBA" name="Data Object Classes">
+      <eAnnotations xmi:id="_hNLjMB5cEdyjX65vzeWaBA" source="uml2.diagrams"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q8_tUFFhEdyZhYPB67lKRA" name="ProtectionGroup">
+        <ownedComment xmi:id="_YbxdAMNlEdydiYAu_Q32IQ" annotatedElement="_Q8_tUFFhEdyZhYPB67lKRA">
+          <body>This object class represents the information about a trail protection in a Managed Element.&#xD;
+See R_TMF518_NRA_I_0009 and R_TMF518_NRA_I_0010.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_ZEddIZ2VEd6kLPpRsorX-w" name="protectionRelatedTpRef" visibility="public" type="_J0ItsJ2VEd6kLPpRsorX-w" aggregation="composite" association="_ZEddIJ2VEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZEddJJ2VEd6kLPpRsorX-w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZEddI52VEd6kLPpRsorX-w"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rCh4AP-tEduKKLvC_EB00A" name="AlarmSeverityAssignmentProfile">
+        <ownedComment xmi:id="_qghcsFVYEdya2sE_yD1PfQ" annotatedElement="_rCh4AP-tEduKKLvC_EB00A">
+          <body>This object class models the (flexible) severity assignment to specified probable causes. So the ASAP object includes a table, with each row specifying the probable cause (plus optionally the probableCauseQualifier and / or the nativeProbableCause) and the assigned severity for &quot;service affecting&quot;, &quot;non service affecting&quot; and &quot;service independent or unknown&quot; alarms.&#xD;
+Probable cause, probableCauseQualifier and nativeProbableCause are the coordinates of the ASAP entries, so there must not be two ASAP entries with the same coordinates. It is the responsibility of the EMS to enforce this.&#xD;
+Alarms against entities that are not modeled by the interface are reported using the &quot;AID&quot; objectType. For these &quot;AID&quot; alarms the ASAP mechanism is not applicable.&#xD;
+Typically the ASAP function is implemented in the OS or NE where the alarm is originated. I. e. the severity will usually be assigned directly by the NE, so it is up to the EMS to download the defined ASAP to the NE. Other alarms, e.g. on arcs like SNCs, may be generated by the target OS. &#xD;
+An alarm becomes reportable by NE/target OS:&#xD;
+- when for PTP, CTP, FTP: AlarmReporting changes from &quot;off&quot; to &quot;on&quot; &#xD;
+- when for SNC, TopologicalLink, Equipment, EquipmentHolder, GTP: alarmReportingIndicator changes from false to true.&#xD;
+Alarms are always reportable for all other objects as they do not have any alarm reporting attribute.&#xD;
+When an alarm becomes reportable the ASAPs are applied (accessed via the asapPointer). The severity of the alarm is adopted from the ASAP entry that matches for all of the following:&#xD;
+- same probableCause &#xD;
+- same probableCauseQualifier (an empty string is a match)&#xD;
+- same nativeProbableCause (an empty string is a match).&#xD;
+For example, if the reportable alarm has LOS probableCause and an ASAP entry is found with LOS probableCause and both probableCauseQualifier and nativeProbableCause are empty strings, then the search is successful.&#xD;
+If there is a matching ASAP, then the severities are adopted on the following basis:&#xD;
+- the alarm is service affecting: the severity specified in the serviceAffecting field is assigned&#xD;
+- the alarm is service non affecting: the severity specified in the serviceNonAffecting field is assigned&#xD;
+- the alarm is service independent or NE/target OS is not equipped to determine if the alarm affects service or not:&#xD;
+  the severity specified in the serviceIndependentOrUnknown field is assigned.&#xD;
+If the assigned severity specified in the ASAP is:&#xD;
+- &quot;FREE_CHOICE&quot; then the NE/target OS are free to determine the severity. If there is no local mechanism on&#xD;
+     the ME/EMS to determine severity then the severity &quot;INDETERMINATE&quot; should be assigned. &#xD;
+- &quot;NOTALARMED&quot; then the EMS should not emit an alarm over the EML-NML interface.&#xD;
+If there is no ASAP that matches, then the NE/target OS is free to determine the severity. If there is no local mechanism on the NE/target OS to determine severity then the severity &quot;INDETERMINATE&quot; should be assigned.&#xD;
+Once a severity has been assigned, the alarm notification is emitted (other than for &quot;NOTALARMED&quot;).&#xD;
+Note: Any operation of alarm retrieval will not include &quot;NOTALARMED&quot; alarms.&#xD;
+See R_TMF518_NRA_I_0001 and R_TMF518_NRA_I_0002.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lrQs8FYTEdys97lG39tcpw" name="PerformanceMonitoringPoint">
+        <ownedComment xmi:id="_fn66oMNlEdydiYAu_Q32IQ" annotatedElement="_lrQs8FYTEdys97lG39tcpw">
+          <body>This object class represents one Performance Monitoring Point (PMP). There always exists one PMP for every triple of layer rate, PM location and granularity for which the containing TP is capable to monitor performance. Thus, its existence reflects the TP's PM capabilities.&#xD;
+See R_TMF518_NRA_I_0004 and R_TMF518_NRA_I_0005.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rbGJUFYuEdys97lG39tcpw" name="TcaParameterProfile">
+        <ownedComment xmi:id="_dOvcwMNlEdydiYAu_Q32IQ" annotatedElement="_rbGJUFYuEdys97lG39tcpw">
+          <body>This object class contains per layer rate a set of PM parameter/threshold value pairs per granularity (e.g. VC12: ES / 50; 15min).&#xD;
+Instances of this class could be associated to TPs. A list of all associated TPs will be maintained in the profile.&#xD;
+See R_TMF518_NRA_I_0011 and R_TMF518_NRA_I_0012.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_WJBxUZ2WEd6kLPpRsorX-w" name="associatedTpRef" visibility="public" type="_B5hyIJ2WEd6kLPpRsorX-w" aggregation="composite" association="_WJBxUJ2WEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WJBxVJ2WEd6kLPpRsorX-w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WJBxU52WEd6kLPpRsorX-w"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lbmMMPeBEd2RDt6uVa5wHg" name="TpContainsPmps" isAbstract="true" memberEnd="_lhQIQPeBEd2RDt6uVa5wHg _lhQIRPeBEd2RDt6uVa5wHg">
+        <ownedEnd xmi:id="_lhQIQPeBEd2RDt6uVa5wHg" name="" visibility="private" association="_lbmMMPeBEd2RDt6uVa5wHg">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/TerminationPoint?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lhQIQ_eBEd2RDt6uVa5wHg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lhQIQveBEd2RDt6uVa5wHg" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_lhQIRPeBEd2RDt6uVa5wHg" name="" visibility="private" type="_lrQs8FYTEdys97lG39tcpw" aggregation="composite" association="_lbmMMPeBEd2RDt6uVa5wHg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lhQIR_eBEd2RDt6uVa5wHg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lhQIRveBEd2RDt6uVa5wHg"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UNIwkJ2PEd6kLPpRsorX-w" name="" memberEnd="_UNR6gJ2PEd6kLPpRsorX-w _UNR6hJ2PEd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_UNR6gJ2PEd6kLPpRsorX-w" name="" visibility="private" association="_UNIwkJ2PEd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_MLLBUMNVEdydiYAu_Q32IQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/Equipment?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UNR6g52PEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UNR6gp2PEd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_UNR6hJ2PEd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_UNIwkJ2PEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UNR6h52PEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UNR6hp2PEd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SsAfkJ2QEd6kLPpRsorX-w" name="" memberEnd="_SsAfkZ2QEd6kLPpRsorX-w _SsAflZ2QEd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_SsAfkZ2QEd6kLPpRsorX-w" name="" visibility="private" association="_SsAfkJ2QEd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_A38HoMNXEdydiYAu_Q32IQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/EquipmentHolder?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SsAflJ2QEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SsAfk52QEd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_SsAflZ2QEd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_SsAfkJ2QEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SsKQkZ2QEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SsKQkJ2QEd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4pMogJ2QEd6kLPpRsorX-w" name="" memberEnd="_4pWZgJ2QEd6kLPpRsorX-w _4pWZhJ2QEd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_4pWZgJ2QEd6kLPpRsorX-w" name="" visibility="private" association="_4pMogJ2QEd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_ZELroDUtEdyaRqaRCLKmVQ?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/GroupTerminationPoint?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4pWZg52QEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4pWZgp2QEd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_4pWZhJ2QEd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_4pMogJ2QEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4pWZh52QEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4pWZhp2QEd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Q1ks8J2REd6kLPpRsorX-w" name="" memberEnd="_Q1ks8Z2REd6kLPpRsorX-w _Q1ud8J2REd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_Q1ks8Z2REd6kLPpRsorX-w" name="" visibility="private" association="_Q1ks8J2REd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#__PZCUEyuEdyMf41zLKMFmA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/SubNetworkConnection?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q1ks9J2REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q1ks852REd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_Q1ud8J2REd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_Q1ks8J2REd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q1ud852REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q1ud8p2REd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_e7ZYIJ2REd6kLPpRsorX-w" name="" memberEnd="_e7ZYIZ2REd6kLPpRsorX-w _e7iiEZ2REd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_e7ZYIZ2REd6kLPpRsorX-w" name="" visibility="private" association="_e7ZYIJ2REd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/TerminationPoint?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7iiEJ2REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7ZYI52REd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_e7iiEZ2REd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_e7ZYIJ2REd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7iiFJ2REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7iiE52REd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oaUJoJ2REd6kLPpRsorX-w" name="" memberEnd="_oad6oJ2REd6kLPpRsorX-w _oad6pJ2REd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_oad6oJ2REd6kLPpRsorX-w" name="" visibility="private" association="_oaUJoJ2REd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_FUubEDnmEdyamdmRIB0MZw?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/TopologicalLink?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oad6o52REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oad6op2REd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_oad6pJ2REd6kLPpRsorX-w" name="" visibility="private" type="_rCh4AP-tEduKKLvC_EB00A" association="_oaUJoJ2REd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oad6p52REd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oad6pp2REd6kLPpRsorX-w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_J0ItsJ2VEd6kLPpRsorX-w" name="ProtectionRelatedTpRef">
+        <ownedAttribute xmi:id="_ZEmnEJ2VEd6kLPpRsorX-w" name="protectiongroup" visibility="public" type="_Q8_tUFFhEdyZhYPB67lKRA" association="_ZEddIJ2VEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZEmnE52VEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZEmnEp2VEd6kLPpRsorX-w" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZEddIJ2VEd6kLPpRsorX-w" name="" memberEnd="_ZEddIZ2VEd6kLPpRsorX-w _ZEmnEJ2VEd6kLPpRsorX-w"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3X18EJ2VEd6kLPpRsorX-w" name="" memberEnd="_3X18EZ2VEd6kLPpRsorX-w _3X_tEJ2VEd6kLPpRsorX-w">
+        <ownedEnd xmi:id="_3X18EZ2VEd6kLPpRsorX-w" name="" visibility="private" association="_3X18EJ2VEd6kLPpRsorX-w">
+          <type xmi:type="uml:Class" href="Network%20Resource%20Fulfillment%20ABE.efx#_v0h8wCsCEdyxqrDz5j4e5g?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Tip%20Logical%20Resource%20ABE/Network%20Resource%20Fulfillment%20ABE/Data%20Object%20Classes/TerminationPoint?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3X18FJ2VEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3X18E52VEd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_3X_tEJ2VEd6kLPpRsorX-w" name="" visibility="private" type="_J0ItsJ2VEd6kLPpRsorX-w" association="_3X18EJ2VEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3X_tE52VEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3X_tEp2VEd6kLPpRsorX-w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B5hyIJ2WEd6kLPpRsorX-w" name="AssociatedTpRef">
+        <ownedAttribute xmi:id="_WJBxVZ2WEd6kLPpRsorX-w" name="tcaparameterprofile" visibility="public" type="_rbGJUFYuEdys97lG39tcpw" association="_WJBxUJ2WEd6kLPpRsorX-w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WJBxWJ2WEd6kLPpRsorX-w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WJBxV52WEd6kLPpRsorX-w" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WJBxUJ2WEd6kLPpRsorX-w" name="" memberEnd="_WJBxUZ2WEd6kLPpRsorX-w _WJBxVZ2WEd6kLPpRsorX-w"/>
+      <profileApplication xmi:id="_fUAC8J4hEd6Xtoj9wbt_jg">
+        <eAnnotations xmi:id="_fUAC8Z4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile?"/>
+        </eAnnotations>
+        <appliedProfile href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_24f00J1tEd6TF50ow_p4ig?Lifecycle%20Profile?"/>
+      </profileApplication>
+      <profileApplication xmi:id="_gdUbcJ4hEd6Xtoj9wbt_jg">
+        <eAnnotations xmi:id="_gdUbcZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?"/>
+        </eAnnotations>
+        <appliedProfile href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_6NbwUJ1tEd6TF50ow_p4ig?TIP%20Profile?"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:id="_X3UO8J4hEd6Xtoj9wbt_jg">
+      <eAnnotations xmi:id="_X3dY4J4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_1JGo0Z4zEd6Xtoj9wbt_jg?Lifecycle%20Profile/LifecycleProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/resource/SID%20Models_profiles/LifecycleProfile.epx#_24f00J1tEd6TF50ow_p4ig?Lifecycle%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ZVCxMJ4hEd6Xtoj9wbt_jg">
+      <eAnnotations xmi:id="_ZVCxMZ4hEd6Xtoj9wbt_jg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_0_tcQZ4zEd6Xtoj9wbt_jg?TIP%20Profile/TIPProfile?"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/resource/SID%20Models_profiles/TIPProfile.epx#_6NbwUJ1tEd6TF50ow_p4ig?TIP%20Profile?"/>
+    </profileApplication>
+  </uml:Package>
+  <LifecycleProfile:preliminary xmi:id="_MIcD6J2bEd6kLPpRsorX-w" base_Class="_rbGJUFYuEdys97lG39tcpw"/>
+  <LifecycleProfile:likelyToChange xmi:id="_MIcD552bEd6kLPpRsorX-w" base_Class="_rbGJUFYuEdys97lG39tcpw"/>
+  <TIPProfile:doNotImplement xmi:id="_MIcD5p2bEd6kLPpRsorX-w" base_Class="_rbGJUFYuEdys97lG39tcpw"/>
+  <LifecycleProfile:preliminary xmi:id="_MIcD5Z2bEd6kLPpRsorX-w" base_Class="_Q8_tUFFhEdyZhYPB67lKRA"/>
+  <LifecycleProfile:likelyToChange xmi:id="_MIcD5J2bEd6kLPpRsorX-w" base_Class="_Q8_tUFFhEdyZhYPB67lKRA"/>
+  <TIPProfile:doNotImplement xmi:id="_MIcD452bEd6kLPpRsorX-w" base_Class="_Q8_tUFFhEdyZhYPB67lKRA"/>
+  <LifecycleProfile:preliminary xmi:id="_MIcD4p2bEd6kLPpRsorX-w" base_Class="_lrQs8FYTEdys97lG39tcpw"/>
+  <LifecycleProfile:likelyToChange xmi:id="_MIcD4Z2bEd6kLPpRsorX-w" base_Class="_lrQs8FYTEdys97lG39tcpw"/>
+  <TIPProfile:doNotImplement xmi:id="_MIcD4J2bEd6kLPpRsorX-w" base_Class="_lrQs8FYTEdys97lG39tcpw"/>
+  <LifecycleProfile:preliminary xmi:id="_MISS4p2bEd6kLPpRsorX-w" base_Class="_rCh4AP-tEduKKLvC_EB00A"/>
+  <LifecycleProfile:likelyToChange xmi:id="_MISS4Z2bEd6kLPpRsorX-w" base_Class="_rCh4AP-tEduKKLvC_EB00A"/>
+  <TIPProfile:doNotImplement xmi:id="_MISS4J2bEd6kLPpRsorX-w" base_Class="_rCh4AP-tEduKKLvC_EB00A"/>
+  <TIPProfile:tipRelationship xmi:id="_C3CmeJ2aEd6kLPpRsorX-w" base_Association="_lbmMMPeBEd2RDt6uVa5wHg" base_Relationship="_lbmMMPeBEd2RDt6uVa5wHg"/>
+  <TIPProfile:tipRelationship xmi:id="_C3Cmd52aEd6kLPpRsorX-w" base_Association="_WJBxUJ2WEd6kLPpRsorX-w" base_Relationship="_WJBxUJ2WEd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3Cmdp2aEd6kLPpRsorX-w" base_Association="_oaUJoJ2REd6kLPpRsorX-w" base_Relationship="_oaUJoJ2REd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3CmdZ2aEd6kLPpRsorX-w" base_Association="_3X18EJ2VEd6kLPpRsorX-w" base_Relationship="_3X18EJ2VEd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3CmdJ2aEd6kLPpRsorX-w" base_Association="_e7ZYIJ2REd6kLPpRsorX-w" base_Relationship="_e7ZYIJ2REd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3Cmc52aEd6kLPpRsorX-w" base_Association="_Q1ks8J2REd6kLPpRsorX-w" base_Relationship="_Q1ks8J2REd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3Cmcp2aEd6kLPpRsorX-w" base_Association="_4pMogJ2QEd6kLPpRsorX-w" base_Relationship="_4pMogJ2QEd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3CmcZ2aEd6kLPpRsorX-w" base_Association="_SsAfkJ2QEd6kLPpRsorX-w" base_Relationship="_SsAfkJ2QEd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_C3CmcJ2aEd6kLPpRsorX-w" base_Association="_UNIwkJ2PEd6kLPpRsorX-w" base_Relationship="_UNIwkJ2PEd6kLPpRsorX-w"/>
+  <TIPProfile:tipAttribute xmi:id="_G3bkoJ2YEd6kLPpRsorX-w" base_StructuralFeature="_WJBxUZ2WEd6kLPpRsorX-w"/>
+  <TIPProfile:tipAttribute xmi:id="_7q-6UJ2XEd6kLPpRsorX-w" base_StructuralFeature="_ZEmnEJ2VEd6kLPpRsorX-w"/>
+  <TIPProfile:tipAttribute xmi:id="_6GsdEJ2XEd6kLPpRsorX-w" base_StructuralFeature="_ZEddIZ2VEd6kLPpRsorX-w"/>
+  <TIPProfile:tipAttribute xmi:id="_zOEYYJ2XEd6kLPpRsorX-w" base_StructuralFeature="_WJBxVZ2WEd6kLPpRsorX-w"/>
+  <TIPProfile:tipClass xmi:id="_NjoBwJ2WEd6kLPpRsorX-w" base_Class="_B5hyIJ2WEd6kLPpRsorX-w"/>
+  <TIPProfile:tipRelationship xmi:id="_j5NZIJ2VEd6kLPpRsorX-w" base_Association="_ZEddIJ2VEd6kLPpRsorX-w" base_Relationship="_ZEddIJ2VEd6kLPpRsorX-w"/>
+  <TIPProfile:tipClass xmi:id="_ORozwJ2VEd6kLPpRsorX-w" base_Class="_J0ItsJ2VEd6kLPpRsorX-w"/>
+  <Default:Documentation xmi:id="_8bdA4Z2KEd6kLPpRsorX-w" base_Comment="_8bdA4J2KEd6kLPpRsorX-w"/>
+  <Default:Documentation xmi:id="_mzjfEMNeEdydiYAu_Q32IQ" base_Comment="_mzZuEMNeEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_qgtp8FVYEdya2sE_yD1PfQ" base_Comment="_qghcsFVYEdya2sE_yD1PfQ"/>
+  <Default:Documentation xmi:id="_YbxdAcNlEdydiYAu_Q32IQ" base_Comment="_YbxdAMNlEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_dOvcwcNlEdydiYAu_Q32IQ" base_Comment="_dOvcwMNlEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_foEroMNlEdydiYAu_Q32IQ" base_Comment="_fn66oMNlEdydiYAu_Q32IQ"/>
+  <Default:Documentation xmi:id="_S1f7wO99Edymm-1bIGvQpw" base_Comment="_S1WKwO99Edymm-1bIGvQpw"/>
+  <Default:Documentation xmi:id="_YQ2KIe99Edymm-1bIGvQpw" base_Comment="_YQ2KIO99Edymm-1bIGvQpw"/>
+  <Default:Documentation xmi:id="_bizDEO99Edymm-1bIGvQpw" base_Comment="_bip5IO99Edymm-1bIGvQpw"/>
+  <Default:Documentation xmi:id="_dlLxkO99Edymm-1bIGvQpw" base_Comment="_dlCAkO99Edymm-1bIGvQpw"/>
+  <Default:Documentation xmi:id="_g9P5ke99Edymm-1bIGvQpw" base_Comment="_g9P5kO99Edymm-1bIGvQpw"/>
+  <TIPProfile:doNotImplement xmi:id="_0g6mcJ4-Ed6Xtoj9wbt_jg" base_Class="_B5hyIJ2WEd6kLPpRsorX-w"/>
+  <LifecycleProfile:likelyToChange xmi:id="_0g6mcZ4-Ed6Xtoj9wbt_jg" base_Class="_B5hyIJ2WEd6kLPpRsorX-w"/>
+  <LifecycleProfile:preliminary xmi:id="_0g6mcp4-Ed6Xtoj9wbt_jg" base_Class="_B5hyIJ2WEd6kLPpRsorX-w"/>
+  <TIPProfile:doNotImplement xmi:id="_3HXEQJ4-Ed6Xtoj9wbt_jg" base_Class="_J0ItsJ2VEd6kLPpRsorX-w"/>
+  <LifecycleProfile:likelyToChange xmi:id="_3HXEQZ4-Ed6Xtoj9wbt_jg" base_Class="_J0ItsJ2VEd6kLPpRsorX-w"/>
+  <LifecycleProfile:preliminary xmi:id="_3HXEQp4-Ed6Xtoj9wbt_jg" base_Class="_J0ItsJ2VEd6kLPpRsorX-w"/>
+</xmi:XMI>
