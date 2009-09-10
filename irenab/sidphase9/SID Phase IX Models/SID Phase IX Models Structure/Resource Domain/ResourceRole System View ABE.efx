@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93EFF97D602AC" name="ResourceRole System View ABE">
+    <eAnnotations xmi:id="_PMLl8TN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments">
+      <references xmi:type="uml:Package" href="LogicalRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF975602D0?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE/LogicalRole%20System%20View%20ABE?"/>
+      <references xmi:type="uml:Package" href="PhysicalRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF974B023E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE/PhysicalRole%20System%20View%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_PMLl8DN8Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Resource%20ABE.efx#_3E3F0EC000E9430ADC580046?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EFF96650143" name="ResourceRoleDetails">
+      <ownedComment xmi:id="_yADnojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EFF96650143">
+        <body>This class implements the semantics of the ResourceTakesOnRoles aggregation. It also serves as the parent class for defining the classes that implement the RolesDescribePhysicalResource, RolesDescribeLogicalResource, and RolesDescribeCompoundResource aggregations. These three classes are named RolesDescribePhysicalResourceDetails, RolesDescribeLogicalResourceDetails, and RolesDescribeCompoundResourceDetailsm respectively.
+
+These four classes are defined in the system view of the DEN-ng specification.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EFF984902D0">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93EB3347802D0" name="RolesDescribeCompoundResourceDetails">
+      <ownedComment xmi:id="_yANYozNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EB3347802D0">
+        <body>This class implements the semantics of the RolesDescribeCompoundResource aggregation.
+
+This class is defined in the system view of the DEN-ng specification.
+</body>
+      </ownedComment>
+      <ownedComment xmi:id="_yB_hUjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EB3347802D0">
+        <body>This aggregation defines the set of roles that can be assumed by this particular CompoundResource. This aggregation may be subclassed to account for different role semantics that occur in the various PhysicalResourceRoles and LogicalResourceRoles that make up this CompoundResourceRole.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EFF9829008F" general="_3E3F0EC000E93EFF96650143"/>
+      <memberEnd href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EB3347902C7?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/CompoundResource/_compoundResourceRole?"/>
+      <memberEnd href="Compound%20Resource%20ABE.efx#_3E3F0EC000E93EB3347902D2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/CompoundResource%20ABE/CompoundResourceRole/_compoundResource?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="LogicalRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF975602D0?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE/LogicalRole%20System%20View%20ABE?"/>
+    <packagedElement xmi:type="uml:Package" href="PhysicalRole%20System%20View%20ABE.efx#_3E3F0EC000E93EFF974B023E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/ResourceRole%20System%20View%20ABE/PhysicalRole%20System%20View%20ABE?"/>
+  </uml:Package>
+  <Default:Documentation xmi:id="_yANYoDNHEd2nE5zXHK_HsA" base_Comment="_yADnojNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_yB_hUTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93EB3347802D0" Associaton_Name="RolesDescribeCompoundResource"/>
+  <Default:Documentation xmi:id="_yCJSUDNHEd2nE5zXHK_HsA" base_Comment="_yB_hUjNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

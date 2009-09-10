@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93E2C3E30001E" name="Equipment ABE">
+    <eAnnotations xmi:id="_seSDgTN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_seSDgDN7Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93DDEA0E303D6?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_x1L0ZTNHEd2nE5zXHK_HsA" source="uml2.diagrams" references="_3E3F0EC000E93E3D4E470177">
+      <contents xmi:type="notation:Diagram" xmi:id="_3E3F0EC000E93E3D4E470177" type="Class" name="Equipment Summary">
+        <children xmi:id="_21aNADNHEd2nE5zXHK_HsA" type="Text">
+          <children xmi:id="_21aNAzNHEd2nE5zXHK_HsA" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_21aNBDNHEd2nE5zXHK_HsA" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_21aNATNHEd2nE5zXHK_HsA" description="Title:&#x9;  DEN-ng High-Level Physical Model&#xA;View:&#x9;  Physical Equipment Diagram&#xA;Author:&#x9;  John Strassner&#xA;Rev:&#x9;  1.1&#xA;Date:&#x9;  2 February 2003&#xA;&#xA;Notes:&#x9;  Entities shaded in grey are described in other models.&#xA;&#x9;  Please print in landscape mode.&#xA;" lineColor="0"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21aNAjNHEd2nE5zXHK_HsA" y="118" width="10261" height="3403"/>
+        </children>
+        <children xmi:id="_21aNBTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21aNCDNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jW8DNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jW8TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jW8jNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jW8zNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jW9DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jW9TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jW9jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jW9zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jW-DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jW-TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jW-jNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jW-zNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21aNBjNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAD87C0261?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ManagedHardware?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21aNBzNHEd2nE5zXHK_HsA" x="10219" y="11006" width="6400" height="4148"/>
+        </children>
+        <children xmi:id="_21jW_DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21jW_zNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXADNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jXATNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jXAjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jXAzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jXBDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXBTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXBjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXBzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXCDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXCTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXCjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jXCzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jW_TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD6E940003?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Cable?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jW_jNHEd2nE5zXHK_HsA" x="29455" y="7840" width="2286" height="1058"/>
+        </children>
+        <children xmi:id="_21jXDDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDAFB610004">
+          <children xmi:id="_21jXDzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXEDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jXETNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jXEjNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jXEzNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jXFDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXFTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXFjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXFzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXGDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXGTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXGjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jXGzNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jXDTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXDjNHEd2nE5zXHK_HsA" x="11396" y="23511" width="5249" height="5376"/>
+        </children>
+        <children xmi:id="_21jXPzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC0D203DC">
+          <children xmi:id="_21jXQjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXQzNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jXRDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jXRTNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jXRjNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jXRzNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXSDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXSTNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXSjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXSzNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXTDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXTTNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jXTjNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jXQDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXQTNHEd2nE5zXHK_HsA" x="12022" y="44678" width="2243" height="1143"/>
+        </children>
+        <children xmi:id="_21jXTzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC04301E2">
+          <children xmi:id="_21jXUjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXUzNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jXVDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jXVTNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jXVjNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jXVzNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXWDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXWTNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXWjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXWzNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXXDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXXTNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jXXjNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jXUDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXUTNHEd2nE5zXHK_HsA" x="15155" y="44678" width="2370" height="1143"/>
+        </children>
+        <children xmi:id="_21jXXzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC0C7008D">
+          <children xmi:id="_21jXYjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXYzNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21jXZDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21jXZTNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21jXZjNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21jXZzNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXaDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXaTNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXajNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXazNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXbDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21jXbTNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21jXbjNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jXYDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXYTNHEd2nE5zXHK_HsA" x="8382" y="44678" width="2751" height="1143"/>
+        </children>
+        <children xmi:id="_21tH9jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tH-TNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21tH-jNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21tH-zNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21tH_DNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21tH_TNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21tH_jNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tH_zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIADNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIATNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIAjNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIAzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIBDNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21tIBTNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21tH9zNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tH-DNHEd2nE5zXHK_HsA" x="2345" y="37837" width="2353" height="1456"/>
+        </children>
+        <children xmi:id="_21tIDzNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tIEjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21tIEzNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21tIFDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21tIFTNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21tIFjNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21tIFzNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIGDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIGTNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIGjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIGzNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIHDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIHTNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21tIHjNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21tIEDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIETNHEd2nE5zXHK_HsA" x="11938" y="17551" width="4064" height="2709"/>
+        </children>
+        <children xmi:id="_21tIHzNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tIIjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21tIIzNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21tIJDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21tIJTNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21tIJjNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21tIJzNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIKDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIKTNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIKjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIKzNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tILDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tILTNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21tILjNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21tIIDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" fillColor="15395562" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Software%20ABE.efx#_3E3F0EC000E93CDE25AD031F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIITNHEd2nE5zXHK_HsA" x="1845" y="17170" width="4318" height="4131"/>
+        </children>
+        <children xmi:id="_21tIZDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDDBBD0013B">
+          <children xmi:id="_21tIZzNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_21tIaDNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_21tIaTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_21tIajNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_21tIazNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_21tIbDNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIbTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIbjNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIbzNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIcDNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIcTNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_21tIcjNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_21tIczNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21tIZTNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIZjNHEd2nE5zXHK_HsA" x="10964" y="36017" width="6096" height="6307"/>
+        </children>
+        <children xmi:id="_2125RTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_2125SDNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_2125STNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_2125SjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_2125SzNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_2125TDNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_2125TTNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2125TjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC4DNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22AC4TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC4jNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22AC4zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC5DNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_22AC5TNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2125RjNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" fillColor="15395562" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E0686B101A4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2125RzNHEd2nE5zXHK_HsA" x="31275" y="18838" width="4699" height="3683"/>
+        </children>
+        <children xmi:id="_22AC5jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22AC6TNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_22AC6jNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_22AC6zNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_22AC7DNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_22AC7TNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_22AC7jNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22AC7zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC8DNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22AC8TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC8jNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22AC8zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22AC9DNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_22AC9TNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_22AC5zNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAB5F60264?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22AC6DNHEd2nE5zXHK_HsA" x="11006" y="4614" width="4826" height="3386"/>
+        </children>
+        <children xmi:id="_22ADGTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22ADHDNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_22ADHTNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_22ADHjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_22ADHzNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_22ADIDNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_22ADITNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADIjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22ADIzNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADJDNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22ADJTNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADJjNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22ADJzNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_22ADKDNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_22ADGjNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD685201C2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22ADGzNHEd2nE5zXHK_HsA" x="25814" y="4157" width="4995" height="2667"/>
+        </children>
+        <children xmi:id="_22ADXjNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22ADYTNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_22ADYjNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_22ADYzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_22Jz4DNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_22Jz4TNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_22Jz4jNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Jz4zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Jz5DNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Jz5TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Jz5jNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Jz5zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Jz6DNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_22Jz6TNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_22ADXzNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDADAAE016F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22ADYDNHEd2nE5zXHK_HsA" x="23503" y="17746" width="4876" height="5604"/>
+        </children>
+        <children xmi:id="_22Tk4DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22Tk4zNHEd2nE5zXHK_HsA" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_22Tk5DNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_22Tk5TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+          <children xmi:id="_22Tk5jNHEd2nE5zXHK_HsA" type="Name"/>
+          <children xmi:id="_22Tk5zNHEd2nE5zXHK_HsA" type="Parent"/>
+          <children xmi:id="_22Tk6DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Tk6TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Tk6jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Tk6zNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Tk7DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22Tk7TNHEd2nE5zXHK_HsA"/>
+          </children>
+          <children xmi:id="_22Tk7jNHEd2nE5zXHK_HsA" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_22Tk7zNHEd2nE5zXHK_HsA" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_22Tk4TNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+          <element xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAC3F10080?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22Tk4jNHEd2nE5zXHK_HsA" x="25306" y="11040" width="4826" height="3005"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_x1L0ZzNHEd2nE5zXHK_HsA"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_21jXHDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93D993BD800C6" source="_21jXDDNHEd2nE5zXHK_HsA" target="_21jXDDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21jXHzNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_21jXITNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21jXIjNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXIDNHEd2nE5zXHK_HsA" x="-3148" y="-2286"/>
+          </children>
+          <children xmi:id="_21jXIzNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel" element="_3E3F0EC000E93D993BDA01D6">
+            <children xmi:id="_21jXJTNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXJDNHEd2nE5zXHK_HsA" x="-2094" y="-415"/>
+          </children>
+          <children xmi:id="_21jXJjNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel" element="_3E3F0EC000E93D993BDA01D6">
+            <children xmi:id="_21jXKDNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXJzNHEd2nE5zXHK_HsA" x="-1078" y="-356"/>
+          </children>
+          <children xmi:id="_21jXKTNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel" element="_3E3F0EC000E93D993BDA01CC">
+            <children xmi:id="_21jXKzNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXKjNHEd2nE5zXHK_HsA" x="-251" y="-441"/>
+          </children>
+          <children xmi:id="_21jXLDNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel" element="_3E3F0EC000E93D993BDA01CC">
+            <children xmi:id="_21jXLjNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXLTNHEd2nE5zXHK_HsA" x="-861" y="-1304"/>
+          </children>
+          <children xmi:id="_21jXLzNHEd2nE5zXHK_HsA" type="ToQualifierLabel" element="_3E3F0EC000E93D993BDA01D6">
+            <children xmi:id="_21jXMTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXMjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXMDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_21jXMzNHEd2nE5zXHK_HsA" type="FromQualifierLabel" element="_3E3F0EC000E93D993BDA01CC">
+            <children xmi:id="_21jXNTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXNjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXNDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_21jXNzNHEd2nE5zXHK_HsA" type="ToConstraintLabel" element="_3E3F0EC000E93D993BDA01D6">
+            <children xmi:id="_21jXOTNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXOjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXODNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_21jXOzNHEd2nE5zXHK_HsA" type="FromConstraintLabel" element="_3E3F0EC000E93D993BDA01CC">
+            <children xmi:id="_21jXPTNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21jXPjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21jXPDNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21jXHTNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21jXHjNHEd2nE5zXHK_HsA" points="[-2624, -1185, -2624, -1185]$[-7679, -1185, -7679, -1185]$[-7679, 1701, -7679, 1701]$[-2624, 1701, -2624, 1701]"/>
+        </edges>
+        <edges xmi:id="_21tIBjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93E5E927201E8" source="_21jXbzNHEd2nE5zXHK_HsA" target="_21tH9jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tICTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_21tICzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21tIDDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tICjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21tIBzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21tICDNHEd2nE5zXHK_HsA" points="[33, -1100, 0, 2023]$[33, -2396, 0, 728]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIDTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIDjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_21tILzNHEd2nE5zXHK_HsA" source="_21tIDzNHEd2nE5zXHK_HsA" target="_21tIHzNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tIMjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_21tINDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21tINTNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIMzNHEd2nE5zXHK_HsA" x="-109" y="-280"/>
+          </children>
+          <children xmi:id="_21tINjNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_21tIODNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Software%20ABE.efx#_3E3F0EC000E93CDE292702E3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software/_physicalContainer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tINzNHEd2nE5zXHK_HsA" x="-500" y="338"/>
+          </children>
+          <children xmi:id="_21tIOTNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_21tIOzNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Software%20ABE.efx#_3E3F0EC000E93CDE292702E3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software/_physicalContainer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tIOjNHEd2nE5zXHK_HsA" x="-289" y="347"/>
+          </children>
+          <children xmi:id="_21tIPDNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_21tIPjNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDE292702CF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/_software?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tIPTNHEd2nE5zXHK_HsA" x="485" y="254"/>
+          </children>
+          <children xmi:id="_21tIPzNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_21tIQTNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDE292702CF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/_software?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tIQDNHEd2nE5zXHK_HsA" x="290" y="347"/>
+          </children>
+          <children xmi:id="_21tIQjNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_21tIRDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIRTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Software%20ABE.efx#_3E3F0EC000E93CDE292702E3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software/_physicalContainer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tIQzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_21tIRjNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_21tISDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tISTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDE292702CF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/_software?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tIRzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_21tISjNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_21tITDNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tITTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Software%20ABE.efx#_3E3F0EC000E93CDE292702E3?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Software%20ABE/Software/_physicalContainer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tISzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_21tITjNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_21tIUDNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tIUTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDE292702CF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/_software?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_21tITzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21tIMDNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93CDE2920003A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ContainerHasSoftware?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21tIMTNHEd2nE5zXHK_HsA" points="[-2032, 338, 7933, 8]$[-7806, 338, 2159, 8]"/>
+        </edges>
+        <edges xmi:id="_21tIUjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDAFBF10322" source="_21jXDDNHEd2nE5zXHK_HsA" target="_21tIDzNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tIVTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_21tIVzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21tIWDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIVjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21tIUzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21tIVDNHEd2nE5zXHK_HsA" points="[-50, -2692, 0, 4597]$[-50, -5935, 0, 1354]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIWTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIWjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_21tIWzNHEd2nE5zXHK_HsA" source="_21tIDzNHEd2nE5zXHK_HsA" target="_21aNBTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21tIXjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_21tIYDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21tIYTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21tIXzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21tIXDNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <element xmi:type="uml:Generalization" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAFAD701BE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21tIXTNHEd2nE5zXHK_HsA" points="[-135, -1354, 414, 4470]$[-135, -2260, 414, 3564]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIYjNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21tIYzNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_21248DNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDDBC07013A" source="_21tIZDNHEd2nE5zXHK_HsA" target="_21tIZDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_21249zNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel" element="_3E3F0EC000E93CDDBC09018D">
+            <children xmi:id="_2124-TNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2124-DNHEd2nE5zXHK_HsA" x="-1334" y="-389"/>
+          </children>
+          <children xmi:id="_2124-jNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel" element="_3E3F0EC000E93CDDBC09018D">
+            <children xmi:id="_2124_DNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2124-zNHEd2nE5zXHK_HsA" x="-1012" y="-356"/>
+          </children>
+          <children xmi:id="_2124_TNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel" element="_3E3F0EC000E93CDDBC090183">
+            <children xmi:id="_2124_zNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2124_jNHEd2nE5zXHK_HsA" x="-1231" y="-415"/>
+          </children>
+          <children xmi:id="_2125ADNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel" element="_3E3F0EC000E93CDDBC090183">
+            <children xmi:id="_2125AjNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2125ATNHEd2nE5zXHK_HsA" x="-1858" y="-974"/>
+          </children>
+          <children xmi:id="_2125AzNHEd2nE5zXHK_HsA" type="ToQualifierLabel" element="_3E3F0EC000E93CDDBC09018D">
+            <children xmi:id="_2125BTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2125BjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2125BDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_2125BzNHEd2nE5zXHK_HsA" type="FromQualifierLabel" element="_3E3F0EC000E93CDDBC090183">
+            <children xmi:id="_2125CTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2125CjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2125CDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_2125CzNHEd2nE5zXHK_HsA" type="ToConstraintLabel" element="_3E3F0EC000E93CDDBC09018D">
+            <children xmi:id="_2125DTNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2125DjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2125DDNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_2125DzNHEd2nE5zXHK_HsA" type="FromConstraintLabel" element="_3E3F0EC000E93CDDBC090183">
+            <children xmi:id="_2125ETNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2125EjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2125EDNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_21jXbzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDDBC07013A">
+            <children xmi:id="_21jXcjNHEd2nE5zXHK_HsA" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_21jXczNHEd2nE5zXHK_HsA" width="1320" height="1320"/>
+            </children>
+            <children xmi:id="_21jXdDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_21jXdTNHEd2nE5zXHK_HsA" type="Name"/>
+            <children xmi:id="_21jXdjNHEd2nE5zXHK_HsA" type="Parent"/>
+            <children xmi:id="_21tH8DNHEd2nE5zXHK_HsA" type="AttributeCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tH8TNHEd2nE5zXHK_HsA"/>
+            </children>
+            <children xmi:id="_21tH8jNHEd2nE5zXHK_HsA" type="OperationCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tH8zNHEd2nE5zXHK_HsA"/>
+            </children>
+            <children xmi:id="_21tH9DNHEd2nE5zXHK_HsA" visible="false" type="SignalCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_21tH9TNHEd2nE5zXHK_HsA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_21jXcDNHEd2nE5zXHK_HsA" showListStereotype="None" showListVisibility="None" showStereotype="None"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_21jXcTNHEd2nE5zXHK_HsA" x="2422" y="4344" width="5715" height="2201"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_21248TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_21248jNHEd2nE5zXHK_HsA" points="[-3048, -1676, -3048, -1676]$[-6180, -1676, -6180, -1676]$[-6180, 1811, -6180, 1811]$[-3048, 1811, -3048, 1811]"/>
+        </edges>
+        <edges xmi:id="_2125ITNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93CDDBD790241" source="_21tIZDNHEd2nE5zXHK_HsA" target="_21jXDDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_2125JDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_2125JjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_2125JzNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2125JTNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2125IjNHEd2nE5zXHK_HsA" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2125IzNHEd2nE5zXHK_HsA" points="[0, -3158, -8, 9812]$[0, -10287, -8, 2683]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125KDNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125KTNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_2125KjNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC0F200E9" source="_21jXTzNHEd2nE5zXHK_HsA" target="_21tIZDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_2125LTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_2125LzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_2125MDNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2125LjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2125KzNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2125LDNHEd2nE5zXHK_HsA" points="[-423, -575, 1905, 5503]$[-423, -1329, 1905, 4749]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125MTNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125MjNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_2125MzNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC0F90356" source="_21jXPzNHEd2nE5zXHK_HsA" target="_21tIZDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_2125NjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_2125ODNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_2125OTNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2125NzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2125NDNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2125NTNHEd2nE5zXHK_HsA" points="[0, -567, -872, 5511]$[0, -1329, -872, 4749]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125OjNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125OzNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_2125PDNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDFC0F50396" source="_21jXXzNHEd2nE5zXHK_HsA" target="_21tIZDNHEd2nE5zXHK_HsA">
+          <children xmi:id="_2125PzNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_2125QTNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_2125QjNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2125QDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2125PTNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2125PjNHEd2nE5zXHK_HsA" points="[-16, -567, -4275, 5511]$[-16, -1329, -4275, 4749]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125QzNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2125RDNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_22AC9jNHEd2nE5zXHK_HsA" source="_22AC5jNHEd2nE5zXHK_HsA" target="_22AC5jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22AC-TNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22AC-zNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22AC_DNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22AC-jNHEd2nE5zXHK_HsA" x="-705" y="2099"/>
+          </children>
+          <children xmi:id="_22AC_TNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22AC_zNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22AC_jNHEd2nE5zXHK_HsA" x="-759" y="948"/>
+          </children>
+          <children xmi:id="_22ADADNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22ADAjNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADATNHEd2nE5zXHK_HsA" x="-793" y="338"/>
+          </children>
+          <children xmi:id="_22ADAzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22ADBTNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADBDNHEd2nE5zXHK_HsA" x="-1106" y="332"/>
+          </children>
+          <children xmi:id="_22ADBjNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22ADCDNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADBzNHEd2nE5zXHK_HsA" x="-1526" y="599"/>
+          </children>
+          <children xmi:id="_22ADCTNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22ADCzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADDDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADCjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22ADDTNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22ADDzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADEDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADDjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22ADETNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22ADEzNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADFDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADEjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22ADFTNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22ADFzNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADGDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE70A01AB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADFjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22AC9zNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE7070297?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ContainsHardware?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22AC-DNHEd2nE5zXHK_HsA" points="[76, -1693, 76, -1693]$[76, -2878, 76, -2878]$[3869, -2878, 3869, -2878]$[3869, -905, 3869, -905]$[2413, -905, 2413, -905]"/>
+        </edges>
+        <edges xmi:id="_22ADKTNHEd2nE5zXHK_HsA" source="_21jW_DNHEd2nE5zXHK_HsA" target="_22ADGTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22ADLDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22ADLjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22ADLzNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22ADLTNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22ADKjNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Generalization" href="Hardware%20ABE.efx#_3E3F0EC000E93D9A781F000E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Cable/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22ADKzNHEd2nE5zXHK_HsA" points="[-465, -524, 1820, 2353]$[-465, -1549, 1820, 1329]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22ADMDNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22ADMTNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_22ADMjNHEd2nE5zXHK_HsA" source="_22AC5jNHEd2nE5zXHK_HsA" target="_22ADGTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22ADNTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22ADNzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22ADODNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22ADNjNHEd2nE5zXHK_HsA" x="3425" y="279"/>
+          </children>
+          <children xmi:id="_22ADOTNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22ADOzNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD69470323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADOjNHEd2nE5zXHK_HsA" x="-1031" y="-238"/>
+          </children>
+          <children xmi:id="_22ADPDNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22ADPjNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD69470323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADPTNHEd2nE5zXHK_HsA" x="-498" y="-348"/>
+          </children>
+          <children xmi:id="_22ADPzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22ADQTNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD69470319?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADQDNHEd2nE5zXHK_HsA" x="1023" y="-238"/>
+          </children>
+          <children xmi:id="_22ADQjNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22ADRDNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD69470319?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADQzNHEd2nE5zXHK_HsA" x="498" y="-348"/>
+          </children>
+          <children xmi:id="_22ADRTNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22ADRzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADSDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD69470323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADRjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22ADSTNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22ADSzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADTDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD69470319?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADSjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22ADTTNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22ADTzNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADUDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD69470323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADTjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22ADUTNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22ADUzNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22ADVDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD69470319?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22ADUjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22ADMzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD694600F1?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/LinkHasHardware?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22ADNDNHEd2nE5zXHK_HsA" points="[2413, -592, -12479, 228]$[12395, -592, -2497, 228]"/>
+        </edges>
+        <edges xmi:id="_22ADVTNHEd2nE5zXHK_HsA" source="_21aNBTNHEd2nE5zXHK_HsA" target="_22AC5jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22ADWDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22ADWjNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22ADWzNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22ADWTNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22ADVjNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <element xmi:type="uml:Generalization" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAE66B02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ManagedHardware/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22ADVzNHEd2nE5zXHK_HsA" points="[0, -2074, 0, 4699]$[0, -3149, 0, 3623]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22ADXDNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22ADXTNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_22Jz6jNHEd2nE5zXHK_HsA" source="_22ADXjNHEd2nE5zXHK_HsA" target="_21aNBTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22Jz7TNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22Jz7zNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22Jz8DNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22Jz7jNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22Jz6zNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <element xmi:type="uml:Generalization" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAFB2D023A?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22Jz7DNHEd2nE5zXHK_HsA" points="[-685, -2810, 11836, 4656]$[-685, -3903, 11836, 3564]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22Jz8TNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22Jz8jNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_22Jz8zNHEd2nE5zXHK_HsA" element="_3E3F0EC000E93DDEE8DB0163" source="_21tIZDNHEd2nE5zXHK_HsA" target="_22ADXjNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22Jz9jNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22Jz-DNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22Jz-TNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22Jz9zNHEd2nE5zXHK_HsA" x="-2307" y="-1939"/>
+          </children>
+          <children xmi:id="_22Jz-jNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22Jz_DNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE8DD02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_card?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22Jz-zNHEd2nE5zXHK_HsA" x="-3055" y="-356"/>
+          </children>
+          <children xmi:id="_22Jz_TNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22Jz_zNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE8DD02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_card?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22Jz_jNHEd2nE5zXHK_HsA" x="-1142" y="-348"/>
+          </children>
+          <children xmi:id="_22J0ADNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel" element="_3E3F0EC000E93DDEE8DD02BB">
+            <children xmi:id="_22J0AjNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0ATNHEd2nE5zXHK_HsA" x="3173" y="439"/>
+          </children>
+          <children xmi:id="_22J0AzNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel" element="_3E3F0EC000E93DDEE8DD02BB">
+            <children xmi:id="_22J0BTNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0BDNHEd2nE5zXHK_HsA" x="1149" y="-348"/>
+          </children>
+          <children xmi:id="_22J0BjNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22J0CDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0CTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE8DD02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_card?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0BzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22J0CjNHEd2nE5zXHK_HsA" type="FromQualifierLabel" element="_3E3F0EC000E93DDEE8DD02BB">
+            <children xmi:id="_22J0DDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0DTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0CzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22J0DjNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22J0EDNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0ETNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE8DD02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_card?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0DzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22J0EjNHEd2nE5zXHK_HsA" type="FromConstraintLabel" element="_3E3F0EC000E93DDEE8DD02BB">
+            <children xmi:id="_22J0FDNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0FTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0EzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22Jz9DNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22Jz9TNHEd2nE5zXHK_HsA" points="[3048, -1667, -8881, 16950]$[11921, -1667, -8, 16950]$[11921, -15815, -8, 2802]"/>
+        </edges>
+        <edges xmi:id="_22J0FjNHEd2nE5zXHK_HsA" source="_22ADXjNHEd2nE5zXHK_HsA" target="_2125RTNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22J0HTNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22J0HzNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E3D391602F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0HjNHEd2nE5zXHK_HsA" x="-1246" y="-374"/>
+          </children>
+          <children xmi:id="_22J0IDNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22J0IjNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E3D391602F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0ITNHEd2nE5zXHK_HsA" x="-492" y="-357"/>
+          </children>
+          <children xmi:id="_22J0IzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22J0JTNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93E3D391602EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_deviceInterface?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0JDNHEd2nE5zXHK_HsA" x="1229" y="416"/>
+          </children>
+          <children xmi:id="_22J0JjNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22J0KDNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93E3D391602EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_deviceInterface?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0JzNHEd2nE5zXHK_HsA" x="484" y="-346"/>
+          </children>
+          <children xmi:id="_22J0KTNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22J0KzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0LDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E3D391602F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0KjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22J0LTNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22J0LzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0MDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93E3D391602EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_deviceInterface?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0LjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22J0MTNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22J0MzNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0NDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Device%20Interface%20ABE.efx#_3E3F0EC000E93E3D391602F8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/DeviceInterface/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0MjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22J0NTNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22J0NzNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22J0ODNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93E3D391602EE?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_deviceInterface?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22J0NjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22J0FzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="Text"/>
+          <element xmi:type="uml:AssociationClass" href="Device%20Interface%20Association%20ABE.efx#_3E3F0EC000E943359D8200CB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/LogicalResource%20ABE/Device%20Interface%20ABE/Device%20Interface%20Association%20ABE/DeviceInterfacePPortDetails?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22J0GDNHEd2nE5zXHK_HsA" points="[1371, 2802, -6307, 2675]$[1371, 4445, -6307, 4318]$[7298, 4445, -381, 4318]$[7298, 1964, -381, 1837]"/>
+        </edges>
+        <edges xmi:id="_22Tk8DNHEd2nE5zXHK_HsA" source="_22Tk4DNHEd2nE5zXHK_HsA" target="_22Tk4DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22Tk8zNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22Tk9TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22Tk9jNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22Tk9DNHEd2nE5zXHK_HsA" x="-1346" y="1328"/>
+          </children>
+          <children xmi:id="_22Tk9zNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22Tk-TNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03BF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22Tk-DNHEd2nE5zXHK_HsA" x="-757" y="329"/>
+          </children>
+          <children xmi:id="_22Tk-jNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22Tk_DNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03BF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22Tk-zNHEd2nE5zXHK_HsA" x="-469" y="-348"/>
+          </children>
+          <children xmi:id="_22Tk_TNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22Tk_zNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22Tk_jNHEd2nE5zXHK_HsA" x="-333" y="542"/>
+          </children>
+          <children xmi:id="_22TlADNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22TlAjNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlATNHEd2nE5zXHK_HsA" x="310" y="602"/>
+          </children>
+          <children xmi:id="_22TlAzNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22TlBTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlBjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03BF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlBDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlBzNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22TlCTNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlCjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlCDNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlCzNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22TlDTNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlDjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03BF?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector1?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlDDNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22TlDzNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22TlETNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlEjNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23C03B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlEDNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22Tk8TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF23A00CD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/ConnectedTo?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22Tk8jNHEd2nE5zXHK_HsA" points="[2413, -651, 2413, -651]$[4876, -651, 4876, -651]$[4876, 457, 4876, 457]$[2413, 457, 2413, 457]"/>
+        </edges>
+        <edges xmi:id="_22TlEzNHEd2nE5zXHK_HsA" source="_22AC5jNHEd2nE5zXHK_HsA" target="_22Tk4DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22TlFjNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22TlGDNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22TlGTNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22TlFzNHEd2nE5zXHK_HsA" x="1545" y="-287"/>
+          </children>
+          <children xmi:id="_22TlGjNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22TlHDNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570006?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlGzNHEd2nE5zXHK_HsA" x="-434" y="1167"/>
+          </children>
+          <children xmi:id="_22TlHTNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22TlHzNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570006?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlHjNHEd2nE5zXHK_HsA" x="-773" y="-357"/>
+          </children>
+          <children xmi:id="_22TlIDNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22TlIjNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570004?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlITNHEd2nE5zXHK_HsA" x="2085" y="406"/>
+          </children>
+          <children xmi:id="_22TlIzNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22TlJTNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570004?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlJDNHEd2nE5zXHK_HsA" x="790" y="-356"/>
+          </children>
+          <children xmi:id="_22TlJjNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22TlKDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlKTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570006?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlJzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlKjNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22TlLDNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlLTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570004?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlKzNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlLjNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22TlMDNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlMTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570006?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_hardware?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlLzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22TlMjNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22TlNDNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlNTNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3570004?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/Hardware/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlMzNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22TlFDNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF3550098?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/HardwareHasConnector?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22TlFTNHEd2nE5zXHK_HsA" points="[2413, 787, -11887, -5444]$[3953, 787, -10346, -5444]$[3953, 1828, -10346, -4402]$[14173, 1828, -127, -4402]$[14173, 4732, -127, -1498]"/>
+        </edges>
+        <edges xmi:id="_22TlNjNHEd2nE5zXHK_HsA" source="_22ADGTNHEd2nE5zXHK_HsA" target="_22Tk4DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22TlOTNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22TlOzNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22TlPDNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22TlOjNHEd2nE5zXHK_HsA" x="796" y="-1482"/>
+          </children>
+          <children xmi:id="_22TlPTNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22TlPzNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD689B022B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlPjNHEd2nE5zXHK_HsA" x="-279" y="-509"/>
+          </children>
+          <children xmi:id="_22TlQDNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22TlQjNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD689B022B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlQTNHEd2nE5zXHK_HsA" x="-194" y="346"/>
+          </children>
+          <children xmi:id="_22TlQzNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22TlRTNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD689B0221?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlRDNHEd2nE5zXHK_HsA" x="305" y="-399"/>
+          </children>
+          <children xmi:id="_22TlRjNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22TlSDNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD689B0221?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlRzNHEd2nE5zXHK_HsA" x="212" y="346"/>
+          </children>
+          <children xmi:id="_22TlSTNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22TlSzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlTDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD689B022B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlSjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlTTNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22TlTzNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlUDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD689B0221?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlTjNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22TlUTNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22TlUzNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlVDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93CDD689B022B?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalLink?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlUjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22TlVTNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22TlVzNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22TlWDNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD689B0221?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/PhysicalLink/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22TlVjNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22TlNzNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="PhysicalResource%20ABE.efx#_3E3F0EC000E93CDD68990391?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/LinkHasConnector?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22TlODNHEd2nE5zXHK_HsA" points="[67, 1329, 660, -5723]$[67, 5554, 660, -1498]"/>
+        </edges>
+        <edges xmi:id="_22TlWTNHEd2nE5zXHK_HsA" source="_22Tk4DNHEd2nE5zXHK_HsA" target="_22AC5jNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22TlXDNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22cu0DNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22cu0TNHEd2nE5zXHK_HsA" visible="false" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22TlXTNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22TlWjNHEd2nE5zXHK_HsA" routing="Tree" showStereotype="None"/>
+          <element xmi:type="uml:Generalization" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAEF8F01D9?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/%3CGeneralization%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22TlWzNHEd2nE5zXHK_HsA" points="[-1498, -1498, 12801, 4732]$[-1498, -2607, 12801, 3623]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22cu0jNHEd2nE5zXHK_HsA" id="anchor50"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_22cu0zNHEd2nE5zXHK_HsA" id="anchor50"/>
+        </edges>
+        <edges xmi:id="_22cu1DNHEd2nE5zXHK_HsA" source="_22ADXjNHEd2nE5zXHK_HsA" target="_22Tk4DNHEd2nE5zXHK_HsA">
+          <children xmi:id="_22cu1zNHEd2nE5zXHK_HsA" type="NameLabel">
+            <children xmi:id="_22cu2TNHEd2nE5zXHK_HsA" type="Stereotype"/>
+            <children xmi:id="_22cu2jNHEd2nE5zXHK_HsA" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22cu2DNHEd2nE5zXHK_HsA" x="640" y="-770"/>
+          </children>
+          <children xmi:id="_22cu2zNHEd2nE5zXHK_HsA" type="ToMultiplicityLabel">
+            <children xmi:id="_22cu3TNHEd2nE5zXHK_HsA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF1650026?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu3DNHEd2nE5zXHK_HsA" x="-320" y="-363"/>
+          </children>
+          <children xmi:id="_22cu3jNHEd2nE5zXHK_HsA" visible="false" type="ToRoleLabel">
+            <children xmi:id="_22cu4DNHEd2nE5zXHK_HsA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF1650026?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu3zNHEd2nE5zXHK_HsA" x="-176" y="-346"/>
+          </children>
+          <children xmi:id="_22cu4TNHEd2nE5zXHK_HsA" type="FromMultiplicityLabel">
+            <children xmi:id="_22cu4zNHEd2nE5zXHK_HsA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF165001C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu4jNHEd2nE5zXHK_HsA" x="288" y="-380"/>
+          </children>
+          <children xmi:id="_22cu5DNHEd2nE5zXHK_HsA" visible="false" type="FromRoleLabel">
+            <children xmi:id="_22cu5jNHEd2nE5zXHK_HsA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF165001C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu5TNHEd2nE5zXHK_HsA" x="170" y="-346"/>
+          </children>
+          <children xmi:id="_22cu5zNHEd2nE5zXHK_HsA" type="ToQualifierLabel">
+            <children xmi:id="_22cu6TNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22cu6jNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF1650026?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu6DNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22cu6zNHEd2nE5zXHK_HsA" type="FromQualifierLabel">
+            <children xmi:id="_22cu7TNHEd2nE5zXHK_HsA" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22cu7jNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF165001C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu7DNHEd2nE5zXHK_HsA" y="-186"/>
+          </children>
+          <children xmi:id="_22cu7zNHEd2nE5zXHK_HsA" type="ToConstraintLabel">
+            <children xmi:id="_22cu8TNHEd2nE5zXHK_HsA" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22cu8jNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF1650026?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector/_physicalPort?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu8DNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <children xmi:id="_22cu8zNHEd2nE5zXHK_HsA" type="FromConstraintLabel">
+            <children xmi:id="_22cu9TNHEd2nE5zXHK_HsA" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_22cu9jNHEd2nE5zXHK_HsA"/>
+            </children>
+            <element xmi:type="uml:Property" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF165001C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_physicalConnector?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_22cu9DNHEd2nE5zXHK_HsA" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_22cu1TNHEd2nE5zXHK_HsA" routing="Rectilinear" showStereotype="None"/>
+          <element xmi:type="uml:Association" href="Hardware%20ABE.efx#_3E3F0EC000E93DDEF16203BB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PlugsInto?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_22cu1jNHEd2nE5zXHK_HsA" points="[753, -2802, -1024, 5207]$[753, -6510, -1024, 1498]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDAFB610004" name="Equipment" isAbstract="true">
+      <ownedComment xmi:id="_xyWi0TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDAFB610004">
+        <body>This class is based on the  m.3100 specification, and is described as follows:
+
+The Equipment object class is a class of managed objects that represents physical components of a managed device, including replaceable components. An instance of this object class must be present in only a single geographic location. An Equipment object may be nested within another Equipment object, thereby creating a containment relationship. The Equipment type shall be identified by sub-classing this object class. Either the name of the sub-class or an attribute may be used for identifying the equipment type.
+
+Changed name of m.3100 attribute AlarmReportingIndicator to AlarmStatus, and enhanced semantics.
+
+The m.3100 SystemTitle attribute is NOT implemented in this class, we're using CommonName instead.
+
+We don't support the m.3100 supportedByObjectList attribute. This attribute is intended to list a set of physical and logical objects that directly affect this object. We think that the model should show this via associations, not via an embedded attribute.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDAFBF10322">
+        <general xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAF97003D4?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalContainer?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE5461E029C" name="_coolingDevice" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93DDEB2B20070?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/CoolingDevice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xtScpzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xtScpjNHEd2nE5zXHK_HsA"/>
+        <association href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93EE5461D011E?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/PerformsCooling?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD91A30081" name="installStatus" visibility="public">
+        <eAnnotations xmi:id="_xzGJuDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_xzGJuTNHEd2nE5zXHK_HsA" key="keyed"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_xzGJtjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD91A30081">
+          <body>This is an m.3100 attribute that represents the availability of the type of Equipment that this object represents. Its semantics are as follows.
+
+The attribute availability status is used to indicate whether the correct physical piece of equipment (in m.3100, it is called a &quot;circuit pack&quot;) is isntalled or not. This is a set valued attribute and includes the values notInstalled and empty. If the type of the inserted physical circuit pack matches the value of the circuitPackType attribute (relating to the circuitPack instance) then the value of the availabilityStatus is an empty set. Otherwise, the value of the availabilityStatus attribute is notInstalled even if it is one of the acceptable circuit pack type
+
+This is implemented as an enumerated integer. The values will include at least the following:
+
+  0:  Unknown
+  1:  Operational (installed and matches expected type)
+  2:  Installed (buit does not match expected type)
+  3:  Not Installed
+  4:  In Maintenance
+  5:  Failed
+  6:  Not operational
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD91A3007A" name="expectedEquipmentType" visibility="public">
+        <ownedComment xmi:id="_xzGJuzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD91A3007A">
+          <body>This attribute identifies the type of the expected resource. For example, &quot;Fan&quot; or &quot;STM16&quot; for the Equipment class and &quot;Line Shelf&quot; for the Equipment Holder class. This is an empty string if there is no expected equipment. This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD91A3007B" name="installedEquipmentType" visibility="public">
+        <eAnnotations xmi:id="_xzP6tDNHEd2nE5zXHK_HsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_xzP6tTNHEd2nE5zXHK_HsA" key="keyed"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_xzP6sjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD91A3007B">
+          <body>This attribute identifies the type of the installed resource. For example, &quot;Fan&quot; or &quot;STM16&quot; for the Equipment class and &quot;Line Shelf&quot; for the Equipment Holder class. The installed equipment type is invariant for the lifetime of the hardware. This is an empty string if there is no installed equipment. This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD91A3007C" name="installedVersion" visibility="public">
+        <ownedComment xmi:id="_xzP6tzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD91A3007C">
+          <body>This attribute identifies the version of the installed equipment. If this is not available or unknown, the string &quot;UNKNOWN&quot; shall be used. (NULL is a bad choice because some software may choose to initialize the string as a null string). This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDD91A3007D" name="redundancy" visibility="public">
+        <ownedComment xmi:id="_xzP6ujNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDD91A3007D">
+          <body>This is an enumerated integer that describes the redundancy capabilities of this particular Equipment. Values include:
+
+  0:  Unknown
+  1:  Primary (supported by a Redundant Equipment)
+  2:  Redundant (supports a Primary Equipment)
+  3:  Stand-alone (no Redundancy possible)
+
+This is an optional attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D993BDA01CC" name="_equipment" visibility="public" type="_3E3F0EC000E93CDAFB610004" isUnique="false" aggregation="shared" association="_3E3F0EC000E93D993BD800C6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x1CDajNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x1CDaTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D993BDA01D6" name="_equipment1" visibility="public" type="_3E3F0EC000E93CDAFB610004" isUnique="false" association="_3E3F0EC000E93D993BD800C6">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x1CDbTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x1CDbDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EEB537400E8" name="_powerSupply" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93EEB53710238">
+        <type xmi:type="uml:Class" href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93DDEB2440375?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/PowerSupply?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x1L0YTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x1L0YDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE21D01019E" name="_equipmentHolder" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Equipment%20Holder%20ABE.efx#_3E3F0EC000E93DDEEA6B0245?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20Holder%20ABE/EquipmentHolder?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8yRNjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8yRNTNHEd2nE5zXHK_HsA"/>
+        <association href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE21D0002C9?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/EquipmentInHolder?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE21E220045" name="_equipmentComponent" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE21E0101BA?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/EquipmentComponent?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x8yRPDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8yROzNHEd2nE5zXHK_HsA"/>
+        <association href="DO%20NOT%20USE%20-%20Illustrative%20Use%20Only.efx#_3E3F0EC000E93EE21E2101E8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/5PR%20Addendum%20Figures/DO%20NOT%20USE%20-%20Ilustrative%20Use%20Only/ComponentInEquipment?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CDDBBD0013B" name="Card" isAbstract="true">
+      <ownedComment xmi:id="_xzZEojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBBD0013B">
+        <body>This is based on the DEN Card class. It is defined as follows:
+
+This class represents a type of physical container that can be plugged into a Slot. It may represent a primary function (e.g., a networking card) or an auxiliary function (e.g., a memory card) that supports another card. All objects of this type are capable of carrying electrical and/or optical signals. They also provide a mounting point for other types of ManagedePhysicalElements, such as Chips or Cards.
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93CDDBD790241" general="_3E3F0EC000E93CDAFB610004"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465039A" name="cardCompatibilityResults" visibility="public">
+        <ownedComment xmi:id="_xzr_lzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465039A">
+          <body>This is an attribute that is used to store the result of the negotiation process between a Card and its EquipmentHolder to see if they are compatible. This is the result of the isCompatible() method, with the Card being the source and the EquipmentHolder being the target, translated into a textual description.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465039C" name="daughterCardInstallStatus" visibility="public">
+        <ownedComment xmi:id="_xzr_mjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465039C">
+          <body>This is an enumerated integer that defines the current installation status of this Card's daughter Cards. Note that this defines the status of daughter Cards as viewed by the hosting Card. Status values of individual daughter Cards are defined by attributes in the daughter card itself. Values include:
+
+  0:  Not Applicable (doesn't have any DaughterCards)
+  1:  All Daughter Cards are installed
+  2:  Some Daughter Cards are installed
+  3:  No Daughter Cards are installed
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93EE9F35E0129" name="daughterCardOperatingStatus" visibility="public">
+        <ownedComment xmi:id="_xzr_nTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EE9F35E0129">
+          <body>This is an enumerated integer that defines the current operating status of this Card's daughter Cards. Note that this defines the operating status of daughter Cards as viewed by the hosting Card. Status values of individual daughter Cards are defined by attributes in the daughter card itself. 
+
+This attribute only defines the physical operating characteristics of the daughter card. It does not say whether the daughter Card is functioning correctly, as that is a logical attribute.
+
+Values include:
+
+  0:  Not Applicable (doesn't have any DaughterCards)
+  1:  All Daughter Cards are operating correctly
+  2:  Some Daughter Cards are operating incorrectly
+  3:  No Daughter Cards are operating correctly
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465039B" name="daughterCardRequirements" visibility="public">
+        <ownedComment xmi:id="_xz1wkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465039B">
+          <body>This is an enumerated integer that defines the relationship between this Card and all DaughterCards. Values include:
+
+  1:  No DaughterCard can be attached
+  2:  Requires 1 or more DaughterCards to function correctly
+  3:  Can optionally use 1 or more DaughterCards
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465039D" name="isConfigurablePhysically" visibility="public">
+        <ownedComment xmi:id="_xz1wlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465039D">
+          <body>This is a boolean attribute that, if TRUE, indicates that this Card has one or more options that can be physically configured. Each of these options has a distinct physical manifestation (e.g., additional memory, or faster CPU) that usually (but not always) results in occupying more room in the Card.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465039E" name="isMotherBoard" visibility="public">
+        <ownedComment xmi:id="_xz1wmDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465039E">
+          <body>This is a Boolean attribute that, if TRUE, defines this Card as either a motherboard or another type of hosting board. When FALSE, it isn't.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A0" name="isUniquePhysical" visibility="public">
+        <ownedComment xmi:id="_xz_hkjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A0">
+          <body>This is a boolean attribute that, if TRUE, defines this Card to be physically different from other Cards of the same type and therefore requires a special slot. The unique aspects of this Card are described in the UniqueRequirementsPhysical attribute. An example might be a different form factor than other Cards of its type, or the ability to set jumpers on the Card to control its functionality (e.g., clocking).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A1" name="maxDataWidth" visibility="public">
+        <ownedComment xmi:id="_xz_hlTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A1">
+          <body>This is an integer that defines the maximum bus width of this Card. Values include:
+
+      0:  Unknown
+      1:  Special
+      8:  8 bit data bus
+    16:  16 bit data bus
+    24:  24 bit data bus
+    32:  32 bit data bus
+    64:  64 bit data bus
+  128: 128 bit data bus
+
+The value &quot;1&quot; can be used for any non-standard data bus width.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A2" name="slotLayout" visibility="public">
+        <ownedComment xmi:id="_x0IrgDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A2">
+          <body>This is a free-form string that describes the positioning, spacing, typical usage, restrictions, and any other pertinent information that defines how the Card is to be positioned into the Slot.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A3" name="slotsRequired" visibility="public">
+        <ownedComment xmi:id="_x0IrgzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A3">
+          <body>This is an integer that defines the number of slots required to hold this Card. Since this is usually 1, that value is assigned as its default value.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_x0IrhTNHEd2nE5zXHK_HsA">
+          <body>1</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A6" name="uniqueRequirementsPhysical" visibility="public">
+        <ownedComment xmi:id="_x0IrhzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A6">
+          <body>This is a free-form string that contains the physically unique requirements of this Card. For example, it must go in a certain slot number because it has special dimensions. This attribute should only be filled in if the value of the IsUniquePhysical attribute is TRUE; otherwise, it should be NULL.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA46503A4" name="hardwareVersion" visibility="public">
+        <ownedComment xmi:id="_x0ScgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA46503A4">
+          <body>This is a string attribute that contains the hardware version number of this Card.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBC090183" name="_card" visibility="public" type="_3E3F0EC000E93CDDBBD0013B" isUnique="false" aggregation="shared" association="_3E3F0EC000E93CDDBC07013A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x04SZDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x04SYzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDBC09018D" name="_card1" visibility="public" type="_3E3F0EC000E93CDDBBD0013B" isUnique="false" association="_3E3F0EC000E93CDDBC07013A">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x04SZzNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x04SZjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93DDEE8DD02BB" name="_physicalPort" visibility="public" isUnique="false" aggregation="shared" association="_3E3F0EC000E93DDEE8DB0163">
+        <type xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDADAAE016F?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x1CDYTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x1CDYDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93CDDBC07013A" name="CardOnCardDetails" memberEnd="_3E3F0EC000E93CDDBC090183 _3E3F0EC000E93CDDBC09018D">
+      <ownedComment xmi:id="_x0SchTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBC07013A">
+        <body>This association class represents the semantics of the CardOnCard aggregation. It defines an attribute that describes how the Card is mounted on or plugged into the 'other' Card.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_x04SYDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDBC07013A">
+        <body>This aggregation defines Cards that can accept (but not require) an additional Card to augment the base functionality of the hosting Card.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93E5E927201E8">
+        <general xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE.efx#_3E3F0EC000E93DDE84EE01B9?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Root%20Business%20Entities%20ABE/Entity?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465038C" name="connectorName" visibility="private">
+        <ownedComment xmi:id="_x0SciTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465038C">
+          <body>This attribute is an object reference to the PhysicalConnector of the hosting Card that this DaughterCard plugs into. This is a REQUIRED attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Hardware%20ABE.efx#_3E3F0EC000E93CDAC3F10080?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalConnector?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465038D" name="isPluggable" visibility="private">
+        <ownedComment xmi:id="_x0cNgjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465038D">
+          <body>This attribute is a Boolean that, if TRUE, means that this DaughterCard can &quot;plug into&quot; its hosting Card without any external cabling. FALSE means that this DaughterCard requires an external cable to attach it to its hosting Card. This is a REQUIRED attribute.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93CDDA465038E" name="slotNumber" visibility="private">
+        <ownedComment xmi:id="_x0cNhTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CDDA465038E">
+          <body>This attribute is a number defining the SlotNumber of the hosting Card that this DaughterCard plugs into. If there is no such SlotNumber, then this value should be set to 0. This is a REQUIRED attribute.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDFC04301E2" name="SystemCard" isAbstract="true">
+      <ownedComment xmi:id="_x0cNiDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC04301E2">
+        <body>This is a type of Card that is dedicated to providing system functions. Main processor boards and controller boards are examples of this type of Card. DEN-ng differentiates between this and other types of Cards, such as NetworkCards and MemoryCards.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDFC0F200E9" general="_3E3F0EC000E93CDDBBD0013B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDFC0C7008D" name="NetworkCard" isAbstract="true">
+      <ownedComment xmi:id="_x0lXczNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC0C7008D">
+        <body>This is a type of Card that is dedicated to providing networking functions, such as routing and forwarding. Line cards and port adapter cards are examples of this type of card. DEN-ng differentiates between this and other types of Cards, such as NetworkCards and MemoryCards.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDFC0F50396" general="_3E3F0EC000E93CDDBBD0013B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93DDFC0D203DC" name="MemoryCard" isAbstract="true">
+      <ownedComment xmi:id="_x0lXdzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDFC0D203DC">
+        <body>This is a type of Card that is dedicated to providing additional memory for use by other components of a Resource. Cards that are used to expand memory, or provide different types of memory, are examples of this type of Card. DEN-ng differentiates between this and other types of Cards, such as NetworkCards and MemoryCards.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93DDFC0F90356" general="_3E3F0EC000E93CDDBBD0013B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EB187430333" name="UnknownCard">
+      <ownedComment xmi:id="_x0lXezNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EB187430333">
+        <body>This object is used as a generic placeholder to represent Cards that are known to exist but are not yet identifiable via Software means.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93EB1875C01AA" general="_3E3F0EC000E93CDDBBD0013B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93DDEE8DB0163" name="PortsOnCard">
+      <ownedComment xmi:id="_x04SaTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93DDEE8DB0163">
+        <body>This aggregation defines the set of PhysicalPorts that are directly accessible (e.g., mounted) on a Card.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93DDEE8DD02BB?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Card/_physicalPort?"/>
+      <memberEnd href="Hardware%20ABE.efx#_3E3F0EC000E93DDEE8DD02C5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Hardware%20ABE/PhysicalPort/_card?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93D993BD800C6" name="EquipmentInEquipment" memberEnd="_3E3F0EC000E93D993BDA01CC _3E3F0EC000E93D993BDA01D6">
+      <ownedComment xmi:id="_x1CDZjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D993BD800C6">
+        <body>This aggregation models the ability for one Equipment to directly hold another Equipment without an intervening EquipmentHolder. In this case, the Equipment MUST have a Holder PhysicalResourceRole.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93EEB53710238" name="SuppliesPower">
+      <ownedComment xmi:id="_x1CDbzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93EEB53710238">
+        <body>This aggregation defines the set of PowerSupplies that are necessary to supply power for this Equipment.</body>
+      </ownedComment>
+      <memberEnd href="#_3E3F0EC000E93EEB537400E8?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Equipment%20ABE/Equipment/_powerSupply?"/>
+      <memberEnd href="Auxilary%20Component%20ABE.efx#_3E3F0EC000E93EEB537400F2?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20ABE/PhysicalResource%20ABE/Auxiliary%20Component%20ABE/PowerSupply/_equipment?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_xyWi0jNHEd2nE5zXHK_HsA" base_Comment="_xyWi0TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzGJtzNHEd2nE5zXHK_HsA" base_Comment="_xzGJtjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzP6sDNHEd2nE5zXHK_HsA" base_Comment="_xzGJuzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzP6szNHEd2nE5zXHK_HsA" base_Comment="_xzP6sjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzP6uDNHEd2nE5zXHK_HsA" base_Comment="_xzP6tzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzZEoDNHEd2nE5zXHK_HsA" base_Comment="_xzP6ujNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzZEozNHEd2nE5zXHK_HsA" base_Comment="_xzZEojNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzr_mDNHEd2nE5zXHK_HsA" base_Comment="_xzr_lzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xzr_mzNHEd2nE5zXHK_HsA" base_Comment="_xzr_mjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz1wkDNHEd2nE5zXHK_HsA" base_Comment="_xzr_nTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz1wkzNHEd2nE5zXHK_HsA" base_Comment="_xz1wkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz1wljNHEd2nE5zXHK_HsA" base_Comment="_xz1wlTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz_hkDNHEd2nE5zXHK_HsA" base_Comment="_xz1wmDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz_hkzNHEd2nE5zXHK_HsA" base_Comment="_xz_hkjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_xz_hljNHEd2nE5zXHK_HsA" base_Comment="_xz_hlTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0IrgTNHEd2nE5zXHK_HsA" base_Comment="_x0IrgDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0IrhDNHEd2nE5zXHK_HsA" base_Comment="_x0IrgzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0ScgDNHEd2nE5zXHK_HsA" base_Comment="_x0IrhzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0ScgzNHEd2nE5zXHK_HsA" base_Comment="_x0ScgjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0lXcDNHEd2nE5zXHK_HsA" base_Comment="_x0cNiDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0lXdDNHEd2nE5zXHK_HsA" base_Comment="_x0lXczNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0lXeDNHEd2nE5zXHK_HsA" base_Comment="_x0lXdzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x0vIcDNHEd2nE5zXHK_HsA" base_Comment="_x0lXezNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_x0vIczNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93CDDBC07013A" Associaton_Name="CardOnCard"/>
+  <Default:Documentation xmi:id="_x04SYTNHEd2nE5zXHK_HsA" base_Comment="_x04SYDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x04SajNHEd2nE5zXHK_HsA" base_Comment="_x04SaTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x1CDZzNHEd2nE5zXHK_HsA" base_Comment="_x1CDZjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_x1CDcDNHEd2nE5zXHK_HsA" base_Comment="_x1CDbzNHEd2nE5zXHK_HsA"/>
+</xmi:XMI>

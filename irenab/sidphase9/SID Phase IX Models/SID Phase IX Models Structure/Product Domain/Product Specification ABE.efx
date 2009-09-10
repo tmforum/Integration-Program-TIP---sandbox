@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:Rose="http:///schemas/Rose/0" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/Rose/0 pathmap://ROSE_PROFILES/Rose.epx#_1X_lka_4Edq0nPCvg604YA?Rose/Rose?">
+  <uml:Package xmi:id="_3E3F0EC000E93D6AAA5302C4" name="Product Specification ABE">
+    <eAnnotations xmi:id="_AQ_yUTN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_AQ_yUDN3Ed2RM4tfTFwPhA" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="Product%20Domain.efx#_3E3F0EC000E93C1E106E0133?SID%20Phase%20IX%20Models/Product%20Domain?"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9407AF4C502DD" name="ProductLine">
+      <ownedComment xmi:id="_zEv-0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9407AF4C502DD">
+        <body>A method used to group related ProductSpecifications marketed by the same company that differ only in size or style.
+
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9407B1DBC0156" general="_3E3F0EC000E93C5DBB2A01FE"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E941504E39039A" name="_competitiveTier" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Market_Sales%20Domain/Competitor%20ABE.efx#_3E3F0EC000E9414F4A160280?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/CompetitiveTier?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y7qUVjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y7qUVTNHEd2nE5zXHK_HsA"/>
+        <association href="../Market_Sales%20Domain/Competitor%20ABE.efx#_3E3F0EC000E941504E390029?SID%20Phase%20IX%20Models/Market_Sales%20Domain/Competitor%20ABE/ProductLineDefines?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E9407AF4D103DF" name="ProductCategory">
+      <ownedComment xmi:id="_zEv-1jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9407AF4D103DF">
+        <body>A method used to group a set of ProductSpecifications that are classified together because of common characteristics.
+
+</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E9407B1DC40374" general="_3E3F0EC000E93C5DBB2A01FE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DB97B0118" name="ProductSpecification" isAbstract="true">
+      <ownedComment xmi:id="_zC92ITNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DB97B0118">
+        <body>A detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to Customers or other Parties playing a PartyRole.  A ProductSpecification may consist of other ProductSpecifications supplied together as a collection.  Members of the collection may be offered in their own right.  ProductSpecifications may also exist within groupings, such as ProductCategories, ProductLines, and ProductTypes.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94086F60003B7" name="_businessInteractionItem" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E93C1F5B0A0134?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUBjpTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUBjpDNHEd2nE5zXHK_HsA"/>
+        <association href="../Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE.efx#_3E3F0EC000E94086F5FF01D5?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Business%20Interaction%20ABE/BusinessInteractionItemInvolvesProductSpecification?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9434347FC0096" name="_physicalResourceSpec" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/PhyscialResource%20Specification%20ABE.efx#_3E3F0EC000E93EE25C630091?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/PhysicalResourceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xJ0jPDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xJ0jOzNHEd2nE5zXHK_HsA"/>
+        <association href="../Resource%20Domain/PhyscialResource%20Specification%20ABE.efx#_3E3F0EC000E9434347FA029C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/PhysicalResource%20Specification%20ABE/ProductSpecDefinePRSpecs?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BE2DBE0204" name="_serviceLevelSpecification" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Level%20Spec%20ABE.efx#_3E3F0EC000E93D40107C02B4?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Performance%20ABE/Service%20Level%20Spec%20ABE/ServiceLevelSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ygsPijNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ygsPiTNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/Service%20Level%20Spec%20ABE.efx#_3E3F0EC000E947BE2DBE0203?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Performance%20ABE/Service%20Level%20Spec%20ABE/ProdSpecQualityMeasuredBy?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941DA875A033C" name="_customerBillingProductChargeSumSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="../Customer%20Domain/Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA60AA023D?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerBillingProductChargeSumSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrtz1jNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrtz1TNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC4EA0013" name="name" visibility="public">
+        <ownedComment xmi:id="_zC92JDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC4EA0013">
+          <body>The name of the product specification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C631A0202CF" name="description" visibility="public">
+        <ownedComment xmi:id="_zC92JzNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C631A0202CF">
+          <body>A narrative that explains in detail what the product spec is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D163E00AF" name="productNumber" visibility="public">
+        <ownedComment xmi:id="_zDHnIjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6D163E00AF">
+          <body>An identification number assigned to uniquely identify the specification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D16180227" name="brand" visibility="public">
+        <ownedComment xmi:id="_zDHnJTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6D16180227">
+          <body>The manufacturer or trademark of the specification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC4F6015A" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zDHnKDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC4F6015A">
+          <body>The period for which the product specification is valid.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC5040164" name="lifecycleStatus" visibility="public">
+        <ownedComment xmi:id="_zDQxEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC5040164">
+          <body>The condition of the product specification, such as active, inactive, planned.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DCA600081" name="_productSpecificationCost" visibility="public" type="_3E3F0EC000E93C5DBC8A0024" isUnique="false" association="_3E3F0EC000E93C5DCA5F022E">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGiumjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGiumTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB2202D9" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93C5DBB1E014D">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsflDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfkzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB2202ED" name="_productSpecification1" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93C5DBB1E014D">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsflzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfljNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB3D00C5" name="_productSpecificationType" visibility="public" type="_3E3F0EC000E93C5DBB2A01FE" isUnique="false" association="_3E3F0EC000E93C5DBB3B02E9">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsfnjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfnTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBC1A0195" name="_productSpecificationVersion" visibility="public" type="_3E3F0EC000E93C5DBBEE00B6" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C5DBC19037E">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG1pgzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG1pgjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D24C60068" name="_productSpecCharacteristic" visibility="public" type="_3E3F0EC000E93C631E8103A7" isUnique="false" aggregation="shared" association="_3E3F0EC000E93D6D24C40169">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG_ahzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG_ahjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB0A00E0" name="_compositeProductSpecification" visibility="public" type="_3E3F0EC000E93C5DBA400017" isUnique="false" association="_3E3F0EC000E93C5DBB080227">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHSVdTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHSVdDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9456B7F280196" name="_resourceSpecification" visibility="public" isUnique="false" association="_3E3F0EC000E9456B7F2701E4">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDEC5E70323?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHSVeTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHSVeDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BF88B00213" name="_product" visibility="public" isUnique="false" association="_3E3F0EC000E947BF88AE009C">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93C5DB98B03E2?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHcGczNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHcGcjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BF8CFF038A" name="_productOfferingPrice" visibility="public" isUnique="false" association="_3E3F0EC000E947BF8CFD029F">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHcGejNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHcGeTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BA182021A" name="_productOffering" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93C5DB96E00DD?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIeoWDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIeoVzNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20ABE.efx#_3E3F0EC000E93D6BA1810024?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProdSpecMadeAvailableAs?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443D5AA803A3" name="_simpleProductOffering" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20ABE.efx#_3E3F0EC000E93C9FA67F02BC?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/SimpleProductOffering?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIoZSzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zIoZSjNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20ABE.efx#_3E3F0EC000E9443D5AA80028?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/ProdSpecMadeAvailableAsSimpleProdOffer?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E941C6D3E701BC" name="_productUsageSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Product%20Usage%20ABE.efx#_3E3F0EC000E941C6C47E0331?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/ProductUsageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTXCpDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTXCozNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Usage%20ABE.efx#_3E3F0EC000E941C6D3E60342?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/ProdUsageSpecDescribes?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t8LDsVINEd2BeOP6juF0pQ" name="customerbillingproductchargesumspec2" visibility="public" association="_t8LDsFINEd2BeOP6juF0pQ">
+        <type xmi:type="uml:Class" href="../Customer%20Domain/Customer%20Billing%20Statistic%20ABE.efx#_3E3F0EC000E941DA60AA023D?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerBillingProductChargeSumSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dX_DMVIOEd2BeOP6juF0pQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dX_DMFIOEd2BeOP6juF0pQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JrIJsVKgEd2Z__GE9qBDpQ" name="customerfacingservicespec2" visibility="public" aggregation="shared" association="_JrIJsFKgEd2Z__GE9qBDpQ">
+        <type xmi:type="uml:Class" href="../Service%20Domain/CustomerFacing%20ServiceSpec%20ABE.efx#_3E3F0EC000E93D9DADDE0194?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JrIJs1KgEd2Z__GE9qBDpQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JrIJslKgEd2Z__GE9qBDpQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBBEE00B6" name="ProductSpecificationVersion">
+      <ownedComment xmi:id="_zDQxFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBBEE00B6">
+        <body>A particular form or variety of a ProductSpecification that is different from others or from the original.  The form represents differences in properties that characterize a ProductSpecification, that are not enough to warrant creating a new ProductSpecification.  </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCA490167" name="prodSpecRevisionType" visibility="public">
+        <ownedComment xmi:id="_zDQxGDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCA490167">
+          <body>The significance of the revision.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC6B90361" name="prodSpecRevisionNumber" visibility="public">
+        <ownedComment xmi:id="_zDaiEjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC6B90361">
+          <body>A number that represents the occurrence of the version in the sequence of versions. </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC6BE0305" name="description" visibility="public">
+        <ownedComment xmi:id="_zDaiFTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC6BE0305">
+          <body>A narrative that explains the reason for the version's creation.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCA6A0381" name="prodSpecRevisionDate" visibility="public">
+        <ownedComment xmi:id="_zDaiGDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCA6A0381">
+          <body>The date the version was created.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://ROSE_LIBRARIES/RoseAnalysisDatatypes.emx#_FgL-0Af0EdmmcbnrymMrWg?RoseAnalysisDatatypes/Date?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D9B3F070212" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zDjsAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9B3F070212">
+          <body>The period during which the version is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBC1A019F" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93C5DBC19037E">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG1phjNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG1phTNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93C5DBB1E014D" name="ProductSpecificationRelationship" memberEnd="_3E3F0EC000E93C5DBB2202D9 _3E3F0EC000E93C5DBB2202ED">
+      <ownedComment xmi:id="_zDjsBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBB1E014D">
+        <body>A migration, substitution, dependency, or exclusivity relationship between/among ProductSpecifications.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC5FD00E0" name="type" visibility="public">
+        <ownedComment xmi:id="_zDjsCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC5FD00E0">
+          <body>A categorization of the relationship, such as migration, substitution, dependency, exclusivity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC5FF02E2" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zDtdAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC5FF02E2">
+          <body>The period for which the relationship is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBBF30316" name="ProductSpecCharacteristicValue">
+      <ownedComment xmi:id="_zDtdBTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBBF30316">
+        <body>A number or text that can be assigned to a ProductSpecCharacteristic.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94423103902D0" name="_resourceSpecCharacteristicValue" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93EA6FD6C03D1?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xILkgDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xILkfzNHEd2nE5zXHK_HsA"/>
+        <association href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E944231038034C?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ProdSpecCharValueTranslatesToResourceSpecCharValue?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943B0AB490291" name="_serviceSpecCharacteristicValue" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Specification%20ABE.efx#_3E3F0EC000E93DB0B5BB02E1?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXAvITNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXAvIDNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/Service%20Specification%20ABE.efx#_3E3F0EC000E943B0AB46024B?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ProdSpecCharacteristicValueTranslatesTo?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCCE101B1" name="valueType" visibility="public">
+        <ownedComment xmi:id="_zDtdCDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCCE101B1">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94408A71A0328" name="default" visibility="public">
+        <ownedComment xmi:id="_zD3OAjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94408A71A0328">
+          <body>Indicates if the value is the default value for a characteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCCF10196" name="value" visibility="public">
+        <ownedComment xmi:id="_zEAX8jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCCF10196">
+          <body>A discrete value that the characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F697C008E" name="unitOfMeasure" visibility="public">
+        <ownedComment xmi:id="_zEAX9TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F697C008E">
+          <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. Iin general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D266C0001" name="valueFrom" visibility="public">
+        <ownedComment xmi:id="_zEKI8DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6D266C0001">
+          <body>The low range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D267902D0" name="valueTo" visibility="public">
+        <ownedComment xmi:id="_zEKI8zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6D267902D0">
+          <body>The upper range value that a characteristic can take on.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9479B05920222" name="rangeInterval" visibility="public">
+        <ownedComment xmi:id="_zEKI9jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9479B05920222">
+          <body>An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes.
+
+Possible values are &quot;open&quot;, &quot;closed&quot;, &quot;closedBottom&quot; and &quot;closedTop&quot;.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCCFA0211" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zET58jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCCFA0211">
+          <body>The period of time for which a value is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C631E8F0343" name="_productSpecCharacteristic" visibility="public" type="_3E3F0EC000E93C631E8103A7" isUnique="false" association="_3E3F0EC000E93C631E8F01B2">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsfpTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfpDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCC2502AB" name="_productSpecCharUse" visibility="public" type="_3E3F0EC000E93D6D24C40169" isUnique="false" association="_3E3F0EC000E93D6BCC2400BF">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG1pjjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG1pjTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E94CF910014" name="_productCharacteristicValue" visibility="public" isUnique="false" association="_3E3F0EC000E93E94CF8803E6">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93D6E322B021D?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHIkgjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHIkgTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466ECF0D0222" name="_productSpecCharacteristicValue" visibility="public" type="_3E3F0EC000E93C5DBBF30316" isUnique="false" association="_3E3F0EC000E9466ECF0B029F">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHSVgTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHSVgDNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466ECF0D0280" name="_productSpecCharacteristicValue1" visibility="public" type="_3E3F0EC000E93C5DBBF30316" isUnique="false" association="_3E3F0EC000E9466ECF0B029F">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHSVhDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHSVgzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94237A36B0224" name="_productOfferingPrice" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E93CD366DF029E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zKHnITNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zKHnIDNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E94237A3690307?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProdSpecCharValueInfuences?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBC8A0024" name="ProductSpecificationCost">
+      <ownedComment xmi:id="_zET59TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBC8A0024">
+        <body>A monetary amount assigned to a ProductSpecification that represents the cost to the business to plan, develop, market, and implement the ProductSpecification.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC54D02DC" name="costToBusiness" visibility="public">
+        <ownedComment xmi:id="_zET5-DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC54D02DC">
+          <body>The monetary amount that represents the cost.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C4237620112?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/Money?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC55803C8" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zEdD4jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC55803C8">
+          <body>The period during which the cost is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DCA600083" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93C5DCA5F022E">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGiunTNHEd2nE5zXHK_HsA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGiunDNHEd2nE5zXHK_HsA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBA400017" name="CompositeProductSpecification">
+      <ownedComment xmi:id="_zEdD5TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBA400017">
+        <body>A type of ProductSpecification that is formed by aggregating other ProductSpecifications, which may be Composite or Atomic ProductSpecifications.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93C5DBB0601C0" general="_3E3F0EC000E93C5DB97B0118"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB0A00CC" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C5DBB080227">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHSVcjNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHSVcTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214ABB101F9" name="_compositeProductUsageSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Product%20Usage%20ABE.efx#_3E3F0EC000E941C6CB1F0030?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/CompositeProductUsageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9ojNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9oTNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Usage%20ABE.efx#_3E3F0EC000E94214ABB00360?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/CompProdSpecUsageDescribes?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93D6B84E40021" name="AtomicProductSpecification">
+      <ownedComment xmi:id="_zEdD6TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6B84E40021">
+        <body>A type of ProductSpecification that does not have any subordinate ProductSpecifications, that is, an AtomicProductSpecification is a leaf-level ProductSpecification.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D6BA5F7013F" general="_3E3F0EC000E93C5DB97B0118"/>
+      <ownedAttribute xmi:id="_3E3F0EC000E94214ABE8015B" name="_atomicProductUsageSpec" visibility="public" isUnique="false" aggregation="shared">
+        <type xmi:type="uml:Class" href="Product%20Usage%20ABE.efx#_3E3F0EC000E941C6CB0B0324?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/AtomicProductUsageSpec?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTp9mDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zTp9lzNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Usage%20ABE.efx#_3E3F0EC000E94214ABE7013C?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Usage%20ABE/AtomicProdUsageSpecDescribes?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C5DBB2A01FE" name="ProductSpecificationType" isAbstract="true">
+      <ownedComment xmi:id="_zEm04zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DBB2A01FE">
+        <body>A classification that groups ProductSpecifications that share common characteristics.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC3D00035" name="type" visibility="public">
+        <ownedComment xmi:id="_zEm05jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC3D00035">
+          <body>The name of the product specification type.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DC3D70284" name="description" visibility="public">
+        <ownedComment xmi:id="_zEm06TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C5DC3D70284">
+          <body>A narrative that explains in detail what the product spec is.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C5DBB3D00B1" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93C5DBB3B02E9">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsfmzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfmjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9406C47B50083" name="_prodOfferPricePolicyVariable" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E9406C478D02F3?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPricePolicyVariable?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLA-4zNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zLA-4jNHEd2nE5zXHK_HsA"/>
+        <association href="Product%20Offering%20Price%20Rule%20ABE.efx#_3E3F0EC000E9406C47B50079?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20Rule%20%20ABE/ProdOfferPriceVariableDefinedByProdSpecType?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93CD776C501B8" name="ConfigurableProductSpecCharacteristic">
+      <ownedComment xmi:id="_zEv-2jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93CD776C501B8">
+        <body>A type of ProductSpecCharacteristic, such as color, whose may be assigned during the ordering or some other process.</body>
+      </ownedComment>
+      <generalization xmi:id="_3E3F0EC000E93D6BCE70027D" general="_3E3F0EC000E93C631E8103A7"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93EB1DE88010E" name="ProductServiceSpecification"/>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93D6BCD72039B" name="ProductSpecCharRelationship" memberEnd="_3E3F0EC000E93D6BCD7502CD _3E3F0EC000E93D6BCD7502D7">
+      <ownedComment xmi:id="_zE5v1DNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCD72039B">
+        <body>A aggregation, migration, substitution, dependency, or exclusivity relationship between/among ProductSpecCharacteristics.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94408A6B00307" name="charRelationshipType" visibility="public">
+        <ownedComment xmi:id="_zE5v1zNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94408A6B00307">
+          <body>A categorization of the relationship, such as aggregation, migration, substitution, dependency, exclusivity.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E947BCB5370232" name="charSpecSeq" visibility="public">
+        <ownedComment xmi:id="_zE5v2jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E947BCB5370232">
+          <body>The order in which a CharacteristicSpecification appears within another CharacteristicSpecification that defines a grouping of CharacteristicSpecifications.
+
+For example, a grouping may represent the name of an individual.  The given name is first, the middle name is second, and the last name is third.
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94408A6B00308" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zFDg0jNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94408A6B00308">
+          <body>The period for which the relationship is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3E3F0EC000E93C631E8103A7" name="ProductSpecCharacteristic">
+      <ownedComment xmi:id="_zFDg1TNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93C631E8103A7">
+        <body>A characteristic quality or distinctive feature of a ProductSpecification.  The characteristic can be take on a discrete value, such as color, can take on a range of values, (for example, sensitivity of 100-240 mV), or can be derived from a formula (for example, usage time (hrs) = 30 - talk time *3).  Certain characteristics, such as color, may be configured during the ordering or some other process.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E944230FF3032B" name="_resourceSpecCharacteristic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E93DDFB9F902CD?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIVVdTNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIVVdDNHEd2nE5zXHK_HsA"/>
+        <association href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E944230FF20399?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ProdSpecCharTranslatesToResourecSpeChar?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E943B0AB360105" name="_serviceSpecCharacteristic" visibility="public" isUnique="false">
+        <type xmi:type="uml:Class" href="../Service%20Domain/Service%20Specification%20ABE.efx#_3E3F0EC000E93D765C2F03BB?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ServiceSpecCharacteristic?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXAvKDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXAvJzNHEd2nE5zXHK_HsA"/>
+        <association href="../Service%20Domain/Service%20Specification%20ABE.efx#_3E3F0EC000E943B0AB35017B?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/ProdSpecCharacteristicTranslatesTo?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E942D2EFD203D4" name="ID" visibility="public">
+        <ownedComment xmi:id="_zFMqwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942D2EFD203D4">
+          <body>A unique identifier for the ProductSpecCharacteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCD1D0348" name="name" visibility="public">
+        <ownedComment xmi:id="_zFMqxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCD1D0348">
+          <body>A word, term, or phrase by which the characteristic is known and distinguished from characteristics.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D9B3F3902B4" name="description" visibility="public">
+        <ownedComment xmi:id="_zFMqyDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D9B3F3902B4">
+          <body>A narrative that explains the characteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9479B055E0213" name="unique" visibility="public">
+        <ownedComment xmi:id="_zFWbwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9479B055E0213">
+          <body>An indicator that specifies if a value is unique for the specification.
+
+Possible values are; &quot;unique while value is in effect&quot; and &quot;unique whether value is in effect or not&quot;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9443AA64B0296" name="valueType" visibility="public">
+        <ownedComment xmi:id="_zFWbxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9443AA64B0296">
+          <body>A kind of value that the characteristic can take on, such as numeric, text, and so forth.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94626DDBD02EE" name="minCardinality" visibility="public">
+        <ownedComment xmi:id="_zFWbyDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94626DDBD02EE">
+          <body>The minimum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94626DDBD034B" name="maxCardinality" visibility="public">
+        <ownedComment xmi:id="_zFgMwjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94626DDBD034B">
+          <body>The maximum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9479B055E0232" name="extensible" visibility="public">
+        <ownedComment xmi:id="_zFgMxTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9479B055E0232">
+          <body>An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for an Entity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E942D2EFF300E2" name="derivationFormula" visibility="public">
+        <ownedComment xmi:id="_zFgMyDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E942D2EFF300E2">
+          <body>A rule or principle represented in symbols, numbers, or letters, often in the form of an equation used to derive the value of a characteristic value.
+
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9440E01870379" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zFpWsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9440E01870379">
+          <body>The period of time for which a characteristic is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93C631E8F0339" name="_productSpecCharacteristicValue" visibility="public" type="_3E3F0EC000E93C5DBBF30316" isUnique="false" aggregation="shared" association="_3E3F0EC000E93C631E8F01B2">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGsfojNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGsfoTNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6D24C50233" name="_productSpecification" visibility="public" type="_3E3F0EC000E93C5DB97B0118" isUnique="false" association="_3E3F0EC000E93D6D24C40169">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG_ahDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG_agzNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCD7502CD" name="_productSpecCharacteristic" visibility="public" type="_3E3F0EC000E93C631E8103A7" isUnique="false" association="_3E3F0EC000E93D6BCD72039B">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHIkdDNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHIkczNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCD7502D7" name="_productSpecCharacteristic1" visibility="public" type="_3E3F0EC000E93C631E8103A7" isUnique="false" association="_3E3F0EC000E93D6BCD72039B">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHIkdzNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHIkdjNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93E94CFD0005A" name="_productCharacteristicValue" visibility="public" isUnique="false" association="_3E3F0EC000E93E94CFCE018E">
+        <type xmi:type="uml:Class" href="Product%20ABE.efx#_3E3F0EC000E93D6E322B021D?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductCharacteristicValue?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHIkezNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHIkejNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E9466ECF0B029F" name="ProdSpecCharValueRelationship" memberEnd="_3E3F0EC000E9466ECF0D0222 _3E3F0EC000E9466ECF0D0280">
+      <ownedComment xmi:id="_zFpWtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466ECF0B029F">
+        <body>A aggregation, migration, substitution, dependency, or exclusivity relationship between/among ProductSpecCharacteristicValues.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F65D90061" name="charValueRelationshipType" visibility="public">
+        <ownedComment xmi:id="_zFpWuDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F65D90061">
+          <body>A categorization of the relationship between values, such as aggregation, migration, substitution, dependency, exclusivity.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F65D90071" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zFzHsjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F65D90071">
+          <body>The period for which the relationship is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93D6D24C40169" name="ProductSpecCharUse" memberEnd="_3E3F0EC000E93D6D24C50233 _3E3F0EC000E93D6D24C60068">
+      <ownedComment xmi:id="_zFzHtTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6D24C40169">
+        <body>A use of the CharacteristicSpecification by an ProductSpecification to which addtional properties apply.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E94761BFCA03E5" name="name" visibility="public">
+        <ownedComment xmi:id="_zFzHuDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94761BFCA03E5">
+          <body>A word, term, or phrase by which the CharacteristicSpecification is known and distinguished from other CharacteristicSpecifications.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94761BFCB000D" name="description" visibility="public">
+        <ownedComment xmi:id="_zF8RojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94761BFCB000D">
+          <body>A narrative that explains the CharacteristicSpecification.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94761BFCB000E" name="unique" visibility="public">
+        <ownedComment xmi:id="_zF8RpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94761BFCB000E">
+          <body>An indicator that specifies if a value is unique for the specification.
+
+Possible values are; &quot;unique while value is in effect&quot; and &quot;unique whether value is in effect or not&quot;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F6ABE03E4" name="package" visibility="public">
+        <ownedComment xmi:id="_zF8RqDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F6ABE03E4">
+          <body>An indicator that specifies if the associated CharacteristicSpecification is  a composite.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F6ABF001C" name="canBeOveridden" visibility="public">
+        <ownedComment xmi:id="_zGGCojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F6ABF001C">
+          <body>An indicator that specifies that the CharacteristicSpecValues associated with the  CharacteristicSpec cannot be changed when instantiating a ServiceCharacteristicValue.  For example, a bandwidth of 64 MB cannot be changed.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F6ABF004B" name="minCardinality" visibility="public">
+        <ownedComment xmi:id="_zGPzojNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F6ABF004B">
+          <body>The minimum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F6ABF005A" name="maxCardinality" visibility="public">
+        <ownedComment xmi:id="_zGPzpTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F6ABF005A">
+          <body>The maximum number of instances a CharacteristicValue can take on.  For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9466F6ABF006A" name="extensible" visibility="public">
+        <ownedComment xmi:id="_zGY9kjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9466F6ABF006A">
+          <body>An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for a Service.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E94761BFCB001D" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zGY9lTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E94761BFCB001D">
+          <body>The period of time for which the use of the CharacteristicSpecification is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E93D6BCC250251" name="_productSpecCharacteristicValue" visibility="public" type="_3E3F0EC000E93C5DBBF30316" isUnique="false" association="_3E3F0EC000E93D6BCC2400BF">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zG1pizNHEd2nE5zXHK_HsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zG1pijNHEd2nE5zXHK_HsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_3E3F0EC000E93D6BCC2400BF" name="ProdSpecCharValueUse" memberEnd="_3E3F0EC000E93D6BCC250251 _3E3F0EC000E93D6BCC2502AB">
+      <ownedComment xmi:id="_zGY9mDNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E93D6BCC2400BF">
+        <body>A use of the ProdSpecCharacteristicValue by an ProductSpecification to which additional properties (attributes) apply or override the properties of similar properties contained in ProdSpecCharacteristicValue.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_3E3F0EC000E9479B04B700DA" name="default" visibility="public">
+        <ownedComment xmi:id="_zGiukjNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9479B04B700DA">
+          <body>Indicates if the value is the default value for a characteristic.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3E3F0EC000E9479B04B700FA" name="validFor" visibility="public">
+        <ownedComment xmi:id="_zGiulTNHEd2nE5zXHK_HsA" annotatedElement="_3E3F0EC000E9479B04B700FA">
+          <body>The period of time for which the use of the CharacteristicSpecificationValue is applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../Common%20Business%20Entities%20Domain/Base%20Types%20ABE.efx#_3E3F0EC000E93C2319F50258?SID%20Phase%20IX%20Models/Common%20Business%20Entities%20Domain/Base%20Types%20ABE/TimePeriod?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C5DCA5F022E" name="ProdSpecDevelopmentIncurs" memberEnd="_3E3F0EC000E93C5DCA600081 _3E3F0EC000E93C5DCA600083"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C5DBB3B02E9" name="ProdSpecTypeGroups" memberEnd="_3E3F0EC000E93C5DBB3D00B1 _3E3F0EC000E93C5DBB3D00C5"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C631E8F01B2" name="ProdSpecCharacteristicEnumeratedBy" memberEnd="_3E3F0EC000E93C631E8F0339 _3E3F0EC000E93C631E8F0343"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C5DBC19037E" name="ProdSpecModificationsRecordedAs" memberEnd="_3E3F0EC000E93C5DBC1A0195 _3E3F0EC000E93C5DBC1A019F"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E94CFCE018E" name="ProdSpecCharDescribesProdCharacteristicValue">
+      <memberEnd href="#_3E3F0EC000E93E94CFD0005A?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecCharacteristic/_productCharacteristicValue?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E93E94CFD00064?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductCharacteristicValue/_productSpecCharacteristic?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93E94CF8803E6" name="ProdSpecCharValueInstantiatedAsProductCharacteristicValue">
+      <memberEnd href="#_3E3F0EC000E93E94CF910014?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecCharacteristicValue/_productCharacteristicValue?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E93E94CF91001E?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/ProductCharacteristicValue/_productSpecCharacteristicValue?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E93C5DBB080227" name="ProdSpecCompositeComprisedOf" memberEnd="_3E3F0EC000E93C5DBB0A00CC _3E3F0EC000E93C5DBB0A00E0"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E9456B7F2701E4" name="ProductSpecRealizedAs">
+      <memberEnd href="#_3E3F0EC000E9456B7F280196?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_resourceSpecification?"/>
+      <memberEnd href="../Resource%20Domain/Resource%20Specification%20ABE.efx#_3E3F0EC000E9456B7F2801B5?SID%20Phase%20IX%20Models/Resource%20Domain/Resource%20Specification%20ABE/ResourceSpecification/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E947BF88AE009C" name="ProductSpecificationDescribes">
+      <memberEnd href="#_3E3F0EC000E947BF88B00213?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_product?"/>
+      <memberEnd href="Product%20ABE.efx#_3E3F0EC000E947BF88B10138?SID%20Phase%20IX%20Models/Product%20Domain/Product%20ABE/Product/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3E3F0EC000E947BF8CFD029F" name="ProductSpecificationValuedBy">
+      <memberEnd href="#_3E3F0EC000E947BF8CFF038A?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/_productOfferingPrice?"/>
+      <memberEnd href="Product%20Offering%20Price%20ABE.efx#_3E3F0EC000E947BF8D00006D?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Offering%20ABE/Product%20Offering%20Price%20ABE/ProductOfferingPrice/_productSpecification?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_t8LDsFINEd2BeOP6juF0pQ" name="CustBillProdChargeSumSpecDefinesHowToAccumulate">
+      <memberEnd href="#_t8LDsVINEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/customerbillingproductchargesumspec2?"/>
+      <memberEnd href="../Customer%20Domain/Customer%20Billing%20Statistic%20ABE.efx#_t8LDslINEd2BeOP6juF0pQ?SID%20Phase%20IX%20Models/Customer%20Domain/Customer%20Bill%20ABE/Customer%20Billing%20Statistic%20ABE/CustomerBillingProductChargeSumSpec/productspecification2?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JrIJsFKgEd2Z__GE9qBDpQ" name="ProdSpecRealizedAsCFServiceSpec">
+      <memberEnd href="#_JrIJsVKgEd2Z__GE9qBDpQ?SID%20Phase%20IX%20Models/Product%20Domain/Product%20Specification%20ABE/ProductSpecification/customerfacingservicespec2?"/>
+      <memberEnd href="../Service%20Domain/CustomerFacing%20ServiceSpec%20ABE.efx#_JrIJtFKgEd2Z__GE9qBDpQ?SID%20Phase%20IX%20Models/Service%20Domain/Service%20Specification%20ABE/CustomerFacing%20ServiceSpec%20ABE/CustomerFacingServiceSpec/productspecification?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_zC92IjNHEd2nE5zXHK_HsA" base_Comment="_zC92ITNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zC92JTNHEd2nE5zXHK_HsA" base_Comment="_zC92JDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDHnIDNHEd2nE5zXHK_HsA" base_Comment="_zC92JzNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDHnIzNHEd2nE5zXHK_HsA" base_Comment="_zDHnIjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDHnJjNHEd2nE5zXHK_HsA" base_Comment="_zDHnJTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDQxEDNHEd2nE5zXHK_HsA" base_Comment="_zDHnKDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDQxEzNHEd2nE5zXHK_HsA" base_Comment="_zDQxEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDQxFjNHEd2nE5zXHK_HsA" base_Comment="_zDQxFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDaiEDNHEd2nE5zXHK_HsA" base_Comment="_zDQxGDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDaiEzNHEd2nE5zXHK_HsA" base_Comment="_zDaiEjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDaiFjNHEd2nE5zXHK_HsA" base_Comment="_zDaiFTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDjsADNHEd2nE5zXHK_HsA" base_Comment="_zDaiGDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDjsAzNHEd2nE5zXHK_HsA" base_Comment="_zDjsAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zDtdBjNHEd2nE5zXHK_HsA" base_Comment="_zDtdBTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zD3OADNHEd2nE5zXHK_HsA" base_Comment="_zDtdCDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEAX8DNHEd2nE5zXHK_HsA" base_Comment="_zD3OAjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEAX8zNHEd2nE5zXHK_HsA" base_Comment="_zEAX8jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEAX9jNHEd2nE5zXHK_HsA" base_Comment="_zEAX9TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEKI8TNHEd2nE5zXHK_HsA" base_Comment="_zEKI8DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEKI9DNHEd2nE5zXHK_HsA" base_Comment="_zEKI8zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zET58DNHEd2nE5zXHK_HsA" base_Comment="_zEKI9jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zET58zNHEd2nE5zXHK_HsA" base_Comment="_zET58jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zET59jNHEd2nE5zXHK_HsA" base_Comment="_zET59TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEdD4DNHEd2nE5zXHK_HsA" base_Comment="_zET5-DNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEdD4zNHEd2nE5zXHK_HsA" base_Comment="_zEdD4jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEdD5jNHEd2nE5zXHK_HsA" base_Comment="_zEdD5TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEm04DNHEd2nE5zXHK_HsA" base_Comment="_zEdD6TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEm05DNHEd2nE5zXHK_HsA" base_Comment="_zEm04zNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEm05zNHEd2nE5zXHK_HsA" base_Comment="_zEm05jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEv-0DNHEd2nE5zXHK_HsA" base_Comment="_zEm06TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEv-0zNHEd2nE5zXHK_HsA" base_Comment="_zEv-0jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zEv-1zNHEd2nE5zXHK_HsA" base_Comment="_zEv-1jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zE5v0DNHEd2nE5zXHK_HsA" base_Comment="_zEv-2jNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFMqwDNHEd2nE5zXHK_HsA" base_Comment="_zFDg1TNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFMqwzNHEd2nE5zXHK_HsA" base_Comment="_zFMqwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFMqxjNHEd2nE5zXHK_HsA" base_Comment="_zFMqxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFWbwDNHEd2nE5zXHK_HsA" base_Comment="_zFMqyDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFWbwzNHEd2nE5zXHK_HsA" base_Comment="_zFWbwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFWbxjNHEd2nE5zXHK_HsA" base_Comment="_zFWbxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFgMwDNHEd2nE5zXHK_HsA" base_Comment="_zFWbyDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFgMwzNHEd2nE5zXHK_HsA" base_Comment="_zFgMwjNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFgMxjNHEd2nE5zXHK_HsA" base_Comment="_zFgMxTNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFpWsDNHEd2nE5zXHK_HsA" base_Comment="_zFgMyDNHEd2nE5zXHK_HsA"/>
+  <Default:Documentation xmi:id="_zFpWszNHEd2nE5zXHK_HsA" base_Comment="_zFpWsjNHEd2nE5zXHK_HsA"/>
+  <Rose:Rose_AssociationClass xmi:id="_zGsfkTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93C5DBB1E014D" Associaton_Name="ProdSpecReferences"/>
+  <Rose:Rose_AssociationClass xmi:id="_zG1piDNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93D6BCC2400BF" Associaton_Name="ProdSpecDescribedByProdSpecCharValue"/>
+  <Rose:Rose_AssociationClass xmi:id="_zG_agTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93D6D24C40169" Associaton_Name="ProdSpecDescribedBy"/>
+  <Rose:Rose_AssociationClass xmi:id="_zHIkcTNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E93D6BCD72039B" Associaton_Name="ProdSpecCharacteristicReferences"/>
+  <Rose:Rose_AssociationClass xmi:id="_zHSVfjNHEd2nE5zXHK_HsA" base_AssociationClass="_3E3F0EC000E9466ECF0B029F" Associaton_Name="ProdSpecCharValueReferences"/>
+  <Rose:Rose_Property xmi:id="_zWMUNTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC5FD00E0" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zWoZATNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D6D16180227" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zW77CzNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC5040164" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zW77DDNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93D6D163E00AF" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXO1-jNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC3D70284" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXO1_DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC3D00035" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXO1_TNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C631A0202CF" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXYnBTNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E9466F65D90061" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXhw4DNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E93C5DC4EA0013" Type="string"/>
+  <Rose:Rose_Property xmi:id="_zXrh6zNHEd2nE5zXHK_HsA" base_Property="_3E3F0EC000E94408A6B00307" Type="string"/>
+</xmi:XMI>
