@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/tip/samples/sis"
+  xmlns:tns="http://www.tmforum.org/tip/samples/sis"
+  attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0">
+  <xsd:annotation>
+    <xsd:documentation>
+      <p> The XML schema definitions for the operation messages. </p>
+    </xsd:documentation>
+  </xsd:annotation>
+  <!-- ======== OneWay Operation Message ======== -->
+  <xsd:element name="oneWay" type="tns:OneWay" />
+  <xsd:complexType name="OneWay">
+    <xsd:annotation>
+      <xsd:documentation>
+        <p>The schema of the OneWAy operation message.</p>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="att1" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            <p>Parameter #1.</p>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="att2" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>
+            <p>Parameter #2.</p>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!-- ============== -->
+</xsd:schema>
