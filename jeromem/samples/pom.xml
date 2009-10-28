@@ -5,7 +5,7 @@
   <artifactId>specs</artifactId>
   <packaging>jar</packaging>
   <version>0.0.3</version>
-  <name>specs</name>
+  <name>tip-sample</name>
   <description>This component provides sample WS specifications.</description>
   <url />
   <organization>
@@ -14,7 +14,7 @@
   </organization>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <javac.output.version>1.5</javac.output.version>
+    <javac.output.version>1.6</javac.output.version>
     <webservices-api.version>1.5</webservices-api.version>
     <maven.javadoc.plugin.version>2.5</maven.javadoc.plugin.version>
   </properties>
