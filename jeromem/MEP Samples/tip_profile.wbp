@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<profile compatibilityLevel="1.2" name="TIP Profile" version="0.0.2">
+  <description>Profile for TIP. Click on "Save as active profile and reload" to make it active.
+Sep 30: remove support of isJmsSupported and isWsdlSupported
+Sep 9: remove isExtendable on tipClass
+Aug 28: clean up assignment of stereotypes in Tigerstripe</description>
+  <defaultPrimitiveType/>
+  <stereotypes>
+    <stereotype name="tipClass" version="" isVisible="true">
+      <description>Sterotype for Class</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact</artifactLevelType>
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IAssociationClassArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="objectCreationNotification" kind="2" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+          <values>
+            <value label="NA"/>
+            <value label="NO"/>
+            <value label="YES"/>
+          </values>
+        </attribute>
+        <attribute name="objectDeletionNotification" kind="2" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+          <values>
+            <value label="NA"/>
+            <value label="NO"/>
+            <value label="YES"/>
+          </values>
+        </attribute>
+        <attribute name="objectDiscoveryNotification" kind="2" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+          <values>
+            <value label="NA"/>
+            <value label="NO"/>
+            <value label="YES"/>
+          </values>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipAttribute" version="" isVisible="true">
+      <description>Stereotype for attribute</description>
+      <scope argument="false" attribute="true" method="false" label="false" associationEnd="true"/>
+      <attributes>
+        <attribute name="notificationType" kind="2" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+          <values>
+            <value label="AVC"/>
+            <value label="NA"/>
+            <value label="NONE"/>
+            <value label="SC"/>
+          </values>
+        </attribute>
+        <attribute name="writeable" kind="2" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+          <values>
+            <value label="BOTH"/>
+            <value label="CLIENT_ONLY"/>
+            <value label="NONE"/>
+            <value label="SERVER_ONLY"/>
+          </values>
+        </attribute>
+        <attribute name="isInvariant" kind="1" defaultValue="false" isArray="false">
+          <description>Imported from TIP UML Profile
+This should be of type Boolean</description>
+        </attribute>
+        <attribute name="passedById" kind="1" defaultValue="false" isArray="false">
+          <description>Indicate if a parameter is passed by Id (True) or by value (False).</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipPackage" version="" isVisible="true">
+      <description>Imported from TIP UML Profile
+Kept to avoid warnings when importing from RSM.
+Will be removed when SID Import tool has been enhanced.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IPackageArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="implementationPackage" kind="0" defaultValue="" isArray="false">
+          <description>Imported from TIP UML Profile</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipOperation" version="" isVisible="true">
+      <description>Stereotype for operation</description>
+      <scope argument="false" attribute="false" method="true" label="false" associationEnd="false"/>
+      <attributes>
+        <attribute name="isIdempotent" kind="1" defaultValue="false" isArray="false">
+          <description>The operation can be repeated provided the same result every time.</description>
+        </attribute>
+        <attribute name="bulkTransferPattern" kind="2" defaultValue="NONE" isArray="false">
+          <description>This attribute allows the selection of the bulk data transfer implementation style.
+This is applicable when at least one of the parameter's isBulkPotential attribute of the tipParameter stereotype is set to true.</description>
+          <values>
+            <value label="FILE"/>
+            <value label="ITERATOR"/>
+            <value label="NONE"/>
+          </values>
+        </attribute>
+        <attribute name="isOneWay" kind="1" defaultValue="false" isArray="false">
+          <description>This attribute indicates that the operation is either an input or an output with respect to the service interface. 
+The operation is an input oneWay if it has only input parameters. 
+It is an output oneWay if it has only output parameters.</description>
+        </attribute>
+        <attribute name="emitEvents" kind="1" defaultValue="false" isArray="false">
+          <description>This attribute indicates the capability of the Target OS operation to emit event notifications.
+If checked, the operation can emit progress events.
+The events that can be emitted are listed under the emittedEvents attribute.
+he event type that better matches the operation process tracking capability must be selected.
+The operation response (if any defined) shall be returned as soon as it is validated by the Target OS.</description>
+        </attribute>
+        <attribute name="emittedEvents" kind="0" defaultValue="" isArray="true">
+          <description>This attribute lists the events that can be emitted by the operation. It is a list of event names, separated by commas. 
+The event names should be valid events defined in the model.</description>
+        </attribute>
+        <attribute name="isExtendable" kind="1" defaultValue="false" isArray="false">
+          <description>Indicates if the class is extendable</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipParameter" version="" isVisible="true">
+      <description>Parameter stereotype</description>
+      <scope argument="true" attribute="false" method="false" label="false" associationEnd="false"/>
+      <attributes>
+        <attribute name="passedById" kind="1" defaultValue="false" isArray="false">
+          <description>Indicate if a parameter is passed by Id (True) or by value (False).</description>
+        </attribute>
+        <attribute name="isBulkPotential" kind="1" defaultValue="false" isArray="false">
+          <description>This attribute indicates that this parameter can potentially be a very large collection, which will require a bulk data transfer patern implementation.
+Atomic definition (unit) is based on the parameter's associated data type. The selection of the bulk data transfer is defined using the tipOperation stereotype bulkTransferPattern attribute.</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipDatatype" version="" isVisible="true">
+      <description>Stereotype for Datatype</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IDatatypeArtifact</artifactLevelType>
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IEnumArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="isExtendable" kind="1" defaultValue="false" isArray="false">
+          <description>Indicates if the class is extendable</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipCreateOperation" version="" isVisible="true">
+      <description>To be used on a dependency between a Service Interface (Session Facade) and an Entity to indicate that the commonly used Entity Create oepration should be implemented in the Service Interface.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IDependencyArtifact</artifactLevelType>
+      </scope>
+      <attributes/>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipEntityCreate" version="" isVisible="true">
+      <description>Defined the commonly used Create operation at Entity level. 
+This operation will be generated based on the attributes provided and on the signature defined in the Framework model.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="description" kind="0" defaultValue="" isArray="false">
+          <description>Description of the directive</description>
+        </attribute>
+        <attribute name="exceptions" kind="0" defaultValue="" isArray="true">
+          <description>List all the specific exceptions for this directives.
+Use fully qualified names for exception, including package name.</description>
+        </attribute>
+        <attribute name="isAtomic" kind="1" defaultValue="false" isArray="false">
+          <description>if true, create all instances in an atomic manner. 
+Either all objects will be created or none if there is one failure.
+Only valid if multipleEntitiesAllowed is checked.</description>
+        </attribute>
+        <attribute name="useAutoNaming" kind="1" defaultValue="false" isArray="false">
+          <description>If true, the id of the object will be provided by the server and must not be provided by the client. 
+If false, the client may provide an id for the object to be created. If no id is provided by the client the server will have to generate an id.</description>
+        </attribute>
+        <attribute name="isExtendable" kind="1" defaultValue="false" isArray="false">
+          <description>Indicates if the operation is extendable</description>
+        </attribute>
+        <attribute name="multipleEntitiesAllowed" kind="1" defaultValue="false" isArray="false">
+          <description>If true, the operation can be applied to multiple entities at the same time.
+If false, only applicable to a single one.</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipDeleteOperation" version="" isVisible="true">
+      <description>To be used on a dependency between a Service Interface (Session Facade) and an Entity to indicate that the commonly used Entity Delete oepration should be implemented in the Service Interface.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IDependencyArtifact</artifactLevelType>
+      </scope>
+      <attributes/>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipSetOperation" version="" isVisible="true">
+      <description>To be used on a dependency between a Service Interface (Session Facade) and an Entity to indicate that the commonly used Entity Setoepration should be implemented in the Service Interface.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IDependencyArtifact</artifactLevelType>
+      </scope>
+      <attributes/>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipGetOperation" version="" isVisible="true">
+      <description>To be used on a dependency between a Service Interface (Session Facade) and an Entity to indicate that the commonly used Entity Get oepration should be implemented in the Service Interface.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IDependencyArtifact</artifactLevelType>
+      </scope>
+      <attributes/>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipEntityDelete" version="" isVisible="true">
+      <description>Defined the commonly used Create operation at Entity level. 
+This operation will be generated based on the attributes provided and on the signature defined in the Framework model.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="description" kind="0" defaultValue="" isArray="false">
+          <description>Description of the directive</description>
+        </attribute>
+        <attribute name="exceptions" kind="0" defaultValue="" isArray="true">
+          <description>List all the specific exceptions for this directives.
+Use fully qualified names for exception, including package name.</description>
+        </attribute>
+        <attribute name="isAtomic" kind="1" defaultValue="false" isArray="false">
+          <description>if true, delete all instances in an atomic manner. 
+Either all objects will be delete or none if there is one failure.
+Only valid if multipleEntitiesAllowed is checked.</description>
+        </attribute>
+        <attribute name="isIdempotent" kind="1" defaultValue="false" isArray="false">
+          <description>Delete will be successful even if the objects are already deleted.
+A specific indicator attribute, part of the signature, will indicate if the delete has already been done.</description>
+        </attribute>
+        <attribute name="usingFilter" kind="1" defaultValue="false" isArray="false">
+          <description>If true, delete all objects matching the filter. 
+If false, then the Id(s) of the objects to be deleted have to be provided. 
+Note that it is always possible to delete by Ids, even if UsingFilter is True.</description>
+        </attribute>
+        <attribute name="multipleEntitiesAllowed" kind="1" defaultValue="true" isArray="false">
+          <description>If true, the operation can be applied to multiple entities at the same time.
+If false, only applicable to a single one.</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipEntitySet" version="" isVisible="true">
+      <description>Defined the commonly used Set operation at Entity level. 
+This operation will be generated based on the attributes provided and on the signature defined in the Framework model.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="description" kind="0" defaultValue="" isArray="false">
+          <description>Description of the directive</description>
+        </attribute>
+        <attribute name="exceptions" kind="0" defaultValue="" isArray="true">
+          <description>List all the specific exceptions for this directives.
+Use fully qualified names for exception, including package name.</description>
+        </attribute>
+        <attribute name="isAtomic" kind="1" defaultValue="false" isArray="false">
+          <description>if true, set all instances in an atomic manner. 
+Eithe all objects will be set or none if there is one failure.
+Only valid if multipleEntitiesAllowed is checked.</description>
+        </attribute>
+        <attribute name="usingFilter" kind="1" defaultValue="false" isArray="false">
+          <description>If true, set all objects matching the filter. 
+If false, then the Id(s) of the objects to be set have to be provided. 
+Note that it is always possible to set by Ids, even if UsingFilter is True.</description>
+        </attribute>
+        <attribute name="multipleEntitiesAllowed" kind="1" defaultValue="true" isArray="false">
+          <description>If true, the operation can be applied to multiple entities at the same time.
+If false, only applicable to a single one.</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+    <stereotype name="tipEntityGet" version="" isVisible="true">
+      <description>Defined the commonly used Get operation at Entity level. 
+This operation will be generated based on the attributes provided and on the signature defined in the Framework model.</description>
+      <scope argument="false" attribute="false" method="false" label="false" associationEnd="false">
+        <artifactLevelType>org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact</artifactLevelType>
+      </scope>
+      <attributes>
+        <attribute name="description" kind="0" defaultValue="" isArray="false">
+          <description>Description of the directive</description>
+        </attribute>
+        <attribute name="exceptions" kind="0" defaultValue="" isArray="true">
+          <description>List all the specific exceptions for this directives.
+Use fully qualified names for exception, including package name.</description>
+        </attribute>
+        <attribute name="usingFilter" kind="1" defaultValue="false" isArray="false">
+          <description>If true, get all objects matching the filter. 
+If false, then the Id(s) of the objects to be obtained have to be provided. 
+Note that it is always possible to get by Ids, even if UsingFilter is True.</description>
+        </attribute>
+        <attribute name="multipleEntitiesAllowed" kind="1" defaultValue="true" isArray="false">
+          <description>If true, the operation can be applied to multiple entities at the same time.
+If false, only applicable to a single one.</description>
+        </attribute>
+      </attributes>
+      <requires/>
+      <excludes/>
+    </stereotype>
+  </stereotypes>
+  <primitiveTypes>
+    <primitiveType name="unknown">
+      <description>Autocreated by UML profile import</description>
+    </primitiveType>
+    <primitiveType name="date">
+      <description>Reserved date primitive data type</description>
+    </primitiveType>
+    <primitiveType name="time">
+      <description>Primitive time data type. Correspond to ItuTime.</description>
+    </primitiveType>
+    <primitiveType name="any">
+      <description>Any datatype</description>
+    </primitiveType>
+  </primitiveTypes>
+  <properties>
+    <property type="org.eclipse.tigerstripe.workbench.internal.core.profile.properties.GlobalSettingsProperty" name="global.settings"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<globalSettings><property key="implementsRelationship" value="false"/><property key="argumentDirection" value="true"/><property key="enableSessionFacadeOnInstDiag" value="true"/></globalSettings>]]></property>
+    <property type="org.eclipse.tigerstripe.workbench.internal.core.profile.properties.CoreArtifactSettingsProperty" name="artifacts.core.settings"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<coreArtifactsSettings><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IAssociationArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IAssociationClassArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IDatatypeArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IDependencyArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IEnumArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IEventArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IExceptionArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IManagedEntityArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IPackageArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IPrimitiveTypeArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IQueryArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.ISessionArtifact">true</details><details artifactType="org.eclipse.tigerstripe.workbench.model.deprecated_.IUpdateProcedureArtifact">true</details></coreArtifactsSettings>]]></property>
+    <property type="org.eclipse.tigerstripe.workbench.internal.core.profile.properties.OssjLegacySettingsProperty" name="ossj.legacy.settings"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ossjLegacySettings><property key="useAttributesAsReference" value="false"/><property key="displayOssjSpecifics" value="false"/><property key="useRefbyModifiers" value="false"/><property key="enableInstanceMethods" value="false"/><property key="enableIsOptional" value="false"/><property key="useManagedEntitiesOnSession" value="true"/><property key="useEmittedNotificationsOnSession" value="true"/><property key="useExposedUpdateProceduresOnSession" value="false"/><property key="useNamedQueriesOnSession" value="false"/></ossjLegacySettings>]]></property>
+  </properties>
+</profile>
