@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *
+ *  Generated with Tigerstripe Workbench 0.5.0.200908271716NGT.
+ *
+ *  Plugin  : Nortel Networks, Hewlett-Packard Company/TIP_Soap_Generator(0.1.3) (0.1.3)
+ *
+ *  DO NOT EDIT THIS CODE WAS AUTOMATICALLY GENERATED
+-->
+<!--
+Licensed to Members of the TM Forum under one or more
+contributor license agreements.  See the NOTICE file distributed with
+this work for additional information regarding copyright ownership.
+Members of the TM Forum licences this file to You under the Apache License, 
+Version 2.0 (the "License"); you may not use this file except in compliance with
+the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/xml/tip/cbe/problem"
+  xmlns:tns="http://www.tmforum.org/xml/tip/cbe/problem"
+   xmlns:entity="http://www.tmforum.org/xml/tip/internal/entity"
+  attributeFormDefault="unqualified" elementFormDefault="qualified"
+  version="0.0.2">
+  <xsd:annotation>
+    <xsd:documentation>
+      <pre>TMF XML Schema Definitions from Tigerstripe model
+                      project name: TIP_SPM_Model
+                        at version: 0.0.2
+      for all artifacts in package: org.tmforum.tip.cbe.problem
+      Model Description:
+      Service Problem Management  Project
+      Package Description:
+      
+      Package data summary info:
+ Association Classes: 0
+        enumerations: 3
+          exceptions: 0
+           datatypes: 2
+            entities: 2
+              events: 0
+      </pre>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/entity" schemaLocation="internal_entity.xsd"/>
+<!-- ******************************* -->
+<!-- Package Enumeration definitions -->
+<!-- ******************************* -->
+
+<xsd:simpleType name="AckStatus">
+  <xsd:annotation>
+    <xsd:documentation>
+      Defines the possible values for acknowledgement.
+It is used to indicate whether the associated object is handled or not.
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="1">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+    <xsd:enumeration value="2">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="ClearStatus">
+  <xsd:annotation>
+    <xsd:documentation>
+      Defines the possible values for clearance.
+It is used to indicate whether the fault that originated the associated object  problem/alarms  has disappeared or whether the operator has manually cleared the problem.
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="1">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+    <xsd:enumeration value="2">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="ActivityStatus">
+  <xsd:annotation>
+    <xsd:documentation>
+      Activity status of a problem.
+Indicates if the problem is historical or active
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:restriction base="xsd:string">
+    <xsd:enumeration value="1">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+    <xsd:enumeration value="2">
+      <xsd:annotation>
+        <xsd:documentation>
+          
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:enumeration>
+  </xsd:restriction>
+</xsd:simpleType>
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+
+
+
+
+       	<xsd:element name="impactPatterns" type="tns:ImpactPatterns" />
+
+ <xsd:complexType name="ImpactPatterns" >
+  <xsd:annotation>
+    <xsd:documentation>
+      Define the patterns of impact  optional . It can be other service characteristics.
+It is used when defining impact through another pattern than the pre-defined attributes above.
+
+This is an empty class that will be augmented/extended by specific projects
+    </xsd:documentation>
+  </xsd:annotation>
+  
+  		  
+	<xsd:sequence>
+
+
+  <xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Basic description of the ipact pattern.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="extensionInfo" minOccurs="0">
+    <xsd:annotation>
+      <xsd:documentation>
+       <p>A generic list of any type of elements. Used for vendor Extensions or loose element encapsulation from other namespaces.</p>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="ArrayOfImpactPatterns">
+		<xsd:sequence>
+			<xsd:element name="item" type="tns:ImpactPatterns" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+</xsd:complexType>
+
+
+
+
+       	<xsd:element name="comment" type="tns:Comment" />
+
+ <xsd:complexType name="Comment" >
+  <xsd:annotation>
+    <xsd:documentation>
+      Describe a comment on a proble mor an alarm.
+    </xsd:documentation>
+  </xsd:annotation>
+  
+  		  
+	<xsd:sequence>
+
+
+  <xsd:element name="userId" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the user id of the user doing the action.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+  <xsd:element name="time" type="xsd:date" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the time at which the action was done
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+  <xsd:element name="systemId" type="xsd:string" minOccurs="0" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the system Id from which the action was done.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+  <xsd:element name="comment" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      text of the comment
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="ArrayOfComment">
+		<xsd:sequence>
+			<xsd:element name="item" type="tns:Comment" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+</xsd:complexType>
+<!-- ************************** -->
+<!-- package Entity definitions -->
+<!-- ************************** -->
+
+
+
+
+<xsd:element name="problem" type="tns:Problem" substitutionGroup="entity:entityBase" /> 
+
+<xsd:complexType name="Problem"  abstract="true" >
+  <xsd:annotation>
+    <xsd:documentation>
+      General description of a problem that can be shared between service and customer.
+A Problem is an indication that an entity is no longer functioning according to the agreement with its client s .
+    </xsd:documentation>
+  </xsd:annotation>
+
+  
+		<xsd:complexContent>
+	      <xsd:extension base="entity:EntityBase">
+	      	<xsd:sequence>
+
+
+
+  <xsd:element name="originatingSytem" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Indicates where the problem was generated.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="affectedServiceNumber" type="xsd:int" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Number of affected services  mandatory, but value can be zero .
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="impactImportanceFactor" type="xsd:int" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Impact Importance is characterized by an Impact Importance Factor: overall importance of the impact of all the affected services, e.g. 0  zero impact  to 100  worst impact . The Impact Importance is a calculated field which is set by the OSS determining the impact.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="priority" type="xsd:int" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      An indication varying from 1 to 10 of how important it is for the service provider to correct the Service Problem. The priority can be changed by the human operator while the impact importance can only be changed by the system which determines the impact.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Free form text describing the Service Problem.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="firstAlert" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Text that indicates what first alerted the system to the problem. It is not the root cause of the Service Problem.
+Examples:
+Threshold crossing alert: Service component causing the problem
+Customer report: customer name  or TT id  reporting the problem
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="category" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Classifier nbsp;for nbsp;the nbsp;problem. nbsp;Settable. nbsp;Structured nbsp;text/ nbsp;enum.<br />
+In nbsp;the nbsp;ATIS nbsp;Service nbsp;Outage nbsp;document nbsp;[ATIS-OUTAGE] nbsp;, nbsp;the nbsp;What nbsp;Category nbsp;corresponds nbsp;to nbsp;this nbsp;attribute nbsp;and nbsp;the nbsp;values nbsp;can nbsp;be nbsp;used nbsp;as nbsp;possible nbsp;values.<br />
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="responsibleParty" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Person nbsp;or nbsp;organization nbsp;responsible nbsp;for nbsp;handling nbsp;this nbsp;problem. nbsp;The nbsp;Who nbsp;category nbsp;from nbsp;the nbsp;ATIS nbsp;Service nbsp;Outage nbsp;document nbsp;can nbsp;be nbsp;used nbsp;for nbsp;this nbsp;attribute.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="problemEscalation" type="xsd:int" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Indicates if this service problem has been escalated or not. Possible values are 0 to 10. A value of zero means no escalation.
+The meanings of values 1-10 are to be determined by the user of the interface, but they show increasing levels of escalation.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="comments" type="tns:ArrayOfComment" minOccurs="0" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Comments on problem, as a list of comments.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="timeRaised" type="xsd:date" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Time the problem was raised
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="timeChanged" type="xsd:date" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Time the problem was last changed
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="reason" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Free nbsp;text nbsp;or nbsp;optionally nbsp;structured nbsp;text. nbsp;It nbsp;can nbsp;be nbsp;Unknown. nbsp;The nbsp;Why nbsp;category nbsp;of nbsp;the nbsp;ATIS nbsp;Service nbsp;Outage nbsp;document nbsp;can nbsp;be nbsp;used nbsp;to nbsp;fill nbsp;this nbsp;value.<br />
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="ackStatus" type="tns:AckStatus" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Acknowledgement status
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="clearStatus" type="tns:ClearStatus" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Clear status of the problem.
+Clearance of the resource RC alarm or of the underlying alarms or problems does not imply clearance of the problem.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="activityStatus" type="tns:ActivityStatus" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Activity status, indicates if the problem is historical or active
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="impactPattterns" type="tns:ImpactPatterns" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Define nbsp;the nbsp;patterns nbsp;of nbsp;impact nbsp; optional . nbsp;It nbsp;can nbsp;be nbsp;other nbsp;service nbsp;characteristics.<br />
+It nbsp;is nbsp;used nbsp;when nbsp;defining nbsp;impact nbsp;through nbsp;another nbsp;pattern nbsp;than nbsp;the nbsp;pre-defined nbsp;attributes nbsp;above. nbsp;<br />
+The nbsp;field nbsp;Patterns nbsp;of nbsp;impact nbsp;needs nbsp;to nbsp;be nbsp;extensible.<br />
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="affectedLocations" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      List of affected locations.
+Either the list of affected services or the list of affected resources or the list of affected locations should at least be present. Both cannot be absent.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="affectedResources" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      List of affected resources.
+Either the list of affected services or the list of affected resources or the list of affected locations should at least be present. Both cannot be absent.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="affectedServices" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      List of affected services.
+Either the list of affected services or the list of affected resources or the list of affected locations should at least be present. Both cannot be absent.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="associatedTroubleTicket" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      List of trouble tickets associated with this problem.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="rootCauseResource" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      Resource s  that are assoicated to the RC alarm s  if any  used only if applicable .
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="rootCauseService" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      Service s  that is assoicated to the underlying service problems that are the Root Cause of this one if any  used only if applicable .
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="trackingRecords" type="tns:ArrayOfTrackingRecord" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      Tracking records allow the tracking of modifications on the Service Problem.
+The tracking records should not be embedded in the problem to allow retrieving the problem without the tracking records.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="underlyingProblems" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      References to the underlying service problems. Only if this problem is derived from other problems.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="parentProblems" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      The parent problem to which this problem is attached.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+	</xsd:sequence>
+   </xsd:extension>
+   </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="ArrayOfProblem">
+		<xsd:sequence>
+			<xsd:element name="item" type="tns:Problem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+</xsd:complexType>
+
+
+
+
+       	<xsd:element name="trackingRecord" type="tns:TrackingRecord"  /> 
+
+<xsd:complexType name="TrackingRecord" >
+  <xsd:annotation>
+    <xsd:documentation>
+      Tracking records allow the tracking of modifications on the Service Problem.
+The tracking records should not be embedded in the problem to allow retrieving the problem without the tracking records.
+    </xsd:documentation>
+  </xsd:annotation>
+
+  
+		<xsd:complexContent>
+	      <xsd:extension base="entity:EntityBase">
+	      	<xsd:sequence>
+
+
+
+  <xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the action being done  ack,clear... 
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="systemId" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the system Id from which the action was done.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="time" type="xsd:date" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the time at which the action was done
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+  <xsd:element name="userId" type="xsd:string" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      Describes the user id of the user doing the action.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+
+
+	</xsd:sequence>
+   </xsd:extension>
+   </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="ArrayOfTrackingRecord">
+		<xsd:sequence>
+			<xsd:element name="item" type="tns:TrackingRecord" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+</xsd:complexType>
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+<!-- ************************** -->
+<!-- package Event definitions -->
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- package Exception definitions -->
+<!-- ************************** -->
+</xsd:schema>

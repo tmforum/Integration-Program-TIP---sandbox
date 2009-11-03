@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *
+ *  Generated with Tigerstripe Workbench 0.5.0.200908271716NGT.
+ *
+ *  Plugin  : Nortel Networks, Hewlett-Packard Company/TIP_Soap_Generator(0.1.3) (0.1.3)
+ *
+ *  DO NOT EDIT THIS CODE WAS AUTOMATICALLY GENERATED
+-->
+<!--
+Licensed to Members of the TM Forum under one or more
+contributor license agreements.  See the NOTICE file distributed with
+this work for additional information regarding copyright ownership.
+Members of the TM Forum licences this file to You under the Apache License, 
+Version 2.0 (the "License"); you may not use this file except in compliance with
+the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/xml/tip/service/problem"
+  xmlns:tns="http://www.tmforum.org/xml/tip/service/problem"
+   xmlns:problem="http://www.tmforum.org/xml/tip/cbe/problem" xmlns:entity="http://www.tmforum.org/xml/tip/internal/entity"
+  attributeFormDefault="unqualified" elementFormDefault="qualified"
+  version="0.0.2">
+  <xsd:annotation>
+    <xsd:documentation>
+      <pre>TMF XML Schema Definitions from Tigerstripe model
+                      project name: TIP_SPM_Model
+                        at version: 0.0.2
+      for all artifacts in package: org.tmforum.tip.service.problem
+      Model Description:
+      Service Problem Management  Project
+      Package Description:
+      
+      Package data summary info:
+ Association Classes: 0
+        enumerations: 0
+          exceptions: 0
+           datatypes: 0
+            entities: 1
+              events: 0
+      </pre>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.tmforum.org/xml/tip/cbe/problem" schemaLocation="cbe_problem.xsd"/>
+  <xsd:import namespace="http://www.tmforum.org/xml/tip/internal/entity" schemaLocation="internal_entity.xsd"/>
+<!-- ******************************* -->
+<!-- Package Enumeration definitions -->
+<!-- ******************************* -->
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+<!-- ************************** -->
+<!-- package Entity definitions -->
+<!-- ************************** -->
+
+
+
+
+<xsd:element name="serviceProblem" type="tns:ServiceProblem" substitutionGroup="problem:Problem" /> 
+
+<xsd:complexType name="ServiceProblem" >
+  <xsd:annotation>
+    <xsd:documentation>
+      A Service Problem is an indication that a service is no longer functioning according to the agreement with its client s .
+    </xsd:documentation>
+  </xsd:annotation>
+
+  
+		<xsd:complexContent>
+		  <xsd:extension base="problem:Problem">
+		  	<xsd:sequence>
+
+
+
+  <xsd:element name="underlyingAlarms" type="entity:ArrayOfEntityIdentifier" minOccurs="0" maxOccurs="1">
+    <xsd:annotation>
+      <xsd:documentation>
+      a set of alarm ids identifying the larms that are underlying to this problem. Note: a resource RC alarm would be an
+underlying alarm  also sometimes refer as a symptom  for a service problem.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+	</xsd:sequence>
+   </xsd:extension>
+   </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="ArrayOfServiceProblem">
+		<xsd:sequence>
+			<xsd:element name="item" type="tns:ServiceProblem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+</xsd:complexType>
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+<!-- ************************** -->
+<!-- package Event definitions -->
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- package Exception definitions -->
+<!-- ************************** -->
+</xsd:schema>
