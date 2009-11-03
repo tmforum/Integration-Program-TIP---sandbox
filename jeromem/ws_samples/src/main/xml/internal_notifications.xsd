@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *
+ *  Generated with Tigerstripe Workbench 0.5.0.200908271716NGT.
+ *
+ *  Plugin  : Nortel Networks, Hewlett-Packard Company/TIP_Soap_Generator(0.1.3) (0.1.3)
+ *
+ *  DO NOT EDIT THIS CODE WAS AUTOMATICALLY GENERATED
+-->
+<!--
+Licensed to Members of the TIP Open Source Community under one or more
+contributor license agreements.  See the NOTICE file distributed with
+this work for additional information regarding copyright ownership.
+Members of the TIP Open Source Community licences this file to You under the Apache License, 
+Version 2.0 (the "License"); you may not use this file except in compliance with
+the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.tmforum.org/xml/tip/internal/notifications"
+  xmlns:tns="http://www.tmforum.org/xml/tip/internal/notifications"
+  attributeFormDefault="unqualified" elementFormDefault="qualified"
+  version="0.0.2">
+  <xsd:annotation>
+    <xsd:documentation>
+      <pre>TMF XML Schema Definitions from Tigerstripe model
+                      project name: TIP_Generator_Internal_Model
+                        at version: 0.0.2
+      for all artifacts in package: org.tmforum.tip.internal.notifications
+      Model Description:
+      Internal Framework model used by Tigerstripe generators
+      Package Description:
+      
+      Package data summary info:
+ Association Classes: 0
+        enumerations: 0
+          exceptions: 0
+           datatypes: 0
+            entities: 0
+              events: 1
+      </pre>
+    </xsd:documentation>
+  </xsd:annotation>
+<!-- ******************************* -->
+<!-- Package Enumeration definitions -->
+<!-- ******************************* -->
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+<!-- ************************** -->
+<!-- package Entity definitions -->
+<!-- ************************** -->
+<!-- **************************** -->
+<!-- Package Datatype definitions -->
+<!-- **************************** -->
+<!-- ************************** -->
+<!-- package Event definitions -->
+<!-- ************************** -->
+
+
+
+
+<xsd:complexType name="NotificationBase"  abstract="true" >
+  <xsd:annotation>
+    <xsd:documentation>
+      This is the base  abstract  definition used for all TIP notifications.
+This type is injected by the TIP Generators into code generated from Tigerstripe Event  i.e. notification  artifacts where the 'Extends' field has been left as an empty string.
+    </xsd:documentation>
+  </xsd:annotation>
+
+   	<xsd:sequence>
+
+
+
+  <xsd:element name="sourceTime" type="xsd:time" minOccurs="1" maxOccurs="1" >
+    <xsd:annotation>
+      <xsd:documentation>
+      The time at which the event was reported by the source system  NE, EMS or OS .
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+    		  <xsd:element name="extensionInfo" minOccurs="0">
+    <xsd:annotation>
+      <xsd:documentation>
+       <p>A generic list of any type of elements. Used for vendor Extensions or loose element encapsulation from other namespaces.</p>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+     </xsd:sequence>
+</xsd:complexType>
+
+
+<!-- ************************** -->
+<!-- package Exception definitions -->
+<!-- ************************** -->
+</xsd:schema>

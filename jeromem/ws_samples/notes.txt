@@ -1,0 +1,4 @@
+Modifications of generated XSD
+- add substitutionGroup for all entity XSD element definition
+  Leverage generic type definitions in data structures (operation/message)
+- 
