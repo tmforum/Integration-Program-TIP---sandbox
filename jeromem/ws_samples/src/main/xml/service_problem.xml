@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns3:serviceProblem xmlns:tns1="http://www.tmforum.org/xml/tip/internal/entity" xmlns:tns2="http://www.tmforum.org/xml/tip/cbe/problem" xmlns:tns3="http://www.tmforum.org/xml/tip/service/problem" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tmforum.org/xml/tip/service/problem service_problem.xsd ">
+  <tns1:identifier>
+    <tns1:scheme>1</tns1:scheme>
+  </tns1:identifier>
+  <tns2:originatingSytem>tns2:originatingSytem</tns2:originatingSytem>
+  <tns2:affectedServiceNumber>0</tns2:affectedServiceNumber>
+  <tns2:impactImportanceFactor>0</tns2:impactImportanceFactor>
+  <tns2:priority>0</tns2:priority>
+  <tns2:description>tns2:description</tns2:description>
+  <tns2:firstAlert>tns2:firstAlert</tns2:firstAlert>
+  <tns2:category>tns2:category</tns2:category>
+  <tns2:responsibleParty>tns2:responsibleParty</tns2:responsibleParty>
+  <tns2:problemEscalation>0</tns2:problemEscalation>
+  <tns2:timeRaised>2001-01-01</tns2:timeRaised>
+  <tns2:timeChanged>2001-01-01</tns2:timeChanged>
+  <tns2:reason>tns2:reason</tns2:reason>
+  <tns2:ackStatus>1</tns2:ackStatus>
+  <tns2:clearStatus>1</tns2:clearStatus>
+  <tns2:activityStatus>1</tns2:activityStatus>
+  <tns2:impactPattterns>
+    <tns2:description>tns2:description</tns2:description>
+  </tns2:impactPattterns>
+</tns3:serviceProblem>

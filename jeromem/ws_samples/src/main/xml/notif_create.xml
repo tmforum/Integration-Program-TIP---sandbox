@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:notifCreateMsg
+  xmlns:tns="http://www.tmforum.org/xml/tip/samples/notifcreate"
+  xmlns:tns1="http://www.tmforum.org/xml/tip/internal/entity"
+  xmlns:tns2="http://www.tmforum.org/xml/tip/internal/notifications"
+  xmlns:tns3="http://www.tmforum.org/xml/tip/cbe/problem"
+  xmlns:tns4="http://www.tmforum.org/xml/tip/service/problem"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.tmforum.org/xml/tip/samples/notifcreate notif_create.xsd http://www.tmforum.org/xml/tip/service/problem service_problem.xsd">
+  <tns2:sourceTime>12:00:00</tns2:sourceTime>
+  <tns2:extensionInfo/>
+  <tns4:serviceProblem>
+    <tns1:identifier>
+      <tns1:scheme>1</tns1:scheme>
+      <tns1:value/>
+      <tns1:context/>
+      <tns1:encoding>tns1:encoding</tns1:encoding>
+    </tns1:identifier>
+    <tns1:extensionInfo/>
+    <tns3:originatingSytem>tns3:originatingSytem</tns3:originatingSytem>
+    <tns3:affectedServiceNumber>0</tns3:affectedServiceNumber>
+    <tns3:impactImportanceFactor>0</tns3:impactImportanceFactor>
+    <tns3:priority>0</tns3:priority>
+    <tns3:description>tns3:description</tns3:description>
+    <tns3:firstAlert>tns3:firstAlert</tns3:firstAlert>
+    <tns3:category>tns3:category</tns3:category>
+    <tns3:responsibleParty>tns3:responsibleParty</tns3:responsibleParty>
+    <tns3:problemEscalation>0</tns3:problemEscalation>
+    <tns3:timeRaised>2001-01-01</tns3:timeRaised>
+    <tns3:timeChanged>2001-01-01</tns3:timeChanged>
+    <tns3:reason>tns3:reason</tns3:reason>
+    <tns3:ackStatus>1</tns3:ackStatus>
+    <tns3:clearStatus>1</tns3:clearStatus>
+    <tns3:activityStatus>1</tns3:activityStatus>
+    <tns3:impactPattterns>
+      <tns3:description>tns3:description</tns3:description>
+    </tns3:impactPattterns>
+  </tns4:serviceProblem>
+</tns:notifCreateMsg>

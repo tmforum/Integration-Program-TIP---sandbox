@@ -66,7 +66,7 @@ See the License for the specific language governing permissions and
 
 
 
-<xsd:element name="serviceProblem" type="tns:ServiceProblem" substitutionGroup="problem:Problem" /> 
+<xsd:element name="serviceProblem" type="tns:ServiceProblem" substitutionGroup="problem:problem" /> 
 
 <xsd:complexType name="ServiceProblem" >
   <xsd:annotation>

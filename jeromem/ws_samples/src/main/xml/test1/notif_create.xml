@@ -3,17 +3,17 @@
   xmlns:tns="http://www.tmforum.org/xml/tip/samples/notifcreate"
   xmlns:tns1="http://www.tmforum.org/xml/tip/samples/notifbase"
   xmlns:tns2="http://www.tmforum.org/xml/tip/samples/entitybase"
-  xmlns:tns3="http://www.tmforum.org/xml/tip/samples/entityone"
-  xmlns:tns4="http://www.tmforum.org/xml/tip/samples/entityoneone"
+  xmlns:tns3="http://www.tmforum.org/xml/tip/samples/cbe/problem"
+  xmlns:tns4="http://www.tmforum.org/xml/tip/samples/service/problem"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.tmforum.org/xml/tip/samples/notifcreate notif_create.xsd http://www.tmforum.org/xml/tip/samples/entityoneone entity_one_one.xsd">
+  xsi:schemaLocation="http://www.tmforum.org/xml/tip/samples/notifcreate notif_create.xsd http://www.tmforum.org/xml/tip/samples/service/problem service_problem.xsd">
   <tns1:srcTime>2001-12-31T12:00:00</tns1:srcTime>
-  <tns4:entityOneOne>
+  <tns4:serviceProblem>
     <tns2:id></tns2:id>
     <tns2:extension></tns2:extension>
     <tns3:att1></tns3:att1>
     <tns3:att2></tns3:att2>
     <tns4:att1></tns4:att1>
     <tns4:att2></tns4:att2>
-  </tns4:entityOneOne>
+  </tns4:serviceProblem>
 </tns:notifCreateMsg>
