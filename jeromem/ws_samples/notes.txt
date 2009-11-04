@@ -1,4 +1,15 @@
-Modifications of generated XSD
+Entity Inheritance Definitions
+- All inherit from top-level class entityBase
+
+entityBase (abstract)
+ ^
+ |- cbe:problem (abstract)
+     ^
+     |- service:problem
+     
+TODO generated XSD:
 - add substitutionGroup for all entity XSD element definition
   Leverage generic type definitions in data structures (operation/message)
-- 
+- missing notifBase element definition (based on existing type)
+  to be substituted in specialized notif definitions
+
