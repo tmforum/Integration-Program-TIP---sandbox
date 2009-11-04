@@ -1,12 +1,38 @@
 Entity Inheritance Definitions
-- All inherit from top-level class entityBase
-
+- All entities inherit from top-level class EntityBase
+- Some entities may be common to a data domain definition (like cbe:problem)
+  They are therefore themselves abstract and super class of domain specific
+  entity definitions
+  This is simple OO design pattern abstract/extension which maps well to XML
+  (see example below)
+  
+- EntityBase abstract class can be used as the type definition such as
+  in the definition of common (generic) operations/events
+  
+  Common (single) entity create operation signature:
+   void createEntity() with 
+    in CreateEntityBase (another abstract for all generated create data structures)
+    out EntityBase
+  
+  Common (single) entity event creation signature (see below)
+  
+  
+    
+- See XML file notif_create.xml with sample ServiceProblem entity creation 
+  notification
+  
 entityBase (abstract)
  ^
  |- cbe:problem (abstract)
      ^
      |- service:problem
      
+notificationBase (abstract)
+ ^
+ |- notifCreateMsg (generic entity create event message - notification payload)
+     |
+     |- entitybase can be substituted by all extended types (inherited classes)
+
 TODO generated XSD:
 - add substitutionGroup for all entity XSD element definition
   Leverage generic type definitions in data structures (operation/message)
