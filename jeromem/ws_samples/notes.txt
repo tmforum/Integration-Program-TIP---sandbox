@@ -1,13 +1,18 @@
-Entity Inheritance Definitions
+This is an Eclipse project 
+Navigation is easier using Eclipse (File:Import:General:Existing Projects...)
+
+
+Demonstration of Entity Inheritance/Composition Definitions (XML Schema but same as any OO-based patterns)
 - All entities inherit from top-level class EntityBase
+
 - Some entities may be common to a data domain definition (like cbe:problem)
   They are therefore themselves abstract and super class of domain specific
   entity definitions
   This is simple OO design pattern abstract/extension which maps well to XML
   (see example below)
   
-- EntityBase abstract class can be used as the type definition such as
-  in the definition of common (generic) operations/events
+- EntityBase abstract class can be used as the type definition (by composition)
+  such as in the definition of common (generic) operations/events
   
   Common (single) entity create operation signature:
    void createEntity() with 
@@ -31,7 +36,7 @@ notificationBase (abstract)
  ^
  |- notifCreateMsg (generic entity create event message - notification payload)
      |
-     |- entitybase can be substituted by all extended types (inherited classes)
+     |- entitybase can be substituted (casting up/down) by all extended types (inherited classes)
 
 TODO generated XSD:
 - add substitutionGroup for all entity XSD element definition
